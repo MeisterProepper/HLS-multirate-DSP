@@ -1,0 +1,10 @@
+C:\HLS-multirate-DSP\HLS\HLS_FIR_1\HLS_FIR_1\hls\.autopilot\db\HLS_FIR.pp.0.cpp:396:2: warning: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+ for(i=0; i < N_delays; i++)
+ ^~~
+ VITIS_LOOP_29_1: 
+C:\HLS-multirate-DSP\HLS\HLS_FIR_1\HLS_FIR_1\hls\.autopilot\db\HLS_FIR.pp.0.cpp:396:2: note: FIX-IT applied suggested code changes
+C:\HLS-multirate-DSP\HLS\HLS_FIR_1\HLS_FIR_1\hls\.autopilot\db\HLS_FIR.pp.0.cpp:400:2: warning: Added loop label VITIS_LOOP_33_2:   [xilinx-label-all-loops]
+ for(i=1; i < N_delays; i++)
+ ^~~
+ VITIS_LOOP_33_2: 
+C:\HLS-multirate-DSP\HLS\HLS_FIR_1\HLS_FIR_1\hls\.autopilot\db\HLS_FIR.pp.0.cpp:400:2: note: FIX-IT applied suggested code changes

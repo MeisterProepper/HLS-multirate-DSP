@@ -12,11 +12,13 @@ void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
 
 
 void fir_function(hls::stream<short> &in, hls::stream<short> &out){
-    out.write(FIR_filter(,15))
+    short test = in.read();
+    short test2 = FIR_filter(H_filt_FIR, b_FIR, N_delays_FIR, test, 15);
+    out.write(test2);
 }
 
 
-short FIR_filter(short FIR_delays[], short FIR_coe[], short int N_delays, short x_n, int shift){
+short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
     short i, y;
 	int FIR_accu32=0;
 

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "HLS_FIR.cpp",
+    "fileloc": 3,
+    "instructions": 39,
+    "loads": {
+      "G": 3
+    },
+    "name": "HLS_FIR",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 39
+  }
+}
