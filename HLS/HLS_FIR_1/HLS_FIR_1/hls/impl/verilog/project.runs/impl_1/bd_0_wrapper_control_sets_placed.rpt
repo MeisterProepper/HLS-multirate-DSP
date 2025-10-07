@@ -1,0 +1,88 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Oct  7 22:26:40 2025
+| Host         : DESKTOP-92OKADH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xck26
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     9 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              15 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |            8 |
+| Yes          | No                    | No                     |              98 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                   Enable Signal                                                   |                                                    Set/Reset Signal                                                   | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+-------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/flow_control_loop_pipe_sequential_init_U/i_fu_400 |                                                                                                                       |                2 |              9 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81/flow_control_loop_pipe_sequential_init_U/i_fu_280 |                                                                                                                       |                5 |              9 |         1.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_r_U/load_p1                                                              |                                                                                                                       |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_r_U/load_p2                                                              |                                                                                                                       |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_r_U/load_p2                                                             |                                                                                                                       |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_r_U/load_p1                                                             |                                                                                                                       |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/E[0]                                              |                                                                                                                       |                5 |             16 |         3.20 |
+|  ap_clk      |                                                                                                                   |                                                                                                                       |                8 |             17 |         2.12 |
+|  ap_clk      |                                                                                                                   | ap_rst_n                                                                                                              |                8 |             22 |         2.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/ap_enable_reg_pp0_iter4                           | bd_0_i/hls_inst/inst/grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/flow_control_loop_pipe_sequential_init_U/ap_loop_init |                6 |             32 |         5.33 |
++--------------+-------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
