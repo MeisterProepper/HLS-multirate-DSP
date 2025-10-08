@@ -32,7 +32,7 @@ void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
 ### DSP code of the FIR filter function
 
 ```
-short FIR_filter(short FIR_delays[], short FIR_coe[], short int N_delays, short x_n, int shift){
+short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
 	short i, y;
 	int FIR_accu32=0;
 
@@ -59,7 +59,7 @@ short FIR_filter(short FIR_delays[], short FIR_coe[], short int N_delays, short 
 ```
 typedef ap_fixed<16,1> fir_data; //defining a fixed-point data type
 
-fir_data FIR_filter(fir_data FIR_delays[], fir_data FIR_coe[], short int N_delays, fir_data x_n){
+fir_data FIR_filter(fir_data FIR_delays[], const fir_data FIR_coe[], short int N_delays, fir_data x_n){
 	fir_data y;
 	ap_fixed<32,2>  FIR_accu32=0;
 
