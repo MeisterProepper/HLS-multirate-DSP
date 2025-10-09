@@ -176,24 +176,20 @@ Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl
 Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
 Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command     ap_source done; 0.191 sec.
-INFO-FLOW: Workspace C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls opened at Tue Oct 07 22:15:15 +0200 2025
+Command     ap_source done; 0.16 sec.
+INFO-FLOW: Workspace C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls opened at Wed Oct 08 20:54:32 +0200 2025
 Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 0.245 sec.
+Command   open_solution done; 0.184 sec.
 Execute   apply_ini C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg 
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8)
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9)
 Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp 
 INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9)
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10)
 Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h 
 INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11) 
 INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11)
 Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h 
@@ -202,8 +198,8 @@ Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=HLS_FIR_TB.cpp' from C:/HL
 INFO: [HLS 200-1465] Applying ini 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7)
 Execute     add_files -tb C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp 
 INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12) 
-INFO: [HLS 200-1465] Applying ini 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12)
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8)
 Execute     set_top HLS_FIR 
 Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4) 
 INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4)
@@ -217,7 +213,7 @@ DBG:HLSDevice: Trying to load device library: C:/AMD/Vitis/2024.2\lib\win64.o\xv
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/AMD/Vivado/2024.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command       create_platform done; 2.364 sec.
+Command       create_platform done; 2.257 sec.
 Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
@@ -230,49 +226,24 @@ Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen
 Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.248 sec.
+Command       ap_source done; 0.102 sec.
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 2.672 sec.
+Command     set_part done; 2.397 sec.
 Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5)
 Execute     config_export -format=ip_catalog 
-Command   apply_ini done; 2.713 sec.
+Command   apply_ini done; 2.429 sec.
 Execute   apply_ini C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/config.cmdline 
 Execute   ::AP::init_summary_file csynth 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
 Execute   csynth_design 
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 6.273 seconds; current allocated memory: 273.492 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.863 seconds; current allocated memory: 273.219 MB.
 Execute       set_directive_top HLS_FIR -name=HLS_FIR 
 Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-INFO: [HLS 200-10] Analyzing design file 'HLS_FIR_TB.cpp' ... 
-INFO-FLOW: Compiling one TU...
-INFO-FLOW: Handling HLS_FIR_TB.cpp as C++
-Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
-INFO-FLOW: Running: GCC PP 39
-INFO-FLOW: Source preprocessing
-INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang HLS_FIR_TB.cpp -foptimization-record-file=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/AMD/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/AMD/Vitis/2024.2/common/technology/autopilot -I C:/AMD/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp {-hls-platform-db-name=C:/AMD/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.cpp.clang.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.cpp.clang.err.log
-INFO-FLOW: Done: GCC PP 39 time: 0.6 seconds per iteration
-INFO-FLOW: Source syntax check for synthesis
-INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp {-hls-platform-db-name=C:/AMD/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/clang.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/clang.err.log
-Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/.systemc_flag -fix-errors C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.161 sec.
-INFO-FLOW: Running: clang-tidy CDT preprocess 39
-Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/all.directive.json 
-INFO-FLOW: exec C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/all.directive.json -fix-errors C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
-INFO-FLOW: Calling xilinx-label-all-loops ... 
-INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
-Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp std=gnu++14 -target fpga  
-INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.clang-tidy.loop-label.err.log
-INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.xilinx-dataflow-lawyer.err.log
-Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
-INFO-FLOW: compiling source code to llvm bc
-INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/AMD/Vitis/2024.2/common/technology/autopilot -I C:/AMD/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.bc {-hls-platform-db-name=C:/AMD/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.clang.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.pp.0.cpp.clang.err.log
 INFO: [HLS 200-10] Analyzing design file 'HLS_FIR.cpp' ... 
 INFO-FLOW: Compiling one TU...
 INFO-FLOW: Handling HLS_FIR.cpp as C++
@@ -288,38 +259,34 @@ INFO-FLOW: exec C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy 
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/all.directive.json -fix-errors C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.101 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.clang-tidy.loop-label.err.log
 Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 0.133 sec.
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/AMD/Vitis/2024.2/common/technology/autopilot -I C:/AMD/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.bc {-hls-platform-db-name=C:/AMD/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.clang.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.379 seconds; current allocated memory: 276.219 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.14 seconds; current allocated memory: 275.965 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
-Execute       run_link_or_opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.g.bc" "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.g.bc"  
-INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_TB.g.bc C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.g.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
-Command       run_link_or_opt done; 0.111 sec.
+Execute       run_link_or_opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.g.bc"  
+INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.g.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
 Execute       run_link_or_opt -opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 0.127 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/AMD/Vitis/2024.2/win64/lib/libhlsm_39.bc C:/AMD/Vitis/2024.2/win64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/AMD/Vitis/2024.2/win64/lib/libhlsm_39.bc C:/AMD/Vitis/2024.2/win64/lib/libhlsmc++_39.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
-Command       run_link_or_opt done; 1.867 sec.
+Command       run_link_or_opt done; 1.562 sec.
 Execute       run_link_or_opt -opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=HLS_FIR -reflow-float-conversion 
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=HLS_FIR -reflow-float-conversion -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 0.918 sec.
+Command       run_link_or_opt done; 0.827 sec.
 Execute       run_link_or_opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/AMD/Vitis/2024.2/win64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/AMD/Vitis/2024.2/win64/lib/libfloatconversion_39.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 Execute       run_link_or_opt -opt -out C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=HLS_FIR 
@@ -331,75 +298,73 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 INFO-FLOW: run_clang (background poll_ms 5000) exec: C:/AMD/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=HLS_FIR -mllvm -hls-db-dir -mllvm C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/AMD/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c 2> C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 84 Compile/Link C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 84 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 82 Compile/Link C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 82 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
 Execute       send_msg_by_id INFO @200-1995@%s%s%s 47 Unroll/Inline (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
 INFO: [HLS 200-1995] There were 47 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 44 Unroll/Inline (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 44 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Unroll/Inline (step 3) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Unroll/Inline (step 4) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Array/Struct (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Array/Struct (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Array/Struct (step 3) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Array/Struct (step 4) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 39 Array/Struct (step 5) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 39 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 39 Performance (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 39 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Performance (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Performance (step 3) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 38 Performance (step 4) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 38 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 40 HW Transforms (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 40 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 53 HW Transforms (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 53 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 214-178] Inlining function 'FIR_filter(short*, short const*, short, short, int)' into 'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)' (HLS_FIR.cpp:14:0)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 42 Unroll/Inline (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Unroll/Inline (step 3) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Unroll/Inline (step 4) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Array/Struct (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Array/Struct (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Array/Struct (step 3) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Array/Struct (step 4) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 35 Array/Struct (step 5) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 35 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 35 Performance (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 35 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Performance (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Performance (step 3) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Performance (step 4) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 36 HW Transforms (step 1) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 36 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 49 HW Transforms (step 2) C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'FIR_filter(short*, short const*, short, short, int)' into 'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)' (HLS_FIR.cpp:15:0)
 INFO: [HLS 214-178] Inlining function 'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)' into 'HLS_FIR(hls::stream<short, 0>&, hls::stream<short, 0>&)' (HLS_FIR.cpp:3:0)
-INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_29_1> at HLS_FIR.cpp:29:19 
-INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_33_2> at HLS_FIR.cpp:33:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_30_1> at HLS_FIR.cpp:30:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_36_2> at HLS_FIR.cpp:36:19 
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 8.88 seconds; current allocated memory: 278.090 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 278.090 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.965 seconds; current allocated memory: 277.828 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 277.828 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top HLS_FIR -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.0.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.166 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 282.520 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 282.082 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.1.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.2.prechk.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 283.652 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 283.191 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.g.1.bc to C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.1.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.1.tmp.bc -f 
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.1.tmp.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 304.406 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 303.840 MB.
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.2.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute           auto_get_db
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -cdfg-build C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.3.bc -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 316.062 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 315.379 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.457 sec.
-Command     elaborate done; 12.755 sec.
+Command       opt_and_import_c done; 0.172 sec.
+Command     elaborate done; 9.303 sec.
 Execute     ap_eval exec zip -j C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
-Command     ap_eval done; 0.225 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -407,98 +372,97 @@ INFO: [HLS 200-10] Synthesizing 'HLS_FIR' ...
 Execute       ap_set_top_model HLS_FIR 
 Execute       get_model_list HLS_FIR -filter all-wo-channel -topdown 
 Execute       preproc_iomode -model HLS_FIR 
-Execute       preproc_iomode -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       preproc_iomode -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
+Execute       preproc_iomode -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       preproc_iomode -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
 Execute       create_clock 
 Execute         ap_set_clock -name default -period 10 -unit ns -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute       get_model_list HLS_FIR -filter all-wo-channel 
-INFO-FLOW: Model list for configure: HLS_FIR_Pipeline_VITIS_LOOP_29_1 HLS_FIR_Pipeline_VITIS_LOOP_33_2 HLS_FIR
-INFO-FLOW: Configuring Module : HLS_FIR_Pipeline_VITIS_LOOP_29_1 ...
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       apply_spec_resource_limit HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-INFO-FLOW: Configuring Module : HLS_FIR_Pipeline_VITIS_LOOP_33_2 ...
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       apply_spec_resource_limit HLS_FIR_Pipeline_VITIS_LOOP_33_2 
+INFO-FLOW: Model list for configure: HLS_FIR_Pipeline_VITIS_LOOP_30_1 HLS_FIR_Pipeline_VITIS_LOOP_36_2 HLS_FIR
+INFO-FLOW: Configuring Module : HLS_FIR_Pipeline_VITIS_LOOP_30_1 ...
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       apply_spec_resource_limit HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+INFO-FLOW: Configuring Module : HLS_FIR_Pipeline_VITIS_LOOP_36_2 ...
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       apply_spec_resource_limit HLS_FIR_Pipeline_VITIS_LOOP_36_2 
 INFO-FLOW: Configuring Module : HLS_FIR ...
 Execute       set_default_model HLS_FIR 
 Execute       apply_spec_resource_limit HLS_FIR 
-INFO-FLOW: Model list for preprocess: HLS_FIR_Pipeline_VITIS_LOOP_29_1 HLS_FIR_Pipeline_VITIS_LOOP_33_2 HLS_FIR
-INFO-FLOW: Preprocessing Module: HLS_FIR_Pipeline_VITIS_LOOP_29_1 ...
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       cdfg_preprocess -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-INFO-FLOW: Preprocessing Module: HLS_FIR_Pipeline_VITIS_LOOP_33_2 ...
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       cdfg_preprocess -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_33_2 
+INFO-FLOW: Model list for preprocess: HLS_FIR_Pipeline_VITIS_LOOP_30_1 HLS_FIR_Pipeline_VITIS_LOOP_36_2 HLS_FIR
+INFO-FLOW: Preprocessing Module: HLS_FIR_Pipeline_VITIS_LOOP_30_1 ...
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       cdfg_preprocess -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+INFO-FLOW: Preprocessing Module: HLS_FIR_Pipeline_VITIS_LOOP_36_2 ...
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       cdfg_preprocess -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_36_2 
 INFO-FLOW: Preprocessing Module: HLS_FIR ...
 Execute       set_default_model HLS_FIR 
 Execute       cdfg_preprocess -model HLS_FIR 
 Execute       rtl_gen_preprocess HLS_FIR 
-INFO-FLOW: Model list for synthesis: HLS_FIR_Pipeline_VITIS_LOOP_29_1 HLS_FIR_Pipeline_VITIS_LOOP_33_2 HLS_FIR
+INFO-FLOW: Model list for synthesis: HLS_FIR_Pipeline_VITIS_LOOP_30_1 HLS_FIR_Pipeline_VITIS_LOOP_36_2 HLS_FIR
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'HLS_FIR_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-42] -- Implementing module 'HLS_FIR_Pipeline_VITIS_LOOP_30_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       schedule -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       schedule -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-486] Changing DSP latency (root=FIR_accu32_3) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_30_1'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.113 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.402 seconds; current allocated memory: 319.625 MB.
-Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.verbose.sched.rpt 
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 318.977 MB.
+Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.sched.adb -f 
-INFO-FLOW: Finish scheduling HLS_FIR_Pipeline_VITIS_LOOP_29_1.
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       bind -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 
+Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.sched.adb -f 
+INFO-FLOW: Finish scheduling HLS_FIR_Pipeline_VITIS_LOOP_30_1.
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       bind -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 320.711 MB.
-Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.verbose.bind.rpt 
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 320.070 MB.
+Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.bind.adb -f 
-INFO-FLOW: Finish binding HLS_FIR_Pipeline_VITIS_LOOP_29_1.
+Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.bind.adb -f 
+INFO-FLOW: Finish binding HLS_FIR_Pipeline_VITIS_LOOP_30_1.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'HLS_FIR_Pipeline_VITIS_LOOP_33_2' 
+INFO: [HLS 200-42] -- Implementing module 'HLS_FIR_Pipeline_VITIS_LOOP_36_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       schedule -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       schedule -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_33_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_33_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_36_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 320.766 MB.
-Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.verbose.sched.rpt 
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 320.133 MB.
+Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.sched.adb -f 
-INFO-FLOW: Finish scheduling HLS_FIR_Pipeline_VITIS_LOOP_33_2.
-Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       bind -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 
+Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.sched.adb -f 
+INFO-FLOW: Finish scheduling HLS_FIR_Pipeline_VITIS_LOOP_36_2.
+Execute       set_default_model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       bind -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 320.789 MB.
-Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.verbose.bind.rpt 
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 320.160 MB.
+Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.bind.adb -f 
-INFO-FLOW: Finish binding HLS_FIR_Pipeline_VITIS_LOOP_33_2.
+Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.bind.adb -f 
+INFO-FLOW: Finish binding HLS_FIR_Pipeline_VITIS_LOOP_36_2.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'HLS_FIR' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -506,7 +470,7 @@ Execute       set_default_model HLS_FIR
 Execute       schedule -model HLS_FIR 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.791 seconds; current allocated memory: 320.812 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 320.191 MB.
 Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -520,7 +484,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 320.848 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 320.230 MB.
 Execute       syn_report -verbosereport -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -529,63 +493,62 @@ Execute       db_write -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.auto
 INFO-FLOW: Finish binding HLS_FIR.
 Execute       get_model_list HLS_FIR -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
-Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_33_2 
+Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       rtl_gen_preprocess HLS_FIR_Pipeline_VITIS_LOOP_36_2 
 Execute       rtl_gen_preprocess HLS_FIR 
-INFO-FLOW: Model list for RTL generation: HLS_FIR_Pipeline_VITIS_LOOP_29_1 HLS_FIR_Pipeline_VITIS_LOOP_33_2 HLS_FIR
+INFO-FLOW: Model list for RTL generation: HLS_FIR_Pipeline_VITIS_LOOP_30_1 HLS_FIR_Pipeline_VITIS_LOOP_36_2 HLS_FIR
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'HLS_FIR_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] -- Generating RTL for module 'HLS_FIR_Pipeline_VITIS_LOOP_30_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model HLS_FIR_Pipeline_VITIS_LOOP_29_1 -top_prefix HLS_FIR_ -sub_prefix HLS_FIR_ -mg_file C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.compgen.tcl 
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'HLS_FIR_Pipeline_VITIS_LOOP_29_1' pipeline 'VITIS_LOOP_29_1' pipeline type 'loop pipeline'
+Execute       create_rtl_model HLS_FIR_Pipeline_VITIS_LOOP_30_1 -top_prefix HLS_FIR_ -sub_prefix HLS_FIR_ -mg_file C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'HLS_FIR_Pipeline_VITIS_LOOP_30_1' pipeline 'VITIS_LOOP_30_1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14s_32s_32_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_FIR_Pipeline_VITIS_LOOP_29_1'.
-INFO: [RTMG 210-279] Implementing memory 'HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R' using auto ROMs.
-Command       create_rtl_model done; 0.12 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.182 seconds; current allocated memory: 322.805 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_FIR_Pipeline_VITIS_LOOP_30_1'.
+INFO: [RTMG 210-279] Implementing memory 'HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 322.184 MB.
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_29_1 -style xilinx -f -lang vhdl -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/vhdl/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_29_1 -style xilinx -f -lang vlog -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/verilog/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1 
-Execute       syn_report -csynth -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_29_1_csynth.rpt 
+Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_30_1 -style xilinx -f -lang vhdl -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/vhdl/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_30_1 -style xilinx -f -lang vlog -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/verilog/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1 
+Execute       syn_report -csynth -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_30_1_csynth.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       syn_report -rtlxml -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_29_1_csynth.xml 
+Execute       syn_report -rtlxml -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_30_1_csynth.xml 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       syn_report -verbosereport -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.verbose.rpt 
+Execute       syn_report -verbosereport -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.verbose.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 -f -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.adb 
-Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_29_1 -bindview -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/design.bindinfo.xml 
-Execute       gen_tb_info HLS_FIR_Pipeline_VITIS_LOOP_29_1 -p C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1 
+Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 -f -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.adb 
+Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_30_1 -bindview -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info HLS_FIR_Pipeline_VITIS_LOOP_30_1 -p C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'HLS_FIR_Pipeline_VITIS_LOOP_33_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'HLS_FIR_Pipeline_VITIS_LOOP_36_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model HLS_FIR_Pipeline_VITIS_LOOP_33_2 -top_prefix HLS_FIR_ -sub_prefix HLS_FIR_ -mg_file C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.compgen.tcl 
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'HLS_FIR_Pipeline_VITIS_LOOP_33_2' pipeline 'VITIS_LOOP_33_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_FIR_Pipeline_VITIS_LOOP_33_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 323.574 MB.
+Execute       create_rtl_model HLS_FIR_Pipeline_VITIS_LOOP_36_2 -top_prefix HLS_FIR_ -sub_prefix HLS_FIR_ -mg_file C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'HLS_FIR_Pipeline_VITIS_LOOP_36_2' pipeline 'VITIS_LOOP_36_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_FIR_Pipeline_VITIS_LOOP_36_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 322.961 MB.
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_33_2 -style xilinx -f -lang vhdl -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/vhdl/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_33_2 -style xilinx -f -lang vlog -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/verilog/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_33_2 
-Execute       syn_report -csynth -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_33_2_csynth.rpt 
+Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_36_2 -style xilinx -f -lang vhdl -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/vhdl/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       gen_rtl HLS_FIR_Pipeline_VITIS_LOOP_36_2 -style xilinx -f -lang vlog -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/verilog/HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_36_2 
+Execute       syn_report -csynth -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_36_2_csynth.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       syn_report -rtlxml -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_33_2_csynth.xml 
+Execute       syn_report -rtlxml -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/HLS_FIR_Pipeline_VITIS_LOOP_36_2_csynth.xml 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       syn_report -verbosereport -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.verbose.rpt 
+Execute       syn_report -verbosereport -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.verbose.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 -f -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.adb 
-Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_33_2 -bindview -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/design.bindinfo.xml 
-Execute       gen_tb_info HLS_FIR_Pipeline_VITIS_LOOP_33_2 -p C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2 
+Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 -f -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.adb 
+Execute       db_write -model HLS_FIR_Pipeline_VITIS_LOOP_36_2 -bindview -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info HLS_FIR_Pipeline_VITIS_LOOP_36_2 -p C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'HLS_FIR' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -596,8 +559,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_FIR/output_r' to 'axis
 INFO: [RTGEN 206-500] Setting interface mode on function 'HLS_FIR' to 'ap_ctrl_none'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_FIR'.
 INFO: [RTMG 210-278] Implementing memory 'HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W' using auto RAMs.
-Command       create_rtl_model done; 0.124 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.253 seconds; current allocated memory: 324.043 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.184 seconds; current allocated memory: 323.688 MB.
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
 Execute       gen_rtl HLS_FIR -istop -style xilinx -f -lang vhdl -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/vhdl/HLS_FIR 
 Execute       gen_rtl HLS_FIR -istop -style xilinx -f -lang vlog -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/verilog/HLS_FIR 
@@ -626,17 +588,17 @@ Execute       syn_report -wcfg -model HLS_FIR -o C:/HLS-multirate-DSP/HLS/HLS_FI
 Execute       syn_report -protoinst -model HLS_FIR -o C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.protoinst 
 Execute       sc_get_clocks HLS_FIR 
 Execute       sc_get_portdomain HLS_FIR 
-INFO-FLOW: Model list for RTL component generation: HLS_FIR_Pipeline_VITIS_LOOP_29_1 HLS_FIR_Pipeline_VITIS_LOOP_33_2 HLS_FIR
-INFO-FLOW: Handling components in module [HLS_FIR_Pipeline_VITIS_LOOP_29_1] ... 
-Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.compgen.tcl 
+INFO-FLOW: Model list for RTL component generation: HLS_FIR_Pipeline_VITIS_LOOP_30_1 HLS_FIR_Pipeline_VITIS_LOOP_36_2 HLS_FIR
+INFO-FLOW: Handling components in module [HLS_FIR_Pipeline_VITIS_LOOP_30_1] ... 
+Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
 INFO-FLOW: Found component HLS_FIR_mac_muladd_16s_14s_32s_32_4_1.
 INFO-FLOW: Append model HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
-INFO-FLOW: Found component HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R.
-INFO-FLOW: Append model HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R
+INFO-FLOW: Found component HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R.
+INFO-FLOW: Append model HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R
 INFO-FLOW: Found component HLS_FIR_flow_control_loop_pipe_sequential_init.
 INFO-FLOW: Append model HLS_FIR_flow_control_loop_pipe_sequential_init
-INFO-FLOW: Handling components in module [HLS_FIR_Pipeline_VITIS_LOOP_33_2] ... 
-Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.compgen.tcl 
+INFO-FLOW: Handling components in module [HLS_FIR_Pipeline_VITIS_LOOP_36_2] ... 
+Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.compgen.tcl 
 INFO-FLOW: Found component HLS_FIR_flow_control_loop_pipe_sequential_init.
 INFO-FLOW: Append model HLS_FIR_flow_control_loop_pipe_sequential_init
 INFO-FLOW: Handling components in module [HLS_FIR] ... 
@@ -647,21 +609,21 @@ INFO-FLOW: Found component HLS_FIR_regslice_both.
 INFO-FLOW: Append model HLS_FIR_regslice_both
 INFO-FLOW: Found component HLS_FIR_regslice_both.
 INFO-FLOW: Append model HLS_FIR_regslice_both
-INFO-FLOW: Append model HLS_FIR_Pipeline_VITIS_LOOP_29_1
-INFO-FLOW: Append model HLS_FIR_Pipeline_VITIS_LOOP_33_2
+INFO-FLOW: Append model HLS_FIR_Pipeline_VITIS_LOOP_30_1
+INFO-FLOW: Append model HLS_FIR_Pipeline_VITIS_LOOP_36_2
 INFO-FLOW: Append model HLS_FIR
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: HLS_FIR_mac_muladd_16s_14s_32s_32_4_1 HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R HLS_FIR_flow_control_loop_pipe_sequential_init HLS_FIR_flow_control_loop_pipe_sequential_init HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W HLS_FIR_regslice_both HLS_FIR_regslice_both HLS_FIR_Pipeline_VITIS_LOOP_29_1 HLS_FIR_Pipeline_VITIS_LOOP_33_2 HLS_FIR
+INFO-FLOW: All models in this session: HLS_FIR_mac_muladd_16s_14s_32s_32_4_1 HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R HLS_FIR_flow_control_loop_pipe_sequential_init HLS_FIR_flow_control_loop_pipe_sequential_init HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W HLS_FIR_regslice_both HLS_FIR_regslice_both HLS_FIR_Pipeline_VITIS_LOOP_30_1 HLS_FIR_Pipeline_VITIS_LOOP_36_2 HLS_FIR
 INFO-FLOW: Generating C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/autopilot.rtl.models.txt file...
 INFO-FLOW: To file: write model HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
-INFO-FLOW: To file: write model HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R
+INFO-FLOW: To file: write model HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R
 INFO-FLOW: To file: write model HLS_FIR_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model HLS_FIR_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W
 INFO-FLOW: To file: write model HLS_FIR_regslice_both
 INFO-FLOW: To file: write model HLS_FIR_regslice_both
-INFO-FLOW: To file: write model HLS_FIR_Pipeline_VITIS_LOOP_29_1
-INFO-FLOW: To file: write model HLS_FIR_Pipeline_VITIS_LOOP_33_2
+INFO-FLOW: To file: write model HLS_FIR_Pipeline_VITIS_LOOP_30_1
+INFO-FLOW: To file: write model HLS_FIR_Pipeline_VITIS_LOOP_36_2
 INFO-FLOW: To file: write model HLS_FIR
 INFO-FLOW: Generating C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/autopilot.rtl.models.tcl file...
 INFO-FLOW: Finished generating RTL model list.
@@ -692,14 +654,14 @@ Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen
 Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/vhdl' dstVlogDir='C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/vlog' tclDir='C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db' modelList='HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
-HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R
+HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R
 HLS_FIR_flow_control_loop_pipe_sequential_init
 HLS_FIR_flow_control_loop_pipe_sequential_init
 HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W
 HLS_FIR_regslice_both
 HLS_FIR_regslice_both
-HLS_FIR_Pipeline_VITIS_LOOP_29_1
-HLS_FIR_Pipeline_VITIS_LOOP_33_2
+HLS_FIR_Pipeline_VITIS_LOOP_30_1
+HLS_FIR_Pipeline_VITIS_LOOP_36_2
 HLS_FIR
 ' expOnly='0'
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
@@ -707,10 +669,10 @@ Execute       ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.compgen.tcl 
-Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.compgen.tcl 
+Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
+Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.compgen.tcl 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.compgen.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.551 seconds; current allocated memory: 327.629 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.341 seconds; current allocated memory: 326.680 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='HLS_FIR_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -722,14 +684,14 @@ INFO-FLOW: Running: create_csynth_xml write xml
 INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/syn/report/csynth.xml
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
-HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R
+HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1_b_FIR_ROM_AUTO_1R
 HLS_FIR_flow_control_loop_pipe_sequential_init
 HLS_FIR_flow_control_loop_pipe_sequential_init
 HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W
 HLS_FIR_regslice_both
 HLS_FIR_regslice_both
-HLS_FIR_Pipeline_VITIS_LOOP_29_1
-HLS_FIR_Pipeline_VITIS_LOOP_33_2
+HLS_FIR_Pipeline_VITIS_LOOP_30_1
+HLS_FIR_Pipeline_VITIS_LOOP_36_2
 HLS_FIR
 ' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
@@ -738,8 +700,8 @@ Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.compgen.dataonly.tcl 
-Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.tbgen.tcl 
-Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.tbgen.tcl 
+Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_30_1.tbgen.tcl 
+Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_36_2.tbgen.tcl 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
@@ -747,845 +709,20 @@ Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.constraint.tcl 
 Execute       sc_get_clocks HLS_FIR 
 Execute       source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST HLS_FIR MODULE2INSTS {HLS_FIR HLS_FIR HLS_FIR_Pipeline_VITIS_LOOP_29_1 grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72 HLS_FIR_Pipeline_VITIS_LOOP_33_2 grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81} INST2MODULE {HLS_FIR HLS_FIR grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72 HLS_FIR_Pipeline_VITIS_LOOP_29_1 grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81 HLS_FIR_Pipeline_VITIS_LOOP_33_2} INSTDATA {HLS_FIR {DEPTH 1 CHILDREN {grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72 grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81}} grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72 {DEPTH 2 CHILDREN {}} grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81 {DEPTH 2 CHILDREN {}}} MODULEDATA {HLS_FIR_Pipeline_VITIS_LOOP_29_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln29_fu_90_p2 SOURCE HLS_FIR.cpp:29 VARIABLE icmp_ln29 LOOP VITIS_LOOP_29_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln29_fu_96_p2 SOURCE HLS_FIR.cpp:29 VARIABLE add_ln29 LOOP VITIS_LOOP_29_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln30_fu_107_p2 SOURCE HLS_FIR.cpp:30 VARIABLE sub_ln30 LOOP VITIS_LOOP_29_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14s_32s_32_4_1_U1 SOURCE HLS_FIR.cpp:30 VARIABLE mul_ln30 LOOP VITIS_LOOP_29_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_16s_14s_32s_32_4_1_U1 SOURCE HLS_FIR.cpp:30 VARIABLE sext_ln30_2 LOOP VITIS_LOOP_29_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14s_32s_32_4_1_U1 SOURCE HLS_FIR.cpp:30 VARIABLE FIR_accu32_3 LOOP VITIS_LOOP_29_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME b_FIR_U SOURCE {} VARIABLE b_FIR LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {14 392 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 1 BRAM 1 URAM 0}} HLS_FIR_Pipeline_VITIS_LOOP_33_2 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln33_fu_66_p2 SOURCE HLS_FIR.cpp:33 VARIABLE icmp_ln33 LOOP VITIS_LOOP_33_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln34_fu_88_p2 SOURCE HLS_FIR.cpp:34 VARIABLE add_ln34 LOOP VITIS_LOOP_33_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln33_fu_77_p2 SOURCE HLS_FIR.cpp:33 VARIABLE add_ln33 LOOP VITIS_LOOP_33_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} HLS_FIR {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_2p PRAGMA {} RTLNAME H_filt_FIR_U SOURCE {} VARIABLE H_filt_FIR LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 392 1} STORAGEUSAGE ram_2p DISPNAME {bind_storage ram_2p} VISIBLE true}} AREA {DSP 1 BRAM 2 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST HLS_FIR MODULE2INSTS {HLS_FIR HLS_FIR HLS_FIR_Pipeline_VITIS_LOOP_30_1 grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72 HLS_FIR_Pipeline_VITIS_LOOP_36_2 grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81} INST2MODULE {HLS_FIR HLS_FIR grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72 HLS_FIR_Pipeline_VITIS_LOOP_30_1 grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81 HLS_FIR_Pipeline_VITIS_LOOP_36_2} INSTDATA {HLS_FIR {DEPTH 1 CHILDREN {grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72 grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81}} grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72 {DEPTH 2 CHILDREN {}} grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81 {DEPTH 2 CHILDREN {}}} MODULEDATA {HLS_FIR_Pipeline_VITIS_LOOP_30_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln30_fu_90_p2 SOURCE HLS_FIR.cpp:30 VARIABLE icmp_ln30 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln30_fu_96_p2 SOURCE HLS_FIR.cpp:30 VARIABLE add_ln30 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln31_fu_107_p2 SOURCE HLS_FIR.cpp:31 VARIABLE sub_ln31 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14s_32s_32_4_1_U1 SOURCE HLS_FIR.cpp:31 VARIABLE mul_ln31 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_16s_14s_32s_32_4_1_U1 SOURCE HLS_FIR.cpp:31 VARIABLE sext_ln31_2 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14s_32s_32_4_1_U1 SOURCE HLS_FIR.cpp:31 VARIABLE FIR_accu32_3 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME b_FIR_U SOURCE {} VARIABLE b_FIR LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {14 392 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 1 BRAM 1 URAM 0}} HLS_FIR_Pipeline_VITIS_LOOP_36_2 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln36_fu_66_p2 SOURCE HLS_FIR.cpp:36 VARIABLE icmp_ln36 LOOP VITIS_LOOP_36_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln37_fu_88_p2 SOURCE HLS_FIR.cpp:37 VARIABLE add_ln37 LOOP VITIS_LOOP_36_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln36_fu_77_p2 SOURCE HLS_FIR.cpp:36 VARIABLE add_ln36 LOOP VITIS_LOOP_36_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} HLS_FIR {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_2p PRAGMA {} RTLNAME H_filt_FIR_U SOURCE {} VARIABLE H_filt_FIR LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 392 1} STORAGEUSAGE ram_2p DISPNAME {bind_storage ram_2p} VISIBLE true}} AREA {DSP 1 BRAM 2 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.648 seconds; current allocated memory: 328.895 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.572 seconds; current allocated memory: 328.445 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for HLS_FIR.
 INFO: [VLOG 209-307] Generating Verilog RTL for HLS_FIR.
 Execute       syn_report -model HLS_FIR -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 404.20 MHz
-Command     autosyn done; 3.295 sec.
-Command   csynth_design done; 16.393 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute     source -notrace -encoding utf-8 C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
-Execute       source -encoding utf-8 C:/AMD/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command     ap_source done; 0.222 sec.
-INFO-FLOW: Workspace C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls opened at Tue Oct 07 22:19:05 +0200 2025
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     set_part xck26-sfvc784-2LV-c 
-Execute       create_platform xck26-sfvc784-2LV-c -board  
-DBG:HLSDevice: Trying to load device library: C:/AMD/Vitis/2024.2\lib\win64.o\xv_hlsvwrap.dll
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/AMD/Vivado/2024.2/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command       create_platform done; 2.546 sec.
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.103 sec.
-Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 2.717 sec.
-Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 2.977 sec.
-Execute   apply_ini C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg 
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying ini 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7)
-Execute     add_files -tb C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp 
-INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12) 
-INFO: [HLS 200-1465] Applying ini 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12)
-Execute     set_top HLS_FIR 
-Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4)
-Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1465@%s 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(1)
-Execute     set_part xck26-sfvc784-2LV-c 
-Execute       create_platform xck26-sfvc784-2LV-c -board  
-Command       create_platform done; 0.262 sec.
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.412 sec.
-Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5)
-Execute     config_export -format=ip_catalog 
-Command   apply_ini done; 0.455 sec.
-Execute   apply_ini C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/config.cmdline 
-Execute   ::AP::init_summary_file vivado-impl 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   export_design -flow impl 
-Execute     config_export -flow=impl 
-INFO-FLOW: DBG:PUTS: export_design_wrap: -flow impl -format ip_catalog -rtl verilog
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
-INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
-INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=HLS_FIR xml_exists=0
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to HLS_FIR
-INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=2
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=10 #gSsdmPorts=0
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
-HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R
-HLS_FIR_flow_control_loop_pipe_sequential_init
-HLS_FIR_flow_control_loop_pipe_sequential_init
-HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W
-HLS_FIR_regslice_both
-HLS_FIR_regslice_both
-HLS_FIR_Pipeline_VITIS_LOOP_29_1
-HLS_FIR_Pipeline_VITIS_LOOP_33_2
-HLS_FIR
-' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
-Execute     source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
-Execute     source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/top-io-be.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.compgen.dataonly.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.constraint.tcl 
-Execute     sc_get_clocks HLS_FIR 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_syn_sh
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_imp_constraints
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.constraint.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:PUTS:     IP package: exec C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/ip/pack.bat
-INFO-FLOW: DBG:PUTS:     IP package: success C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/ip/pack.bat
-INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
-INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
-INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
-INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:PUTS:       generate_syn_sh
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_imp_constraints
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.constraint.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/autopilot.rtl.models.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/verilog/impl.bat
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix HLS_FIR_ TopModuleNoPrefix HLS_FIR TopModuleWithPrefix HLS_FIR' export_design_flow='impl' impl_dir='C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl' lang='verilog' out_dir=''
-INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
-Execute     ap_part_info -quiet -data family -name xck26-sfvc784-2LV-c 
-INFO-FLOW: DBG:PUTS:     writing export xml file: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/report/verilog/export_impl.xml
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode000001BB0A0F2774' export_design_flow='impl' export_rpt='C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
-INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
-INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
-Execute     ap_part_info -quiet -data family -name xck26-sfvc784-2LV-c 
-INFO-FLOW: DBG:PUTS:     writing export xml file: C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/report/verilog/export_syn.xml
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode000001BB0885DB54' export_design_flow='syn' export_rpt='C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
-INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
-Execute     send_msg_by_id INFO @200-802@%s HLS_FIR_1/HLS_FIR.zip 
-INFO: [HLS 200-802] Generated output file HLS_FIR_1/HLS_FIR.zip
-Command   export_design done; 507.719 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute     source -notrace -encoding utf-8 C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
-Execute       source -encoding utf-8 C:/AMD/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
-Execute         source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
-Execute       source C:/AMD/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command     ap_source done; 0.169 sec.
-INFO-FLOW: Workspace C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls opened at Tue Oct 07 22:31:00 +0200 2025
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     set_part xck26-sfvc784-2LV-c 
-Execute       create_platform xck26-sfvc784-2LV-c -board  
-DBG:HLSDevice: Trying to load device library: C:/AMD/Vitis/2024.2\lib\win64.o\xv_hlsvwrap.dll
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/AMD/Vivado/2024.2/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command       create_platform done; 2.737 sec.
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.124 sec.
-Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 2.904 sec.
-Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 3.116 sec.
-Execute   apply_ini C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg 
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11)
-Execute     add_files C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h 
-INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying ini 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7)
-Execute     add_files -tb C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp 
-INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12) 
-INFO: [HLS 200-1465] Applying ini 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12)
-Execute     set_top HLS_FIR 
-Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4)
-Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1465@%s 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(1)
-Execute     set_part xck26-sfvc784-2LV-c 
-Execute       create_platform xck26-sfvc784-2LV-c -board  
-Command       create_platform done; 0.202 sec.
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.331 sec.
-Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5)
-Execute     config_export -format=ip_catalog 
-Command   apply_ini done; 0.37 sec.
-Execute   apply_ini C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/config.cmdline 
-Execute   ::AP::init_summary_file package-ip 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute     AP::get_vpp_package_output_file
-Execute   export_design -flow none 
-Execute     config_export -flow=none 
-INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
-INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
-INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=HLS_FIR xml_exists=1
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to HLS_FIR
-INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=2
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=10 #gSsdmPorts=0
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
-HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_29_1_b_FIR_ROM_AUTO_1R
-HLS_FIR_flow_control_loop_pipe_sequential_init
-HLS_FIR_flow_control_loop_pipe_sequential_init
-HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W
-HLS_FIR_regslice_both
-HLS_FIR_regslice_both
-HLS_FIR_Pipeline_VITIS_LOOP_29_1
-HLS_FIR_Pipeline_VITIS_LOOP_33_2
-HLS_FIR
-' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
-Execute     source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
-Execute     source C:/AMD/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/top-io-be.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.rtl_wrap.cfg.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.compgen.dataonly.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_29_1.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR_Pipeline_VITIS_LOOP_33_2.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.constraint.tcl 
-Execute     sc_get_clocks HLS_FIR 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_syn_sh
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_imp_constraints
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.constraint.tcl 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/HLS_FIR.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
-Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
-INFO-FLOW: DBG:PUTS: read_platform_lib C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/.autopilot/db/global.setting.tcl 
-Execute     source C:/AMD/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source C:/AMD/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:PUTS:     IP package: exec C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/ip/pack.bat
-INFO-FLOW: DBG:PUTS:     IP package: success C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/impl/ip/pack.bat
-Execute     send_msg_by_id INFO @200-802@%s HLS_FIR_1/HLS_FIR.zip 
-INFO: [HLS 200-802] Generated output file HLS_FIR_1/HLS_FIR.zip
-Command   export_design done; 13.207 sec.
+Command     autosyn done; 3.304 sec.
+Command   csynth_design done; 12.815 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

@@ -6,14 +6,14 @@
     "fileloc": 3,
     "instructions": 5,
     "name": "HLS_FIR",
-    "total_instructions": 44
+    "total_instructions": 42
   },
   "1": {
     "basicblocks": 5,
     "calls": "",
     "file": "HLS_FIR.cpp",
-    "fileloc": 21,
-    "instructions": 35,
+    "fileloc": 22,
+    "instructions": 33,
     "loads": {
       "G": 3
     },
@@ -21,15 +21,15 @@
     "stores": {
       "G": 2
     },
-    "total_instructions": 35
+    "total_instructions": 33
   },
   "2": {
     "basicblocks": 1,
     "calls": "1",
     "file": "HLS_FIR.cpp",
-    "fileloc": 14,
+    "fileloc": 15,
     "instructions": 4,
     "name": "fir_function",
-    "total_instructions": 39
+    "total_instructions": 37
   }
 }

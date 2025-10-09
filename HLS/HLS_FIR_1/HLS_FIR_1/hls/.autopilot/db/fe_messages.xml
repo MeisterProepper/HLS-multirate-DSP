@@ -11,11 +11,11 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS_FIR.cpp:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="HLS_FIR" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HLS_FIR.cpp:14:0" msg_body="Inlining function 'FIR_filter(short*, short const*, short, short, int)' into 'fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)'">
-        <args Callee="FIR_filter(short*, short const*, short, short, int)" Callee-DebugLoc="File HLS_FIR.cpp Line 21 Column 0" Caller="fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Caller-DebugLoc="File HLS_FIR.cpp Line 14 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HLS_FIR.cpp:15:0" msg_body="Inlining function 'FIR_filter(short*, short const*, short, short, int)' into 'fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)'">
+        <args Callee="FIR_filter(short*, short const*, short, short, int)" Callee-DebugLoc="File HLS_FIR.cpp Line 22 Column 0" Caller="fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Caller-DebugLoc="File HLS_FIR.cpp Line 15 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HLS_FIR.cpp:3:0" msg_body="Inlining function 'fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)' into 'HLS_FIR(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)'">
-        <args Callee="fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Callee-DebugLoc="File HLS_FIR.cpp Line 14 Column 0" Caller="HLS_FIR(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Caller-DebugLoc="File HLS_FIR.cpp Line 3 Column 0"/>
+        <args Callee="fir_function(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Callee-DebugLoc="File HLS_FIR.cpp Line 15 Column 0" Caller="HLS_FIR(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Caller-DebugLoc="File HLS_FIR.cpp Line 3 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

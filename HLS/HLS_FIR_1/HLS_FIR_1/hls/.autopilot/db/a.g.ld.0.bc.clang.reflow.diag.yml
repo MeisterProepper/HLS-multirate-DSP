@@ -1,14 +1,14 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: HLS_FIR.cpp, Line: 16, Column: 19 }
+DebugLoc:        { File: HLS_FIR.cpp, Line: 17, Column: 19 }
 Function:        _Z12fir_functionRN3hls6streamIsLi0EEES2_
 Args:            
   - Callee:          'FIR_filter(short*, short const*, short, short, int)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 21, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 22, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -18,7 +18,7 @@ DebugLoc:        { File: HLS_FIR.cpp, Line: 7, Column: 2 }
 Function:        _Z7HLS_FIRRN3hls6streamIsLi0EEES2_
 Args:            
   - Callee:          'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'HLS_FIR(hls::stream<short, 0>&, hls::stream<short, 0>&)'
     DebugLoc:        { File: HLS_FIR.cpp, Line: 3, Column: 0 }
@@ -27,14 +27,14 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: HLS_FIR.cpp, Line: 16, Column: 19 }
+DebugLoc:        { File: HLS_FIR.cpp, Line: 17, Column: 19 }
 Function:        _Z12fir_functionRN3hls6streamIsLi0EEES2_
 Args:            
   - Callee:          'FIR_filter(short*, short const*, short, short, int)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 21, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 22, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -44,7 +44,7 @@ DebugLoc:        { File: HLS_FIR.cpp, Line: 7, Column: 2 }
 Function:        _Z7HLS_FIRRN3hls6streamIsLi0EEES2_
 Args:            
   - Callee:          'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'HLS_FIR(hls::stream<short, 0>&, hls::stream<short, 0>&)'
     DebugLoc:        { File: HLS_FIR.cpp, Line: 3, Column: 0 }
@@ -64,15 +64,15 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
 Function:        _Z12fir_functionRN3hls6streamIsLi0EEES2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'FIR_filter(short*, short const*, short, short, int)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 21, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 22, Column: 0 }
   - String:          ''' into '''
   - Caller:          'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -83,7 +83,7 @@ Function:        _Z7HLS_FIRRN3hls6streamIsLi0EEES2_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'fir_function(hls::stream<short, 0>&, hls::stream<short, 0>&)'
-    DebugLoc:        { File: HLS_FIR.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: HLS_FIR.cpp, Line: 15, Column: 0 }
   - String:          ''' into '''
   - Caller:          'HLS_FIR(hls::stream<short, 0>&, hls::stream<short, 0>&)'
     DebugLoc:        { File: HLS_FIR.cpp, Line: 3, Column: 0 }
@@ -94,9 +94,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_29_1
+  - LoopName:        VITIS_LOOP_30_1
   - String:          '> at '
-  - LoopLoc:         'HLS_FIR.cpp:29:19'
+  - LoopLoc:         'HLS_FIR.cpp:30:19'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -104,8 +104,8 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_33_2
+  - LoopName:        VITIS_LOOP_36_2
   - String:          '> at '
-  - LoopLoc:         'HLS_FIR.cpp:33:19'
+  - LoopLoc:         'HLS_FIR.cpp:36:19'
   - String:          ' '
 ...

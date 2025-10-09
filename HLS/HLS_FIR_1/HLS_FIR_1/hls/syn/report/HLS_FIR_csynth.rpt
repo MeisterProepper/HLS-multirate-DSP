@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'HLS_FIR'
 ================================================================
-* Date:           Tue Oct  7 22:15:33 2025
+* Date:           Wed Oct  8 20:54:47 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        HLS_FIR_1
@@ -38,8 +38,8 @@
         |                                            |                                  |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                  Instance                  |              Module              |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +--------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72  |HLS_FIR_Pipeline_VITIS_LOOP_29_1  |      397|      397|  3.970 us|  3.970 us|  393|  393|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81  |HLS_FIR_Pipeline_VITIS_LOOP_33_2  |      393|      393|  3.930 us|  3.930 us|  392|  392|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72  |HLS_FIR_Pipeline_VITIS_LOOP_30_1  |      397|      397|  3.970 us|  3.970 us|  393|  393|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81  |HLS_FIR_Pipeline_VITIS_LOOP_36_2  |      393|      393|  3.930 us|  3.930 us|  392|  392|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +--------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -74,8 +74,8 @@
     +--------------------------------------------+----------------------------------+---------+----+-----+-----+-----+
     |                  Instance                  |              Module              | BRAM_18K| DSP|  FF | LUT | URAM|
     +--------------------------------------------+----------------------------------+---------+----+-----+-----+-----+
-    |grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72  |HLS_FIR_Pipeline_VITIS_LOOP_29_1  |        1|   1|  115|  136|    0|
-    |grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81  |HLS_FIR_Pipeline_VITIS_LOOP_33_2  |        0|   0|   21|   86|    0|
+    |grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72  |HLS_FIR_Pipeline_VITIS_LOOP_30_1  |        1|   1|  115|  136|    0|
+    |grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81  |HLS_FIR_Pipeline_VITIS_LOOP_36_2  |        0|   0|   21|   86|    0|
     +--------------------------------------------+----------------------------------+---------+----+-----+-----+-----+
     |Total                                       |                                  |        1|   1|  136|  222|    0|
     +--------------------------------------------+----------------------------------+---------+----+-----+-----+-----+
@@ -127,8 +127,8 @@
     +---------------------------------------------------------+----+----+-----+-----------+
     |FIR_accu32_loc_fu_48                                     |  31|   0|   31|          0|
     |ap_CS_fsm                                                |   5|   0|    5|          0|
-    |grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72_ap_start_reg  |   1|   0|    1|          0|
-    |grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81_ap_start_reg  |   1|   0|    1|          0|
+    |grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg  |   1|   0|    1|          0|
+    |grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg  |   1|   0|    1|          0|
     +---------------------------------------------------------+----+----+-----+-----------+
     |Total                                                    |  38|   0|   38|          0|
     +---------------------------------------------------------+----+----+-----+-----------+

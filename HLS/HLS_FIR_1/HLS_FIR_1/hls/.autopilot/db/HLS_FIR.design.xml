@@ -5,14 +5,14 @@
 <ModuleName>HLS_FIR</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72</InstName>
-<ModuleName>HLS_FIR_Pipeline_VITIS_LOOP_29_1</ModuleName>
+<InstName>grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72</InstName>
+<ModuleName>HLS_FIR_Pipeline_VITIS_LOOP_30_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>72</ID>
 </Instance>
 <Instance>
-<InstName>grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81</InstName>
-<ModuleName>HLS_FIR_Pipeline_VITIS_LOOP_33_2</ModuleName>
+<InstName>grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81</InstName>
+<ModuleName>HLS_FIR_Pipeline_VITIS_LOOP_36_2</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>81</ID>
 </Instance>
@@ -22,9 +22,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Name>
+<Name>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Name>
 <Loops>
-<VITIS_LOOP_29_1></VITIS_LOOP_29_1>
+<VITIS_LOOP_30_1></VITIS_LOOP_30_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -43,8 +43,8 @@
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_29_1>
-<Name>VITIS_LOOP_29_1</Name>
+<VITIS_LOOP_30_1>
+<Name>VITIS_LOOP_30_1</Name>
 <Slack>7.30</Slack>
 <TripCount>392</TripCount>
 <Latency>395</Latency>
@@ -54,19 +54,19 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_29_1>
+</VITIS_LOOP_30_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>HLS_FIR.cpp:23~HLS_FIR.cpp:16~HLS_FIR.cpp:7</SourceLocation>
+<SourceLocation>HLS_FIR.cpp:24~HLS_FIR.cpp:17~HLS_FIR.cpp:7</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_29_1>
-<Name>VITIS_LOOP_29_1</Name>
+<VITIS_LOOP_30_1>
+<Name>VITIS_LOOP_30_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>HLS_FIR.cpp:29~HLS_FIR.cpp:16~HLS_FIR.cpp:7</SourceLocation>
-</VITIS_LOOP_29_1>
+<SourceLocation>HLS_FIR.cpp:30~HLS_FIR.cpp:17~HLS_FIR.cpp:7</SourceLocation>
+</VITIS_LOOP_30_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -92,7 +92,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -103,7 +103,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -114,7 +114,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -125,7 +125,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -136,7 +136,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -147,7 +147,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_29_1</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_30_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -214,9 +214,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Name>
+<Name>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Name>
 <Loops>
-<VITIS_LOOP_33_2></VITIS_LOOP_33_2>
+<VITIS_LOOP_36_2></VITIS_LOOP_36_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -235,8 +235,8 @@
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_33_2>
-<Name>VITIS_LOOP_33_2</Name>
+<VITIS_LOOP_36_2>
+<Name>VITIS_LOOP_36_2</Name>
 <Slack>7.30</Slack>
 <TripCount>391</TripCount>
 <Latency>391</Latency>
@@ -246,19 +246,19 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_33_2>
+</VITIS_LOOP_36_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>HLS_FIR.cpp:22~HLS_FIR.cpp:16~HLS_FIR.cpp:7</SourceLocation>
+<SourceLocation>HLS_FIR.cpp:36~HLS_FIR.cpp:17~HLS_FIR.cpp:7</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_33_2>
-<Name>VITIS_LOOP_33_2</Name>
+<VITIS_LOOP_36_2>
+<Name>VITIS_LOOP_36_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>HLS_FIR.cpp:34~HLS_FIR.cpp:16~HLS_FIR.cpp:7</SourceLocation>
-</VITIS_LOOP_33_2>
+<SourceLocation>HLS_FIR.cpp:37~HLS_FIR.cpp:17~HLS_FIR.cpp:7</SourceLocation>
+</VITIS_LOOP_36_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -284,7 +284,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -295,7 +295,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -306,7 +306,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -317,7 +317,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -328,7 +328,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -339,7 +339,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>HLS_FIR_Pipeline_VITIS_LOOP_33_2</Object>
+<Object>HLS_FIR_Pipeline_VITIS_LOOP_36_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>

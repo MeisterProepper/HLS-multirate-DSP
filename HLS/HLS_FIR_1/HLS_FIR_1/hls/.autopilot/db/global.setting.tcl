@@ -43,8 +43,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xck26:-sfvc784:-2LV-c
-set SourceFiles {sc {} c {../../HLS_FIR_TB.cpp ../../HLS_FIR.cpp}}
-set SourceFlags {sc {} c {{} {}}}
+set SourceFiles {sc {} c ../../HLS_FIR.cpp}
+set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
 set TBFiles {verilog C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp bc C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp vhdl C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp sc C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp cas C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp c {}}
 set SpecLanguage C

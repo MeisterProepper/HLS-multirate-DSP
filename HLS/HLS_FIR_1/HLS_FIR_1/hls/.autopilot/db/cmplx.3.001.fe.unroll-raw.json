@@ -9,10 +9,10 @@
     "total_instructions": 47
   },
   "1": {
-    "basicblocks": 7,
+    "basicblocks": 9,
     "calls": "",
     "file": "HLS_FIR.cpp",
-    "fileloc": 21,
+    "fileloc": 22,
     "instructions": 38,
     "loads": {
       "G": 3
@@ -27,7 +27,7 @@
     "basicblocks": 1,
     "calls": "1",
     "file": "HLS_FIR.cpp",
-    "fileloc": 14,
+    "fileloc": 15,
     "instructions": 4,
     "name": "fir_function",
     "total_instructions": 42
