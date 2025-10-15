@@ -4,7 +4,7 @@ The aim is to analyse the effects of different optimisation approaches and archi
 
 The filter system consists of a downsampling filter, a kernel filter and an upsampling filter.
 
-
+![Filter](Filter.png)
 
 ## Objective
 
