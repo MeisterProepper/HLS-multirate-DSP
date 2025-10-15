@@ -31,7 +31,7 @@ N_FIR = N_FIR + 2;
 b_FIR = firpm(N_FIR,fo,mo,w);
 
 % round them to 16 bits
-%b_FIR = round(b_FIR*32768)/32768;
+b_FIR = round(b_FIR*32768)/32768;
 
 % compute the amplitude response using frequency vector
 hz = freqz(b_FIR, 1, 2*pi*freq);
@@ -54,6 +54,8 @@ test_signal = sin(2 * pi * 1000 * t);
 
 my_signal = filter(b_FIR,1,test_signal);
 
+
+
 % Plots
 figure;
 
@@ -74,7 +76,8 @@ ylim([-1 1]);
 grid on;
 
 
-
+test_signal = round(test_signal*32767)/32769;
+my_signal = round(my_signal*32768)/32768;
 
 %---------------------------------------------------------------------------
 % write to file !
