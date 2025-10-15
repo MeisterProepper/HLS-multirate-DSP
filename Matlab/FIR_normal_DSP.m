@@ -1,9 +1,8 @@
-%*  Fs1= 44100 Hz 
-%*  pass-band edge frequency 9000 Hz,  
-%*  stop-band edge frequency 11025 Hz,
+%*  Fs = 50000;
+%*  pass-band edge frequency 3100 Hz,  
+%*  stop-band edge frequency 3350 Hz,
 %*  pass-band ripple 0.01
 %*  minimum stop-band attenuation 40 dB
-
 
 
 clear
@@ -31,6 +30,8 @@ fstop = 3350;
 N_FIR = N_FIR + 2;
 b_FIR = firpm(N_FIR,fo,mo,w);
 
+% round them to 16 bits
+%b_FIR = round(b_FIR*32768)/32768;
 
 % compute the amplitude response using frequency vector
 hz = freqz(b_FIR, 1, 2*pi*freq);
@@ -43,11 +44,43 @@ xlabel('Frequency in Hz, Nyquist range');
 ylabel('|H| in dB');
 
 
+
+
+
+% Testsignal generation
+testLength = 460;
+t = (0:testLength-1)/Fs;
+test_signal = sin(2 * pi * 1000 * t);
+
+my_signal = filter(b_FIR,1,test_signal);
+
+% Plots
+figure;
+
+subplot(2, 1, 1);
+plot(t, test_signal, 'DisplayName', 'Original Signal 1 kHz', 'Marker', 'O');
+title('Original Signal (1 kHz Sine)');
+xlabel('Time [s]');
+ylabel('Amplitude');
+ylim([-1 1]); 
+grid on;
+
+subplot(2, 1, 2);
+plot(t, my_signal, 'DisplayName', 'Filtered Signal', 'Marker', 'O');
+title('Filtered Signal');
+xlabel('Time [s]');
+ylabel('Amplitude');
+ylim([-1 1]); 
+grid on;
+
+
+
+
 %---------------------------------------------------------------------------
 % write to file !
 % create header file and info
 fprintf('coefficients are written to file ==> ');
-filename = 'FIR_normal_HLS.h';
+filename = 'FIR_normal_DSP.h';
 fprintf(filename);
 fprintf('\n\n');
 
@@ -73,7 +106,7 @@ fprintf(file_ID,['[',num2str(length(b_FIR)),']={\n']);
 
 j = 0;
 for i= 1:length(b_FIR)
-   fprintf(file_ID,' %1.6f,', b_FIR(i));
+   fprintf(file_ID,' %6.0f,', round(b_FIR(i)*32768));
    j = j + 1;
    if j >5 
      fprintf(file_ID, '\n');
@@ -84,5 +117,36 @@ fprintf(file_ID,'};\n\n');
 
 fclose(file_ID);
 
+%---------------------------------------------------------------------------
+% write to file !
+% create TS_DSP_normal.dat file
 
+fprintf('test signal is written to file ==> ');
+filename = 'TS_DSP_normal.dat';
+fprintf(filename);
+fprintf('\n\n');
+file_ID = fopen(filename, 'w');
 
+for i = 1:length(test_signal)
+    fprintf(file_ID,'%6.0f',round(test_signal(i)*32768));
+    fprintf(file_ID,'\n');
+end
+
+fclose(file_ID);
+
+%---------------------------------------------------------------------------
+% write to file !
+% create TS_DSP_normal.res file
+
+fprintf('golden vector is written to file ==> ');
+filename = 'TS_DSP_normal.res';
+fprintf(filename);
+fprintf('\n\n');
+file_ID = fopen(filename, 'w');
+
+for i = 1:length(my_signal)
+    fprintf(file_ID,'%6.0f',round(my_signal(i)*32768));
+    fprintf(file_ID,'\n');
+end
+
+fclose(file_ID);

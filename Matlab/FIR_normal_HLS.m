@@ -1,6 +1,6 @@
-%*  Fs1= 44100 Hz 
-%*  pass-band edge frequency 9000 Hz,  
-%*  stop-band edge frequency 11025 Hz,
+%*  Fs = 50000;
+%*  pass-band edge frequency 3100 Hz,  
+%*  stop-band edge frequency 3350 Hz,
 %*  pass-band ripple 0.01
 %*  minimum stop-band attenuation 40 dB
 
@@ -41,6 +41,36 @@ plot(freq*Fs,db(hz)),grid
 title('Amplitude response of desired TUTORIAL FIR filter in dB'),
 xlabel('Frequency in Hz, Nyquist range');
 ylabel('|H| in dB');
+
+
+
+
+% Testsignal generation
+testLength = 460;
+t = (0:testLength-1)/Fs;
+test_signal = sin(2 * pi * 1000 * t);
+
+my_signal = filter(b_FIR,1,test_signal);
+
+% Plots
+figure;
+
+subplot(2, 1, 1);
+plot(t, test_signal, 'DisplayName', 'Original Signal 1 kHz', 'Marker', 'O');
+title('Original Signal (1 kHz Sine)');
+xlabel('Time [s]');
+ylabel('Amplitude');
+ylim([-1 1]); 
+grid on;
+
+subplot(2, 1, 2);
+plot(t, my_signal, 'DisplayName', 'Filtered Signal', 'Marker', 'O');
+title('Filtered Signal');
+xlabel('Time [s]');
+ylabel('Amplitude');
+ylim([-1 1]); 
+grid on;
+
 
 
 %---------------------------------------------------------------------------
@@ -89,5 +119,36 @@ fprintf(file_ID,'};\n\n');
 
 fclose(file_ID);
 
+%---------------------------------------------------------------------------
+% write to file !
+% create TS_HLS_normal.dat file
 
+fprintf('test signal is written to file ==> ');
+filename = 'TS_HLS_normal.dat';
+fprintf(filename);
+fprintf('\n\n');
+file_ID = fopen(filename, 'w');
 
+for i = 1:length(test_signal)
+    fprintf(file_ID,'%1.6f',test_signal(i));
+    fprintf(file_ID,'\n');
+end
+
+fclose(file_ID);
+
+%---------------------------------------------------------------------------
+% write to file !
+% create TS_HLS_normal.res file
+
+fprintf('golden vector is written to file ==> ');
+filename = 'TS_HLS_normal.res';
+fprintf(filename);
+fprintf('\n\n');
+file_ID = fopen(filename, 'w');		% generate include-file
+
+for i = 1:length(my_signal)
+    fprintf(file_ID,'%1.6f',my_signal(i));
+    fprintf(file_ID,'\n');
+end
+
+fclose(file_ID);
