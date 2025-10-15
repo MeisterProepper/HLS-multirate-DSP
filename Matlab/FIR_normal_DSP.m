@@ -53,7 +53,7 @@ fprintf('\n\n');
 
 file_ID = fopen(filename, 'w');		% generate include-file
 fprintf(file_ID, '//------------------------------------------- \n');
-fprintf(file_ID, '// designed with -- FIR_normal_HLS.m -- \n');
+fprintf(file_ID, '// designed with -- FIR_normal_DSP.m -- \n');
 fprintf(file_ID, ['// ',date,'\n'] );
 fprintf(file_ID, '// Fs = %6.2f\n', Fs );
 fprintf(file_ID, '// fstop = %6.2f\n', fstop);
@@ -63,17 +63,12 @@ fprintf(file_ID, '// delta_stop_dB = %6.2f\n', delta_stop_dB);
 fprintf(file_ID, '// N_FIR = %d\n',  N_FIR);
 fprintf(file_ID, '//------------------------------------------- \n \n');
 
-fprintf(file_ID, '#include "ap_fixed.h" \n \n');
-
 fprintf(file_ID, '#define N_DELAYS_FIR %d\n', length(b_FIR));
 
 
-fprintf(file_ID, 'typedef ap_fixed<16,1> coef_data_t; \n');
-fprintf(file_ID, 'typedef ap_fixed<16,1> delay_data_t; \n \n');
+fprintf(file_ID, 'static short H_filter_FIR[N_DELAYS_FIR]; \n');
 
-fprintf(file_ID, 'static delay_data_t H_filt_FIR[N_DELAYS_FIR]; \n');
-
-fprintf(file_ID, 'const coef_data_t b_FIR');
+fprintf(file_ID, 'const short b_FIR');
 fprintf(file_ID,['[',num2str(length(b_FIR)),']={\n']);
 
 j = 0;
