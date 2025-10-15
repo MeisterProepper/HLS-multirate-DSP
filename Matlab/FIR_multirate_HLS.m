@@ -115,13 +115,13 @@ test_signal = sin(2 * pi * 1000 * t);
 % write to file !
 % create header file and info
 fprintf('coefficients are written to file ==> ');
-filename = 'FIR_multirate_DSP.h';
+filename = 'FIR_multirate_HLS.h';
 fprintf(filename);
 fprintf('\n\n');
 
 file_ID = fopen(filename, 'w');		% generate include-file
 fprintf(file_ID, '//------------------------------------------- \n');
-fprintf(file_ID, '// designed with -- FIR_multirate_DSP.m -- \n');
+fprintf(file_ID, '// designed with -- FIR_multirate_HLS.m -- \n');
 fprintf(file_ID, ['// ',date,'\n'] );
 fprintf(file_ID, '// Fs = %6.2f\n', Fs );
 fprintf(file_ID, '// fstop = %6.2f\n', fstop);
@@ -133,6 +133,13 @@ fprintf(file_ID, '// N_FIR_kernel = %d\n',  N_FIR_kernel_MM);
 fprintf(file_ID, '// N_FIR_dec_int = %d\n',  N_FIR_Dec_Int);
 fprintf(file_ID, '//------------------------------------------- \n \n');
 
+fprintf(file_ID, '#include "ap_fixed.h" \n \n');
+
+fprintf(file_ID, 'typedef ap_fixed<16,1> coef_data_t; \n');
+fprintf(file_ID, 'typedef ap_fixed<16,1> delay_data_t; \n \n');
+
+
+
 fprintf(file_ID, '#define N_DELAYS_FIR_kernel_MM %d\n', length(b_FIR_kernel_MM));
 
 for i=1:MM
@@ -142,25 +149,25 @@ fprintf(file_ID, '\n');
 
 
 
-fprintf(file_ID, 'static short H_filter_FIR_kernel[N_DELAYS_FIR_kernel_MM]; \n');
+fprintf(file_ID, 'static delay_data_t H_filter_FIR_kernel[N_DELAYS_FIR_kernel_MM]; \n');
 
 for i=1:MM
-    fprintf(file_ID, 'static short H_filter_FIR_dec_%d%d[N_DELAYS_FIR_dec_int_%d%d]; \n', MM, i-1,MM,i-1);
+    fprintf(file_ID, 'static delay_data_t H_filter_FIR_dec_%d%d[N_DELAYS_FIR_dec_int_%d%d]; \n', MM, i-1,MM,i-1);
 end
 
 for i=1:MM
-    fprintf(file_ID, 'static short H_filter_FIR_int_%d%d[N_DELAYS_FIR_dec_int_%d%d]; \n',MM,i-1,MM,i-1);
+    fprintf(file_ID, 'static delay_data_t H_filter_FIR_int_%d%d[N_DELAYS_FIR_dec_int_%d%d]; \n',MM,i-1,MM,i-1);
 end
 fprintf(file_ID, '\n');
 
 
 
-fprintf(file_ID, 'const short b_FIR_kernel');
+fprintf(file_ID, 'const coef_data_t b_FIR_kernel');
 fprintf(file_ID,['[',num2str(length(b_FIR_kernel_MM)),']={\n']);
 
 j = 0;
 for i= 1:length(b_FIR_kernel_MM)
-   fprintf(file_ID,' %6.0f,', round(b_FIR_kernel_MM(i)*32768));
+   fprintf(file_ID,' %1.6f,', b_FIR_kernel_MM(i));
    j = j + 1;
    if j >5 
      fprintf(file_ID, '\n');
@@ -172,10 +179,10 @@ fprintf(file_ID,'};\n\n');
 
 for x = 1 : MM
     j = 0;
-    fprintf(file_ID, 'const short b_FIR_dec_int_%d%d',MM,x-1);
+    fprintf(file_ID, 'const coef_data_t b_FIR_dec_int_%d%d',MM,x-1);
     fprintf(file_ID,['[',num2str(length(b_dec_int{x})),']={\n']);
     for i = 1:length(b_dec_int{x})
-        fprintf(file_ID,' %6.0f,', round(b_dec_int{x}(i)*32768));
+        fprintf(file_ID,' %1.6f,', b_dec_int{x}(i));
         if j >5 
             fprintf(file_ID, '\n');
             j = 0;
@@ -185,9 +192,6 @@ for x = 1 : MM
 end
 
 fclose(file_ID);
-
-
-
 
 
 
