@@ -1,0 +1,32 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../HLS_FIR_TB.cpp in debug mode
+   Generating csim.exe
+INFO: Reading stimulus_01.dat
+INFO: Value -0.717072
+INFO: Value 0.593964
+INFO: Value 0.750641
+INFO: Value 0.400269
+INFO: Value -0.606903
+INFO: Value -0.002747
+INFO: Value -0.019836
+INFO: Value -0.953461
+INFO: Value -0.588226
+INFO: Value -0.264801
+INFO: Value -0.034424
+INFO: Value -0.254669
+INFO: Value 0.093323
+INFO: Value 0.614929
+INFO: Value -0.758087
+INFO: Value -0.893372
+INFO: Value -0.415344
+INFO: Value -0.651154
+INFO: Value -0.363403
+INFO: Value -0.517731
+INFO: Value -0.081665
+INFO: Value 0.159668
+INFO: Value -0.165649
+INFO: Value -0.841370
+INFO: Read 24 samples
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

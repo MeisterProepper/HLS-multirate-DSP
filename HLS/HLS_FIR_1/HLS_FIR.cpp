@@ -14,28 +14,33 @@ void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
 
 void fir_function(hls::stream<short> &in, hls::stream<short> &out){
     short test = in.read();
-    short test2 = FIR_filter(H_filt_FIR, b_FIR, N_delays_FIR, test, 15);
+    short test2 = FIR_filter<N_delays_FIR>(H_filt_FIR, b_FIR, test, 15);
     out.write(test2);
 }
 
-
-short FIR_filter(short FIR_delays[], const short FIR_coe[], short N_delays, short x_n, int shift){
+template<int N_delays>
+short FIR_filter(short FIR_delays[], const short FIR_coe[], short x_n, int shift){
+    #pragma HLS INLINE off
+    #pragma HLS DEPENDENCE variable=FIR_delays inter false
+    //#pragma HLS ARRAY_PARTITION variable=FIR_delays complete dim=1
     short  y;
 	int FIR_accu32=0;
-
+    //#pragma HLS dataflow
     // delays BACKWARDS, coefficients in FORWARD direction
+
+     // loop to shift the delays
+	for(int i=0; i < N_delays-1; i++)	{
+        //#pragma HLS UNROLL
+        FIR_delays[i] = FIR_delays[i+1];
+        }	
+
 	FIR_delays[N_delays-1] = x_n;	// read input sample from ADC 
+
     // accumulate in 32 bit variable
 	FIR_accu32	= 0;				// clear accu
 	for(int i=0; i < N_delays; i++){ // FIR filter routine
         FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
         }		
-		
-	
-    // loop to shift the delays
-	for(int i=1; i < N_delays; i++)	{
-        FIR_delays[i-1] = FIR_delays[i];
-        }			
 		
 
     // shift back by 15 bit to obtain short int 16 bit output 

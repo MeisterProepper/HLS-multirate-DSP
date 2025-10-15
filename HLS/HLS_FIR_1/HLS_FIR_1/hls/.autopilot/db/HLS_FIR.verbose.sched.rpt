@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'HLS_FIR'
 ================================================================
-* Date:           Wed Oct  8 20:54:46 2025
+* Date:           Fri Oct 10 23:51:21 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        HLS_FIR_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      794|      794|  7.940 us|  7.940 us|  795|  795|       no|
+    |      797|      797|  7.970 us|  7.970 us|  798|  798|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -65,46 +65,34 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 5
+* Number of FSM states : 3
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
-3 --> 4 
-4 --> 5 
-5 --> 
+3 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.31>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%FIR_accu32_loc = alloca i64 1"   --->   Operation 6 'alloca' 'FIR_accu32_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.07ns)   --->   "%test = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [HLS_FIR.cpp:16->HLS_FIR.cpp:7]   --->   Operation 7 'read' 'test' <Predicate = true> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 8 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln27 = store i16 %test, i16 391" [HLS_FIR.cpp:27->HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 8 'store' 'store_ln27' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
+ST_1 : Operation 4 [1/1] (0.07ns)   --->   "%test = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [HLS_FIR.cpp:16->HLS_FIR.cpp:7]   --->   Operation 4 'read' 'test' <Predicate = true> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 5 [2/2] (1.23ns)   --->   "%test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_FIR" [HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 5 'call' 'test2' <Predicate = true> <Delay = 1.23> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln0 = call void @HLS_FIR_Pipeline_VITIS_LOOP_30_1, i31 %FIR_accu32_loc, i16 %H_filt_FIR, i14 %b_FIR"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 0.45>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_FIR" [HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 6 'call' 'test2' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 7 [2/2] (0.45ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %test2" [HLS_FIR.cpp:18->HLS_FIR.cpp:7]   --->   Operation 7 'write' 'write_ln18' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
 
-State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln0 = call void @HLS_FIR_Pipeline_VITIS_LOOP_30_1, i31 %FIR_accu32_loc, i16 %H_filt_FIR, i14 %b_FIR"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 4 <SV = 3> <Delay = 0.45>
-ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%FIR_accu32_loc_load = load i31 %FIR_accu32_loc"   --->   Operation 11 'load' 'FIR_accu32_loc_load' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln0 = call void @HLS_FIR_Pipeline_VITIS_LOOP_36_2, i16 %H_filt_FIR"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%y = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %FIR_accu32_loc_load, i32 15, i32 30" [HLS_FIR.cpp:42->HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 13 'partselect' 'y' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 14 [2/2] (0.45ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %y" [HLS_FIR.cpp:18->HLS_FIR.cpp:7]   --->   Operation 14 'write' 'write_ln18' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
-
-State 5 <SV = 4> <Delay = 1.63>
-ST_5 : Operation 15 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [HLS_FIR.cpp:3]   --->   Operation 15 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln3 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [HLS_FIR.cpp:3]   --->   Operation 16 'specinterface' 'specinterface_ln3' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 21 [1/2] (1.63ns)   --->   "%call_ln0 = call void @HLS_FIR_Pipeline_VITIS_LOOP_36_2, i16 %H_filt_FIR"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 1.63> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 22 [1/2] (0.45ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %y" [HLS_FIR.cpp:18->HLS_FIR.cpp:7]   --->   Operation 22 'write' 'write_ln18' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
-ST_5 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln8 = ret" [HLS_FIR.cpp:8]   --->   Operation 23 'ret' 'ret_ln8' <Predicate = true> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 0.45>
+ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [HLS_FIR.cpp:3]   --->   Operation 8 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln3 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [HLS_FIR.cpp:3]   --->   Operation 9 'specinterface' 'specinterface_ln3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/2] (0.45ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %test2" [HLS_FIR.cpp:18->HLS_FIR.cpp:7]   --->   Operation 14 'write' 'write_ln18' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln8 = ret" [HLS_FIR.cpp:8]   --->   Operation 15 'ret' 'ret_ln8' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -114,23 +102,17 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
  <State 1>: 1.316ns
 The critical path consists of the following:
-	axis read operation ('test', HLS_FIR.cpp:16->HLS_FIR.cpp:7) on port 'input_r' (HLS_FIR.cpp:16->HLS_FIR.cpp:7) [12]  (0.079 ns)
-	'store' operation 0 bit ('store_ln27', HLS_FIR.cpp:27->HLS_FIR.cpp:17->HLS_FIR.cpp:7) of variable 'test', HLS_FIR.cpp:16->HLS_FIR.cpp:7 on array 'H_filt_FIR' [13]  (1.237 ns)
+	axis read operation ('test', HLS_FIR.cpp:16->HLS_FIR.cpp:7) on port 'input_r' (HLS_FIR.cpp:16->HLS_FIR.cpp:7) [11]  (0.079 ns)
+	'call' operation 16 bit ('test2', HLS_FIR.cpp:17->HLS_FIR.cpp:7) to 'FIR_filter<392>' [12]  (1.237 ns)
 
- <State 2>: 0.000ns
+ <State 2>: 0.453ns
 The critical path consists of the following:
+	'call' operation 16 bit ('test2', HLS_FIR.cpp:17->HLS_FIR.cpp:7) to 'FIR_filter<392>' [12]  (0.000 ns)
+	axis write operation ('write_ln18', HLS_FIR.cpp:18->HLS_FIR.cpp:7) on port 'output_r' (HLS_FIR.cpp:18->HLS_FIR.cpp:7) [13]  (0.453 ns)
 
- <State 3>: 0.000ns
+ <State 3>: 0.453ns
 The critical path consists of the following:
-
- <State 4>: 0.453ns
-The critical path consists of the following:
-	'load' operation 31 bit ('FIR_accu32_loc_load') on local variable 'FIR_accu32_loc' [15]  (0.000 ns)
-	axis write operation ('write_ln18', HLS_FIR.cpp:18->HLS_FIR.cpp:7) on port 'output_r' (HLS_FIR.cpp:18->HLS_FIR.cpp:7) [18]  (0.453 ns)
-
- <State 5>: 1.630ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'HLS_FIR_Pipeline_VITIS_LOOP_36_2' [16]  (1.630 ns)
+	axis write operation ('write_ln18', HLS_FIR.cpp:18->HLS_FIR.cpp:7) on port 'output_r' (HLS_FIR.cpp:18->HLS_FIR.cpp:7) [13]  (0.453 ns)
 
 
 ============================================================
@@ -144,8 +126,6 @@ N/A
 	State 1
 	State 2
 	State 3
-	State 4
-	State 5
 
 
 ============================================================

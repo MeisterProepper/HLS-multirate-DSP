@@ -2,7 +2,7 @@
 == Vivado Place & Route Results
 ================================================================
 + General Information:
-    * Date:            Tue Oct 07 22:27:36 +0200 2025
+    * Date:            Fri Oct 10 23:16:13 +0200 2025
     * Version:         2024.2 (Build 5238294 on Nov  8 2024)
     * Project:         HLS_FIR_1
     * Solution:        hls (Vivado IP Flow Target)
@@ -33,12 +33,12 @@
 ================================================================
 == Place & Route Resource Summary
 ================================================================
-LUT:              131
-FF:               167
-DSP:              1
-BRAM:             2
+LUT:              4663
+FF:               8897
+DSP:              83
+BRAM:             0
 URAM:             0
-SRL:              2
+SRL:              224
 
 
 ================================================================
@@ -49,31 +49,103 @@ SRL:              2
 | Timing         | Period (ns) |
 +----------------+-------------+
 | Target         | 10.000      |
-| Post-Synthesis | 2.453       |
-| Post-Route     | 2.669       |
+| Post-Synthesis | 4.410       |
+| Post-Route     | 6.411       |
 +----------------+-------------+
 
 
 ================================================================
 == Place & Route Resources
 ================================================================
-+--------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                             | LUT | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+--------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                             | 131 | 167 | 1   | 2    |      |     |        |      |         |          |        |
-|   (inst)                                         |     | 23  |     |      |      |     |        |      |         |          |        |
-|   H_filt_FIR_U                                   | 9   |     |     | 1    |      |     |        |      |         |          |        |
-|   grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72     | 47  | 49  | 1   | 1    |      |     |        |      |         |          |        |
-|     (grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72) | 23  | 47  |     |      |      |     |        |      |         |          |        |
-|     b_FIR_U                                      |     |     |     | 1    |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U     | 24  | 2   |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_16s_14s_32s_32_4_1_U1             |     |     | 1   |      |      |     |        |      |         |          |        |
-|   grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81     | 30  | 21  |     |      |      |     |        |      |         |          |        |
-|     (grp_HLS_FIR_Pipeline_VITIS_LOOP_33_2_fu_81) | 10  | 19  |     |      |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U     | 20  | 2   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_r_U                        | 23  | 37  |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_r_U                       | 23  | 37  |     |      |      |     |        |      |         |          |        |
-+--------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
++------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                           | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                           | 4663 | 8897 | 83  |      |      |     |        |      |         |          |        |
+|   (inst)                                       |      | 9    |     |      |      |     |        |      |         |          |        |
+|   grp_FIR_filter_392_s_fu_827                  | 4614 | 8814 | 83  |      |      |     |        |      |         |          |        |
+|     (grp_FIR_filter_392_s_fu_827)              | 2875 | 8814 |     |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10s_27_4_1_U27           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10s_27_4_1_U28           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_11s_27_4_1_U24           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_11s_28_4_1_U22           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_12ns_29_4_1_U21          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_12ns_30_4_1_U20          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_5ns_23_4_1_U45           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_7ns_25_4_1_U39           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_7ns_25_4_1_U40           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_7ns_25_4_1_U43           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_8ns_25_4_1_U38           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_8ns_26_4_1_U35           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_8s_25_4_1_U37            |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_8s_25_4_1_U41            |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_8s_25_4_1_U42            |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9ns_27_4_1_U25           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9ns_27_4_1_U26           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9s_26_4_1_U32            |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9s_26_4_1_U33            |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_17s_17s_5ns_24_4_1_U17           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_17s_17s_6ns_25_4_1_U15           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_18s_18s_9s_26_4_1_U8             | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmul_sub_16s_16s_13ns_19s_30_4_1_U19 |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10ns_27s_27_4_1_U57  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_26s_27_4_1_U61   | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_27s_27_4_1_U56   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_27s_27_4_1_U60   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_28s_28_4_1_U54   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11ns_29s_29_4_1_U53  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11s_29s_29_4_1_U23   | 33   |      | 2   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11s_29s_29_4_1_U55   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_12ns_29s_30_4_1_U78  | 30   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_12ns_30s_30_4_1_U52  | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_6ns_24s_24_4_1_U47   | 33   |      | 2   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_6ns_25s_25_4_1_U46   | 33   |      | 2   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_6ns_25s_25_4_1_U77   | 50   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_25s_25_4_1_U68   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_25s_25_4_1_U69   | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_25s_25_4_1_U71   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_25s_25_4_1_U72   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7s_23s_23_4_1_U75    | 49   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7s_25s_25_4_1_U76    |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_23s_25_4_1_U30   | 53   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_24s_25_4_1_U34   | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_25s_26_4_1_U31   | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_25s_26_4_1_U67   | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_26s_26_4_1_U66   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_27s_28_4_1_U80   | 35   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_28s_28_4_1_U79   | 74   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_25s_25_4_1_U36    | 21   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_25s_25_4_1_U44    | 29   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_25s_25_4_1_U73    | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_25s_25_4_1_U74    | 3    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_25s_26_4_1_U65    |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_26s_26_4_1_U63    | 27   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_26s_26_4_1_U70    |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_31s_31_4_1_U83    | 130  |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_26s_27_4_1_U62   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_27s_27_4_1_U58   | 29   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_25s_26_4_1_U29    | 21   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_25s_26_4_1_U81    | 79   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_26s_26_4_1_U64    | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_27s_27_4_1_U59    | 27   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_31s_31_4_1_U82    | 75   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_17s_7ns_25s_25_4_1_U13   | 20   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_17s_7s_24s_25_4_1_U14    | 21   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_18s_5ns_22s_24_4_1_U11   | 83   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_16s_4ns_24s_24_4_1_U50   | 34   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_16s_4ns_24s_24_4_1_U51   | 113  |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_16s_6ns_24s_25_4_1_U18   | 36   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_16s_7ns_25s_25_4_1_U49   | 56   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_18s_6ns_23s_25_4_1_U9    | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_19s_16s_5ns_21s_24_4_1_U6    | 91   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_19s_16s_6ns_26s_27_4_1_U7    | 95   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_19s_16s_6ns_27s_27_4_1_U48   | 97   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_18s_16s_5ns_23s_24_4_1_U16   | 33   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_18s_16s_7ns_25s_26_4_1_U12   | 50   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_19s_16s_5ns_25s_25_4_1_U10   | 121  |      | 2   |      |      |     |        |      |         |          |        |
+|     mul_19s_9ns_26_1_1_U2                      | 69   |      | 1   |      |      |     |        |      |         |          |        |
+|   regslice_both_input_r_U                      | 25   | 37   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_r_U                     | 24   | 37   |     |      |      |     |        |      |         |          |        |
++------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -82,20 +154,20 @@ SRL:              2
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 0.11%  | OK     |
-| FD                                                        | 50%       | 0.07%  | OK     |
-| LUTRAM+SRL                                                | 25%       | 0.01%  | OK     |
-| CARRY8                                                    | 25%       | 0.00%  | OK     |
+| LUT                                                       | 70%       | 3.98%  | OK     |
+| FD                                                        | 50%       | 3.80%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.39%  | OK     |
+| CARRY8                                                    | 25%       | 4.26%  | OK     |
 | MUXF7                                                     | 15%       | 0.00%  | OK     |
-| DSP                                                       | 80%       | 0.08%  | OK     |
-| RAMB/FIFO                                                 | 80%       | 0.69%  | OK     |
+| DSP                                                       | 80%       | 6.65%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
 | URAM                                                      | 80%       | 0.00%  | OK     |
-| DSP+RAMB+URAM (Avg)                                       | 70%       | 0.38%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 6.65%  | OK     |
 | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
-| Control Sets                                              | 2196      | 10     | OK     |
-| Average Fanout for modules > 100k cells                   | 4         | 1.34   | OK     |
+| Control Sets                                              | 2196      | 9      | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 0.97   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
 +-----------------------------------------------------------+-----------+--------+--------+
@@ -114,91 +186,466 @@ SRL:              2
 == Place & Route Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                        | ENDPOINT PIN                                                                                                                                                  | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                       |                                                                                                                                                               |              |            |                |          DELAY |        DELAY |
-+-------+-------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 7.331 | H_filt_FIR_U/ram_reg_bram_0/CLKARDCLK | grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/mac_muladd_16s_14s_32s_32_4_1_U1/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/A[28] |            0 |         15 |          2.025 |          1.267 |        0.758 |
-| Path2 | 7.356 | H_filt_FIR_U/ram_reg_bram_0/CLKBWRCLK | H_filt_FIR_U/ram_reg_bram_0/DINADIN[6]                                                                                                                        |            1 |          1 |          2.169 |          1.465 |        0.704 |
-| Path3 | 7.382 | H_filt_FIR_U/ram_reg_bram_0/CLKBWRCLK | H_filt_FIR_U/ram_reg_bram_0/DINADIN[7]                                                                                                                        |            1 |          1 |          2.133 |          1.486 |        0.647 |
-| Path4 | 7.386 | H_filt_FIR_U/ram_reg_bram_0/CLKBWRCLK | H_filt_FIR_U/ram_reg_bram_0/DINADIN[1]                                                                                                                        |            1 |          1 |          2.070 |          1.536 |        0.534 |
-| Path5 | 7.403 | H_filt_FIR_U/ram_reg_bram_0/CLKBWRCLK | H_filt_FIR_U/ram_reg_bram_0/DINADIN[0]                                                                                                                        |            1 |          1 |          2.039 |          1.609 |        0.430 |
-+-------+-------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+-----------------------------------------------------------+--------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                            | ENDPOINT PIN                                                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                           |                                                              |              |            |                |          DELAY |        DELAY |
++-------+-------+-----------------------------------------------------------+--------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 3.589 | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]/C | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0/D     |           15 |          4 |          6.407 |          2.443 |        3.964 |
+| Path2 | 3.598 | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]/C | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[17]__0/D     |           15 |          4 |          6.398 |          2.435 |        3.963 |
+| Path3 | 3.601 | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]/C | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]/D |           15 |          4 |          6.396 |          2.768 |        3.628 |
+| Path4 | 3.602 | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]/C | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[22]/D |           15 |          4 |          6.394 |          2.767 |        3.627 |
+| Path5 | 3.610 | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]/C | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[18]__0/D     |           15 |          4 |          6.386 |          2.422 |        3.964 |
++-------+-------+-----------------------------------------------------------+--------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path1 Cells                                                                                                                                             | Primitive Type         |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/mac_muladd_16s_14s_32s_32_4_1_U1/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_30                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_29                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_35                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_36                                                                                                                        | CLB.LUT.LUT3           |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +------------------------------------------------------------------+-------------------+
+    | Path1 Cells                                                      | Primitive Type    |
+    +------------------------------------------------------------------+-------------------+
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[17]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[22]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[18]__0           | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------+-------------------+
 
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path2 Cells                                                                                                                                             | Primitive Type         |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/mac_muladd_16s_14s_32s_32_4_1_U1/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_30                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_29                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_35                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_36                                                                                                                        | CLB.LUT.LUT3           |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +------------------------------------------------------------------+-------------------+
+    | Path2 Cells                                                      | Primitive Type    |
+    +------------------------------------------------------------------+-------------------+
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[17]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[22]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[18]__0           | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------+-------------------+
 
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path3 Cells                                                                                                                                             | Primitive Type         |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/mac_muladd_16s_14s_32s_32_4_1_U1/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_30                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_29                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_35                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_36                                                                                                                        | CLB.LUT.LUT3           |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +------------------------------------------------------------------+-------------------+
+    | Path3 Cells                                                      | Primitive Type    |
+    +------------------------------------------------------------------+-------------------+
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[17]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[22]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[18]__0           | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------+-------------------+
 
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path4 Cells                                                                                                                                             | Primitive Type         |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/mac_muladd_16s_14s_32s_32_4_1_U1/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_30                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_29                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_35                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_36                                                                                                                        | CLB.LUT.LUT3           |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +------------------------------------------------------------------+-------------------+
+    | Path4 Cells                                                      | Primitive Type    |
+    +------------------------------------------------------------------+-------------------+
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[17]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[22]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[18]__0           | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------+-------------------+
 
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path5 Cells                                                                                                                                             | Primitive Type         |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_HLS_FIR_Pipeline_VITIS_LOOP_29_1_fu_72/mac_muladd_16s_14s_32s_32_4_1_U1/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_30                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_29                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_35                                                                                                                        | CLB.LUT.LUT3           |
-    | H_filt_FIR_U/ram_reg_bram_0                                                                                                                             | BLOCKRAM.BRAM.RAMB18E2 |
-    | H_filt_FIR_U/ram_reg_bram_0_i_36                                                                                                                        | CLB.LUT.LUT3           |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +------------------------------------------------------------------+-------------------+
+    | Path5 Cells                                                      | Primitive Type    |
+    +------------------------------------------------------------------+-------------------+
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[17]__0           | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_368_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_241     | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_210 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_195     | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_202     | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_140 | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_94  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_84      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_92      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_50  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_34      | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_42      | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_16  | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_7       | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974[24]_i_14      | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[24]_i_1   | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/add_ln31_102_reg_10974_reg[22]       | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/p_ZL10H_filt_FIR_384_reg[2]          | REGISTER.SDR.FDRE |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_132         | CLB.LUT.LUT2      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_117     | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_110         | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_118         | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_91      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_62          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_70          | CLB.LUT.LUT4      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_35      | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[19]__0_i_23          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_8       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_20          | CLB.LUT.LUT3      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_4           | CLB.LUT.LUT5      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773[15]__0_i_12          | CLB.LUT.LUT6      |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[15]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[19]__0_i_1       | CLB.CARRY.CARRY8  |
+    | grp_FIR_filter_392_s_fu_827/tmp15_reg_10773_reg[18]__0           | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------+-------------------+
 
 
 ================================================================

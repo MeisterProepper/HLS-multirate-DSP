@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="HLS_FIR_HLS_FIR,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.474000,HLS_SYN_LAT=794,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=174,HLS_SYN_LUT=330,HLS_VERSION=2024_2}" *)
+(* CORE_GENERATION_INFO="HLS_FIR_HLS_FIR,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.474000,HLS_SYN_LAT=797,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=195,HLS_SYN_LUT=346,HLS_VERSION=2024_2}" *)
 
 module HLS_FIR (
         ap_clk,
@@ -19,11 +19,9 @@ module HLS_FIR (
         output_r_TREADY
 );
 
-parameter    ap_ST_fsm_state1 = 5'd1;
-parameter    ap_ST_fsm_state2 = 5'd2;
-parameter    ap_ST_fsm_state3 = 5'd4;
-parameter    ap_ST_fsm_state4 = 5'd8;
-parameter    ap_ST_fsm_state5 = 5'd16;
+parameter    ap_ST_fsm_state1 = 3'd1;
+parameter    ap_ST_fsm_state2 = 3'd2;
+parameter    ap_ST_fsm_state3 = 3'd4;
 
 input   ap_clk;
 input   ap_rst_n;
@@ -35,59 +33,30 @@ output   output_r_TVALID;
 input   output_r_TREADY;
 
  reg    ap_rst_n_inv;
-reg   [8:0] H_filt_FIR_address0;
-reg    H_filt_FIR_ce0;
-reg    H_filt_FIR_we0;
-reg   [15:0] H_filt_FIR_d0;
-wire   [15:0] H_filt_FIR_q0;
-reg    H_filt_FIR_ce1;
-wire   [15:0] H_filt_FIR_q1;
 reg    input_r_TDATA_blk_n;
-(* fsm_encoding = "none" *) reg   [4:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    output_r_TDATA_blk_n;
-wire    ap_CS_fsm_state4;
-wire    ap_CS_fsm_state5;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_done;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_idle;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_ready;
-wire   [30:0] grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_FIR_accu32_out;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_FIR_accu32_out_ap_vld;
-wire   [8:0] grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_H_filt_FIR_address0;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_H_filt_FIR_ce0;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_done;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_idle;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_ready;
-wire   [8:0] grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_address0;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_ce0;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_we0;
-wire   [15:0] grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_d0;
-wire   [8:0] grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_address1;
-wire    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_ce1;
-reg    grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg;
 wire    ap_CS_fsm_state2;
-reg   [30:0] FIR_accu32_loc_fu_48;
 wire    ap_CS_fsm_state3;
-reg    grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg;
-wire    H_filt_FIR_we0_out;
-reg    H_filt_FIR_we0_local;
-reg    H_filt_FIR_ce0_local;
-reg   [4:0] ap_NS_fsm;
+reg   [15:0] test_reg_60;
+wire   [15:0] grp_FIR_filter_392_s_fu_49_ap_return;
+wire    grp_FIR_filter_392_s_fu_49_ap_start;
+wire    grp_FIR_filter_392_s_fu_49_ap_done;
+wire    grp_FIR_filter_392_s_fu_49_ap_idle;
+wire    grp_FIR_filter_392_s_fu_49_ap_ready;
+reg    grp_FIR_filter_392_s_fu_49_ap_start_reg;
+reg   [2:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
-wire    ap_ST_fsm_state2_blk;
+reg    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
-reg    ap_ST_fsm_state4_blk;
-reg    ap_ST_fsm_state5_blk;
 wire    regslice_both_output_r_U_apdone_blk;
-reg    ap_block_state5;
+reg    ap_block_state3;
 wire    regslice_both_input_r_U_apdone_blk;
 wire   [15:0] input_r_TDATA_int_regslice;
 wire    input_r_TVALID_int_regslice;
 reg    input_r_TREADY_int_regslice;
 wire    regslice_both_input_r_U_ack_in;
-wire   [15:0] output_r_TDATA_int_regslice;
 reg    output_r_TVALID_int_regslice;
 wire    output_r_TREADY_int_regslice;
 wire    regslice_both_output_r_U_vld_out;
@@ -95,56 +64,19 @@ wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 5'd1;
-#0 grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg = 1'b0;
-#0 grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg = 1'b0;
+#0 ap_CS_fsm = 3'd1;
+#0 grp_FIR_filter_392_s_fu_49_ap_start_reg = 1'b0;
 end
 
-HLS_FIR_H_filt_FIR_RAM_AUTO_1R1W #(
-    .DataWidth( 16 ),
-    .AddressRange( 392 ),
-    .AddressWidth( 9 ))
-H_filt_FIR_U(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .address0(H_filt_FIR_address0),
-    .ce0(H_filt_FIR_ce0),
-    .we0(H_filt_FIR_we0),
-    .d0(H_filt_FIR_d0),
-    .q0(H_filt_FIR_q0),
-    .address1(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_address1),
-    .ce1(H_filt_FIR_ce1),
-    .q1(H_filt_FIR_q1)
-);
-
-HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_30_1 grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72(
+HLS_FIR_FIR_filter_392_s grp_FIR_filter_392_s_fu_49(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start),
-    .ap_done(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_done),
-    .ap_idle(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_idle),
-    .ap_ready(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_ready),
-    .FIR_accu32_out(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_FIR_accu32_out),
-    .FIR_accu32_out_ap_vld(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_FIR_accu32_out_ap_vld),
-    .H_filt_FIR_address0(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_H_filt_FIR_address0),
-    .H_filt_FIR_ce0(grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_H_filt_FIR_ce0),
-    .H_filt_FIR_q0(H_filt_FIR_q0)
-);
-
-HLS_FIR_HLS_FIR_Pipeline_VITIS_LOOP_36_2 grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start),
-    .ap_done(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_done),
-    .ap_idle(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_idle),
-    .ap_ready(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_ready),
-    .H_filt_FIR_address0(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_address0),
-    .H_filt_FIR_ce0(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_ce0),
-    .H_filt_FIR_we0(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_we0),
-    .H_filt_FIR_d0(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_d0),
-    .H_filt_FIR_address1(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_address1),
-    .H_filt_FIR_ce1(grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_ce1),
-    .H_filt_FIR_q1(H_filt_FIR_q1)
+    .ap_start(grp_FIR_filter_392_s_fu_49_ap_start),
+    .ap_done(grp_FIR_filter_392_s_fu_49_ap_done),
+    .ap_idle(grp_FIR_filter_392_s_fu_49_ap_idle),
+    .ap_ready(grp_FIR_filter_392_s_fu_49_ap_ready),
+    .x_n(test_reg_60),
+    .ap_return(grp_FIR_filter_392_s_fu_49_ap_return)
 );
 
 HLS_FIR_regslice_both #(
@@ -166,7 +98,7 @@ HLS_FIR_regslice_both #(
 regslice_both_output_r_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .data_in(output_r_TDATA_int_regslice),
+    .data_in(grp_FIR_filter_392_s_fu_49_ap_return),
     .vld_in(output_r_TVALID_int_regslice),
     .ack_in(output_r_TREADY_int_regslice),
     .data_out(output_r_TDATA),
@@ -185,91 +117,19 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg <= 1'b0;
+        grp_FIR_filter_392_s_fu_49_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state2)) begin
-            grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg <= 1'b1;
-        end else if ((grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_ready == 1'b1)) begin
-            grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg <= 1'b0;
+        if (((input_r_TVALID_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+            grp_FIR_filter_392_s_fu_49_ap_start_reg <= 1'b1;
+        end else if ((grp_FIR_filter_392_s_fu_49_ap_ready == 1'b1)) begin
+            grp_FIR_filter_392_s_fu_49_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b1 == ap_CS_fsm_state4) & (output_r_TREADY_int_regslice == 1'b1))) begin
-            grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg <= 1'b1;
-        end else if ((grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_ready == 1'b1)) begin
-            grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_FIR_accu32_out_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
-        FIR_accu32_loc_fu_48 <= grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_FIR_accu32_out;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_address0 = grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        H_filt_FIR_address0 = grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_H_filt_FIR_address0;
-    end else begin
-        H_filt_FIR_address0 = 9'd391;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_ce0 = grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        H_filt_FIR_ce0 = grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_H_filt_FIR_ce0;
-    end else begin
-        H_filt_FIR_ce0 = H_filt_FIR_ce0_local;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
-        H_filt_FIR_ce0_local = 1'b1;
-    end else begin
-        H_filt_FIR_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_ce1 = grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_ce1;
-    end else begin
-        H_filt_FIR_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_d0 = grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_d0;
-    end else begin
-        H_filt_FIR_d0 = input_r_TDATA_int_regslice;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_we0 = grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_H_filt_FIR_we0;
-    end else begin
-        H_filt_FIR_we0 = (1'b0 | H_filt_FIR_we0_out);
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
-        H_filt_FIR_we0_local = 1'b1;
-    end else begin
-        H_filt_FIR_we0_local = 1'b0;
+    if ((1'b1 == ap_CS_fsm_state1)) begin
+        test_reg_60 <= input_r_TDATA_int_regslice;
     end
 end
 
@@ -281,29 +141,19 @@ always @ (*) begin
     end
 end
 
-assign ap_ST_fsm_state2_blk = 1'b0;
+always @ (*) begin
+    if (((output_r_TREADY_int_regslice == 1'b0) | (grp_FIR_filter_392_s_fu_49_ap_done == 1'b0))) begin
+        ap_ST_fsm_state2_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state2_blk = 1'b0;
+    end
+end
 
 always @ (*) begin
-    if ((grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_done == 1'b0)) begin
+    if ((1'b1 == ap_block_state3)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((output_r_TREADY_int_regslice == 1'b0)) begin
-        ap_ST_fsm_state4_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state4_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_done == 1'b0) | (1'b1 == ap_block_state5))) begin
-        ap_ST_fsm_state5_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state5_blk = 1'b0;
     end
 end
 
@@ -316,7 +166,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
+    if (((input_r_TVALID_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         input_r_TREADY_int_regslice = 1'b1;
     end else begin
         input_r_TREADY_int_regslice = 1'b0;
@@ -324,7 +174,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
         output_r_TDATA_blk_n = output_r_TREADY_int_regslice;
     end else begin
         output_r_TDATA_blk_n = 1'b1;
@@ -332,7 +182,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (output_r_TREADY_int_regslice == 1'b1))) begin
+    if ((~((output_r_TREADY_int_regslice == 1'b0) | (grp_FIR_filter_392_s_fu_49_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state2))) begin
         output_r_TVALID_int_regslice = 1'b1;
     end else begin
         output_r_TVALID_int_regslice = 1'b0;
@@ -342,34 +192,24 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
+            if (((input_r_TVALID_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
+            if ((~((output_r_TREADY_int_regslice == 1'b0) | (grp_FIR_filter_392_s_fu_49_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state2))) begin
+                ap_NS_fsm = ap_ST_fsm_state3;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state2;
+            end
         end
         ap_ST_fsm_state3 : begin
-            if (((grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end
-        end
-        ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & (output_r_TREADY_int_regslice == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state5;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end
-        end
-        ap_ST_fsm_state5 : begin
-            if ((~((grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_done == 1'b0) | (1'b1 == ap_block_state5)) & (1'b1 == ap_CS_fsm_state5))) begin
+            if (((1'b0 == ap_block_state3) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state5;
+                ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
         default : begin
@@ -378,33 +218,23 @@ always @ (*) begin
     endcase
 end
 
-assign H_filt_FIR_we0_out = H_filt_FIR_we0_local;
-
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
-
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
-
 always @ (*) begin
-    ap_block_state5 = ((output_r_TREADY_int_regslice == 1'b0) | (regslice_both_output_r_U_apdone_blk == 1'b1));
+    ap_block_state3 = ((output_r_TREADY_int_regslice == 1'b0) | (regslice_both_output_r_U_apdone_blk == 1'b1));
 end
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start = grp_HLS_FIR_Pipeline_VITIS_LOOP_30_1_fu_72_ap_start_reg;
-
-assign grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start = grp_HLS_FIR_Pipeline_VITIS_LOOP_36_2_fu_81_ap_start_reg;
+assign grp_FIR_filter_392_s_fu_49_ap_start = grp_FIR_filter_392_s_fu_49_ap_start_reg;
 
 assign input_r_TREADY = regslice_both_input_r_U_ack_in;
-
-assign output_r_TDATA_int_regslice = {{FIR_accu32_loc_fu_48[30:15]}};
 
 assign output_r_TVALID = regslice_both_output_r_U_vld_out;
 

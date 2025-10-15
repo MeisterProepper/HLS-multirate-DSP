@@ -358,9 +358,11 @@ const short b_FIR[392]={
 
 
 
-
+__attribute__((sdx_kernel("HLS_FIR", 0))) void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output);
 void fir_function(hls::stream<short> &in, hls::stream<short> &out);
-short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift);
+
+template<int N_delays>
+short FIR_filter(short FIR_delays[], const short FIR_coe[], short x_n, int shift);
 # 2 "HLS_FIR.cpp" 2
 
 __attribute__((sdx_kernel("HLS_FIR", 0))) void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
@@ -381,27 +383,32 @@ __attribute__((sdx_kernel("HLS_FIR", 0))) void HLS_FIR(hls::stream<short> &input
 
 void fir_function(hls::stream<short> &in, hls::stream<short> &out){
     short test = in.read();
-    short test2 = FIR_filter(H_filt_FIR, b_FIR, 392, test, 15);
+    short test2 = FIR_filter<392>(H_filt_FIR, b_FIR, test, 15);
     out.write(test2);
 }
 
+template<int N_delays>
+short FIR_filter(short FIR_delays[], const short FIR_coe[], short x_n, int shift){
+#pragma HLS INLINE off
+#pragma HLS DEPENDENCE variable=FIR_delays inter false
 
-short FIR_filter(short FIR_delays[], const short FIR_coe[], short N_delays, short x_n, int shift){
-    short y;
+ short y;
  int FIR_accu32=0;
 
 
- FIR_delays[N_delays-1] = x_n;
 
- FIR_accu32 = 0;
- VITIS_LOOP_30_1: for(int i=0; i < N_delays; i++){
-        FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
+
+ VITIS_LOOP_32_1: for(int i=0; i < N_delays-1; i++) {
+
+        FIR_delays[i] = FIR_delays[i+1];
         }
 
+ FIR_delays[N_delays-1] = x_n;
 
 
- VITIS_LOOP_36_2: for(int i=1; i < N_delays; i++) {
-        FIR_delays[i-1] = FIR_delays[i];
+ FIR_accu32 = 0;
+ VITIS_LOOP_41_2: for(int i=0; i < N_delays; i++){
+        FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
         }
 
 
