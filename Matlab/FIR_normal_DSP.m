@@ -5,7 +5,6 @@
 %*  minimum stop-band attenuation 40 dB
 
 
-
 clear
 close('all');
 format compact
@@ -31,6 +30,8 @@ fstop = 3350;
 N_FIR = N_FIR + 2;
 b_FIR = firpm(N_FIR,fo,mo,w);
 
+% round them to 16 bits
+%b_FIR = round(b_FIR*32768)/32768;
 
 % compute the amplitude response using frequency vector
 hz = freqz(b_FIR, 1, 2*pi*freq);
@@ -41,6 +42,7 @@ plot(freq*Fs,db(hz)),grid
 title('Amplitude response of desired TUTORIAL FIR filter in dB'),
 xlabel('Frequency in Hz, Nyquist range');
 ylabel('|H| in dB');
+
 
 
 
@@ -73,17 +75,18 @@ grid on;
 
 
 
+
 %---------------------------------------------------------------------------
 % write to file !
 % create header file and info
 fprintf('coefficients are written to file ==> ');
-filename = 'FIR_normal_HLS.h';
+filename = 'FIR_normal_DSP.h';
 fprintf(filename);
 fprintf('\n\n');
 
 file_ID = fopen(filename, 'w');		% generate include-file
 fprintf(file_ID, '//------------------------------------------- \n');
-fprintf(file_ID, '// designed with -- FIR_normal_HLS.m -- \n');
+fprintf(file_ID, '// designed with -- FIR_normal_DSP.m -- \n');
 fprintf(file_ID, ['// ',date,'\n'] );
 fprintf(file_ID, '// Fs = %6.2f\n', Fs );
 fprintf(file_ID, '// fstop = %6.2f\n', fstop);
@@ -93,22 +96,17 @@ fprintf(file_ID, '// delta_stop_dB = %6.2f\n', delta_stop_dB);
 fprintf(file_ID, '// N_FIR = %d\n',  N_FIR);
 fprintf(file_ID, '//------------------------------------------- \n \n');
 
-fprintf(file_ID, '#include "ap_fixed.h" \n \n');
-
 fprintf(file_ID, '#define N_DELAYS_FIR %d\n', length(b_FIR));
 
 
-fprintf(file_ID, 'typedef ap_fixed<16,1> coef_data_t; \n');
-fprintf(file_ID, 'typedef ap_fixed<16,1> delay_data_t; \n \n');
+fprintf(file_ID, 'static short H_filter_FIR[N_DELAYS_FIR]; \n');
 
-fprintf(file_ID, 'static delay_data_t H_filt_FIR[N_DELAYS_FIR]; \n');
-
-fprintf(file_ID, 'const coef_data_t b_FIR');
+fprintf(file_ID, 'const short b_FIR');
 fprintf(file_ID,['[',num2str(length(b_FIR)),']={\n']);
 
 j = 0;
 for i= 1:length(b_FIR)
-   fprintf(file_ID,' %1.6f,', b_FIR(i));
+   fprintf(file_ID,' %6.0f,', round(b_FIR(i)*32768));
    j = j + 1;
    if j >5 
      fprintf(file_ID, '\n');
@@ -121,16 +119,16 @@ fclose(file_ID);
 
 %---------------------------------------------------------------------------
 % write to file !
-% create TS_HLS_normal.dat file
+% create TS_DSP_normal.dat file
 
 fprintf('test signal is written to file ==> ');
-filename = 'TS_HLS_normal.dat';
+filename = 'TS_DSP_normal.dat';
 fprintf(filename);
 fprintf('\n\n');
 file_ID = fopen(filename, 'w');
 
 for i = 1:length(test_signal)
-    fprintf(file_ID,'%1.6f',test_signal(i));
+    fprintf(file_ID,'%6.0f',round(test_signal(i)*32768));
     fprintf(file_ID,'\n');
 end
 
@@ -138,16 +136,16 @@ fclose(file_ID);
 
 %---------------------------------------------------------------------------
 % write to file !
-% create TS_HLS_normal.res file
+% create TS_DSP_normal.res file
 
 fprintf('golden vector is written to file ==> ');
-filename = 'TS_HLS_normal.res';
+filename = 'TS_DSP_normal.res';
 fprintf(filename);
 fprintf('\n\n');
-file_ID = fopen(filename, 'w');		% generate include-file
+file_ID = fopen(filename, 'w');
 
 for i = 1:length(my_signal)
-    fprintf(file_ID,'%1.6f',my_signal(i));
+    fprintf(file_ID,'%6.0f',round(my_signal(i)*32768));
     fprintf(file_ID,'\n');
 end
 

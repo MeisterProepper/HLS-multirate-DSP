@@ -1,5 +1,6 @@
 //------------------------------------------- 
-// designed with -- FIR_filter_DSP.m -- 
+// designed with -- FIR_normal_DSP.m -- 
+// 15-Oct-2025
 // Fs = 50000.00
 // fstop = 3350.00
 // fpass = 3100.00
@@ -7,11 +8,10 @@
 // delta_stop_dB =  40.00
 // N_FIR = 391
 //------------------------------------------- 
-#define N_delays_FIR 392
-
-// DEC FILTER
-short H_filt_FIR[N_delays_FIR]; 
-short b_FIR[392]={
+ 
+#define N_DELAYS_FIR 392
+static short H_filter_FIR[N_DELAYS_FIR]; 
+const short b_FIR[392]={
    -138,     46,     43,     41,     39,     37,
      33,     28,     21,     13,      4,     -4,
     -10,    -14,    -15,    -12,     -7,      0,
