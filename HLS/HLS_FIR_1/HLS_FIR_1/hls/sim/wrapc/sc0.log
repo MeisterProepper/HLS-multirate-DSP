@@ -1,0 +1,7 @@
+   Build using "C:/AMD/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling HLS_FIR.cpp_pre.cpp.tb.cpp
+   Compiling apatb_HLS_FIR.cpp
+   Compiling apatb_HLS_FIR_util.cpp
+   Compiling HLS_FIR_TB.cpp_pre.cpp.tb.cpp
+   Compiling apatb_HLS_FIR_ir.ll
+   Generating cosim.tv.exe

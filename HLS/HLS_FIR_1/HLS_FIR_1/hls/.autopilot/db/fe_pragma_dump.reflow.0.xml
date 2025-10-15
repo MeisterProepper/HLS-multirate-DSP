@@ -1,10 +1,10 @@
 <pragmas>
 <pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
 <pragma file="HLS_FIR.cpp" line="4" pragmaType="interface" parentfunction="HLS_FIR" mode="axis" port="input" register="1" register_mode="both" name="" depth="-1"/>
 <pragma file="HLS_FIR.cpp" line="5" pragmaType="interface" parentfunction="HLS_FIR" mode="axis" port="output" register="1" register_mode="both" name="" depth="-1"/>
 <pragma file="HLS_FIR.cpp" line="6" pragmaType="interface" parentfunction="HLS_FIR" mode="ap_ctrl_none" port="return" name=""/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
 <pragma file="HLS_FIR.cpp" line="23" pragmaType="inline" parentfunction="FIR_filter" off="1" region="0" recursive="0"/>
 <pragma file="HLS_FIR.cpp" line="24" pragmaType="dependence" parentfunction="FIR_filter" class="" direction="NODIR" type="inter" distance="0" variable="FIR_delays"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
 </pragmas>

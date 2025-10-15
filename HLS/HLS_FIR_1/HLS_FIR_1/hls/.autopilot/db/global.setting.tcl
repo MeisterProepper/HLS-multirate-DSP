@@ -46,12 +46,12 @@ set TargetInfo xck26:-sfvc784:-2LV-c
 set SourceFiles {sc {} c ../../HLS_FIR.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp bc C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp vhdl C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp sc C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp cas C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp c {}}
+set TBFiles {verilog {C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp} bc {C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp} sc {C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp} vhdl {C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp} c {} cas {C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

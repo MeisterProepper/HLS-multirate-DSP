@@ -11,9 +11,10 @@
 
 
 #define MAX_SAMPLES 4096
-
+static hls::stream<short> test_input;
+static hls::stream<short> test_output;
 int main(){
-
+    int line_no = 0;
     FILE* stimfile;
     // Open stimulus .dat file for reading
     stimfile = fopen("stimulus_01.dat", "r");    
@@ -22,7 +23,7 @@ int main(){
         exit(999);
         }
     else {
-        int line_no = 0;
+        
         double dummy1;
         printf("INFO: Reading stimulus_01.dat\n");
         while (!feof(stimfile)) {
@@ -31,10 +32,19 @@ int main(){
             if (count == EOF || count < 1)
                 break; // nichts mehr lesbar
 
-            printf("INFO: Value %lf\n", dummy1);
+            test_input.write(dummy1);
+            //printf("INFO: Value %lf\n", dummy1);
             line_no++;
         }
-    printf("INFO: Read %d samples\n", line_no);
-    fclose(stimfile);
+        
+        printf("INFO: Read %d samples\n", line_no);
+        fclose(stimfile);
     }
+
+    for (int i = 0; i< line_no; i++) {
+        HLS_FIR(test_input, test_output);       
+        printf("INFO: Value %d\n", test_output.read());
+    }
+
+    
 }

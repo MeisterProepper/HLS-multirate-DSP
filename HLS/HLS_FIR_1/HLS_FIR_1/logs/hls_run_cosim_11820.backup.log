@@ -1,0 +1,1523 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=stimulus_01.dat' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/AMD/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling HLS_FIR.cpp_pre.cpp.tb.cpp
+   Compiling apatb_HLS_FIR.cpp
+   Compiling apatb_HLS_FIR_util.cpp
+   Compiling HLS_FIR_TB.cpp_pre.cpp.tb.cpp
+   Compiling apatb_HLS_FIR_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: Reading stimulus_01.dat
+INFO: Read 460 samples
+INFO: Value 0
+INFO: Value -18
+INFO: Value -29
+INFO: Value -34
+INFO: Value -34
+INFO: Value -29
+INFO: Value -18
+INFO: Value -3
+INFO: Value 16
+INFO: Value 37
+INFO: Value 59
+INFO: Value 81
+INFO: Value 101
+INFO: Value 118
+INFO: Value 131
+INFO: Value 141
+INFO: Value 146
+INFO: Value 149
+INFO: Value 149
+INFO: Value 148
+INFO: Value 146
+INFO: Value 145
+INFO: Value 144
+INFO: Value 143
+INFO: Value 142
+INFO: Value 140
+INFO: Value 136
+INFO: Value 129
+INFO: Value 117
+INFO: Value 100
+INFO: Value 79
+INFO: Value 54
+INFO: Value 25
+INFO: Value -4
+INFO: Value -33
+INFO: Value -60
+INFO: Value -83
+INFO: Value -102
+INFO: Value -115
+INFO: Value -123
+INFO: Value -127
+INFO: Value -128
+INFO: Value -129
+INFO: Value -129
+INFO: Value -131
+INFO: Value -135
+INFO: Value -141
+INFO: Value -148
+INFO: Value -155
+INFO: Value -159
+INFO: Value -160
+INFO: Value -155
+INFO: Value -144
+INFO: Value -126
+INFO: Value -101
+INFO: Value -71
+INFO: Value -38
+INFO: Value -4
+INFO: Value 27
+INFO: Value 54
+INFO: Value 76
+INFO: Value 90
+INFO: Value 98
+INFO: Value 102
+INFO: Value 101
+INFO: Value 100
+INFO: Value 100
+INFO: Value 104
+INFO: Value 111
+INFO: Value 123
+INFO: Value 139
+INFO: Value 155
+INFO: Value 171
+INFO: Value 182
+INFO: Value 187
+INFO: Value 183
+INFO: Value 169
+INFO: Value 146
+INFO: Value 114
+INFO: Value 78
+INFO: Value 40
+INFO: Value 3
+INFO: Value -29
+INFO: Value -53
+INFO: Value -69
+INFO: Value -76
+INFO: Value -75
+INFO: Value -71
+INFO: Value -65
+INFO: Value -62
+INFO: Value -65
+INFO: Value -75
+INFO: Value -92
+INFO: Value -116
+INFO: Value -145
+INFO: Value -173
+INFO: Value -198
+INFO: Value -216
+INFO: Value -222
+INFO: Value -214
+INFO: Value -193
+INFO: Value -161
+INFO: Value -119
+INFO: Value -74
+INFO: Value -30
+INFO: Value 8
+INFO: Value 37
+INFO: Value 53
+INFO: Value 57
+INFO: Value 51
+INFO: Value 39
+INFO: Value 25
+INFO: Value 14
+INFO: Value 12
+INFO: Value 20
+INFO: Value 42
+INFO: Value 76
+INFO: Value 118
+INFO: Value 164
+INFO: Value 207
+INFO: Value 241
+INFO: Value 260
+INFO: Value 261
+INFO: Value 243
+INFO: Value 208
+INFO: Value 159
+INFO: Value 103
+INFO: Value 47
+INFO: Value -2
+INFO: Value -37
+INFO: Value -55
+INFO: Value -55
+INFO: Value -39
+INFO: Value -12
+INFO: Value 20
+INFO: Value 46
+INFO: Value 61
+INFO: Value 58
+INFO: Value 35
+INFO: Value -9
+INFO: Value -70
+INFO: Value -140
+INFO: Value -209
+INFO: Value -269
+INFO: Value -309
+INFO: Value -323
+INFO: Value -308
+INFO: Value -266
+INFO: Value -201
+INFO: Value -122
+INFO: Value -42
+INFO: Value 28
+INFO: Value 77
+INFO: Value 99
+INFO: Value 89
+INFO: Value 52
+INFO: Value -6
+INFO: Value -74
+INFO: Value -137
+INFO: Value -181
+INFO: Value -196
+INFO: Value -173
+INFO: Value -111
+INFO: Value -15
+INFO: Value 103
+INFO: Value 227
+INFO: Value 339
+INFO: Value 422
+INFO: Value 459
+INFO: Value 443
+INFO: Value 373
+INFO: Value 258
+INFO: Value 113
+INFO: Value -39
+INFO: Value -173
+INFO: Value -265
+INFO: Value -296
+INFO: Value -256
+INFO: Value -147
+INFO: Value 18
+INFO: Value 214
+INFO: Value 406
+INFO: Value 556
+INFO: Value 627
+INFO: Value 591
+INFO: Value 433
+INFO: Value 156
+INFO: Value -212
+INFO: Value -623
+INFO: Value -1007
+INFO: Value -1277
+INFO: Value -1339
+INFO: Value -1099
+INFO: Value -472
+INFO: Value 605
+INFO: Value 2171
+INFO: Value 4229
+INFO: Value 6746
+INFO: Value 9654
+INFO: Value 12854
+INFO: Value 16220
+INFO: Value 19611
+INFO: Value 22881
+INFO: Value 25888
+INFO: Value 28504
+INFO: Value 30625
+INFO: Value 32173
+INFO: Value -32433
+INFO: Value -32139
+INFO: Value -32469
+INFO: Value 32146
+INFO: Value 30682
+INFO: Value 28735
+INFO: Value 26365
+INFO: Value 23632
+INFO: Value 20593
+INFO: Value 17295
+INFO: Value 13780
+INFO: Value 10088
+INFO: Value 6254
+INFO: Value 2316
+INFO: Value -1684
+INFO: Value -5698
+INFO: Value -9668
+INFO: Value -13531
+INFO: Value -17220
+INFO: Value -20661
+INFO: Value -23786
+INFO: Value -26527
+INFO: Value -28827
+INFO: Value -30641
+INFO: Value -31936
+INFO: Value -32693
+INFO: Value 32629
+INFO: Value -32585
+INFO: Value -31747
+INFO: Value -30417
+INFO: Value -28627
+INFO: Value -26413
+INFO: Value -23811
+INFO: Value -20861
+INFO: Value -17601
+INFO: Value -14075
+INFO: Value -10327
+INFO: Value -6406
+INFO: Value -2366
+INFO: Value 1734
+INFO: Value 5831
+INFO: Value 9858
+INFO: Value 13743
+INFO: Value 17419
+INFO: Value 20819
+INFO: Value 23879
+INFO: Value 26546
+INFO: Value 28775
+INFO: Value 30530
+INFO: Value 31787
+INFO: Value 32531
+INFO: Value 32758
+INFO: Value 32473
+INFO: Value 31685
+INFO: Value 30414
+INFO: Value 28679
+INFO: Value 26509
+INFO: Value 23935
+INFO: Value 20991
+INFO: Value 17718
+INFO: Value 14161
+INFO: Value 10370
+INFO: Value 6402
+INFO: Value 2318
+INFO: Value -1817
+INFO: Value -5934
+INFO: Value -9963
+INFO: Value -13835
+INFO: Value -17483
+INFO: Value -20846
+INFO: Value -23868
+INFO: Value -26500
+INFO: Value -28702
+INFO: Value -30444
+INFO: Value -31701
+INFO: Value -32460
+INFO: Value -32713
+INFO: Value -32458
+INFO: Value -31704
+INFO: Value -30461
+INFO: Value -28747
+INFO: Value -26586
+INFO: Value -24008
+INFO: Value -21049
+INFO: Value -17752
+INFO: Value -14167
+INFO: Value -10348
+INFO: Value -6356
+INFO: Value -2256
+INFO: Value 1884
+INFO: Value 5996
+INFO: Value 10010
+INFO: Value 13861
+INFO: Value 17485
+INFO: Value 20824
+INFO: Value 23826
+INFO: Value 26446
+INFO: Value 28646
+INFO: Value 30393
+INFO: Value 31665
+INFO: Value 32443
+INFO: Value 32717
+INFO: Value 32483
+INFO: Value 31743
+INFO: Value 30508
+INFO: Value 28794
+INFO: Value 26626
+INFO: Value 24034
+INFO: Value 21057
+INFO: Value 17742
+INFO: Value 14140
+INFO: Value 10309
+INFO: Value 6311
+INFO: Value 2213
+INFO: Value -1919
+INFO: Value -6017
+INFO: Value -10015
+INFO: Value -13849
+INFO: Value -17459
+INFO: Value -20788
+INFO: Value -23787
+INFO: Value -26410
+INFO: Value -28618
+INFO: Value -30379
+INFO: Value -31665
+INFO: Value -32457
+INFO: Value -32743
+INFO: Value -32516
+INFO: Value -31778
+INFO: Value -30539
+INFO: Value -28817
+INFO: Value -26637
+INFO: Value -24032
+INFO: Value -21044
+INFO: Value -17719
+INFO: Value -14112
+INFO: Value -10281
+INFO: Value -6288
+INFO: Value -2198
+INFO: Value 1923
+INFO: Value 6010
+INFO: Value 9998
+INFO: Value 13824
+INFO: Value 17431
+INFO: Value 20761
+INFO: Value 23765
+INFO: Value 26397
+INFO: Value 28615
+INFO: Value 30385
+INFO: Value 31680
+INFO: Value 32478
+INFO: Value 32766
+INFO: Value 32537
+INFO: Value 31794
+INFO: Value 30548
+INFO: Value 28817
+INFO: Value 26628
+INFO: Value 24017
+INFO: Value 21025
+INFO: Value 17699
+INFO: Value 14095
+INFO: Value 10270
+INFO: Value 6284
+INFO: Value 2203
+INFO: Value -1911
+INFO: Value -5993
+INFO: Value -9977
+INFO: Value -13804
+INFO: Value -17413
+INFO: Value -20748
+INFO: Value -23757
+INFO: Value -26394
+INFO: Value -28616
+INFO: Value -30388
+INFO: Value -31681
+INFO: Value -32474
+INFO: Value -32754
+INFO: Value -32514
+INFO: Value -31758
+INFO: Value -30497
+INFO: Value -28751
+INFO: Value -26546
+INFO: Value -23917
+INFO: Value -20906
+INFO: Value -17560
+INFO: Value -13953
+INFO: Value -10127
+INFO: Value -6141
+INFO: Value -2058
+INFO: Value 2057
+INFO: Value 6140
+INFO: Value 10126
+INFO: Value 13952
+INFO: Value 17559
+INFO: Value 20888
+INFO: Value 23888
+INFO: Value 26511
+INFO: Value 28716
+INFO: Value 30468
+INFO: Value 31740
+INFO: Value 32511
+INFO: Value -32767
+INFO: Value 32511
+INFO: Value 31740
+INFO: Value 30468
+INFO: Value 28716
+INFO: Value 26511
+INFO: Value 23888
+INFO: Value 20888
+INFO: Value 17559
+INFO: Value 13952
+INFO: Value 10126
+INFO: Value 6140
+INFO: Value 2057
+INFO: Value -2058
+INFO: Value -6141
+INFO: Value -10127
+INFO: Value -13953
+INFO: Value -17560
+INFO: Value -20889
+INFO: Value -23889
+INFO: Value -26512
+INFO: Value -28717
+INFO: Value -30469
+INFO: Value -31741
+INFO: Value -32512
+INFO: Value 32766
+INFO: Value -32512
+INFO: Value -31741
+INFO: Value -30469
+INFO: Value -28717
+INFO: Value -26512
+INFO: Value -23889
+INFO: Value -20889
+INFO: Value -17560
+INFO: Value -13953
+INFO: Value -10127
+INFO: Value -6141
+INFO: Value -2058
+INFO: Value 2057
+INFO: Value 6140
+INFO: Value 10126
+INFO: Value 13952
+INFO: Value 17559
+INFO: Value 20888
+INFO: Value 23888
+INFO: Value 26511
+INFO: Value 28716
+INFO: Value 30468
+INFO: Value 31740
+INFO: Value 32511
+INFO: Value -32767
+INFO: Value 32511
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\HLS-multirate-DSP\HLS\HLS_FIR_1\HLS_FIR_1\hls\sim\verilog>set PATH= 
+
+C:\HLS-multirate-DSP\HLS\HLS_FIR_1\HLS_FIR_1\hls\sim\verilog>call C:/AMD/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_HLS_FIR_top glbl -Oenable_linking_all_libraries  -prj HLS_FIR.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s HLS_FIR  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMD/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_HLS_FIR_top glbl -Oenable_linking_all_libraries -prj HLS_FIR.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s HLS_FIR 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/AESL_axi_s_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/AESL_axi_s_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_HLS_FIR_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_32_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_32_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_b_FIR_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_b_FIR_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_mac_muladd_16s_14s_32s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module HLS_FIR_mac_muladd_16s_14s_32s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_s_H_filt_...
+Compiling module xil_defaultlib.HLS_FIR_flow_control_loop_pipe_s...
+Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_Pipeline_...
+Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_Pipeline_...
+Compiling module xil_defaultlib.HLS_FIR_mac_muladd_16s_14s_32s_3...
+Compiling module xil_defaultlib.HLS_FIR_mac_muladd_16s_14s_32s_3...
+Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_Pipeline_...
+Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_s
+Compiling module xil_defaultlib.HLS_FIR_regslice_both(DataWidth=...
+Compiling module xil_defaultlib.HLS_FIR
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_input_r
+Compiling module xil_defaultlib.AESL_axi_s_output_r
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_HLS_FIR_top
+Compiling module work.glbl
+Built simulation snapshot HLS_FIR
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Oct 15 22:31:18 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/HLS_FIR/xsim_script.tcl
+# xsim {HLS_FIR} -autoloadwcfg -tclbatch {HLS_FIR.tcl}
+Time resolution is 1 ps
+source HLS_FIR.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 460 [0.00%] @ "125000"
+// RTL Simulation : 1 / 460 [99.50%] @ "8085000"
+// RTL Simulation : 2 / 460 [199.00%] @ "16025000"
+// RTL Simulation : 3 / 460 [298.49%] @ "23965000"
+// RTL Simulation : 4 / 460 [298.49%] @ "31905000"
+// RTL Simulation : 5 / 460 [298.49%] @ "39845000"
+// RTL Simulation : 6 / 460 [298.49%] @ "47785000"
+// RTL Simulation : 7 / 460 [298.49%] @ "55725000"
+// RTL Simulation : 8 / 460 [298.49%] @ "63665000"
+// RTL Simulation : 9 / 460 [298.49%] @ "71605000"
+// RTL Simulation : 10 / 460 [298.49%] @ "79545000"
+// RTL Simulation : 11 / 460 [298.49%] @ "87485000"
+// RTL Simulation : 12 / 460 [298.49%] @ "95425000"
+// RTL Simulation : 13 / 460 [298.49%] @ "103365000"
+// RTL Simulation : 14 / 460 [298.49%] @ "111305000"
+// RTL Simulation : 15 / 460 [298.49%] @ "119245000"
+// RTL Simulation : 16 / 460 [298.49%] @ "127185000"
+// RTL Simulation : 17 / 460 [298.49%] @ "135125000"
+// RTL Simulation : 18 / 460 [298.49%] @ "143065000"
+// RTL Simulation : 19 / 460 [298.49%] @ "151005000"
+// RTL Simulation : 20 / 460 [298.49%] @ "158945000"
+// RTL Simulation : 21 / 460 [298.49%] @ "166885000"
+// RTL Simulation : 22 / 460 [298.49%] @ "174825000"
+// RTL Simulation : 23 / 460 [298.49%] @ "182765000"
+// RTL Simulation : 24 / 460 [298.49%] @ "190705000"
+// RTL Simulation : 25 / 460 [298.49%] @ "198645000"
+// RTL Simulation : 26 / 460 [298.49%] @ "206585000"
+// RTL Simulation : 27 / 460 [298.49%] @ "214525000"
+// RTL Simulation : 28 / 460 [298.49%] @ "222465000"
+// RTL Simulation : 29 / 460 [298.49%] @ "230405000"
+// RTL Simulation : 30 / 460 [298.49%] @ "238345000"
+// RTL Simulation : 31 / 460 [298.49%] @ "246285000"
+// RTL Simulation : 32 / 460 [298.49%] @ "254225000"
+// RTL Simulation : 33 / 460 [298.49%] @ "262165000"
+// RTL Simulation : 34 / 460 [298.49%] @ "270105000"
+// RTL Simulation : 35 / 460 [298.49%] @ "278045000"
+// RTL Simulation : 36 / 460 [298.49%] @ "285985000"
+// RTL Simulation : 37 / 460 [298.49%] @ "293925000"
+// RTL Simulation : 38 / 460 [298.49%] @ "301865000"
+// RTL Simulation : 39 / 460 [298.49%] @ "309805000"
+// RTL Simulation : 40 / 460 [298.49%] @ "317745000"
+// RTL Simulation : 41 / 460 [298.49%] @ "325685000"
+// RTL Simulation : 42 / 460 [298.49%] @ "333625000"
+// RTL Simulation : 43 / 460 [298.49%] @ "341565000"
+// RTL Simulation : 44 / 460 [298.49%] @ "349505000"
+// RTL Simulation : 45 / 460 [298.49%] @ "357445000"
+// RTL Simulation : 46 / 460 [298.49%] @ "365385000"
+// RTL Simulation : 47 / 460 [298.49%] @ "373325000"
+// RTL Simulation : 48 / 460 [298.49%] @ "381265000"
+// RTL Simulation : 49 / 460 [298.49%] @ "389205000"
+// RTL Simulation : 50 / 460 [298.49%] @ "397145000"
+// RTL Simulation : 51 / 460 [298.49%] @ "405085000"
+// RTL Simulation : 52 / 460 [298.49%] @ "413025000"
+// RTL Simulation : 53 / 460 [298.49%] @ "420965000"
+// RTL Simulation : 54 / 460 [298.49%] @ "428905000"
+// RTL Simulation : 55 / 460 [298.49%] @ "436845000"
+// RTL Simulation : 56 / 460 [298.49%] @ "444785000"
+// RTL Simulation : 57 / 460 [298.49%] @ "452725000"
+// RTL Simulation : 58 / 460 [298.49%] @ "460665000"
+// RTL Simulation : 59 / 460 [298.49%] @ "468605000"
+// RTL Simulation : 60 / 460 [298.49%] @ "476545000"
+// RTL Simulation : 61 / 460 [298.49%] @ "484485000"
+// RTL Simulation : 62 / 460 [298.49%] @ "492425000"
+// RTL Simulation : 63 / 460 [298.49%] @ "500365000"
+// RTL Simulation : 64 / 460 [298.49%] @ "508305000"
+// RTL Simulation : 65 / 460 [298.49%] @ "516245000"
+// RTL Simulation : 66 / 460 [298.49%] @ "524185000"
+// RTL Simulation : 67 / 460 [298.49%] @ "532125000"
+// RTL Simulation : 68 / 460 [298.49%] @ "540065000"
+// RTL Simulation : 69 / 460 [298.49%] @ "548005000"
+// RTL Simulation : 70 / 460 [298.49%] @ "555945000"
+// RTL Simulation : 71 / 460 [298.49%] @ "563885000"
+// RTL Simulation : 72 / 460 [298.49%] @ "571825000"
+// RTL Simulation : 73 / 460 [298.49%] @ "579765000"
+// RTL Simulation : 74 / 460 [298.49%] @ "587705000"
+// RTL Simulation : 75 / 460 [298.49%] @ "595645000"
+// RTL Simulation : 76 / 460 [298.49%] @ "603585000"
+// RTL Simulation : 77 / 460 [298.49%] @ "611525000"
+// RTL Simulation : 78 / 460 [298.49%] @ "619465000"
+// RTL Simulation : 79 / 460 [298.49%] @ "627405000"
+// RTL Simulation : 80 / 460 [298.49%] @ "635345000"
+// RTL Simulation : 81 / 460 [298.49%] @ "643285000"
+// RTL Simulation : 82 / 460 [298.49%] @ "651225000"
+// RTL Simulation : 83 / 460 [298.49%] @ "659165000"
+// RTL Simulation : 84 / 460 [298.49%] @ "667105000"
+// RTL Simulation : 85 / 460 [298.49%] @ "675045000"
+// RTL Simulation : 86 / 460 [298.49%] @ "682985000"
+// RTL Simulation : 87 / 460 [298.49%] @ "690925000"
+// RTL Simulation : 88 / 460 [298.49%] @ "698865000"
+// RTL Simulation : 89 / 460 [298.49%] @ "706805000"
+// RTL Simulation : 90 / 460 [298.49%] @ "714745000"
+// RTL Simulation : 91 / 460 [298.49%] @ "722685000"
+// RTL Simulation : 92 / 460 [298.49%] @ "730625000"
+// RTL Simulation : 93 / 460 [298.49%] @ "738565000"
+// RTL Simulation : 94 / 460 [298.49%] @ "746505000"
+// RTL Simulation : 95 / 460 [298.49%] @ "754445000"
+// RTL Simulation : 96 / 460 [298.49%] @ "762385000"
+// RTL Simulation : 97 / 460 [298.49%] @ "770325000"
+// RTL Simulation : 98 / 460 [298.49%] @ "778265000"
+// RTL Simulation : 99 / 460 [298.49%] @ "786205000"
+// RTL Simulation : 100 / 460 [298.49%] @ "794145000"
+// RTL Simulation : 101 / 460 [298.49%] @ "802085000"
+// RTL Simulation : 102 / 460 [298.49%] @ "810025000"
+// RTL Simulation : 103 / 460 [298.49%] @ "817965000"
+// RTL Simulation : 104 / 460 [298.49%] @ "825905000"
+// RTL Simulation : 105 / 460 [298.49%] @ "833845000"
+// RTL Simulation : 106 / 460 [298.49%] @ "841785000"
+// RTL Simulation : 107 / 460 [298.49%] @ "849725000"
+// RTL Simulation : 108 / 460 [298.49%] @ "857665000"
+// RTL Simulation : 109 / 460 [298.49%] @ "865605000"
+// RTL Simulation : 110 / 460 [298.49%] @ "873545000"
+// RTL Simulation : 111 / 460 [298.49%] @ "881485000"
+// RTL Simulation : 112 / 460 [298.49%] @ "889425000"
+// RTL Simulation : 113 / 460 [298.49%] @ "897365000"
+// RTL Simulation : 114 / 460 [298.49%] @ "905305000"
+// RTL Simulation : 115 / 460 [298.49%] @ "913245000"
+// RTL Simulation : 116 / 460 [298.49%] @ "921185000"
+// RTL Simulation : 117 / 460 [298.49%] @ "929125000"
+// RTL Simulation : 118 / 460 [298.49%] @ "937065000"
+// RTL Simulation : 119 / 460 [298.49%] @ "945005000"
+// RTL Simulation : 120 / 460 [298.49%] @ "952945000"
+// RTL Simulation : 121 / 460 [298.49%] @ "960885000"
+// RTL Simulation : 122 / 460 [298.49%] @ "968825000"
+// RTL Simulation : 123 / 460 [298.49%] @ "976765000"
+// RTL Simulation : 124 / 460 [298.49%] @ "984705000"
+// RTL Simulation : 125 / 460 [298.49%] @ "992645000"
+// RTL Simulation : 126 / 460 [298.49%] @ "1000585000"
+// RTL Simulation : 127 / 460 [298.49%] @ "1008525000"
+// RTL Simulation : 128 / 460 [298.49%] @ "1016465000"
+// RTL Simulation : 129 / 460 [298.49%] @ "1024405000"
+// RTL Simulation : 130 / 460 [298.49%] @ "1032345000"
+// RTL Simulation : 131 / 460 [298.49%] @ "1040285000"
+// RTL Simulation : 132 / 460 [298.49%] @ "1048225000"
+// RTL Simulation : 133 / 460 [298.49%] @ "1056165000"
+// RTL Simulation : 134 / 460 [298.49%] @ "1064105000"
+// RTL Simulation : 135 / 460 [298.49%] @ "1072045000"
+// RTL Simulation : 136 / 460 [298.49%] @ "1079985000"
+// RTL Simulation : 137 / 460 [298.49%] @ "1087925000"
+// RTL Simulation : 138 / 460 [298.49%] @ "1095865000"
+// RTL Simulation : 139 / 460 [298.49%] @ "1103805000"
+// RTL Simulation : 140 / 460 [298.49%] @ "1111745000"
+// RTL Simulation : 141 / 460 [298.49%] @ "1119685000"
+// RTL Simulation : 142 / 460 [298.49%] @ "1127625000"
+// RTL Simulation : 143 / 460 [298.49%] @ "1135565000"
+// RTL Simulation : 144 / 460 [298.49%] @ "1143505000"
+// RTL Simulation : 145 / 460 [298.49%] @ "1151445000"
+// RTL Simulation : 146 / 460 [298.49%] @ "1159385000"
+// RTL Simulation : 147 / 460 [298.49%] @ "1167325000"
+// RTL Simulation : 148 / 460 [298.49%] @ "1175265000"
+// RTL Simulation : 149 / 460 [298.49%] @ "1183205000"
+// RTL Simulation : 150 / 460 [298.49%] @ "1191145000"
+// RTL Simulation : 151 / 460 [298.49%] @ "1199085000"
+// RTL Simulation : 152 / 460 [298.49%] @ "1207025000"
+// RTL Simulation : 153 / 460 [298.49%] @ "1214965000"
+// RTL Simulation : 154 / 460 [298.49%] @ "1222905000"
+// RTL Simulation : 155 / 460 [298.49%] @ "1230845000"
+// RTL Simulation : 156 / 460 [298.49%] @ "1238785000"
+// RTL Simulation : 157 / 460 [298.49%] @ "1246725000"
+// RTL Simulation : 158 / 460 [298.49%] @ "1254665000"
+// RTL Simulation : 159 / 460 [298.49%] @ "1262605000"
+// RTL Simulation : 160 / 460 [298.49%] @ "1270545000"
+// RTL Simulation : 161 / 460 [298.49%] @ "1278485000"
+// RTL Simulation : 162 / 460 [298.49%] @ "1286425000"
+// RTL Simulation : 163 / 460 [298.49%] @ "1294365000"
+// RTL Simulation : 164 / 460 [298.49%] @ "1302305000"
+// RTL Simulation : 165 / 460 [298.49%] @ "1310245000"
+// RTL Simulation : 166 / 460 [298.49%] @ "1318185000"
+// RTL Simulation : 167 / 460 [298.49%] @ "1326125000"
+// RTL Simulation : 168 / 460 [298.49%] @ "1334065000"
+// RTL Simulation : 169 / 460 [298.49%] @ "1342005000"
+// RTL Simulation : 170 / 460 [298.49%] @ "1349945000"
+// RTL Simulation : 171 / 460 [298.49%] @ "1357885000"
+// RTL Simulation : 172 / 460 [298.49%] @ "1365825000"
+// RTL Simulation : 173 / 460 [298.49%] @ "1373765000"
+// RTL Simulation : 174 / 460 [298.49%] @ "1381705000"
+// RTL Simulation : 175 / 460 [298.49%] @ "1389645000"
+// RTL Simulation : 176 / 460 [298.49%] @ "1397585000"
+// RTL Simulation : 177 / 460 [298.49%] @ "1405525000"
+// RTL Simulation : 178 / 460 [298.49%] @ "1413465000"
+// RTL Simulation : 179 / 460 [298.49%] @ "1421405000"
+// RTL Simulation : 180 / 460 [298.49%] @ "1429345000"
+// RTL Simulation : 181 / 460 [298.49%] @ "1437285000"
+// RTL Simulation : 182 / 460 [298.49%] @ "1445225000"
+// RTL Simulation : 183 / 460 [298.49%] @ "1453165000"
+// RTL Simulation : 184 / 460 [298.49%] @ "1461105000"
+// RTL Simulation : 185 / 460 [298.49%] @ "1469045000"
+// RTL Simulation : 186 / 460 [298.49%] @ "1476985000"
+// RTL Simulation : 187 / 460 [298.49%] @ "1484925000"
+// RTL Simulation : 188 / 460 [298.49%] @ "1492865000"
+// RTL Simulation : 189 / 460 [298.49%] @ "1500805000"
+// RTL Simulation : 190 / 460 [298.49%] @ "1508745000"
+// RTL Simulation : 191 / 460 [298.49%] @ "1516685000"
+// RTL Simulation : 192 / 460 [298.49%] @ "1524625000"
+// RTL Simulation : 193 / 460 [298.49%] @ "1532565000"
+// RTL Simulation : 194 / 460 [298.49%] @ "1540505000"
+// RTL Simulation : 195 / 460 [298.49%] @ "1548445000"
+// RTL Simulation : 196 / 460 [298.49%] @ "1556385000"
+// RTL Simulation : 197 / 460 [298.49%] @ "1564325000"
+// RTL Simulation : 198 / 460 [298.49%] @ "1572265000"
+// RTL Simulation : 199 / 460 [298.49%] @ "1580205000"
+// RTL Simulation : 200 / 460 [298.49%] @ "1588145000"
+// RTL Simulation : 201 / 460 [298.49%] @ "1596085000"
+// RTL Simulation : 202 / 460 [298.49%] @ "1604025000"
+// RTL Simulation : 203 / 460 [298.49%] @ "1611965000"
+// RTL Simulation : 204 / 460 [298.49%] @ "1619905000"
+// RTL Simulation : 205 / 460 [298.49%] @ "1627845000"
+// RTL Simulation : 206 / 460 [298.49%] @ "1635785000"
+// RTL Simulation : 207 / 460 [298.49%] @ "1643725000"
+// RTL Simulation : 208 / 460 [298.49%] @ "1651665000"
+// RTL Simulation : 209 / 460 [298.49%] @ "1659605000"
+// RTL Simulation : 210 / 460 [298.49%] @ "1667545000"
+// RTL Simulation : 211 / 460 [298.49%] @ "1675485000"
+// RTL Simulation : 212 / 460 [298.49%] @ "1683425000"
+// RTL Simulation : 213 / 460 [298.49%] @ "1691365000"
+// RTL Simulation : 214 / 460 [298.49%] @ "1699305000"
+// RTL Simulation : 215 / 460 [298.49%] @ "1707245000"
+// RTL Simulation : 216 / 460 [298.49%] @ "1715185000"
+// RTL Simulation : 217 / 460 [298.49%] @ "1723125000"
+// RTL Simulation : 218 / 460 [298.49%] @ "1731065000"
+// RTL Simulation : 219 / 460 [298.49%] @ "1739005000"
+// RTL Simulation : 220 / 460 [298.49%] @ "1746945000"
+// RTL Simulation : 221 / 460 [298.49%] @ "1754885000"
+// RTL Simulation : 222 / 460 [298.49%] @ "1762825000"
+// RTL Simulation : 223 / 460 [298.49%] @ "1770765000"
+// RTL Simulation : 224 / 460 [298.49%] @ "1778705000"
+// RTL Simulation : 225 / 460 [298.49%] @ "1786645000"
+// RTL Simulation : 226 / 460 [298.49%] @ "1794585000"
+// RTL Simulation : 227 / 460 [298.49%] @ "1802525000"
+// RTL Simulation : 228 / 460 [298.49%] @ "1810465000"
+// RTL Simulation : 229 / 460 [298.49%] @ "1818405000"
+// RTL Simulation : 230 / 460 [298.49%] @ "1826345000"
+// RTL Simulation : 231 / 460 [298.49%] @ "1834285000"
+// RTL Simulation : 232 / 460 [298.49%] @ "1842225000"
+// RTL Simulation : 233 / 460 [298.49%] @ "1850165000"
+// RTL Simulation : 234 / 460 [298.49%] @ "1858105000"
+// RTL Simulation : 235 / 460 [298.49%] @ "1866045000"
+// RTL Simulation : 236 / 460 [298.49%] @ "1873985000"
+// RTL Simulation : 237 / 460 [298.49%] @ "1881925000"
+// RTL Simulation : 238 / 460 [298.49%] @ "1889865000"
+// RTL Simulation : 239 / 460 [298.49%] @ "1897805000"
+// RTL Simulation : 240 / 460 [298.49%] @ "1905745000"
+// RTL Simulation : 241 / 460 [298.49%] @ "1913685000"
+// RTL Simulation : 242 / 460 [298.49%] @ "1921625000"
+// RTL Simulation : 243 / 460 [298.49%] @ "1929565000"
+// RTL Simulation : 244 / 460 [298.49%] @ "1937505000"
+// RTL Simulation : 245 / 460 [298.49%] @ "1945445000"
+// RTL Simulation : 246 / 460 [298.49%] @ "1953385000"
+// RTL Simulation : 247 / 460 [298.49%] @ "1961325000"
+// RTL Simulation : 248 / 460 [298.49%] @ "1969265000"
+// RTL Simulation : 249 / 460 [298.49%] @ "1977205000"
+// RTL Simulation : 250 / 460 [298.49%] @ "1985145000"
+// RTL Simulation : 251 / 460 [298.49%] @ "1993085000"
+// RTL Simulation : 252 / 460 [298.49%] @ "2001025000"
+// RTL Simulation : 253 / 460 [298.49%] @ "2008965000"
+// RTL Simulation : 254 / 460 [298.49%] @ "2016905000"
+// RTL Simulation : 255 / 460 [298.49%] @ "2024845000"
+// RTL Simulation : 256 / 460 [298.49%] @ "2032785000"
+// RTL Simulation : 257 / 460 [298.49%] @ "2040725000"
+// RTL Simulation : 258 / 460 [298.49%] @ "2048665000"
+// RTL Simulation : 259 / 460 [298.49%] @ "2056605000"
+// RTL Simulation : 260 / 460 [298.49%] @ "2064545000"
+// RTL Simulation : 261 / 460 [298.49%] @ "2072485000"
+// RTL Simulation : 262 / 460 [298.49%] @ "2080425000"
+// RTL Simulation : 263 / 460 [298.49%] @ "2088365000"
+// RTL Simulation : 264 / 460 [298.49%] @ "2096305000"
+// RTL Simulation : 265 / 460 [298.49%] @ "2104245000"
+// RTL Simulation : 266 / 460 [298.49%] @ "2112185000"
+// RTL Simulation : 267 / 460 [298.49%] @ "2120125000"
+// RTL Simulation : 268 / 460 [298.49%] @ "2128065000"
+// RTL Simulation : 269 / 460 [298.49%] @ "2136005000"
+// RTL Simulation : 270 / 460 [298.49%] @ "2143945000"
+// RTL Simulation : 271 / 460 [298.49%] @ "2151885000"
+// RTL Simulation : 272 / 460 [298.49%] @ "2159825000"
+// RTL Simulation : 273 / 460 [298.49%] @ "2167765000"
+// RTL Simulation : 274 / 460 [298.49%] @ "2175705000"
+// RTL Simulation : 275 / 460 [298.49%] @ "2183645000"
+// RTL Simulation : 276 / 460 [298.49%] @ "2191585000"
+// RTL Simulation : 277 / 460 [298.49%] @ "2199525000"
+// RTL Simulation : 278 / 460 [298.49%] @ "2207465000"
+// RTL Simulation : 279 / 460 [298.49%] @ "2215405000"
+// RTL Simulation : 280 / 460 [298.49%] @ "2223345000"
+// RTL Simulation : 281 / 460 [298.49%] @ "2231285000"
+// RTL Simulation : 282 / 460 [298.49%] @ "2239225000"
+// RTL Simulation : 283 / 460 [298.49%] @ "2247165000"
+// RTL Simulation : 284 / 460 [298.49%] @ "2255105000"
+// RTL Simulation : 285 / 460 [298.49%] @ "2263045000"
+// RTL Simulation : 286 / 460 [298.49%] @ "2270985000"
+// RTL Simulation : 287 / 460 [298.49%] @ "2278925000"
+// RTL Simulation : 288 / 460 [298.49%] @ "2286865000"
+// RTL Simulation : 289 / 460 [298.49%] @ "2294805000"
+// RTL Simulation : 290 / 460 [298.49%] @ "2302745000"
+// RTL Simulation : 291 / 460 [298.49%] @ "2310685000"
+// RTL Simulation : 292 / 460 [298.49%] @ "2318625000"
+// RTL Simulation : 293 / 460 [298.49%] @ "2326565000"
+// RTL Simulation : 294 / 460 [298.49%] @ "2334505000"
+// RTL Simulation : 295 / 460 [298.49%] @ "2342445000"
+// RTL Simulation : 296 / 460 [298.49%] @ "2350385000"
+// RTL Simulation : 297 / 460 [298.49%] @ "2358325000"
+// RTL Simulation : 298 / 460 [298.49%] @ "2366265000"
+// RTL Simulation : 299 / 460 [298.49%] @ "2374205000"
+// RTL Simulation : 300 / 460 [298.49%] @ "2382145000"
+// RTL Simulation : 301 / 460 [298.49%] @ "2390085000"
+// RTL Simulation : 302 / 460 [298.49%] @ "2398025000"
+// RTL Simulation : 303 / 460 [298.49%] @ "2405965000"
+// RTL Simulation : 304 / 460 [298.49%] @ "2413905000"
+// RTL Simulation : 305 / 460 [298.49%] @ "2421845000"
+// RTL Simulation : 306 / 460 [298.49%] @ "2429785000"
+// RTL Simulation : 307 / 460 [298.49%] @ "2437725000"
+// RTL Simulation : 308 / 460 [298.49%] @ "2445665000"
+// RTL Simulation : 309 / 460 [298.49%] @ "2453605000"
+// RTL Simulation : 310 / 460 [298.49%] @ "2461545000"
+// RTL Simulation : 311 / 460 [298.49%] @ "2469485000"
+// RTL Simulation : 312 / 460 [298.49%] @ "2477425000"
+// RTL Simulation : 313 / 460 [298.49%] @ "2485365000"
+// RTL Simulation : 314 / 460 [298.49%] @ "2493305000"
+// RTL Simulation : 315 / 460 [298.49%] @ "2501245000"
+// RTL Simulation : 316 / 460 [298.49%] @ "2509185000"
+// RTL Simulation : 317 / 460 [298.49%] @ "2517125000"
+// RTL Simulation : 318 / 460 [298.49%] @ "2525065000"
+// RTL Simulation : 319 / 460 [298.49%] @ "2533005000"
+// RTL Simulation : 320 / 460 [298.49%] @ "2540945000"
+// RTL Simulation : 321 / 460 [298.49%] @ "2548885000"
+// RTL Simulation : 322 / 460 [298.49%] @ "2556825000"
+// RTL Simulation : 323 / 460 [298.49%] @ "2564765000"
+// RTL Simulation : 324 / 460 [298.49%] @ "2572705000"
+// RTL Simulation : 325 / 460 [298.49%] @ "2580645000"
+// RTL Simulation : 326 / 460 [298.49%] @ "2588585000"
+// RTL Simulation : 327 / 460 [298.49%] @ "2596525000"
+// RTL Simulation : 328 / 460 [298.49%] @ "2604465000"
+// RTL Simulation : 329 / 460 [298.49%] @ "2612405000"
+// RTL Simulation : 330 / 460 [298.49%] @ "2620345000"
+// RTL Simulation : 331 / 460 [298.49%] @ "2628285000"
+// RTL Simulation : 332 / 460 [298.49%] @ "2636225000"
+// RTL Simulation : 333 / 460 [298.49%] @ "2644165000"
+// RTL Simulation : 334 / 460 [298.49%] @ "2652105000"
+// RTL Simulation : 335 / 460 [298.49%] @ "2660045000"
+// RTL Simulation : 336 / 460 [298.49%] @ "2667985000"
+// RTL Simulation : 337 / 460 [298.49%] @ "2675925000"
+// RTL Simulation : 338 / 460 [298.49%] @ "2683865000"
+// RTL Simulation : 339 / 460 [298.49%] @ "2691805000"
+// RTL Simulation : 340 / 460 [298.49%] @ "2699745000"
+// RTL Simulation : 341 / 460 [298.49%] @ "2707685000"
+// RTL Simulation : 342 / 460 [298.49%] @ "2715625000"
+// RTL Simulation : 343 / 460 [298.49%] @ "2723565000"
+// RTL Simulation : 344 / 460 [298.49%] @ "2731505000"
+// RTL Simulation : 345 / 460 [298.49%] @ "2739445000"
+// RTL Simulation : 346 / 460 [298.49%] @ "2747385000"
+// RTL Simulation : 347 / 460 [298.49%] @ "2755325000"
+// RTL Simulation : 348 / 460 [298.49%] @ "2763265000"
+// RTL Simulation : 349 / 460 [298.49%] @ "2771205000"
+// RTL Simulation : 350 / 460 [298.49%] @ "2779145000"
+// RTL Simulation : 351 / 460 [298.49%] @ "2787085000"
+// RTL Simulation : 352 / 460 [298.49%] @ "2795025000"
+// RTL Simulation : 353 / 460 [298.49%] @ "2802965000"
+// RTL Simulation : 354 / 460 [298.49%] @ "2810905000"
+// RTL Simulation : 355 / 460 [298.49%] @ "2818845000"
+// RTL Simulation : 356 / 460 [298.49%] @ "2826785000"
+// RTL Simulation : 357 / 460 [298.49%] @ "2834725000"
+// RTL Simulation : 358 / 460 [298.49%] @ "2842665000"
+// RTL Simulation : 359 / 460 [298.49%] @ "2850605000"
+// RTL Simulation : 360 / 460 [298.49%] @ "2858545000"
+// RTL Simulation : 361 / 460 [298.49%] @ "2866485000"
+// RTL Simulation : 362 / 460 [298.49%] @ "2874425000"
+// RTL Simulation : 363 / 460 [298.49%] @ "2882365000"
+// RTL Simulation : 364 / 460 [298.49%] @ "2890305000"
+// RTL Simulation : 365 / 460 [298.49%] @ "2898245000"
+// RTL Simulation : 366 / 460 [298.49%] @ "2906185000"
+// RTL Simulation : 367 / 460 [298.49%] @ "2914125000"
+// RTL Simulation : 368 / 460 [298.49%] @ "2922065000"
+// RTL Simulation : 369 / 460 [298.49%] @ "2930005000"
+// RTL Simulation : 370 / 460 [298.49%] @ "2937945000"
+// RTL Simulation : 371 / 460 [298.49%] @ "2945885000"
+// RTL Simulation : 372 / 460 [298.49%] @ "2953825000"
+// RTL Simulation : 373 / 460 [298.49%] @ "2961765000"
+// RTL Simulation : 374 / 460 [298.49%] @ "2969705000"
+// RTL Simulation : 375 / 460 [298.49%] @ "2977645000"
+// RTL Simulation : 376 / 460 [298.49%] @ "2985585000"
+// RTL Simulation : 377 / 460 [298.49%] @ "2993525000"
+// RTL Simulation : 378 / 460 [298.49%] @ "3001465000"
+// RTL Simulation : 379 / 460 [298.49%] @ "3009405000"
+// RTL Simulation : 380 / 460 [298.49%] @ "3017345000"
+// RTL Simulation : 381 / 460 [298.49%] @ "3025285000"
+// RTL Simulation : 382 / 460 [298.49%] @ "3033225000"
+// RTL Simulation : 383 / 460 [298.49%] @ "3041165000"
+// RTL Simulation : 384 / 460 [298.49%] @ "3049105000"
+// RTL Simulation : 385 / 460 [298.49%] @ "3057045000"
+// RTL Simulation : 386 / 460 [298.49%] @ "3064985000"
+// RTL Simulation : 387 / 460 [298.49%] @ "3072925000"
+// RTL Simulation : 388 / 460 [298.49%] @ "3080865000"
+// RTL Simulation : 389 / 460 [298.49%] @ "3088805000"
+// RTL Simulation : 390 / 460 [298.49%] @ "3096745000"
+// RTL Simulation : 391 / 460 [298.49%] @ "3104685000"
+// RTL Simulation : 392 / 460 [298.49%] @ "3112625000"
+// RTL Simulation : 393 / 460 [298.49%] @ "3120565000"
+// RTL Simulation : 394 / 460 [298.49%] @ "3128505000"
+// RTL Simulation : 395 / 460 [298.49%] @ "3136445000"
+// RTL Simulation : 396 / 460 [298.49%] @ "3144385000"
+// RTL Simulation : 397 / 460 [298.49%] @ "3152325000"
+// RTL Simulation : 398 / 460 [298.49%] @ "3160265000"
+// RTL Simulation : 399 / 460 [298.49%] @ "3168205000"
+// RTL Simulation : 400 / 460 [298.49%] @ "3176145000"
+// RTL Simulation : 401 / 460 [298.49%] @ "3184085000"
+// RTL Simulation : 402 / 460 [298.49%] @ "3192025000"
+// RTL Simulation : 403 / 460 [298.49%] @ "3199965000"
+// RTL Simulation : 404 / 460 [298.49%] @ "3207905000"
+// RTL Simulation : 405 / 460 [298.49%] @ "3215845000"
+// RTL Simulation : 406 / 460 [298.49%] @ "3223785000"
+// RTL Simulation : 407 / 460 [298.49%] @ "3231725000"
+// RTL Simulation : 408 / 460 [298.49%] @ "3239665000"
+// RTL Simulation : 409 / 460 [298.49%] @ "3247605000"
+// RTL Simulation : 410 / 460 [298.49%] @ "3255545000"
+// RTL Simulation : 411 / 460 [298.49%] @ "3263485000"
+// RTL Simulation : 412 / 460 [298.49%] @ "3271425000"
+// RTL Simulation : 413 / 460 [298.49%] @ "3279365000"
+// RTL Simulation : 414 / 460 [298.49%] @ "3287305000"
+// RTL Simulation : 415 / 460 [298.49%] @ "3295245000"
+// RTL Simulation : 416 / 460 [298.49%] @ "3303185000"
+// RTL Simulation : 417 / 460 [298.49%] @ "3311125000"
+// RTL Simulation : 418 / 460 [298.49%] @ "3319065000"
+// RTL Simulation : 419 / 460 [298.49%] @ "3327005000"
+// RTL Simulation : 420 / 460 [298.49%] @ "3334945000"
+// RTL Simulation : 421 / 460 [298.49%] @ "3342885000"
+// RTL Simulation : 422 / 460 [298.49%] @ "3350825000"
+// RTL Simulation : 423 / 460 [298.49%] @ "3358765000"
+// RTL Simulation : 424 / 460 [298.49%] @ "3366705000"
+// RTL Simulation : 425 / 460 [298.49%] @ "3374645000"
+// RTL Simulation : 426 / 460 [298.49%] @ "3382585000"
+// RTL Simulation : 427 / 460 [298.49%] @ "3390525000"
+// RTL Simulation : 428 / 460 [298.49%] @ "3398465000"
+// RTL Simulation : 429 / 460 [298.49%] @ "3406405000"
+// RTL Simulation : 430 / 460 [298.49%] @ "3414345000"
+// RTL Simulation : 431 / 460 [298.49%] @ "3422285000"
+// RTL Simulation : 432 / 460 [298.49%] @ "3430225000"
+// RTL Simulation : 433 / 460 [298.49%] @ "3438165000"
+// RTL Simulation : 434 / 460 [298.49%] @ "3446105000"
+// RTL Simulation : 435 / 460 [298.49%] @ "3454045000"
+// RTL Simulation : 436 / 460 [298.49%] @ "3461985000"
+// RTL Simulation : 437 / 460 [298.49%] @ "3469925000"
+// RTL Simulation : 438 / 460 [298.49%] @ "3477865000"
+// RTL Simulation : 439 / 460 [298.49%] @ "3485805000"
+// RTL Simulation : 440 / 460 [298.49%] @ "3493745000"
+// RTL Simulation : 441 / 460 [298.49%] @ "3501685000"
+// RTL Simulation : 442 / 460 [298.49%] @ "3509625000"
+// RTL Simulation : 443 / 460 [298.49%] @ "3517565000"
+// RTL Simulation : 444 / 460 [298.49%] @ "3525505000"
+// RTL Simulation : 445 / 460 [298.49%] @ "3533445000"
+// RTL Simulation : 446 / 460 [298.49%] @ "3541385000"
+// RTL Simulation : 447 / 460 [298.49%] @ "3549325000"
+// RTL Simulation : 448 / 460 [298.49%] @ "3557265000"
+// RTL Simulation : 449 / 460 [298.49%] @ "3565205000"
+// RTL Simulation : 450 / 460 [298.49%] @ "3573145000"
+// RTL Simulation : 451 / 460 [298.49%] @ "3581085000"
+// RTL Simulation : 452 / 460 [298.49%] @ "3589025000"
+// RTL Simulation : 453 / 460 [298.49%] @ "3596965000"
+// RTL Simulation : 454 / 460 [298.49%] @ "3604905000"
+// RTL Simulation : 455 / 460 [298.49%] @ "3612845000"
+// RTL Simulation : 456 / 460 [298.49%] @ "3620785000"
+// RTL Simulation : 457 / 460 [298.49%] @ "3628725000"
+// RTL Simulation : 458 / 460 [298.49%] @ "3636665000"
+// RTL Simulation : 459 / 460 [298.49%] @ "3644605000"
+// RTL Simulation : 460 / 460 [100.00%] @ "3652545000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 3652605 ns : File "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR.autotb.v" Line 196
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 15 22:31:27 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: Reading stimulus_01.dat
+INFO: Read 460 samples
+INFO: Value 0
+INFO: Value -18
+INFO: Value -29
+INFO: Value -34
+INFO: Value -34
+INFO: Value -29
+INFO: Value -18
+INFO: Value -3
+INFO: Value 16
+INFO: Value 37
+INFO: Value 59
+INFO: Value 81
+INFO: Value 101
+INFO: Value 118
+INFO: Value 131
+INFO: Value 141
+INFO: Value 146
+INFO: Value 149
+INFO: Value 149
+INFO: Value 148
+INFO: Value 146
+INFO: Value 145
+INFO: Value 144
+INFO: Value 143
+INFO: Value 142
+INFO: Value 140
+INFO: Value 136
+INFO: Value 129
+INFO: Value 117
+INFO: Value 100
+INFO: Value 79
+INFO: Value 54
+INFO: Value 25
+INFO: Value -4
+INFO: Value -33
+INFO: Value -60
+INFO: Value -83
+INFO: Value -102
+INFO: Value -115
+INFO: Value -123
+INFO: Value -127
+INFO: Value -128
+INFO: Value -129
+INFO: Value -129
+INFO: Value -131
+INFO: Value -135
+INFO: Value -141
+INFO: Value -148
+INFO: Value -155
+INFO: Value -159
+INFO: Value -160
+INFO: Value -155
+INFO: Value -144
+INFO: Value -126
+INFO: Value -101
+INFO: Value -71
+INFO: Value -38
+INFO: Value -4
+INFO: Value 27
+INFO: Value 54
+INFO: Value 76
+INFO: Value 90
+INFO: Value 98
+INFO: Value 102
+INFO: Value 101
+INFO: Value 100
+INFO: Value 100
+INFO: Value 104
+INFO: Value 111
+INFO: Value 123
+INFO: Value 139
+INFO: Value 155
+INFO: Value 171
+INFO: Value 182
+INFO: Value 187
+INFO: Value 183
+INFO: Value 169
+INFO: Value 146
+INFO: Value 114
+INFO: Value 78
+INFO: Value 40
+INFO: Value 3
+INFO: Value -29
+INFO: Value -53
+INFO: Value -69
+INFO: Value -76
+INFO: Value -75
+INFO: Value -71
+INFO: Value -65
+INFO: Value -62
+INFO: Value -65
+INFO: Value -75
+INFO: Value -92
+INFO: Value -116
+INFO: Value -145
+INFO: Value -173
+INFO: Value -198
+INFO: Value -216
+INFO: Value -222
+INFO: Value -214
+INFO: Value -193
+INFO: Value -161
+INFO: Value -119
+INFO: Value -74
+INFO: Value -30
+INFO: Value 8
+INFO: Value 37
+INFO: Value 53
+INFO: Value 57
+INFO: Value 51
+INFO: Value 39
+INFO: Value 25
+INFO: Value 14
+INFO: Value 12
+INFO: Value 20
+INFO: Value 42
+INFO: Value 76
+INFO: Value 118
+INFO: Value 164
+INFO: Value 207
+INFO: Value 241
+INFO: Value 260
+INFO: Value 261
+INFO: Value 243
+INFO: Value 208
+INFO: Value 159
+INFO: Value 103
+INFO: Value 47
+INFO: Value -2
+INFO: Value -37
+INFO: Value -55
+INFO: Value -55
+INFO: Value -39
+INFO: Value -12
+INFO: Value 20
+INFO: Value 46
+INFO: Value 61
+INFO: Value 58
+INFO: Value 35
+INFO: Value -9
+INFO: Value -70
+INFO: Value -140
+INFO: Value -209
+INFO: Value -269
+INFO: Value -309
+INFO: Value -323
+INFO: Value -308
+INFO: Value -266
+INFO: Value -201
+INFO: Value -122
+INFO: Value -42
+INFO: Value 28
+INFO: Value 77
+INFO: Value 99
+INFO: Value 89
+INFO: Value 52
+INFO: Value -6
+INFO: Value -74
+INFO: Value -137
+INFO: Value -181
+INFO: Value -196
+INFO: Value -173
+INFO: Value -111
+INFO: Value -15
+INFO: Value 103
+INFO: Value 227
+INFO: Value 339
+INFO: Value 422
+INFO: Value 459
+INFO: Value 443
+INFO: Value 373
+INFO: Value 258
+INFO: Value 113
+INFO: Value -39
+INFO: Value -173
+INFO: Value -265
+INFO: Value -296
+INFO: Value -256
+INFO: Value -147
+INFO: Value 18
+INFO: Value 214
+INFO: Value 406
+INFO: Value 556
+INFO: Value 627
+INFO: Value 591
+INFO: Value 433
+INFO: Value 156
+INFO: Value -212
+INFO: Value -623
+INFO: Value -1007
+INFO: Value -1277
+INFO: Value -1339
+INFO: Value -1099
+INFO: Value -472
+INFO: Value 605
+INFO: Value 2171
+INFO: Value 4229
+INFO: Value 6746
+INFO: Value 9654
+INFO: Value 12854
+INFO: Value 16220
+INFO: Value 19611
+INFO: Value 22881
+INFO: Value 25888
+INFO: Value 28504
+INFO: Value 30625
+INFO: Value 32173
+INFO: Value -32433
+INFO: Value -32139
+INFO: Value -32469
+INFO: Value 32146
+INFO: Value 30682
+INFO: Value 28735
+INFO: Value 26365
+INFO: Value 23632
+INFO: Value 20593
+INFO: Value 17295
+INFO: Value 13780
+INFO: Value 10088
+INFO: Value 6254
+INFO: Value 2316
+INFO: Value -1684
+INFO: Value -5698
+INFO: Value -9668
+INFO: Value -13531
+INFO: Value -17220
+INFO: Value -20661
+INFO: Value -23786
+INFO: Value -26527
+INFO: Value -28827
+INFO: Value -30641
+INFO: Value -31936
+INFO: Value -32693
+INFO: Value 32629
+INFO: Value -32585
+INFO: Value -31747
+INFO: Value -30417
+INFO: Value -28627
+INFO: Value -26413
+INFO: Value -23811
+INFO: Value -20861
+INFO: Value -17601
+INFO: Value -14075
+INFO: Value -10327
+INFO: Value -6406
+INFO: Value -2366
+INFO: Value 1734
+INFO: Value 5831
+INFO: Value 9858
+INFO: Value 13743
+INFO: Value 17419
+INFO: Value 20819
+INFO: Value 23879
+INFO: Value 26546
+INFO: Value 28775
+INFO: Value 30530
+INFO: Value 31787
+INFO: Value 32531
+INFO: Value 32758
+INFO: Value 32473
+INFO: Value 31685
+INFO: Value 30414
+INFO: Value 28679
+INFO: Value 26509
+INFO: Value 23935
+INFO: Value 20991
+INFO: Value 17718
+INFO: Value 14161
+INFO: Value 10370
+INFO: Value 6402
+INFO: Value 2318
+INFO: Value -1817
+INFO: Value -5934
+INFO: Value -9963
+INFO: Value -13835
+INFO: Value -17483
+INFO: Value -20846
+INFO: Value -23868
+INFO: Value -26500
+INFO: Value -28702
+INFO: Value -30444
+INFO: Value -31701
+INFO: Value -32460
+INFO: Value -32713
+INFO: Value -32458
+INFO: Value -31704
+INFO: Value -30461
+INFO: Value -28747
+INFO: Value -26586
+INFO: Value -24008
+INFO: Value -21049
+INFO: Value -17752
+INFO: Value -14167
+INFO: Value -10348
+INFO: Value -6356
+INFO: Value -2256
+INFO: Value 1884
+INFO: Value 5996
+INFO: Value 10010
+INFO: Value 13861
+INFO: Value 17485
+INFO: Value 20824
+INFO: Value 23826
+INFO: Value 26446
+INFO: Value 28646
+INFO: Value 30393
+INFO: Value 31665
+INFO: Value 32443
+INFO: Value 32717
+INFO: Value 32483
+INFO: Value 31743
+INFO: Value 30508
+INFO: Value 28794
+INFO: Value 26626
+INFO: Value 24034
+INFO: Value 21057
+INFO: Value 17742
+INFO: Value 14140
+INFO: Value 10309
+INFO: Value 6311
+INFO: Value 2213
+INFO: Value -1919
+INFO: Value -6017
+INFO: Value -10015
+INFO: Value -13849
+INFO: Value -17459
+INFO: Value -20788
+INFO: Value -23787
+INFO: Value -26410
+INFO: Value -28618
+INFO: Value -30379
+INFO: Value -31665
+INFO: Value -32457
+INFO: Value -32743
+INFO: Value -32516
+INFO: Value -31778
+INFO: Value -30539
+INFO: Value -28817
+INFO: Value -26637
+INFO: Value -24032
+INFO: Value -21044
+INFO: Value -17719
+INFO: Value -14112
+INFO: Value -10281
+INFO: Value -6288
+INFO: Value -2198
+INFO: Value 1923
+INFO: Value 6010
+INFO: Value 9998
+INFO: Value 13824
+INFO: Value 17431
+INFO: Value 20761
+INFO: Value 23765
+INFO: Value 26397
+INFO: Value 28615
+INFO: Value 30385
+INFO: Value 31680
+INFO: Value 32478
+INFO: Value 32766
+INFO: Value 32537
+INFO: Value 31794
+INFO: Value 30548
+INFO: Value 28817
+INFO: Value 26628
+INFO: Value 24017
+INFO: Value 21025
+INFO: Value 17699
+INFO: Value 14095
+INFO: Value 10270
+INFO: Value 6284
+INFO: Value 2203
+INFO: Value -1911
+INFO: Value -5993
+INFO: Value -9977
+INFO: Value -13804
+INFO: Value -17413
+INFO: Value -20748
+INFO: Value -23757
+INFO: Value -26394
+INFO: Value -28616
+INFO: Value -30388
+INFO: Value -31681
+INFO: Value -32474
+INFO: Value -32754
+INFO: Value -32514
+INFO: Value -31758
+INFO: Value -30497
+INFO: Value -28751
+INFO: Value -26546
+INFO: Value -23917
+INFO: Value -20906
+INFO: Value -17560
+INFO: Value -13953
+INFO: Value -10127
+INFO: Value -6141
+INFO: Value -2058
+INFO: Value 2057
+INFO: Value 6140
+INFO: Value 10126
+INFO: Value 13952
+INFO: Value 17559
+INFO: Value 20888
+INFO: Value 23888
+INFO: Value 26511
+INFO: Value 28716
+INFO: Value 30468
+INFO: Value 31740
+INFO: Value 32511
+INFO: Value -32767
+INFO: Value 32511
+INFO: Value 31740
+INFO: Value 30468
+INFO: Value 28716
+INFO: Value 26511
+INFO: Value 23888
+INFO: Value 20888
+INFO: Value 17559
+INFO: Value 13952
+INFO: Value 10126
+INFO: Value 6140
+INFO: Value 2057
+INFO: Value -2058
+INFO: Value -6141
+INFO: Value -10127
+INFO: Value -13953
+INFO: Value -17560
+INFO: Value -20889
+INFO: Value -23889
+INFO: Value -26512
+INFO: Value -28717
+INFO: Value -30469
+INFO: Value -31741
+INFO: Value -32512
+INFO: Value 32766
+INFO: Value -32512
+INFO: Value -31741
+INFO: Value -30469
+INFO: Value -28717
+INFO: Value -26512
+INFO: Value -23889
+INFO: Value -20889
+INFO: Value -17560
+INFO: Value -13953
+INFO: Value -10127
+INFO: Value -6141
+INFO: Value -2058
+INFO: Value 2057
+INFO: Value 6140
+INFO: Value 10126
+INFO: Value 13952
+INFO: Value 17559
+INFO: Value 20888
+INFO: Value 23888
+INFO: Value 26511
+INFO: Value 28716
+INFO: Value 30468
+INFO: Value 31740
+INFO: Value 32511
+INFO: Value -32767
+INFO: Value 32511
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 47.387 seconds; peak allocated memory: 339.793 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 52s
