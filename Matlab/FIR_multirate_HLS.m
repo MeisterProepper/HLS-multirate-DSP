@@ -53,11 +53,6 @@ hz_kernel_MM_on_Fs = freqz(b_FIR_kernel_MM,1, 2*pi*freq*MM);
 %axis([0,Fs/2,-60,0]);
 
 
-N_FIR_Dec_Int_tst = 2/3*log10(1/(10*delta_pass/3*delta_stop))*Fs/(Fs/MM-fstop-fpass);
-N_FIR_kernel_tst  = 2/3*log10(1/(10*delta_pass/3*delta_stop))*Fs_MM/(fstop-fpass);
-
-
-
 %------------------------------ decimation/interpolation filter -----------------------
 f_stop_Dec_Int = Fs_MM-fstop;
 [N_FIR_Dec_Int,fo,mo,w] = firpmord( [fpass f_stop_Dec_Int], [1 0], [delta_pass/3 delta_stop], Fs );
