@@ -2,9 +2,9 @@
 This project investigates various implementation strategies for a multi-rate filter within high-level synthesis (HLS).
 The aim is to analyse the effects of different optimisation approaches and architectural decisions on the synthesis results, latency and resource utilisation.
 
-The filter system consists of a downsampling filter, a kernel filter and an upsampling filter.
 
-![Filter](Filter.png)
+## System overview
+The filter system consists of a downsampling filter, a kernel filter and an upsampling filter.
 
 ## Objective
 
@@ -12,8 +12,18 @@ The filter system consists of a downsampling filter, a kernel filter and an upsa
 - Comparison of different implementation strategies (standard code, optimisation, IP blocks)
 - Investigation of the influence of pipelining, loop optimisation and filter partitioning on the synthesis results
 
+## Technical parameters
 
-## System overview
+
+| Parameter | Value |
+|-----|-----------|
+| Samplerate | 50 kHz |
+| Sampling factor | 4 |
+| Filtertype | FIR |
+| fpass | 3,1 kHz |
+| fstop | 3,35 kHz |
+| Target platform | Xilinx Kria KV260 |
+| Toolchain | Xilinx Vivado / Vitis 2024.2 |
 
 
 ## 🔬 Implementation Variants
@@ -22,30 +32,31 @@ A total of **nine HLS implementations** were developed, differing in structure, 
 
 | No. | Category | Description |
 |-----|-----------|-------------|
-| **1** | Single-Rate FIR | Basic FIR filter in HLS, DSP-style implementation (reference) |
-| **2** | Single-Rate FIR | FIR filter with HLS-specific optimizations (`#pragma`, static arrays) |
-| **3** | Single-Rate FIR | FIR filter using the **Xilinx FIR Compiler IP block** |
-| **4** | Multirate | Multirate filter (down/upsampling) in plain HLS |
-| **5** | Multirate | Optimized multirate filter (pipelining, loop unrolling, etc.) |
+| **1** | Single-Rate | FIR filter in DSP-style implementation (reference) |
+| **2** | Single-Rate | FIR filter with HLS-specific optimizations (`#pragma`, static arrays) |
+| **3** | Single-Rate | FIR filter using the **Xilinx FIR IP block** |
+| **4** | Multirate | Multirate filter in DSP-style implementation (reference) |
+| **5** | Multirate | Multirate filter with HLS-specific optimizations (`#pragma`, static arrays) |
 | **6** | Multirate | Multirate filter using **Xilinx FIR IP block** |
-| **7** | Split-Kernel | Multirate filter with a **4-stage split kernel filter** |
-| **8** | Split-Kernel | Split-kernel design with **manual HLS optimizations** |
+| **7** | Split-Kernel | Split-kernel design in DSP-style implementation (reference) |
+| **8** | Split-Kernel | Split-kernel design with HLS-specific optimizations (`#pragma`, static arrays) |
 | **9** | Split-Kernel | Split-kernel design using **Xilinx FIR IP block** |
 
+### Single-Rate FIR-Filter
 
-## Technical parameters
-- sampling rate 50 kHz
-- Input sampling rate    50 kHz
-- Downsampling factor    4
-- Upsampling factor    4
-- Filter type    FIR
-- fpass 3,1 kHz
-- fstop 3,35 kHz
-- Target platform    Xilinx Kria KV260
-- Toolchain    Xilinx Vivado / Vitis 2024.2
+### Multirate FIR-Filter
+
+![Filter](Filter.png)
+
+### Split-Kernel FIR-Filter
+
 
 
 ## Implementation
+
+The FIR filter is implemented using the Vitis Unified IDE. Since this is an HLS implementation, the filter is implemented in all its previously described variants as C/C++ code. To do this, the code is divided into several functions. First, an HLS wrapper is used, which is responsible for the interfaces to generate the AXI stream interfaces. This is followed by a function that merges and controls the results of the filters. Finally, the actual filter function that executes the FIR filter follows.
+
+
 
 ### HLS Wrapper
 
@@ -61,8 +72,64 @@ void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
 - Since the wrapper function and thus also the main function are required, the interfaces still need to be defined. To do this, _#pragma HLS INTERFACE mode=axis port=input_ is used, which specifies that the input port should be an AXI stream interface.
 - The directive _#pragma HLS INTERFACE mode=ap_ctrl_none port=return_ removes the control ports. These are not necessary, as control is data-driven via the Axi Stream interface.
 
+### Filtercontrol
+The filter control is located in the HLS wrapper and is used to control the sequence of events for the multirate and split-kernel variants.
 
-### DSP code of the FIR filter function
+
+#### Multirate
+```
+int poly_phase = 0;
+
+switch(poly_phase) {
+	case 0:{
+			calc_fir_dec_43();
+			calc_fir_kernel();
+			calc_fir_int_40();
+			}; break;
+	case 1:{
+			calc_fir_dec_40();
+			calc_fir_int_41();
+			}; break;
+	case 2:{
+			calc_fir_dec_41();
+			calc_fir_int_42();
+			}; break;
+	case 3:{
+			calc_fir_dec_42();
+			calc_fir_int_43();
+			}; break;
+}
+```
+#### Split-Kernel
+```
+int poly_phase = 0;
+
+switch(poly_phase) {
+	case 0:{
+			calc_fir_dec_43();
+			calc_fir_kernel_1();
+			calc_fir_int_40();
+			}; break;
+	case 1:{
+			calc_fir_dec_40();
+			calc_fir_kernel_2();
+			calc_fir_int_41();
+			}; break;
+	case 2:{
+			calc_fir_dec_41();
+			calc_fir_kernel_3();
+			calc_fir_int_42();
+			}; break;
+	case 3:{
+			calc_fir_dec_42();
+			calc_fir_kernel_4();
+			calc_fir_int_43();
+			}; break;
+}
+```
+### Filterfunction
+
+#### DSP code of the FIR filter function
 
 ```
 short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
@@ -87,7 +154,7 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, 
 
 ```
 
-### HLS code of the FIR filter function
+#### HLS code of the FIR filter function
 
 ```
 typedef ap_fixed<16,1> fir_data; //defining a fixed-point data type
@@ -116,7 +183,7 @@ fir_data FIR_filter(fir_data FIR_delays[], const fir_data FIR_coe[], short int N
 
 
 
-### HLS code with FIR filter IP core
+#### HLS code with FIR filter IP core
 
 ```
 void
