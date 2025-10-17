@@ -192,6 +192,36 @@ void
 
 
 
+## Testbench
+Each HLS variant includes a dedicated **C++ testbench** that verifies the functional correctness of the filter design against MATLAB-generated reference data.
+
+### Test Flow
+
+1. **Input Signal Loading:**
+The testbench reads a precomputed test signal from a `.dat` file located in the `Matlab/` directory.  
+   Each line of the file represents one sample of the input signal (typically a short or floating-point value).
+2. **Filter Execution:**
+The main HLS function (e.g., HLS_FIR() ) is called with the loaded samples as input.
+The testbench processes all samples sequentially and stores the output in a results buffer.
+3. **Reference Comparison:**
+After processing, the testbench loads the expected output values from a `.res` file located in the `Matlab/` directory and compares them with the HLS results.
+The comparison can be based on absolute error, mean squared error (MSE), or a tolerance threshold.
+4. **Result Reporting:**
+The testbench prints a concise summary to the console, including the number of mismatches and the overall pass/fail status:
+```
+---------------------------------------
+Testbench Results
+Samples processed: 1024
+Mismatches: 0
+Status: PASS ✅
+---------------------------------------
+```
+
+### Integration with HLS
+During synthesis, this testbench is used for both C-simulation and C/RTL co-simulation in Vivado or Vitis HLS.
+It allows functional validation before synthesis and direct comparison between the C++ model and the generated HDL implementation.
+
+
 
 
 ## Results
