@@ -738,7 +738,7 @@
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
 			<first class_id="49" tracking_level="0" version="0">
-				<first>H_filt_FIR</first>
+				<first>H_filter_FIR</first>
 				<second>100</second>
 			</first>
 			<second>

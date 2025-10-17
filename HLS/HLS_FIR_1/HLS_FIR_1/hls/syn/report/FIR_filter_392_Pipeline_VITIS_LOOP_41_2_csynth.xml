@@ -165,8 +165,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>H_filt_FIR_address0</name>
-<Object>H_filt_FIR</Object>
+<name>H_filter_FIR_address0</name>
+<Object>H_filter_FIR</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -176,8 +176,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>H_filt_FIR_ce0</name>
-<Object>H_filt_FIR</Object>
+<name>H_filter_FIR_ce0</name>
+<Object>H_filter_FIR</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -187,8 +187,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>H_filt_FIR_q0</name>
-<Object>H_filt_FIR</Object>
+<name>H_filter_FIR_q0</name>
+<Object>H_filter_FIR</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>

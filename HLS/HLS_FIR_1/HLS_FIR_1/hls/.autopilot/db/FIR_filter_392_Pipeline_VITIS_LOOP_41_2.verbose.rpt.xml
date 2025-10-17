@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FIR_filter_392_Pipeline_VITIS_LOOP_41_2'" level="0">
-<item name = "Date">Wed Oct 15 22:30:27 2025
+<item name = "Date">Fri Oct 17 15:39:08 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">HLS_FIR_1</item>
@@ -128,9 +128,9 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, FIR_filter&lt;392&gt;_Pipeline_VITIS_LOOP_41_2, return value</column>
 <column name="FIR_accu32_out">out, 31, ap_vld, FIR_accu32_out, pointer</column>
 <column name="FIR_accu32_out_ap_vld">out, 1, ap_vld, FIR_accu32_out, pointer</column>
-<column name="H_filt_FIR_address0">out, 9, ap_memory, H_filt_FIR, array</column>
-<column name="H_filt_FIR_ce0">out, 1, ap_memory, H_filt_FIR, array</column>
-<column name="H_filt_FIR_q0">in, 16, ap_memory, H_filt_FIR, array</column>
+<column name="H_filter_FIR_address0">out, 9, ap_memory, H_filter_FIR, array</column>
+<column name="H_filter_FIR_ce0">out, 1, ap_memory, H_filter_FIR, array</column>
+<column name="H_filter_FIR_q0">in, 16, ap_memory, H_filter_FIR, array</column>
 </table>
 </item>
 </section>

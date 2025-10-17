@@ -15,9 +15,9 @@ module HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2 (
         ap_ready,
         FIR_accu32_out,
         FIR_accu32_out_ap_vld,
-        H_filt_FIR_address0,
-        H_filt_FIR_ce0,
-        H_filt_FIR_q0
+        H_filter_FIR_address0,
+        H_filter_FIR_ce0,
+        H_filter_FIR_q0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -30,9 +30,9 @@ output   ap_idle;
 output   ap_ready;
 output  [30:0] FIR_accu32_out;
 output   FIR_accu32_out_ap_vld;
-output  [8:0] H_filt_FIR_address0;
-output   H_filt_FIR_ce0;
-input  [15:0] H_filt_FIR_q0;
+output  [8:0] H_filter_FIR_address0;
+output   H_filter_FIR_ce0;
+input  [15:0] H_filter_FIR_q0;
 
 reg ap_idle;
 reg FIR_accu32_out_ap_vld;
@@ -71,7 +71,7 @@ reg    ap_loop_exit_ready_pp0_iter1_reg;
 reg    ap_loop_exit_ready_pp0_iter2_reg;
 reg    ap_loop_exit_ready_pp0_iter3_reg;
 wire    ap_block_pp0_stage0_01001;
-reg    H_filt_FIR_ce0_local;
+reg    H_filter_FIR_ce0_local;
 reg    b_FIR_ce0_local;
 wire   [8:0] sub_ln42_fu_107_p2;
 reg    ap_done_reg;
@@ -118,7 +118,7 @@ HLS_FIR_mac_muladd_16s_14s_32s_32_4_1 #(
 mac_muladd_16s_14s_32s_32_4_1_U2(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(H_filt_FIR_q0),
+    .din0(H_filter_FIR_q0),
     .din1(b_FIR_q0),
     .din2(ap_sig_allocacmp_FIR_accu32_2),
     .ce(1'b1),
@@ -248,9 +248,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        H_filt_FIR_ce0_local = 1'b1;
+        H_filter_FIR_ce0_local = 1'b1;
     end else begin
-        H_filt_FIR_ce0_local = 1'b0;
+        H_filter_FIR_ce0_local = 1'b0;
     end
 end
 
@@ -339,9 +339,9 @@ end
 
 assign FIR_accu32_out = ap_sig_allocacmp_FIR_accu32_2[30:0];
 
-assign H_filt_FIR_address0 = zext_ln42_fu_113_p1;
+assign H_filter_FIR_address0 = zext_ln42_fu_113_p1;
 
-assign H_filt_FIR_ce0 = H_filt_FIR_ce0_local;
+assign H_filter_FIR_ce0 = H_filter_FIR_ce0_local;
 
 assign add_ln41_fu_96_p2 = (ap_sig_allocacmp_i_1 + 9'd1);
 

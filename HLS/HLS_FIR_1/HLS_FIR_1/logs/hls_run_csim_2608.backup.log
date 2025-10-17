@@ -1,0 +1,43 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=HLS_FIR.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=HLS_FIR_TB.cpp' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=stimulus_01.dat' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS/HLS_FIR_1/stimulus_01.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=HLS_FIR' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS/HLS_FIR_1/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../HLS_FIR_TB.cpp in debug mode
+   Compiling ../../../../HLS_FIR.cpp in debug mode
+   Generating csim.exe
+INFO: Reading stimulus_01.dat
+INFO: Read 460 samples
+---------------------------------------
+Testbench Results
+Samples processed: 0
+Mismatches: 0
+Status: PASS [OK]
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+WARNING [HLS SIM]: hls::stream 'hls::stream<short, 0>0' contains leftover data, which may result in RTL simulation hanging.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 18.498 seconds; peak allocated memory: 273.516 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 24s

@@ -46,7 +46,7 @@ entry:6 %test = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r
 
 <Node id="12" bw="16" op_0_bw="16" op_1_bw="16" op_2_bw="16" op_3_bw="14">
 <![CDATA[
-entry:7 %test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_FIR
+entry:7 %test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filter_FIR, i14 %b_FIR
 
 ]]></Node>
 <StgValue><ssdm name="test2"/></StgValue>
@@ -64,7 +64,7 @@ entry:7 %test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_F
 
 <Node id="12" bw="16" op_0_bw="16" op_1_bw="16" op_2_bw="16" op_3_bw="14">
 <![CDATA[
-entry:7 %test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_FIR
+entry:7 %test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filter_FIR, i14 %b_FIR
 
 ]]></Node>
 <StgValue><ssdm name="test2"/></StgValue>
@@ -218,8 +218,8 @@ entry:9 %ret_ln8 = ret
 <port id="19" name="output_r" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="output_r"/></StgValue>
 </port>
-<port id="20" name="H_filt_FIR" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="H_filt_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
+<port id="20" name="H_filter_FIR" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="H_filter_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="21" name="b_FIR" dir="0" iftype="1">
@@ -238,7 +238,7 @@ entry:9 %ret_ln8 = ret
 </dataflow>
 <dataflow id="27" from="test" to="test2" fromId="4" toId="5">
 </dataflow>
-<dataflow id="28" from="H_filt_FIR" to="test2" fromId="20" toId="5">
+<dataflow id="28" from="H_filter_FIR" to="test2" fromId="20" toId="5">
 </dataflow>
 <dataflow id="29" from="b_FIR" to="test2" fromId="21" toId="5">
 </dataflow>
@@ -246,7 +246,7 @@ entry:9 %ret_ln8 = ret
 </dataflow>
 <dataflow id="31" from="test" to="test2" fromId="4" toId="6">
 </dataflow>
-<dataflow id="32" from="H_filt_FIR" to="test2" fromId="20" toId="6">
+<dataflow id="32" from="H_filter_FIR" to="test2" fromId="20" toId="6">
 </dataflow>
 <dataflow id="33" from="b_FIR" to="test2" fromId="21" toId="6">
 </dataflow>

@@ -1,9 +1,10 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../HLS_FIR.cpp in debug mode
-   Generating csim.exe
+make: 'csim.exe' is up to date.
 INFO: Reading stimulus_01.dat
 INFO: Read 460 samples
+INFO: Reading stimulus_01.res
+INFO: Read 0 samples
 INFO: Value 0
 INFO: Value -18
 INFO: Value -29
@@ -464,6 +465,12 @@ INFO: Value 31738
 INFO: Value 32509
 INFO: Value 32767
 INFO: Value 32509
+---------------------------------------
+Testbench Results
+Samples processed: 460
+Mismatches: 0
+Status: PASS [OK]
+---------------------------------------
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

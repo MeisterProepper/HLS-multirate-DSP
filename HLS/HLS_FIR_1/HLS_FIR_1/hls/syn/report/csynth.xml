@@ -171,7 +171,7 @@
                             <BindInstances>icmp_ln41_fu_90_p2 add_ln41_fu_96_p2 sub_ln42_fu_107_p2 mac_muladd_16s_14s_32s_32_4_1_U2 mac_muladd_16s_14s_32s_32_4_1_U2 mac_muladd_16s_14s_32s_32_4_1_U2 b_FIR_U</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>H_filt_FIR_U</BindInstances>
+                    <BindInstances>H_filter_FIR_U</BindInstances>
                 </Instance>
             </InstancesList>
         </TopModule>
@@ -370,7 +370,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="H_filt_FIR_U" SOURCE="" STORAGESIZE="16 392 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p" URAM="0" VARIABLE="H_filt_FIR" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="H_filter_FIR_U" SOURCE="" STORAGESIZE="16 392 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p" URAM="0" VARIABLE="H_filter_FIR" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
@@ -419,7 +419,9 @@
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
-    <UserConfigCommands/>
+    <UserConfigCommands>
+        <config_cosim trace_level="all" wave_debug="1"/>
+    </UserConfigCommands>
     <Args>
         <Arg ArgName="input" index="0" direction="in" srcType="stream&lt;short, 0&gt;&amp;" srcSize="16">
             <hwRefs>

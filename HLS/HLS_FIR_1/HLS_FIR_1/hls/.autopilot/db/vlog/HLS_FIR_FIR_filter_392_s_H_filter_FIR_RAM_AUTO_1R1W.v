@@ -4,7 +4,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W (
+module HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W (
      
     address0, ce0,
     d0, we0, 
@@ -37,7 +37,7 @@ input clk;
 (* ram_style = "auto"  *)reg [DataWidth-1:0] ram[0:AddressRange-1];
 
 initial begin
-    $readmemh("./HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W.dat", ram);
+    $readmemh("./HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W.dat", ram);
 end 
 
  

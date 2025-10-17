@@ -65,14 +65,14 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "x_n", "Type" : "None", "Direction" : "I"},
-			{"Name" : "H_filt_FIR", "Type" : "Memory", "Direction" : "IO",
+			{"Name" : "H_filter_FIR", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39", "Port" : "H_filt_FIR", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "4", "SubInstance" : "grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45", "Port" : "H_filt_FIR", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+					{"ID" : "2", "SubInstance" : "grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39", "Port" : "H_filter_FIR", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "4", "SubInstance" : "grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45", "Port" : "H_filter_FIR", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
 			{"Name" : "b_FIR", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "4", "SubInstance" : "grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45", "Port" : "b_FIR", "Inst_start_state" : "4", "Inst_end_state" : "5"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.H_filt_FIR_U", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.H_filter_FIR_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39", "Parent" : "0", "Child" : ["3"],
 		"CDFG" : "FIR_filter_392_Pipeline_VITIS_LOOP_32_1",
 		"Protocol" : "ap_ctrl_hs",
@@ -88,7 +88,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "H_filt_FIR", "Type" : "Memory", "Direction" : "IO"}],
+			{"Name" : "H_filter_FIR", "Type" : "Memory", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_32_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -109,7 +109,7 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "FIR_accu32_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "H_filt_FIR", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "H_filter_FIR", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "b_FIR", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_41_2", "PipelineType" : "UPC",
@@ -122,13 +122,13 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	FIR_filter_392_s {
 		x_n {Type I LastRead 2 FirstWrite -1}
-		H_filt_FIR {Type IO LastRead -1 FirstWrite -1}
+		H_filter_FIR {Type IO LastRead -1 FirstWrite -1}
 		b_FIR {Type I LastRead -1 FirstWrite -1}}
 	FIR_filter_392_Pipeline_VITIS_LOOP_32_1 {
-		H_filt_FIR {Type IO LastRead 0 FirstWrite 1}}
+		H_filter_FIR {Type IO LastRead 0 FirstWrite 1}}
 	FIR_filter_392_Pipeline_VITIS_LOOP_41_2 {
 		FIR_accu32_out {Type O LastRead -1 FirstWrite 3}
-		H_filt_FIR {Type I LastRead 0 FirstWrite -1}
+		H_filter_FIR {Type I LastRead 0 FirstWrite -1}
 		b_FIR {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0

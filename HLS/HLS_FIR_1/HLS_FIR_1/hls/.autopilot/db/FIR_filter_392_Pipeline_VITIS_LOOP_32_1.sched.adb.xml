@@ -147,10 +147,10 @@ for.inc.split:4 %zext_ln34 = zext i9 %add_ln34
 
 <Node id="16" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split:5 %H_filt_FIR_addr = getelementptr i16 %H_filt_FIR, i64 0, i64 %zext_ln34
+for.inc.split:5 %H_filter_FIR_addr = getelementptr i16 %H_filter_FIR, i64 0, i64 %zext_ln34
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_addr"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_addr"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="2" lat="2">
@@ -163,10 +163,10 @@ for.inc.split:5 %H_filt_FIR_addr = getelementptr i16 %H_filt_FIR, i64 0, i64 %ze
 
 <Node id="17" bw="16" op_0_bw="9">
 <![CDATA[
-for.inc.split:6 %H_filt_FIR_load = load i9 %H_filt_FIR_addr
+for.inc.split:6 %H_filter_FIR_load = load i9 %H_filter_FIR_addr
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_load"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_load"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -273,10 +273,10 @@ for.inc.split:3 %specloopname_ln32 = specloopname void @_ssdm_op_SpecLoopName, v
 
 <Node id="17" bw="16" op_0_bw="9">
 <![CDATA[
-for.inc.split:6 %H_filt_FIR_load = load i9 %H_filt_FIR_addr
+for.inc.split:6 %H_filter_FIR_load = load i9 %H_filter_FIR_addr
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_load"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_load"/></StgValue>
 </operation>
 
 <operation id="21" st_id="2" stage="1" lat="1">
@@ -288,10 +288,10 @@ for.inc.split:6 %H_filt_FIR_load = load i9 %H_filt_FIR_addr
 
 <Node id="18" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split:7 %H_filt_FIR_addr_1 = getelementptr i16 %H_filt_FIR, i64 0, i64 %zext_ln32
+for.inc.split:7 %H_filter_FIR_addr_1 = getelementptr i16 %H_filter_FIR, i64 0, i64 %zext_ln32
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_addr_1"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_addr_1"/></StgValue>
 </operation>
 
 <operation id="22" st_id="2" stage="1" lat="1">
@@ -303,7 +303,7 @@ for.inc.split:7 %H_filt_FIR_addr_1 = getelementptr i16 %H_filt_FIR, i64 0, i64 %
 
 <Node id="19" bw="0" op_0_bw="16" op_1_bw="9">
 <![CDATA[
-for.inc.split:8 %store_ln34 = store i16 %H_filt_FIR_load, i9 %H_filt_FIR_addr_1
+for.inc.split:8 %store_ln34 = store i16 %H_filter_FIR_load, i9 %H_filter_FIR_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln34"/></StgValue>

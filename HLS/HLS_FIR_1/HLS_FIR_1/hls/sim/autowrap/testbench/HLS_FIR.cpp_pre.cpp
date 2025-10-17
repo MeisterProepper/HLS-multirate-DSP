@@ -55286,7 +55286,7 @@ public:
 # 2 "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR.h" 2
 # 1 "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h" 1
 # 13 "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/FIR_normal_DSP.h"
-static short H_filt_FIR[392];
+static short H_filter_FIR[392];
 const short b_FIR[392]={
    -138, 46, 43, 41, 39, 37,
      33, 28, 21, 13, 4, -4,
@@ -55379,7 +55379,7 @@ void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
 
 void fir_function(hls::stream<short> &in, hls::stream<short> &out){
     short test = in.read();
-    short test2 = FIR_filter<392>(H_filt_FIR, b_FIR, test, 15);
+    short test2 = FIR_filter<392>(H_filter_FIR, b_FIR, test, 15);
     out.write(test2);
 }
 
@@ -55406,7 +55406,6 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short x_n, int shift
  for(int i=0; i < N_delays; i++){
         FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
         }
-
 
 
  y = (short) (FIR_accu32 >>shift);

@@ -286,7 +286,7 @@ class stream : public stream<__STREAM_T__, 0> {
 # 2 "./HLS_FIR.h" 2
 # 1 "./FIR_normal_DSP.h" 1
 # 13 "./FIR_normal_DSP.h"
-static short H_filt_FIR[392];
+static short H_filter_FIR[392];
 const short b_FIR[392]={
    -138, 46, 43, 41, 39, 37,
      33, 28, 21, 13, 4, -4,
@@ -383,7 +383,7 @@ __attribute__((sdx_kernel("HLS_FIR", 0))) void HLS_FIR(hls::stream<short> &input
 
 void fir_function(hls::stream<short> &in, hls::stream<short> &out){
     short test = in.read();
-    short test2 = FIR_filter<392>(H_filt_FIR, b_FIR, test, 15);
+    short test2 = FIR_filter<392>(H_filter_FIR, b_FIR, test, 15);
     out.write(test2);
 }
 
@@ -410,7 +410,6 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short x_n, int shift
  VITIS_LOOP_41_2: for(int i=0; i < N_delays; i++){
         FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
         }
-
 
 
  y = (short) (FIR_accu32 >>shift);

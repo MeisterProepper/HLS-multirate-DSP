@@ -335,7 +335,7 @@
               <name>y</name>
               <fileName>HLS_FIR.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>47</lineNumber>
+              <lineNumber>46</lineNumber>
               <contextFuncName>FIR_filter&amp;lt;392&amp;gt;</contextFuncName>
               <contextNormFuncName>FIR_filter_392_s</contextNormFuncName>
               <inlineStackInfo>
@@ -351,7 +351,7 @@
                         <first>HLS_FIR.cpp</first>
                         <second>FIR_filter&amp;lt;392&amp;gt;</second>
                       </first>
-                      <second>47</second>
+                      <second>46</second>
                     </item>
                   </second>
                 </item>
@@ -391,10 +391,10 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>_ln48</name>
+              <name>_ln47</name>
               <fileName>HLS_FIR.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>48</lineNumber>
+              <lineNumber>47</lineNumber>
               <contextFuncName>FIR_filter&amp;lt;392&amp;gt;</contextFuncName>
               <contextNormFuncName>FIR_filter_392_s</contextNormFuncName>
               <inlineStackInfo>
@@ -410,7 +410,7 @@
                         <first>HLS_FIR.cpp</first>
                         <second>FIR_filter&amp;lt;392&amp;gt;</second>
                       </first>
-                      <second>48</second>
+                      <second>47</second>
                     </item>
                   </second>
                 </item>
@@ -447,7 +447,7 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>H_filt_FIR</name>
+              <name>H_filter_FIR</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -458,7 +458,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>H_filt_FIR_U</rtlName>
+              <rtlName>H_filter_FIR_U</rtlName>
               <control>auto</control>
               <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
@@ -466,7 +466,7 @@
               <isStorage>1</isStorage>
               <storageDepth>392</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1112,7 +1112,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>H_filt_FIR_we0 ( or ) </first>
+          <first>H_filter_FIR_we0 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1143,7 +1143,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>H_filt_FIR_U</first>
+          <first>H_filter_FIR_U</first>
           <second>
             <count>8</count>
             <item_version>0</item_version>
@@ -1186,7 +1186,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>H_filt_FIR_address0</first>
+          <first>H_filter_FIR_address0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1213,7 +1213,7 @@
           </second>
         </item>
         <item>
-          <first>H_filt_FIR_ce0</first>
+          <first>H_filter_FIR_ce0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1240,7 +1240,7 @@
           </second>
         </item>
         <item>
-          <first>H_filt_FIR_ce1</first>
+          <first>H_filter_FIR_ce1</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1267,7 +1267,7 @@
           </second>
         </item>
         <item>
-          <first>H_filt_FIR_d0</first>
+          <first>H_filter_FIR_d0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1294,7 +1294,7 @@
           </second>
         </item>
         <item>
-          <first>H_filt_FIR_we0</first>
+          <first>H_filter_FIR_we0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1478,7 +1478,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>H_filt_FIR_U</first>
+          <first>H_filter_FIR_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1710,7 +1710,7 @@
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
         <first class_id="55" tracking_level="0" version="0">
-          <first>H_filt_FIR</first>
+          <first>H_filter_FIR</first>
           <second>0</second>
         </first>
         <second>
@@ -1721,7 +1721,7 @@
       </item>
       <item>
         <first>
-          <first>H_filt_FIR</first>
+          <first>H_filter_FIR</first>
           <second>100</second>
         </first>
         <second>

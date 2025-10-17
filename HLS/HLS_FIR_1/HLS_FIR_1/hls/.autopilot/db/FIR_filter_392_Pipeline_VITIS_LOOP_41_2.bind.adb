@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>H_filt_FIR</name>
+						<name>H_filter_FIR</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -871,7 +871,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>H_filt_FIR_addr</name>
+						<name>H_filter_FIR_addr</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>42</lineNumber>
@@ -929,7 +929,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>H_filt_FIR_load</name>
+						<name>H_filter_FIR_load</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>42</lineNumber>
@@ -3240,7 +3240,7 @@
 			</second>
 		</item>
 		<item>
-			<first>H_filt_FIR_addr_gep_fu_51</first>
+			<first>H_filter_FIR_addr_gep_fu_51</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3414,7 +3414,7 @@
 		<item_version>0</item_version>
 		<item class_id="50" tracking_level="0" version="0">
 			<first class_id="51" tracking_level="0" version="0">
-				<first>H_filt_FIR</first>
+				<first>H_filter_FIR</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -3525,7 +3525,7 @@
 			</second>
 		</item>
 		<item>
-			<first>H_filt_FIR_addr_reg_170</first>
+			<first>H_filter_FIR_addr_reg_170</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3600,7 +3600,7 @@
 			</second>
 		</item>
 		<item>
-			<first>H_filt_FIR(p0)</first>
+			<first>H_filter_FIR(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

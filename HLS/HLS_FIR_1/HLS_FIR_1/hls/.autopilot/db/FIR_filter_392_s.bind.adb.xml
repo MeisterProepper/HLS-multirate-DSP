@@ -64,7 +64,7 @@ entry:1 %FIR_accu32_loc = alloca i64 1
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
-entry:2 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filt_FIR
+entry:2 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filter_FIR
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -82,7 +82,7 @@ entry:2 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
-entry:2 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filt_FIR
+entry:2 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filter_FIR
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -133,7 +133,7 @@ entry:3 %store_ln37 = store i16 %x_n_read, i16 391
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="31" op_2_bw="16" op_3_bw="14" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:4 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filt_FIR, i14 %b_FIR
+entry:4 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filter_FIR, i14 %b_FIR
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -151,7 +151,7 @@ entry:4 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FI
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="31" op_2_bw="16" op_3_bw="14" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:4 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filt_FIR, i14 %b_FIR
+entry:4 %call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filter_FIR, i14 %b_FIR
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -199,10 +199,10 @@ entry:6 %y = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %FIR_accu3
 
 <Node id="11" bw="0" op_0_bw="16">
 <![CDATA[
-entry:7 %ret_ln48 = ret i16 %y
+entry:7 %ret_ln47 = ret i16 %y
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln48"/></StgValue>
+<StgValue><ssdm name="ret_ln47"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -212,8 +212,8 @@ entry:7 %ret_ln48 = ret i16 %y
 <port id="22" name="x_n" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="x_n"/></StgValue>
 </port>
-<port id="23" name="H_filt_FIR" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="H_filt_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
+<port id="23" name="H_filter_FIR" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="H_filter_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="24" name="b_FIR" dir="0" iftype="1">
@@ -228,11 +228,11 @@ entry:7 %ret_ln48 = ret i16 %y
 </dataflow>
 <dataflow id="28" from="FIR_filter<392>_Pipeline_VITIS_LOOP_32_1" to="call_ln0" fromId="27" toId="8">
 </dataflow>
-<dataflow id="29" from="H_filt_FIR" to="call_ln0" fromId="23" toId="8">
+<dataflow id="29" from="H_filter_FIR" to="call_ln0" fromId="23" toId="8">
 </dataflow>
 <dataflow id="30" from="FIR_filter<392>_Pipeline_VITIS_LOOP_32_1" to="call_ln0" fromId="27" toId="9">
 </dataflow>
-<dataflow id="31" from="H_filt_FIR" to="call_ln0" fromId="23" toId="9">
+<dataflow id="31" from="H_filter_FIR" to="call_ln0" fromId="23" toId="9">
 </dataflow>
 <dataflow id="33" from="_ssdm_op_Read.ap_auto.i16" to="x_n_read" fromId="32" toId="10">
 </dataflow>
@@ -246,7 +246,7 @@ entry:7 %ret_ln48 = ret i16 %y
 </dataflow>
 <dataflow id="40" from="FIR_accu32_loc" to="call_ln0" fromId="7" toId="12">
 </dataflow>
-<dataflow id="41" from="H_filt_FIR" to="call_ln0" fromId="23" toId="12">
+<dataflow id="41" from="H_filter_FIR" to="call_ln0" fromId="23" toId="12">
 </dataflow>
 <dataflow id="42" from="b_FIR" to="call_ln0" fromId="24" toId="12">
 </dataflow>
@@ -254,7 +254,7 @@ entry:7 %ret_ln48 = ret i16 %y
 </dataflow>
 <dataflow id="44" from="FIR_accu32_loc" to="call_ln0" fromId="7" toId="13">
 </dataflow>
-<dataflow id="45" from="H_filt_FIR" to="call_ln0" fromId="23" toId="13">
+<dataflow id="45" from="H_filter_FIR" to="call_ln0" fromId="23" toId="13">
 </dataflow>
 <dataflow id="46" from="b_FIR" to="call_ln0" fromId="24" toId="13">
 </dataflow>
@@ -268,7 +268,7 @@ entry:7 %ret_ln48 = ret i16 %y
 </dataflow>
 <dataflow id="54" from="StgValue_53" to="y" fromId="53" toId="15">
 </dataflow>
-<dataflow id="55" from="y" to="ret_ln48" fromId="15" toId="16">
+<dataflow id="55" from="y" to="ret_ln47" fromId="15" toId="16">
 </dataflow>
 </dataflows>
 

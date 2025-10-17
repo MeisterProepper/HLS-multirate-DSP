@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>H_filt_FIR</name>
+						<name>H_filter_FIR</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -552,7 +552,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>H_filt_FIR_addr</name>
+						<name>H_filter_FIR_addr</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -610,7 +610,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>H_filt_FIR_load</name>
+						<name>H_filter_FIR_load</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -666,7 +666,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>H_filt_FIR_addr_1</name>
+						<name>H_filter_FIR_addr_1</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -724,7 +724,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>H_filt_FIR_addr_1_write_ln34</name>
+						<name>H_filter_FIR_addr_1_write_ln34</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>

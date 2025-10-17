@@ -16,13 +16,13 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    H_filt_FIR_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-    H_filt_FIR_ce0 : OUT STD_LOGIC;
-    H_filt_FIR_we0 : OUT STD_LOGIC;
-    H_filt_FIR_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    H_filt_FIR_address1 : OUT STD_LOGIC_VECTOR (8 downto 0);
-    H_filt_FIR_ce1 : OUT STD_LOGIC;
-    H_filt_FIR_q1 : IN STD_LOGIC_VECTOR (15 downto 0) );
+    H_filter_FIR_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    H_filter_FIR_ce0 : OUT STD_LOGIC;
+    H_filter_FIR_we0 : OUT STD_LOGIC;
+    H_filter_FIR_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
+    H_filter_FIR_address1 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    H_filter_FIR_ce1 : OUT STD_LOGIC;
+    H_filter_FIR_q1 : IN STD_LOGIC_VECTOR (15 downto 0) );
 end;
 
 
@@ -62,9 +62,9 @@ attribute shreg_extract : string;
     signal add_ln34_fu_72_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal ap_sig_allocacmp_i_2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal H_filt_FIR_ce1_local : STD_LOGIC;
-    signal H_filt_FIR_we0_local : STD_LOGIC;
-    signal H_filt_FIR_ce0_local : STD_LOGIC;
+    signal H_filter_FIR_ce1_local : STD_LOGIC;
+    signal H_filter_FIR_we0_local : STD_LOGIC;
+    signal H_filter_FIR_ce0_local : STD_LOGIC;
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
     signal ap_done_int : STD_LOGIC;
@@ -193,39 +193,39 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    H_filt_FIR_address0 <= zext_ln32_fu_88_p1(9 - 1 downto 0);
-    H_filt_FIR_address1 <= zext_ln34_fu_78_p1(9 - 1 downto 0);
-    H_filt_FIR_ce0 <= H_filt_FIR_ce0_local;
+    H_filter_FIR_address0 <= zext_ln32_fu_88_p1(9 - 1 downto 0);
+    H_filter_FIR_address1 <= zext_ln34_fu_78_p1(9 - 1 downto 0);
+    H_filter_FIR_ce0 <= H_filter_FIR_ce0_local;
 
-    H_filt_FIR_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
+    H_filter_FIR_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            H_filt_FIR_ce0_local <= ap_const_logic_1;
+            H_filter_FIR_ce0_local <= ap_const_logic_1;
         else 
-            H_filt_FIR_ce0_local <= ap_const_logic_0;
+            H_filter_FIR_ce0_local <= ap_const_logic_0;
         end if; 
     end process;
 
-    H_filt_FIR_ce1 <= H_filt_FIR_ce1_local;
+    H_filter_FIR_ce1 <= H_filter_FIR_ce1_local;
 
-    H_filt_FIR_ce1_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001, ap_start_int)
+    H_filter_FIR_ce1_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001, ap_start_int)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_start_int = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            H_filt_FIR_ce1_local <= ap_const_logic_1;
+            H_filter_FIR_ce1_local <= ap_const_logic_1;
         else 
-            H_filt_FIR_ce1_local <= ap_const_logic_0;
+            H_filter_FIR_ce1_local <= ap_const_logic_0;
         end if; 
     end process;
 
-    H_filt_FIR_d0 <= H_filt_FIR_q1;
-    H_filt_FIR_we0 <= H_filt_FIR_we0_local;
+    H_filter_FIR_d0 <= H_filter_FIR_q1;
+    H_filter_FIR_we0 <= H_filter_FIR_we0_local;
 
-    H_filt_FIR_we0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
+    H_filter_FIR_we0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            H_filt_FIR_we0_local <= ap_const_logic_1;
+            H_filter_FIR_we0_local <= ap_const_logic_1;
         else 
-            H_filt_FIR_we0_local <= ap_const_logic_0;
+            H_filter_FIR_we0_local <= ap_const_logic_0;
         end if; 
     end process;
 

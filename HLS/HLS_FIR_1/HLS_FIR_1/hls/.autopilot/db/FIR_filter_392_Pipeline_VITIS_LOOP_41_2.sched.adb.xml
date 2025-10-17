@@ -227,10 +227,10 @@ for.inc15.split:5 %zext_ln42 = zext i9 %sub_ln42
 
 <Node id="23" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc15.split:6 %H_filt_FIR_addr = getelementptr i16 %H_filt_FIR, i64 0, i64 %zext_ln42
+for.inc15.split:6 %H_filter_FIR_addr = getelementptr i16 %H_filter_FIR, i64 0, i64 %zext_ln42
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_addr"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_addr"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="2" lat="2">
@@ -243,10 +243,10 @@ for.inc15.split:6 %H_filt_FIR_addr = getelementptr i16 %H_filt_FIR, i64 0, i64 %
 
 <Node id="24" bw="16" op_0_bw="9">
 <![CDATA[
-for.inc15.split:7 %H_filt_FIR_load = load i9 %H_filt_FIR_addr
+for.inc15.split:7 %H_filter_FIR_load = load i9 %H_filter_FIR_addr
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_load"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_load"/></StgValue>
 </operation>
 
 <operation id="22" st_id="1" stage="1" lat="1">
@@ -310,10 +310,10 @@ for.inc15.split:15 %store_ln41 = store i9 %add_ln41, i9 %i
 
 <Node id="24" bw="16" op_0_bw="9">
 <![CDATA[
-for.inc15.split:7 %H_filt_FIR_load = load i9 %H_filt_FIR_addr
+for.inc15.split:7 %H_filter_FIR_load = load i9 %H_filter_FIR_addr
 
 ]]></Node>
-<StgValue><ssdm name="H_filt_FIR_load"/></StgValue>
+<StgValue><ssdm name="H_filter_FIR_load"/></StgValue>
 </operation>
 
 <operation id="26" st_id="2" stage="1" lat="1">
@@ -326,7 +326,7 @@ for.inc15.split:7 %H_filt_FIR_load = load i9 %H_filt_FIR_addr
 
 <Node id="25" bw="30" op_0_bw="16">
 <![CDATA[
-for.inc15.split:8 %sext_ln42 = sext i16 %H_filt_FIR_load
+for.inc15.split:8 %sext_ln42 = sext i16 %H_filter_FIR_load
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln42"/></StgValue>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'HLS_FIR'
 ================================================================
-* Date:           Wed Oct 15 22:30:28 2025
+* Date:           Fri Oct 17 15:39:09 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        HLS_FIR_1
@@ -176,10 +176,10 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.31>
 ST_1 : Operation 4 [1/1] (0.07ns)   --->   "%test = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [HLS_FIR.cpp:16->HLS_FIR.cpp:7]   --->   Operation 4 'read' 'test' <Predicate = true> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 5 [2/2] (1.23ns)   --->   "%test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_FIR" [HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 5 'call' 'test2' <Predicate = true> <Delay = 1.23> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 5 [2/2] (1.23ns)   --->   "%test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filter_FIR, i14 %b_FIR" [HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 5 'call' 'test2' <Predicate = true> <Delay = 1.23> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.45>
-ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filt_FIR, i14 %b_FIR" [HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 6 'call' 'test2' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%test2 = call i16 @FIR_filter<392>, i16 %test, i16 %H_filter_FIR, i14 %b_FIR" [HLS_FIR.cpp:17->HLS_FIR.cpp:7]   --->   Operation 6 'call' 'test2' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 7 [2/2] (0.45ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %test2" [HLS_FIR.cpp:18->HLS_FIR.cpp:7]   --->   Operation 7 'write' 'write_ln18' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
 
 State 3 <SV = 2> <Delay = 0.45>
@@ -206,7 +206,7 @@ STG Binding:
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_none:ce=0
 Port [ input_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
 Port [ output_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
-Port [ H_filt_FIR]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ H_filter_FIR]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ b_FIR]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -247,12 +247,12 @@ ret_ln8           (ret          ) [ 0000]
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="H_filt_FIR">
+<comp id="4" class="1000" name="H_filter_FIR">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="H_filt_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
+<StgValue><ssdm name="H_filter_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -489,10 +489,10 @@ ret_ln8           (ret          ) [ 0000]
 * FSMD analyzer results:
   - Output states:
 	Port: output_r | {3 }
-	Port: H_filt_FIR | {1 2 }
+	Port: H_filter_FIR | {1 2 }
  - Input state : 
 	Port: HLS_FIR : input_r | {1 }
-	Port: HLS_FIR : H_filt_FIR | {1 2 }
+	Port: HLS_FIR : H_filter_FIR | {1 2 }
 	Port: HLS_FIR : b_FIR | {1 2 }
   - Chain level:
 	State 1
@@ -519,14 +519,14 @@ ret_ln8           (ret          ) [ 0000]
 |----------|----------------------------|---------|---------|---------|---------|
 
 Memories:
-+----------+--------+--------+--------+--------+
-|          |  BRAM  |   FF   |   LUT  |  URAM  |
-+----------+--------+--------+--------+--------+
-|H_filt_FIR|    1   |    0   |    0   |    0   |
-|   b_FIR  |    1   |    0   |    0   |    -   |
-+----------+--------+--------+--------+--------+
-|   Total  |    2   |    0   |    0   |    0   |
-+----------+--------+--------+--------+--------+
++------------+--------+--------+--------+--------+
+|            |  BRAM  |   FF   |   LUT  |  URAM  |
++------------+--------+--------+--------+--------+
+|H_filter_FIR|    1   |    0   |    0   |    0   |
+|    b_FIR   |    1   |    0   |    0   |    -   |
++------------+--------+--------+--------+--------+
+|    Total   |    2   |    0   |    0   |    0   |
++------------+--------+--------+--------+--------+
 
 * Register list:
 +------------+--------+

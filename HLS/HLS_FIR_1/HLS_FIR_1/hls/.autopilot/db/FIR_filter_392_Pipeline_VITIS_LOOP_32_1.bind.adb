@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>H_filt_FIR</name>
+						<name>H_filter_FIR</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -552,7 +552,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>H_filt_FIR_addr</name>
+						<name>H_filter_FIR_addr</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -610,7 +610,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>H_filt_FIR_load</name>
+						<name>H_filter_FIR_load</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -666,7 +666,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>H_filt_FIR_addr_1</name>
+						<name>H_filter_FIR_addr_1</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -724,7 +724,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>H_filt_FIR_addr_1_write_ln34</name>
+						<name>H_filter_FIR_addr_1_write_ln34</name>
 						<fileName>HLS_FIR.cpp</fileName>
 						<fileDirectory>C:\HLS-multirate-DSP\HLS\HLS_FIR_1</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -1978,7 +1978,7 @@
 		<count>7</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>H_filt_FIR_addr_1_gep_fu_49</first>
+			<first>H_filter_FIR_addr_1_gep_fu_49</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1986,7 +1986,7 @@
 			</second>
 		</item>
 		<item>
-			<first>H_filt_FIR_addr_gep_fu_32</first>
+			<first>H_filter_FIR_addr_gep_fu_32</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2075,7 +2075,7 @@
 		<item_version>0</item_version>
 		<item class_id="50" tracking_level="0" version="0">
 			<first class_id="51" tracking_level="0" version="0">
-				<first>H_filt_FIR</first>
+				<first>H_filter_FIR</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -2086,7 +2086,7 @@
 		</item>
 		<item>
 			<first>
-				<first>H_filt_FIR</first>
+				<first>H_filter_FIR</first>
 				<second>1</second>
 			</first>
 			<second>
@@ -2129,7 +2129,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>H_filt_FIR_addr_reg_107</first>
+			<first>H_filter_FIR_addr_reg_107</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2165,7 +2165,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
-			<first>H_filt_FIR(p0)</first>
+			<first>H_filter_FIR(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2180,7 +2180,7 @@
 			</second>
 		</item>
 		<item>
-			<first>H_filt_FIR(p1)</first>
+			<first>H_filter_FIR(p1)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

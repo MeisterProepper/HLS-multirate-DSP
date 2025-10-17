@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'FIR_filter_392_s'
 ================================================================
-* Date:           Wed Oct 15 22:30:26 2025
+* Date:           Fri Oct 17 15:39:07 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        HLS_FIR_1
@@ -87,25 +87,25 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%FIR_accu32_loc = alloca i64 1"   --->   Operation 7 'alloca' 'FIR_accu32_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filt_FIR"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filter_FIR"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 1.63>
-ST_2 : Operation 9 [1/2] (1.63ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filt_FIR"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 1.63> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 9 [1/2] (1.63ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_32_1, i16 %H_filter_FIR"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 1.63> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 1.23>
 ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%x_n_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %x_n"   --->   Operation 10 'read' 'x_n_read' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 11 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln37 = store i16 %x_n_read, i16 391" [HLS_FIR.cpp:37]   --->   Operation 11 'store' 'store_ln37' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filt_FIR, i14 %b_FIR"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filter_FIR, i14 %b_FIR"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filt_FIR, i14 %b_FIR"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @FIR_filter<392>_Pipeline_VITIS_LOOP_41_2, i31 %FIR_accu32_loc, i16 %H_filter_FIR, i14 %b_FIR"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
 ST_6 : Operation 14 [1/1] (0.00ns)   --->   "%FIR_accu32_loc_load = load i31 %FIR_accu32_loc"   --->   Operation 14 'load' 'FIR_accu32_loc_load' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%y = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %FIR_accu32_loc_load, i32 15, i32 30" [HLS_FIR.cpp:47]   --->   Operation 15 'partselect' 'y' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln48 = ret i16 %y" [HLS_FIR.cpp:48]   --->   Operation 16 'ret' 'ret_ln48' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%y = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %FIR_accu32_loc_load, i32 15, i32 30" [HLS_FIR.cpp:46]   --->   Operation 15 'partselect' 'y' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln47 = ret i16 %y" [HLS_FIR.cpp:47]   --->   Operation 16 'ret' 'ret_ln47' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -120,7 +120,7 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ x_n]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ H_filt_FIR]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ H_filter_FIR]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ b_FIR]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -135,7 +135,7 @@ store_ln37          (store     ) [ 0000000]
 call_ln0            (call      ) [ 0000000]
 FIR_accu32_loc_load (load      ) [ 0000000]
 y                   (partselect) [ 0000000]
-ret_ln48            (ret       ) [ 0000000]
+ret_ln47            (ret       ) [ 0000000]
 </LifeTime>
 
 <model>
@@ -150,12 +150,12 @@ ret_ln48            (ret       ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="H_filt_FIR">
+<comp id="2" class="1000" name="H_filter_FIR">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="H_filt_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
+<StgValue><ssdm name="H_filter_FIR"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -383,10 +383,10 @@ ret_ln48            (ret       ) [ 0000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: H_filt_FIR | {1 2 3 }
+	Port: H_filter_FIR | {1 2 3 }
  - Input state : 
 	Port: FIR_filter<392> : x_n | {3 }
-	Port: FIR_filter<392> : H_filt_FIR | {1 2 4 5 }
+	Port: FIR_filter<392> : H_filter_FIR | {1 2 4 5 }
 	Port: FIR_filter<392> : b_FIR | {4 5 }
   - Chain level:
 	State 1
@@ -396,7 +396,7 @@ ret_ln48            (ret       ) [ 0000000]
 	State 5
 	State 6
 		y : 1
-		ret_ln48 : 2
+		ret_ln47 : 2
 
 
 ============================================================

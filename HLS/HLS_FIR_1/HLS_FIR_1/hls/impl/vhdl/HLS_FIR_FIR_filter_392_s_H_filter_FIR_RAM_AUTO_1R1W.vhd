@@ -8,7 +8,7 @@ library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;
 
-entity HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W is 
+entity HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 16; 
@@ -29,7 +29,7 @@ entity HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W is
     ); 
 end entity; 
 
-architecture rtl of HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W is 
+architecture rtl of HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W is 
 
 signal address0_tmp : std_logic_vector(AddressWidth-1 downto 0);
 signal address1_tmp : std_logic_vector(AddressWidth-1 downto 0);

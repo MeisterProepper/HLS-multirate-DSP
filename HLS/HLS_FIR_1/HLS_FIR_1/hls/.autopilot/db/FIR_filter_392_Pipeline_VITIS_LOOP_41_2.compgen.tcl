@@ -22,16 +22,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 6 \
-    name H_filt_FIR \
+    name H_filter_FIR \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename H_filt_FIR \
+    corename H_filter_FIR \
     op interface \
-    ports { H_filt_FIR_address0 { O 9 vector } H_filt_FIR_ce0 { O 1 bit } H_filt_FIR_q0 { I 16 vector } } \
+    ports { H_filter_FIR_address0 { O 9 vector } H_filter_FIR_ce0 { O 1 bit } H_filter_FIR_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'H_filt_FIR'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'H_filter_FIR'"
 }
 }
 

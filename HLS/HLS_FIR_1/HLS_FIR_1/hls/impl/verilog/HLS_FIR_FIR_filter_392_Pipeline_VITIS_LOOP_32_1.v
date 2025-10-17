@@ -13,13 +13,13 @@ module HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_32_1 (
         ap_done,
         ap_idle,
         ap_ready,
-        H_filt_FIR_address0,
-        H_filt_FIR_ce0,
-        H_filt_FIR_we0,
-        H_filt_FIR_d0,
-        H_filt_FIR_address1,
-        H_filt_FIR_ce1,
-        H_filt_FIR_q1
+        H_filter_FIR_address0,
+        H_filter_FIR_ce0,
+        H_filter_FIR_we0,
+        H_filter_FIR_d0,
+        H_filter_FIR_address1,
+        H_filter_FIR_ce1,
+        H_filter_FIR_q1
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -30,13 +30,13 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [8:0] H_filt_FIR_address0;
-output   H_filt_FIR_ce0;
-output   H_filt_FIR_we0;
-output  [15:0] H_filt_FIR_d0;
-output  [8:0] H_filt_FIR_address1;
-output   H_filt_FIR_ce1;
-input  [15:0] H_filt_FIR_q1;
+output  [8:0] H_filter_FIR_address0;
+output   H_filter_FIR_ce0;
+output   H_filter_FIR_we0;
+output  [15:0] H_filter_FIR_d0;
+output  [8:0] H_filter_FIR_address1;
+output   H_filter_FIR_ce1;
+input  [15:0] H_filter_FIR_q1;
 
 reg ap_idle;
 
@@ -59,9 +59,9 @@ reg   [8:0] i_fu_28;
 wire   [8:0] add_ln34_fu_72_p2;
 wire    ap_loop_init;
 reg   [8:0] ap_sig_allocacmp_i_2;
-reg    H_filt_FIR_ce1_local;
-reg    H_filt_FIR_we0_local;
-reg    H_filt_FIR_ce0_local;
+reg    H_filter_FIR_ce1_local;
+reg    H_filter_FIR_we0_local;
+reg    H_filter_FIR_ce0_local;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -151,25 +151,25 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        H_filt_FIR_ce0_local = 1'b1;
+        H_filter_FIR_ce0_local = 1'b1;
     end else begin
-        H_filt_FIR_ce0_local = 1'b0;
+        H_filter_FIR_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        H_filt_FIR_ce1_local = 1'b1;
+        H_filter_FIR_ce1_local = 1'b1;
     end else begin
-        H_filt_FIR_ce1_local = 1'b0;
+        H_filter_FIR_ce1_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        H_filt_FIR_we0_local = 1'b1;
+        H_filter_FIR_we0_local = 1'b1;
     end else begin
-        H_filt_FIR_we0_local = 1'b0;
+        H_filter_FIR_we0_local = 1'b0;
     end
 end
 
@@ -232,17 +232,17 @@ always @ (*) begin
     endcase
 end
 
-assign H_filt_FIR_address0 = zext_ln32_fu_88_p1;
+assign H_filter_FIR_address0 = zext_ln32_fu_88_p1;
 
-assign H_filt_FIR_address1 = zext_ln34_fu_78_p1;
+assign H_filter_FIR_address1 = zext_ln34_fu_78_p1;
 
-assign H_filt_FIR_ce0 = H_filt_FIR_ce0_local;
+assign H_filter_FIR_ce0 = H_filter_FIR_ce0_local;
 
-assign H_filt_FIR_ce1 = H_filt_FIR_ce1_local;
+assign H_filter_FIR_ce1 = H_filter_FIR_ce1_local;
 
-assign H_filt_FIR_d0 = H_filt_FIR_q1;
+assign H_filter_FIR_d0 = H_filter_FIR_q1;
 
-assign H_filt_FIR_we0 = H_filt_FIR_we0_local;
+assign H_filter_FIR_we0 = H_filter_FIR_we0_local;
 
 assign add_ln34_fu_72_p2 = (ap_sig_allocacmp_i_2 + 9'd1);
 

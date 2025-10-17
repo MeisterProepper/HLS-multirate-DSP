@@ -39,42 +39,42 @@ reg ap_ready;
 
 (* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [8:0] H_filt_FIR_address0;
-reg    H_filt_FIR_ce0;
-reg    H_filt_FIR_we0;
-reg   [15:0] H_filt_FIR_d0;
-wire   [15:0] H_filt_FIR_q0;
-reg    H_filt_FIR_ce1;
-wire   [15:0] H_filt_FIR_q1;
+reg   [8:0] H_filter_FIR_address0;
+reg    H_filter_FIR_ce0;
+reg    H_filter_FIR_we0;
+reg   [15:0] H_filter_FIR_d0;
+wire   [15:0] H_filter_FIR_q0;
+reg    H_filter_FIR_ce1;
+wire   [15:0] H_filter_FIR_q1;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_start;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_done;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_idle;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_ready;
-wire   [8:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_address0;
-wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_ce0;
-wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_we0;
-wire   [15:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_d0;
-wire   [8:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_address1;
-wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_ce1;
+wire   [8:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_address0;
+wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_ce0;
+wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_we0;
+wire   [15:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_d0;
+wire   [8:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_address1;
+wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_ce1;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_start;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_done;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_idle;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_ready;
 wire   [30:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_FIR_accu32_out;
 wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_FIR_accu32_out_ap_vld;
-wire   [8:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filt_FIR_address0;
-wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filt_FIR_ce0;
+wire   [8:0] grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filter_FIR_address0;
+wire    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filter_FIR_ce0;
 reg    grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_start_reg;
 wire    ap_CS_fsm_state2;
-wire    H_filt_FIR_we0_out;
+wire    H_filter_FIR_we0_out;
 reg    grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_start_reg;
 wire    ap_CS_fsm_state4;
 reg   [30:0] FIR_accu32_loc_fu_22;
 wire    ap_CS_fsm_state5;
 wire    ap_CS_fsm_state6;
 wire    ap_CS_fsm_state3;
-reg    H_filt_FIR_we0_local;
-reg    H_filt_FIR_ce0_local;
+reg    H_filter_FIR_we0_local;
+reg    H_filter_FIR_ce0_local;
 reg   [5:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
@@ -91,21 +91,21 @@ initial begin
 #0 grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_start_reg = 1'b0;
 end
 
-HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W #(
+HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
     .AddressRange( 392 ),
     .AddressWidth( 9 ))
-H_filt_FIR_U(
+H_filter_FIR_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(H_filt_FIR_address0),
-    .ce0(H_filt_FIR_ce0),
-    .we0(H_filt_FIR_we0),
-    .d0(H_filt_FIR_d0),
-    .q0(H_filt_FIR_q0),
-    .address1(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_address1),
-    .ce1(H_filt_FIR_ce1),
-    .q1(H_filt_FIR_q1)
+    .address0(H_filter_FIR_address0),
+    .ce0(H_filter_FIR_ce0),
+    .we0(H_filter_FIR_we0),
+    .d0(H_filter_FIR_d0),
+    .q0(H_filter_FIR_q0),
+    .address1(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_address1),
+    .ce1(H_filter_FIR_ce1),
+    .q1(H_filter_FIR_q1)
 );
 
 HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_32_1 grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39(
@@ -115,13 +115,13 @@ HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_32_1 grp_FIR_filter_392_Pipeline_VITI
     .ap_done(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_done),
     .ap_idle(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_idle),
     .ap_ready(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_ap_ready),
-    .H_filt_FIR_address0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_address0),
-    .H_filt_FIR_ce0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_ce0),
-    .H_filt_FIR_we0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_we0),
-    .H_filt_FIR_d0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_d0),
-    .H_filt_FIR_address1(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_address1),
-    .H_filt_FIR_ce1(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_ce1),
-    .H_filt_FIR_q1(H_filt_FIR_q1)
+    .H_filter_FIR_address0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_address0),
+    .H_filter_FIR_ce0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_ce0),
+    .H_filter_FIR_we0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_we0),
+    .H_filter_FIR_d0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_d0),
+    .H_filter_FIR_address1(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_address1),
+    .H_filter_FIR_ce1(grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_ce1),
+    .H_filter_FIR_q1(H_filter_FIR_q1)
 );
 
 HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2 grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45(
@@ -133,9 +133,9 @@ HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2 grp_FIR_filter_392_Pipeline_VITI
     .ap_ready(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_ap_ready),
     .FIR_accu32_out(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_FIR_accu32_out),
     .FIR_accu32_out_ap_vld(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_FIR_accu32_out_ap_vld),
-    .H_filt_FIR_address0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filt_FIR_address0),
-    .H_filt_FIR_ce0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filt_FIR_ce0),
-    .H_filt_FIR_q0(H_filt_FIR_q0)
+    .H_filter_FIR_address0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filter_FIR_address0),
+    .H_filter_FIR_ce0(grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filter_FIR_ce0),
+    .H_filter_FIR_q0(H_filter_FIR_q0)
 );
 
 always @ (posedge ap_clk) begin
@@ -178,61 +178,61 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_address0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filt_FIR_address0;
+        H_filter_FIR_address0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filter_FIR_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        H_filt_FIR_address0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_address0;
+        H_filter_FIR_address0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_address0;
     end else begin
-        H_filt_FIR_address0 = 9'd391;
+        H_filter_FIR_address0 = 9'd391;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        H_filt_FIR_ce0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filt_FIR_ce0;
+        H_filter_FIR_ce0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_fu_45_H_filter_FIR_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        H_filt_FIR_ce0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_ce0;
+        H_filter_FIR_ce0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_ce0;
     end else begin
-        H_filt_FIR_ce0 = H_filt_FIR_ce0_local;
+        H_filter_FIR_ce0 = H_filter_FIR_ce0_local;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        H_filt_FIR_ce0_local = 1'b1;
+        H_filter_FIR_ce0_local = 1'b1;
     end else begin
-        H_filt_FIR_ce0_local = 1'b0;
+        H_filter_FIR_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        H_filt_FIR_ce1 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_ce1;
+        H_filter_FIR_ce1 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_ce1;
     end else begin
-        H_filt_FIR_ce1 = 1'b0;
+        H_filter_FIR_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        H_filt_FIR_d0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_d0;
+        H_filter_FIR_d0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_d0;
     end else begin
-        H_filt_FIR_d0 = x_n;
+        H_filter_FIR_d0 = x_n;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        H_filt_FIR_we0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filt_FIR_we0;
+        H_filter_FIR_we0 = grp_FIR_filter_392_Pipeline_VITIS_LOOP_32_1_fu_39_H_filter_FIR_we0;
     end else begin
-        H_filt_FIR_we0 = (1'b0 | H_filt_FIR_we0_out);
+        H_filter_FIR_we0 = (1'b0 | H_filter_FIR_we0_out);
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        H_filt_FIR_we0_local = 1'b1;
+        H_filter_FIR_we0_local = 1'b1;
     end else begin
-        H_filt_FIR_we0_local = 1'b0;
+        H_filter_FIR_we0_local = 1'b0;
     end
 end
 
@@ -328,7 +328,7 @@ always @ (*) begin
     endcase
 end
 
-assign H_filt_FIR_we0_out = H_filt_FIR_we0_local;
+assign H_filter_FIR_we0_out = H_filter_FIR_we0_local;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 

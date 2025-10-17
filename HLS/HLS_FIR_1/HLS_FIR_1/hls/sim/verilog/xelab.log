@@ -27,8 +27,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_
 INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_Pipeline_VITIS_LOOP_41_2_b_FIR_ROM_AUTO_1R
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_s.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_s_H_filt_FIR_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HLS_FIR_FIR_filter_392_s_H_filter_FIR_RAM_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module HLS_FIR_flow_control_loop_pipe_sequential_init
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS/HLS_FIR_1/HLS_FIR_1/hls/sim/verilog/HLS_FIR_mac_muladd_16s_14s_32s_32_4_1.v" into library xil_defaultlib
@@ -45,7 +45,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_s_H_filt_...
+Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_s_H_filte...
 Compiling module xil_defaultlib.HLS_FIR_flow_control_loop_pipe_s...
 Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_Pipeline_...
 Compiling module xil_defaultlib.HLS_FIR_FIR_filter_392_Pipeline_...

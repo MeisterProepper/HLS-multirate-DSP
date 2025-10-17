@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'FIR_filter_392_Pipeline_VITIS_LOOP_32_1'
 ================================================================
-* Date:           Wed Oct 15 22:30:25 2025
+* Date:           Fri Oct 17 15:39:06 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        HLS_FIR_1
@@ -93,8 +93,8 @@ ST_1 : Operation 9 [1/1] (0.77ns)   --->   "%icmp_ln32 = icmp_eq  i9 %i_2, i9 39
 ST_1 : Operation 10 [1/1] (0.77ns)   --->   "%add_ln34 = add i9 %i_2, i9 1" [HLS_FIR.cpp:34]   --->   Operation 10 'add' 'add_ln34' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln32 = br i1 %icmp_ln32, void %for.inc.split, void %for.end.exitStub" [HLS_FIR.cpp:32]   --->   Operation 11 'br' 'br_ln32' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln34 = zext i9 %add_ln34" [HLS_FIR.cpp:34]   --->   Operation 12 'zext' 'zext_ln34' <Predicate = (!icmp_ln32)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%H_filt_FIR_addr = getelementptr i16 %H_filt_FIR, i64 0, i64 %zext_ln34" [HLS_FIR.cpp:34]   --->   Operation 13 'getelementptr' 'H_filt_FIR_addr' <Predicate = (!icmp_ln32)> <Delay = 0.00>
-ST_1 : Operation 14 [2/2] (1.23ns)   --->   "%H_filt_FIR_load = load i9 %H_filt_FIR_addr" [HLS_FIR.cpp:34]   --->   Operation 14 'load' 'H_filt_FIR_load' <Predicate = (!icmp_ln32)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%H_filter_FIR_addr = getelementptr i16 %H_filter_FIR, i64 0, i64 %zext_ln34" [HLS_FIR.cpp:34]   --->   Operation 13 'getelementptr' 'H_filter_FIR_addr' <Predicate = (!icmp_ln32)> <Delay = 0.00>
+ST_1 : Operation 14 [2/2] (1.23ns)   --->   "%H_filter_FIR_load = load i9 %H_filter_FIR_addr" [HLS_FIR.cpp:34]   --->   Operation 14 'load' 'H_filter_FIR_load' <Predicate = (!icmp_ln32)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
 ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln32 = store i9 %add_ln34, i9 %i" [HLS_FIR.cpp:32]   --->   Operation 15 'store' 'store_ln32' <Predicate = (!icmp_ln32)> <Delay = 0.42>
 ST_1 : Operation 24 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 24 'ret' 'ret_ln0' <Predicate = (icmp_ln32)> <Delay = 0.42>
 
@@ -103,9 +103,9 @@ ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln32 = zext i9 %i_2" [HLS_FIR
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln32 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [HLS_FIR.cpp:32]   --->   Operation 17 'specpipeline' 'specpipeline_ln32' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln32 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 391, i64 391, i64 391" [HLS_FIR.cpp:32]   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln32' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln32 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [HLS_FIR.cpp:32]   --->   Operation 19 'specloopname' 'specloopname_ln32' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/2] ( I:1.23ns O:1.23ns )   --->   "%H_filt_FIR_load = load i9 %H_filt_FIR_addr" [HLS_FIR.cpp:34]   --->   Operation 20 'load' 'H_filt_FIR_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%H_filt_FIR_addr_1 = getelementptr i16 %H_filt_FIR, i64 0, i64 %zext_ln32" [HLS_FIR.cpp:34]   --->   Operation 21 'getelementptr' 'H_filt_FIR_addr_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln34 = store i16 %H_filt_FIR_load, i9 %H_filt_FIR_addr_1" [HLS_FIR.cpp:34]   --->   Operation 22 'store' 'store_ln34' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
+ST_2 : Operation 20 [1/2] ( I:1.23ns O:1.23ns )   --->   "%H_filter_FIR_load = load i9 %H_filter_FIR_addr" [HLS_FIR.cpp:34]   --->   Operation 20 'load' 'H_filter_FIR_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%H_filter_FIR_addr_1 = getelementptr i16 %H_filter_FIR, i64 0, i64 %zext_ln32" [HLS_FIR.cpp:34]   --->   Operation 21 'getelementptr' 'H_filter_FIR_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln34 = store i16 %H_filter_FIR_load, i9 %H_filter_FIR_addr_1" [HLS_FIR.cpp:34]   --->   Operation 22 'store' 'store_ln34' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 392> <RAM>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln32 = br void %for.inc" [HLS_FIR.cpp:32]   --->   Operation 23 'br' 'br_ln32' <Predicate = true> <Delay = 0.00>
 
 
@@ -120,7 +120,7 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ H_filt_FIR]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
+Port [ H_filter_FIR]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -135,14 +135,14 @@ icmp_ln32              (icmp             ) [ 010]
 add_ln34               (add              ) [ 000]
 br_ln32                (br               ) [ 000]
 zext_ln34              (zext             ) [ 000]
-H_filt_FIR_addr        (getelementptr    ) [ 011]
+H_filter_FIR_addr      (getelementptr    ) [ 011]
 store_ln32             (store            ) [ 000]
 zext_ln32              (zext             ) [ 000]
 specpipeline_ln32      (specpipeline     ) [ 000]
 speclooptripcount_ln32 (speclooptripcount) [ 000]
 specloopname_ln32      (specloopname     ) [ 000]
-H_filt_FIR_load        (load             ) [ 000]
-H_filt_FIR_addr_1      (getelementptr    ) [ 000]
+H_filter_FIR_load      (load             ) [ 000]
+H_filter_FIR_addr_1    (getelementptr    ) [ 000]
 store_ln34             (store            ) [ 000]
 br_ln32                (br               ) [ 000]
 ret_ln0                (ret              ) [ 000]
@@ -151,12 +151,12 @@ ret_ln0                (ret              ) [ 000]
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="H_filt_FIR">
+<comp id="0" class="1000" name="H_filter_FIR">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="H_filt_FIR"/><MemPortTyVec>0 1 </MemPortTyVec>
+<StgValue><ssdm name="H_filter_FIR"/><MemPortTyVec>0 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -289,7 +289,7 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="32" class="1004" name="H_filt_FIR_addr_gep_fu_32">
+<comp id="32" class="1004" name="H_filter_FIR_addr_gep_fu_32">
 <pin_list>
 <pin id="33" dir="0" index="0" bw="16" slack="0"/>
 <pin id="34" dir="0" index="1" bw="1" slack="0"/>
@@ -298,7 +298,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="H_filt_FIR_addr/1 "/>
+<opset="H_filter_FIR_addr/1 "/>
 </bind>
 </comp>
 
@@ -315,11 +315,11 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="store"/>
-<opset="H_filt_FIR_load/1 store_ln34/2 "/>
+<opset="H_filter_FIR_load/1 store_ln34/2 "/>
 </bind>
 </comp>
 
-<comp id="49" class="1004" name="H_filt_FIR_addr_1_gep_fu_49">
+<comp id="49" class="1004" name="H_filter_FIR_addr_1_gep_fu_49">
 <pin_list>
 <pin id="50" dir="0" index="0" bw="16" slack="0"/>
 <pin id="51" dir="0" index="1" bw="1" slack="0"/>
@@ -328,7 +328,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="H_filt_FIR_addr_1/2 "/>
+<opset="H_filter_FIR_addr_1/2 "/>
 </bind>
 </comp>
 
@@ -433,13 +433,13 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="107" class="1005" name="H_filt_FIR_addr_reg_107">
+<comp id="107" class="1005" name="H_filter_FIR_addr_reg_107">
 <pin_list>
 <pin id="108" dir="0" index="0" bw="9" slack="1"/>
 <pin id="109" dir="1" index="1" bw="9" slack="1"/>
 </pin_list>
 <bind>
-<opset="H_filt_FIR_addr "/>
+<opset="H_filter_FIR_addr "/>
 </bind>
 </comp>
 
@@ -503,9 +503,9 @@ ret_ln0                (ret              ) [ 000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: H_filt_FIR | {2 }
+	Port: H_filter_FIR | {2 }
  - Input state : 
-	Port: FIR_filter<392>_Pipeline_VITIS_LOOP_32_1 : H_filt_FIR | {1 2 }
+	Port: FIR_filter<392>_Pipeline_VITIS_LOOP_32_1 : H_filter_FIR | {1 2 }
   - Chain level:
 	State 1
 		store_ln32 : 1
@@ -514,11 +514,11 @@ ret_ln0                (ret              ) [ 000]
 		add_ln34 : 2
 		br_ln32 : 3
 		zext_ln34 : 3
-		H_filt_FIR_addr : 4
-		H_filt_FIR_load : 5
+		H_filter_FIR_addr : 4
+		H_filter_FIR_load : 5
 		store_ln32 : 3
 	State 2
-		H_filt_FIR_addr_1 : 1
+		H_filter_FIR_addr_1 : 1
 		store_ln34 : 2
 
 
@@ -544,15 +544,15 @@ Memories:
 N/A
 
 * Register list:
-+-----------------------+--------+
-|                       |   FF   |
-+-----------------------+--------+
-|H_filt_FIR_addr_reg_107|    9   |
-|       i_2_reg_99      |    9   |
-|        i_reg_92       |    9   |
-+-----------------------+--------+
-|         Total         |   27   |
-+-----------------------+--------+
++-------------------------+--------+
+|                         |   FF   |
++-------------------------+--------+
+|H_filter_FIR_addr_reg_107|    9   |
+|        i_2_reg_99       |    9   |
+|         i_reg_92        |    9   |
++-------------------------+--------+
+|          Total          |   27   |
++-------------------------+--------+
 
 * Multiplexer (MUX) list: 
 |------------------|------|------|------|--------||---------||---------||---------|
