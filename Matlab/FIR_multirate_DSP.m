@@ -103,9 +103,69 @@ test_signal = sin(2 * pi * 1000 * t);
 
 
 %TODO Testsignal Multirate
+y1_phase0=0;
+y1_phase1=0;
+y1_phase2=0;
+y1_phase3=0;
+y1=0;
+y2=0;
+
+for i = 1:MM
+    filtersdec{i} = dsp.FIRFilter('Numerator', b_dec_int{i});
+    filtersint{i} = dsp.FIRFilter('Numerator', b_dec_int{i});
+end
+
+filterkernel = dsp.FIRFilter('Numerator', b_FIR_kernel_MM);
+mod_value=0;
+for i = 1:testLength
+    
+
+    switch mod_value
+        case 0
+            y1_phase0 = filtersdec{1}(test_signal(i));
+            y1=y1_phase0+y1_phase1+y1_phase2+y1_phase3;
+            y2=filterkernel(y1);
+            my_signal(i) = filtersint{1}(y2)*4;
+            mod_value=1;
+            
+        case 1
+            y1_phase1 = filtersdec{4}(test_signal(i));
+            my_signal(i) = filtersint{2}(y2)*4;
+            mod_value=2;
+
+        case 2
+            y1_phase2 = filtersdec{3}(test_signal(i));
+            my_signal(i) = filtersint{3}(y2)*4;
+            mod_value=3;
+
+        case 3
+            y1_phase3 = filtersdec{2}(test_signal(i));
+            my_signal(i) = filtersint{4}(y2)*4;
+            mod_value=0;
+    end
+end
 
 
 
+
+% Plots
+figure;
+
+subplot(2, 1, 1);
+plot(t, test_signal, 'DisplayName', 'Original Signal 1 kHz', 'Marker', 'O');
+title('Original Signal (1 kHz Sine)');
+xlabel('Time [s]');
+ylabel('Amplitude');
+ylim([-1 1]); 
+grid on;
+
+subplot(2, 1, 2);
+plot(t, my_signal, 'DisplayName', 'Filtered Signal', 'Marker', 'O');
+title('Filtered Signal');
+xlabel('Time [s]');
+ylabel('Amplitude');
+ylim([-1 1]); 
+grid on;
 
 %---------------------------------------------------------------------------
 % write to file !
@@ -183,8 +243,38 @@ end
 fclose(file_ID);
 
 
+%---------------------------------------------------------------------------
+% write to file !
+% create TS_DSP_multirate.dat file
 
+fprintf('test signal is written to file ==> ');
+filename = 'TS_DSP_multirate.dat';
+fprintf(filename);
+fprintf('\n\n');
+file_ID = fopen(filename, 'w');
 
+for i = 1:length(test_signal)
+    fprintf(file_ID,'%6.0f',round(test_signal(i)*32768));
+    fprintf(file_ID,'\n');
+end
 
+fclose(file_ID);
+
+%---------------------------------------------------------------------------
+% write to file !
+% create TS_DSP_multirate.res file
+
+fprintf('golden vector is written to file ==> ');
+filename = 'TS_DSP_multirate.res';
+fprintf(filename);
+fprintf('\n\n');
+file_ID = fopen(filename, 'w');
+
+for i = 1:length(my_signal)
+    fprintf(file_ID,'%6.0f',round(my_signal(i)*32768));
+    fprintf(file_ID,'\n');
+end
+
+fclose(file_ID);
 
 
