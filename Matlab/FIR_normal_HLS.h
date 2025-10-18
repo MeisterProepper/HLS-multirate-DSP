@@ -9,13 +9,13 @@
 // N_FIR = 391
 //------------------------------------------- 
  
-#include "ap_fixed.h" 
+#include <ap_fixed.h> 
  
 #define N_DELAYS_FIR 392
 typedef ap_fixed<16,1> coef_data_t; 
 typedef ap_fixed<16,1> delay_data_t; 
  
-static delay_data_t H_filt_FIR[N_DELAYS_FIR]; 
+static delay_data_t H_filter_FIR[N_DELAYS_FIR]; 
 const coef_data_t b_FIR[392]={
  -0.004215, 0.001417, 0.001303, 0.001243, 0.001196, 0.001131,
  0.001020, 0.000857, 0.000640, 0.000387, 0.000122, -0.000120,

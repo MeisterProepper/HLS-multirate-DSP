@@ -1,0 +1,270 @@
+<ENTRY>
+{
+ "thisFile": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\FIR_v2.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/18/25 12:59:31",
+ "timestampMillis": "1760785171088",
+ "buildStep": {
+  "cmdId": "248d74f8-87f4-4013-951f-87c07da0da06",
+  "name": "vitis-run",
+  "logFile": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\logs\\FIR_v2.steps.log",
+  "commandLine": "C:/AMD/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\HLS-multirate-DSP\\HLS_Project\\FIR_v2\\hls_config.cfg --work_dir FIR_v2 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\HLS-multirate-DSP\\HLS_Project\\FIR_v2\\hls_config.cfg",
+   "--work_dir",
+   "FIR_v2"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\HLS-multirate-DSP\\HLS_Project\\FIR_v2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/18/25 12:59:31",
+ "timestampMillis": "1760785171089",
+ "status": {
+  "cmdId": "248d74f8-87f4-4013-951f-87c07da0da06",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178136",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "FIR_HLS",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_HLS.cpp",
+     "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_HLS.h",
+     "C:/HLS-multirate-DSP\\Matlab\\FIR_normal_HLS.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178138",
+ "buildStep": {
+  "cmdId": "61ba11d6-7e16-427a-802f-ad53a983f70b",
+  "name": "",
+  "logFile": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\HLS-multirate-DSP\\HLS_Project\\FIR_v2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178139",
+ "status": {
+  "cmdId": "61ba11d6-7e16-427a-802f-ad53a983f70b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178140",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178141",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178142",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178142",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178143",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 12:59:38",
+ "timestampMillis": "1760785178144",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 13:14:45",
+ "timestampMillis": "1760786085868",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 13:14:45",
+ "timestampMillis": "1760786085869",
+ "report": {
+  "path": "C:/HLS-multirate-DSP\\HLS_Project\\FIR_v2\\FIR_v2\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/18/25 13:14:45",
+ "timestampMillis": "1760786085870",
+ "status": {
+  "cmdId": "61ba11d6-7e16-427a-802f-ad53a983f70b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/18/25 13:14:46",
+ "timestampMillis": "1760786086304",
+ "status": {
+  "cmdId": "248d74f8-87f4-4013-951f-87c07da0da06",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 13:14:46",
+ "timestampMillis": "1760786086310",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/18/25 13:14:46",
+ "timestampMillis": "1760786086311",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

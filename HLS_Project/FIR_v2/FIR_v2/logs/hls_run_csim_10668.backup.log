@@ -1,0 +1,520 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS_Project/FIR_v2/FIR_v2 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v2/FIR_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v2/FIR_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v2/FIR_HLS_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.dat' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.res' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.res' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_Project/FIR_v2/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../FIR_HLS_TB.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../FIR_HLS_TB.cpp:1:
+In file included from ../../../../FIR_HLS.h:2:
+In file included from C:/AMD/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from C:/AMD/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/AMD/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/AMD/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/AMD/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/AMD/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/AMD/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/AMD/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/AMD/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_HLS_normal.dat
+INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_HLS_normal.dat
+INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_HLS_normal.res
+INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_HLS_normal.res
+INFO: Input and reference data lengths match.
+Numbers        : 0
+Numbers        : -0.000549316
+Numbers        : -0.00088501
+Numbers        : -0.00106812
+Numbers        : -0.00106812
+Numbers        : -0.000915527
+Numbers        : -0.000579834
+Numbers        : -0.00012207
+Numbers        : 0.000427246
+Numbers        : 0.00106812
+Numbers        : 0.00170898
+Numbers        : 0.00234985
+Numbers        : 0.00296021
+Numbers        : 0.00344849
+Numbers        : 0.00384521
+Numbers        : 0.00411987
+Numbers        : 0.00430298
+Numbers        : 0.00436401
+Numbers        : 0.00436401
+Numbers        : 0.00430298
+Numbers        : 0.00424194
+Numbers        : 0.00421143
+Numbers        : 0.00418091
+Numbers        : 0.00415039
+Numbers        : 0.00411987
+Numbers        : 0.00408936
+Numbers        : 0.00396729
+Numbers        : 0.00375366
+Numbers        : 0.00338745
+Numbers        : 0.00289917
+Numbers        : 0.0022583
+Numbers        : 0.00152588
+Numbers        : 0.000671387
+Numbers        : -0.000213623
+Numbers        : -0.00106812
+Numbers        : -0.00189209
+Numbers        : -0.00256348
+Numbers        : -0.00311279
+Numbers        : -0.00350952
+Numbers        : -0.00375366
+Numbers        : -0.00387573
+Numbers        : -0.00393677
+Numbers        : -0.00393677
+Numbers        : -0.00396729
+Numbers        : -0.00402832
+Numbers        : -0.00415039
+Numbers        : -0.0043335
+Numbers        : -0.00454712
+Numbers        : -0.00476074
+Numbers        : -0.00494385
+Numbers        : -0.00497437
+Numbers        : -0.00485229
+Numbers        : -0.0045166
+Numbers        : -0.00396729
+Numbers        : -0.00320435
+Numbers        : -0.00231934
+Numbers        : -0.00134277
+Numbers        : -0.000335693
+Numbers        : 0.000610352
+Numbers        : 0.00143433
+Numbers        : 0.0020752
+Numbers        : 0.00253296
+Numbers        : 0.0027771
+Numbers        : 0.00286865
+Numbers        : 0.00286865
+Numbers        : 0.00283813
+Numbers        : 0.00283813
+Numbers        : 0.00296021
+Numbers        : 0.00320435
+Numbers        : 0.00357056
+Numbers        : 0.00405884
+Numbers        : 0.00457764
+Numbers        : 0.00506592
+Numbers        : 0.00543213
+Numbers        : 0.00558472
+Numbers        : 0.00546265
+Numbers        : 0.0050354
+Numbers        : 0.0043335
+Numbers        : 0.00338745
+Numbers        : 0.00228882
+Numbers        : 0.00112915
+Numbers        : 3.05176e-05
+Numbers        : -0.000946045
+Numbers        : -0.00167847
+Numbers        : -0.00216675
+Numbers        : -0.00234985
+Numbers        : -0.00234985
+Numbers        : -0.00222778
+Numbers        : -0.0020752
+Numbers        : -0.00198364
+Numbers        : -0.00204468
+Numbers        : -0.00234985
+Numbers        : -0.00289917
+Numbers        : -0.00363159
+Numbers        : -0.0045166
+Numbers        : -0.00540161
+Numbers        : -0.00616455
+Numbers        : -0.00668335
+Numbers        : -0.00686646
+Numbers        : -0.00665283
+Numbers        : -0.00601196
+Numbers        : -0.0050354
+Numbers        : -0.00378418
+Numbers        : -0.00241089
+Numbers        : -0.00109863
+Numbers        : 6.10352e-05
+Numbers        : 0.000915527
+Numbers        : 0.00140381
+Numbers        : 0.00152588
+Numbers        : 0.00134277
+Numbers        : 0.000946045
+Numbers        : 0.000518799
+Numbers        : 0.000183105
+Numbers        : 9.15527e-05
+Numbers        : 0.000366211
+Numbers        : 0.00100708
+Numbers        : 0.00204468
+Numbers        : 0.00332642
+Numbers        : 0.00473022
+Numbers        : 0.00604248
+Numbers        : 0.00708008
+Numbers        : 0.00769043
+Numbers        : 0.00772095
+Numbers        : 0.00720215
+Numbers        : 0.00613403
+Numbers        : 0.00463867
+Numbers        : 0.00296021
+Numbers        : 0.00125122
+Numbers        : -0.000183105
+Numbers        : -0.00125122
+Numbers        : -0.00177002
+Numbers        : -0.0017395
+Numbers        : -0.0012207
+Numbers        : -0.000366211
+Numbers        : 0.000610352
+Numbers        : 0.00143433
+Numbers        : 0.00192261
+Numbers        : 0.00183105
+Numbers        : 0.00112915
+Numbers        : -0.000213623
+Numbers        : -0.0020752
+Numbers        : -0.00421143
+Numbers        : -0.00634766
+Numbers        : -0.00817871
+Numbers        : -0.00942993
+Numbers        : -0.0098877
+Numbers        : -0.00946045
+Numbers        : -0.00814819
+Numbers        : -0.00619507
+Numbers        : -0.00384521
+Numbers        : -0.00140381
+Numbers        : 0.000701904
+Numbers        : 0.00219727
+Numbers        : 0.00283813
+Numbers        : 0.00253296
+Numbers        : 0.00137329
+Numbers        : -0.000427246
+Numbers        : -0.00250244
+Numbers        : -0.00445557
+Numbers        : -0.00582886
+Numbers        : -0.0062561
+Numbers        : -0.0055542
+Numbers        : -0.00366211
+Numbers        : -0.000762939
+Numbers        : 0.00286865
+Numbers        : 0.00665283
+Numbers        : 0.0101013
+Numbers        : 0.0126038
+Numbers        : 0.0137634
+Numbers        : 0.0133057
+Numbers        : 0.0112
+Numbers        : 0.00772095
+Numbers        : 0.00332642
+Numbers        : -0.00128174
+Numbers        : -0.00534058
+Numbers        : -0.00814819
+Numbers        : -0.00909424
+Numbers        : -0.00784302
+Numbers        : -0.0045166
+Numbers        : 0.000549316
+Numbers        : 0.00653076
+Numbers        : 0.0124207
+Numbers        : 0.0169983
+Numbers        : 0.0191956
+Numbers        : 0.0180969
+Numbers        : 0.0132751
+Numbers        : 0.00482178
+Numbers        : -0.00640869
+Numbers        : -0.0189514
+Numbers        : -0.0306702
+Numbers        : -0.0389099
+Numbers        : -0.0408325
+Numbers        : -0.0335083
+Numbers        : -0.0144043
+Numbers        : 0.0184631
+Numbers        : 0.0662231
+Numbers        : 0.128998
+Numbers        : 0.20578
+Numbers        : 0.294525
+Numbers        : 0.392151
+Numbers        : 0.494873
+Numbers        : 0.598328
+Numbers        : 0.69812
+Numbers        : 0.789856
+Numbers        : 0.869659
+Numbers        : 0.934357
+Numbers        : 0.981598
+Numbers        : -0.990021
+Numbers        : -0.981049
+Numbers        : -0.991119
+Numbers        : 0.980743
+Numbers        : 0.936066
+Numbers        : 0.876617
+Numbers        : 0.804291
+Numbers        : 0.720917
+Numbers        : 0.628174
+Numbers        : 0.527557
+Numbers        : 0.420319
+Numbers        : 0.307648
+Numbers        : 0.190643
+Numbers        : 0.0704651
+Numbers        : -0.0515747
+Numbers        : -0.174042
+Numbers        : -0.295197
+Numbers        : -0.413086
+Numbers        : -0.525604
+Numbers        : -0.630615
+Numbers        : -0.725952
+Numbers        : -0.809601
+Numbers        : -0.879791
+Numbers        : -0.93512
+Numbers        : -0.97464
+Numbers        : -0.997711
+Numbers        : 0.995758
+Numbers        : -0.994415
+Numbers        : -0.968811
+Numbers        : -0.928223
+Numbers        : -0.873596
+Numbers        : -0.80603
+Numbers        : -0.726624
+Numbers        : -0.636597
+Numbers        : -0.53714
+Numbers        : -0.429535
+Numbers        : -0.315155
+Numbers        : -0.195526
+Numbers        : -0.0722351
+Numbers        : 0.052887
+Numbers        : 0.177887
+Numbers        : 0.300751
+Numbers        : 0.419312
+Numbers        : 0.531464
+Numbers        : 0.635193
+Numbers        : 0.728546
+Numbers        : 0.809937
+Numbers        : 0.87793
+Numbers        : 0.931458
+Numbers        : 0.969788
+Numbers        : 0.992462
+Numbers        : 0.99939
+Numbers        : 0.990662
+Numbers        : 0.966614
+Numbers        : 0.927765
+Numbers        : 0.874847
+Numbers        : 0.808624
+Numbers        : 0.730042
+Numbers        : 0.640228
+Numbers        : 0.540344
+Numbers        : 0.431793
+Numbers        : 0.316132
+Numbers        : 0.195068
+Numbers        : 0.0704346
+Numbers        : -0.0557251
+Numbers        : -0.181305
+Numbers        : -0.30423
+Numbers        : -0.422363
+Numbers        : -0.533661
+Numbers        : -0.636261
+Numbers        : -0.728455
+Numbers        : -0.808746
+Numbers        : -0.875916
+Numbers        : -0.929047
+Numbers        : -0.967407
+Numbers        : -0.99054
+Numbers        : -0.99823
+Numbers        : -0.990479
+Numbers        : -0.967438
+Numbers        : -0.929504
+Numbers        : -0.877197
+Numbers        : -0.811249
+Numbers        : -0.732605
+Numbers        : -0.642334
+Numbers        : -0.541748
+Numbers        : -0.432343
+Numbers        : -0.315826
+Numbers        : -0.194031
+Numbers        : -0.0689392
+Numbers        : 0.057373
+Numbers        : 0.182831
+Numbers        : 0.305298
+Numbers        : 0.422791
+Numbers        : 0.533325
+Numbers        : 0.635193
+Numbers        : 0.726807
+Numbers        : 0.806732
+Numbers        : 0.87384
+Numbers        : 0.927185
+Numbers        : 0.965973
+Numbers        : 0.989716
+Numbers        : 0.998077
+Numbers        : 0.990906
+Numbers        : 0.968353
+Numbers        : 0.930664
+Numbers        : 0.878387
+Numbers        : 0.812195
+Numbers        : 0.733124
+Numbers        : 0.642303
+Numbers        : 0.541138
+Numbers        : 0.431244
+Numbers        : 0.314362
+Numbers        : 0.192383
+Numbers        : 0.0673523
+Numbers        : -0.0587463
+Numbers        : -0.183777
+Numbers        : -0.305756
+Numbers        : -0.422729
+Numbers        : -0.532867
+Numbers        : -0.63446
+Numbers        : -0.725952
+Numbers        : -0.805969
+Numbers        : -0.873352
+Numbers        : -0.927032
+Numbers        : -0.966278
+Numbers        : -0.990448
+Numbers        : -0.999146
+Numbers        : -0.992218
+Numbers        : -0.969696
+Numbers        : -0.931885
+Numbers        : -0.879333
+Numbers        : -0.812805
+Numbers        : -0.733307
+Numbers        : -0.64212
+Numbers        : -0.54068
+Numbers        : -0.430634
+Numbers        : -0.313721
+Numbers        : -0.191895
+Numbers        : -0.0671082
+Numbers        : 0.0586243
+Numbers        : 0.183319
+Numbers        : 0.304993
+Numbers        : 0.421722
+Numbers        : 0.531769
+Numbers        : 0.633392
+Numbers        : 0.725037
+Numbers        : 0.805298
+Numbers        : 0.872955
+Numbers        : 0.926971
+Numbers        : 0.966461
+Numbers        : 0.990784
+Numbers        : 0.999542
+Numbers        : 0.992523
+Numbers        : 0.969849
+Numbers        : 0.931824
+Numbers        : 0.878998
+Numbers        : 0.812195
+Numbers        : 0.732513
+Numbers        : 0.641205
+Numbers        : 0.539764
+Numbers        : 0.42981
+Numbers        : 0.31308
+Numbers        : 0.191498
+Numbers        : 0.0669556
+Numbers        : -0.0585327
+Numbers        : -0.183044
+Numbers        : -0.304596
+Numbers        : -0.421326
+Numbers        : -0.531433
+Numbers        : -0.633148
+Numbers        : -0.724945
+Numbers        : -0.805389
+Numbers        : -0.873169
+Numbers        : -0.927216
+Numbers        : -0.966644
+Numbers        : -0.990845
+Numbers        : -0.999359
+Numbers        : -0.992035
+Numbers        : -0.968964
+Numbers        : -0.930481
+Numbers        : -0.877197
+Numbers        : -0.809906
+Numbers        : -0.729706
+Numbers        : -0.637848
+Numbers        : -0.535736
+Numbers        : -0.42572
+Numbers        : -0.30896
+Numbers        : -0.187378
+Numbers        : -0.0628052
+Numbers        : 0.0627441
+Numbers        : 0.187317
+Numbers        : 0.308929
+Numbers        : 0.425659
+Numbers        : 0.535675
+Numbers        : 0.637238
+Numbers        : 0.72876
+Numbers        : 0.808807
+Numbers        : 0.876068
+Numbers        : 0.929535
+Numbers        : 0.968323
+Numbers        : 0.991852
+Numbers        : 0.999725
+Numbers        : 0.991852
+Numbers        : 0.968323
+Numbers        : 0.929535
+Numbers        : 0.876068
+Numbers        : 0.808807
+Numbers        : 0.72876
+Numbers        : 0.637238
+Numbers        : 0.535675
+Numbers        : 0.425659
+Numbers        : 0.308929
+Numbers        : 0.187317
+Numbers        : 0.0627441
+Numbers        : -0.0628052
+Numbers        : -0.187378
+Numbers        : -0.30896
+Numbers        : -0.42572
+Numbers        : -0.535736
+Numbers        : -0.637299
+Numbers        : -0.728821
+Numbers        : -0.808868
+Numbers        : -0.876129
+Numbers        : -0.929596
+Numbers        : -0.968384
+Numbers        : -0.991913
+Numbers        : -0.999786
+Numbers        : -0.991913
+Numbers        : -0.968384
+Numbers        : -0.929596
+Numbers        : -0.876129
+Numbers        : -0.808868
+Numbers        : -0.728821
+Numbers        : -0.637299
+Numbers        : -0.535736
+Numbers        : -0.42572
+Numbers        : -0.30896
+Numbers        : -0.187378
+Numbers        : -0.0628052
+Numbers        : 0.0627441
+Numbers        : 0.187317
+Numbers        : 0.308929
+Numbers        : 0.425659
+Numbers        : 0.535675
+Numbers        : 0.637238
+Numbers        : 0.72876
+Numbers        : 0.808807
+Numbers        : 0.876068
+Numbers        : 0.929535
+Numbers        : 0.968323
+Numbers        : 0.991852
+Numbers        : 0.999725
+Numbers        : 0.991852
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 0
+Status: PASS [OK]
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.925 seconds; peak allocated memory: 273.941 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s

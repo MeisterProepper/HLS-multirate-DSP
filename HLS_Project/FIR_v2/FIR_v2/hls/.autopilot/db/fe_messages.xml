@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=FIR_HLS" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_filter" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="FIR_HLS.cpp:33:19" msg_body="Loop 'VITIS_LOOP_33_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_33_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="FIR_HLS.cpp:29:19" msg_body="Loop 'VITIS_LOOP_29_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_29_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="FIR_HLS.cpp:20:0" msg_body="Unrolling loop 'VITIS_LOOP_33_2' (FIR_HLS.cpp:33:19) in function 'FIR_filter' completely with a factor of 391">
+        <args Factor="391" LoopLoc="FIR_HLS.cpp:33:19" LoopName="VITIS_LOOP_33_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="FIR_HLS.cpp:20:0" msg_body="Unrolling loop 'VITIS_LOOP_29_1' (FIR_HLS.cpp:29:19) in function 'FIR_filter' completely with a factor of 392">
+        <args Factor="392" LoopLoc="FIR_HLS.cpp:29:19" LoopName="VITIS_LOOP_29_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h:18:0" msg_body="array_partition dim=1 type=complete  variable=_ZL12H_filter_FIR 1 FIR_HLS c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h:18:0 H_filter_FIR">
+        <args PragmaFunction="FIR_HLS" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZL12H_filter_FIR" PragmaType="array_partition" VarName="H_filter_FIR" varLoc="c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h:18:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h:18:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="H_filter_FIR" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h:18:0" msg_body="Applying array_partition to '_ZL12H_filter_FIR': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL12H_filter_FIR"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

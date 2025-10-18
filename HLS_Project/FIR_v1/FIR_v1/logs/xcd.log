@@ -1,0 +1,25 @@
+10/18/25 11:56:55: Running xcd server. This server was built by gradle.
+10/18/25 11:56:55: Server was asked to start on port: '61686'
+10/18/25 11:56:55: Server is using token UUID: '6fd3a717-1341-4d43-b6d8-5e1d3a64cfff'
+10/18/25 11:56:55: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/18/25 11:56:55: Attempting to start server on port '61686'
+10/18/25 11:56:55: Running Dispatch Server
+10/18/25 11:56:55: Version 2.2.0
+10/18/25 11:56:56: Dispatch Server: Accepted socket connection from client
+10/18/25 11:56:56: Starting Socket connection
+10/18/25 11:56:56: EXCHANGE_TOKEN received, server token: 6fd3a717-1341-4d43-b6d8-5e1d3a64cfff, passed token: 6fd3a717-1341-4d43-b6d8-5e1d3a64cfff
+10/18/25 11:56:56: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/18/25 11:56:56: SESSION_MGR: creating session with session uuid: '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' and name 'vitis-run_compile_FIR_v1'
+10/18/25 11:56:56: KERNEL_SVC: creating session with uuid: '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' and name 'vitis-run_compile_FIR_v1'
+10/18/25 11:56:56: GUIDANCE_SMGR: creating guidance session with uuid: '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' and name 'vitis-run_compile_FIR_v1'
+10/18/25 11:56:56: SYSTEM_DIAGRAM: creating session with uuid: '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' and name 'vitis-run_compile_FIR_v1'
+10/18/25 11:57:08: Dispatch Server: Accepted socket connection from client
+10/18/25 11:57:08: Starting Socket connection
+10/18/25 11:57:15: SESSION_MGR: closing session for UUID '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' with name 'vitis-run_compile_FIR_v1'
+10/18/25 11:57:15: KERNEL_SVC: closing session for UUID '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' with name 'vitis-run_compile_FIR_v1'
+10/18/25 11:57:15: GUIDANCE_SMGR: closing session for UUID '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' with name 'vitis-run_compile_FIR_v1'
+10/18/25 11:57:15: SYSTEM_DIAGRAM: closing session for UUID '30b947a5-cc5d-4a52-93c9-45f27d8acf1b' with name 'vitis-run_compile_FIR_v1'
+10/18/25 11:57:15: STOP_SERVER received, server token: 6fd3a717-1341-4d43-b6d8-5e1d3a64cfff, passed token: 6fd3a717-1341-4d43-b6d8-5e1d3a64cfff
+10/18/25 11:57:15: Socket received request to stop server.
+10/18/25 11:57:15: Dispatch Server: do_await_stop
+10/18/25 11:57:15: SERVER: destructor for server bound to port 61686
