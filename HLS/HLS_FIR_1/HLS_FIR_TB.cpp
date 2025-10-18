@@ -1,76 +1,101 @@
 #include "HLS_FIR.h"
-#include <cstdlib>
-#include <cstring>
+#include <hls_stream.h>
 #include <iostream>
-#include <sstream>
-#include <stdio.h>
-
 #include <fstream>
-#include <sstream>
-#include <string>
-#include <iomanip>  
+#include <cmath>
+#include <iomanip>
+#include <cstdlib>
 
 #define MAX_SAMPLES 4096
-static hls::stream<short> test_input;
-static hls::stream<short> test_comparison;
-static hls::stream<short> test_output;
-int mismatches = 0;
-int lines_dat = 0;
-int lines_res = 0;
-FILE* stimfile;
+#define TOLERANCE   5
 
-char dat_filename[64] = {"stimulus_01.dat"};
-char res_filename[64] = {"stimulus_01.res"};
+// Stream definitions
+static hls::stream<short> input_stream;
+static hls::stream<short> reference_stream;
+static hls::stream<short> output_stream;
 
-void read_tb_file(char filename[64], hls::stream<short> &streamdata, int &file_length){
-    stimfile = fopen(filename, "r");  
-    if (stimfile == NULL) {
-        printf("ERROR: Can't open %s\n", filename);
-        exit(999);
+// Global counters
+int num_mismatches = 0;
+int num_input_samples = 0;
+int num_reference_samples = 0;
+
+// File names
+const char INPUT_FILENAME[]     = "stimulus_01.dat";
+const char REFERENCE_FILENAME[] = "stimulus_01.res";
+
+// ------------------------------------------------------------
+// Helper function: read stimulus file into HLS stream
+// ------------------------------------------------------------
+void read_test_file(const char* filename, hls::stream<short>& stream, int& sample_count) {
+    FILE* file = fopen(filename, "r");
+    if (file == nullptr) {
+        std::cerr << "ERROR: Cannot open file: " << filename << std::endl;
+        exit(EXIT_FAILURE);
     }
-    else {
-        
-        double dummy1;
-        printf("INFO: Reading %s\n", filename);
-        while (!feof(stimfile)) {
-            int count = fscanf(stimfile, "%lf", &dummy1);
 
-            if (count == EOF || count < 1)
-                break;
+    double value = 0.0;
+    std::cout << "INFO: Reading " << filename << std::endl;
 
-            streamdata.write(dummy1);
-            file_length++;
+    while (fscanf(file, "%lf", &value) == 1) {
+        stream.write(static_cast<short>(value));
+        sample_count++;
+        if (sample_count >= MAX_SAMPLES) {
+            std::cerr << "WARNING: Maximum sample limit (" << MAX_SAMPLES << ") reached." << std::endl;
+            break;
         }
-        
-        printf("INFO: Read %d samples\n", file_length);
-        fclose(stimfile);
     }
+
+    fclose(file);
+    std::cout << "INFO: Read " << sample_count << " samples from " << filename << std::endl;
 }
 
-int main(){
-    
-    // Open files for reading
-    read_tb_file(dat_filename, test_input, lines_dat);
-    read_tb_file(res_filename, test_comparison, lines_res);
-    
-    for (int i = 0; i< lines_dat; i++) {
-        HLS_FIR(test_input, test_output);
+// ------------------------------------------------------------
+// Main testbench
+// ------------------------------------------------------------
+int main() {
+    // Read input and reference data
+    read_test_file(INPUT_FILENAME, input_stream, num_input_samples);
+    read_test_file(REFERENCE_FILENAME, reference_stream, num_reference_samples);
+
+    if (num_input_samples != num_reference_samples) {
+        std::cerr << "ERROR: Input and reference data lengths do not match!" << std::endl;
+        return EXIT_FAILURE;
+    } else {
+        std::cout << "INFO: Input and reference data lengths match." << std::endl;
     }
 
-    for (int i = 0; i< lines_dat; i++) {       
-        printf("INFO: Value %d\n", test_output.read());
+    // Run DUT for each input sample
+    for (int i = 0; i < num_input_samples; i++) {
+        HLS_FIR(input_stream, output_stream);
     }
 
-    std::cout << "---------------------------------------\n";
-    std::cout << "Testbench Results\n";
-    std::cout << "Samples processed: " << lines_dat << "\n";
-    std::cout << "Mismatches: " << mismatches << "\n";
+    // Compare DUT output against reference data
+    for (int i = 0; i < num_input_samples; i++) {
+        int ref_value = reference_stream.read();
+        int dut_value = output_stream.read();
 
-    if (mismatches == 0)
-        std::cout << "Status: PASS [OK]\n";
+        if (std::abs(ref_value - dut_value) > TOLERANCE) {
+            std::cout << "Mismatch at sample " << std::setw(4) << i
+                      << ": ref=" << std::setw(6) << ref_value
+                      << ", dut=" << std::setw(6) << dut_value << std::endl;
+            num_mismatches++;
+        }
+    }
+
+    // ------------------------------------------------------------
+    // Test summary
+    // ------------------------------------------------------------
+    std::cout << "---------------------------------------" << std::endl;
+    std::cout << "Testbench Results" << std::endl;
+    std::cout << "Samples processed : " << num_input_samples << std::endl;
+    std::cout << "Mismatches        : " << num_mismatches << std::endl;
+
+    if (num_mismatches == 0)
+        std::cout << "Status: PASS [OK]" << std::endl;
     else
-        std::cout << "Status: FAIL [!!]\n";
+        std::cout << "Status: FAIL [!!] (" << num_mismatches << " samples out of tolerance)" << std::endl;
 
-    std::cout << "---------------------------------------\n";
-    
+    std::cout << "---------------------------------------" << std::endl;
+
+    return 0;
 }

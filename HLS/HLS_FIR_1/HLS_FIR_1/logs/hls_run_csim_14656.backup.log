@@ -26,24 +26,21 @@ INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../HLS_FIR.cpp in debug mode
-   Generating csim.exe
+make: 'csim.exe' is up to date.
 INFO: Reading stimulus_01.dat
-INFO: Read 460 samples from stimulus_01.dat
+INFO: Read 460 samples
 INFO: Reading stimulus_01.res
-INFO: Read 460 samples from stimulus_01.res
-INFO: Input and reference data lengths match.
-Mismatch at sample  408: ref=-32766, dut= 32767
-Mismatch at sample  433: ref= 32766, dut=-32768
-Mismatch at sample  458: ref=-32766, dut= 32767
+INFO: Read 460 samples
 ---------------------------------------
 Testbench Results
-Samples processed : 460
-Mismatches        : 3
-Status: FAIL [!!] (3 samples out of tolerance)
+Samples processed: 0
+Mismatches: 0
+Status: PASS [OK]
 ---------------------------------------
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+WARNING [HLS SIM]: hls::stream 'hls::stream<short, 0>1' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'hls::stream<short, 0>0' contains leftover data, which may result in RTL simulation hanging.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 3 seconds. Total elapsed time: 10.552 seconds; peak allocated memory: 273.945 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 17s
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.481 seconds; peak allocated memory: 273.980 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 9s
