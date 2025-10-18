@@ -11,7 +11,7 @@
 // N_FIR_dec_int = 20
 //------------------------------------------- 
  
-#include "ap_fixed.h" 
+#include <ap_fixed.h> 
  
 typedef ap_fixed<16,1> coef_data_t; 
 typedef ap_fixed<16,1> delay_data_t; 

@@ -189,7 +189,7 @@ fprintf(file_ID, '// N_FIR_kernel = %d\n',  N_FIR_kernel_MM);
 fprintf(file_ID, '// N_FIR_dec_int = %d\n',  N_FIR_Dec_Int);
 fprintf(file_ID, '//------------------------------------------- \n \n');
 
-fprintf(file_ID, '#include "ap_fixed.h" \n \n');
+fprintf(file_ID, '#include <ap_fixed.h> \n \n');
 
 fprintf(file_ID, 'typedef ap_fixed<16,1> coef_data_t; \n');
 fprintf(file_ID, 'typedef ap_fixed<16,1> delay_data_t; \n \n');
