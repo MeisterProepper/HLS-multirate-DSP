@@ -93,7 +93,7 @@ fprintf(file_ID, '// delta_stop_dB = %6.2f\n', delta_stop_dB);
 fprintf(file_ID, '// N_FIR = %d\n',  N_FIR);
 fprintf(file_ID, '//------------------------------------------- \n \n');
 
-fprintf(file_ID, '#include "ap_fixed.h" \n \n');
+fprintf(file_ID, '#include <ap_fixed.h> \n \n');
 
 fprintf(file_ID, '#define N_DELAYS_FIR %d\n', length(b_FIR));
 
@@ -101,7 +101,7 @@ fprintf(file_ID, '#define N_DELAYS_FIR %d\n', length(b_FIR));
 fprintf(file_ID, 'typedef ap_fixed<16,1> coef_data_t; \n');
 fprintf(file_ID, 'typedef ap_fixed<16,1> delay_data_t; \n \n');
 
-fprintf(file_ID, 'static delay_data_t H_filt_FIR[N_DELAYS_FIR]; \n');
+fprintf(file_ID, 'static delay_data_t H_filter_FIR[N_DELAYS_FIR]; \n');
 
 fprintf(file_ID, 'const coef_data_t b_FIR');
 fprintf(file_ID,['[',num2str(length(b_FIR)),']={\n']);
