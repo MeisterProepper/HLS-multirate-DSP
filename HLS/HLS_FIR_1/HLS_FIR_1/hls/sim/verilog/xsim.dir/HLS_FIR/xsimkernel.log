@@ -1,7 +1,0 @@
-Running: xsim.dir/HLS_FIR/xsimk.exe -simmode gui -wdb HLS_FIR.wdb -simrunnum 0 -socket 65207
-Design successfully loaded
-Design Loading Memory Usage: 29220 KB (Peak: 29220 KB)
-Design Loading CPU Usage: 937 ms
-Simulation completed
-Simulation Memory Usage: 52012 KB (Peak: 52012 KB)
-Simulation CPU Usage: 5374 ms
