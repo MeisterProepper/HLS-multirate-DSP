@@ -3,9 +3,6 @@ This project investigates various implementation strategies for a multi-rate fil
 The aim is to analyse the effects of different optimisation approaches and architectural decisions on the synthesis results, latency and resource utilisation.
 
 
-## System overview
-The filter system consists of a downsampling filter, a kernel filter and an upsampling filter.
-
 ## Objective
 
 - Implementation of a multi-rate filter entirely in HLS
@@ -38,25 +35,11 @@ A total of **nine HLS implementations** were developed, differing in structure, 
 | **4** | Multirate | Multirate filter in DSP-style implementation (reference) |
 | **5** | Multirate | Multirate filter with HLS-specific optimizations (`#pragma`, static arrays) |
 | **6** | Multirate | Multirate filter using **Xilinx FIR IP block** |
-| **7** | Split-Kernel | Split-kernel design in DSP-style implementation (reference) |
-| **8** | Split-Kernel | Split-kernel design with HLS-specific optimizations (`#pragma`, static arrays) |
-| **9** | Split-Kernel | Split-kernel design using **Xilinx FIR IP block** |
-
-### Single-Rate FIR-Filter
-
-### Multirate FIR-Filter
-
-![Filter](Filter.png)
-
-### Split-Kernel FIR-Filter
-
 
 
 ## Implementation
 
-The FIR filter is implemented using the Vitis Unified IDE. Since this is an HLS implementation, the filter is implemented in all its previously described variants as C/C++ code. To do this, the code is divided into several functions. First, an HLS wrapper is used, which is responsible for the interfaces to generate the AXI stream interfaces. This is followed by a function that merges and controls the results of the filters. Finally, the actual filter function that executes the FIR filter follows.
-
-
+The FIR filter is implemented using the Vitis Unified IDE. Since this is an HLS implementation, the filter is implemented in all its previously described variants as C/C++ code. To do this, the code is divided into two functions. First, an HLS wrapper is used, which is responsible for the interfaces to generate the AXI stream interfaces. This is followed by the actual filter function that executes the FIR filter follows.
 
 ### HLS Wrapper
 
@@ -72,61 +55,7 @@ void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
 - Since the wrapper function and thus also the main function are required, the interfaces still need to be defined. To do this, _#pragma HLS INTERFACE mode=axis port=input_ is used, which specifies that the input port should be an AXI stream interface.
 - The directive _#pragma HLS INTERFACE mode=ap_ctrl_none port=return_ removes the control ports. These are not necessary, as control is data-driven via the Axi Stream interface.
 
-### Filtercontrol
-The filter control is located in the HLS wrapper and is used to control the sequence of events for the multirate and split-kernel variants.
 
-
-#### Multirate
-```
-int poly_phase = 0;
-
-switch(poly_phase) {
-	case 0:{
-			calc_fir_dec_43();
-			calc_fir_kernel();
-			calc_fir_int_40();
-			}; break;
-	case 1:{
-			calc_fir_dec_40();
-			calc_fir_int_41();
-			}; break;
-	case 2:{
-			calc_fir_dec_41();
-			calc_fir_int_42();
-			}; break;
-	case 3:{
-			calc_fir_dec_42();
-			calc_fir_int_43();
-			}; break;
-}
-```
-#### Split-Kernel
-```
-int poly_phase = 0;
-
-switch(poly_phase) {
-	case 0:{
-			calc_fir_dec_43();
-			calc_fir_kernel_1();
-			calc_fir_int_40();
-			}; break;
-	case 1:{
-			calc_fir_dec_40();
-			calc_fir_kernel_2();
-			calc_fir_int_41();
-			}; break;
-	case 2:{
-			calc_fir_dec_41();
-			calc_fir_kernel_3();
-			calc_fir_int_42();
-			}; break;
-	case 3:{
-			calc_fir_dec_42();
-			calc_fir_kernel_4();
-			calc_fir_int_43();
-			}; break;
-}
-```
 ### Filterfunction
 
 #### DSP code of the FIR filter function
@@ -136,18 +65,15 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, 
 	short i, y;
 	int FIR_accu32=0;
 
-// delays BACKWARDS, coefficients in FORWARD direction
-	FIR_delays[N_delays-1] = x_n;	// read input sample from ADC 
-// accumulate in 32 bit variable
-	FIR_accu32	= 0;				// clear accu
-	for(i=0; i < N_delays; i++)		// FIR filter routine
+	FIR_delays[N_delays-1] = x_n;
+
+	FIR_accu32	= 0;		
+	for(i=0; i < N_delays; i++)	
 		FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
 	
-// loop to shift the delays
 	for(i=1; i < N_delays; i++)				
 		FIR_delays[i-1] = FIR_delays[i];
 
-// shift back by 15 bit to obtain short int 16 bit output 
 	y = (short) (FIR_accu32 >>shift);
 	return y;
 }
@@ -157,25 +83,22 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, 
 #### HLS code of the FIR filter function
 
 ```
-typedef ap_fixed<16,1> fir_data; //defining a fixed-point data type
+typedef ap_fixed<16,1> fir_data_t; //defining a fixed-point data type
 
-fir_data FIR_filter(fir_data FIR_delays[], const fir_data FIR_coe[], short int N_delays, fir_data x_n){
-	fir_data y;
-	ap_fixed<32,2>  FIR_accu32=0;
+fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
+    #pragma HLS PIPELINE
+	fir_data_t y;
+	ap_fixed<32,2> FIR_accu32=0;
 
-  // delays BACKWARDS, coefficients in FORWARD direction
-	FIR_delays[N_delays-1] = x_n;	// read input sample from ADC
-
-  // accumulate in 32 bit variable
+	FIR_delays[N_delays-1] = x_n;	// read input sample from ADC 
 	FIR_accu32	= 0;				// clear accu
 	for(int i=0; i < N_delays; i++)		// FIR filter routine
 		FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
-	
-// loop to shift the delays
+
 	for(int i=1; i < N_delays; i++)				
 		FIR_delays[i-1] = FIR_delays[i];
  
-	y = (fir_data) FIR_accu32;
+	y = (fir_data_t) (FIR_accu32);
 	return y;
 }
 
@@ -229,11 +152,30 @@ It allows functional validation before synthesis and direct comparison between t
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
 |---|---|---|---|---|---|
 |  1 | 7940  |  167 | 134  | 2  | 1  |
-|  2 |  80 |  9259 |  4937 | 81  |  0 |
+|  2 |  80 |  9259 |  4937 | 0  |  81 |
 |  3 |   |   |   |   |   |
-|  4 |   |   |   |   |   |
-|  5 |   |   |   |   |   |
+|  4 |  2680 | 698  | 937  | 0  | 3  |
+|  5 |  990 | 2630  |  2552 | 1  |  81 |
 |  6 |   |   |   |   |   |
-|  7 |   |   |   |   |   |
-|  8 |   |   |   |   |   |
-|  9 |   |   |   |   |   |
+
+
+
+## 🧩 Open Points and Known Issues
+
+### ✅ To-Do
+**Integration of the Xilinx FIR IP Core:**
+- The current implementation uses the function stubs and coefficient setup, but the actual instantiation of the `hls::FIR object` and correct parameterization (`hls::ip_fir::params_t`) are still pending.
+
+
+### ⚠️ Known Issues
+**DSP Testbench Overflow:**
+- The testbench for the DSP baseline version (non-multirate) occasionally triggers a buffer overflow during simulation.
+
+**Multirate Testbench Mismatch (Samples 280–300):**
+- Both multirate versions (DSP and HLS) show output mismatches between sample index 280 and 300. The issue appears consistently.
+
+
+
+
+
+
