@@ -229,7 +229,7 @@ It allows functional validation before synthesis and direct comparison between t
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
 |---|---|---|---|---|---|
 |  1 | 7940  |  167 | 134  | 2  | 1  |
-|  2 |   |   |   |   |   |
+|  2 |  80 |  9259 |  4937 | 81  |  0 |
 |  3 |   |   |   |   |   |
 |  4 |   |   |   |   |   |
 |  5 |   |   |   |   |   |
