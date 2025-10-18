@@ -1,0 +1,3 @@
+relativeroot=C:/HLS-multirate-DSP/HLS_Project/FIR_v4
+original_argv=-c --mode hls --config C:\HLS-multirate-DSP\HLS_Project\FIR_v4\hls_config.cfg --work_dir FIR_v4 
+

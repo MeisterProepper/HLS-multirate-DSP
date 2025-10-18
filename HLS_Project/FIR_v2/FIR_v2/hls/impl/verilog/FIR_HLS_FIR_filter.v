@@ -657,33 +657,33 @@ reg  signed [16:0] tmp435_reg_10956_pp0_iter3_reg;
 reg  signed [16:0] tmp435_reg_10956_pp0_iter4_reg;
 reg  signed [16:0] tmp435_reg_10956_pp0_iter5_reg;
 reg  signed [16:0] tmp435_reg_10956_pp0_iter6_reg;
-wire   [17:0] add_ln30_2_fu_5694_p2;
-reg   [17:0] add_ln30_2_reg_10962;
-reg  signed [17:0] add_ln30_2_reg_10962_pp0_iter1_reg;
-wire   [24:0] add_ln30_82_fu_5700_p2;
-reg   [24:0] add_ln30_82_reg_10967;
-reg  signed [24:0] add_ln30_82_reg_10967_pp0_iter1_reg;
-wire   [22:0] add_ln30_92_fu_5706_p2;
-reg   [22:0] add_ln30_92_reg_10972;
-reg   [22:0] add_ln30_92_reg_10972_pp0_iter1_reg;
-reg   [22:0] add_ln30_92_reg_10972_pp0_iter2_reg;
-wire   [22:0] add_ln30_99_fu_5712_p2;
-reg   [22:0] add_ln30_99_reg_10977;
-reg   [22:0] add_ln30_99_reg_10977_pp0_iter1_reg;
-reg   [22:0] add_ln30_99_reg_10977_pp0_iter2_reg;
-reg   [22:0] add_ln30_99_reg_10977_pp0_iter3_reg;
-wire   [23:0] add_ln30_106_fu_5718_p2;
-reg   [23:0] add_ln30_106_reg_10982;
-reg   [23:0] add_ln30_106_reg_10982_pp0_iter1_reg;
-reg   [23:0] add_ln30_106_reg_10982_pp0_iter2_reg;
-wire   [21:0] add_ln30_109_fu_5724_p2;
-reg   [21:0] add_ln30_109_reg_10987;
-reg   [21:0] add_ln30_109_reg_10987_pp0_iter1_reg;
-reg   [21:0] add_ln30_109_reg_10987_pp0_iter2_reg;
-wire   [24:0] add_ln30_112_fu_5730_p2;
-reg   [24:0] add_ln30_112_reg_10992;
-reg   [24:0] add_ln30_112_reg_10992_pp0_iter1_reg;
-reg   [24:0] add_ln30_112_reg_10992_pp0_iter2_reg;
+wire   [17:0] add_ln27_2_fu_5694_p2;
+reg   [17:0] add_ln27_2_reg_10962;
+reg  signed [17:0] add_ln27_2_reg_10962_pp0_iter1_reg;
+wire   [24:0] add_ln27_82_fu_5700_p2;
+reg   [24:0] add_ln27_82_reg_10967;
+reg  signed [24:0] add_ln27_82_reg_10967_pp0_iter1_reg;
+wire   [22:0] add_ln27_92_fu_5706_p2;
+reg   [22:0] add_ln27_92_reg_10972;
+reg   [22:0] add_ln27_92_reg_10972_pp0_iter1_reg;
+reg   [22:0] add_ln27_92_reg_10972_pp0_iter2_reg;
+wire   [22:0] add_ln27_99_fu_5712_p2;
+reg   [22:0] add_ln27_99_reg_10977;
+reg   [22:0] add_ln27_99_reg_10977_pp0_iter1_reg;
+reg   [22:0] add_ln27_99_reg_10977_pp0_iter2_reg;
+reg   [22:0] add_ln27_99_reg_10977_pp0_iter3_reg;
+wire   [23:0] add_ln27_106_fu_5718_p2;
+reg   [23:0] add_ln27_106_reg_10982;
+reg   [23:0] add_ln27_106_reg_10982_pp0_iter1_reg;
+reg   [23:0] add_ln27_106_reg_10982_pp0_iter2_reg;
+wire   [21:0] add_ln27_109_fu_5724_p2;
+reg   [21:0] add_ln27_109_reg_10987;
+reg   [21:0] add_ln27_109_reg_10987_pp0_iter1_reg;
+reg   [21:0] add_ln27_109_reg_10987_pp0_iter2_reg;
+wire   [24:0] add_ln27_112_fu_5730_p2;
+reg   [24:0] add_ln27_112_reg_10992;
+reg   [24:0] add_ln27_112_reg_10992_pp0_iter1_reg;
+reg   [24:0] add_ln27_112_reg_10992_pp0_iter2_reg;
 wire  signed [25:0] tmp28_fu_8285_p2;
 wire  signed [25:0] tmp164_fu_8456_p2;
 wire  signed [23:0] grp_fu_9703_p3;
@@ -707,445 +707,445 @@ wire  signed [23:0] grp_fu_10049_p3;
 wire  signed [23:0] grp_fu_10068_p3;
 wire  signed [29:0] grp_fu_9802_p4;
 wire  signed [24:0] grp_fu_9852_p4;
-reg  signed [24:0] add_ln30_16_reg_11227;
+reg  signed [24:0] add_ln27_16_reg_11227;
 wire  signed [27:0] grp_fu_9862_p4;
-wire   [27:0] add_ln30_34_fu_8983_p2;
-reg   [27:0] add_ln30_34_reg_11242;
-reg   [27:0] add_ln30_34_reg_11242_pp0_iter4_reg;
+wire   [27:0] add_ln27_34_fu_8983_p2;
+reg   [27:0] add_ln27_34_reg_11242;
+reg   [27:0] add_ln27_34_reg_11242_pp0_iter4_reg;
 wire  signed [25:0] grp_fu_9929_p4;
-reg  signed [25:0] add_ln30_35_reg_11247;
-reg  signed [25:0] add_ln30_35_reg_11247_pp0_iter4_reg;
+reg  signed [25:0] add_ln27_35_reg_11247;
+reg  signed [25:0] add_ln27_35_reg_11247_pp0_iter4_reg;
 wire  signed [26:0] grp_fu_9963_p4;
 wire  signed [25:0] grp_fu_9973_p4;
-reg  signed [25:0] add_ln30_51_reg_11257;
+reg  signed [25:0] add_ln27_51_reg_11257;
 wire  signed [25:0] grp_fu_9983_p4;
 wire  signed [24:0] grp_fu_9993_p4;
-reg  signed [24:0] add_ln30_55_reg_11267;
+reg  signed [24:0] add_ln27_55_reg_11267;
 wire  signed [24:0] grp_fu_9719_p4;
-reg  signed [24:0] add_ln30_65_reg_11277;
+reg  signed [24:0] add_ln27_65_reg_11277;
 wire  signed [25:0] grp_fu_9737_p4;
-reg  signed [25:0] add_ln30_71_reg_11282;
-wire   [25:0] add_ln30_73_fu_8995_p2;
-reg   [25:0] add_ln30_73_reg_11287;
-wire   [24:0] add_ln30_80_fu_9004_p2;
-reg   [24:0] add_ln30_80_reg_11292;
-reg   [24:0] add_ln30_80_reg_11292_pp0_iter4_reg;
-reg   [24:0] add_ln30_80_reg_11292_pp0_iter5_reg;
-reg   [24:0] add_ln30_80_reg_11292_pp0_iter6_reg;
-wire   [26:0] add_ln30_87_fu_9025_p2;
-reg   [26:0] add_ln30_87_reg_11297;
-reg   [26:0] add_ln30_87_reg_11297_pp0_iter4_reg;
-reg   [26:0] add_ln30_87_reg_11297_pp0_iter5_reg;
-reg   [26:0] add_ln30_87_reg_11297_pp0_iter6_reg;
-wire   [24:0] add_ln30_94_fu_9037_p2;
-reg   [24:0] add_ln30_94_reg_11302;
-reg   [24:0] add_ln30_94_reg_11302_pp0_iter4_reg;
-reg   [24:0] add_ln30_94_reg_11302_pp0_iter5_reg;
-reg   [24:0] add_ln30_94_reg_11302_pp0_iter6_reg;
-wire   [24:0] add_ln30_98_fu_9049_p2;
-reg   [24:0] add_ln30_98_reg_11307;
-wire   [24:0] add_ln30_111_fu_9083_p2;
-reg   [24:0] add_ln30_111_reg_11312;
-reg   [24:0] add_ln30_111_reg_11312_pp0_iter4_reg;
-wire   [25:0] add_ln30_114_fu_9095_p2;
-reg   [25:0] add_ln30_114_reg_11317;
-reg   [25:0] add_ln30_114_reg_11317_pp0_iter4_reg;
+reg  signed [25:0] add_ln27_71_reg_11282;
+wire   [25:0] add_ln27_73_fu_8995_p2;
+reg   [25:0] add_ln27_73_reg_11287;
+wire   [24:0] add_ln27_80_fu_9004_p2;
+reg   [24:0] add_ln27_80_reg_11292;
+reg   [24:0] add_ln27_80_reg_11292_pp0_iter4_reg;
+reg   [24:0] add_ln27_80_reg_11292_pp0_iter5_reg;
+reg   [24:0] add_ln27_80_reg_11292_pp0_iter6_reg;
+wire   [26:0] add_ln27_87_fu_9025_p2;
+reg   [26:0] add_ln27_87_reg_11297;
+reg   [26:0] add_ln27_87_reg_11297_pp0_iter4_reg;
+reg   [26:0] add_ln27_87_reg_11297_pp0_iter5_reg;
+reg   [26:0] add_ln27_87_reg_11297_pp0_iter6_reg;
+wire   [24:0] add_ln27_94_fu_9037_p2;
+reg   [24:0] add_ln27_94_reg_11302;
+reg   [24:0] add_ln27_94_reg_11302_pp0_iter4_reg;
+reg   [24:0] add_ln27_94_reg_11302_pp0_iter5_reg;
+reg   [24:0] add_ln27_94_reg_11302_pp0_iter6_reg;
+wire   [24:0] add_ln27_98_fu_9049_p2;
+reg   [24:0] add_ln27_98_reg_11307;
+wire   [24:0] add_ln27_111_fu_9083_p2;
+reg   [24:0] add_ln27_111_reg_11312;
+reg   [24:0] add_ln27_111_reg_11312_pp0_iter4_reg;
+wire   [25:0] add_ln27_114_fu_9095_p2;
+reg   [25:0] add_ln27_114_reg_11317;
+reg   [25:0] add_ln27_114_reg_11317_pp0_iter4_reg;
 wire  signed [24:0] grp_fu_10076_p4;
-reg  signed [24:0] add_ln30_115_reg_11322;
-reg  signed [24:0] add_ln30_115_reg_11322_pp0_iter4_reg;
+reg  signed [24:0] add_ln27_115_reg_11322;
+reg  signed [24:0] add_ln27_115_reg_11322_pp0_iter4_reg;
 wire  signed [29:0] grp_fu_10096_p4;
-reg  signed [29:0] add_ln30_3_reg_11327;
+reg  signed [29:0] add_ln27_3_reg_11327;
 wire  signed [28:0] grp_fu_10117_p4;
-reg  signed [28:0] add_ln30_7_reg_11337;
+reg  signed [28:0] add_ln27_7_reg_11337;
 wire  signed [27:0] grp_fu_10127_p4;
 wire  signed [27:0] grp_fu_10137_p4;
-reg  signed [27:0] add_ln30_12_reg_11347;
-(* use_dsp48 = "no" *) wire   [27:0] add_ln30_19_fu_9159_p2;
-reg   [27:0] add_ln30_19_reg_11357;
+reg  signed [27:0] add_ln27_12_reg_11347;
+(* use_dsp48 = "no" *) wire   [27:0] add_ln27_19_fu_9159_p2;
+reg   [27:0] add_ln27_19_reg_11357;
 wire  signed [26:0] grp_fu_10169_p4;
-reg  signed [26:0] add_ln30_22_reg_11362;
+reg  signed [26:0] add_ln27_22_reg_11362;
 wire  signed [26:0] grp_fu_10179_p4;
-wire   [27:0] add_ln30_29_fu_9170_p2;
-reg   [27:0] add_ln30_29_reg_11372;
-wire   [26:0] add_ln30_44_fu_9182_p2;
-reg   [26:0] add_ln30_44_reg_11382;
-reg   [26:0] add_ln30_44_reg_11382_pp0_iter5_reg;
-(* use_dsp48 = "no" *) wire   [26:0] add_ln30_49_fu_9191_p2;
-reg   [26:0] add_ln30_49_reg_11387;
-reg   [26:0] add_ln30_49_reg_11387_pp0_iter5_reg;
-wire   [27:0] add_ln30_59_fu_9224_p2;
-reg   [27:0] add_ln30_59_reg_11392;
-reg   [27:0] add_ln30_59_reg_11392_pp0_iter5_reg;
+wire   [27:0] add_ln27_29_fu_9170_p2;
+reg   [27:0] add_ln27_29_reg_11372;
+wire   [26:0] add_ln27_44_fu_9182_p2;
+reg   [26:0] add_ln27_44_reg_11382;
+reg   [26:0] add_ln27_44_reg_11382_pp0_iter5_reg;
+(* use_dsp48 = "no" *) wire   [26:0] add_ln27_49_fu_9191_p2;
+reg   [26:0] add_ln27_49_reg_11387;
+reg   [26:0] add_ln27_49_reg_11387_pp0_iter5_reg;
+wire   [27:0] add_ln27_59_fu_9224_p2;
+reg   [27:0] add_ln27_59_reg_11392;
+reg   [27:0] add_ln27_59_reg_11392_pp0_iter5_reg;
 wire  signed [24:0] grp_fu_10277_p4;
-reg  signed [24:0] add_ln30_62_reg_11397;
-reg  signed [24:0] add_ln30_62_reg_11397_pp0_iter5_reg;
-reg  signed [24:0] add_ln30_62_reg_11397_pp0_iter6_reg;
-wire   [25:0] add_ln30_66_fu_9236_p2;
-reg   [25:0] add_ln30_66_reg_11402;
-reg   [25:0] add_ln30_66_reg_11402_pp0_iter5_reg;
-reg   [25:0] add_ln30_66_reg_11402_pp0_iter6_reg;
-wire   [26:0] add_ln30_75_fu_9266_p2;
-reg   [26:0] add_ln30_75_reg_11407;
-reg   [26:0] add_ln30_75_reg_11407_pp0_iter5_reg;
-reg   [26:0] add_ln30_75_reg_11407_pp0_iter6_reg;
+reg  signed [24:0] add_ln27_62_reg_11397;
+reg  signed [24:0] add_ln27_62_reg_11397_pp0_iter5_reg;
+reg  signed [24:0] add_ln27_62_reg_11397_pp0_iter6_reg;
+wire   [25:0] add_ln27_66_fu_9236_p2;
+reg   [25:0] add_ln27_66_reg_11402;
+reg   [25:0] add_ln27_66_reg_11402_pp0_iter5_reg;
+reg   [25:0] add_ln27_66_reg_11402_pp0_iter6_reg;
+wire   [26:0] add_ln27_75_fu_9266_p2;
+reg   [26:0] add_ln27_75_reg_11407;
+reg   [26:0] add_ln27_75_reg_11407_pp0_iter5_reg;
+reg   [26:0] add_ln27_75_reg_11407_pp0_iter6_reg;
 wire  signed [23:0] grp_fu_10320_p4;
-reg  signed [23:0] add_ln30_77_reg_11412;
-reg  signed [23:0] add_ln30_77_reg_11412_pp0_iter5_reg;
-reg  signed [23:0] add_ln30_77_reg_11412_pp0_iter6_reg;
+reg  signed [23:0] add_ln27_77_reg_11412;
+reg  signed [23:0] add_ln27_77_reg_11412_pp0_iter5_reg;
+reg  signed [23:0] add_ln27_77_reg_11412_pp0_iter6_reg;
 wire  signed [23:0] grp_fu_10086_p4;
-reg  signed [23:0] add_ln30_90_reg_11417;
-reg  signed [23:0] add_ln30_90_reg_11417_pp0_iter5_reg;
-reg  signed [23:0] add_ln30_90_reg_11417_pp0_iter6_reg;
-wire   [25:0] add_ln30_103_fu_9297_p2;
-reg   [25:0] add_ln30_103_reg_11422;
-reg   [25:0] add_ln30_103_reg_11422_pp0_iter5_reg;
-reg   [25:0] add_ln30_103_reg_11422_pp0_iter6_reg;
+reg  signed [23:0] add_ln27_90_reg_11417;
+reg  signed [23:0] add_ln27_90_reg_11417_pp0_iter5_reg;
+reg  signed [23:0] add_ln27_90_reg_11417_pp0_iter6_reg;
+wire   [25:0] add_ln27_103_fu_9297_p2;
+reg   [25:0] add_ln27_103_reg_11422;
+reg   [25:0] add_ln27_103_reg_11422_pp0_iter5_reg;
+reg   [25:0] add_ln27_103_reg_11422_pp0_iter6_reg;
 wire   [25:0] grp_fu_10341_p4;
-wire   [27:0] add_ln30_120_fu_9471_p2;
-reg   [27:0] add_ln30_120_reg_11437;
-reg   [27:0] add_ln30_120_reg_11437_pp0_iter6_reg;
+wire   [27:0] add_ln27_120_fu_9471_p2;
+reg   [27:0] add_ln27_120_reg_11437;
+reg   [27:0] add_ln27_120_reg_11437_pp0_iter6_reg;
 wire    ap_block_pp0_stage0;
-wire  signed [15:0] sext_ln30_1_fu_1048_p0;
-wire  signed [15:0] sext_ln30_2_fu_1056_p0;
-wire  signed [15:0] sext_ln30_3_fu_1064_p0;
-wire  signed [15:0] sext_ln30_4_fu_1072_p0;
-wire  signed [15:0] sext_ln30_5_fu_1080_p0;
-wire  signed [15:0] sext_ln30_6_fu_1088_p0;
-wire  signed [15:0] sext_ln30_7_fu_1096_p0;
-wire  signed [15:0] sext_ln30_8_fu_1104_p0;
-wire  signed [15:0] sext_ln30_9_fu_1112_p0;
-wire  signed [15:0] sext_ln30_10_fu_1120_p0;
-wire  signed [15:0] sext_ln30_11_fu_1128_p0;
-wire  signed [15:0] sext_ln30_12_fu_1136_p0;
-wire  signed [15:0] sext_ln30_13_fu_1144_p0;
-wire  signed [15:0] sext_ln30_14_fu_1152_p0;
-wire  signed [15:0] sext_ln30_15_fu_1160_p0;
-wire  signed [15:0] sext_ln30_16_fu_1168_p0;
-wire  signed [15:0] sext_ln30_17_fu_1176_p0;
-wire  signed [15:0] sext_ln30_18_fu_1184_p0;
-wire  signed [15:0] sext_ln30_19_fu_1192_p0;
-wire  signed [15:0] sext_ln30_20_fu_1200_p0;
-wire  signed [15:0] sext_ln30_22_fu_1216_p0;
-wire  signed [15:0] sext_ln30_23_fu_1224_p0;
-wire  signed [15:0] sext_ln30_24_fu_1232_p0;
-wire  signed [15:0] sext_ln30_25_fu_1240_p0;
-wire  signed [15:0] sext_ln30_26_fu_1248_p0;
-wire  signed [15:0] sext_ln30_27_fu_1256_p0;
-wire  signed [15:0] sext_ln30_28_fu_1264_p0;
-wire  signed [15:0] sext_ln30_29_fu_1272_p0;
-wire  signed [15:0] sext_ln30_30_fu_1280_p0;
-wire  signed [15:0] sext_ln30_31_fu_1288_p0;
-wire  signed [15:0] sext_ln30_32_fu_1296_p0;
-wire  signed [15:0] sext_ln30_33_fu_1304_p0;
-wire  signed [15:0] sext_ln30_34_fu_1312_p0;
-wire  signed [15:0] sext_ln30_35_fu_1320_p0;
-wire  signed [15:0] sext_ln30_36_fu_1332_p0;
-wire  signed [15:0] sext_ln30_37_fu_1340_p0;
-wire  signed [15:0] sext_ln30_38_fu_1348_p0;
-wire  signed [15:0] sext_ln30_39_fu_1356_p0;
-wire  signed [15:0] sext_ln30_40_fu_1364_p0;
-wire  signed [15:0] sext_ln30_41_fu_1372_p0;
-wire  signed [15:0] sext_ln30_42_fu_1380_p0;
-wire  signed [15:0] sext_ln30_43_fu_1388_p0;
-wire  signed [15:0] sext_ln30_44_fu_1396_p0;
-wire  signed [15:0] sext_ln30_45_fu_1404_p0;
-wire  signed [15:0] sext_ln30_46_fu_1412_p0;
-wire  signed [15:0] sext_ln30_47_fu_1420_p0;
-wire  signed [15:0] sext_ln30_48_fu_1428_p0;
-wire  signed [15:0] sext_ln30_49_fu_1436_p0;
-wire  signed [15:0] sext_ln30_50_fu_1444_p0;
-wire  signed [15:0] sext_ln30_51_fu_1452_p0;
-wire  signed [15:0] sext_ln30_52_fu_1460_p0;
-wire  signed [15:0] sext_ln30_53_fu_1468_p0;
-wire  signed [15:0] sext_ln30_54_fu_1476_p0;
-wire  signed [15:0] sext_ln30_55_fu_1484_p0;
-wire  signed [15:0] sext_ln30_56_fu_1492_p0;
-wire  signed [15:0] sext_ln30_57_fu_1500_p0;
-wire  signed [15:0] sext_ln30_58_fu_1508_p0;
-wire  signed [15:0] sext_ln30_59_fu_1516_p0;
-wire  signed [15:0] sext_ln30_60_fu_1524_p0;
-wire  signed [15:0] sext_ln30_61_fu_1532_p0;
-wire  signed [15:0] sext_ln30_62_fu_1540_p0;
-wire  signed [15:0] sext_ln30_63_fu_1548_p0;
-wire  signed [15:0] sext_ln30_64_fu_1556_p0;
-wire  signed [15:0] sext_ln30_65_fu_1564_p0;
-wire  signed [15:0] sext_ln30_66_fu_1572_p0;
-wire  signed [15:0] sext_ln30_67_fu_1580_p0;
-wire  signed [15:0] sext_ln30_68_fu_1588_p0;
-wire  signed [15:0] sext_ln30_69_fu_1596_p0;
-wire  signed [15:0] sext_ln30_70_fu_1604_p0;
-wire  signed [15:0] sext_ln30_71_fu_1612_p0;
-wire  signed [15:0] sext_ln30_72_fu_1620_p0;
-wire  signed [15:0] sext_ln30_73_fu_1628_p0;
-wire  signed [15:0] sext_ln30_74_fu_1636_p0;
-wire  signed [15:0] sext_ln30_75_fu_1644_p0;
-wire  signed [15:0] sext_ln30_76_fu_1652_p0;
-wire  signed [15:0] sext_ln30_77_fu_1660_p0;
-wire  signed [15:0] sext_ln30_78_fu_1668_p0;
-wire  signed [15:0] sext_ln30_79_fu_1676_p0;
-wire  signed [15:0] sext_ln30_81_fu_1688_p0;
-wire  signed [15:0] sext_ln30_82_fu_1696_p0;
-wire  signed [15:0] sext_ln30_83_fu_1704_p0;
-wire  signed [15:0] sext_ln30_84_fu_1712_p0;
-wire  signed [15:0] sext_ln30_85_fu_1720_p0;
-wire  signed [15:0] sext_ln30_86_fu_1728_p0;
-wire  signed [15:0] sext_ln30_87_fu_1736_p0;
-wire  signed [15:0] sext_ln30_88_fu_1744_p0;
-wire  signed [15:0] sext_ln30_89_fu_1752_p0;
-wire  signed [15:0] sext_ln30_90_fu_1760_p0;
-wire  signed [15:0] sext_ln30_91_fu_1768_p0;
-wire  signed [15:0] sext_ln30_92_fu_1776_p0;
-wire  signed [15:0] sext_ln30_93_fu_1784_p0;
-wire  signed [15:0] sext_ln30_94_fu_1792_p0;
-wire  signed [15:0] sext_ln30_95_fu_1800_p0;
-wire  signed [15:0] sext_ln30_97_fu_1812_p0;
-wire  signed [15:0] sext_ln30_98_fu_1824_p0;
-wire  signed [15:0] sext_ln30_99_fu_1832_p0;
-wire  signed [15:0] sext_ln30_100_fu_1840_p0;
-wire  signed [15:0] sext_ln30_102_fu_1852_p0;
-wire  signed [15:0] sext_ln30_103_fu_1860_p0;
-wire  signed [15:0] sext_ln30_104_fu_1868_p0;
-wire  signed [15:0] sext_ln30_105_fu_1876_p0;
-wire  signed [15:0] sext_ln30_106_fu_1884_p0;
-wire  signed [15:0] sext_ln30_107_fu_1892_p0;
-wire  signed [15:0] sext_ln30_109_fu_1904_p0;
-wire  signed [15:0] sext_ln30_111_fu_1916_p0;
-wire  signed [15:0] sext_ln30_112_fu_1924_p0;
-wire  signed [15:0] sext_ln30_113_fu_1932_p0;
-wire  signed [15:0] sext_ln30_114_fu_1940_p0;
-wire  signed [15:0] sext_ln30_115_fu_1948_p0;
-wire  signed [15:0] sext_ln30_116_fu_1956_p0;
-wire  signed [15:0] sext_ln30_117_fu_1964_p0;
-wire  signed [15:0] sext_ln30_119_fu_1976_p0;
-wire  signed [15:0] sext_ln30_120_fu_1984_p0;
-wire  signed [15:0] sext_ln30_121_fu_1992_p0;
-wire  signed [15:0] sext_ln30_122_fu_2000_p0;
-wire  signed [15:0] sext_ln30_123_fu_2008_p0;
-wire  signed [15:0] sext_ln30_124_fu_2016_p0;
-wire  signed [15:0] sext_ln30_126_fu_2028_p0;
-wire  signed [15:0] sext_ln30_127_fu_2036_p0;
-wire  signed [15:0] sext_ln30_128_fu_2044_p0;
-wire  signed [15:0] sext_ln30_129_fu_2052_p0;
-wire  signed [15:0] sext_ln30_130_fu_2060_p0;
-wire  signed [15:0] sext_ln30_131_fu_2068_p0;
-wire  signed [15:0] sext_ln30_132_fu_2076_p0;
-wire  signed [15:0] sext_ln30_133_fu_2084_p0;
-wire  signed [15:0] sext_ln30_134_fu_2092_p0;
-wire  signed [15:0] sext_ln30_136_fu_2104_p0;
-wire  signed [15:0] sext_ln30_138_fu_2116_p0;
-wire  signed [15:0] sext_ln30_139_fu_2124_p0;
-wire  signed [15:0] sext_ln30_141_fu_2136_p0;
-wire  signed [15:0] sext_ln30_142_fu_2144_p0;
-wire  signed [15:0] sext_ln30_143_fu_2152_p0;
-wire  signed [15:0] sext_ln30_144_fu_2160_p0;
-wire  signed [15:0] sext_ln30_145_fu_2168_p0;
-wire  signed [15:0] sext_ln30_148_fu_2184_p0;
-wire  signed [15:0] sext_ln30_150_fu_2196_p0;
-wire  signed [15:0] sext_ln30_151_fu_2204_p0;
-wire  signed [15:0] sext_ln30_152_fu_2212_p0;
-wire  signed [15:0] sext_ln30_153_fu_2220_p0;
-wire  signed [15:0] sext_ln30_154_fu_2228_p0;
-wire  signed [15:0] sext_ln30_155_fu_2236_p0;
-wire  signed [15:0] sext_ln30_156_fu_2244_p0;
-wire  signed [15:0] sext_ln30_157_fu_2252_p0;
-wire  signed [15:0] sext_ln30_158_fu_2260_p0;
-wire  signed [15:0] sext_ln30_159_fu_2268_p0;
-wire  signed [15:0] sext_ln30_160_fu_2276_p0;
-wire  signed [15:0] sext_ln30_161_fu_2284_p0;
-wire  signed [15:0] sext_ln30_164_fu_2300_p0;
-wire  signed [15:0] sext_ln30_165_fu_2308_p0;
-wire  signed [15:0] sext_ln30_167_fu_2320_p0;
-wire  signed [15:0] sext_ln30_170_fu_2336_p0;
-wire  signed [15:0] sext_ln30_171_fu_2344_p0;
-wire  signed [15:0] sext_ln30_172_fu_2352_p0;
-wire  signed [15:0] sext_ln30_174_fu_2364_p0;
-wire  signed [15:0] sext_ln30_175_fu_2372_p0;
-wire  signed [15:0] sext_ln30_177_fu_2384_p0;
-wire  signed [15:0] sext_ln30_180_fu_2400_p0;
-wire  signed [15:0] sext_ln30_181_fu_2408_p0;
-wire  signed [15:0] sext_ln30_185_fu_2428_p0;
-wire  signed [15:0] sext_ln30_187_fu_2440_p0;
-wire  signed [15:0] sext_ln30_190_fu_2456_p0;
-wire  signed [15:0] sext_ln30_191_fu_2464_p0;
-wire  signed [15:0] sext_ln30_194_fu_2480_p0;
-wire  signed [15:0] sext_ln30_196_fu_2492_p0;
-wire  signed [15:0] sext_ln30_200_fu_2512_p0;
-wire  signed [15:0] sext_ln30_201_fu_2520_p0;
-wire  signed [15:0] sext_ln30_204_fu_2536_p0;
-wire  signed [15:0] sext_ln30_206_fu_2548_p0;
-wire  signed [15:0] sext_ln30_207_fu_2556_p0;
-wire  signed [15:0] sext_ln30_209_fu_2568_p0;
-wire  signed [15:0] sext_ln30_210_fu_2576_p0;
-wire  signed [15:0] sext_ln30_211_fu_2584_p0;
-wire  signed [15:0] sext_ln30_214_fu_2600_p0;
-wire  signed [15:0] sext_ln30_216_fu_2612_p0;
-wire  signed [15:0] sext_ln30_217_fu_2620_p0;
-wire  signed [15:0] sext_ln30_220_fu_2636_p0;
-wire  signed [15:0] sext_ln30_221_fu_2644_p0;
-wire  signed [15:0] sext_ln30_222_fu_2652_p0;
-wire  signed [15:0] sext_ln30_223_fu_2660_p0;
-wire  signed [15:0] sext_ln30_224_fu_2668_p0;
-wire  signed [15:0] sext_ln30_225_fu_2676_p0;
-wire  signed [15:0] sext_ln30_226_fu_2684_p0;
-wire  signed [15:0] sext_ln30_227_fu_2692_p0;
-wire  signed [15:0] sext_ln30_228_fu_2700_p0;
-wire  signed [15:0] sext_ln30_229_fu_2708_p0;
-wire  signed [15:0] sext_ln30_230_fu_2716_p0;
-wire  signed [15:0] sext_ln30_231_fu_2724_p0;
-wire  signed [15:0] sext_ln30_233_fu_2736_p0;
-wire  signed [15:0] sext_ln30_236_fu_2752_p0;
-wire  signed [15:0] sext_ln30_238_fu_2764_p0;
-wire  signed [15:0] sext_ln30_239_fu_2772_p0;
-wire  signed [15:0] sext_ln30_240_fu_2780_p0;
-wire  signed [15:0] sext_ln30_242_fu_2792_p0;
-wire  signed [15:0] sext_ln30_243_fu_2800_p0;
-wire  signed [15:0] sext_ln30_245_fu_2812_p0;
-wire  signed [15:0] sext_ln30_247_fu_2824_p0;
-wire  signed [15:0] sext_ln30_248_fu_2832_p0;
-wire  signed [15:0] sext_ln30_249_fu_2840_p0;
-wire  signed [15:0] sext_ln30_250_fu_2848_p0;
-wire  signed [15:0] sext_ln30_251_fu_2856_p0;
-wire  signed [15:0] sext_ln30_252_fu_2864_p0;
-wire  signed [15:0] sext_ln30_253_fu_2872_p0;
-wire  signed [15:0] sext_ln30_254_fu_2880_p0;
-wire  signed [15:0] sext_ln30_255_fu_2888_p0;
-wire  signed [15:0] sext_ln30_257_fu_2900_p0;
-wire  signed [15:0] sext_ln30_258_fu_2908_p0;
-wire  signed [15:0] sext_ln30_259_fu_2916_p0;
-wire  signed [15:0] sext_ln30_260_fu_2924_p0;
-wire  signed [15:0] sext_ln30_261_fu_2932_p0;
-wire  signed [15:0] sext_ln30_262_fu_2940_p0;
-wire  signed [15:0] sext_ln30_264_fu_2952_p0;
-wire  signed [15:0] sext_ln30_265_fu_2960_p0;
-wire  signed [15:0] sext_ln30_266_fu_2968_p0;
-wire  signed [15:0] sext_ln30_267_fu_2976_p0;
-wire  signed [15:0] sext_ln30_269_fu_2988_p0;
-wire  signed [15:0] sext_ln30_270_fu_2996_p0;
-wire  signed [15:0] sext_ln30_272_fu_3008_p0;
-wire  signed [15:0] sext_ln30_274_fu_3020_p0;
-wire  signed [15:0] sext_ln30_275_fu_3028_p0;
-wire  signed [15:0] sext_ln30_276_fu_3036_p0;
-wire  signed [15:0] sext_ln30_277_fu_3044_p0;
-wire  signed [15:0] sext_ln30_278_fu_3052_p0;
-wire  signed [15:0] sext_ln30_279_fu_3060_p0;
-wire  signed [15:0] sext_ln30_281_fu_3072_p0;
-wire  signed [15:0] sext_ln30_282_fu_3080_p0;
-wire  signed [15:0] sext_ln30_283_fu_3088_p0;
-wire  signed [15:0] sext_ln30_284_fu_3100_p0;
-wire  signed [15:0] sext_ln30_286_fu_3112_p0;
-wire  signed [15:0] sext_ln30_287_fu_3120_p0;
-wire  signed [15:0] sext_ln30_288_fu_3128_p0;
-wire  signed [15:0] sext_ln30_289_fu_3136_p0;
-wire  signed [15:0] sext_ln30_290_fu_3144_p0;
-wire  signed [15:0] sext_ln30_291_fu_3152_p0;
-wire  signed [15:0] sext_ln30_292_fu_3160_p0;
-wire  signed [15:0] sext_ln30_293_fu_3168_p0;
-wire  signed [15:0] sext_ln30_294_fu_3176_p0;
-wire  signed [15:0] sext_ln30_295_fu_3184_p0;
-wire  signed [15:0] sext_ln30_296_fu_3192_p0;
-wire  signed [15:0] sext_ln30_297_fu_3200_p0;
-wire  signed [15:0] sext_ln23_fu_3212_p0;
-wire  signed [15:0] sext_ln23_1_fu_3220_p0;
-wire  signed [15:0] sext_ln30_300_fu_3232_p0;
-wire  signed [15:0] sext_ln30_301_fu_3240_p0;
-wire  signed [15:0] sext_ln30_302_fu_3248_p0;
-wire  signed [15:0] sext_ln30_303_fu_3256_p0;
-wire  signed [15:0] sext_ln30_304_fu_3264_p0;
-wire  signed [15:0] sext_ln30_305_fu_3272_p0;
-wire  signed [15:0] sext_ln30_306_fu_3280_p0;
-wire  signed [15:0] sext_ln30_307_fu_3288_p0;
-wire  signed [15:0] sext_ln30_308_fu_3296_p0;
-wire  signed [15:0] sext_ln30_309_fu_3304_p0;
-wire  signed [15:0] sext_ln30_310_fu_3312_p0;
-wire  signed [15:0] sext_ln30_311_fu_3320_p0;
-wire  signed [15:0] sext_ln30_312_fu_3328_p0;
-wire  signed [15:0] sext_ln30_313_fu_3336_p0;
-wire  signed [15:0] sext_ln30_314_fu_3344_p0;
-wire  signed [15:0] sext_ln30_315_fu_3352_p0;
-wire  signed [15:0] sext_ln30_316_fu_3360_p0;
-wire  signed [15:0] sext_ln23_2_fu_3368_p0;
-wire  signed [15:0] sext_ln23_3_fu_3376_p0;
-wire  signed [15:0] sext_ln30_317_fu_3384_p0;
-wire  signed [15:0] sext_ln30_318_fu_3392_p0;
-wire  signed [15:0] sext_ln30_319_fu_3400_p0;
-wire  signed [15:0] sext_ln30_320_fu_3408_p0;
-wire  signed [15:0] sext_ln30_321_fu_3416_p0;
-wire  signed [15:0] sext_ln30_322_fu_3424_p0;
-wire  signed [15:0] sext_ln30_323_fu_3432_p0;
-wire  signed [15:0] sext_ln30_324_fu_3440_p0;
-wire  signed [15:0] sext_ln30_326_fu_3452_p0;
-wire  signed [15:0] sext_ln30_327_fu_3460_p0;
-wire  signed [15:0] sext_ln30_328_fu_3468_p0;
-wire  signed [15:0] sext_ln30_329_fu_3476_p0;
-wire  signed [15:0] sext_ln30_330_fu_3484_p0;
-wire  signed [15:0] sext_ln30_331_fu_3492_p0;
-wire  signed [15:0] sext_ln23_4_fu_3500_p0;
-wire  signed [15:0] sext_ln23_5_fu_3508_p0;
-wire  signed [15:0] sext_ln30_332_fu_3516_p0;
-wire  signed [15:0] sext_ln30_333_fu_3524_p0;
-wire  signed [15:0] sext_ln30_334_fu_3532_p0;
-wire  signed [15:0] sext_ln30_335_fu_3540_p0;
-wire  signed [15:0] sext_ln30_336_fu_3548_p0;
-wire  signed [15:0] sext_ln30_337_fu_3556_p0;
-wire  signed [15:0] sext_ln30_338_fu_3564_p0;
-wire  signed [15:0] sext_ln30_339_fu_3572_p0;
-wire  signed [15:0] sext_ln30_340_fu_3584_p0;
-wire  signed [15:0] sext_ln30_341_fu_3592_p0;
-wire  signed [15:0] sext_ln23_6_fu_3600_p0;
-wire  signed [15:0] sext_ln23_7_fu_3608_p0;
-wire  signed [15:0] sext_ln30_342_fu_3616_p0;
-wire  signed [15:0] sext_ln30_343_fu_3624_p0;
-wire  signed [15:0] sext_ln30_344_fu_3632_p0;
-wire  signed [15:0] sext_ln30_345_fu_3640_p0;
-wire  signed [15:0] sext_ln30_346_fu_3648_p0;
-wire  signed [15:0] sext_ln30_347_fu_3656_p0;
-wire  signed [15:0] sext_ln30_348_fu_3664_p0;
-wire  signed [15:0] sext_ln30_349_fu_3672_p0;
-wire  signed [15:0] sext_ln30_350_fu_3680_p0;
-wire  signed [15:0] sext_ln30_351_fu_3688_p0;
-wire  signed [15:0] sext_ln30_353_fu_3704_p0;
-wire  signed [15:0] sext_ln30_354_fu_3712_p0;
-wire  signed [15:0] sext_ln30_355_fu_3720_p0;
-wire  signed [15:0] sext_ln30_356_fu_3728_p0;
-wire  signed [15:0] sext_ln30_357_fu_3736_p0;
-wire  signed [15:0] sext_ln30_358_fu_3744_p0;
-wire  signed [15:0] sext_ln30_359_fu_3752_p0;
-wire  signed [15:0] sext_ln30_360_fu_3760_p0;
-wire  signed [15:0] sext_ln30_361_fu_3768_p0;
-wire  signed [15:0] sext_ln30_362_fu_3776_p0;
-wire  signed [15:0] sext_ln30_363_fu_3784_p0;
-wire  signed [15:0] sext_ln30_364_fu_3792_p0;
-wire  signed [15:0] sext_ln30_365_fu_3800_p0;
-wire  signed [15:0] sext_ln30_366_fu_3808_p0;
-wire  signed [15:0] sext_ln30_367_fu_3816_p0;
-wire  signed [15:0] sext_ln30_368_fu_3824_p0;
-wire  signed [15:0] sext_ln30_369_fu_3832_p0;
-wire  signed [15:0] sext_ln30_370_fu_3840_p0;
-wire  signed [15:0] sext_ln30_371_fu_3848_p0;
-wire  signed [15:0] sext_ln30_372_fu_3856_p0;
-wire  signed [16:0] sext_ln30_34_fu_1312_p1;
-wire  signed [16:0] sext_ln30_7_fu_1096_p1;
+wire  signed [15:0] sext_ln27_1_fu_1048_p0;
+wire  signed [15:0] sext_ln27_2_fu_1056_p0;
+wire  signed [15:0] sext_ln27_3_fu_1064_p0;
+wire  signed [15:0] sext_ln27_4_fu_1072_p0;
+wire  signed [15:0] sext_ln27_5_fu_1080_p0;
+wire  signed [15:0] sext_ln27_6_fu_1088_p0;
+wire  signed [15:0] sext_ln27_7_fu_1096_p0;
+wire  signed [15:0] sext_ln27_8_fu_1104_p0;
+wire  signed [15:0] sext_ln27_9_fu_1112_p0;
+wire  signed [15:0] sext_ln27_10_fu_1120_p0;
+wire  signed [15:0] sext_ln27_11_fu_1128_p0;
+wire  signed [15:0] sext_ln27_12_fu_1136_p0;
+wire  signed [15:0] sext_ln27_13_fu_1144_p0;
+wire  signed [15:0] sext_ln27_14_fu_1152_p0;
+wire  signed [15:0] sext_ln27_15_fu_1160_p0;
+wire  signed [15:0] sext_ln27_16_fu_1168_p0;
+wire  signed [15:0] sext_ln27_17_fu_1176_p0;
+wire  signed [15:0] sext_ln27_18_fu_1184_p0;
+wire  signed [15:0] sext_ln27_19_fu_1192_p0;
+wire  signed [15:0] sext_ln27_20_fu_1200_p0;
+wire  signed [15:0] sext_ln27_22_fu_1216_p0;
+wire  signed [15:0] sext_ln27_23_fu_1224_p0;
+wire  signed [15:0] sext_ln27_24_fu_1232_p0;
+wire  signed [15:0] sext_ln27_25_fu_1240_p0;
+wire  signed [15:0] sext_ln27_26_fu_1248_p0;
+wire  signed [15:0] sext_ln27_27_fu_1256_p0;
+wire  signed [15:0] sext_ln27_28_fu_1264_p0;
+wire  signed [15:0] sext_ln27_29_fu_1272_p0;
+wire  signed [15:0] sext_ln27_30_fu_1280_p0;
+wire  signed [15:0] sext_ln27_31_fu_1288_p0;
+wire  signed [15:0] sext_ln27_32_fu_1296_p0;
+wire  signed [15:0] sext_ln27_33_fu_1304_p0;
+wire  signed [15:0] sext_ln27_34_fu_1312_p0;
+wire  signed [15:0] sext_ln27_35_fu_1320_p0;
+wire  signed [15:0] sext_ln27_36_fu_1332_p0;
+wire  signed [15:0] sext_ln27_37_fu_1340_p0;
+wire  signed [15:0] sext_ln27_38_fu_1348_p0;
+wire  signed [15:0] sext_ln27_39_fu_1356_p0;
+wire  signed [15:0] sext_ln27_40_fu_1364_p0;
+wire  signed [15:0] sext_ln27_41_fu_1372_p0;
+wire  signed [15:0] sext_ln27_42_fu_1380_p0;
+wire  signed [15:0] sext_ln27_43_fu_1388_p0;
+wire  signed [15:0] sext_ln27_44_fu_1396_p0;
+wire  signed [15:0] sext_ln27_45_fu_1404_p0;
+wire  signed [15:0] sext_ln27_46_fu_1412_p0;
+wire  signed [15:0] sext_ln27_47_fu_1420_p0;
+wire  signed [15:0] sext_ln27_48_fu_1428_p0;
+wire  signed [15:0] sext_ln27_49_fu_1436_p0;
+wire  signed [15:0] sext_ln27_50_fu_1444_p0;
+wire  signed [15:0] sext_ln27_51_fu_1452_p0;
+wire  signed [15:0] sext_ln27_52_fu_1460_p0;
+wire  signed [15:0] sext_ln27_53_fu_1468_p0;
+wire  signed [15:0] sext_ln27_54_fu_1476_p0;
+wire  signed [15:0] sext_ln27_55_fu_1484_p0;
+wire  signed [15:0] sext_ln27_56_fu_1492_p0;
+wire  signed [15:0] sext_ln27_57_fu_1500_p0;
+wire  signed [15:0] sext_ln27_58_fu_1508_p0;
+wire  signed [15:0] sext_ln27_59_fu_1516_p0;
+wire  signed [15:0] sext_ln27_60_fu_1524_p0;
+wire  signed [15:0] sext_ln27_61_fu_1532_p0;
+wire  signed [15:0] sext_ln27_62_fu_1540_p0;
+wire  signed [15:0] sext_ln27_63_fu_1548_p0;
+wire  signed [15:0] sext_ln27_64_fu_1556_p0;
+wire  signed [15:0] sext_ln27_65_fu_1564_p0;
+wire  signed [15:0] sext_ln27_66_fu_1572_p0;
+wire  signed [15:0] sext_ln27_67_fu_1580_p0;
+wire  signed [15:0] sext_ln27_68_fu_1588_p0;
+wire  signed [15:0] sext_ln27_69_fu_1596_p0;
+wire  signed [15:0] sext_ln27_70_fu_1604_p0;
+wire  signed [15:0] sext_ln27_71_fu_1612_p0;
+wire  signed [15:0] sext_ln27_72_fu_1620_p0;
+wire  signed [15:0] sext_ln27_73_fu_1628_p0;
+wire  signed [15:0] sext_ln27_74_fu_1636_p0;
+wire  signed [15:0] sext_ln27_75_fu_1644_p0;
+wire  signed [15:0] sext_ln27_76_fu_1652_p0;
+wire  signed [15:0] sext_ln27_77_fu_1660_p0;
+wire  signed [15:0] sext_ln27_78_fu_1668_p0;
+wire  signed [15:0] sext_ln27_79_fu_1676_p0;
+wire  signed [15:0] sext_ln27_81_fu_1688_p0;
+wire  signed [15:0] sext_ln27_82_fu_1696_p0;
+wire  signed [15:0] sext_ln27_83_fu_1704_p0;
+wire  signed [15:0] sext_ln27_84_fu_1712_p0;
+wire  signed [15:0] sext_ln27_85_fu_1720_p0;
+wire  signed [15:0] sext_ln27_86_fu_1728_p0;
+wire  signed [15:0] sext_ln27_87_fu_1736_p0;
+wire  signed [15:0] sext_ln27_88_fu_1744_p0;
+wire  signed [15:0] sext_ln27_89_fu_1752_p0;
+wire  signed [15:0] sext_ln27_90_fu_1760_p0;
+wire  signed [15:0] sext_ln27_91_fu_1768_p0;
+wire  signed [15:0] sext_ln27_92_fu_1776_p0;
+wire  signed [15:0] sext_ln27_93_fu_1784_p0;
+wire  signed [15:0] sext_ln27_94_fu_1792_p0;
+wire  signed [15:0] sext_ln27_95_fu_1800_p0;
+wire  signed [15:0] sext_ln27_97_fu_1812_p0;
+wire  signed [15:0] sext_ln27_98_fu_1824_p0;
+wire  signed [15:0] sext_ln27_99_fu_1832_p0;
+wire  signed [15:0] sext_ln27_100_fu_1840_p0;
+wire  signed [15:0] sext_ln27_102_fu_1852_p0;
+wire  signed [15:0] sext_ln27_103_fu_1860_p0;
+wire  signed [15:0] sext_ln27_104_fu_1868_p0;
+wire  signed [15:0] sext_ln27_105_fu_1876_p0;
+wire  signed [15:0] sext_ln27_106_fu_1884_p0;
+wire  signed [15:0] sext_ln27_107_fu_1892_p0;
+wire  signed [15:0] sext_ln27_109_fu_1904_p0;
+wire  signed [15:0] sext_ln27_111_fu_1916_p0;
+wire  signed [15:0] sext_ln27_112_fu_1924_p0;
+wire  signed [15:0] sext_ln27_113_fu_1932_p0;
+wire  signed [15:0] sext_ln27_114_fu_1940_p0;
+wire  signed [15:0] sext_ln27_115_fu_1948_p0;
+wire  signed [15:0] sext_ln27_116_fu_1956_p0;
+wire  signed [15:0] sext_ln27_117_fu_1964_p0;
+wire  signed [15:0] sext_ln27_119_fu_1976_p0;
+wire  signed [15:0] sext_ln27_120_fu_1984_p0;
+wire  signed [15:0] sext_ln27_121_fu_1992_p0;
+wire  signed [15:0] sext_ln27_122_fu_2000_p0;
+wire  signed [15:0] sext_ln27_123_fu_2008_p0;
+wire  signed [15:0] sext_ln27_124_fu_2016_p0;
+wire  signed [15:0] sext_ln27_126_fu_2028_p0;
+wire  signed [15:0] sext_ln27_127_fu_2036_p0;
+wire  signed [15:0] sext_ln27_128_fu_2044_p0;
+wire  signed [15:0] sext_ln27_129_fu_2052_p0;
+wire  signed [15:0] sext_ln27_130_fu_2060_p0;
+wire  signed [15:0] sext_ln27_131_fu_2068_p0;
+wire  signed [15:0] sext_ln27_132_fu_2076_p0;
+wire  signed [15:0] sext_ln27_133_fu_2084_p0;
+wire  signed [15:0] sext_ln27_134_fu_2092_p0;
+wire  signed [15:0] sext_ln27_136_fu_2104_p0;
+wire  signed [15:0] sext_ln27_138_fu_2116_p0;
+wire  signed [15:0] sext_ln27_139_fu_2124_p0;
+wire  signed [15:0] sext_ln27_141_fu_2136_p0;
+wire  signed [15:0] sext_ln27_142_fu_2144_p0;
+wire  signed [15:0] sext_ln27_143_fu_2152_p0;
+wire  signed [15:0] sext_ln27_144_fu_2160_p0;
+wire  signed [15:0] sext_ln27_145_fu_2168_p0;
+wire  signed [15:0] sext_ln27_148_fu_2184_p0;
+wire  signed [15:0] sext_ln27_150_fu_2196_p0;
+wire  signed [15:0] sext_ln27_151_fu_2204_p0;
+wire  signed [15:0] sext_ln27_152_fu_2212_p0;
+wire  signed [15:0] sext_ln27_153_fu_2220_p0;
+wire  signed [15:0] sext_ln27_154_fu_2228_p0;
+wire  signed [15:0] sext_ln27_155_fu_2236_p0;
+wire  signed [15:0] sext_ln27_156_fu_2244_p0;
+wire  signed [15:0] sext_ln27_157_fu_2252_p0;
+wire  signed [15:0] sext_ln27_158_fu_2260_p0;
+wire  signed [15:0] sext_ln27_159_fu_2268_p0;
+wire  signed [15:0] sext_ln27_160_fu_2276_p0;
+wire  signed [15:0] sext_ln27_161_fu_2284_p0;
+wire  signed [15:0] sext_ln27_164_fu_2300_p0;
+wire  signed [15:0] sext_ln27_165_fu_2308_p0;
+wire  signed [15:0] sext_ln27_167_fu_2320_p0;
+wire  signed [15:0] sext_ln27_170_fu_2336_p0;
+wire  signed [15:0] sext_ln27_171_fu_2344_p0;
+wire  signed [15:0] sext_ln27_172_fu_2352_p0;
+wire  signed [15:0] sext_ln27_174_fu_2364_p0;
+wire  signed [15:0] sext_ln27_175_fu_2372_p0;
+wire  signed [15:0] sext_ln27_177_fu_2384_p0;
+wire  signed [15:0] sext_ln27_180_fu_2400_p0;
+wire  signed [15:0] sext_ln27_181_fu_2408_p0;
+wire  signed [15:0] sext_ln27_185_fu_2428_p0;
+wire  signed [15:0] sext_ln27_187_fu_2440_p0;
+wire  signed [15:0] sext_ln27_190_fu_2456_p0;
+wire  signed [15:0] sext_ln27_191_fu_2464_p0;
+wire  signed [15:0] sext_ln27_194_fu_2480_p0;
+wire  signed [15:0] sext_ln27_196_fu_2492_p0;
+wire  signed [15:0] sext_ln27_200_fu_2512_p0;
+wire  signed [15:0] sext_ln27_201_fu_2520_p0;
+wire  signed [15:0] sext_ln27_204_fu_2536_p0;
+wire  signed [15:0] sext_ln27_206_fu_2548_p0;
+wire  signed [15:0] sext_ln27_207_fu_2556_p0;
+wire  signed [15:0] sext_ln27_209_fu_2568_p0;
+wire  signed [15:0] sext_ln27_210_fu_2576_p0;
+wire  signed [15:0] sext_ln27_211_fu_2584_p0;
+wire  signed [15:0] sext_ln27_214_fu_2600_p0;
+wire  signed [15:0] sext_ln27_216_fu_2612_p0;
+wire  signed [15:0] sext_ln27_217_fu_2620_p0;
+wire  signed [15:0] sext_ln27_220_fu_2636_p0;
+wire  signed [15:0] sext_ln27_221_fu_2644_p0;
+wire  signed [15:0] sext_ln27_222_fu_2652_p0;
+wire  signed [15:0] sext_ln27_223_fu_2660_p0;
+wire  signed [15:0] sext_ln27_224_fu_2668_p0;
+wire  signed [15:0] sext_ln27_225_fu_2676_p0;
+wire  signed [15:0] sext_ln27_226_fu_2684_p0;
+wire  signed [15:0] sext_ln27_227_fu_2692_p0;
+wire  signed [15:0] sext_ln27_228_fu_2700_p0;
+wire  signed [15:0] sext_ln27_229_fu_2708_p0;
+wire  signed [15:0] sext_ln27_230_fu_2716_p0;
+wire  signed [15:0] sext_ln27_231_fu_2724_p0;
+wire  signed [15:0] sext_ln27_233_fu_2736_p0;
+wire  signed [15:0] sext_ln27_236_fu_2752_p0;
+wire  signed [15:0] sext_ln27_238_fu_2764_p0;
+wire  signed [15:0] sext_ln27_239_fu_2772_p0;
+wire  signed [15:0] sext_ln27_240_fu_2780_p0;
+wire  signed [15:0] sext_ln27_242_fu_2792_p0;
+wire  signed [15:0] sext_ln27_243_fu_2800_p0;
+wire  signed [15:0] sext_ln27_245_fu_2812_p0;
+wire  signed [15:0] sext_ln27_247_fu_2824_p0;
+wire  signed [15:0] sext_ln27_248_fu_2832_p0;
+wire  signed [15:0] sext_ln27_249_fu_2840_p0;
+wire  signed [15:0] sext_ln27_250_fu_2848_p0;
+wire  signed [15:0] sext_ln27_251_fu_2856_p0;
+wire  signed [15:0] sext_ln27_252_fu_2864_p0;
+wire  signed [15:0] sext_ln27_253_fu_2872_p0;
+wire  signed [15:0] sext_ln27_254_fu_2880_p0;
+wire  signed [15:0] sext_ln27_255_fu_2888_p0;
+wire  signed [15:0] sext_ln27_257_fu_2900_p0;
+wire  signed [15:0] sext_ln27_258_fu_2908_p0;
+wire  signed [15:0] sext_ln27_259_fu_2916_p0;
+wire  signed [15:0] sext_ln27_260_fu_2924_p0;
+wire  signed [15:0] sext_ln27_261_fu_2932_p0;
+wire  signed [15:0] sext_ln27_262_fu_2940_p0;
+wire  signed [15:0] sext_ln27_264_fu_2952_p0;
+wire  signed [15:0] sext_ln27_265_fu_2960_p0;
+wire  signed [15:0] sext_ln27_266_fu_2968_p0;
+wire  signed [15:0] sext_ln27_267_fu_2976_p0;
+wire  signed [15:0] sext_ln27_269_fu_2988_p0;
+wire  signed [15:0] sext_ln27_270_fu_2996_p0;
+wire  signed [15:0] sext_ln27_272_fu_3008_p0;
+wire  signed [15:0] sext_ln27_274_fu_3020_p0;
+wire  signed [15:0] sext_ln27_275_fu_3028_p0;
+wire  signed [15:0] sext_ln27_276_fu_3036_p0;
+wire  signed [15:0] sext_ln27_277_fu_3044_p0;
+wire  signed [15:0] sext_ln27_278_fu_3052_p0;
+wire  signed [15:0] sext_ln27_279_fu_3060_p0;
+wire  signed [15:0] sext_ln27_281_fu_3072_p0;
+wire  signed [15:0] sext_ln27_282_fu_3080_p0;
+wire  signed [15:0] sext_ln27_283_fu_3088_p0;
+wire  signed [15:0] sext_ln27_284_fu_3100_p0;
+wire  signed [15:0] sext_ln27_286_fu_3112_p0;
+wire  signed [15:0] sext_ln27_287_fu_3120_p0;
+wire  signed [15:0] sext_ln27_288_fu_3128_p0;
+wire  signed [15:0] sext_ln27_289_fu_3136_p0;
+wire  signed [15:0] sext_ln27_290_fu_3144_p0;
+wire  signed [15:0] sext_ln27_291_fu_3152_p0;
+wire  signed [15:0] sext_ln27_292_fu_3160_p0;
+wire  signed [15:0] sext_ln27_293_fu_3168_p0;
+wire  signed [15:0] sext_ln27_294_fu_3176_p0;
+wire  signed [15:0] sext_ln27_295_fu_3184_p0;
+wire  signed [15:0] sext_ln27_296_fu_3192_p0;
+wire  signed [15:0] sext_ln27_297_fu_3200_p0;
+wire  signed [15:0] sext_ln20_fu_3212_p0;
+wire  signed [15:0] sext_ln20_1_fu_3220_p0;
+wire  signed [15:0] sext_ln27_300_fu_3232_p0;
+wire  signed [15:0] sext_ln27_301_fu_3240_p0;
+wire  signed [15:0] sext_ln27_302_fu_3248_p0;
+wire  signed [15:0] sext_ln27_303_fu_3256_p0;
+wire  signed [15:0] sext_ln27_304_fu_3264_p0;
+wire  signed [15:0] sext_ln27_305_fu_3272_p0;
+wire  signed [15:0] sext_ln27_306_fu_3280_p0;
+wire  signed [15:0] sext_ln27_307_fu_3288_p0;
+wire  signed [15:0] sext_ln27_308_fu_3296_p0;
+wire  signed [15:0] sext_ln27_309_fu_3304_p0;
+wire  signed [15:0] sext_ln27_310_fu_3312_p0;
+wire  signed [15:0] sext_ln27_311_fu_3320_p0;
+wire  signed [15:0] sext_ln27_312_fu_3328_p0;
+wire  signed [15:0] sext_ln27_313_fu_3336_p0;
+wire  signed [15:0] sext_ln27_314_fu_3344_p0;
+wire  signed [15:0] sext_ln27_315_fu_3352_p0;
+wire  signed [15:0] sext_ln27_316_fu_3360_p0;
+wire  signed [15:0] sext_ln20_2_fu_3368_p0;
+wire  signed [15:0] sext_ln20_3_fu_3376_p0;
+wire  signed [15:0] sext_ln27_317_fu_3384_p0;
+wire  signed [15:0] sext_ln27_318_fu_3392_p0;
+wire  signed [15:0] sext_ln27_319_fu_3400_p0;
+wire  signed [15:0] sext_ln27_320_fu_3408_p0;
+wire  signed [15:0] sext_ln27_321_fu_3416_p0;
+wire  signed [15:0] sext_ln27_322_fu_3424_p0;
+wire  signed [15:0] sext_ln27_323_fu_3432_p0;
+wire  signed [15:0] sext_ln27_324_fu_3440_p0;
+wire  signed [15:0] sext_ln27_326_fu_3452_p0;
+wire  signed [15:0] sext_ln27_327_fu_3460_p0;
+wire  signed [15:0] sext_ln27_328_fu_3468_p0;
+wire  signed [15:0] sext_ln27_329_fu_3476_p0;
+wire  signed [15:0] sext_ln27_330_fu_3484_p0;
+wire  signed [15:0] sext_ln27_331_fu_3492_p0;
+wire  signed [15:0] sext_ln20_4_fu_3500_p0;
+wire  signed [15:0] sext_ln20_5_fu_3508_p0;
+wire  signed [15:0] sext_ln27_332_fu_3516_p0;
+wire  signed [15:0] sext_ln27_333_fu_3524_p0;
+wire  signed [15:0] sext_ln27_334_fu_3532_p0;
+wire  signed [15:0] sext_ln27_335_fu_3540_p0;
+wire  signed [15:0] sext_ln27_336_fu_3548_p0;
+wire  signed [15:0] sext_ln27_337_fu_3556_p0;
+wire  signed [15:0] sext_ln27_338_fu_3564_p0;
+wire  signed [15:0] sext_ln27_339_fu_3572_p0;
+wire  signed [15:0] sext_ln27_340_fu_3584_p0;
+wire  signed [15:0] sext_ln27_341_fu_3592_p0;
+wire  signed [15:0] sext_ln20_6_fu_3600_p0;
+wire  signed [15:0] sext_ln20_7_fu_3608_p0;
+wire  signed [15:0] sext_ln27_342_fu_3616_p0;
+wire  signed [15:0] sext_ln27_343_fu_3624_p0;
+wire  signed [15:0] sext_ln27_344_fu_3632_p0;
+wire  signed [15:0] sext_ln27_345_fu_3640_p0;
+wire  signed [15:0] sext_ln27_346_fu_3648_p0;
+wire  signed [15:0] sext_ln27_347_fu_3656_p0;
+wire  signed [15:0] sext_ln27_348_fu_3664_p0;
+wire  signed [15:0] sext_ln27_349_fu_3672_p0;
+wire  signed [15:0] sext_ln27_350_fu_3680_p0;
+wire  signed [15:0] sext_ln27_351_fu_3688_p0;
+wire  signed [15:0] sext_ln27_353_fu_3704_p0;
+wire  signed [15:0] sext_ln27_354_fu_3712_p0;
+wire  signed [15:0] sext_ln27_355_fu_3720_p0;
+wire  signed [15:0] sext_ln27_356_fu_3728_p0;
+wire  signed [15:0] sext_ln27_357_fu_3736_p0;
+wire  signed [15:0] sext_ln27_358_fu_3744_p0;
+wire  signed [15:0] sext_ln27_359_fu_3752_p0;
+wire  signed [15:0] sext_ln27_360_fu_3760_p0;
+wire  signed [15:0] sext_ln27_361_fu_3768_p0;
+wire  signed [15:0] sext_ln27_362_fu_3776_p0;
+wire  signed [15:0] sext_ln27_363_fu_3784_p0;
+wire  signed [15:0] sext_ln27_364_fu_3792_p0;
+wire  signed [15:0] sext_ln27_365_fu_3800_p0;
+wire  signed [15:0] sext_ln27_366_fu_3808_p0;
+wire  signed [15:0] sext_ln27_367_fu_3816_p0;
+wire  signed [15:0] sext_ln27_368_fu_3824_p0;
+wire  signed [15:0] sext_ln27_369_fu_3832_p0;
+wire  signed [15:0] sext_ln27_370_fu_3840_p0;
+wire  signed [15:0] sext_ln27_371_fu_3848_p0;
+wire  signed [15:0] sext_ln27_372_fu_3856_p0;
+wire  signed [16:0] sext_ln27_34_fu_1312_p1;
+wire  signed [16:0] sext_ln27_7_fu_1096_p1;
 wire   [16:0] tmp_fu_3860_p2;
 wire  signed [17:0] tmp_cast_fu_3866_p1;
-wire  signed [17:0] sext_ln30_39_fu_1356_p1;
+wire  signed [17:0] sext_ln27_39_fu_1356_p1;
 wire   [17:0] tmp6_fu_3870_p2;
-wire  signed [17:0] sext_ln30_66_fu_1572_p1;
+wire  signed [17:0] sext_ln27_66_fu_1572_p1;
 wire   [17:0] tmp7_fu_3876_p2;
 wire  signed [18:0] tmp7_cast_fu_3882_p1;
-wire  signed [18:0] sext_ln30_74_fu_1636_p1;
+wire  signed [18:0] sext_ln27_74_fu_1636_p1;
 wire   [18:0] tmp8_fu_3886_p2;
-wire  signed [18:0] sext_ln30_84_fu_1712_p1;
+wire  signed [18:0] sext_ln27_84_fu_1712_p1;
 wire   [18:0] tmp9_fu_3892_p2;
-wire  signed [18:0] sext_ln30_297_fu_3200_p1;
+wire  signed [18:0] sext_ln27_297_fu_3200_p1;
 wire   [18:0] tmp10_fu_3898_p2;
-wire  signed [18:0] sext_ln30_305_fu_3272_p1;
+wire  signed [18:0] sext_ln27_305_fu_3272_p1;
 wire   [18:0] tmp11_fu_3904_p2;
 wire  signed [19:0] tmp11_cast_fu_3910_p1;
-wire  signed [19:0] sext_ln30_313_fu_3336_p1;
+wire  signed [19:0] sext_ln27_313_fu_3336_p1;
 wire   [19:0] tmp12_fu_3914_p2;
-wire  signed [19:0] sext_ln30_336_fu_3548_p1;
-wire  signed [16:0] sext_ln30_341_fu_3592_p1;
-wire  signed [16:0] sext_ln30_366_fu_3808_p1;
+wire  signed [19:0] sext_ln27_336_fu_3548_p1;
+wire  signed [16:0] sext_ln27_341_fu_3592_p1;
+wire  signed [16:0] sext_ln27_366_fu_3808_p1;
 wire   [16:0] tmp1_fu_3926_p2;
 wire  signed [19:0] tmp1_cast_fu_3932_p1;
 wire   [19:0] tmp13_fu_3920_p2;
@@ -1153,159 +1153,159 @@ wire   [19:0] tmp15_fu_3936_p2;
 wire   [21:0] tmp_3_fu_3950_p3;
 wire   [24:0] p_shl1_fu_3942_p3;
 wire  signed [24:0] p_shl595_fu_3958_p1;
-wire  signed [16:0] sext_ln30_63_fu_1548_p1;
-wire  signed [16:0] sext_ln30_70_fu_1604_p1;
+wire  signed [16:0] sext_ln27_63_fu_1548_p1;
+wire  signed [16:0] sext_ln27_70_fu_1604_p1;
 wire   [16:0] tmp21_fu_3968_p2;
 wire  signed [17:0] tmp21_cast_fu_3974_p1;
-wire  signed [17:0] sext_ln30_97_fu_1812_p1;
+wire  signed [17:0] sext_ln27_97_fu_1812_p1;
 wire   [17:0] tmp22_fu_3978_p2;
-wire  signed [17:0] sext_ln30_104_fu_1868_p1;
+wire  signed [17:0] sext_ln27_104_fu_1868_p1;
 wire   [17:0] tmp23_fu_3984_p2;
 wire  signed [18:0] tmp23_cast_fu_3990_p1;
-wire  signed [18:0] sext_ln30_277_fu_3044_p1;
+wire  signed [18:0] sext_ln27_277_fu_3044_p1;
 wire   [18:0] tmp24_fu_3994_p2;
-wire  signed [18:0] sext_ln30_284_fu_3100_p1;
+wire  signed [18:0] sext_ln27_284_fu_3100_p1;
 wire   [18:0] tmp25_fu_4000_p2;
-wire  signed [18:0] sext_ln30_309_fu_3304_p1;
+wire  signed [18:0] sext_ln27_309_fu_3304_p1;
 wire   [18:0] tmp26_fu_4006_p2;
-wire  signed [18:0] sext_ln30_316_fu_3360_p1;
-wire  signed [16:0] sext_ln30_33_fu_1304_p1;
-wire  signed [16:0] sext_ln30_42_fu_1380_p1;
+wire  signed [18:0] sext_ln27_316_fu_3360_p1;
+wire  signed [16:0] sext_ln27_33_fu_1304_p1;
+wire  signed [16:0] sext_ln27_42_fu_1380_p1;
 wire   [16:0] tmp31_fu_4018_p2;
 wire  signed [17:0] tmp31_cast_fu_4024_p1;
-wire  signed [17:0] sext_ln30_50_fu_1444_p1;
+wire  signed [17:0] sext_ln27_50_fu_1444_p1;
 wire   [17:0] tmp2_fu_4028_p2;
-wire  signed [16:0] sext_ln30_229_fu_2708_p1;
-wire  signed [16:0] sext_ln30_327_fu_3460_p1;
+wire  signed [16:0] sext_ln27_229_fu_2708_p1;
+wire  signed [16:0] sext_ln27_327_fu_3460_p1;
 wire   [16:0] tmp4_fu_4038_p2;
 wire  signed [17:0] tmp4_cast_fu_4044_p1;
-wire  signed [17:0] sext_ln30_152_fu_2212_p1;
+wire  signed [17:0] sext_ln27_152_fu_2212_p1;
 wire   [17:0] tmp3_fu_4048_p2;
 wire  signed [18:0] tmp3_cast_fu_4054_p1;
 wire  signed [18:0] tmp2_cast_fu_4034_p1;
 wire   [18:0] tmp35_fu_4058_p2;
-wire  signed [18:0] sext_ln30_333_fu_3524_p1;
-wire  signed [16:0] sext_ln30_43_fu_1388_p1;
-wire  signed [16:0] sext_ln30_28_fu_1264_p1;
+wire  signed [18:0] sext_ln27_333_fu_3524_p1;
+wire  signed [16:0] sext_ln27_43_fu_1388_p1;
+wire  signed [16:0] sext_ln27_28_fu_1264_p1;
 wire   [16:0] tmp17_fu_4070_p2;
-wire  signed [16:0] sext_ln30_53_fu_1468_p1;
-wire  signed [16:0] sext_ln30_136_fu_2104_p1;
+wire  signed [16:0] sext_ln27_53_fu_1468_p1;
+wire  signed [16:0] sext_ln27_136_fu_2104_p1;
 wire   [16:0] tmp18_fu_4080_p2;
 wire  signed [17:0] tmp18_cast_fu_4086_p1;
 wire  signed [17:0] tmp17_cast_fu_4076_p1;
 wire   [17:0] tmp5_fu_4090_p2;
-wire  signed [16:0] sext_ln30_245_fu_2812_p1;
-wire  signed [16:0] sext_ln30_324_fu_3440_p1;
+wire  signed [16:0] sext_ln27_245_fu_2812_p1;
+wire  signed [16:0] sext_ln27_324_fu_3440_p1;
 wire   [16:0] tmp20_fu_4100_p2;
-wire  signed [16:0] sext_ln30_332_fu_3516_p1;
-wire  signed [16:0] sext_ln30_345_fu_3640_p1;
+wire  signed [16:0] sext_ln27_332_fu_3516_p1;
+wire  signed [16:0] sext_ln27_345_fu_3640_p1;
 wire   [16:0] tmp29_fu_4110_p2;
 wire  signed [17:0] tmp29_cast_fu_4116_p1;
 wire  signed [17:0] tmp20_cast_fu_4106_p1;
 wire   [17:0] tmp19_fu_4120_p2;
 wire  signed [18:0] tmp19_cast_fu_4126_p1;
 wire  signed [18:0] tmp5_cast_fu_4096_p1;
-wire  signed [16:0] sext_ln30_18_fu_1184_p1;
-wire  signed [16:0] sext_ln30_13_fu_1144_p1;
+wire  signed [16:0] sext_ln27_18_fu_1184_p1;
+wire  signed [16:0] sext_ln27_13_fu_1144_p1;
 wire   [16:0] tmp51_fu_4136_p2;
 wire  signed [17:0] tmp51_cast_fu_4142_p1;
-wire  signed [17:0] sext_ln30_59_fu_1516_p1;
+wire  signed [17:0] sext_ln27_59_fu_1516_p1;
 wire   [17:0] tmp52_fu_4146_p2;
-wire  signed [16:0] sext_ln30_121_fu_1992_p1;
-wire  signed [16:0] sext_ln30_260_fu_2924_p1;
+wire  signed [16:0] sext_ln27_121_fu_1992_p1;
+wire  signed [16:0] sext_ln27_260_fu_2924_p1;
 wire   [16:0] tmp30_fu_4156_p2;
 wire  signed [18:0] tmp30_cast_fu_4162_p1;
 wire  signed [18:0] tmp52_cast_fu_4152_p1;
 wire   [18:0] tmp54_fu_4166_p2;
-wire  signed [18:0] sext_ln30_318_fu_3392_p1;
+wire  signed [18:0] sext_ln27_318_fu_3392_p1;
 wire   [18:0] tmp55_fu_4172_p2;
-wire  signed [18:0] sext_ln30_355_fu_3720_p1;
+wire  signed [18:0] sext_ln27_355_fu_3720_p1;
 wire   [18:0] tmp56_fu_4178_p2;
-wire  signed [18:0] sext_ln30_360_fu_3760_p1;
+wire  signed [18:0] sext_ln27_360_fu_3760_p1;
 wire   [18:0] tmp57_fu_4184_p2;
 wire   [22:0] tmp_5_fu_4190_p3;
 wire   [19:0] tmp_6_fu_4202_p3;
 wire  signed [23:0] p_shl590_fu_4198_p1;
 wire  signed [23:0] p_shl591_fu_4210_p1;
-wire  signed [16:0] sext_ln30_6_fu_1088_p1;
-wire  signed [16:0] sext_ln30_40_fu_1364_p1;
+wire  signed [16:0] sext_ln27_6_fu_1088_p1;
+wire  signed [16:0] sext_ln27_40_fu_1364_p1;
 wire   [16:0] tmp63_fu_4220_p2;
 wire  signed [17:0] tmp63_cast_fu_4226_p1;
-wire  signed [17:0] sext_ln30_41_fu_1372_p1;
+wire  signed [17:0] sext_ln27_41_fu_1372_p1;
 wire   [17:0] tmp64_fu_4230_p2;
-wire  signed [16:0] sext_ln30_47_fu_1420_p1;
-wire  signed [16:0] sext_ln30_330_fu_3484_p1;
+wire  signed [16:0] sext_ln27_47_fu_1420_p1;
+wire  signed [16:0] sext_ln27_330_fu_3484_p1;
 wire   [16:0] tmp47_fu_4240_p2;
 wire  signed [18:0] tmp47_cast_fu_4246_p1;
 wire  signed [18:0] tmp64_cast_fu_4236_p1;
 wire   [18:0] tmp66_fu_4250_p2;
-wire  signed [18:0] sext_ln30_334_fu_3532_p1;
+wire  signed [18:0] sext_ln27_334_fu_3532_p1;
 wire   [18:0] tmp67_fu_4256_p2;
-wire  signed [18:0] sext_ln30_335_fu_3540_p1;
+wire  signed [18:0] sext_ln27_335_fu_3540_p1;
 wire   [18:0] tmp68_fu_4262_p2;
-wire  signed [18:0] sext_ln30_367_fu_3816_p1;
-wire  signed [16:0] sext_ln30_3_fu_1064_p1;
-wire  signed [16:0] sext_ln30_55_fu_1484_p1;
+wire  signed [18:0] sext_ln27_367_fu_3816_p1;
+wire  signed [16:0] sext_ln27_3_fu_1064_p1;
+wire  signed [16:0] sext_ln27_55_fu_1484_p1;
 wire   [16:0] tmp75_fu_4274_p2;
 wire  signed [17:0] tmp75_cast_fu_4280_p1;
-wire  signed [17:0] sext_ln30_57_fu_1500_p1;
+wire  signed [17:0] sext_ln27_57_fu_1500_p1;
 wire   [17:0] tmp76_fu_4284_p2;
-wire  signed [16:0] sext_ln30_77_fu_1660_p1;
-wire  signed [16:0] sext_ln30_302_fu_3248_p1;
+wire  signed [16:0] sext_ln27_77_fu_1660_p1;
+wire  signed [16:0] sext_ln27_302_fu_3248_p1;
 wire   [16:0] tmp48_fu_4294_p2;
 wire  signed [18:0] tmp48_cast_fu_4300_p1;
 wire  signed [18:0] tmp76_cast_fu_4290_p1;
 wire   [18:0] tmp78_fu_4304_p2;
-wire  signed [18:0] sext_ln30_320_fu_3408_p1;
+wire  signed [18:0] sext_ln27_320_fu_3408_p1;
 wire   [18:0] tmp79_fu_4310_p2;
-wire  signed [18:0] sext_ln30_322_fu_3424_p1;
+wire  signed [18:0] sext_ln27_322_fu_3424_p1;
 wire   [18:0] tmp80_fu_4316_p2;
-wire  signed [18:0] sext_ln30_370_fu_3840_p1;
-wire  signed [16:0] sext_ln30_132_fu_2076_p1;
-wire  signed [16:0] sext_ln30_150_fu_2196_p1;
+wire  signed [18:0] sext_ln27_370_fu_3840_p1;
+wire  signed [16:0] sext_ln27_132_fu_2076_p1;
+wire  signed [16:0] sext_ln27_150_fu_2196_p1;
 wire   [16:0] tmp50_fu_4328_p2;
 wire  signed [17:0] tmp50_cast_fu_4334_p1;
-wire  signed [17:0] sext_ln30_133_fu_2084_p1;
+wire  signed [17:0] sext_ln27_133_fu_2084_p1;
 wire   [17:0] tmp49_fu_4338_p2;
-wire  signed [16:0] sext_ln30_248_fu_2832_p1;
-wire  signed [16:0] sext_ln30_249_fu_2840_p1;
+wire  signed [16:0] sext_ln27_248_fu_2832_p1;
+wire  signed [16:0] sext_ln27_249_fu_2840_p1;
 wire   [16:0] tmp60_fu_4348_p2;
 wire  signed [17:0] tmp60_cast_fu_4354_p1;
-wire  signed [17:0] sext_ln30_231_fu_2724_p1;
+wire  signed [17:0] sext_ln27_231_fu_2724_p1;
 wire   [17:0] tmp59_fu_4358_p2;
 wire  signed [18:0] tmp59_cast_fu_4364_p1;
 wire  signed [18:0] tmp49_cast_fu_4344_p1;
-wire  signed [16:0] sext_ln30_72_fu_1620_p1;
-wire  signed [16:0] sext_ln30_71_fu_1612_p1;
+wire  signed [16:0] sext_ln27_72_fu_1620_p1;
+wire  signed [16:0] sext_ln27_71_fu_1612_p1;
 wire   [16:0] sum_fu_4374_p2;
-wire  signed [17:0] sext_ln30_78_fu_1668_p1;
+wire  signed [17:0] sext_ln27_78_fu_1668_p1;
 wire  signed [17:0] sum_cast_fu_4380_p1;
 wire   [17:0] tmp94_fu_4384_p2;
-wire  signed [17:0] sext_ln30_301_fu_3240_p1;
+wire  signed [17:0] sext_ln27_301_fu_3240_p1;
 wire   [17:0] tmp95_fu_4390_p2;
 wire  signed [18:0] tmp95_cast_fu_4396_p1;
-wire  signed [18:0] sext_ln30_307_fu_3288_p1;
-wire  signed [16:0] sext_ln30_92_fu_1776_p1;
-wire  signed [16:0] sext_ln30_62_fu_1540_p1;
+wire  signed [18:0] sext_ln27_307_fu_3288_p1;
+wire  signed [16:0] sext_ln27_92_fu_1776_p1;
+wire  signed [16:0] sext_ln27_62_fu_1540_p1;
 wire   [16:0] tmp101_fu_4406_p2;
 wire  signed [17:0] tmp101_cast_fu_4412_p1;
-wire  signed [17:0] sext_ln30_120_fu_1984_p1;
+wire  signed [17:0] sext_ln27_120_fu_1984_p1;
 wire   [17:0] tmp102_fu_4416_p2;
-wire  signed [17:0] sext_ln30_261_fu_2932_p1;
+wire  signed [17:0] sext_ln27_261_fu_2932_p1;
 wire  signed [17:0] tmp103_fu_4422_p2;
-wire  signed [16:0] sext_ln30_289_fu_3136_p1;
-wire  signed [16:0] sext_ln23_2_fu_3368_p1;
+wire  signed [16:0] sext_ln27_289_fu_3136_p1;
+wire  signed [16:0] sext_ln20_2_fu_3368_p1;
 wire  signed [16:0] tmp61_fu_4432_p2;
-wire  signed [16:0] sext_ln30_27_fu_1256_p1;
-wire  signed [16:0] sext_ln30_25_fu_1240_p1;
+wire  signed [16:0] sext_ln27_27_fu_1256_p1;
+wire  signed [16:0] sext_ln27_25_fu_1240_p1;
 wire   [16:0] sum1_fu_4442_p2;
-wire  signed [17:0] sext_ln30_61_fu_1532_p1;
+wire  signed [17:0] sext_ln27_61_fu_1532_p1;
 wire  signed [17:0] sum1_cast_fu_4448_p1;
 wire   [17:0] tmp112_fu_4452_p2;
-wire  signed [17:0] sext_ln23_3_fu_3376_p1;
+wire  signed [17:0] sext_ln20_3_fu_3376_p1;
 wire   [17:0] tmp113_fu_4458_p2;
 wire  signed [18:0] tmp113_cast_fu_4464_p1;
-wire  signed [18:0] sext_ln30_346_fu_3648_p1;
+wire  signed [18:0] sext_ln27_346_fu_3648_p1;
 wire  signed [15:0] p_ZL12H_filter_FIR_368_load_cast_fu_4474_p0;
 wire  signed [15:0] p_ZL12H_filter_FIR_352_load_cast_fu_4478_p0;
 wire  signed [15:0] p_ZL12H_filter_FIR_289_load_cast_fu_4482_p0;
@@ -1326,114 +1326,114 @@ wire  signed [17:0] p_ZL12H_filter_FIR_102_load_cast_fu_4486_p1;
 wire   [17:0] tmp72_fu_4528_p2;
 wire  signed [18:0] tmp72_cast_fu_4534_p1;
 wire  signed [18:0] tmp62_cast_fu_4514_p1;
-wire  signed [16:0] sext_ln30_32_fu_1296_p1;
-wire  signed [16:0] sext_ln30_20_fu_1200_p1;
+wire  signed [16:0] sext_ln27_32_fu_1296_p1;
+wire  signed [16:0] sext_ln27_20_fu_1200_p1;
 wire   [16:0] tmp125_fu_4544_p2;
 wire  signed [17:0] tmp125_cast_fu_4550_p1;
-wire  signed [17:0] sext_ln30_90_fu_1760_p1;
+wire  signed [17:0] sext_ln27_90_fu_1760_p1;
 wire   [17:0] tmp126_fu_4554_p2;
-wire  signed [17:0] sext_ln30_291_fu_3152_p1;
+wire  signed [17:0] sext_ln27_291_fu_3152_p1;
 wire  signed [17:0] tmp127_fu_4560_p2;
-wire  signed [16:0] sext_ln23_7_fu_3608_p1;
-wire  signed [16:0] sext_ln30_353_fu_3704_p1;
+wire  signed [16:0] sext_ln20_7_fu_3608_p1;
+wire  signed [16:0] sext_ln27_353_fu_3704_p1;
 wire  signed [16:0] tmp74_fu_4570_p2;
-wire  signed [16:0] sext_ln30_17_fu_1176_p1;
-wire  signed [16:0] sext_ln30_16_fu_1168_p1;
+wire  signed [16:0] sext_ln27_17_fu_1176_p1;
+wire  signed [16:0] sext_ln27_16_fu_1168_p1;
 wire   [16:0] tmp135_fu_4580_p2;
 wire  signed [17:0] tmp135_cast_fu_4586_p1;
-wire  signed [17:0] sext_ln30_37_fu_1340_p1;
+wire  signed [17:0] sext_ln27_37_fu_1340_p1;
 wire   [17:0] tmp136_fu_4590_p2;
-wire  signed [17:0] sext_ln30_338_fu_3564_p1;
+wire  signed [17:0] sext_ln27_338_fu_3564_p1;
 wire   [17:0] tmp137_fu_4596_p2;
 wire  signed [18:0] tmp137_cast_fu_4602_p1;
-wire  signed [18:0] sext_ln30_356_fu_3728_p1;
+wire  signed [18:0] sext_ln27_356_fu_3728_p1;
 wire   [18:0] tmp138_fu_4606_p2;
-wire  signed [18:0] sext_ln30_357_fu_3736_p1;
-wire  signed [16:0] sext_ln30_2_fu_1056_p1;
-wire  signed [16:0] sext_ln30_112_fu_1924_p1;
+wire  signed [18:0] sext_ln27_357_fu_3736_p1;
+wire  signed [16:0] sext_ln27_2_fu_1056_p1;
+wire  signed [16:0] sext_ln27_112_fu_1924_p1;
 wire   [16:0] tmp90_fu_4618_p2;
 wire  signed [17:0] tmp90_cast_fu_4624_p1;
-wire  signed [17:0] sext_ln30_65_fu_1564_p1;
-wire  signed [16:0] sext_ln30_314_fu_3344_p1;
-wire  signed [16:0] sext_ln30_371_fu_3848_p1;
+wire  signed [17:0] sext_ln27_65_fu_1564_p1;
+wire  signed [16:0] sext_ln27_314_fu_3344_p1;
+wire  signed [16:0] sext_ln27_371_fu_3848_p1;
 wire   [16:0] tmp92_fu_4634_p2;
 wire  signed [17:0] tmp92_cast_fu_4640_p1;
-wire  signed [17:0] sext_ln30_269_fu_2988_p1;
-wire  signed [16:0] sext_ln30_81_fu_1688_p1;
-wire  signed [16:0] sext_ln30_1_fu_1048_p1;
+wire  signed [17:0] sext_ln27_269_fu_2988_p1;
+wire  signed [16:0] sext_ln27_81_fu_1688_p1;
+wire  signed [16:0] sext_ln27_1_fu_1048_p1;
 wire   [16:0] tmp149_fu_4650_p2;
 wire  signed [17:0] tmp149_cast_fu_4656_p1;
-wire  signed [17:0] sext_ln30_114_fu_1940_p1;
+wire  signed [17:0] sext_ln27_114_fu_1940_p1;
 wire   [17:0] tmp150_fu_4660_p2;
-wire  signed [17:0] sext_ln30_267_fu_2976_p1;
+wire  signed [17:0] sext_ln27_267_fu_2976_p1;
 wire  signed [17:0] tmp151_fu_4666_p2;
-wire  signed [16:0] sext_ln23_1_fu_3220_p1;
-wire  signed [16:0] sext_ln30_372_fu_3856_p1;
+wire  signed [16:0] sext_ln20_1_fu_3220_p1;
+wire  signed [16:0] sext_ln27_372_fu_3856_p1;
 wire  signed [16:0] tmp93_fu_4676_p2;
-wire  signed [16:0] sext_ln30_138_fu_2116_p1;
-wire  signed [16:0] sext_ln30_126_fu_2028_p1;
+wire  signed [16:0] sext_ln27_138_fu_2116_p1;
+wire  signed [16:0] sext_ln27_126_fu_2028_p1;
 wire   [16:0] tmp99_fu_4686_p2;
-wire  signed [16:0] sext_ln30_243_fu_2800_p1;
-wire  signed [16:0] sext_ln30_255_fu_2888_p1;
+wire  signed [16:0] sext_ln27_243_fu_2800_p1;
+wire  signed [16:0] sext_ln27_255_fu_2888_p1;
 wire   [16:0] tmp100_fu_4696_p2;
 wire  signed [17:0] tmp100_cast_fu_4702_p1;
 wire  signed [17:0] tmp99_cast_fu_4692_p1;
-wire  signed [16:0] sext_ln30_124_fu_2016_p1;
-wire  signed [16:0] sext_ln30_134_fu_2092_p1;
+wire  signed [16:0] sext_ln27_124_fu_2016_p1;
+wire  signed [16:0] sext_ln27_134_fu_2092_p1;
 wire   [16:0] tmp161_fu_4712_p2;
 wire  signed [17:0] tmp161_cast_fu_4718_p1;
-wire  signed [17:0] sext_ln30_247_fu_2824_p1;
+wire  signed [17:0] sext_ln27_247_fu_2824_p1;
 wire   [17:0] tmp162_fu_4722_p2;
-wire  signed [17:0] sext_ln30_257_fu_2900_p1;
-wire  signed [16:0] sext_ln30_145_fu_2168_p1;
-wire  signed [16:0] sext_ln30_115_fu_1948_p1;
-wire  signed [16:0] sext_ln30_236_fu_2752_p1;
-wire  signed [16:0] sext_ln30_266_fu_2968_p1;
-wire  signed [16:0] sext_ln30_151_fu_2204_p1;
-wire  signed [16:0] sext_ln30_103_fu_1860_p1;
+wire  signed [17:0] sext_ln27_257_fu_2900_p1;
+wire  signed [16:0] sext_ln27_145_fu_2168_p1;
+wire  signed [16:0] sext_ln27_115_fu_1948_p1;
+wire  signed [16:0] sext_ln27_236_fu_2752_p1;
+wire  signed [16:0] sext_ln27_266_fu_2968_p1;
+wire  signed [16:0] sext_ln27_151_fu_2204_p1;
+wire  signed [16:0] sext_ln27_103_fu_1860_p1;
 wire  signed [16:0] tmp109_fu_4746_p2;
-wire  signed [16:0] sext_ln30_230_fu_2716_p1;
-wire  signed [16:0] sext_ln30_278_fu_3052_p1;
+wire  signed [16:0] sext_ln27_230_fu_2716_p1;
+wire  signed [16:0] sext_ln27_278_fu_3052_p1;
 wire  signed [16:0] tmp110_fu_4756_p2;
-wire  signed [16:0] sext_ln30_130_fu_2060_p1;
-wire  signed [16:0] sext_ln30_102_fu_1852_p1;
+wire  signed [16:0] sext_ln27_130_fu_2060_p1;
+wire  signed [16:0] sext_ln27_102_fu_1852_p1;
 wire  signed [16:0] tmp111_fu_4766_p2;
-wire  signed [16:0] sext_ln30_251_fu_2856_p1;
-wire  signed [16:0] sext_ln30_279_fu_3060_p1;
+wire  signed [16:0] sext_ln27_251_fu_2856_p1;
+wire  signed [16:0] sext_ln27_279_fu_3060_p1;
 wire  signed [16:0] tmp117_fu_4776_p2;
-wire  signed [16:0] sext_ln30_143_fu_2152_p1;
-wire  signed [16:0] sext_ln30_95_fu_1800_p1;
+wire  signed [16:0] sext_ln27_143_fu_2152_p1;
+wire  signed [16:0] sext_ln27_95_fu_1800_p1;
 wire   [16:0] tmp118_fu_4786_p2;
-wire  signed [16:0] sext_ln30_238_fu_2764_p1;
-wire  signed [16:0] sext_ln30_286_fu_3112_p1;
+wire  signed [16:0] sext_ln27_238_fu_2764_p1;
+wire  signed [16:0] sext_ln27_286_fu_3112_p1;
 wire   [16:0] tmp119_fu_4796_p2;
 wire  signed [17:0] tmp119_cast_fu_4802_p1;
 wire  signed [17:0] tmp118_cast_fu_4792_p1;
-wire  signed [16:0] sext_ln30_94_fu_1792_p1;
-wire  signed [16:0] sext_ln30_100_fu_1840_p1;
+wire  signed [16:0] sext_ln27_94_fu_1792_p1;
+wire  signed [16:0] sext_ln27_100_fu_1840_p1;
 wire   [16:0] tmp183_fu_4812_p2;
 wire  signed [17:0] tmp183_cast_fu_4818_p1;
-wire  signed [17:0] sext_ln30_281_fu_3072_p1;
-wire  signed [16:0] sext_ln30_107_fu_1892_p1;
-wire  signed [16:0] sext_ln30_88_fu_1744_p1;
+wire  signed [17:0] sext_ln27_281_fu_3072_p1;
+wire  signed [16:0] sext_ln27_107_fu_1892_p1;
+wire  signed [16:0] sext_ln27_88_fu_1744_p1;
 wire   [16:0] tmp189_fu_4828_p2;
 wire  signed [17:0] tmp189_cast_fu_4834_p1;
-wire  signed [17:0] sext_ln30_274_fu_3020_p1;
+wire  signed [17:0] sext_ln27_274_fu_3020_p1;
 wire   [17:0] tmp190_fu_4838_p2;
-wire  signed [17:0] sext_ln30_293_fu_3168_p1;
-wire  signed [16:0] sext_ln30_93_fu_1784_p1;
-wire  signed [16:0] sext_ln30_79_fu_1676_p1;
+wire  signed [17:0] sext_ln27_293_fu_3168_p1;
+wire  signed [16:0] sext_ln27_93_fu_1784_p1;
+wire  signed [16:0] sext_ln27_79_fu_1676_p1;
 wire   [16:0] tmp120_fu_4850_p2;
-wire  signed [16:0] sext_ln30_288_fu_3128_p1;
-wire  signed [16:0] sext_ln30_300_fu_3232_p1;
+wire  signed [16:0] sext_ln27_288_fu_3128_p1;
+wire  signed [16:0] sext_ln27_300_fu_3232_p1;
 wire   [16:0] tmp121_fu_4860_p2;
 wire  signed [17:0] tmp121_cast_fu_4866_p1;
 wire  signed [17:0] tmp120_cast_fu_4856_p1;
-wire  signed [16:0] sext_ln30_129_fu_2052_p1;
-wire  signed [16:0] sext_ln30_69_fu_1596_p1;
+wire  signed [16:0] sext_ln27_129_fu_2052_p1;
+wire  signed [16:0] sext_ln27_69_fu_1596_p1;
 wire   [16:0] tmp123_fu_4876_p2;
-wire  signed [16:0] sext_ln30_252_fu_2864_p1;
-wire  signed [16:0] sext_ln30_310_fu_3312_p1;
+wire  signed [16:0] sext_ln27_252_fu_2864_p1;
+wire  signed [16:0] sext_ln27_310_fu_3312_p1;
 wire   [16:0] tmp124_fu_4886_p2;
 wire  signed [17:0] tmp124_cast_fu_4892_p1;
 wire  signed [17:0] tmp123_cast_fu_4882_p1;
@@ -1441,40 +1441,40 @@ wire   [17:0] tmp199_fu_4896_p2;
 wire   [22:0] tmp_20_fu_4902_p3;
 wire  signed [23:0] p_shl573_fu_4910_p1;
 wire   [23:0] tmp200_fu_4914_p2;
-wire  signed [16:0] sext_ln30_64_fu_1556_p1;
-wire  signed [16:0] sext_ln30_89_fu_1752_p1;
+wire  signed [16:0] sext_ln27_64_fu_1556_p1;
+wire  signed [16:0] sext_ln27_89_fu_1752_p1;
 wire   [16:0] tmp203_fu_4924_p2;
 wire  signed [17:0] tmp203_cast_fu_4930_p1;
-wire  signed [17:0] sext_ln30_292_fu_3160_p1;
+wire  signed [17:0] sext_ln27_292_fu_3160_p1;
 wire   [17:0] tmp204_fu_4934_p2;
-wire  signed [17:0] sext_ln30_315_fu_3352_p1;
+wire  signed [17:0] sext_ln27_315_fu_3352_p1;
 wire   [17:0] tmp205_fu_4940_p2;
 wire   [23:0] tmp_21_fu_4946_p3;
 wire   [21:0] tmp_22_fu_4958_p3;
 wire  signed [24:0] p_shl571_fu_4954_p1;
 wire  signed [24:0] p_shl572_fu_4966_p1;
-wire  signed [16:0] sext_ln30_128_fu_2044_p1;
-wire  signed [16:0] sext_ln30_58_fu_1508_p1;
+wire  signed [16:0] sext_ln27_128_fu_2044_p1;
+wire  signed [16:0] sext_ln27_58_fu_1508_p1;
 wire   [16:0] tmp209_fu_4976_p2;
 wire  signed [17:0] tmp209_cast_fu_4982_p1;
-wire  signed [17:0] sext_ln30_253_fu_2872_p1;
+wire  signed [17:0] sext_ln27_253_fu_2872_p1;
 wire   [17:0] tmp210_fu_4986_p2;
-wire  signed [17:0] sext_ln30_319_fu_3400_p1;
-wire  signed [16:0] sext_ln30_167_fu_2320_p1;
-wire  signed [16:0] sext_ln30_56_fu_1492_p1;
+wire  signed [17:0] sext_ln27_319_fu_3400_p1;
+wire  signed [16:0] sext_ln27_167_fu_2320_p1;
+wire  signed [16:0] sext_ln27_56_fu_1492_p1;
 wire  signed [16:0] tmp131_fu_4998_p2;
-wire  signed [16:0] sext_ln30_214_fu_2600_p1;
-wire  signed [16:0] sext_ln30_321_fu_3416_p1;
+wire  signed [16:0] sext_ln27_214_fu_2600_p1;
+wire  signed [16:0] sext_ln27_321_fu_3416_p1;
 wire  signed [16:0] tmp132_fu_5008_p2;
-wire  signed [16:0] sext_ln30_98_fu_1824_p1;
-wire  signed [16:0] sext_ln30_38_fu_1348_p1;
-wire  signed [16:0] sext_ln30_283_fu_3088_p1;
-wire  signed [16:0] sext_ln30_337_fu_3556_p1;
-wire  signed [16:0] sext_ln30_60_fu_1524_p1;
-wire  signed [16:0] sext_ln30_36_fu_1332_p1;
+wire  signed [16:0] sext_ln27_98_fu_1824_p1;
+wire  signed [16:0] sext_ln27_38_fu_1348_p1;
+wire  signed [16:0] sext_ln27_283_fu_3088_p1;
+wire  signed [16:0] sext_ln27_337_fu_3556_p1;
+wire  signed [16:0] sext_ln27_60_fu_1524_p1;
+wire  signed [16:0] sext_ln27_36_fu_1332_p1;
 wire   [16:0] tmp147_fu_5030_p2;
-wire  signed [16:0] sext_ln30_317_fu_3384_p1;
-wire  signed [16:0] sext_ln30_339_fu_3572_p1;
+wire  signed [16:0] sext_ln27_317_fu_3384_p1;
+wire  signed [16:0] sext_ln27_339_fu_3572_p1;
 wire   [16:0] tmp148_fu_5040_p2;
 wire  signed [17:0] tmp148_cast_fu_5046_p1;
 wire  signed [17:0] tmp147_cast_fu_5036_p1;
@@ -1483,11 +1483,11 @@ wire   [19:0] tmp_23_fu_5060_p3;
 wire  signed [21:0] p_shl570_fu_5068_p1;
 wire  signed [21:0] tmp223_cast_fu_5056_p1;
 wire   [21:0] tmp224_fu_5072_p2;
-wire  signed [16:0] sext_ln30_46_fu_1412_p1;
-wire  signed [16:0] sext_ln30_35_fu_1320_p1;
+wire  signed [16:0] sext_ln27_46_fu_1412_p1;
+wire  signed [16:0] sext_ln27_35_fu_1320_p1;
 wire   [16:0] tmp159_fu_5082_p2;
-wire  signed [16:0] sext_ln30_331_fu_3492_p1;
-wire  signed [16:0] sext_ln30_340_fu_3584_p1;
+wire  signed [16:0] sext_ln27_331_fu_3492_p1;
+wire  signed [16:0] sext_ln27_340_fu_3584_p1;
 wire   [16:0] tmp160_fu_5092_p2;
 wire  signed [17:0] tmp160_cast_fu_5098_p1;
 wire  signed [17:0] tmp159_cast_fu_5088_p1;
@@ -1495,30 +1495,30 @@ wire   [17:0] tmp227_fu_5102_p2;
 wire   [20:0] tmp_24_fu_5116_p3;
 wire   [22:0] p_shl3_fu_5108_p3;
 wire  signed [22:0] p_shl569_fu_5124_p1;
-wire  signed [16:0] sext_ln30_91_fu_1768_p1;
-wire  signed [16:0] sext_ln30_29_fu_1272_p1;
+wire  signed [16:0] sext_ln27_91_fu_1768_p1;
+wire  signed [16:0] sext_ln27_29_fu_1272_p1;
 wire   [16:0] tmp231_fu_5134_p2;
 wire  signed [17:0] tmp231_cast_fu_5140_p1;
-wire  signed [17:0] sext_ln30_290_fu_3144_p1;
+wire  signed [17:0] sext_ln27_290_fu_3144_p1;
 wire   [17:0] tmp232_fu_5144_p2;
-wire  signed [17:0] sext_ln30_344_fu_3632_p1;
-wire  signed [16:0] sext_ln30_82_fu_1696_p1;
-wire  signed [16:0] sext_ln30_26_fu_1248_p1;
+wire  signed [17:0] sext_ln27_344_fu_3632_p1;
+wire  signed [16:0] sext_ln27_82_fu_1696_p1;
+wire  signed [16:0] sext_ln27_26_fu_1248_p1;
 wire   [16:0] tmp237_fu_5156_p2;
 wire  signed [17:0] tmp237_cast_fu_5162_p1;
-wire  signed [17:0] sext_ln23_fu_3212_p1;
-wire  signed [16:0] sext_ln30_76_fu_1652_p1;
-wire  signed [16:0] sext_ln30_24_fu_1232_p1;
+wire  signed [17:0] sext_ln20_fu_3212_p1;
+wire  signed [16:0] sext_ln27_76_fu_1652_p1;
+wire  signed [16:0] sext_ln27_24_fu_1232_p1;
 wire   [16:0] tmp243_fu_5172_p2;
 wire  signed [17:0] tmp243_cast_fu_5178_p1;
-wire  signed [17:0] sext_ln30_303_fu_3256_p1;
+wire  signed [17:0] sext_ln27_303_fu_3256_p1;
 wire   [17:0] tmp244_fu_5182_p2;
-wire  signed [17:0] sext_ln30_349_fu_3672_p1;
-wire  signed [16:0] sext_ln30_105_fu_1876_p1;
-wire  signed [16:0] sext_ln30_23_fu_1224_p1;
+wire  signed [17:0] sext_ln27_349_fu_3672_p1;
+wire  signed [16:0] sext_ln27_105_fu_1876_p1;
+wire  signed [16:0] sext_ln27_23_fu_1224_p1;
 wire   [16:0] tmp181_fu_5194_p2;
-wire  signed [16:0] sext_ln30_276_fu_3036_p1;
-wire  signed [16:0] sext_ln30_350_fu_3680_p1;
+wire  signed [16:0] sext_ln27_276_fu_3036_p1;
+wire  signed [16:0] sext_ln27_350_fu_3680_p1;
 wire   [16:0] tmp182_fu_5204_p2;
 wire  signed [17:0] tmp182_cast_fu_5210_p1;
 wire  signed [17:0] tmp181_cast_fu_5200_p1;
@@ -1528,11 +1528,11 @@ wire  signed [22:0] p_shl563_fu_5228_p1;
 wire   [18:0] tmp_28_fu_5238_p3;
 wire   [22:0] p_neg564_fu_5232_p2;
 wire  signed [22:0] p_shl565_fu_5246_p1;
-wire  signed [16:0] sext_ln30_67_fu_1580_p1;
-wire  signed [16:0] sext_ln30_22_fu_1216_p1;
+wire  signed [16:0] sext_ln27_67_fu_1580_p1;
+wire  signed [16:0] sext_ln27_22_fu_1216_p1;
 wire   [16:0] tmp187_fu_5256_p2;
-wire  signed [16:0] sext_ln30_312_fu_3328_p1;
-wire  signed [16:0] sext_ln30_351_fu_3688_p1;
+wire  signed [16:0] sext_ln27_312_fu_3328_p1;
+wire  signed [16:0] sext_ln27_351_fu_3688_p1;
 wire   [16:0] tmp188_fu_5266_p2;
 wire  signed [17:0] tmp188_cast_fu_5272_p1;
 wire  signed [17:0] tmp187_cast_fu_5262_p1;
@@ -1540,41 +1540,41 @@ wire  signed [17:0] tmp253_fu_5276_p2;
 wire   [20:0] tmp_29_fu_5286_p3;
 wire  signed [22:0] p_shl562_fu_5294_p1;
 wire  signed [22:0] tmp253_cast_fu_5282_p1;
-wire  signed [16:0] sext_ln30_31_fu_1288_p1;
-wire  signed [16:0] sext_ln30_15_fu_1160_p1;
+wire  signed [16:0] sext_ln27_31_fu_1288_p1;
+wire  signed [16:0] sext_ln27_15_fu_1160_p1;
 wire   [16:0] tmp257_fu_5304_p2;
 wire  signed [17:0] tmp257_cast_fu_5310_p1;
-wire  signed [17:0] sext_ln30_342_fu_3616_p1;
-wire  signed [16:0] sext_ln30_51_fu_1452_p1;
-wire  signed [16:0] sext_ln30_14_fu_1152_p1;
+wire  signed [17:0] sext_ln27_342_fu_3616_p1;
+wire  signed [16:0] sext_ln27_51_fu_1452_p1;
+wire  signed [16:0] sext_ln27_14_fu_1152_p1;
 wire   [16:0] tmp263_fu_5320_p2;
 wire  signed [17:0] tmp263_cast_fu_5326_p1;
-wire  signed [17:0] sext_ln30_326_fu_3452_p1;
+wire  signed [17:0] sext_ln27_326_fu_3452_p1;
 wire   [17:0] tmp264_fu_5330_p2;
-wire  signed [17:0] sext_ln30_359_fu_3752_p1;
+wire  signed [17:0] sext_ln27_359_fu_3752_p1;
 wire  signed [17:0] tmp265_fu_5336_p2;
 wire   [21:0] tmp_30_fu_5346_p3;
 wire  signed [22:0] p_shl561_fu_5354_p1;
 wire  signed [22:0] tmp265_cast_fu_5342_p1;
 wire   [22:0] tmp266_fu_5358_p2;
-wire  signed [16:0] sext_ln30_45_fu_1404_p1;
-wire  signed [16:0] sext_ln30_12_fu_1136_p1;
+wire  signed [16:0] sext_ln27_45_fu_1404_p1;
+wire  signed [16:0] sext_ln27_12_fu_1136_p1;
 wire   [16:0] tmp269_fu_5368_p2;
 wire  signed [17:0] tmp269_cast_fu_5374_p1;
-wire  signed [17:0] sext_ln23_4_fu_3500_p1;
-wire  signed [16:0] sext_ln30_44_fu_1396_p1;
-wire  signed [16:0] sext_ln30_11_fu_1128_p1;
+wire  signed [17:0] sext_ln20_4_fu_3500_p1;
+wire  signed [16:0] sext_ln27_44_fu_1396_p1;
+wire  signed [16:0] sext_ln27_11_fu_1128_p1;
 wire   [16:0] tmp201_fu_5384_p2;
-wire  signed [16:0] sext_ln23_5_fu_3508_p1;
-wire  signed [16:0] sext_ln30_362_fu_3776_p1;
+wire  signed [16:0] sext_ln20_5_fu_3508_p1;
+wire  signed [16:0] sext_ln27_362_fu_3776_p1;
 wire   [16:0] tmp202_fu_5394_p2;
 wire  signed [17:0] tmp202_cast_fu_5400_p1;
 wire  signed [17:0] tmp201_cast_fu_5390_p1;
-wire  signed [16:0] sext_ln30_30_fu_1280_p1;
-wire  signed [16:0] sext_ln30_10_fu_1120_p1;
+wire  signed [16:0] sext_ln27_30_fu_1280_p1;
+wire  signed [16:0] sext_ln27_10_fu_1120_p1;
 wire   [16:0] tmp207_fu_5410_p2;
-wire  signed [16:0] sext_ln30_343_fu_3624_p1;
-wire  signed [16:0] sext_ln30_363_fu_3784_p1;
+wire  signed [16:0] sext_ln27_343_fu_3624_p1;
+wire  signed [16:0] sext_ln27_363_fu_3784_p1;
 wire   [16:0] tmp208_fu_5420_p2;
 wire  signed [17:0] tmp208_cast_fu_5426_p1;
 wire  signed [17:0] tmp207_cast_fu_5416_p1;
@@ -1583,22 +1583,22 @@ wire   [19:0] tmp_32_fu_5440_p3;
 wire  signed [20:0] p_shl558_fu_5448_p1;
 wire  signed [20:0] tmp279_cast_fu_5436_p1;
 wire   [20:0] tmp280_fu_5452_p2;
-wire  signed [16:0] sext_ln30_9_fu_1112_p1;
-wire  signed [16:0] sext_ln30_68_fu_1588_p1;
+wire  signed [16:0] sext_ln27_9_fu_1112_p1;
+wire  signed [16:0] sext_ln27_68_fu_1588_p1;
 wire   [16:0] tmp283_fu_5462_p2;
 wire  signed [17:0] tmp283_cast_fu_5468_p1;
-wire  signed [17:0] sext_ln30_311_fu_3320_p1;
+wire  signed [17:0] sext_ln27_311_fu_3320_p1;
 wire   [17:0] tmp284_fu_5472_p2;
-wire  signed [17:0] sext_ln30_364_fu_3792_p1;
+wire  signed [17:0] sext_ln27_364_fu_3792_p1;
 wire   [17:0] tmp285_fu_5478_p2;
 wire   [19:0] tmp_33_fu_5492_p3;
 wire   [21:0] p_shl4_fu_5484_p3;
 wire  signed [21:0] p_shl557_fu_5500_p1;
-wire  signed [16:0] sext_ln30_19_fu_1192_p1;
-wire  signed [16:0] sext_ln30_8_fu_1104_p1;
+wire  signed [16:0] sext_ln27_19_fu_1192_p1;
+wire  signed [16:0] sext_ln27_8_fu_1104_p1;
 wire   [16:0] tmp229_fu_5510_p2;
-wire  signed [16:0] sext_ln30_354_fu_3712_p1;
-wire  signed [16:0] sext_ln30_365_fu_3800_p1;
+wire  signed [16:0] sext_ln27_354_fu_3712_p1;
+wire  signed [16:0] sext_ln27_365_fu_3800_p1;
 wire   [16:0] tmp230_fu_5520_p2;
 wire  signed [17:0] tmp230_cast_fu_5526_p1;
 wire  signed [17:0] tmp229_cast_fu_5516_p1;
@@ -1608,48 +1608,48 @@ wire   [19:0] tmp_35_fu_5548_p3;
 wire  signed [23:0] p_shl554_fu_5544_p1;
 wire  signed [23:0] p_shl555_fu_5556_p1;
 wire   [23:0] tmp290_fu_5560_p2;
-wire  signed [16:0] sext_ln30_48_fu_1428_p1;
-wire  signed [16:0] sext_ln30_5_fu_1080_p1;
+wire  signed [16:0] sext_ln27_48_fu_1428_p1;
+wire  signed [16:0] sext_ln27_5_fu_1080_p1;
 wire  signed [16:0] tmp235_fu_5570_p2;
-wire  signed [16:0] sext_ln30_329_fu_3476_p1;
-wire  signed [16:0] sext_ln30_368_fu_3824_p1;
+wire  signed [16:0] sext_ln27_329_fu_3476_p1;
+wire  signed [16:0] sext_ln27_368_fu_3824_p1;
 wire  signed [16:0] tmp236_fu_5580_p2;
-wire  signed [16:0] sext_ln30_206_fu_2548_p1;
-wire  signed [16:0] sext_ln30_175_fu_2372_p1;
-wire  signed [16:0] sext_ln30_210_fu_2576_p1;
-wire  signed [16:0] sext_ln30_171_fu_2344_p1;
-wire  signed [16:0] sext_ln30_221_fu_2644_p1;
-wire  signed [16:0] sext_ln30_160_fu_2276_p1;
-wire  signed [16:0] sext_ln30_222_fu_2652_p1;
-wire  signed [16:0] sext_ln30_159_fu_2268_p1;
-wire  signed [16:0] sext_ln30_224_fu_2668_p1;
-wire  signed [16:0] sext_ln30_157_fu_2252_p1;
-wire  signed [16:0] sext_ln30_225_fu_2676_p1;
-wire  signed [16:0] sext_ln30_156_fu_2244_p1;
-wire  signed [16:0] sext_ln30_228_fu_2700_p1;
-wire  signed [16:0] sext_ln30_153_fu_2220_p1;
-wire  signed [16:0] sext_ln30_239_fu_2772_p1;
-wire  signed [16:0] sext_ln30_142_fu_2144_p1;
-wire  signed [16:0] sext_ln30_259_fu_2916_p1;
-wire  signed [16:0] sext_ln30_122_fu_2000_p1;
-wire  signed [16:0] sext_ln30_265_fu_2960_p1;
-wire  signed [16:0] sext_ln30_116_fu_1956_p1;
-wire  signed [16:0] sext_ln30_275_fu_3028_p1;
-wire  signed [16:0] sext_ln30_106_fu_1884_p1;
-wire  signed [16:0] sext_ln30_294_fu_3176_p1;
-wire  signed [16:0] sext_ln30_87_fu_1736_p1;
-wire  signed [16:0] sext_ln30_304_fu_3264_p1;
-wire  signed [16:0] sext_ln30_75_fu_1644_p1;
-wire  signed [16:0] sext_ln30_323_fu_3432_p1;
-wire  signed [16:0] sext_ln30_54_fu_1476_p1;
-wire  signed [16:0] sext_ln30_83_fu_1704_p1;
-wire  signed [16:0] sext_ln30_52_fu_1460_p1;
-wire   [16:0] add_ln30_fu_5674_p2;
-wire  signed [16:0] sext_ln30_113_fu_1932_p1;
-wire  signed [16:0] sext_ln30_144_fu_2160_p1;
-wire   [16:0] add_ln30_1_fu_5684_p2;
-wire  signed [17:0] sext_ln30_374_fu_5690_p1;
-wire  signed [17:0] sext_ln30_373_fu_5680_p1;
+wire  signed [16:0] sext_ln27_206_fu_2548_p1;
+wire  signed [16:0] sext_ln27_175_fu_2372_p1;
+wire  signed [16:0] sext_ln27_210_fu_2576_p1;
+wire  signed [16:0] sext_ln27_171_fu_2344_p1;
+wire  signed [16:0] sext_ln27_221_fu_2644_p1;
+wire  signed [16:0] sext_ln27_160_fu_2276_p1;
+wire  signed [16:0] sext_ln27_222_fu_2652_p1;
+wire  signed [16:0] sext_ln27_159_fu_2268_p1;
+wire  signed [16:0] sext_ln27_224_fu_2668_p1;
+wire  signed [16:0] sext_ln27_157_fu_2252_p1;
+wire  signed [16:0] sext_ln27_225_fu_2676_p1;
+wire  signed [16:0] sext_ln27_156_fu_2244_p1;
+wire  signed [16:0] sext_ln27_228_fu_2700_p1;
+wire  signed [16:0] sext_ln27_153_fu_2220_p1;
+wire  signed [16:0] sext_ln27_239_fu_2772_p1;
+wire  signed [16:0] sext_ln27_142_fu_2144_p1;
+wire  signed [16:0] sext_ln27_259_fu_2916_p1;
+wire  signed [16:0] sext_ln27_122_fu_2000_p1;
+wire  signed [16:0] sext_ln27_265_fu_2960_p1;
+wire  signed [16:0] sext_ln27_116_fu_1956_p1;
+wire  signed [16:0] sext_ln27_275_fu_3028_p1;
+wire  signed [16:0] sext_ln27_106_fu_1884_p1;
+wire  signed [16:0] sext_ln27_294_fu_3176_p1;
+wire  signed [16:0] sext_ln27_87_fu_1736_p1;
+wire  signed [16:0] sext_ln27_304_fu_3264_p1;
+wire  signed [16:0] sext_ln27_75_fu_1644_p1;
+wire  signed [16:0] sext_ln27_323_fu_3432_p1;
+wire  signed [16:0] sext_ln27_54_fu_1476_p1;
+wire  signed [16:0] sext_ln27_83_fu_1704_p1;
+wire  signed [16:0] sext_ln27_52_fu_1460_p1;
+wire   [16:0] add_ln27_fu_5674_p2;
+wire  signed [16:0] sext_ln27_113_fu_1932_p1;
+wire  signed [16:0] sext_ln27_144_fu_2160_p1;
+wire   [16:0] add_ln27_1_fu_5684_p2;
+wire  signed [17:0] sext_ln27_374_fu_5690_p1;
+wire  signed [17:0] sext_ln27_373_fu_5680_p1;
 wire  signed [24:0] tmp200_cast_fu_4920_p1;
 wire   [24:0] tmp206_fu_4970_p2;
 wire  signed [22:0] tmp224_cast_fu_5078_p1;
@@ -1765,42 +1765,42 @@ wire  signed [25:0] grp_fu_9896_p4;
 wire  signed [24:0] grp_fu_9907_p4;
 wire  signed [26:0] grp_fu_9918_p4;
 wire  signed [26:0] tmp360_cast_fu_8964_p1;
-(* use_dsp48 = "no" *) wire   [26:0] add_ln30_33_fu_8974_p2;
-wire  signed [27:0] sext_ln30_396_fu_8979_p1;
-wire  signed [27:0] sext_ln30_395_fu_8971_p1;
+(* use_dsp48 = "no" *) wire   [26:0] add_ln27_33_fu_8974_p2;
+wire  signed [27:0] sext_ln27_396_fu_8979_p1;
+wire  signed [27:0] sext_ln27_395_fu_8971_p1;
 wire  signed [24:0] grp_fu_10003_p4;
 wire  signed [24:0] grp_fu_10038_p4;
-wire  signed [25:0] sext_ln30_421_fu_8992_p1;
+wire  signed [25:0] sext_ln27_421_fu_8992_p1;
 wire   [25:0] tmp192_fu_8910_p2;
 wire  signed [22:0] grp_fu_10057_p4;
-wire  signed [24:0] sext_ln30_425_fu_9001_p1;
+wire  signed [24:0] sext_ln27_425_fu_9001_p1;
 wire   [24:0] tmp196_fu_8938_p2;
 wire  signed [25:0] grp_fu_9670_p4;
 wire  signed [24:0] grp_fu_9747_p4;
-wire  signed [25:0] sext_ln30_429_fu_9013_p1;
+wire  signed [25:0] sext_ln27_429_fu_9013_p1;
 wire  signed [25:0] grp_fu_9681_p4;
-(* use_dsp48 = "no" *) wire   [25:0] add_ln30_86_fu_9016_p2;
-wire  signed [26:0] sext_ln30_430_fu_9021_p1;
-wire  signed [26:0] sext_ln30_428_fu_9010_p1;
+(* use_dsp48 = "no" *) wire   [25:0] add_ln27_86_fu_9016_p2;
+wire  signed [26:0] sext_ln27_430_fu_9021_p1;
+wire  signed [26:0] sext_ln27_428_fu_9010_p1;
 wire  signed [23:0] grp_fu_9659_p4;
-wire  signed [24:0] sext_ln30_436_fu_9034_p1;
-wire  signed [24:0] sext_ln30_433_fu_9031_p1;
+wire  signed [24:0] sext_ln27_436_fu_9034_p1;
+wire  signed [24:0] sext_ln27_433_fu_9031_p1;
 wire  signed [23:0] grp_fu_9758_p4;
 wire  signed [23:0] grp_fu_9692_p4;
-wire  signed [24:0] sext_ln30_435_fu_9046_p1;
-wire  signed [24:0] sext_ln30_434_fu_9043_p1;
+wire  signed [24:0] sext_ln27_435_fu_9046_p1;
+wire  signed [24:0] sext_ln27_434_fu_9043_p1;
 wire  signed [22:0] grp_fu_9769_p4;
-wire  signed [24:0] sext_ln30_440_fu_9058_p1;
-wire  signed [24:0] sext_ln30_439_fu_9055_p1;
+wire  signed [24:0] sext_ln27_440_fu_9058_p1;
+wire  signed [24:0] sext_ln27_439_fu_9055_p1;
 wire  signed [21:0] grp_fu_9780_p4;
-wire  signed [22:0] sext_ln30_442_fu_9070_p1;
-wire  signed [22:0] sext_ln30_441_fu_9067_p1;
-wire   [22:0] add_ln30_110_fu_9073_p2;
-wire  signed [24:0] sext_ln30_443_fu_9079_p1;
-wire   [24:0] add_ln30_107_fu_9061_p2;
+wire  signed [22:0] sext_ln27_442_fu_9070_p1;
+wire  signed [22:0] sext_ln27_441_fu_9067_p1;
+wire   [22:0] add_ln27_110_fu_9073_p2;
+wire  signed [24:0] sext_ln27_443_fu_9079_p1;
+wire   [24:0] add_ln27_107_fu_9061_p2;
 wire  signed [24:0] grp_fu_9791_p4;
-wire  signed [25:0] sext_ln30_446_fu_9092_p1;
-wire  signed [25:0] sext_ln30_445_fu_9089_p1;
+wire  signed [25:0] sext_ln27_446_fu_9092_p1;
+wire  signed [25:0] sext_ln27_445_fu_9089_p1;
 wire   [22:0] tmp_1_fu_9101_p3;
 wire   [23:0] tmp_47_fu_9118_p3;
 wire   [20:0] tmp_48_fu_9129_p3;
@@ -1810,128 +1810,128 @@ wire   [25:0] tmp378_fu_9140_p2;
 wire  signed [29:0] grp_fu_10106_p4;
 wire  signed [26:0] grp_fu_10147_p4;
 wire  signed [27:0] grp_fu_10158_p4;
-wire  signed [27:0] sext_ln30_384_fu_9156_p1;
+wire  signed [27:0] sext_ln27_384_fu_9156_p1;
 wire  signed [26:0] grp_fu_10189_p4;
 wire  signed [26:0] grp_fu_10200_p4;
-wire  signed [27:0] sext_ln30_392_fu_9167_p1;
-wire  signed [27:0] sext_ln30_390_fu_9164_p1;
+wire  signed [27:0] sext_ln27_392_fu_9167_p1;
+wire  signed [27:0] sext_ln27_390_fu_9164_p1;
 wire  signed [25:0] grp_fu_10211_p4;
 wire  signed [25:0] grp_fu_10222_p4;
-wire  signed [26:0] sext_ln30_403_fu_9179_p1;
+wire  signed [26:0] sext_ln27_403_fu_9179_p1;
 wire  signed [26:0] tmp378_cast_fu_9146_p1;
 wire  signed [24:0] grp_fu_10233_p4;
 wire  signed [26:0] grp_fu_10244_p4;
-wire  signed [26:0] sext_ln30_405_fu_9188_p1;
+wire  signed [26:0] sext_ln27_405_fu_9188_p1;
 wire  signed [25:0] grp_fu_10255_p4;
-wire  signed [26:0] sext_ln30_408_fu_9199_p1;
-wire  signed [26:0] sext_ln30_407_fu_9196_p1;
-wire   [26:0] add_ln30_54_fu_9202_p2;
+wire  signed [26:0] sext_ln27_408_fu_9199_p1;
+wire  signed [26:0] sext_ln27_407_fu_9196_p1;
+wire   [26:0] add_ln27_54_fu_9202_p2;
 wire  signed [25:0] grp_fu_10266_p4;
-wire  signed [25:0] sext_ln30_410_fu_9212_p1;
-(* use_dsp48 = "no" *) wire   [25:0] add_ln30_58_fu_9215_p2;
-wire  signed [27:0] sext_ln30_412_fu_9220_p1;
-wire  signed [27:0] sext_ln30_409_fu_9208_p1;
+wire  signed [25:0] sext_ln27_410_fu_9212_p1;
+(* use_dsp48 = "no" *) wire   [25:0] add_ln27_58_fu_9215_p2;
+wire  signed [27:0] sext_ln27_412_fu_9220_p1;
+wire  signed [27:0] sext_ln27_409_fu_9208_p1;
 wire  signed [24:0] grp_fu_10287_p4;
-wire  signed [25:0] sext_ln30_416_fu_9233_p1;
-wire  signed [25:0] sext_ln30_415_fu_9230_p1;
+wire  signed [25:0] sext_ln27_416_fu_9233_p1;
+wire  signed [25:0] sext_ln27_415_fu_9230_p1;
 wire  signed [23:0] grp_fu_10309_p4;
-wire  signed [25:0] sext_ln30_418_fu_9242_p1;
+wire  signed [25:0] sext_ln27_418_fu_9242_p1;
 wire  signed [25:0] grp_fu_10298_p4;
-(* use_dsp48 = "no" *) wire   [25:0] add_ln30_70_fu_9245_p2;
-wire  signed [26:0] sext_ln30_422_fu_9257_p1;
-wire  signed [26:0] sext_ln30_420_fu_9254_p1;
-wire   [26:0] add_ln30_74_fu_9260_p2;
-wire  signed [26:0] sext_ln30_419_fu_9250_p1;
+(* use_dsp48 = "no" *) wire   [25:0] add_ln27_70_fu_9245_p2;
+wire  signed [26:0] sext_ln27_422_fu_9257_p1;
+wire  signed [26:0] sext_ln27_420_fu_9254_p1;
+wire   [26:0] add_ln27_74_fu_9260_p2;
+wire  signed [26:0] sext_ln27_419_fu_9250_p1;
 wire  signed [23:0] grp_fu_10330_p4;
-wire  signed [24:0] sext_ln30_453_fu_9278_p1;
+wire  signed [24:0] sext_ln27_453_fu_9278_p1;
 wire  signed [24:0] tmp_1_cast_fu_9108_p1;
-wire   [24:0] add_ln30_101_fu_9281_p2;
-wire  signed [24:0] sext_ln30_452_fu_9275_p1;
-wire   [24:0] add_ln30_102_fu_9287_p2;
-wire  signed [25:0] sext_ln30_454_fu_9293_p1;
-wire  signed [25:0] sext_ln30_438_fu_9272_p1;
+wire   [24:0] add_ln27_101_fu_9281_p2;
+wire  signed [24:0] sext_ln27_452_fu_9275_p1;
+wire   [24:0] add_ln27_102_fu_9287_p2;
+wire  signed [25:0] sext_ln27_454_fu_9293_p1;
+wire  signed [25:0] sext_ln27_438_fu_9272_p1;
 wire  signed [30:0] grp_fu_10362_p4;
-wire  signed [30:0] sext_ln30_376_fu_9306_p1;
+wire  signed [30:0] sext_ln27_376_fu_9306_p1;
 wire  signed [27:0] grp_fu_10373_p4;
-wire  signed [28:0] sext_ln30_378_fu_9314_p1;
-(* use_dsp48 = "no" *) wire   [28:0] add_ln30_10_fu_9317_p2;
-wire  signed [30:0] sext_ln30_379_fu_9322_p1;
-(* use_dsp48 = "no" *) wire   [30:0] add_ln30_6_fu_9309_p2;
+wire  signed [28:0] sext_ln27_378_fu_9314_p1;
+(* use_dsp48 = "no" *) wire   [28:0] add_ln27_10_fu_9317_p2;
+wire  signed [30:0] sext_ln27_379_fu_9322_p1;
+(* use_dsp48 = "no" *) wire   [30:0] add_ln27_6_fu_9309_p2;
 wire  signed [27:0] grp_fu_10384_p4;
-wire  signed [28:0] sext_ln30_382_fu_9335_p1;
-wire  signed [28:0] sext_ln30_380_fu_9332_p1;
-wire   [28:0] add_ln30_15_fu_9338_p2;
-wire  signed [29:0] sext_ln30_385_fu_9348_p1;
-wire  signed [29:0] sext_ln30_383_fu_9344_p1;
-wire   [29:0] add_ln30_20_fu_9351_p2;
-wire  signed [30:0] sext_ln30_386_fu_9357_p1;
-wire   [30:0] add_ln30_11_fu_9326_p2;
+wire  signed [28:0] sext_ln27_382_fu_9335_p1;
+wire  signed [28:0] sext_ln27_380_fu_9332_p1;
+wire   [28:0] add_ln27_15_fu_9338_p2;
+wire  signed [29:0] sext_ln27_385_fu_9348_p1;
+wire  signed [29:0] sext_ln27_383_fu_9344_p1;
+wire   [29:0] add_ln27_20_fu_9351_p2;
+wire  signed [30:0] sext_ln27_386_fu_9357_p1;
+wire   [30:0] add_ln27_11_fu_9326_p2;
 wire  signed [26:0] grp_fu_10395_p4;
-wire  signed [27:0] sext_ln30_388_fu_9370_p1;
-wire  signed [27:0] sext_ln30_387_fu_9367_p1;
-wire   [27:0] add_ln30_25_fu_9373_p2;
-wire  signed [28:0] sext_ln30_393_fu_9383_p1;
-wire  signed [28:0] sext_ln30_389_fu_9379_p1;
-wire   [28:0] add_ln30_30_fu_9386_p2;
+wire  signed [27:0] sext_ln27_388_fu_9370_p1;
+wire  signed [27:0] sext_ln27_387_fu_9367_p1;
+wire   [27:0] add_ln27_25_fu_9373_p2;
+wire  signed [28:0] sext_ln27_393_fu_9383_p1;
+wire  signed [28:0] sext_ln27_389_fu_9379_p1;
+wire   [28:0] add_ln27_30_fu_9386_p2;
 wire  signed [26:0] grp_fu_10406_p4;
-wire  signed [26:0] sext_ln30_398_fu_9399_p1;
-(* use_dsp48 = "no" *) wire   [26:0] add_ln30_38_fu_9402_p2;
-wire  signed [28:0] sext_ln30_400_fu_9407_p1;
-wire  signed [28:0] sext_ln30_397_fu_9396_p1;
-wire   [28:0] add_ln30_39_fu_9411_p2;
-wire  signed [29:0] sext_ln30_401_fu_9417_p1;
-wire  signed [29:0] sext_ln30_394_fu_9392_p1;
-wire   [29:0] add_ln30_40_fu_9421_p2;
-wire  signed [30:0] sext_ln30_402_fu_9427_p1;
-wire   [30:0] add_ln30_21_fu_9361_p2;
+wire  signed [26:0] sext_ln27_398_fu_9399_p1;
+(* use_dsp48 = "no" *) wire   [26:0] add_ln27_38_fu_9402_p2;
+wire  signed [28:0] sext_ln27_400_fu_9407_p1;
+wire  signed [28:0] sext_ln27_397_fu_9396_p1;
+wire   [28:0] add_ln27_39_fu_9411_p2;
+wire  signed [29:0] sext_ln27_401_fu_9417_p1;
+wire  signed [29:0] sext_ln27_394_fu_9392_p1;
+wire   [29:0] add_ln27_40_fu_9421_p2;
+wire  signed [30:0] sext_ln27_402_fu_9427_p1;
+wire   [30:0] add_ln27_21_fu_9361_p2;
 wire   [30:0] FIR_accu32_9_fu_9431_p2;
-wire  signed [30:0] sext_ln30_237_fu_9303_p1;
+wire  signed [30:0] sext_ln27_237_fu_9303_p1;
 wire  signed [25:0] grp_fu_10351_p4;
-wire  signed [26:0] sext_ln30_449_fu_9452_p1;
-wire  signed [26:0] sext_ln30_448_fu_9449_p1;
-wire   [26:0] add_ln30_118_fu_9455_p2;
-wire  signed [26:0] sext_ln30_447_fu_9446_p1;
-wire   [26:0] add_ln30_119_fu_9461_p2;
-wire  signed [27:0] sext_ln30_450_fu_9467_p1;
-wire  signed [27:0] sext_ln30_444_fu_9443_p1;
-wire  signed [30:0] sext_ln30_404_fu_9480_p1;
+wire  signed [26:0] sext_ln27_449_fu_9452_p1;
+wire  signed [26:0] sext_ln27_448_fu_9449_p1;
+wire   [26:0] add_ln27_118_fu_9455_p2;
+wire  signed [26:0] sext_ln27_447_fu_9446_p1;
+wire   [26:0] add_ln27_119_fu_9461_p2;
+wire  signed [27:0] sext_ln27_450_fu_9467_p1;
+wire  signed [27:0] sext_ln27_444_fu_9443_p1;
+wire  signed [30:0] sext_ln27_404_fu_9480_p1;
 wire  signed [30:0] grp_fu_10417_p4;
-wire  signed [30:0] sext_ln30_406_fu_9488_p1;
-(* use_dsp48 = "no" *) wire   [30:0] add_ln30_45_fu_9483_p2;
-wire  signed [30:0] sext_ln30_413_fu_9497_p1;
-wire   [30:0] add_ln30_50_fu_9491_p2;
+wire  signed [30:0] sext_ln27_406_fu_9488_p1;
+(* use_dsp48 = "no" *) wire   [30:0] add_ln27_45_fu_9483_p2;
+wire  signed [30:0] sext_ln27_413_fu_9497_p1;
+wire   [30:0] add_ln27_50_fu_9491_p2;
 wire   [30:0] FIR_accu32_11_fu_9500_p2;
-wire  signed [30:0] sext_ln30_268_fu_9477_p1;
+wire  signed [30:0] sext_ln27_268_fu_9477_p1;
 wire   [21:0] tmp_58_fu_9521_p3;
 wire  signed [22:0] tmp435_cast_fu_9518_p1;
 wire  signed [22:0] p_shl_fu_9528_p1;
 wire   [22:0] tmp436_fu_9532_p2;
-wire  signed [30:0] sext_ln30_414_fu_9542_p1;
+wire  signed [30:0] sext_ln27_414_fu_9542_p1;
 wire  signed [30:0] grp_fu_10428_p4;
-wire  signed [30:0] sext_ln30_417_fu_9550_p1;
-(* use_dsp48 = "no" *) wire   [30:0] add_ln30_63_fu_9545_p2;
-wire  signed [30:0] sext_ln30_423_fu_9559_p1;
-wire   [30:0] add_ln30_67_fu_9553_p2;
+wire  signed [30:0] sext_ln27_417_fu_9550_p1;
+(* use_dsp48 = "no" *) wire   [30:0] add_ln27_63_fu_9545_p2;
+wire  signed [30:0] sext_ln27_423_fu_9559_p1;
+wire   [30:0] add_ln27_67_fu_9553_p2;
 wire   [30:0] FIR_accu32_13_fu_9562_p2;
-wire  signed [30:0] sext_ln30_298_fu_9512_p1;
-wire  signed [30:0] sext_ln30_424_fu_9574_p1;
+wire  signed [30:0] sext_ln27_298_fu_9512_p1;
+wire  signed [30:0] sext_ln27_424_fu_9574_p1;
 wire   [30:0] FIR_accu32_14_fu_9568_p2;
-wire  signed [30:0] sext_ln30_426_fu_9583_p1;
-wire   [30:0] add_ln30_78_fu_9577_p2;
-wire  signed [30:0] sext_ln30_431_fu_9592_p1;
-wire   [30:0] add_ln30_81_fu_9586_p2;
+wire  signed [30:0] sext_ln27_426_fu_9583_p1;
+wire   [30:0] add_ln27_78_fu_9577_p2;
+wire  signed [30:0] sext_ln27_431_fu_9592_p1;
+wire   [30:0] add_ln27_81_fu_9586_p2;
 wire   [30:0] FIR_accu32_15_fu_9595_p2;
-wire  signed [30:0] sext_ln30_325_fu_9515_p1;
+wire  signed [30:0] sext_ln27_325_fu_9515_p1;
 wire   [30:0] FIR_accu32_16_fu_9601_p2;
 wire  signed [30:0] tmp436_cast_fu_9538_p1;
-wire  signed [30:0] sext_ln30_432_fu_9613_p1;
-wire   [30:0] add_ln30_89_fu_9607_p2;
-wire  signed [30:0] sext_ln30_437_fu_9622_p1;
-wire   [30:0] add_ln30_91_fu_9616_p2;
-wire  signed [30:0] sext_ln30_455_fu_9631_p1;
-wire   [30:0] add_ln30_95_fu_9625_p2;
-wire  signed [30:0] sext_ln30_451_fu_9640_p1;
-wire   [30:0] add_ln30_104_fu_9634_p2;
+wire  signed [30:0] sext_ln27_432_fu_9613_p1;
+wire   [30:0] add_ln27_89_fu_9607_p2;
+wire  signed [30:0] sext_ln27_437_fu_9622_p1;
+wire   [30:0] add_ln27_91_fu_9616_p2;
+wire  signed [30:0] sext_ln27_455_fu_9631_p1;
+wire   [30:0] add_ln27_95_fu_9625_p2;
+wire  signed [30:0] sext_ln27_451_fu_9640_p1;
+wire   [30:0] add_ln27_104_fu_9634_p2;
 wire   [30:0] FIR_accu32_fu_9643_p2;
 wire  signed [18:0] grp_fu_9659_p0;
 wire   [4:0] grp_fu_9659_p2;
@@ -2496,7 +2496,7 @@ ama_addmuladd_19s_16s_5ns_21s_24_4_1_U4(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9659_p0),
-    .din1(sext_ln23_6_fu_3600_p0),
+    .din1(sext_ln20_6_fu_3600_p0),
     .din2(grp_fu_9659_p2),
     .din3(tmp_2_fu_8503_p3),
     .ce(1'b1),
@@ -2515,9 +2515,9 @@ ama_submuladd_19s_16s_6ns_25s_26_4_1_U5(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9670_p0),
-    .din1(sext_ln30_308_fu_3296_p0),
+    .din1(sext_ln27_308_fu_3296_p0),
     .din2(grp_fu_9670_p2),
-    .din3(add_ln30_82_reg_10967_pp0_iter1_reg),
+    .din3(add_ln27_82_reg_10967_pp0_iter1_reg),
     .ce(1'b1),
     .dout(grp_fu_9670_p4)
 );
@@ -2553,7 +2553,7 @@ ama_submuladd_19s_16s_5ns_23s_24_4_1_U7(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9692_p0),
-    .din1(sext_ln30_348_fu_3664_p0),
+    .din1(sext_ln27_348_fu_3664_p0),
     .din2(grp_fu_9692_p2),
     .din3(grp_fu_9692_p3),
     .ce(1'b1),
@@ -2642,7 +2642,7 @@ ama_addmuladd_18s_16s_7ns_25s_26_4_1_U12(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9737_p0),
-    .din1(sext_ln30_287_fu_3120_p0),
+    .din1(sext_ln27_287_fu_3120_p0),
     .din2(grp_fu_9737_p2),
     .din3(grp_fu_9737_p3),
     .ce(1'b1),
@@ -2680,7 +2680,7 @@ ama_submuladd_18s_16s_5ns_24s_24_4_1_U14(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9758_p0),
-    .din1(sext_ln30_347_fu_3656_p0),
+    .din1(sext_ln27_347_fu_3656_p0),
     .din2(grp_fu_9758_p2),
     .din3(grp_fu_9758_p3),
     .ce(1'b1),
@@ -2699,7 +2699,7 @@ ama_submuladd_18s_16s_4ns_23s_23_4_1_U15(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9769_p0),
-    .din1(sext_ln30_358_fu_3744_p0),
+    .din1(sext_ln27_358_fu_3744_p0),
     .din2(grp_fu_9769_p2),
     .din3(grp_fu_9769_p3),
     .ce(1'b1),
@@ -2718,7 +2718,7 @@ ama_submuladd_18s_16s_4ns_21s_22_4_1_U16(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_9780_p0),
-    .din1(sext_ln30_361_fu_3768_p0),
+    .din1(sext_ln27_361_fu_3768_p0),
     .din2(grp_fu_9780_p2),
     .din3(tmp276_fu_8553_p2),
     .ce(1'b1),
@@ -2755,10 +2755,10 @@ FIR_HLS_ama_addmul_sub_16s_16s_13ns_18s_30_4_1 #(
 ama_addmul_sub_16s_16s_13ns_18s_30_4_1_U18(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_191_fu_2464_p0),
-    .din1(sext_ln30_190_fu_2456_p0),
+    .din0(sext_ln27_191_fu_2464_p0),
+    .din1(sext_ln27_190_fu_2456_p0),
     .din2(grp_fu_9802_p2),
-    .din3(add_ln30_2_reg_10962_pp0_iter1_reg),
+    .din3(add_ln27_2_reg_10962_pp0_iter1_reg),
     .ce(1'b1),
     .dout(grp_fu_9802_p4)
 );
@@ -2773,8 +2773,8 @@ FIR_HLS_am_addmul_16s_16s_12ns_30_4_1 #(
 am_addmul_16s_16s_12ns_30_4_1_U19(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_194_fu_2480_p0),
-    .din1(sext_ln30_187_fu_2440_p0),
+    .din0(sext_ln27_194_fu_2480_p0),
+    .din1(sext_ln27_187_fu_2440_p0),
     .din2(grp_fu_9812_p2),
     .ce(1'b1),
     .dout(grp_fu_9812_p3)
@@ -2790,8 +2790,8 @@ FIR_HLS_am_addmul_16s_16s_11ns_29_4_1 #(
 am_addmul_16s_16s_11ns_29_4_1_U20(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_196_fu_2492_p0),
-    .din1(sext_ln30_185_fu_2428_p0),
+    .din0(sext_ln27_196_fu_2492_p0),
+    .din1(sext_ln27_185_fu_2428_p0),
     .din2(grp_fu_9820_p2),
     .ce(1'b1),
     .dout(grp_fu_9820_p3)
@@ -2807,8 +2807,8 @@ FIR_HLS_am_addmul_16s_16s_11s_28_4_1 #(
 am_addmul_16s_16s_11s_28_4_1_U21(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_200_fu_2512_p0),
-    .din1(sext_ln30_181_fu_2408_p0),
+    .din0(sext_ln27_200_fu_2512_p0),
+    .din1(sext_ln27_181_fu_2408_p0),
     .din2(grp_fu_9828_p2),
     .ce(1'b1),
     .dout(grp_fu_9828_p3)
@@ -2824,8 +2824,8 @@ FIR_HLS_am_addmul_16s_16s_11s_28_4_1 #(
 am_addmul_16s_16s_11s_28_4_1_U22(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_201_fu_2520_p0),
-    .din1(sext_ln30_180_fu_2400_p0),
+    .din0(sext_ln27_201_fu_2520_p0),
+    .din1(sext_ln27_180_fu_2400_p0),
     .din2(grp_fu_9836_p2),
     .ce(1'b1),
     .dout(grp_fu_9836_p3)
@@ -2841,8 +2841,8 @@ FIR_HLS_am_addmul_16s_16s_11s_27_4_1 #(
 am_addmul_16s_16s_11s_27_4_1_U23(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_204_fu_2536_p0),
-    .din1(sext_ln30_177_fu_2384_p0),
+    .din0(sext_ln27_204_fu_2536_p0),
+    .din1(sext_ln27_177_fu_2384_p0),
     .din2(grp_fu_9844_p2),
     .ce(1'b1),
     .dout(grp_fu_9844_p3)
@@ -2859,8 +2859,8 @@ FIR_HLS_ama_addmuladd_16s_16s_8ns_19s_25_4_1 #(
 ama_addmuladd_16s_16s_8ns_19s_25_4_1_U24(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_207_fu_2556_p0),
-    .din1(sext_ln30_174_fu_2364_p0),
+    .din0(sext_ln27_207_fu_2556_p0),
+    .din1(sext_ln27_174_fu_2364_p0),
     .din2(grp_fu_9852_p2),
     .din3(tmp326_fu_8574_p2),
     .ce(1'b1),
@@ -2878,8 +2878,8 @@ FIR_HLS_ama_addmuladd_16s_16s_10ns_27s_28_4_1 #(
 ama_addmuladd_16s_16s_10ns_27s_28_4_1_U25(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_209_fu_2568_p0),
-    .din1(sext_ln30_172_fu_2352_p0),
+    .din0(sext_ln27_209_fu_2568_p0),
+    .din1(sext_ln27_172_fu_2352_p0),
     .din2(grp_fu_9862_p2),
     .din3(grp_fu_9862_p3),
     .ce(1'b1),
@@ -2896,8 +2896,8 @@ FIR_HLS_am_addmul_16s_16s_9ns_27_4_1 #(
 am_addmul_16s_16s_9ns_27_4_1_U26(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_211_fu_2584_p0),
-    .din1(sext_ln30_170_fu_2336_p0),
+    .din0(sext_ln27_211_fu_2584_p0),
+    .din1(sext_ln27_170_fu_2336_p0),
     .din2(grp_fu_9872_p2),
     .ce(1'b1),
     .dout(grp_fu_9872_p3)
@@ -2913,8 +2913,8 @@ FIR_HLS_am_addmul_16s_16s_10s_27_4_1 #(
 am_addmul_16s_16s_10s_27_4_1_U27(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_216_fu_2612_p0),
-    .din1(sext_ln30_165_fu_2308_p0),
+    .din0(sext_ln27_216_fu_2612_p0),
+    .din1(sext_ln27_165_fu_2308_p0),
     .din2(grp_fu_9880_p2),
     .ce(1'b1),
     .dout(grp_fu_9880_p3)
@@ -2930,8 +2930,8 @@ FIR_HLS_am_addmul_16s_16s_10s_27_4_1 #(
 am_addmul_16s_16s_10s_27_4_1_U28(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_217_fu_2620_p0),
-    .din1(sext_ln30_164_fu_2300_p0),
+    .din0(sext_ln27_217_fu_2620_p0),
+    .din1(sext_ln27_164_fu_2300_p0),
     .din2(grp_fu_9888_p2),
     .ce(1'b1),
     .dout(grp_fu_9888_p3)
@@ -2948,8 +2948,8 @@ FIR_HLS_ama_addmuladd_16s_16s_9s_25s_26_4_1 #(
 ama_addmuladd_16s_16s_9s_25s_26_4_1_U29(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_220_fu_2636_p0),
-    .din1(sext_ln30_161_fu_2284_p0),
+    .din0(sext_ln27_220_fu_2636_p0),
+    .din1(sext_ln27_161_fu_2284_p0),
     .din2(grp_fu_9896_p2),
     .din3(tmp354_fu_8640_p2),
     .ce(1'b1),
@@ -2967,8 +2967,8 @@ FIR_HLS_ama_addmuladd_16s_16s_8ns_24s_25_4_1 #(
 ama_addmuladd_16s_16s_8ns_24s_25_4_1_U30(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_223_fu_2660_p0),
-    .din1(sext_ln30_158_fu_2260_p0),
+    .din0(sext_ln27_223_fu_2660_p0),
+    .din1(sext_ln27_158_fu_2260_p0),
     .din2(grp_fu_9907_p2),
     .din3(tmp356_fu_8664_p2),
     .ce(1'b1),
@@ -2986,8 +2986,8 @@ FIR_HLS_ama_addmuladd_16s_16s_9ns_26s_27_4_1 #(
 ama_addmuladd_16s_16s_9ns_26s_27_4_1_U31(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_226_fu_2684_p0),
-    .din1(sext_ln30_155_fu_2236_p0),
+    .din0(sext_ln27_226_fu_2684_p0),
+    .din1(sext_ln27_155_fu_2236_p0),
     .din2(grp_fu_9918_p2),
     .din3(grp_fu_9918_p3),
     .ce(1'b1),
@@ -3005,8 +3005,8 @@ FIR_HLS_ama_addmuladd_16s_16s_8ns_25s_26_4_1 #(
 ama_addmuladd_16s_16s_8ns_25s_26_4_1_U32(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_227_fu_2692_p0),
-    .din1(sext_ln30_154_fu_2228_p0),
+    .din0(sext_ln27_227_fu_2692_p0),
+    .din1(sext_ln27_154_fu_2228_p0),
     .din2(grp_fu_9929_p2),
     .din3(grp_fu_9929_p3),
     .ce(1'b1),
@@ -3023,8 +3023,8 @@ FIR_HLS_am_addmul_16s_16s_9s_26_4_1 #(
 am_addmul_16s_16s_9s_26_4_1_U33(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_233_fu_2736_p0),
-    .din1(sext_ln30_148_fu_2184_p0),
+    .din0(sext_ln27_233_fu_2736_p0),
+    .din1(sext_ln27_148_fu_2184_p0),
     .din2(grp_fu_9939_p2),
     .ce(1'b1),
     .dout(grp_fu_9939_p3)
@@ -3040,8 +3040,8 @@ FIR_HLS_am_addmul_16s_16s_8ns_26_4_1 #(
 am_addmul_16s_16s_8ns_26_4_1_U34(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_240_fu_2780_p0),
-    .din1(sext_ln30_141_fu_2136_p0),
+    .din0(sext_ln27_240_fu_2780_p0),
+    .din1(sext_ln27_141_fu_2136_p0),
     .din2(grp_fu_9947_p2),
     .ce(1'b1),
     .dout(grp_fu_9947_p3)
@@ -3057,8 +3057,8 @@ FIR_HLS_am_addmul_16s_16s_8ns_25_4_1 #(
 am_addmul_16s_16s_8ns_25_4_1_U35(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_242_fu_2792_p0),
-    .din1(sext_ln30_139_fu_2124_p0),
+    .din0(sext_ln27_242_fu_2792_p0),
+    .din1(sext_ln27_139_fu_2124_p0),
     .din2(grp_fu_9955_p2),
     .ce(1'b1),
     .dout(grp_fu_9955_p3)
@@ -3075,8 +3075,8 @@ FIR_HLS_ama_addmuladd_16s_16s_9s_26s_27_4_1 #(
 ama_addmuladd_16s_16s_9s_26s_27_4_1_U36(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_250_fu_2848_p0),
-    .din1(sext_ln30_131_fu_2068_p0),
+    .din0(sext_ln27_250_fu_2848_p0),
+    .din1(sext_ln27_131_fu_2068_p0),
     .din2(grp_fu_9963_p2),
     .din3(tmp88_fu_8389_p2),
     .ce(1'b1),
@@ -3094,8 +3094,8 @@ FIR_HLS_ama_addmuladd_16s_16s_7ns_26s_26_4_1 #(
 ama_addmuladd_16s_16s_7ns_26s_26_4_1_U37(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_254_fu_2880_p0),
-    .din1(sext_ln30_127_fu_2036_p0),
+    .din0(sext_ln27_254_fu_2880_p0),
+    .din1(sext_ln27_127_fu_2036_p0),
     .din2(grp_fu_9973_p2),
     .din3(grp_fu_9973_p3),
     .ce(1'b1),
@@ -3113,8 +3113,8 @@ FIR_HLS_ama_addmuladd_16s_16s_7ns_26s_26_4_1 #(
 ama_addmuladd_16s_16s_7ns_26s_26_4_1_U38(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_258_fu_2908_p0),
-    .din1(sext_ln30_123_fu_2008_p0),
+    .din0(sext_ln27_258_fu_2908_p0),
+    .din1(sext_ln27_123_fu_2008_p0),
     .din2(grp_fu_9983_p2),
     .din3(tmp164_fu_8456_p2),
     .ce(1'b1),
@@ -3132,8 +3132,8 @@ FIR_HLS_ama_addmuladd_16s_16s_8s_24s_25_4_1 #(
 ama_addmuladd_16s_16s_8s_24s_25_4_1_U39(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_262_fu_2940_p0),
-    .din1(sext_ln30_119_fu_1976_p0),
+    .din0(sext_ln27_262_fu_2940_p0),
+    .din1(sext_ln27_119_fu_1976_p0),
     .din2(grp_fu_9993_p2),
     .din3(grp_fu_9993_p3),
     .ce(1'b1),
@@ -3151,8 +3151,8 @@ FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1 #(
 ama_addmuladd_16s_16s_8s_25s_25_4_1_U40(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_264_fu_2952_p0),
-    .din1(sext_ln30_117_fu_1964_p0),
+    .din0(sext_ln27_264_fu_2952_p0),
+    .din1(sext_ln27_117_fu_1964_p0),
     .din2(grp_fu_10003_p2),
     .din3(grp_fu_10003_p3),
     .ce(1'b1),
@@ -3169,8 +3169,8 @@ FIR_HLS_am_addmul_16s_16s_7ns_25_4_1 #(
 am_addmul_16s_16s_7ns_25_4_1_U41(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_270_fu_2996_p0),
-    .din1(sext_ln30_111_fu_1916_p0),
+    .din0(sext_ln27_270_fu_2996_p0),
+    .din1(sext_ln27_111_fu_1916_p0),
     .din2(grp_fu_10014_p2),
     .ce(1'b1),
     .dout(grp_fu_10014_p3)
@@ -3186,8 +3186,8 @@ FIR_HLS_am_addmul_16s_16s_7ns_25_4_1 #(
 am_addmul_16s_16s_7ns_25_4_1_U42(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_272_fu_3008_p0),
-    .din1(sext_ln30_109_fu_1904_p0),
+    .din0(sext_ln27_272_fu_3008_p0),
+    .din1(sext_ln27_109_fu_1904_p0),
     .din2(grp_fu_10022_p2),
     .ce(1'b1),
     .dout(grp_fu_10022_p3)
@@ -3203,8 +3203,8 @@ FIR_HLS_am_addmul_16s_16s_7s_24_4_1 #(
 am_addmul_16s_16s_7s_24_4_1_U43(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_282_fu_3080_p0),
-    .din1(sext_ln30_99_fu_1832_p0),
+    .din0(sext_ln27_282_fu_3080_p0),
+    .din1(sext_ln27_99_fu_1832_p0),
     .din2(grp_fu_10030_p2),
     .ce(1'b1),
     .dout(grp_fu_10030_p3)
@@ -3221,8 +3221,8 @@ FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1 #(
 ama_addmuladd_16s_16s_8s_25s_25_4_1_U44(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_295_fu_3184_p0),
-    .din1(sext_ln30_86_fu_1728_p0),
+    .din0(sext_ln27_295_fu_3184_p0),
+    .din1(sext_ln27_86_fu_1728_p0),
     .din2(grp_fu_10038_p2),
     .din3(grp_fu_10038_p3),
     .ce(1'b1),
@@ -3239,8 +3239,8 @@ FIR_HLS_am_addmul_16s_16s_7s_24_4_1 #(
 am_addmul_16s_16s_7s_24_4_1_U45(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_296_fu_3192_p0),
-    .din1(sext_ln30_85_fu_1720_p0),
+    .din0(sext_ln27_296_fu_3192_p0),
+    .din1(sext_ln27_85_fu_1720_p0),
     .din2(grp_fu_10049_p2),
     .ce(1'b1),
     .dout(grp_fu_10049_p3)
@@ -3257,8 +3257,8 @@ FIR_HLS_ama_addmuladd_16s_16s_7s_21s_23_4_1 #(
 ama_addmuladd_16s_16s_7s_21s_23_4_1_U46(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_306_fu_3280_p0),
-    .din1(sext_ln30_73_fu_1628_p0),
+    .din0(sext_ln27_306_fu_3280_p0),
+    .din1(sext_ln27_73_fu_1628_p0),
     .din2(grp_fu_10057_p2),
     .din3(tmp432_fu_8866_p2),
     .ce(1'b1),
@@ -3275,8 +3275,8 @@ FIR_HLS_am_addmul_16s_16s_6ns_24_4_1 #(
 am_addmul_16s_16s_6ns_24_4_1_U47(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_328_fu_3468_p0),
-    .din1(sext_ln30_49_fu_1436_p0),
+    .din0(sext_ln27_328_fu_3468_p0),
+    .din1(sext_ln27_49_fu_1436_p0),
     .din2(grp_fu_10068_p2),
     .ce(1'b1),
     .dout(grp_fu_10068_p3)
@@ -3293,8 +3293,8 @@ FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_25_4_1 #(
 ama_addmuladd_16s_16s_6ns_25s_25_4_1_U48(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(sext_ln30_369_fu_3832_p0),
-    .din1(sext_ln30_4_fu_1072_p0),
+    .din0(sext_ln27_369_fu_3832_p0),
+    .din1(sext_ln27_4_fu_1072_p0),
     .din2(grp_fu_10076_p2),
     .din3(grp_fu_10076_p3),
     .ce(1'b1),
@@ -4008,59 +4008,59 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        add_ln30_103_reg_11422 <= add_ln30_103_fu_9297_p2;
-        add_ln30_103_reg_11422_pp0_iter5_reg <= add_ln30_103_reg_11422;
-        add_ln30_103_reg_11422_pp0_iter6_reg <= add_ln30_103_reg_11422_pp0_iter5_reg;
-        add_ln30_106_reg_10982_pp0_iter2_reg <= add_ln30_106_reg_10982_pp0_iter1_reg;
-        add_ln30_109_reg_10987_pp0_iter2_reg <= add_ln30_109_reg_10987_pp0_iter1_reg;
-        add_ln30_111_reg_11312 <= add_ln30_111_fu_9083_p2;
-        add_ln30_111_reg_11312_pp0_iter4_reg <= add_ln30_111_reg_11312;
-        add_ln30_112_reg_10992_pp0_iter2_reg[24 : 2] <= add_ln30_112_reg_10992_pp0_iter1_reg[24 : 2];
-        add_ln30_114_reg_11317 <= add_ln30_114_fu_9095_p2;
-        add_ln30_114_reg_11317_pp0_iter4_reg <= add_ln30_114_reg_11317;
-        add_ln30_115_reg_11322_pp0_iter4_reg <= add_ln30_115_reg_11322;
-        add_ln30_120_reg_11437 <= add_ln30_120_fu_9471_p2;
-        add_ln30_120_reg_11437_pp0_iter6_reg <= add_ln30_120_reg_11437;
-        add_ln30_19_reg_11357 <= add_ln30_19_fu_9159_p2;
-        add_ln30_29_reg_11372 <= add_ln30_29_fu_9170_p2;
-        add_ln30_34_reg_11242 <= add_ln30_34_fu_8983_p2;
-        add_ln30_34_reg_11242_pp0_iter4_reg <= add_ln30_34_reg_11242;
-        add_ln30_35_reg_11247_pp0_iter4_reg <= add_ln30_35_reg_11247;
-        add_ln30_44_reg_11382 <= add_ln30_44_fu_9182_p2;
-        add_ln30_44_reg_11382_pp0_iter5_reg <= add_ln30_44_reg_11382;
-        add_ln30_49_reg_11387 <= add_ln30_49_fu_9191_p2;
-        add_ln30_49_reg_11387_pp0_iter5_reg <= add_ln30_49_reg_11387;
-        add_ln30_59_reg_11392 <= add_ln30_59_fu_9224_p2;
-        add_ln30_59_reg_11392_pp0_iter5_reg <= add_ln30_59_reg_11392;
-        add_ln30_62_reg_11397_pp0_iter5_reg <= add_ln30_62_reg_11397;
-        add_ln30_62_reg_11397_pp0_iter6_reg <= add_ln30_62_reg_11397_pp0_iter5_reg;
-        add_ln30_66_reg_11402 <= add_ln30_66_fu_9236_p2;
-        add_ln30_66_reg_11402_pp0_iter5_reg <= add_ln30_66_reg_11402;
-        add_ln30_66_reg_11402_pp0_iter6_reg <= add_ln30_66_reg_11402_pp0_iter5_reg;
-        add_ln30_73_reg_11287 <= add_ln30_73_fu_8995_p2;
-        add_ln30_75_reg_11407 <= add_ln30_75_fu_9266_p2;
-        add_ln30_75_reg_11407_pp0_iter5_reg <= add_ln30_75_reg_11407;
-        add_ln30_75_reg_11407_pp0_iter6_reg <= add_ln30_75_reg_11407_pp0_iter5_reg;
-        add_ln30_77_reg_11412_pp0_iter5_reg <= add_ln30_77_reg_11412;
-        add_ln30_77_reg_11412_pp0_iter6_reg <= add_ln30_77_reg_11412_pp0_iter5_reg;
-        add_ln30_80_reg_11292 <= add_ln30_80_fu_9004_p2;
-        add_ln30_80_reg_11292_pp0_iter4_reg <= add_ln30_80_reg_11292;
-        add_ln30_80_reg_11292_pp0_iter5_reg <= add_ln30_80_reg_11292_pp0_iter4_reg;
-        add_ln30_80_reg_11292_pp0_iter6_reg <= add_ln30_80_reg_11292_pp0_iter5_reg;
-        add_ln30_87_reg_11297 <= add_ln30_87_fu_9025_p2;
-        add_ln30_87_reg_11297_pp0_iter4_reg <= add_ln30_87_reg_11297;
-        add_ln30_87_reg_11297_pp0_iter5_reg <= add_ln30_87_reg_11297_pp0_iter4_reg;
-        add_ln30_87_reg_11297_pp0_iter6_reg <= add_ln30_87_reg_11297_pp0_iter5_reg;
-        add_ln30_90_reg_11417_pp0_iter5_reg <= add_ln30_90_reg_11417;
-        add_ln30_90_reg_11417_pp0_iter6_reg <= add_ln30_90_reg_11417_pp0_iter5_reg;
-        add_ln30_92_reg_10972_pp0_iter2_reg <= add_ln30_92_reg_10972_pp0_iter1_reg;
-        add_ln30_94_reg_11302 <= add_ln30_94_fu_9037_p2;
-        add_ln30_94_reg_11302_pp0_iter4_reg <= add_ln30_94_reg_11302;
-        add_ln30_94_reg_11302_pp0_iter5_reg <= add_ln30_94_reg_11302_pp0_iter4_reg;
-        add_ln30_94_reg_11302_pp0_iter6_reg <= add_ln30_94_reg_11302_pp0_iter5_reg;
-        add_ln30_98_reg_11307 <= add_ln30_98_fu_9049_p2;
-        add_ln30_99_reg_10977_pp0_iter2_reg <= add_ln30_99_reg_10977_pp0_iter1_reg;
-        add_ln30_99_reg_10977_pp0_iter3_reg <= add_ln30_99_reg_10977_pp0_iter2_reg;
+        add_ln27_103_reg_11422 <= add_ln27_103_fu_9297_p2;
+        add_ln27_103_reg_11422_pp0_iter5_reg <= add_ln27_103_reg_11422;
+        add_ln27_103_reg_11422_pp0_iter6_reg <= add_ln27_103_reg_11422_pp0_iter5_reg;
+        add_ln27_106_reg_10982_pp0_iter2_reg <= add_ln27_106_reg_10982_pp0_iter1_reg;
+        add_ln27_109_reg_10987_pp0_iter2_reg <= add_ln27_109_reg_10987_pp0_iter1_reg;
+        add_ln27_111_reg_11312 <= add_ln27_111_fu_9083_p2;
+        add_ln27_111_reg_11312_pp0_iter4_reg <= add_ln27_111_reg_11312;
+        add_ln27_112_reg_10992_pp0_iter2_reg[24 : 2] <= add_ln27_112_reg_10992_pp0_iter1_reg[24 : 2];
+        add_ln27_114_reg_11317 <= add_ln27_114_fu_9095_p2;
+        add_ln27_114_reg_11317_pp0_iter4_reg <= add_ln27_114_reg_11317;
+        add_ln27_115_reg_11322_pp0_iter4_reg <= add_ln27_115_reg_11322;
+        add_ln27_120_reg_11437 <= add_ln27_120_fu_9471_p2;
+        add_ln27_120_reg_11437_pp0_iter6_reg <= add_ln27_120_reg_11437;
+        add_ln27_19_reg_11357 <= add_ln27_19_fu_9159_p2;
+        add_ln27_29_reg_11372 <= add_ln27_29_fu_9170_p2;
+        add_ln27_34_reg_11242 <= add_ln27_34_fu_8983_p2;
+        add_ln27_34_reg_11242_pp0_iter4_reg <= add_ln27_34_reg_11242;
+        add_ln27_35_reg_11247_pp0_iter4_reg <= add_ln27_35_reg_11247;
+        add_ln27_44_reg_11382 <= add_ln27_44_fu_9182_p2;
+        add_ln27_44_reg_11382_pp0_iter5_reg <= add_ln27_44_reg_11382;
+        add_ln27_49_reg_11387 <= add_ln27_49_fu_9191_p2;
+        add_ln27_49_reg_11387_pp0_iter5_reg <= add_ln27_49_reg_11387;
+        add_ln27_59_reg_11392 <= add_ln27_59_fu_9224_p2;
+        add_ln27_59_reg_11392_pp0_iter5_reg <= add_ln27_59_reg_11392;
+        add_ln27_62_reg_11397_pp0_iter5_reg <= add_ln27_62_reg_11397;
+        add_ln27_62_reg_11397_pp0_iter6_reg <= add_ln27_62_reg_11397_pp0_iter5_reg;
+        add_ln27_66_reg_11402 <= add_ln27_66_fu_9236_p2;
+        add_ln27_66_reg_11402_pp0_iter5_reg <= add_ln27_66_reg_11402;
+        add_ln27_66_reg_11402_pp0_iter6_reg <= add_ln27_66_reg_11402_pp0_iter5_reg;
+        add_ln27_73_reg_11287 <= add_ln27_73_fu_8995_p2;
+        add_ln27_75_reg_11407 <= add_ln27_75_fu_9266_p2;
+        add_ln27_75_reg_11407_pp0_iter5_reg <= add_ln27_75_reg_11407;
+        add_ln27_75_reg_11407_pp0_iter6_reg <= add_ln27_75_reg_11407_pp0_iter5_reg;
+        add_ln27_77_reg_11412_pp0_iter5_reg <= add_ln27_77_reg_11412;
+        add_ln27_77_reg_11412_pp0_iter6_reg <= add_ln27_77_reg_11412_pp0_iter5_reg;
+        add_ln27_80_reg_11292 <= add_ln27_80_fu_9004_p2;
+        add_ln27_80_reg_11292_pp0_iter4_reg <= add_ln27_80_reg_11292;
+        add_ln27_80_reg_11292_pp0_iter5_reg <= add_ln27_80_reg_11292_pp0_iter4_reg;
+        add_ln27_80_reg_11292_pp0_iter6_reg <= add_ln27_80_reg_11292_pp0_iter5_reg;
+        add_ln27_87_reg_11297 <= add_ln27_87_fu_9025_p2;
+        add_ln27_87_reg_11297_pp0_iter4_reg <= add_ln27_87_reg_11297;
+        add_ln27_87_reg_11297_pp0_iter5_reg <= add_ln27_87_reg_11297_pp0_iter4_reg;
+        add_ln27_87_reg_11297_pp0_iter6_reg <= add_ln27_87_reg_11297_pp0_iter5_reg;
+        add_ln27_90_reg_11417_pp0_iter5_reg <= add_ln27_90_reg_11417;
+        add_ln27_90_reg_11417_pp0_iter6_reg <= add_ln27_90_reg_11417_pp0_iter5_reg;
+        add_ln27_92_reg_10972_pp0_iter2_reg <= add_ln27_92_reg_10972_pp0_iter1_reg;
+        add_ln27_94_reg_11302 <= add_ln27_94_fu_9037_p2;
+        add_ln27_94_reg_11302_pp0_iter4_reg <= add_ln27_94_reg_11302;
+        add_ln27_94_reg_11302_pp0_iter5_reg <= add_ln27_94_reg_11302_pp0_iter4_reg;
+        add_ln27_94_reg_11302_pp0_iter6_reg <= add_ln27_94_reg_11302_pp0_iter5_reg;
+        add_ln27_98_reg_11307 <= add_ln27_98_fu_9049_p2;
+        add_ln27_99_reg_10977_pp0_iter2_reg <= add_ln27_99_reg_10977_pp0_iter1_reg;
+        add_ln27_99_reg_10977_pp0_iter3_reg <= add_ln27_99_reg_10977_pp0_iter2_reg;
         p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter2_reg <= p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter1_reg;
         p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter3_reg <= p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter2_reg;
         p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter4_reg <= p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter3_reg;
@@ -4101,20 +4101,20 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        add_ln30_106_reg_10982 <= add_ln30_106_fu_5718_p2;
-        add_ln30_106_reg_10982_pp0_iter1_reg <= add_ln30_106_reg_10982;
-        add_ln30_109_reg_10987 <= add_ln30_109_fu_5724_p2;
-        add_ln30_109_reg_10987_pp0_iter1_reg <= add_ln30_109_reg_10987;
-        add_ln30_112_reg_10992[24 : 2] <= add_ln30_112_fu_5730_p2[24 : 2];
-        add_ln30_112_reg_10992_pp0_iter1_reg[24 : 2] <= add_ln30_112_reg_10992[24 : 2];
-        add_ln30_2_reg_10962 <= add_ln30_2_fu_5694_p2;
-        add_ln30_2_reg_10962_pp0_iter1_reg <= add_ln30_2_reg_10962;
-        add_ln30_82_reg_10967[24 : 4] <= add_ln30_82_fu_5700_p2[24 : 4];
-        add_ln30_82_reg_10967_pp0_iter1_reg[24 : 4] <= add_ln30_82_reg_10967[24 : 4];
-        add_ln30_92_reg_10972 <= add_ln30_92_fu_5706_p2;
-        add_ln30_92_reg_10972_pp0_iter1_reg <= add_ln30_92_reg_10972;
-        add_ln30_99_reg_10977 <= add_ln30_99_fu_5712_p2;
-        add_ln30_99_reg_10977_pp0_iter1_reg <= add_ln30_99_reg_10977;
+        add_ln27_106_reg_10982 <= add_ln27_106_fu_5718_p2;
+        add_ln27_106_reg_10982_pp0_iter1_reg <= add_ln27_106_reg_10982;
+        add_ln27_109_reg_10987 <= add_ln27_109_fu_5724_p2;
+        add_ln27_109_reg_10987_pp0_iter1_reg <= add_ln27_109_reg_10987;
+        add_ln27_112_reg_10992[24 : 2] <= add_ln27_112_fu_5730_p2[24 : 2];
+        add_ln27_112_reg_10992_pp0_iter1_reg[24 : 2] <= add_ln27_112_reg_10992[24 : 2];
+        add_ln27_2_reg_10962 <= add_ln27_2_fu_5694_p2;
+        add_ln27_2_reg_10962_pp0_iter1_reg <= add_ln27_2_reg_10962;
+        add_ln27_82_reg_10967[24 : 4] <= add_ln27_82_fu_5700_p2[24 : 4];
+        add_ln27_82_reg_10967_pp0_iter1_reg[24 : 4] <= add_ln27_82_reg_10967[24 : 4];
+        add_ln27_92_reg_10972 <= add_ln27_92_fu_5706_p2;
+        add_ln27_92_reg_10972_pp0_iter1_reg <= add_ln27_92_reg_10972;
+        add_ln27_99_reg_10977 <= add_ln27_99_fu_5712_p2;
+        add_ln27_99_reg_10977_pp0_iter1_reg <= add_ln27_99_reg_10977;
         p_ZL12H_filter_FIR_100_load_reg_10729 <= p_ZL12H_filter_FIR_100;
         p_ZL12H_filter_FIR_106_load_reg_10724 <= p_ZL12H_filter_FIR_106;
         p_ZL12H_filter_FIR_113_load_reg_10719 <= p_ZL12H_filter_FIR_113;
@@ -4270,25 +4270,25 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter3 == 1'b1))) begin
-        add_ln30_115_reg_11322 <= grp_fu_10076_p4;
-        add_ln30_16_reg_11227 <= grp_fu_9852_p4;
-        add_ln30_35_reg_11247 <= grp_fu_9929_p4;
-        add_ln30_51_reg_11257 <= grp_fu_9973_p4;
-        add_ln30_55_reg_11267 <= grp_fu_9993_p4;
-        add_ln30_65_reg_11277 <= grp_fu_9719_p4;
-        add_ln30_71_reg_11282 <= grp_fu_9737_p4;
+        add_ln27_115_reg_11322 <= grp_fu_10076_p4;
+        add_ln27_16_reg_11227 <= grp_fu_9852_p4;
+        add_ln27_35_reg_11247 <= grp_fu_9929_p4;
+        add_ln27_51_reg_11257 <= grp_fu_9973_p4;
+        add_ln27_55_reg_11267 <= grp_fu_9993_p4;
+        add_ln27_65_reg_11277 <= grp_fu_9719_p4;
+        add_ln27_71_reg_11282 <= grp_fu_9737_p4;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1))) begin
-        add_ln30_12_reg_11347 <= grp_fu_10137_p4;
-        add_ln30_22_reg_11362 <= grp_fu_10169_p4;
-        add_ln30_3_reg_11327 <= grp_fu_10096_p4;
-        add_ln30_62_reg_11397 <= grp_fu_10277_p4;
-        add_ln30_77_reg_11412 <= grp_fu_10320_p4;
-        add_ln30_7_reg_11337 <= grp_fu_10117_p4;
-        add_ln30_90_reg_11417 <= grp_fu_10086_p4;
+        add_ln27_12_reg_11347 <= grp_fu_10137_p4;
+        add_ln27_22_reg_11362 <= grp_fu_10169_p4;
+        add_ln27_3_reg_11327 <= grp_fu_10096_p4;
+        add_ln27_62_reg_11397 <= grp_fu_10277_p4;
+        add_ln27_77_reg_11412 <= grp_fu_10320_p4;
+        add_ln27_7_reg_11337 <= grp_fu_10117_p4;
+        add_ln27_90_reg_11417 <= grp_fu_10086_p4;
     end
 end
 
@@ -4752,137 +4752,137 @@ always @ (*) begin
     endcase
 end
 
-assign FIR_accu32_11_fu_9500_p2 = ($signed(sext_ln30_413_fu_9497_p1) + $signed(add_ln30_50_fu_9491_p2));
+assign FIR_accu32_11_fu_9500_p2 = ($signed(sext_ln27_413_fu_9497_p1) + $signed(add_ln27_50_fu_9491_p2));
 
-assign FIR_accu32_13_fu_9562_p2 = ($signed(sext_ln30_423_fu_9559_p1) + $signed(add_ln30_67_fu_9553_p2));
+assign FIR_accu32_13_fu_9562_p2 = ($signed(sext_ln27_423_fu_9559_p1) + $signed(add_ln27_67_fu_9553_p2));
 
-assign FIR_accu32_14_fu_9568_p2 = ($signed(FIR_accu32_13_fu_9562_p2) - $signed(sext_ln30_298_fu_9512_p1));
+assign FIR_accu32_14_fu_9568_p2 = ($signed(FIR_accu32_13_fu_9562_p2) - $signed(sext_ln27_298_fu_9512_p1));
 
-assign FIR_accu32_15_fu_9595_p2 = ($signed(sext_ln30_431_fu_9592_p1) + $signed(add_ln30_81_fu_9586_p2));
+assign FIR_accu32_15_fu_9595_p2 = ($signed(sext_ln27_431_fu_9592_p1) + $signed(add_ln27_81_fu_9586_p2));
 
-assign FIR_accu32_16_fu_9601_p2 = ($signed(FIR_accu32_15_fu_9595_p2) - $signed(sext_ln30_325_fu_9515_p1));
+assign FIR_accu32_16_fu_9601_p2 = ($signed(FIR_accu32_15_fu_9595_p2) - $signed(sext_ln27_325_fu_9515_p1));
 
-assign FIR_accu32_9_fu_9431_p2 = ($signed(sext_ln30_402_fu_9427_p1) + $signed(add_ln30_21_fu_9361_p2));
+assign FIR_accu32_9_fu_9431_p2 = ($signed(sext_ln27_402_fu_9427_p1) + $signed(add_ln27_21_fu_9361_p2));
 
-assign FIR_accu32_fu_9643_p2 = ($signed(sext_ln30_451_fu_9640_p1) + $signed(add_ln30_104_fu_9634_p2));
+assign FIR_accu32_fu_9643_p2 = ($signed(sext_ln27_451_fu_9640_p1) + $signed(add_ln27_104_fu_9634_p2));
 
-assign add_ln30_101_fu_9281_p2 = ($signed(sext_ln30_453_fu_9278_p1) + $signed(tmp_1_cast_fu_9108_p1));
+assign add_ln27_101_fu_9281_p2 = ($signed(sext_ln27_453_fu_9278_p1) + $signed(tmp_1_cast_fu_9108_p1));
 
-assign add_ln30_102_fu_9287_p2 = ($signed(add_ln30_101_fu_9281_p2) + $signed(sext_ln30_452_fu_9275_p1));
+assign add_ln27_102_fu_9287_p2 = ($signed(add_ln27_101_fu_9281_p2) + $signed(sext_ln27_452_fu_9275_p1));
 
-assign add_ln30_103_fu_9297_p2 = ($signed(sext_ln30_454_fu_9293_p1) + $signed(sext_ln30_438_fu_9272_p1));
+assign add_ln27_103_fu_9297_p2 = ($signed(sext_ln27_454_fu_9293_p1) + $signed(sext_ln27_438_fu_9272_p1));
 
-assign add_ln30_104_fu_9634_p2 = ($signed(sext_ln30_455_fu_9631_p1) + $signed(add_ln30_95_fu_9625_p2));
+assign add_ln27_104_fu_9634_p2 = ($signed(sext_ln27_455_fu_9631_p1) + $signed(add_ln27_95_fu_9625_p2));
 
-assign add_ln30_106_fu_5718_p2 = ($signed(tmp266_cast_fu_5364_p1) + $signed(tmp58_fu_4214_p2));
+assign add_ln27_106_fu_5718_p2 = ($signed(tmp266_cast_fu_5364_p1) + $signed(tmp58_fu_4214_p2));
 
-assign add_ln30_107_fu_9061_p2 = ($signed(sext_ln30_440_fu_9058_p1) + $signed(sext_ln30_439_fu_9055_p1));
+assign add_ln27_107_fu_9061_p2 = ($signed(sext_ln27_440_fu_9058_p1) + $signed(sext_ln27_439_fu_9055_p1));
 
-assign add_ln30_109_fu_5724_p2 = ($signed(tmp280_cast_fu_5458_p1) + $signed(tmp286_fu_5504_p2));
+assign add_ln27_109_fu_5724_p2 = ($signed(tmp280_cast_fu_5458_p1) + $signed(tmp286_fu_5504_p2));
 
-assign add_ln30_10_fu_9317_p2 = ($signed(sext_ln30_378_fu_9314_p1) + $signed(add_ln30_7_reg_11337));
+assign add_ln27_10_fu_9317_p2 = ($signed(sext_ln27_378_fu_9314_p1) + $signed(add_ln27_7_reg_11337));
 
-assign add_ln30_110_fu_9073_p2 = ($signed(sext_ln30_442_fu_9070_p1) + $signed(sext_ln30_441_fu_9067_p1));
+assign add_ln27_110_fu_9073_p2 = ($signed(sext_ln27_442_fu_9070_p1) + $signed(sext_ln27_441_fu_9067_p1));
 
-assign add_ln30_111_fu_9083_p2 = ($signed(sext_ln30_443_fu_9079_p1) + $signed(add_ln30_107_fu_9061_p2));
+assign add_ln27_111_fu_9083_p2 = ($signed(sext_ln27_443_fu_9079_p1) + $signed(add_ln27_107_fu_9061_p2));
 
-assign add_ln30_112_fu_5730_p2 = ($signed(tmp290_cast_fu_5566_p1) + $signed(tmp16_fu_3962_p2));
+assign add_ln27_112_fu_5730_p2 = ($signed(tmp290_cast_fu_5566_p1) + $signed(tmp16_fu_3962_p2));
 
-assign add_ln30_114_fu_9095_p2 = ($signed(sext_ln30_446_fu_9092_p1) + $signed(sext_ln30_445_fu_9089_p1));
+assign add_ln27_114_fu_9095_p2 = ($signed(sext_ln27_446_fu_9092_p1) + $signed(sext_ln27_445_fu_9089_p1));
 
-assign add_ln30_118_fu_9455_p2 = ($signed(sext_ln30_449_fu_9452_p1) + $signed(sext_ln30_448_fu_9449_p1));
+assign add_ln27_118_fu_9455_p2 = ($signed(sext_ln27_449_fu_9452_p1) + $signed(sext_ln27_448_fu_9449_p1));
 
-assign add_ln30_119_fu_9461_p2 = ($signed(add_ln30_118_fu_9455_p2) + $signed(sext_ln30_447_fu_9446_p1));
+assign add_ln27_119_fu_9461_p2 = ($signed(add_ln27_118_fu_9455_p2) + $signed(sext_ln27_447_fu_9446_p1));
 
-assign add_ln30_11_fu_9326_p2 = ($signed(sext_ln30_379_fu_9322_p1) + $signed(add_ln30_6_fu_9309_p2));
+assign add_ln27_11_fu_9326_p2 = ($signed(sext_ln27_379_fu_9322_p1) + $signed(add_ln27_6_fu_9309_p2));
 
-assign add_ln30_120_fu_9471_p2 = ($signed(sext_ln30_450_fu_9467_p1) + $signed(sext_ln30_444_fu_9443_p1));
+assign add_ln27_120_fu_9471_p2 = ($signed(sext_ln27_450_fu_9467_p1) + $signed(sext_ln27_444_fu_9443_p1));
 
-assign add_ln30_15_fu_9338_p2 = ($signed(sext_ln30_382_fu_9335_p1) + $signed(sext_ln30_380_fu_9332_p1));
+assign add_ln27_15_fu_9338_p2 = ($signed(sext_ln27_382_fu_9335_p1) + $signed(sext_ln27_380_fu_9332_p1));
 
-assign add_ln30_19_fu_9159_p2 = ($signed(grp_fu_10158_p4) + $signed(sext_ln30_384_fu_9156_p1));
+assign add_ln27_19_fu_9159_p2 = ($signed(grp_fu_10158_p4) + $signed(sext_ln27_384_fu_9156_p1));
 
-assign add_ln30_1_fu_5684_p2 = ($signed(sext_ln30_113_fu_1932_p1) + $signed(sext_ln30_144_fu_2160_p1));
+assign add_ln27_1_fu_5684_p2 = ($signed(sext_ln27_113_fu_1932_p1) + $signed(sext_ln27_144_fu_2160_p1));
 
-assign add_ln30_20_fu_9351_p2 = ($signed(sext_ln30_385_fu_9348_p1) + $signed(sext_ln30_383_fu_9344_p1));
+assign add_ln27_20_fu_9351_p2 = ($signed(sext_ln27_385_fu_9348_p1) + $signed(sext_ln27_383_fu_9344_p1));
 
-assign add_ln30_21_fu_9361_p2 = ($signed(sext_ln30_386_fu_9357_p1) + $signed(add_ln30_11_fu_9326_p2));
+assign add_ln27_21_fu_9361_p2 = ($signed(sext_ln27_386_fu_9357_p1) + $signed(add_ln27_11_fu_9326_p2));
 
-assign add_ln30_25_fu_9373_p2 = ($signed(sext_ln30_388_fu_9370_p1) + $signed(sext_ln30_387_fu_9367_p1));
+assign add_ln27_25_fu_9373_p2 = ($signed(sext_ln27_388_fu_9370_p1) + $signed(sext_ln27_387_fu_9367_p1));
 
-assign add_ln30_29_fu_9170_p2 = ($signed(sext_ln30_392_fu_9167_p1) + $signed(sext_ln30_390_fu_9164_p1));
+assign add_ln27_29_fu_9170_p2 = ($signed(sext_ln27_392_fu_9167_p1) + $signed(sext_ln27_390_fu_9164_p1));
 
-assign add_ln30_2_fu_5694_p2 = ($signed(sext_ln30_374_fu_5690_p1) + $signed(sext_ln30_373_fu_5680_p1));
+assign add_ln27_2_fu_5694_p2 = ($signed(sext_ln27_374_fu_5690_p1) + $signed(sext_ln27_373_fu_5680_p1));
 
-assign add_ln30_30_fu_9386_p2 = ($signed(sext_ln30_393_fu_9383_p1) + $signed(sext_ln30_389_fu_9379_p1));
+assign add_ln27_30_fu_9386_p2 = ($signed(sext_ln27_393_fu_9383_p1) + $signed(sext_ln27_389_fu_9379_p1));
 
-assign add_ln30_33_fu_8974_p2 = ($signed(grp_fu_9918_p4) + $signed(tmp360_cast_fu_8964_p1));
+assign add_ln27_33_fu_8974_p2 = ($signed(grp_fu_9918_p4) + $signed(tmp360_cast_fu_8964_p1));
 
-assign add_ln30_34_fu_8983_p2 = ($signed(sext_ln30_396_fu_8979_p1) + $signed(sext_ln30_395_fu_8971_p1));
+assign add_ln27_34_fu_8983_p2 = ($signed(sext_ln27_396_fu_8979_p1) + $signed(sext_ln27_395_fu_8971_p1));
 
-assign add_ln30_38_fu_9402_p2 = ($signed(grp_fu_10406_p4) + $signed(sext_ln30_398_fu_9399_p1));
+assign add_ln27_38_fu_9402_p2 = ($signed(grp_fu_10406_p4) + $signed(sext_ln27_398_fu_9399_p1));
 
-assign add_ln30_39_fu_9411_p2 = ($signed(sext_ln30_400_fu_9407_p1) + $signed(sext_ln30_397_fu_9396_p1));
+assign add_ln27_39_fu_9411_p2 = ($signed(sext_ln27_400_fu_9407_p1) + $signed(sext_ln27_397_fu_9396_p1));
 
-assign add_ln30_40_fu_9421_p2 = ($signed(sext_ln30_401_fu_9417_p1) + $signed(sext_ln30_394_fu_9392_p1));
+assign add_ln27_40_fu_9421_p2 = ($signed(sext_ln27_401_fu_9417_p1) + $signed(sext_ln27_394_fu_9392_p1));
 
-assign add_ln30_44_fu_9182_p2 = ($signed(sext_ln30_403_fu_9179_p1) + $signed(tmp378_cast_fu_9146_p1));
+assign add_ln27_44_fu_9182_p2 = ($signed(sext_ln27_403_fu_9179_p1) + $signed(tmp378_cast_fu_9146_p1));
 
-assign add_ln30_45_fu_9483_p2 = ($signed(sext_ln30_404_fu_9480_p1) + $signed(grp_fu_10417_p4));
+assign add_ln27_45_fu_9483_p2 = ($signed(sext_ln27_404_fu_9480_p1) + $signed(grp_fu_10417_p4));
 
-assign add_ln30_49_fu_9191_p2 = ($signed(grp_fu_10244_p4) + $signed(sext_ln30_405_fu_9188_p1));
+assign add_ln27_49_fu_9191_p2 = ($signed(grp_fu_10244_p4) + $signed(sext_ln27_405_fu_9188_p1));
 
-assign add_ln30_50_fu_9491_p2 = ($signed(sext_ln30_406_fu_9488_p1) + $signed(add_ln30_45_fu_9483_p2));
+assign add_ln27_50_fu_9491_p2 = ($signed(sext_ln27_406_fu_9488_p1) + $signed(add_ln27_45_fu_9483_p2));
 
-assign add_ln30_54_fu_9202_p2 = ($signed(sext_ln30_408_fu_9199_p1) + $signed(sext_ln30_407_fu_9196_p1));
+assign add_ln27_54_fu_9202_p2 = ($signed(sext_ln27_408_fu_9199_p1) + $signed(sext_ln27_407_fu_9196_p1));
 
-assign add_ln30_58_fu_9215_p2 = ($signed(grp_fu_10266_p4) + $signed(sext_ln30_410_fu_9212_p1));
+assign add_ln27_58_fu_9215_p2 = ($signed(grp_fu_10266_p4) + $signed(sext_ln27_410_fu_9212_p1));
 
-assign add_ln30_59_fu_9224_p2 = ($signed(sext_ln30_412_fu_9220_p1) + $signed(sext_ln30_409_fu_9208_p1));
+assign add_ln27_59_fu_9224_p2 = ($signed(sext_ln27_412_fu_9220_p1) + $signed(sext_ln27_409_fu_9208_p1));
 
-assign add_ln30_63_fu_9545_p2 = ($signed(sext_ln30_414_fu_9542_p1) + $signed(grp_fu_10428_p4));
+assign add_ln27_63_fu_9545_p2 = ($signed(sext_ln27_414_fu_9542_p1) + $signed(grp_fu_10428_p4));
 
-assign add_ln30_66_fu_9236_p2 = ($signed(sext_ln30_416_fu_9233_p1) + $signed(sext_ln30_415_fu_9230_p1));
+assign add_ln27_66_fu_9236_p2 = ($signed(sext_ln27_416_fu_9233_p1) + $signed(sext_ln27_415_fu_9230_p1));
 
-assign add_ln30_67_fu_9553_p2 = ($signed(sext_ln30_417_fu_9550_p1) + $signed(add_ln30_63_fu_9545_p2));
+assign add_ln27_67_fu_9553_p2 = ($signed(sext_ln27_417_fu_9550_p1) + $signed(add_ln27_63_fu_9545_p2));
 
-assign add_ln30_6_fu_9309_p2 = ($signed(grp_fu_10362_p4) + $signed(sext_ln30_376_fu_9306_p1));
+assign add_ln27_6_fu_9309_p2 = ($signed(grp_fu_10362_p4) + $signed(sext_ln27_376_fu_9306_p1));
 
-assign add_ln30_70_fu_9245_p2 = ($signed(sext_ln30_418_fu_9242_p1) + $signed(grp_fu_10298_p4));
+assign add_ln27_70_fu_9245_p2 = ($signed(sext_ln27_418_fu_9242_p1) + $signed(grp_fu_10298_p4));
 
-assign add_ln30_73_fu_8995_p2 = ($signed(sext_ln30_421_fu_8992_p1) + $signed(tmp192_fu_8910_p2));
+assign add_ln27_73_fu_8995_p2 = ($signed(sext_ln27_421_fu_8992_p1) + $signed(tmp192_fu_8910_p2));
 
-assign add_ln30_74_fu_9260_p2 = ($signed(sext_ln30_422_fu_9257_p1) + $signed(sext_ln30_420_fu_9254_p1));
+assign add_ln27_74_fu_9260_p2 = ($signed(sext_ln27_422_fu_9257_p1) + $signed(sext_ln27_420_fu_9254_p1));
 
-assign add_ln30_75_fu_9266_p2 = ($signed(add_ln30_74_fu_9260_p2) + $signed(sext_ln30_419_fu_9250_p1));
+assign add_ln27_75_fu_9266_p2 = ($signed(add_ln27_74_fu_9260_p2) + $signed(sext_ln27_419_fu_9250_p1));
 
-assign add_ln30_78_fu_9577_p2 = ($signed(sext_ln30_424_fu_9574_p1) + $signed(FIR_accu32_14_fu_9568_p2));
+assign add_ln27_78_fu_9577_p2 = ($signed(sext_ln27_424_fu_9574_p1) + $signed(FIR_accu32_14_fu_9568_p2));
 
-assign add_ln30_80_fu_9004_p2 = ($signed(sext_ln30_425_fu_9001_p1) + $signed(tmp196_fu_8938_p2));
+assign add_ln27_80_fu_9004_p2 = ($signed(sext_ln27_425_fu_9001_p1) + $signed(tmp196_fu_8938_p2));
 
-assign add_ln30_81_fu_9586_p2 = ($signed(sext_ln30_426_fu_9583_p1) + $signed(add_ln30_78_fu_9577_p2));
+assign add_ln27_81_fu_9586_p2 = ($signed(sext_ln27_426_fu_9583_p1) + $signed(add_ln27_78_fu_9577_p2));
 
-assign add_ln30_82_fu_5700_p2 = ($signed(tmp200_cast_fu_4920_p1) + $signed(tmp206_fu_4970_p2));
+assign add_ln27_82_fu_5700_p2 = ($signed(tmp200_cast_fu_4920_p1) + $signed(tmp206_fu_4970_p2));
 
-assign add_ln30_86_fu_9016_p2 = ($signed(sext_ln30_429_fu_9013_p1) + $signed(grp_fu_9681_p4));
+assign add_ln27_86_fu_9016_p2 = ($signed(sext_ln27_429_fu_9013_p1) + $signed(grp_fu_9681_p4));
 
-assign add_ln30_87_fu_9025_p2 = ($signed(sext_ln30_430_fu_9021_p1) + $signed(sext_ln30_428_fu_9010_p1));
+assign add_ln27_87_fu_9025_p2 = ($signed(sext_ln27_430_fu_9021_p1) + $signed(sext_ln27_428_fu_9010_p1));
 
-assign add_ln30_89_fu_9607_p2 = ($signed(FIR_accu32_16_fu_9601_p2) + $signed(tmp436_cast_fu_9538_p1));
+assign add_ln27_89_fu_9607_p2 = ($signed(FIR_accu32_16_fu_9601_p2) + $signed(tmp436_cast_fu_9538_p1));
 
-assign add_ln30_91_fu_9616_p2 = ($signed(sext_ln30_432_fu_9613_p1) + $signed(add_ln30_89_fu_9607_p2));
+assign add_ln27_91_fu_9616_p2 = ($signed(sext_ln27_432_fu_9613_p1) + $signed(add_ln27_89_fu_9607_p2));
 
-assign add_ln30_92_fu_5706_p2 = ($signed(tmp224_cast_fu_5078_p1) + $signed(tmp228_fu_5128_p2));
+assign add_ln27_92_fu_5706_p2 = ($signed(tmp224_cast_fu_5078_p1) + $signed(tmp228_fu_5128_p2));
 
-assign add_ln30_94_fu_9037_p2 = ($signed(sext_ln30_436_fu_9034_p1) + $signed(sext_ln30_433_fu_9031_p1));
+assign add_ln27_94_fu_9037_p2 = ($signed(sext_ln27_436_fu_9034_p1) + $signed(sext_ln27_433_fu_9031_p1));
 
-assign add_ln30_95_fu_9625_p2 = ($signed(sext_ln30_437_fu_9622_p1) + $signed(add_ln30_91_fu_9616_p2));
+assign add_ln27_95_fu_9625_p2 = ($signed(sext_ln27_437_fu_9622_p1) + $signed(add_ln27_91_fu_9616_p2));
 
-assign add_ln30_98_fu_9049_p2 = ($signed(sext_ln30_435_fu_9046_p1) + $signed(sext_ln30_434_fu_9043_p1));
+assign add_ln27_98_fu_9049_p2 = ($signed(sext_ln27_435_fu_9046_p1) + $signed(sext_ln27_434_fu_9043_p1));
 
-assign add_ln30_99_fu_5712_p2 = (tmp250_fu_5250_p2 + tmp254_fu_5298_p2);
+assign add_ln27_99_fu_5712_p2 = (tmp250_fu_5250_p2 + tmp254_fu_5298_p2);
 
-assign add_ln30_fu_5674_p2 = ($signed(sext_ln30_83_fu_1704_p1) + $signed(sext_ln30_52_fu_1460_p1));
+assign add_ln27_fu_5674_p2 = ($signed(sext_ln27_83_fu_1704_p1) + $signed(sext_ln27_52_fu_1460_p1));
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -4986,23 +4986,23 @@ assign grp_fu_10406_p2 = 26'd67108649;
 
 assign grp_fu_10417_p2 = 26'd67108703;
 
-assign grp_fu_10417_p3 = ($signed(FIR_accu32_9_fu_9431_p2) - $signed(sext_ln30_237_fu_9303_p1));
+assign grp_fu_10417_p3 = ($signed(FIR_accu32_9_fu_9431_p2) - $signed(sext_ln27_237_fu_9303_p1));
 
 assign grp_fu_10428_p2 = 26'd67108778;
 
-assign grp_fu_10428_p3 = ($signed(FIR_accu32_11_fu_9500_p2) - $signed(sext_ln30_268_fu_9477_p1));
+assign grp_fu_10428_p3 = ($signed(FIR_accu32_11_fu_9500_p2) - $signed(sext_ln27_268_fu_9477_p1));
 
-assign grp_fu_9659_p0 = ($signed(tmp35_fu_4058_p2) - $signed(sext_ln30_333_fu_3524_p1));
+assign grp_fu_9659_p0 = ($signed(tmp35_fu_4058_p2) - $signed(sext_ln27_333_fu_3524_p1));
 
 assign grp_fu_9659_p2 = 24'd27;
 
-assign grp_fu_9670_p0 = ($signed(tmp95_cast_fu_4396_p1) - $signed(sext_ln30_307_fu_3288_p1));
+assign grp_fu_9670_p0 = ($signed(tmp95_cast_fu_4396_p1) - $signed(sext_ln27_307_fu_3288_p1));
 
 assign grp_fu_9670_p2 = 26'd55;
 
 assign grp_fu_9681_p2 = 26'd38;
 
-assign grp_fu_9692_p0 = ($signed(tmp113_cast_fu_4464_p1) - $signed(sext_ln30_346_fu_3648_p1));
+assign grp_fu_9692_p0 = ($signed(tmp113_cast_fu_4464_p1) - $signed(sext_ln27_346_fu_3648_p1));
 
 assign grp_fu_9692_p2 = 24'd23;
 
@@ -5018,7 +5018,7 @@ assign grp_fu_9719_p2 = 25'd33554357;
 
 assign grp_fu_9729_p2 = 26'd67108774;
 
-assign grp_fu_9737_p0 = ($signed(tmp183_cast_fu_4818_p1) - $signed(sext_ln30_281_fu_3072_p1));
+assign grp_fu_9737_p0 = ($signed(tmp183_cast_fu_4818_p1) - $signed(sext_ln27_281_fu_3072_p1));
 
 assign grp_fu_9737_p2 = 26'd77;
 
@@ -5028,19 +5028,19 @@ assign grp_fu_9737_p30 = ($signed(p_shl579_fu_8469_p1) + $signed(p_shl580_fu_848
 
 assign grp_fu_9747_p2 = 25'd33554388;
 
-assign grp_fu_9758_p0 = ($signed(tmp237_cast_fu_5162_p1) + $signed(sext_ln23_fu_3212_p1));
+assign grp_fu_9758_p0 = ($signed(tmp237_cast_fu_5162_p1) + $signed(sext_ln20_fu_3212_p1));
 
 assign grp_fu_9758_p2 = 24'd25;
 
 assign grp_fu_9758_p3 = ($signed(p_neg593_fu_8305_p2) - $signed(tmp45_cast_fu_8291_p1));
 
-assign grp_fu_9769_p0 = ($signed(tmp257_cast_fu_5310_p1) + $signed(sext_ln30_342_fu_3616_p1));
+assign grp_fu_9769_p0 = ($signed(tmp257_cast_fu_5310_p1) + $signed(sext_ln27_342_fu_3616_p1));
 
 assign grp_fu_9769_p2 = 23'd13;
 
 assign grp_fu_9769_p3 = ($signed(p_shl583_fu_8409_p1) - $signed(tmp139_cast_fu_8399_p1));
 
-assign grp_fu_9780_p0 = ($signed(tmp269_cast_fu_5374_p1) + $signed(sext_ln23_4_fu_3500_p1));
+assign grp_fu_9780_p0 = ($signed(tmp269_cast_fu_5374_p1) + $signed(sext_ln20_4_fu_3500_p1));
 
 assign grp_fu_9780_p2 = 22'd11;
 
@@ -5266,1441 +5266,1441 @@ assign p_shl595_fu_3958_p1 = $signed(tmp_3_fu_3950_p3);
 
 assign p_shl_fu_9528_p1 = $signed(tmp_58_fu_9521_p3);
 
-assign sext_ln23_1_fu_3220_p0 = p_ZL12H_filter_FIR_85;
+assign sext_ln20_1_fu_3220_p0 = p_ZL12H_filter_FIR_85;
 
-assign sext_ln23_1_fu_3220_p1 = sext_ln23_1_fu_3220_p0;
+assign sext_ln20_1_fu_3220_p1 = sext_ln20_1_fu_3220_p0;
 
-assign sext_ln23_2_fu_3368_p0 = p_ZL12H_filter_FIR_66;
+assign sext_ln20_2_fu_3368_p0 = p_ZL12H_filter_FIR_66;
 
-assign sext_ln23_2_fu_3368_p1 = sext_ln23_2_fu_3368_p0;
+assign sext_ln20_2_fu_3368_p1 = sext_ln20_2_fu_3368_p0;
 
-assign sext_ln23_3_fu_3376_p0 = p_ZL12H_filter_FIR_65;
+assign sext_ln20_3_fu_3376_p0 = p_ZL12H_filter_FIR_65;
 
-assign sext_ln23_3_fu_3376_p1 = sext_ln23_3_fu_3376_p0;
+assign sext_ln20_3_fu_3376_p1 = sext_ln20_3_fu_3376_p0;
 
-assign sext_ln23_4_fu_3500_p0 = p_ZL12H_filter_FIR_49;
+assign sext_ln20_4_fu_3500_p0 = p_ZL12H_filter_FIR_49;
 
-assign sext_ln23_4_fu_3500_p1 = sext_ln23_4_fu_3500_p0;
+assign sext_ln20_4_fu_3500_p1 = sext_ln20_4_fu_3500_p0;
 
-assign sext_ln23_5_fu_3508_p0 = p_ZL12H_filter_FIR_48;
+assign sext_ln20_5_fu_3508_p0 = p_ZL12H_filter_FIR_48;
 
-assign sext_ln23_5_fu_3508_p1 = sext_ln23_5_fu_3508_p0;
+assign sext_ln20_5_fu_3508_p1 = sext_ln20_5_fu_3508_p0;
 
-assign sext_ln23_6_fu_3600_p0 = p_ZL12H_filter_FIR_36;
+assign sext_ln20_6_fu_3600_p0 = p_ZL12H_filter_FIR_36;
 
-assign sext_ln23_7_fu_3608_p0 = p_ZL12H_filter_FIR_35;
+assign sext_ln20_7_fu_3608_p0 = p_ZL12H_filter_FIR_35;
 
-assign sext_ln23_7_fu_3608_p1 = sext_ln23_7_fu_3608_p0;
+assign sext_ln20_7_fu_3608_p1 = sext_ln20_7_fu_3608_p0;
 
-assign sext_ln23_fu_3212_p0 = p_ZL12H_filter_FIR_86;
+assign sext_ln20_fu_3212_p0 = p_ZL12H_filter_FIR_86;
 
-assign sext_ln23_fu_3212_p1 = sext_ln23_fu_3212_p0;
+assign sext_ln20_fu_3212_p1 = sext_ln20_fu_3212_p0;
 
-assign sext_ln30_100_fu_1840_p0 = p_ZL12H_filter_FIR_286;
+assign sext_ln27_100_fu_1840_p0 = p_ZL12H_filter_FIR_286;
 
-assign sext_ln30_100_fu_1840_p1 = sext_ln30_100_fu_1840_p0;
+assign sext_ln27_100_fu_1840_p1 = sext_ln27_100_fu_1840_p0;
 
-assign sext_ln30_102_fu_1852_p0 = p_ZL12H_filter_FIR_284;
+assign sext_ln27_102_fu_1852_p0 = p_ZL12H_filter_FIR_284;
 
-assign sext_ln30_102_fu_1852_p1 = sext_ln30_102_fu_1852_p0;
+assign sext_ln27_102_fu_1852_p1 = sext_ln27_102_fu_1852_p0;
 
-assign sext_ln30_103_fu_1860_p0 = p_ZL12H_filter_FIR_283;
+assign sext_ln27_103_fu_1860_p0 = p_ZL12H_filter_FIR_283;
 
-assign sext_ln30_103_fu_1860_p1 = sext_ln30_103_fu_1860_p0;
+assign sext_ln27_103_fu_1860_p1 = sext_ln27_103_fu_1860_p0;
 
-assign sext_ln30_104_fu_1868_p0 = p_ZL12H_filter_FIR_282;
+assign sext_ln27_104_fu_1868_p0 = p_ZL12H_filter_FIR_282;
 
-assign sext_ln30_104_fu_1868_p1 = sext_ln30_104_fu_1868_p0;
+assign sext_ln27_104_fu_1868_p1 = sext_ln27_104_fu_1868_p0;
 
-assign sext_ln30_105_fu_1876_p0 = p_ZL12H_filter_FIR_281;
+assign sext_ln27_105_fu_1876_p0 = p_ZL12H_filter_FIR_281;
 
-assign sext_ln30_105_fu_1876_p1 = sext_ln30_105_fu_1876_p0;
+assign sext_ln27_105_fu_1876_p1 = sext_ln27_105_fu_1876_p0;
 
-assign sext_ln30_106_fu_1884_p0 = p_ZL12H_filter_FIR_280;
+assign sext_ln27_106_fu_1884_p0 = p_ZL12H_filter_FIR_280;
 
-assign sext_ln30_106_fu_1884_p1 = sext_ln30_106_fu_1884_p0;
+assign sext_ln27_106_fu_1884_p1 = sext_ln27_106_fu_1884_p0;
 
-assign sext_ln30_107_fu_1892_p0 = p_ZL12H_filter_FIR_279;
+assign sext_ln27_107_fu_1892_p0 = p_ZL12H_filter_FIR_279;
 
-assign sext_ln30_107_fu_1892_p1 = sext_ln30_107_fu_1892_p0;
+assign sext_ln27_107_fu_1892_p1 = sext_ln27_107_fu_1892_p0;
 
-assign sext_ln30_109_fu_1904_p0 = p_ZL12H_filter_FIR_277;
+assign sext_ln27_109_fu_1904_p0 = p_ZL12H_filter_FIR_277;
 
-assign sext_ln30_10_fu_1120_p0 = p_ZL12H_filter_FIR_381;
+assign sext_ln27_10_fu_1120_p0 = p_ZL12H_filter_FIR_381;
 
-assign sext_ln30_10_fu_1120_p1 = sext_ln30_10_fu_1120_p0;
+assign sext_ln27_10_fu_1120_p1 = sext_ln27_10_fu_1120_p0;
 
-assign sext_ln30_111_fu_1916_p0 = p_ZL12H_filter_FIR_275;
+assign sext_ln27_111_fu_1916_p0 = p_ZL12H_filter_FIR_275;
 
-assign sext_ln30_112_fu_1924_p0 = p_ZL12H_filter_FIR_274;
+assign sext_ln27_112_fu_1924_p0 = p_ZL12H_filter_FIR_274;
 
-assign sext_ln30_112_fu_1924_p1 = sext_ln30_112_fu_1924_p0;
+assign sext_ln27_112_fu_1924_p1 = sext_ln27_112_fu_1924_p0;
 
-assign sext_ln30_113_fu_1932_p0 = p_ZL12H_filter_FIR_273;
+assign sext_ln27_113_fu_1932_p0 = p_ZL12H_filter_FIR_273;
 
-assign sext_ln30_113_fu_1932_p1 = sext_ln30_113_fu_1932_p0;
+assign sext_ln27_113_fu_1932_p1 = sext_ln27_113_fu_1932_p0;
 
-assign sext_ln30_114_fu_1940_p0 = p_ZL12H_filter_FIR_272;
+assign sext_ln27_114_fu_1940_p0 = p_ZL12H_filter_FIR_272;
 
-assign sext_ln30_114_fu_1940_p1 = sext_ln30_114_fu_1940_p0;
+assign sext_ln27_114_fu_1940_p1 = sext_ln27_114_fu_1940_p0;
 
-assign sext_ln30_115_fu_1948_p0 = p_ZL12H_filter_FIR_271;
+assign sext_ln27_115_fu_1948_p0 = p_ZL12H_filter_FIR_271;
 
-assign sext_ln30_115_fu_1948_p1 = sext_ln30_115_fu_1948_p0;
+assign sext_ln27_115_fu_1948_p1 = sext_ln27_115_fu_1948_p0;
 
-assign sext_ln30_116_fu_1956_p0 = p_ZL12H_filter_FIR_270;
+assign sext_ln27_116_fu_1956_p0 = p_ZL12H_filter_FIR_270;
 
-assign sext_ln30_116_fu_1956_p1 = sext_ln30_116_fu_1956_p0;
+assign sext_ln27_116_fu_1956_p1 = sext_ln27_116_fu_1956_p0;
 
-assign sext_ln30_117_fu_1964_p0 = p_ZL12H_filter_FIR_269;
+assign sext_ln27_117_fu_1964_p0 = p_ZL12H_filter_FIR_269;
 
-assign sext_ln30_119_fu_1976_p0 = p_ZL12H_filter_FIR_267;
+assign sext_ln27_119_fu_1976_p0 = p_ZL12H_filter_FIR_267;
 
-assign sext_ln30_11_fu_1128_p0 = p_ZL12H_filter_FIR_380;
+assign sext_ln27_11_fu_1128_p0 = p_ZL12H_filter_FIR_380;
 
-assign sext_ln30_11_fu_1128_p1 = sext_ln30_11_fu_1128_p0;
+assign sext_ln27_11_fu_1128_p1 = sext_ln27_11_fu_1128_p0;
 
-assign sext_ln30_120_fu_1984_p0 = p_ZL12H_filter_FIR_266;
+assign sext_ln27_120_fu_1984_p0 = p_ZL12H_filter_FIR_266;
 
-assign sext_ln30_120_fu_1984_p1 = sext_ln30_120_fu_1984_p0;
+assign sext_ln27_120_fu_1984_p1 = sext_ln27_120_fu_1984_p0;
 
-assign sext_ln30_121_fu_1992_p0 = p_ZL12H_filter_FIR_265;
+assign sext_ln27_121_fu_1992_p0 = p_ZL12H_filter_FIR_265;
 
-assign sext_ln30_121_fu_1992_p1 = sext_ln30_121_fu_1992_p0;
+assign sext_ln27_121_fu_1992_p1 = sext_ln27_121_fu_1992_p0;
 
-assign sext_ln30_122_fu_2000_p0 = p_ZL12H_filter_FIR_264;
+assign sext_ln27_122_fu_2000_p0 = p_ZL12H_filter_FIR_264;
 
-assign sext_ln30_122_fu_2000_p1 = sext_ln30_122_fu_2000_p0;
+assign sext_ln27_122_fu_2000_p1 = sext_ln27_122_fu_2000_p0;
 
-assign sext_ln30_123_fu_2008_p0 = p_ZL12H_filter_FIR_263;
+assign sext_ln27_123_fu_2008_p0 = p_ZL12H_filter_FIR_263;
 
-assign sext_ln30_124_fu_2016_p0 = p_ZL12H_filter_FIR_262;
+assign sext_ln27_124_fu_2016_p0 = p_ZL12H_filter_FIR_262;
 
-assign sext_ln30_124_fu_2016_p1 = sext_ln30_124_fu_2016_p0;
+assign sext_ln27_124_fu_2016_p1 = sext_ln27_124_fu_2016_p0;
 
-assign sext_ln30_126_fu_2028_p0 = p_ZL12H_filter_FIR_260;
+assign sext_ln27_126_fu_2028_p0 = p_ZL12H_filter_FIR_260;
 
-assign sext_ln30_126_fu_2028_p1 = sext_ln30_126_fu_2028_p0;
+assign sext_ln27_126_fu_2028_p1 = sext_ln27_126_fu_2028_p0;
 
-assign sext_ln30_127_fu_2036_p0 = p_ZL12H_filter_FIR_259;
+assign sext_ln27_127_fu_2036_p0 = p_ZL12H_filter_FIR_259;
 
-assign sext_ln30_128_fu_2044_p0 = p_ZL12H_filter_FIR_258;
+assign sext_ln27_128_fu_2044_p0 = p_ZL12H_filter_FIR_258;
 
-assign sext_ln30_128_fu_2044_p1 = sext_ln30_128_fu_2044_p0;
+assign sext_ln27_128_fu_2044_p1 = sext_ln27_128_fu_2044_p0;
 
-assign sext_ln30_129_fu_2052_p0 = p_ZL12H_filter_FIR_257;
+assign sext_ln27_129_fu_2052_p0 = p_ZL12H_filter_FIR_257;
 
-assign sext_ln30_129_fu_2052_p1 = sext_ln30_129_fu_2052_p0;
+assign sext_ln27_129_fu_2052_p1 = sext_ln27_129_fu_2052_p0;
 
-assign sext_ln30_12_fu_1136_p0 = p_ZL12H_filter_FIR_379;
+assign sext_ln27_12_fu_1136_p0 = p_ZL12H_filter_FIR_379;
 
-assign sext_ln30_12_fu_1136_p1 = sext_ln30_12_fu_1136_p0;
+assign sext_ln27_12_fu_1136_p1 = sext_ln27_12_fu_1136_p0;
 
-assign sext_ln30_130_fu_2060_p0 = p_ZL12H_filter_FIR_256;
+assign sext_ln27_130_fu_2060_p0 = p_ZL12H_filter_FIR_256;
 
-assign sext_ln30_130_fu_2060_p1 = sext_ln30_130_fu_2060_p0;
+assign sext_ln27_130_fu_2060_p1 = sext_ln27_130_fu_2060_p0;
 
-assign sext_ln30_131_fu_2068_p0 = p_ZL12H_filter_FIR_255;
+assign sext_ln27_131_fu_2068_p0 = p_ZL12H_filter_FIR_255;
 
-assign sext_ln30_132_fu_2076_p0 = p_ZL12H_filter_FIR_254;
+assign sext_ln27_132_fu_2076_p0 = p_ZL12H_filter_FIR_254;
 
-assign sext_ln30_132_fu_2076_p1 = sext_ln30_132_fu_2076_p0;
+assign sext_ln27_132_fu_2076_p1 = sext_ln27_132_fu_2076_p0;
 
-assign sext_ln30_133_fu_2084_p0 = p_ZL12H_filter_FIR_253;
+assign sext_ln27_133_fu_2084_p0 = p_ZL12H_filter_FIR_253;
 
-assign sext_ln30_133_fu_2084_p1 = sext_ln30_133_fu_2084_p0;
+assign sext_ln27_133_fu_2084_p1 = sext_ln27_133_fu_2084_p0;
 
-assign sext_ln30_134_fu_2092_p0 = p_ZL12H_filter_FIR_252;
+assign sext_ln27_134_fu_2092_p0 = p_ZL12H_filter_FIR_252;
 
-assign sext_ln30_134_fu_2092_p1 = sext_ln30_134_fu_2092_p0;
+assign sext_ln27_134_fu_2092_p1 = sext_ln27_134_fu_2092_p0;
 
-assign sext_ln30_136_fu_2104_p0 = p_ZL12H_filter_FIR_250;
+assign sext_ln27_136_fu_2104_p0 = p_ZL12H_filter_FIR_250;
 
-assign sext_ln30_136_fu_2104_p1 = sext_ln30_136_fu_2104_p0;
+assign sext_ln27_136_fu_2104_p1 = sext_ln27_136_fu_2104_p0;
 
-assign sext_ln30_138_fu_2116_p0 = p_ZL12H_filter_FIR_248;
+assign sext_ln27_138_fu_2116_p0 = p_ZL12H_filter_FIR_248;
 
-assign sext_ln30_138_fu_2116_p1 = sext_ln30_138_fu_2116_p0;
+assign sext_ln27_138_fu_2116_p1 = sext_ln27_138_fu_2116_p0;
 
-assign sext_ln30_139_fu_2124_p0 = p_ZL12H_filter_FIR_247;
+assign sext_ln27_139_fu_2124_p0 = p_ZL12H_filter_FIR_247;
 
-assign sext_ln30_13_fu_1144_p0 = p_ZL12H_filter_FIR_378;
+assign sext_ln27_13_fu_1144_p0 = p_ZL12H_filter_FIR_378;
 
-assign sext_ln30_13_fu_1144_p1 = sext_ln30_13_fu_1144_p0;
+assign sext_ln27_13_fu_1144_p1 = sext_ln27_13_fu_1144_p0;
 
-assign sext_ln30_141_fu_2136_p0 = p_ZL12H_filter_FIR_245;
+assign sext_ln27_141_fu_2136_p0 = p_ZL12H_filter_FIR_245;
 
-assign sext_ln30_142_fu_2144_p0 = p_ZL12H_filter_FIR_244;
+assign sext_ln27_142_fu_2144_p0 = p_ZL12H_filter_FIR_244;
 
-assign sext_ln30_142_fu_2144_p1 = sext_ln30_142_fu_2144_p0;
+assign sext_ln27_142_fu_2144_p1 = sext_ln27_142_fu_2144_p0;
 
-assign sext_ln30_143_fu_2152_p0 = p_ZL12H_filter_FIR_243;
+assign sext_ln27_143_fu_2152_p0 = p_ZL12H_filter_FIR_243;
 
-assign sext_ln30_143_fu_2152_p1 = sext_ln30_143_fu_2152_p0;
+assign sext_ln27_143_fu_2152_p1 = sext_ln27_143_fu_2152_p0;
 
-assign sext_ln30_144_fu_2160_p0 = p_ZL12H_filter_FIR_242;
+assign sext_ln27_144_fu_2160_p0 = p_ZL12H_filter_FIR_242;
 
-assign sext_ln30_144_fu_2160_p1 = sext_ln30_144_fu_2160_p0;
+assign sext_ln27_144_fu_2160_p1 = sext_ln27_144_fu_2160_p0;
 
-assign sext_ln30_145_fu_2168_p0 = p_ZL12H_filter_FIR_241;
+assign sext_ln27_145_fu_2168_p0 = p_ZL12H_filter_FIR_241;
 
-assign sext_ln30_145_fu_2168_p1 = sext_ln30_145_fu_2168_p0;
+assign sext_ln27_145_fu_2168_p1 = sext_ln27_145_fu_2168_p0;
 
-assign sext_ln30_148_fu_2184_p0 = p_ZL12H_filter_FIR_238;
+assign sext_ln27_148_fu_2184_p0 = p_ZL12H_filter_FIR_238;
 
-assign sext_ln30_14_fu_1152_p0 = p_ZL12H_filter_FIR_377;
+assign sext_ln27_14_fu_1152_p0 = p_ZL12H_filter_FIR_377;
 
-assign sext_ln30_14_fu_1152_p1 = sext_ln30_14_fu_1152_p0;
+assign sext_ln27_14_fu_1152_p1 = sext_ln27_14_fu_1152_p0;
 
-assign sext_ln30_150_fu_2196_p0 = p_ZL12H_filter_FIR_236;
+assign sext_ln27_150_fu_2196_p0 = p_ZL12H_filter_FIR_236;
 
-assign sext_ln30_150_fu_2196_p1 = sext_ln30_150_fu_2196_p0;
+assign sext_ln27_150_fu_2196_p1 = sext_ln27_150_fu_2196_p0;
 
-assign sext_ln30_151_fu_2204_p0 = p_ZL12H_filter_FIR_235;
+assign sext_ln27_151_fu_2204_p0 = p_ZL12H_filter_FIR_235;
 
-assign sext_ln30_151_fu_2204_p1 = sext_ln30_151_fu_2204_p0;
+assign sext_ln27_151_fu_2204_p1 = sext_ln27_151_fu_2204_p0;
 
-assign sext_ln30_152_fu_2212_p0 = p_ZL12H_filter_FIR_234;
+assign sext_ln27_152_fu_2212_p0 = p_ZL12H_filter_FIR_234;
 
-assign sext_ln30_152_fu_2212_p1 = sext_ln30_152_fu_2212_p0;
+assign sext_ln27_152_fu_2212_p1 = sext_ln27_152_fu_2212_p0;
 
-assign sext_ln30_153_fu_2220_p0 = p_ZL12H_filter_FIR_233;
+assign sext_ln27_153_fu_2220_p0 = p_ZL12H_filter_FIR_233;
 
-assign sext_ln30_153_fu_2220_p1 = sext_ln30_153_fu_2220_p0;
+assign sext_ln27_153_fu_2220_p1 = sext_ln27_153_fu_2220_p0;
 
-assign sext_ln30_154_fu_2228_p0 = p_ZL12H_filter_FIR_232;
+assign sext_ln27_154_fu_2228_p0 = p_ZL12H_filter_FIR_232;
 
-assign sext_ln30_155_fu_2236_p0 = p_ZL12H_filter_FIR_231;
+assign sext_ln27_155_fu_2236_p0 = p_ZL12H_filter_FIR_231;
 
-assign sext_ln30_156_fu_2244_p0 = p_ZL12H_filter_FIR_230;
+assign sext_ln27_156_fu_2244_p0 = p_ZL12H_filter_FIR_230;
 
-assign sext_ln30_156_fu_2244_p1 = sext_ln30_156_fu_2244_p0;
+assign sext_ln27_156_fu_2244_p1 = sext_ln27_156_fu_2244_p0;
 
-assign sext_ln30_157_fu_2252_p0 = p_ZL12H_filter_FIR_229;
+assign sext_ln27_157_fu_2252_p0 = p_ZL12H_filter_FIR_229;
 
-assign sext_ln30_157_fu_2252_p1 = sext_ln30_157_fu_2252_p0;
+assign sext_ln27_157_fu_2252_p1 = sext_ln27_157_fu_2252_p0;
 
-assign sext_ln30_158_fu_2260_p0 = p_ZL12H_filter_FIR_228;
+assign sext_ln27_158_fu_2260_p0 = p_ZL12H_filter_FIR_228;
 
-assign sext_ln30_159_fu_2268_p0 = p_ZL12H_filter_FIR_227;
+assign sext_ln27_159_fu_2268_p0 = p_ZL12H_filter_FIR_227;
 
-assign sext_ln30_159_fu_2268_p1 = sext_ln30_159_fu_2268_p0;
+assign sext_ln27_159_fu_2268_p1 = sext_ln27_159_fu_2268_p0;
 
-assign sext_ln30_15_fu_1160_p0 = p_ZL12H_filter_FIR_376;
+assign sext_ln27_15_fu_1160_p0 = p_ZL12H_filter_FIR_376;
 
-assign sext_ln30_15_fu_1160_p1 = sext_ln30_15_fu_1160_p0;
+assign sext_ln27_15_fu_1160_p1 = sext_ln27_15_fu_1160_p0;
 
-assign sext_ln30_160_fu_2276_p0 = p_ZL12H_filter_FIR_226;
+assign sext_ln27_160_fu_2276_p0 = p_ZL12H_filter_FIR_226;
 
-assign sext_ln30_160_fu_2276_p1 = sext_ln30_160_fu_2276_p0;
+assign sext_ln27_160_fu_2276_p1 = sext_ln27_160_fu_2276_p0;
 
-assign sext_ln30_161_fu_2284_p0 = p_ZL12H_filter_FIR_225;
+assign sext_ln27_161_fu_2284_p0 = p_ZL12H_filter_FIR_225;
 
-assign sext_ln30_164_fu_2300_p0 = p_ZL12H_filter_FIR_222;
+assign sext_ln27_164_fu_2300_p0 = p_ZL12H_filter_FIR_222;
 
-assign sext_ln30_165_fu_2308_p0 = p_ZL12H_filter_FIR_221;
+assign sext_ln27_165_fu_2308_p0 = p_ZL12H_filter_FIR_221;
 
-assign sext_ln30_167_fu_2320_p0 = p_ZL12H_filter_FIR_219;
+assign sext_ln27_167_fu_2320_p0 = p_ZL12H_filter_FIR_219;
 
-assign sext_ln30_167_fu_2320_p1 = sext_ln30_167_fu_2320_p0;
+assign sext_ln27_167_fu_2320_p1 = sext_ln27_167_fu_2320_p0;
 
-assign sext_ln30_16_fu_1168_p0 = p_ZL12H_filter_FIR_375;
+assign sext_ln27_16_fu_1168_p0 = p_ZL12H_filter_FIR_375;
 
-assign sext_ln30_16_fu_1168_p1 = sext_ln30_16_fu_1168_p0;
+assign sext_ln27_16_fu_1168_p1 = sext_ln27_16_fu_1168_p0;
 
-assign sext_ln30_170_fu_2336_p0 = p_ZL12H_filter_FIR_216;
+assign sext_ln27_170_fu_2336_p0 = p_ZL12H_filter_FIR_216;
 
-assign sext_ln30_171_fu_2344_p0 = p_ZL12H_filter_FIR_215;
+assign sext_ln27_171_fu_2344_p0 = p_ZL12H_filter_FIR_215;
 
-assign sext_ln30_171_fu_2344_p1 = sext_ln30_171_fu_2344_p0;
+assign sext_ln27_171_fu_2344_p1 = sext_ln27_171_fu_2344_p0;
 
-assign sext_ln30_172_fu_2352_p0 = p_ZL12H_filter_FIR_214;
+assign sext_ln27_172_fu_2352_p0 = p_ZL12H_filter_FIR_214;
 
-assign sext_ln30_174_fu_2364_p0 = p_ZL12H_filter_FIR_212;
+assign sext_ln27_174_fu_2364_p0 = p_ZL12H_filter_FIR_212;
 
-assign sext_ln30_175_fu_2372_p0 = p_ZL12H_filter_FIR_211;
+assign sext_ln27_175_fu_2372_p0 = p_ZL12H_filter_FIR_211;
 
-assign sext_ln30_175_fu_2372_p1 = sext_ln30_175_fu_2372_p0;
+assign sext_ln27_175_fu_2372_p1 = sext_ln27_175_fu_2372_p0;
 
-assign sext_ln30_177_fu_2384_p0 = p_ZL12H_filter_FIR_209;
+assign sext_ln27_177_fu_2384_p0 = p_ZL12H_filter_FIR_209;
 
-assign sext_ln30_17_fu_1176_p0 = p_ZL12H_filter_FIR_373;
+assign sext_ln27_17_fu_1176_p0 = p_ZL12H_filter_FIR_373;
 
-assign sext_ln30_17_fu_1176_p1 = sext_ln30_17_fu_1176_p0;
+assign sext_ln27_17_fu_1176_p1 = sext_ln27_17_fu_1176_p0;
 
-assign sext_ln30_180_fu_2400_p0 = p_ZL12H_filter_FIR_206;
+assign sext_ln27_180_fu_2400_p0 = p_ZL12H_filter_FIR_206;
 
-assign sext_ln30_181_fu_2408_p0 = p_ZL12H_filter_FIR_205;
+assign sext_ln27_181_fu_2408_p0 = p_ZL12H_filter_FIR_205;
 
-assign sext_ln30_185_fu_2428_p0 = p_ZL12H_filter_FIR_201;
+assign sext_ln27_185_fu_2428_p0 = p_ZL12H_filter_FIR_201;
 
-assign sext_ln30_187_fu_2440_p0 = p_ZL12H_filter_FIR_199;
+assign sext_ln27_187_fu_2440_p0 = p_ZL12H_filter_FIR_199;
 
-assign sext_ln30_18_fu_1184_p0 = p_ZL12H_filter_FIR_372;
+assign sext_ln27_18_fu_1184_p0 = p_ZL12H_filter_FIR_372;
 
-assign sext_ln30_18_fu_1184_p1 = sext_ln30_18_fu_1184_p0;
+assign sext_ln27_18_fu_1184_p1 = sext_ln27_18_fu_1184_p0;
 
-assign sext_ln30_190_fu_2456_p0 = p_ZL12H_filter_FIR_196;
+assign sext_ln27_190_fu_2456_p0 = p_ZL12H_filter_FIR_196;
 
-assign sext_ln30_191_fu_2464_p0 = p_ZL12H_filter_FIR_195;
+assign sext_ln27_191_fu_2464_p0 = p_ZL12H_filter_FIR_195;
 
-assign sext_ln30_194_fu_2480_p0 = p_ZL12H_filter_FIR_192;
+assign sext_ln27_194_fu_2480_p0 = p_ZL12H_filter_FIR_192;
 
-assign sext_ln30_196_fu_2492_p0 = p_ZL12H_filter_FIR_190;
+assign sext_ln27_196_fu_2492_p0 = p_ZL12H_filter_FIR_190;
 
-assign sext_ln30_19_fu_1192_p0 = p_ZL12H_filter_FIR_371;
+assign sext_ln27_19_fu_1192_p0 = p_ZL12H_filter_FIR_371;
 
-assign sext_ln30_19_fu_1192_p1 = sext_ln30_19_fu_1192_p0;
+assign sext_ln27_19_fu_1192_p1 = sext_ln27_19_fu_1192_p0;
 
-assign sext_ln30_1_fu_1048_p0 = p_ZL12H_filter_FIR_390;
+assign sext_ln27_1_fu_1048_p0 = p_ZL12H_filter_FIR_390;
 
-assign sext_ln30_1_fu_1048_p1 = sext_ln30_1_fu_1048_p0;
+assign sext_ln27_1_fu_1048_p1 = sext_ln27_1_fu_1048_p0;
 
-assign sext_ln30_200_fu_2512_p0 = p_ZL12H_filter_FIR_186;
+assign sext_ln27_200_fu_2512_p0 = p_ZL12H_filter_FIR_186;
 
-assign sext_ln30_201_fu_2520_p0 = p_ZL12H_filter_FIR_185;
+assign sext_ln27_201_fu_2520_p0 = p_ZL12H_filter_FIR_185;
 
-assign sext_ln30_204_fu_2536_p0 = p_ZL12H_filter_FIR_182;
+assign sext_ln27_204_fu_2536_p0 = p_ZL12H_filter_FIR_182;
 
-assign sext_ln30_206_fu_2548_p0 = p_ZL12H_filter_FIR_180;
+assign sext_ln27_206_fu_2548_p0 = p_ZL12H_filter_FIR_180;
 
-assign sext_ln30_206_fu_2548_p1 = sext_ln30_206_fu_2548_p0;
+assign sext_ln27_206_fu_2548_p1 = sext_ln27_206_fu_2548_p0;
 
-assign sext_ln30_207_fu_2556_p0 = p_ZL12H_filter_FIR_179;
+assign sext_ln27_207_fu_2556_p0 = p_ZL12H_filter_FIR_179;
 
-assign sext_ln30_209_fu_2568_p0 = p_ZL12H_filter_FIR_177;
+assign sext_ln27_209_fu_2568_p0 = p_ZL12H_filter_FIR_177;
 
-assign sext_ln30_20_fu_1200_p0 = p_ZL12H_filter_FIR_370;
+assign sext_ln27_20_fu_1200_p0 = p_ZL12H_filter_FIR_370;
 
-assign sext_ln30_20_fu_1200_p1 = sext_ln30_20_fu_1200_p0;
+assign sext_ln27_20_fu_1200_p1 = sext_ln27_20_fu_1200_p0;
 
-assign sext_ln30_210_fu_2576_p0 = p_ZL12H_filter_FIR_176;
+assign sext_ln27_210_fu_2576_p0 = p_ZL12H_filter_FIR_176;
 
-assign sext_ln30_210_fu_2576_p1 = sext_ln30_210_fu_2576_p0;
+assign sext_ln27_210_fu_2576_p1 = sext_ln27_210_fu_2576_p0;
 
-assign sext_ln30_211_fu_2584_p0 = p_ZL12H_filter_FIR_175;
+assign sext_ln27_211_fu_2584_p0 = p_ZL12H_filter_FIR_175;
 
-assign sext_ln30_214_fu_2600_p0 = p_ZL12H_filter_FIR_172;
+assign sext_ln27_214_fu_2600_p0 = p_ZL12H_filter_FIR_172;
 
-assign sext_ln30_214_fu_2600_p1 = sext_ln30_214_fu_2600_p0;
+assign sext_ln27_214_fu_2600_p1 = sext_ln27_214_fu_2600_p0;
 
-assign sext_ln30_216_fu_2612_p0 = p_ZL12H_filter_FIR_170;
+assign sext_ln27_216_fu_2612_p0 = p_ZL12H_filter_FIR_170;
 
-assign sext_ln30_217_fu_2620_p0 = p_ZL12H_filter_FIR_169;
+assign sext_ln27_217_fu_2620_p0 = p_ZL12H_filter_FIR_169;
 
-assign sext_ln30_220_fu_2636_p0 = p_ZL12H_filter_FIR_166;
+assign sext_ln27_220_fu_2636_p0 = p_ZL12H_filter_FIR_166;
 
-assign sext_ln30_221_fu_2644_p0 = p_ZL12H_filter_FIR_165;
+assign sext_ln27_221_fu_2644_p0 = p_ZL12H_filter_FIR_165;
 
-assign sext_ln30_221_fu_2644_p1 = sext_ln30_221_fu_2644_p0;
+assign sext_ln27_221_fu_2644_p1 = sext_ln27_221_fu_2644_p0;
 
-assign sext_ln30_222_fu_2652_p0 = p_ZL12H_filter_FIR_164;
+assign sext_ln27_222_fu_2652_p0 = p_ZL12H_filter_FIR_164;
 
-assign sext_ln30_222_fu_2652_p1 = sext_ln30_222_fu_2652_p0;
+assign sext_ln27_222_fu_2652_p1 = sext_ln27_222_fu_2652_p0;
 
-assign sext_ln30_223_fu_2660_p0 = p_ZL12H_filter_FIR_163;
+assign sext_ln27_223_fu_2660_p0 = p_ZL12H_filter_FIR_163;
 
-assign sext_ln30_224_fu_2668_p0 = p_ZL12H_filter_FIR_162;
+assign sext_ln27_224_fu_2668_p0 = p_ZL12H_filter_FIR_162;
 
-assign sext_ln30_224_fu_2668_p1 = sext_ln30_224_fu_2668_p0;
+assign sext_ln27_224_fu_2668_p1 = sext_ln27_224_fu_2668_p0;
 
-assign sext_ln30_225_fu_2676_p0 = p_ZL12H_filter_FIR_161;
+assign sext_ln27_225_fu_2676_p0 = p_ZL12H_filter_FIR_161;
 
-assign sext_ln30_225_fu_2676_p1 = sext_ln30_225_fu_2676_p0;
+assign sext_ln27_225_fu_2676_p1 = sext_ln27_225_fu_2676_p0;
 
-assign sext_ln30_226_fu_2684_p0 = p_ZL12H_filter_FIR_160;
+assign sext_ln27_226_fu_2684_p0 = p_ZL12H_filter_FIR_160;
 
-assign sext_ln30_227_fu_2692_p0 = p_ZL12H_filter_FIR_159;
+assign sext_ln27_227_fu_2692_p0 = p_ZL12H_filter_FIR_159;
 
-assign sext_ln30_228_fu_2700_p0 = p_ZL12H_filter_FIR_158;
+assign sext_ln27_228_fu_2700_p0 = p_ZL12H_filter_FIR_158;
 
-assign sext_ln30_228_fu_2700_p1 = sext_ln30_228_fu_2700_p0;
+assign sext_ln27_228_fu_2700_p1 = sext_ln27_228_fu_2700_p0;
 
-assign sext_ln30_229_fu_2708_p0 = p_ZL12H_filter_FIR_157;
+assign sext_ln27_229_fu_2708_p0 = p_ZL12H_filter_FIR_157;
 
-assign sext_ln30_229_fu_2708_p1 = sext_ln30_229_fu_2708_p0;
+assign sext_ln27_229_fu_2708_p1 = sext_ln27_229_fu_2708_p0;
 
-assign sext_ln30_22_fu_1216_p0 = p_ZL12H_filter_FIR_367;
+assign sext_ln27_22_fu_1216_p0 = p_ZL12H_filter_FIR_367;
 
-assign sext_ln30_22_fu_1216_p1 = sext_ln30_22_fu_1216_p0;
+assign sext_ln27_22_fu_1216_p1 = sext_ln27_22_fu_1216_p0;
 
-assign sext_ln30_230_fu_2716_p0 = p_ZL12H_filter_FIR_156;
+assign sext_ln27_230_fu_2716_p0 = p_ZL12H_filter_FIR_156;
 
-assign sext_ln30_230_fu_2716_p1 = sext_ln30_230_fu_2716_p0;
+assign sext_ln27_230_fu_2716_p1 = sext_ln27_230_fu_2716_p0;
 
-assign sext_ln30_231_fu_2724_p0 = p_ZL12H_filter_FIR_155;
+assign sext_ln27_231_fu_2724_p0 = p_ZL12H_filter_FIR_155;
 
-assign sext_ln30_231_fu_2724_p1 = sext_ln30_231_fu_2724_p0;
+assign sext_ln27_231_fu_2724_p1 = sext_ln27_231_fu_2724_p0;
 
-assign sext_ln30_233_fu_2736_p0 = p_ZL12H_filter_FIR_153;
+assign sext_ln27_233_fu_2736_p0 = p_ZL12H_filter_FIR_153;
 
-assign sext_ln30_236_fu_2752_p0 = p_ZL12H_filter_FIR_150;
+assign sext_ln27_236_fu_2752_p0 = p_ZL12H_filter_FIR_150;
 
-assign sext_ln30_236_fu_2752_p1 = sext_ln30_236_fu_2752_p0;
+assign sext_ln27_236_fu_2752_p1 = sext_ln27_236_fu_2752_p0;
 
-assign sext_ln30_237_fu_9303_p1 = p_ZL12H_filter_FIR_149_load_reg_10679_pp0_iter4_reg;
+assign sext_ln27_237_fu_9303_p1 = p_ZL12H_filter_FIR_149_load_reg_10679_pp0_iter4_reg;
 
-assign sext_ln30_238_fu_2764_p0 = p_ZL12H_filter_FIR_148;
+assign sext_ln27_238_fu_2764_p0 = p_ZL12H_filter_FIR_148;
 
-assign sext_ln30_238_fu_2764_p1 = sext_ln30_238_fu_2764_p0;
+assign sext_ln27_238_fu_2764_p1 = sext_ln27_238_fu_2764_p0;
 
-assign sext_ln30_239_fu_2772_p0 = p_ZL12H_filter_FIR_147;
+assign sext_ln27_239_fu_2772_p0 = p_ZL12H_filter_FIR_147;
 
-assign sext_ln30_239_fu_2772_p1 = sext_ln30_239_fu_2772_p0;
+assign sext_ln27_239_fu_2772_p1 = sext_ln27_239_fu_2772_p0;
 
-assign sext_ln30_23_fu_1224_p0 = p_ZL12H_filter_FIR_365;
+assign sext_ln27_23_fu_1224_p0 = p_ZL12H_filter_FIR_365;
 
-assign sext_ln30_23_fu_1224_p1 = sext_ln30_23_fu_1224_p0;
+assign sext_ln27_23_fu_1224_p1 = sext_ln27_23_fu_1224_p0;
 
-assign sext_ln30_240_fu_2780_p0 = p_ZL12H_filter_FIR_146;
+assign sext_ln27_240_fu_2780_p0 = p_ZL12H_filter_FIR_146;
 
-assign sext_ln30_242_fu_2792_p0 = p_ZL12H_filter_FIR_144;
+assign sext_ln27_242_fu_2792_p0 = p_ZL12H_filter_FIR_144;
 
-assign sext_ln30_243_fu_2800_p0 = p_ZL12H_filter_FIR_143;
+assign sext_ln27_243_fu_2800_p0 = p_ZL12H_filter_FIR_143;
 
-assign sext_ln30_243_fu_2800_p1 = sext_ln30_243_fu_2800_p0;
+assign sext_ln27_243_fu_2800_p1 = sext_ln27_243_fu_2800_p0;
 
-assign sext_ln30_245_fu_2812_p0 = p_ZL12H_filter_FIR_141;
+assign sext_ln27_245_fu_2812_p0 = p_ZL12H_filter_FIR_141;
 
-assign sext_ln30_245_fu_2812_p1 = sext_ln30_245_fu_2812_p0;
+assign sext_ln27_245_fu_2812_p1 = sext_ln27_245_fu_2812_p0;
 
-assign sext_ln30_247_fu_2824_p0 = p_ZL12H_filter_FIR_139;
+assign sext_ln27_247_fu_2824_p0 = p_ZL12H_filter_FIR_139;
 
-assign sext_ln30_247_fu_2824_p1 = sext_ln30_247_fu_2824_p0;
+assign sext_ln27_247_fu_2824_p1 = sext_ln27_247_fu_2824_p0;
 
-assign sext_ln30_248_fu_2832_p0 = p_ZL12H_filter_FIR_138;
+assign sext_ln27_248_fu_2832_p0 = p_ZL12H_filter_FIR_138;
 
-assign sext_ln30_248_fu_2832_p1 = sext_ln30_248_fu_2832_p0;
+assign sext_ln27_248_fu_2832_p1 = sext_ln27_248_fu_2832_p0;
 
-assign sext_ln30_249_fu_2840_p0 = p_ZL12H_filter_FIR_137;
+assign sext_ln27_249_fu_2840_p0 = p_ZL12H_filter_FIR_137;
 
-assign sext_ln30_249_fu_2840_p1 = sext_ln30_249_fu_2840_p0;
+assign sext_ln27_249_fu_2840_p1 = sext_ln27_249_fu_2840_p0;
 
-assign sext_ln30_24_fu_1232_p0 = p_ZL12H_filter_FIR_364;
+assign sext_ln27_24_fu_1232_p0 = p_ZL12H_filter_FIR_364;
 
-assign sext_ln30_24_fu_1232_p1 = sext_ln30_24_fu_1232_p0;
+assign sext_ln27_24_fu_1232_p1 = sext_ln27_24_fu_1232_p0;
 
-assign sext_ln30_250_fu_2848_p0 = p_ZL12H_filter_FIR_136;
+assign sext_ln27_250_fu_2848_p0 = p_ZL12H_filter_FIR_136;
 
-assign sext_ln30_251_fu_2856_p0 = p_ZL12H_filter_FIR_135;
+assign sext_ln27_251_fu_2856_p0 = p_ZL12H_filter_FIR_135;
 
-assign sext_ln30_251_fu_2856_p1 = sext_ln30_251_fu_2856_p0;
+assign sext_ln27_251_fu_2856_p1 = sext_ln27_251_fu_2856_p0;
 
-assign sext_ln30_252_fu_2864_p0 = p_ZL12H_filter_FIR_134;
+assign sext_ln27_252_fu_2864_p0 = p_ZL12H_filter_FIR_134;
 
-assign sext_ln30_252_fu_2864_p1 = sext_ln30_252_fu_2864_p0;
+assign sext_ln27_252_fu_2864_p1 = sext_ln27_252_fu_2864_p0;
 
-assign sext_ln30_253_fu_2872_p0 = p_ZL12H_filter_FIR_133;
+assign sext_ln27_253_fu_2872_p0 = p_ZL12H_filter_FIR_133;
 
-assign sext_ln30_253_fu_2872_p1 = sext_ln30_253_fu_2872_p0;
+assign sext_ln27_253_fu_2872_p1 = sext_ln27_253_fu_2872_p0;
 
-assign sext_ln30_254_fu_2880_p0 = p_ZL12H_filter_FIR_132;
+assign sext_ln27_254_fu_2880_p0 = p_ZL12H_filter_FIR_132;
 
-assign sext_ln30_255_fu_2888_p0 = p_ZL12H_filter_FIR_131;
+assign sext_ln27_255_fu_2888_p0 = p_ZL12H_filter_FIR_131;
 
-assign sext_ln30_255_fu_2888_p1 = sext_ln30_255_fu_2888_p0;
+assign sext_ln27_255_fu_2888_p1 = sext_ln27_255_fu_2888_p0;
 
-assign sext_ln30_257_fu_2900_p0 = p_ZL12H_filter_FIR_129;
+assign sext_ln27_257_fu_2900_p0 = p_ZL12H_filter_FIR_129;
 
-assign sext_ln30_257_fu_2900_p1 = sext_ln30_257_fu_2900_p0;
+assign sext_ln27_257_fu_2900_p1 = sext_ln27_257_fu_2900_p0;
 
-assign sext_ln30_258_fu_2908_p0 = p_ZL12H_filter_FIR_128;
+assign sext_ln27_258_fu_2908_p0 = p_ZL12H_filter_FIR_128;
 
-assign sext_ln30_259_fu_2916_p0 = p_ZL12H_filter_FIR_127;
+assign sext_ln27_259_fu_2916_p0 = p_ZL12H_filter_FIR_127;
 
-assign sext_ln30_259_fu_2916_p1 = sext_ln30_259_fu_2916_p0;
+assign sext_ln27_259_fu_2916_p1 = sext_ln27_259_fu_2916_p0;
 
-assign sext_ln30_25_fu_1240_p0 = p_ZL12H_filter_FIR_363;
+assign sext_ln27_25_fu_1240_p0 = p_ZL12H_filter_FIR_363;
 
-assign sext_ln30_25_fu_1240_p1 = sext_ln30_25_fu_1240_p0;
+assign sext_ln27_25_fu_1240_p1 = sext_ln27_25_fu_1240_p0;
 
-assign sext_ln30_260_fu_2924_p0 = p_ZL12H_filter_FIR_126;
+assign sext_ln27_260_fu_2924_p0 = p_ZL12H_filter_FIR_126;
 
-assign sext_ln30_260_fu_2924_p1 = sext_ln30_260_fu_2924_p0;
+assign sext_ln27_260_fu_2924_p1 = sext_ln27_260_fu_2924_p0;
 
-assign sext_ln30_261_fu_2932_p0 = p_ZL12H_filter_FIR_125;
+assign sext_ln27_261_fu_2932_p0 = p_ZL12H_filter_FIR_125;
 
-assign sext_ln30_261_fu_2932_p1 = sext_ln30_261_fu_2932_p0;
+assign sext_ln27_261_fu_2932_p1 = sext_ln27_261_fu_2932_p0;
 
-assign sext_ln30_262_fu_2940_p0 = p_ZL12H_filter_FIR_124;
+assign sext_ln27_262_fu_2940_p0 = p_ZL12H_filter_FIR_124;
 
-assign sext_ln30_264_fu_2952_p0 = p_ZL12H_filter_FIR_122;
+assign sext_ln27_264_fu_2952_p0 = p_ZL12H_filter_FIR_122;
 
-assign sext_ln30_265_fu_2960_p0 = p_ZL12H_filter_FIR_121;
+assign sext_ln27_265_fu_2960_p0 = p_ZL12H_filter_FIR_121;
 
-assign sext_ln30_265_fu_2960_p1 = sext_ln30_265_fu_2960_p0;
+assign sext_ln27_265_fu_2960_p1 = sext_ln27_265_fu_2960_p0;
 
-assign sext_ln30_266_fu_2968_p0 = p_ZL12H_filter_FIR_120;
+assign sext_ln27_266_fu_2968_p0 = p_ZL12H_filter_FIR_120;
 
-assign sext_ln30_266_fu_2968_p1 = sext_ln30_266_fu_2968_p0;
+assign sext_ln27_266_fu_2968_p1 = sext_ln27_266_fu_2968_p0;
 
-assign sext_ln30_267_fu_2976_p0 = p_ZL12H_filter_FIR_119;
+assign sext_ln27_267_fu_2976_p0 = p_ZL12H_filter_FIR_119;
 
-assign sext_ln30_267_fu_2976_p1 = sext_ln30_267_fu_2976_p0;
+assign sext_ln27_267_fu_2976_p1 = sext_ln27_267_fu_2976_p0;
 
-assign sext_ln30_268_fu_9477_p1 = p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter5_reg;
+assign sext_ln27_268_fu_9477_p1 = p_ZL12H_filter_FIR_118_load_reg_10709_pp0_iter5_reg;
 
-assign sext_ln30_269_fu_2988_p0 = p_ZL12H_filter_FIR_117;
+assign sext_ln27_269_fu_2988_p0 = p_ZL12H_filter_FIR_117;
 
-assign sext_ln30_269_fu_2988_p1 = sext_ln30_269_fu_2988_p0;
+assign sext_ln27_269_fu_2988_p1 = sext_ln27_269_fu_2988_p0;
 
-assign sext_ln30_26_fu_1248_p0 = p_ZL12H_filter_FIR_362;
+assign sext_ln27_26_fu_1248_p0 = p_ZL12H_filter_FIR_362;
 
-assign sext_ln30_26_fu_1248_p1 = sext_ln30_26_fu_1248_p0;
+assign sext_ln27_26_fu_1248_p1 = sext_ln27_26_fu_1248_p0;
 
-assign sext_ln30_270_fu_2996_p0 = p_ZL12H_filter_FIR_116;
+assign sext_ln27_270_fu_2996_p0 = p_ZL12H_filter_FIR_116;
 
-assign sext_ln30_272_fu_3008_p0 = p_ZL12H_filter_FIR_114;
+assign sext_ln27_272_fu_3008_p0 = p_ZL12H_filter_FIR_114;
 
-assign sext_ln30_274_fu_3020_p0 = p_ZL12H_filter_FIR_112;
+assign sext_ln27_274_fu_3020_p0 = p_ZL12H_filter_FIR_112;
 
-assign sext_ln30_274_fu_3020_p1 = sext_ln30_274_fu_3020_p0;
+assign sext_ln27_274_fu_3020_p1 = sext_ln27_274_fu_3020_p0;
 
-assign sext_ln30_275_fu_3028_p0 = p_ZL12H_filter_FIR_111;
+assign sext_ln27_275_fu_3028_p0 = p_ZL12H_filter_FIR_111;
 
-assign sext_ln30_275_fu_3028_p1 = sext_ln30_275_fu_3028_p0;
+assign sext_ln27_275_fu_3028_p1 = sext_ln27_275_fu_3028_p0;
 
-assign sext_ln30_276_fu_3036_p0 = p_ZL12H_filter_FIR_110;
+assign sext_ln27_276_fu_3036_p0 = p_ZL12H_filter_FIR_110;
 
-assign sext_ln30_276_fu_3036_p1 = sext_ln30_276_fu_3036_p0;
+assign sext_ln27_276_fu_3036_p1 = sext_ln27_276_fu_3036_p0;
 
-assign sext_ln30_277_fu_3044_p0 = p_ZL12H_filter_FIR_109;
+assign sext_ln27_277_fu_3044_p0 = p_ZL12H_filter_FIR_109;
 
-assign sext_ln30_277_fu_3044_p1 = sext_ln30_277_fu_3044_p0;
+assign sext_ln27_277_fu_3044_p1 = sext_ln27_277_fu_3044_p0;
 
-assign sext_ln30_278_fu_3052_p0 = p_ZL12H_filter_FIR_108;
+assign sext_ln27_278_fu_3052_p0 = p_ZL12H_filter_FIR_108;
 
-assign sext_ln30_278_fu_3052_p1 = sext_ln30_278_fu_3052_p0;
+assign sext_ln27_278_fu_3052_p1 = sext_ln27_278_fu_3052_p0;
 
-assign sext_ln30_279_fu_3060_p0 = p_ZL12H_filter_FIR_107;
+assign sext_ln27_279_fu_3060_p0 = p_ZL12H_filter_FIR_107;
 
-assign sext_ln30_279_fu_3060_p1 = sext_ln30_279_fu_3060_p0;
+assign sext_ln27_279_fu_3060_p1 = sext_ln27_279_fu_3060_p0;
 
-assign sext_ln30_27_fu_1256_p0 = p_ZL12H_filter_FIR_361;
+assign sext_ln27_27_fu_1256_p0 = p_ZL12H_filter_FIR_361;
 
-assign sext_ln30_27_fu_1256_p1 = sext_ln30_27_fu_1256_p0;
+assign sext_ln27_27_fu_1256_p1 = sext_ln27_27_fu_1256_p0;
 
-assign sext_ln30_281_fu_3072_p0 = p_ZL12H_filter_FIR_105;
+assign sext_ln27_281_fu_3072_p0 = p_ZL12H_filter_FIR_105;
 
-assign sext_ln30_281_fu_3072_p1 = sext_ln30_281_fu_3072_p0;
+assign sext_ln27_281_fu_3072_p1 = sext_ln27_281_fu_3072_p0;
 
-assign sext_ln30_282_fu_3080_p0 = p_ZL12H_filter_FIR_104;
+assign sext_ln27_282_fu_3080_p0 = p_ZL12H_filter_FIR_104;
 
-assign sext_ln30_283_fu_3088_p0 = p_ZL12H_filter_FIR_103;
+assign sext_ln27_283_fu_3088_p0 = p_ZL12H_filter_FIR_103;
 
-assign sext_ln30_283_fu_3088_p1 = sext_ln30_283_fu_3088_p0;
+assign sext_ln27_283_fu_3088_p1 = sext_ln27_283_fu_3088_p0;
 
-assign sext_ln30_284_fu_3100_p0 = p_ZL12H_filter_FIR_101;
+assign sext_ln27_284_fu_3100_p0 = p_ZL12H_filter_FIR_101;
 
-assign sext_ln30_284_fu_3100_p1 = sext_ln30_284_fu_3100_p0;
+assign sext_ln27_284_fu_3100_p1 = sext_ln27_284_fu_3100_p0;
 
-assign sext_ln30_286_fu_3112_p0 = p_ZL12H_filter_FIR_99;
+assign sext_ln27_286_fu_3112_p0 = p_ZL12H_filter_FIR_99;
 
-assign sext_ln30_286_fu_3112_p1 = sext_ln30_286_fu_3112_p0;
+assign sext_ln27_286_fu_3112_p1 = sext_ln27_286_fu_3112_p0;
 
-assign sext_ln30_287_fu_3120_p0 = p_ZL12H_filter_FIR_98;
+assign sext_ln27_287_fu_3120_p0 = p_ZL12H_filter_FIR_98;
 
-assign sext_ln30_288_fu_3128_p0 = p_ZL12H_filter_FIR_97;
+assign sext_ln27_288_fu_3128_p0 = p_ZL12H_filter_FIR_97;
 
-assign sext_ln30_288_fu_3128_p1 = sext_ln30_288_fu_3128_p0;
+assign sext_ln27_288_fu_3128_p1 = sext_ln27_288_fu_3128_p0;
 
-assign sext_ln30_289_fu_3136_p0 = p_ZL12H_filter_FIR_96;
+assign sext_ln27_289_fu_3136_p0 = p_ZL12H_filter_FIR_96;
 
-assign sext_ln30_289_fu_3136_p1 = sext_ln30_289_fu_3136_p0;
+assign sext_ln27_289_fu_3136_p1 = sext_ln27_289_fu_3136_p0;
 
-assign sext_ln30_28_fu_1264_p0 = p_ZL12H_filter_FIR_360;
+assign sext_ln27_28_fu_1264_p0 = p_ZL12H_filter_FIR_360;
 
-assign sext_ln30_28_fu_1264_p1 = sext_ln30_28_fu_1264_p0;
+assign sext_ln27_28_fu_1264_p1 = sext_ln27_28_fu_1264_p0;
 
-assign sext_ln30_290_fu_3144_p0 = p_ZL12H_filter_FIR_95;
+assign sext_ln27_290_fu_3144_p0 = p_ZL12H_filter_FIR_95;
 
-assign sext_ln30_290_fu_3144_p1 = sext_ln30_290_fu_3144_p0;
+assign sext_ln27_290_fu_3144_p1 = sext_ln27_290_fu_3144_p0;
 
-assign sext_ln30_291_fu_3152_p0 = p_ZL12H_filter_FIR_94;
+assign sext_ln27_291_fu_3152_p0 = p_ZL12H_filter_FIR_94;
 
-assign sext_ln30_291_fu_3152_p1 = sext_ln30_291_fu_3152_p0;
+assign sext_ln27_291_fu_3152_p1 = sext_ln27_291_fu_3152_p0;
 
-assign sext_ln30_292_fu_3160_p0 = p_ZL12H_filter_FIR_93;
+assign sext_ln27_292_fu_3160_p0 = p_ZL12H_filter_FIR_93;
 
-assign sext_ln30_292_fu_3160_p1 = sext_ln30_292_fu_3160_p0;
+assign sext_ln27_292_fu_3160_p1 = sext_ln27_292_fu_3160_p0;
 
-assign sext_ln30_293_fu_3168_p0 = p_ZL12H_filter_FIR_92;
+assign sext_ln27_293_fu_3168_p0 = p_ZL12H_filter_FIR_92;
 
-assign sext_ln30_293_fu_3168_p1 = sext_ln30_293_fu_3168_p0;
+assign sext_ln27_293_fu_3168_p1 = sext_ln27_293_fu_3168_p0;
 
-assign sext_ln30_294_fu_3176_p0 = p_ZL12H_filter_FIR_91;
+assign sext_ln27_294_fu_3176_p0 = p_ZL12H_filter_FIR_91;
 
-assign sext_ln30_294_fu_3176_p1 = sext_ln30_294_fu_3176_p0;
+assign sext_ln27_294_fu_3176_p1 = sext_ln27_294_fu_3176_p0;
 
-assign sext_ln30_295_fu_3184_p0 = p_ZL12H_filter_FIR_90;
+assign sext_ln27_295_fu_3184_p0 = p_ZL12H_filter_FIR_90;
 
-assign sext_ln30_296_fu_3192_p0 = p_ZL12H_filter_FIR_89;
+assign sext_ln27_296_fu_3192_p0 = p_ZL12H_filter_FIR_89;
 
-assign sext_ln30_297_fu_3200_p0 = p_ZL12H_filter_FIR_88;
+assign sext_ln27_297_fu_3200_p0 = p_ZL12H_filter_FIR_88;
 
-assign sext_ln30_297_fu_3200_p1 = sext_ln30_297_fu_3200_p0;
+assign sext_ln27_297_fu_3200_p1 = sext_ln27_297_fu_3200_p0;
 
-assign sext_ln30_298_fu_9512_p1 = p_ZL12H_filter_FIR_87_load_reg_10734_pp0_iter6_reg;
+assign sext_ln27_298_fu_9512_p1 = p_ZL12H_filter_FIR_87_load_reg_10734_pp0_iter6_reg;
 
-assign sext_ln30_29_fu_1272_p0 = p_ZL12H_filter_FIR_359;
+assign sext_ln27_29_fu_1272_p0 = p_ZL12H_filter_FIR_359;
 
-assign sext_ln30_29_fu_1272_p1 = sext_ln30_29_fu_1272_p0;
+assign sext_ln27_29_fu_1272_p1 = sext_ln27_29_fu_1272_p0;
 
-assign sext_ln30_2_fu_1056_p0 = p_ZL12H_filter_FIR_389;
+assign sext_ln27_2_fu_1056_p0 = p_ZL12H_filter_FIR_389;
 
-assign sext_ln30_2_fu_1056_p1 = sext_ln30_2_fu_1056_p0;
+assign sext_ln27_2_fu_1056_p1 = sext_ln27_2_fu_1056_p0;
 
-assign sext_ln30_300_fu_3232_p0 = p_ZL12H_filter_FIR_83;
+assign sext_ln27_300_fu_3232_p0 = p_ZL12H_filter_FIR_83;
 
-assign sext_ln30_300_fu_3232_p1 = sext_ln30_300_fu_3232_p0;
+assign sext_ln27_300_fu_3232_p1 = sext_ln27_300_fu_3232_p0;
 
-assign sext_ln30_301_fu_3240_p0 = p_ZL12H_filter_FIR_82;
+assign sext_ln27_301_fu_3240_p0 = p_ZL12H_filter_FIR_82;
 
-assign sext_ln30_301_fu_3240_p1 = sext_ln30_301_fu_3240_p0;
+assign sext_ln27_301_fu_3240_p1 = sext_ln27_301_fu_3240_p0;
 
-assign sext_ln30_302_fu_3248_p0 = p_ZL12H_filter_FIR_81;
+assign sext_ln27_302_fu_3248_p0 = p_ZL12H_filter_FIR_81;
 
-assign sext_ln30_302_fu_3248_p1 = sext_ln30_302_fu_3248_p0;
+assign sext_ln27_302_fu_3248_p1 = sext_ln27_302_fu_3248_p0;
 
-assign sext_ln30_303_fu_3256_p0 = p_ZL12H_filter_FIR_80;
+assign sext_ln27_303_fu_3256_p0 = p_ZL12H_filter_FIR_80;
 
-assign sext_ln30_303_fu_3256_p1 = sext_ln30_303_fu_3256_p0;
+assign sext_ln27_303_fu_3256_p1 = sext_ln27_303_fu_3256_p0;
 
-assign sext_ln30_304_fu_3264_p0 = p_ZL12H_filter_FIR_79;
+assign sext_ln27_304_fu_3264_p0 = p_ZL12H_filter_FIR_79;
 
-assign sext_ln30_304_fu_3264_p1 = sext_ln30_304_fu_3264_p0;
+assign sext_ln27_304_fu_3264_p1 = sext_ln27_304_fu_3264_p0;
 
-assign sext_ln30_305_fu_3272_p0 = p_ZL12H_filter_FIR_78;
+assign sext_ln27_305_fu_3272_p0 = p_ZL12H_filter_FIR_78;
 
-assign sext_ln30_305_fu_3272_p1 = sext_ln30_305_fu_3272_p0;
+assign sext_ln27_305_fu_3272_p1 = sext_ln27_305_fu_3272_p0;
 
-assign sext_ln30_306_fu_3280_p0 = p_ZL12H_filter_FIR_77;
+assign sext_ln27_306_fu_3280_p0 = p_ZL12H_filter_FIR_77;
 
-assign sext_ln30_307_fu_3288_p0 = p_ZL12H_filter_FIR_76;
+assign sext_ln27_307_fu_3288_p0 = p_ZL12H_filter_FIR_76;
 
-assign sext_ln30_307_fu_3288_p1 = sext_ln30_307_fu_3288_p0;
+assign sext_ln27_307_fu_3288_p1 = sext_ln27_307_fu_3288_p0;
 
-assign sext_ln30_308_fu_3296_p0 = p_ZL12H_filter_FIR_75;
+assign sext_ln27_308_fu_3296_p0 = p_ZL12H_filter_FIR_75;
 
-assign sext_ln30_309_fu_3304_p0 = p_ZL12H_filter_FIR_74;
+assign sext_ln27_309_fu_3304_p0 = p_ZL12H_filter_FIR_74;
 
-assign sext_ln30_309_fu_3304_p1 = sext_ln30_309_fu_3304_p0;
+assign sext_ln27_309_fu_3304_p1 = sext_ln27_309_fu_3304_p0;
 
-assign sext_ln30_30_fu_1280_p0 = p_ZL12H_filter_FIR_358;
+assign sext_ln27_30_fu_1280_p0 = p_ZL12H_filter_FIR_358;
 
-assign sext_ln30_30_fu_1280_p1 = sext_ln30_30_fu_1280_p0;
+assign sext_ln27_30_fu_1280_p1 = sext_ln27_30_fu_1280_p0;
 
-assign sext_ln30_310_fu_3312_p0 = p_ZL12H_filter_FIR_73;
+assign sext_ln27_310_fu_3312_p0 = p_ZL12H_filter_FIR_73;
 
-assign sext_ln30_310_fu_3312_p1 = sext_ln30_310_fu_3312_p0;
+assign sext_ln27_310_fu_3312_p1 = sext_ln27_310_fu_3312_p0;
 
-assign sext_ln30_311_fu_3320_p0 = p_ZL12H_filter_FIR_72;
+assign sext_ln27_311_fu_3320_p0 = p_ZL12H_filter_FIR_72;
 
-assign sext_ln30_311_fu_3320_p1 = sext_ln30_311_fu_3320_p0;
+assign sext_ln27_311_fu_3320_p1 = sext_ln27_311_fu_3320_p0;
 
-assign sext_ln30_312_fu_3328_p0 = p_ZL12H_filter_FIR_71;
+assign sext_ln27_312_fu_3328_p0 = p_ZL12H_filter_FIR_71;
 
-assign sext_ln30_312_fu_3328_p1 = sext_ln30_312_fu_3328_p0;
+assign sext_ln27_312_fu_3328_p1 = sext_ln27_312_fu_3328_p0;
 
-assign sext_ln30_313_fu_3336_p0 = p_ZL12H_filter_FIR_70;
+assign sext_ln27_313_fu_3336_p0 = p_ZL12H_filter_FIR_70;
 
-assign sext_ln30_313_fu_3336_p1 = sext_ln30_313_fu_3336_p0;
+assign sext_ln27_313_fu_3336_p1 = sext_ln27_313_fu_3336_p0;
 
-assign sext_ln30_314_fu_3344_p0 = p_ZL12H_filter_FIR_69;
+assign sext_ln27_314_fu_3344_p0 = p_ZL12H_filter_FIR_69;
 
-assign sext_ln30_314_fu_3344_p1 = sext_ln30_314_fu_3344_p0;
+assign sext_ln27_314_fu_3344_p1 = sext_ln27_314_fu_3344_p0;
 
-assign sext_ln30_315_fu_3352_p0 = p_ZL12H_filter_FIR_68;
+assign sext_ln27_315_fu_3352_p0 = p_ZL12H_filter_FIR_68;
 
-assign sext_ln30_315_fu_3352_p1 = sext_ln30_315_fu_3352_p0;
+assign sext_ln27_315_fu_3352_p1 = sext_ln27_315_fu_3352_p0;
 
-assign sext_ln30_316_fu_3360_p0 = p_ZL12H_filter_FIR_67;
+assign sext_ln27_316_fu_3360_p0 = p_ZL12H_filter_FIR_67;
 
-assign sext_ln30_316_fu_3360_p1 = sext_ln30_316_fu_3360_p0;
+assign sext_ln27_316_fu_3360_p1 = sext_ln27_316_fu_3360_p0;
 
-assign sext_ln30_317_fu_3384_p0 = p_ZL12H_filter_FIR_64;
+assign sext_ln27_317_fu_3384_p0 = p_ZL12H_filter_FIR_64;
 
-assign sext_ln30_317_fu_3384_p1 = sext_ln30_317_fu_3384_p0;
+assign sext_ln27_317_fu_3384_p1 = sext_ln27_317_fu_3384_p0;
 
-assign sext_ln30_318_fu_3392_p0 = p_ZL12H_filter_FIR_63;
+assign sext_ln27_318_fu_3392_p0 = p_ZL12H_filter_FIR_63;
 
-assign sext_ln30_318_fu_3392_p1 = sext_ln30_318_fu_3392_p0;
+assign sext_ln27_318_fu_3392_p1 = sext_ln27_318_fu_3392_p0;
 
-assign sext_ln30_319_fu_3400_p0 = p_ZL12H_filter_FIR_62;
+assign sext_ln27_319_fu_3400_p0 = p_ZL12H_filter_FIR_62;
 
-assign sext_ln30_319_fu_3400_p1 = sext_ln30_319_fu_3400_p0;
+assign sext_ln27_319_fu_3400_p1 = sext_ln27_319_fu_3400_p0;
 
-assign sext_ln30_31_fu_1288_p0 = p_ZL12H_filter_FIR_357;
+assign sext_ln27_31_fu_1288_p0 = p_ZL12H_filter_FIR_357;
 
-assign sext_ln30_31_fu_1288_p1 = sext_ln30_31_fu_1288_p0;
+assign sext_ln27_31_fu_1288_p1 = sext_ln27_31_fu_1288_p0;
 
-assign sext_ln30_320_fu_3408_p0 = p_ZL12H_filter_FIR_61;
+assign sext_ln27_320_fu_3408_p0 = p_ZL12H_filter_FIR_61;
 
-assign sext_ln30_320_fu_3408_p1 = sext_ln30_320_fu_3408_p0;
+assign sext_ln27_320_fu_3408_p1 = sext_ln27_320_fu_3408_p0;
 
-assign sext_ln30_321_fu_3416_p0 = p_ZL12H_filter_FIR_60;
+assign sext_ln27_321_fu_3416_p0 = p_ZL12H_filter_FIR_60;
 
-assign sext_ln30_321_fu_3416_p1 = sext_ln30_321_fu_3416_p0;
+assign sext_ln27_321_fu_3416_p1 = sext_ln27_321_fu_3416_p0;
 
-assign sext_ln30_322_fu_3424_p0 = p_ZL12H_filter_FIR_59;
+assign sext_ln27_322_fu_3424_p0 = p_ZL12H_filter_FIR_59;
 
-assign sext_ln30_322_fu_3424_p1 = sext_ln30_322_fu_3424_p0;
+assign sext_ln27_322_fu_3424_p1 = sext_ln27_322_fu_3424_p0;
 
-assign sext_ln30_323_fu_3432_p0 = p_ZL12H_filter_FIR_58;
+assign sext_ln27_323_fu_3432_p0 = p_ZL12H_filter_FIR_58;
 
-assign sext_ln30_323_fu_3432_p1 = sext_ln30_323_fu_3432_p0;
+assign sext_ln27_323_fu_3432_p1 = sext_ln27_323_fu_3432_p0;
 
-assign sext_ln30_324_fu_3440_p0 = p_ZL12H_filter_FIR_57;
+assign sext_ln27_324_fu_3440_p0 = p_ZL12H_filter_FIR_57;
 
-assign sext_ln30_324_fu_3440_p1 = sext_ln30_324_fu_3440_p0;
+assign sext_ln27_324_fu_3440_p1 = sext_ln27_324_fu_3440_p0;
 
-assign sext_ln30_325_fu_9515_p1 = p_ZL12H_filter_FIR_56_load_reg_10744_pp0_iter6_reg;
+assign sext_ln27_325_fu_9515_p1 = p_ZL12H_filter_FIR_56_load_reg_10744_pp0_iter6_reg;
 
-assign sext_ln30_326_fu_3452_p0 = p_ZL12H_filter_FIR_55;
+assign sext_ln27_326_fu_3452_p0 = p_ZL12H_filter_FIR_55;
 
-assign sext_ln30_326_fu_3452_p1 = sext_ln30_326_fu_3452_p0;
+assign sext_ln27_326_fu_3452_p1 = sext_ln27_326_fu_3452_p0;
 
-assign sext_ln30_327_fu_3460_p0 = p_ZL12H_filter_FIR_54;
+assign sext_ln27_327_fu_3460_p0 = p_ZL12H_filter_FIR_54;
 
-assign sext_ln30_327_fu_3460_p1 = sext_ln30_327_fu_3460_p0;
+assign sext_ln27_327_fu_3460_p1 = sext_ln27_327_fu_3460_p0;
 
-assign sext_ln30_328_fu_3468_p0 = p_ZL12H_filter_FIR_53;
+assign sext_ln27_328_fu_3468_p0 = p_ZL12H_filter_FIR_53;
 
-assign sext_ln30_329_fu_3476_p0 = p_ZL12H_filter_FIR_52;
+assign sext_ln27_329_fu_3476_p0 = p_ZL12H_filter_FIR_52;
 
-assign sext_ln30_329_fu_3476_p1 = sext_ln30_329_fu_3476_p0;
+assign sext_ln27_329_fu_3476_p1 = sext_ln27_329_fu_3476_p0;
 
-assign sext_ln30_32_fu_1296_p0 = p_ZL12H_filter_FIR_356;
+assign sext_ln27_32_fu_1296_p0 = p_ZL12H_filter_FIR_356;
 
-assign sext_ln30_32_fu_1296_p1 = sext_ln30_32_fu_1296_p0;
+assign sext_ln27_32_fu_1296_p1 = sext_ln27_32_fu_1296_p0;
 
-assign sext_ln30_330_fu_3484_p0 = p_ZL12H_filter_FIR_51;
+assign sext_ln27_330_fu_3484_p0 = p_ZL12H_filter_FIR_51;
 
-assign sext_ln30_330_fu_3484_p1 = sext_ln30_330_fu_3484_p0;
+assign sext_ln27_330_fu_3484_p1 = sext_ln27_330_fu_3484_p0;
 
-assign sext_ln30_331_fu_3492_p0 = p_ZL12H_filter_FIR_50;
+assign sext_ln27_331_fu_3492_p0 = p_ZL12H_filter_FIR_50;
 
-assign sext_ln30_331_fu_3492_p1 = sext_ln30_331_fu_3492_p0;
+assign sext_ln27_331_fu_3492_p1 = sext_ln27_331_fu_3492_p0;
 
-assign sext_ln30_332_fu_3516_p0 = p_ZL12H_filter_FIR_47;
+assign sext_ln27_332_fu_3516_p0 = p_ZL12H_filter_FIR_47;
 
-assign sext_ln30_332_fu_3516_p1 = sext_ln30_332_fu_3516_p0;
+assign sext_ln27_332_fu_3516_p1 = sext_ln27_332_fu_3516_p0;
 
-assign sext_ln30_333_fu_3524_p0 = p_ZL12H_filter_FIR_46;
+assign sext_ln27_333_fu_3524_p0 = p_ZL12H_filter_FIR_46;
 
-assign sext_ln30_333_fu_3524_p1 = sext_ln30_333_fu_3524_p0;
+assign sext_ln27_333_fu_3524_p1 = sext_ln27_333_fu_3524_p0;
 
-assign sext_ln30_334_fu_3532_p0 = p_ZL12H_filter_FIR_45;
+assign sext_ln27_334_fu_3532_p0 = p_ZL12H_filter_FIR_45;
 
-assign sext_ln30_334_fu_3532_p1 = sext_ln30_334_fu_3532_p0;
+assign sext_ln27_334_fu_3532_p1 = sext_ln27_334_fu_3532_p0;
 
-assign sext_ln30_335_fu_3540_p0 = p_ZL12H_filter_FIR_44;
+assign sext_ln27_335_fu_3540_p0 = p_ZL12H_filter_FIR_44;
 
-assign sext_ln30_335_fu_3540_p1 = sext_ln30_335_fu_3540_p0;
+assign sext_ln27_335_fu_3540_p1 = sext_ln27_335_fu_3540_p0;
 
-assign sext_ln30_336_fu_3548_p0 = p_ZL12H_filter_FIR_43;
+assign sext_ln27_336_fu_3548_p0 = p_ZL12H_filter_FIR_43;
 
-assign sext_ln30_336_fu_3548_p1 = sext_ln30_336_fu_3548_p0;
+assign sext_ln27_336_fu_3548_p1 = sext_ln27_336_fu_3548_p0;
 
-assign sext_ln30_337_fu_3556_p0 = p_ZL12H_filter_FIR_42;
+assign sext_ln27_337_fu_3556_p0 = p_ZL12H_filter_FIR_42;
 
-assign sext_ln30_337_fu_3556_p1 = sext_ln30_337_fu_3556_p0;
+assign sext_ln27_337_fu_3556_p1 = sext_ln27_337_fu_3556_p0;
 
-assign sext_ln30_338_fu_3564_p0 = p_ZL12H_filter_FIR_41;
+assign sext_ln27_338_fu_3564_p0 = p_ZL12H_filter_FIR_41;
 
-assign sext_ln30_338_fu_3564_p1 = sext_ln30_338_fu_3564_p0;
+assign sext_ln27_338_fu_3564_p1 = sext_ln27_338_fu_3564_p0;
 
-assign sext_ln30_339_fu_3572_p0 = p_ZL12H_filter_FIR_40;
+assign sext_ln27_339_fu_3572_p0 = p_ZL12H_filter_FIR_40;
 
-assign sext_ln30_339_fu_3572_p1 = sext_ln30_339_fu_3572_p0;
+assign sext_ln27_339_fu_3572_p1 = sext_ln27_339_fu_3572_p0;
 
-assign sext_ln30_33_fu_1304_p0 = p_ZL12H_filter_FIR_355;
+assign sext_ln27_33_fu_1304_p0 = p_ZL12H_filter_FIR_355;
 
-assign sext_ln30_33_fu_1304_p1 = sext_ln30_33_fu_1304_p0;
+assign sext_ln27_33_fu_1304_p1 = sext_ln27_33_fu_1304_p0;
 
-assign sext_ln30_340_fu_3584_p0 = p_ZL12H_filter_FIR_38;
+assign sext_ln27_340_fu_3584_p0 = p_ZL12H_filter_FIR_38;
 
-assign sext_ln30_340_fu_3584_p1 = sext_ln30_340_fu_3584_p0;
+assign sext_ln27_340_fu_3584_p1 = sext_ln27_340_fu_3584_p0;
 
-assign sext_ln30_341_fu_3592_p0 = p_ZL12H_filter_FIR_37;
+assign sext_ln27_341_fu_3592_p0 = p_ZL12H_filter_FIR_37;
 
-assign sext_ln30_341_fu_3592_p1 = sext_ln30_341_fu_3592_p0;
+assign sext_ln27_341_fu_3592_p1 = sext_ln27_341_fu_3592_p0;
 
-assign sext_ln30_342_fu_3616_p0 = p_ZL12H_filter_FIR_34;
+assign sext_ln27_342_fu_3616_p0 = p_ZL12H_filter_FIR_34;
 
-assign sext_ln30_342_fu_3616_p1 = sext_ln30_342_fu_3616_p0;
+assign sext_ln27_342_fu_3616_p1 = sext_ln27_342_fu_3616_p0;
 
-assign sext_ln30_343_fu_3624_p0 = p_ZL12H_filter_FIR_33;
+assign sext_ln27_343_fu_3624_p0 = p_ZL12H_filter_FIR_33;
 
-assign sext_ln30_343_fu_3624_p1 = sext_ln30_343_fu_3624_p0;
+assign sext_ln27_343_fu_3624_p1 = sext_ln27_343_fu_3624_p0;
 
-assign sext_ln30_344_fu_3632_p0 = p_ZL12H_filter_FIR_32;
+assign sext_ln27_344_fu_3632_p0 = p_ZL12H_filter_FIR_32;
 
-assign sext_ln30_344_fu_3632_p1 = sext_ln30_344_fu_3632_p0;
+assign sext_ln27_344_fu_3632_p1 = sext_ln27_344_fu_3632_p0;
 
-assign sext_ln30_345_fu_3640_p0 = p_ZL12H_filter_FIR_31;
+assign sext_ln27_345_fu_3640_p0 = p_ZL12H_filter_FIR_31;
 
-assign sext_ln30_345_fu_3640_p1 = sext_ln30_345_fu_3640_p0;
+assign sext_ln27_345_fu_3640_p1 = sext_ln27_345_fu_3640_p0;
 
-assign sext_ln30_346_fu_3648_p0 = p_ZL12H_filter_FIR_30;
+assign sext_ln27_346_fu_3648_p0 = p_ZL12H_filter_FIR_30;
 
-assign sext_ln30_346_fu_3648_p1 = sext_ln30_346_fu_3648_p0;
+assign sext_ln27_346_fu_3648_p1 = sext_ln27_346_fu_3648_p0;
 
-assign sext_ln30_347_fu_3656_p0 = p_ZL12H_filter_FIR_29;
+assign sext_ln27_347_fu_3656_p0 = p_ZL12H_filter_FIR_29;
 
-assign sext_ln30_348_fu_3664_p0 = p_ZL12H_filter_FIR_28;
+assign sext_ln27_348_fu_3664_p0 = p_ZL12H_filter_FIR_28;
 
-assign sext_ln30_349_fu_3672_p0 = p_ZL12H_filter_FIR_27;
+assign sext_ln27_349_fu_3672_p0 = p_ZL12H_filter_FIR_27;
 
-assign sext_ln30_349_fu_3672_p1 = sext_ln30_349_fu_3672_p0;
+assign sext_ln27_349_fu_3672_p1 = sext_ln27_349_fu_3672_p0;
 
-assign sext_ln30_34_fu_1312_p0 = p_ZL12H_filter_FIR_354;
+assign sext_ln27_34_fu_1312_p0 = p_ZL12H_filter_FIR_354;
 
-assign sext_ln30_34_fu_1312_p1 = sext_ln30_34_fu_1312_p0;
+assign sext_ln27_34_fu_1312_p1 = sext_ln27_34_fu_1312_p0;
 
-assign sext_ln30_350_fu_3680_p0 = p_ZL12H_filter_FIR_26;
+assign sext_ln27_350_fu_3680_p0 = p_ZL12H_filter_FIR_26;
 
-assign sext_ln30_350_fu_3680_p1 = sext_ln30_350_fu_3680_p0;
+assign sext_ln27_350_fu_3680_p1 = sext_ln27_350_fu_3680_p0;
 
-assign sext_ln30_351_fu_3688_p0 = p_ZL12H_filter_FIR_24;
+assign sext_ln27_351_fu_3688_p0 = p_ZL12H_filter_FIR_24;
 
-assign sext_ln30_351_fu_3688_p1 = sext_ln30_351_fu_3688_p0;
+assign sext_ln27_351_fu_3688_p1 = sext_ln27_351_fu_3688_p0;
 
-assign sext_ln30_353_fu_3704_p0 = p_ZL12H_filter_FIR_21;
+assign sext_ln27_353_fu_3704_p0 = p_ZL12H_filter_FIR_21;
 
-assign sext_ln30_353_fu_3704_p1 = sext_ln30_353_fu_3704_p0;
+assign sext_ln27_353_fu_3704_p1 = sext_ln27_353_fu_3704_p0;
 
-assign sext_ln30_354_fu_3712_p0 = p_ZL12H_filter_FIR_20;
+assign sext_ln27_354_fu_3712_p0 = p_ZL12H_filter_FIR_20;
 
-assign sext_ln30_354_fu_3712_p1 = sext_ln30_354_fu_3712_p0;
+assign sext_ln27_354_fu_3712_p1 = sext_ln27_354_fu_3712_p0;
 
-assign sext_ln30_355_fu_3720_p0 = p_ZL12H_filter_FIR_19;
+assign sext_ln27_355_fu_3720_p0 = p_ZL12H_filter_FIR_19;
 
-assign sext_ln30_355_fu_3720_p1 = sext_ln30_355_fu_3720_p0;
+assign sext_ln27_355_fu_3720_p1 = sext_ln27_355_fu_3720_p0;
 
-assign sext_ln30_356_fu_3728_p0 = p_ZL12H_filter_FIR_18;
+assign sext_ln27_356_fu_3728_p0 = p_ZL12H_filter_FIR_18;
 
-assign sext_ln30_356_fu_3728_p1 = sext_ln30_356_fu_3728_p0;
+assign sext_ln27_356_fu_3728_p1 = sext_ln27_356_fu_3728_p0;
 
-assign sext_ln30_357_fu_3736_p0 = p_ZL12H_filter_FIR_16;
+assign sext_ln27_357_fu_3736_p0 = p_ZL12H_filter_FIR_16;
 
-assign sext_ln30_357_fu_3736_p1 = sext_ln30_357_fu_3736_p0;
+assign sext_ln27_357_fu_3736_p1 = sext_ln27_357_fu_3736_p0;
 
-assign sext_ln30_358_fu_3744_p0 = p_ZL12H_filter_FIR_15;
+assign sext_ln27_358_fu_3744_p0 = p_ZL12H_filter_FIR_15;
 
-assign sext_ln30_359_fu_3752_p0 = p_ZL12H_filter_FIR_14;
+assign sext_ln27_359_fu_3752_p0 = p_ZL12H_filter_FIR_14;
 
-assign sext_ln30_359_fu_3752_p1 = sext_ln30_359_fu_3752_p0;
+assign sext_ln27_359_fu_3752_p1 = sext_ln27_359_fu_3752_p0;
 
-assign sext_ln30_35_fu_1320_p0 = p_ZL12H_filter_FIR_353;
+assign sext_ln27_35_fu_1320_p0 = p_ZL12H_filter_FIR_353;
 
-assign sext_ln30_35_fu_1320_p1 = sext_ln30_35_fu_1320_p0;
+assign sext_ln27_35_fu_1320_p1 = sext_ln27_35_fu_1320_p0;
 
-assign sext_ln30_360_fu_3760_p0 = p_ZL12H_filter_FIR_13;
+assign sext_ln27_360_fu_3760_p0 = p_ZL12H_filter_FIR_13;
 
-assign sext_ln30_360_fu_3760_p1 = sext_ln30_360_fu_3760_p0;
+assign sext_ln27_360_fu_3760_p1 = sext_ln27_360_fu_3760_p0;
 
-assign sext_ln30_361_fu_3768_p0 = p_ZL12H_filter_FIR_12;
+assign sext_ln27_361_fu_3768_p0 = p_ZL12H_filter_FIR_12;
 
-assign sext_ln30_362_fu_3776_p0 = p_ZL12H_filter_FIR_11;
+assign sext_ln27_362_fu_3776_p0 = p_ZL12H_filter_FIR_11;
 
-assign sext_ln30_362_fu_3776_p1 = sext_ln30_362_fu_3776_p0;
+assign sext_ln27_362_fu_3776_p1 = sext_ln27_362_fu_3776_p0;
 
-assign sext_ln30_363_fu_3784_p0 = p_ZL12H_filter_FIR_10;
+assign sext_ln27_363_fu_3784_p0 = p_ZL12H_filter_FIR_10;
 
-assign sext_ln30_363_fu_3784_p1 = sext_ln30_363_fu_3784_p0;
+assign sext_ln27_363_fu_3784_p1 = sext_ln27_363_fu_3784_p0;
 
-assign sext_ln30_364_fu_3792_p0 = p_ZL12H_filter_FIR_9;
+assign sext_ln27_364_fu_3792_p0 = p_ZL12H_filter_FIR_9;
 
-assign sext_ln30_364_fu_3792_p1 = sext_ln30_364_fu_3792_p0;
+assign sext_ln27_364_fu_3792_p1 = sext_ln27_364_fu_3792_p0;
 
-assign sext_ln30_365_fu_3800_p0 = p_ZL12H_filter_FIR_8;
+assign sext_ln27_365_fu_3800_p0 = p_ZL12H_filter_FIR_8;
 
-assign sext_ln30_365_fu_3800_p1 = sext_ln30_365_fu_3800_p0;
+assign sext_ln27_365_fu_3800_p1 = sext_ln27_365_fu_3800_p0;
 
-assign sext_ln30_366_fu_3808_p0 = p_ZL12H_filter_FIR_7;
+assign sext_ln27_366_fu_3808_p0 = p_ZL12H_filter_FIR_7;
 
-assign sext_ln30_366_fu_3808_p1 = sext_ln30_366_fu_3808_p0;
+assign sext_ln27_366_fu_3808_p1 = sext_ln27_366_fu_3808_p0;
 
-assign sext_ln30_367_fu_3816_p0 = p_ZL12H_filter_FIR_6;
+assign sext_ln27_367_fu_3816_p0 = p_ZL12H_filter_FIR_6;
 
-assign sext_ln30_367_fu_3816_p1 = sext_ln30_367_fu_3816_p0;
+assign sext_ln27_367_fu_3816_p1 = sext_ln27_367_fu_3816_p0;
 
-assign sext_ln30_368_fu_3824_p0 = p_ZL12H_filter_FIR_5;
+assign sext_ln27_368_fu_3824_p0 = p_ZL12H_filter_FIR_5;
 
-assign sext_ln30_368_fu_3824_p1 = sext_ln30_368_fu_3824_p0;
+assign sext_ln27_368_fu_3824_p1 = sext_ln27_368_fu_3824_p0;
 
-assign sext_ln30_369_fu_3832_p0 = p_ZL12H_filter_FIR_4;
+assign sext_ln27_369_fu_3832_p0 = p_ZL12H_filter_FIR_4;
 
-assign sext_ln30_36_fu_1332_p0 = p_ZL12H_filter_FIR_351;
+assign sext_ln27_36_fu_1332_p0 = p_ZL12H_filter_FIR_351;
 
-assign sext_ln30_36_fu_1332_p1 = sext_ln30_36_fu_1332_p0;
+assign sext_ln27_36_fu_1332_p1 = sext_ln27_36_fu_1332_p0;
 
-assign sext_ln30_370_fu_3840_p0 = p_ZL12H_filter_FIR_3;
+assign sext_ln27_370_fu_3840_p0 = p_ZL12H_filter_FIR_3;
 
-assign sext_ln30_370_fu_3840_p1 = sext_ln30_370_fu_3840_p0;
+assign sext_ln27_370_fu_3840_p1 = sext_ln27_370_fu_3840_p0;
 
-assign sext_ln30_371_fu_3848_p0 = p_ZL12H_filter_FIR_2;
+assign sext_ln27_371_fu_3848_p0 = p_ZL12H_filter_FIR_2;
 
-assign sext_ln30_371_fu_3848_p1 = sext_ln30_371_fu_3848_p0;
+assign sext_ln27_371_fu_3848_p1 = sext_ln27_371_fu_3848_p0;
 
-assign sext_ln30_372_fu_3856_p0 = p_ZL12H_filter_FIR_1;
+assign sext_ln27_372_fu_3856_p0 = p_ZL12H_filter_FIR_1;
 
-assign sext_ln30_372_fu_3856_p1 = sext_ln30_372_fu_3856_p0;
+assign sext_ln27_372_fu_3856_p1 = sext_ln27_372_fu_3856_p0;
 
-assign sext_ln30_373_fu_5680_p1 = $signed(add_ln30_fu_5674_p2);
+assign sext_ln27_373_fu_5680_p1 = $signed(add_ln27_fu_5674_p2);
 
-assign sext_ln30_374_fu_5690_p1 = $signed(add_ln30_1_fu_5684_p2);
+assign sext_ln27_374_fu_5690_p1 = $signed(add_ln27_1_fu_5684_p2);
 
-assign sext_ln30_376_fu_9306_p1 = add_ln30_3_reg_11327;
+assign sext_ln27_376_fu_9306_p1 = add_ln27_3_reg_11327;
 
-assign sext_ln30_378_fu_9314_p1 = grp_fu_10373_p4;
+assign sext_ln27_378_fu_9314_p1 = grp_fu_10373_p4;
 
-assign sext_ln30_379_fu_9322_p1 = $signed(add_ln30_10_fu_9317_p2);
+assign sext_ln27_379_fu_9322_p1 = $signed(add_ln27_10_fu_9317_p2);
 
-assign sext_ln30_37_fu_1340_p0 = p_ZL12H_filter_FIR_350;
+assign sext_ln27_37_fu_1340_p0 = p_ZL12H_filter_FIR_350;
 
-assign sext_ln30_37_fu_1340_p1 = sext_ln30_37_fu_1340_p0;
+assign sext_ln27_37_fu_1340_p1 = sext_ln27_37_fu_1340_p0;
 
-assign sext_ln30_380_fu_9332_p1 = add_ln30_12_reg_11347;
+assign sext_ln27_380_fu_9332_p1 = add_ln27_12_reg_11347;
 
-assign sext_ln30_382_fu_9335_p1 = grp_fu_10384_p4;
+assign sext_ln27_382_fu_9335_p1 = grp_fu_10384_p4;
 
-assign sext_ln30_383_fu_9344_p1 = $signed(add_ln30_15_fu_9338_p2);
+assign sext_ln27_383_fu_9344_p1 = $signed(add_ln27_15_fu_9338_p2);
 
-assign sext_ln30_384_fu_9156_p1 = add_ln30_16_reg_11227;
+assign sext_ln27_384_fu_9156_p1 = add_ln27_16_reg_11227;
 
-assign sext_ln30_385_fu_9348_p1 = $signed(add_ln30_19_reg_11357);
+assign sext_ln27_385_fu_9348_p1 = $signed(add_ln27_19_reg_11357);
 
-assign sext_ln30_386_fu_9357_p1 = $signed(add_ln30_20_fu_9351_p2);
+assign sext_ln27_386_fu_9357_p1 = $signed(add_ln27_20_fu_9351_p2);
 
-assign sext_ln30_387_fu_9367_p1 = add_ln30_22_reg_11362;
+assign sext_ln27_387_fu_9367_p1 = add_ln27_22_reg_11362;
 
-assign sext_ln30_388_fu_9370_p1 = grp_fu_10395_p4;
+assign sext_ln27_388_fu_9370_p1 = grp_fu_10395_p4;
 
-assign sext_ln30_389_fu_9379_p1 = $signed(add_ln30_25_fu_9373_p2);
+assign sext_ln27_389_fu_9379_p1 = $signed(add_ln27_25_fu_9373_p2);
 
-assign sext_ln30_38_fu_1348_p0 = p_ZL12H_filter_FIR_349;
+assign sext_ln27_38_fu_1348_p0 = p_ZL12H_filter_FIR_349;
 
-assign sext_ln30_38_fu_1348_p1 = sext_ln30_38_fu_1348_p0;
+assign sext_ln27_38_fu_1348_p1 = sext_ln27_38_fu_1348_p0;
 
-assign sext_ln30_390_fu_9164_p1 = grp_fu_10189_p4;
+assign sext_ln27_390_fu_9164_p1 = grp_fu_10189_p4;
 
-assign sext_ln30_392_fu_9167_p1 = grp_fu_10200_p4;
+assign sext_ln27_392_fu_9167_p1 = grp_fu_10200_p4;
 
-assign sext_ln30_393_fu_9383_p1 = $signed(add_ln30_29_reg_11372);
+assign sext_ln27_393_fu_9383_p1 = $signed(add_ln27_29_reg_11372);
 
-assign sext_ln30_394_fu_9392_p1 = $signed(add_ln30_30_fu_9386_p2);
+assign sext_ln27_394_fu_9392_p1 = $signed(add_ln27_30_fu_9386_p2);
 
-assign sext_ln30_395_fu_8971_p1 = grp_fu_9907_p4;
+assign sext_ln27_395_fu_8971_p1 = grp_fu_9907_p4;
 
-assign sext_ln30_396_fu_8979_p1 = $signed(add_ln30_33_fu_8974_p2);
+assign sext_ln27_396_fu_8979_p1 = $signed(add_ln27_33_fu_8974_p2);
 
-assign sext_ln30_397_fu_9396_p1 = $signed(add_ln30_34_reg_11242_pp0_iter4_reg);
+assign sext_ln27_397_fu_9396_p1 = $signed(add_ln27_34_reg_11242_pp0_iter4_reg);
 
-assign sext_ln30_398_fu_9399_p1 = add_ln30_35_reg_11247_pp0_iter4_reg;
+assign sext_ln27_398_fu_9399_p1 = add_ln27_35_reg_11247_pp0_iter4_reg;
 
-assign sext_ln30_39_fu_1356_p0 = p_ZL12H_filter_FIR_348;
+assign sext_ln27_39_fu_1356_p0 = p_ZL12H_filter_FIR_348;
 
-assign sext_ln30_39_fu_1356_p1 = sext_ln30_39_fu_1356_p0;
+assign sext_ln27_39_fu_1356_p1 = sext_ln27_39_fu_1356_p0;
 
-assign sext_ln30_3_fu_1064_p0 = p_ZL12H_filter_FIR_388;
+assign sext_ln27_3_fu_1064_p0 = p_ZL12H_filter_FIR_388;
 
-assign sext_ln30_3_fu_1064_p1 = sext_ln30_3_fu_1064_p0;
+assign sext_ln27_3_fu_1064_p1 = sext_ln27_3_fu_1064_p0;
 
-assign sext_ln30_400_fu_9407_p1 = $signed(add_ln30_38_fu_9402_p2);
+assign sext_ln27_400_fu_9407_p1 = $signed(add_ln27_38_fu_9402_p2);
 
-assign sext_ln30_401_fu_9417_p1 = $signed(add_ln30_39_fu_9411_p2);
+assign sext_ln27_401_fu_9417_p1 = $signed(add_ln27_39_fu_9411_p2);
 
-assign sext_ln30_402_fu_9427_p1 = $signed(add_ln30_40_fu_9421_p2);
+assign sext_ln27_402_fu_9427_p1 = $signed(add_ln27_40_fu_9421_p2);
 
-assign sext_ln30_403_fu_9179_p1 = grp_fu_10222_p4;
+assign sext_ln27_403_fu_9179_p1 = grp_fu_10222_p4;
 
-assign sext_ln30_404_fu_9480_p1 = $signed(add_ln30_44_reg_11382_pp0_iter5_reg);
+assign sext_ln27_404_fu_9480_p1 = $signed(add_ln27_44_reg_11382_pp0_iter5_reg);
 
-assign sext_ln30_405_fu_9188_p1 = grp_fu_10233_p4;
+assign sext_ln27_405_fu_9188_p1 = grp_fu_10233_p4;
 
-assign sext_ln30_406_fu_9488_p1 = $signed(add_ln30_49_reg_11387_pp0_iter5_reg);
+assign sext_ln27_406_fu_9488_p1 = $signed(add_ln27_49_reg_11387_pp0_iter5_reg);
 
-assign sext_ln30_407_fu_9196_p1 = add_ln30_51_reg_11257;
+assign sext_ln27_407_fu_9196_p1 = add_ln27_51_reg_11257;
 
-assign sext_ln30_408_fu_9199_p1 = grp_fu_10255_p4;
+assign sext_ln27_408_fu_9199_p1 = grp_fu_10255_p4;
 
-assign sext_ln30_409_fu_9208_p1 = $signed(add_ln30_54_fu_9202_p2);
+assign sext_ln27_409_fu_9208_p1 = $signed(add_ln27_54_fu_9202_p2);
 
-assign sext_ln30_40_fu_1364_p0 = p_ZL12H_filter_FIR_347;
+assign sext_ln27_40_fu_1364_p0 = p_ZL12H_filter_FIR_347;
 
-assign sext_ln30_40_fu_1364_p1 = sext_ln30_40_fu_1364_p0;
+assign sext_ln27_40_fu_1364_p1 = sext_ln27_40_fu_1364_p0;
 
-assign sext_ln30_410_fu_9212_p1 = add_ln30_55_reg_11267;
+assign sext_ln27_410_fu_9212_p1 = add_ln27_55_reg_11267;
 
-assign sext_ln30_412_fu_9220_p1 = $signed(add_ln30_58_fu_9215_p2);
+assign sext_ln27_412_fu_9220_p1 = $signed(add_ln27_58_fu_9215_p2);
 
-assign sext_ln30_413_fu_9497_p1 = $signed(add_ln30_59_reg_11392_pp0_iter5_reg);
+assign sext_ln27_413_fu_9497_p1 = $signed(add_ln27_59_reg_11392_pp0_iter5_reg);
 
-assign sext_ln30_414_fu_9542_p1 = add_ln30_62_reg_11397_pp0_iter6_reg;
+assign sext_ln27_414_fu_9542_p1 = add_ln27_62_reg_11397_pp0_iter6_reg;
 
-assign sext_ln30_415_fu_9230_p1 = grp_fu_10287_p4;
+assign sext_ln27_415_fu_9230_p1 = grp_fu_10287_p4;
 
-assign sext_ln30_416_fu_9233_p1 = add_ln30_65_reg_11277;
+assign sext_ln27_416_fu_9233_p1 = add_ln27_65_reg_11277;
 
-assign sext_ln30_417_fu_9550_p1 = $signed(add_ln30_66_reg_11402_pp0_iter6_reg);
+assign sext_ln27_417_fu_9550_p1 = $signed(add_ln27_66_reg_11402_pp0_iter6_reg);
 
-assign sext_ln30_418_fu_9242_p1 = grp_fu_10309_p4;
+assign sext_ln27_418_fu_9242_p1 = grp_fu_10309_p4;
 
-assign sext_ln30_419_fu_9250_p1 = $signed(add_ln30_70_fu_9245_p2);
+assign sext_ln27_419_fu_9250_p1 = $signed(add_ln27_70_fu_9245_p2);
 
-assign sext_ln30_41_fu_1372_p0 = p_ZL12H_filter_FIR_346;
+assign sext_ln27_41_fu_1372_p0 = p_ZL12H_filter_FIR_346;
 
-assign sext_ln30_41_fu_1372_p1 = sext_ln30_41_fu_1372_p0;
+assign sext_ln27_41_fu_1372_p1 = sext_ln27_41_fu_1372_p0;
 
-assign sext_ln30_420_fu_9254_p1 = add_ln30_71_reg_11282;
+assign sext_ln27_420_fu_9254_p1 = add_ln27_71_reg_11282;
 
-assign sext_ln30_421_fu_8992_p1 = grp_fu_10038_p4;
+assign sext_ln27_421_fu_8992_p1 = grp_fu_10038_p4;
 
-assign sext_ln30_422_fu_9257_p1 = $signed(add_ln30_73_reg_11287);
+assign sext_ln27_422_fu_9257_p1 = $signed(add_ln27_73_reg_11287);
 
-assign sext_ln30_423_fu_9559_p1 = $signed(add_ln30_75_reg_11407_pp0_iter6_reg);
+assign sext_ln27_423_fu_9559_p1 = $signed(add_ln27_75_reg_11407_pp0_iter6_reg);
 
-assign sext_ln30_424_fu_9574_p1 = add_ln30_77_reg_11412_pp0_iter6_reg;
+assign sext_ln27_424_fu_9574_p1 = add_ln27_77_reg_11412_pp0_iter6_reg;
 
-assign sext_ln30_425_fu_9001_p1 = grp_fu_10057_p4;
+assign sext_ln27_425_fu_9001_p1 = grp_fu_10057_p4;
 
-assign sext_ln30_426_fu_9583_p1 = $signed(add_ln30_80_reg_11292_pp0_iter6_reg);
+assign sext_ln27_426_fu_9583_p1 = $signed(add_ln27_80_reg_11292_pp0_iter6_reg);
 
-assign sext_ln30_428_fu_9010_p1 = grp_fu_9670_p4;
+assign sext_ln27_428_fu_9010_p1 = grp_fu_9670_p4;
 
-assign sext_ln30_429_fu_9013_p1 = grp_fu_9747_p4;
+assign sext_ln27_429_fu_9013_p1 = grp_fu_9747_p4;
 
-assign sext_ln30_42_fu_1380_p0 = p_ZL12H_filter_FIR_345;
+assign sext_ln27_42_fu_1380_p0 = p_ZL12H_filter_FIR_345;
 
-assign sext_ln30_42_fu_1380_p1 = sext_ln30_42_fu_1380_p0;
+assign sext_ln27_42_fu_1380_p1 = sext_ln27_42_fu_1380_p0;
 
-assign sext_ln30_430_fu_9021_p1 = $signed(add_ln30_86_fu_9016_p2);
+assign sext_ln27_430_fu_9021_p1 = $signed(add_ln27_86_fu_9016_p2);
 
-assign sext_ln30_431_fu_9592_p1 = $signed(add_ln30_87_reg_11297_pp0_iter6_reg);
+assign sext_ln27_431_fu_9592_p1 = $signed(add_ln27_87_reg_11297_pp0_iter6_reg);
 
-assign sext_ln30_432_fu_9613_p1 = add_ln30_90_reg_11417_pp0_iter6_reg;
+assign sext_ln27_432_fu_9613_p1 = add_ln27_90_reg_11417_pp0_iter6_reg;
 
-assign sext_ln30_433_fu_9031_p1 = $signed(add_ln30_92_reg_10972_pp0_iter2_reg);
+assign sext_ln27_433_fu_9031_p1 = $signed(add_ln27_92_reg_10972_pp0_iter2_reg);
 
-assign sext_ln30_434_fu_9043_p1 = grp_fu_9758_p4;
+assign sext_ln27_434_fu_9043_p1 = grp_fu_9758_p4;
 
-assign sext_ln30_435_fu_9046_p1 = grp_fu_9692_p4;
+assign sext_ln27_435_fu_9046_p1 = grp_fu_9692_p4;
 
-assign sext_ln30_436_fu_9034_p1 = grp_fu_9659_p4;
+assign sext_ln27_436_fu_9034_p1 = grp_fu_9659_p4;
 
-assign sext_ln30_437_fu_9622_p1 = $signed(add_ln30_94_reg_11302_pp0_iter6_reg);
+assign sext_ln27_437_fu_9622_p1 = $signed(add_ln27_94_reg_11302_pp0_iter6_reg);
 
-assign sext_ln30_438_fu_9272_p1 = $signed(add_ln30_98_reg_11307);
+assign sext_ln27_438_fu_9272_p1 = $signed(add_ln27_98_reg_11307);
 
-assign sext_ln30_439_fu_9055_p1 = grp_fu_9769_p4;
+assign sext_ln27_439_fu_9055_p1 = grp_fu_9769_p4;
 
-assign sext_ln30_43_fu_1388_p0 = p_ZL12H_filter_FIR_344;
+assign sext_ln27_43_fu_1388_p0 = p_ZL12H_filter_FIR_344;
 
-assign sext_ln30_43_fu_1388_p1 = sext_ln30_43_fu_1388_p0;
+assign sext_ln27_43_fu_1388_p1 = sext_ln27_43_fu_1388_p0;
 
-assign sext_ln30_440_fu_9058_p1 = $signed(add_ln30_106_reg_10982_pp0_iter2_reg);
+assign sext_ln27_440_fu_9058_p1 = $signed(add_ln27_106_reg_10982_pp0_iter2_reg);
 
-assign sext_ln30_441_fu_9067_p1 = grp_fu_9780_p4;
+assign sext_ln27_441_fu_9067_p1 = grp_fu_9780_p4;
 
-assign sext_ln30_442_fu_9070_p1 = $signed(add_ln30_109_reg_10987_pp0_iter2_reg);
+assign sext_ln27_442_fu_9070_p1 = $signed(add_ln27_109_reg_10987_pp0_iter2_reg);
 
-assign sext_ln30_443_fu_9079_p1 = $signed(add_ln30_110_fu_9073_p2);
+assign sext_ln27_443_fu_9079_p1 = $signed(add_ln27_110_fu_9073_p2);
 
-assign sext_ln30_444_fu_9443_p1 = $signed(add_ln30_111_reg_11312_pp0_iter4_reg);
+assign sext_ln27_444_fu_9443_p1 = $signed(add_ln27_111_reg_11312_pp0_iter4_reg);
 
-assign sext_ln30_445_fu_9089_p1 = $signed(add_ln30_112_reg_10992_pp0_iter2_reg);
+assign sext_ln27_445_fu_9089_p1 = $signed(add_ln27_112_reg_10992_pp0_iter2_reg);
 
-assign sext_ln30_446_fu_9092_p1 = grp_fu_9791_p4;
+assign sext_ln27_446_fu_9092_p1 = grp_fu_9791_p4;
 
-assign sext_ln30_447_fu_9446_p1 = $signed(add_ln30_114_reg_11317_pp0_iter4_reg);
+assign sext_ln27_447_fu_9446_p1 = $signed(add_ln27_114_reg_11317_pp0_iter4_reg);
 
-assign sext_ln30_448_fu_9449_p1 = add_ln30_115_reg_11322_pp0_iter4_reg;
+assign sext_ln27_448_fu_9449_p1 = add_ln27_115_reg_11322_pp0_iter4_reg;
 
-assign sext_ln30_449_fu_9452_p1 = grp_fu_10351_p4;
+assign sext_ln27_449_fu_9452_p1 = grp_fu_10351_p4;
 
-assign sext_ln30_44_fu_1396_p0 = p_ZL12H_filter_FIR_343;
+assign sext_ln27_44_fu_1396_p0 = p_ZL12H_filter_FIR_343;
 
-assign sext_ln30_44_fu_1396_p1 = sext_ln30_44_fu_1396_p0;
+assign sext_ln27_44_fu_1396_p1 = sext_ln27_44_fu_1396_p0;
 
-assign sext_ln30_450_fu_9467_p1 = $signed(add_ln30_119_fu_9461_p2);
+assign sext_ln27_450_fu_9467_p1 = $signed(add_ln27_119_fu_9461_p2);
 
-assign sext_ln30_451_fu_9640_p1 = $signed(add_ln30_120_reg_11437_pp0_iter6_reg);
+assign sext_ln27_451_fu_9640_p1 = $signed(add_ln27_120_reg_11437_pp0_iter6_reg);
 
-assign sext_ln30_452_fu_9275_p1 = $signed(add_ln30_99_reg_10977_pp0_iter3_reg);
+assign sext_ln27_452_fu_9275_p1 = $signed(add_ln27_99_reg_10977_pp0_iter3_reg);
 
-assign sext_ln30_453_fu_9278_p1 = grp_fu_10330_p4;
+assign sext_ln27_453_fu_9278_p1 = grp_fu_10330_p4;
 
-assign sext_ln30_454_fu_9293_p1 = $signed(add_ln30_102_fu_9287_p2);
+assign sext_ln27_454_fu_9293_p1 = $signed(add_ln27_102_fu_9287_p2);
 
-assign sext_ln30_455_fu_9631_p1 = $signed(add_ln30_103_reg_11422_pp0_iter6_reg);
+assign sext_ln27_455_fu_9631_p1 = $signed(add_ln27_103_reg_11422_pp0_iter6_reg);
 
-assign sext_ln30_45_fu_1404_p0 = p_ZL12H_filter_FIR_342;
+assign sext_ln27_45_fu_1404_p0 = p_ZL12H_filter_FIR_342;
 
-assign sext_ln30_45_fu_1404_p1 = sext_ln30_45_fu_1404_p0;
+assign sext_ln27_45_fu_1404_p1 = sext_ln27_45_fu_1404_p0;
 
-assign sext_ln30_46_fu_1412_p0 = p_ZL12H_filter_FIR_341;
+assign sext_ln27_46_fu_1412_p0 = p_ZL12H_filter_FIR_341;
 
-assign sext_ln30_46_fu_1412_p1 = sext_ln30_46_fu_1412_p0;
+assign sext_ln27_46_fu_1412_p1 = sext_ln27_46_fu_1412_p0;
 
-assign sext_ln30_47_fu_1420_p0 = p_ZL12H_filter_FIR_340;
+assign sext_ln27_47_fu_1420_p0 = p_ZL12H_filter_FIR_340;
 
-assign sext_ln30_47_fu_1420_p1 = sext_ln30_47_fu_1420_p0;
+assign sext_ln27_47_fu_1420_p1 = sext_ln27_47_fu_1420_p0;
 
-assign sext_ln30_48_fu_1428_p0 = p_ZL12H_filter_FIR_339;
+assign sext_ln27_48_fu_1428_p0 = p_ZL12H_filter_FIR_339;
 
-assign sext_ln30_48_fu_1428_p1 = sext_ln30_48_fu_1428_p0;
+assign sext_ln27_48_fu_1428_p1 = sext_ln27_48_fu_1428_p0;
 
-assign sext_ln30_49_fu_1436_p0 = p_ZL12H_filter_FIR_338;
+assign sext_ln27_49_fu_1436_p0 = p_ZL12H_filter_FIR_338;
 
-assign sext_ln30_4_fu_1072_p0 = p_ZL12H_filter_FIR_387;
+assign sext_ln27_4_fu_1072_p0 = p_ZL12H_filter_FIR_387;
 
-assign sext_ln30_50_fu_1444_p0 = p_ZL12H_filter_FIR_337;
+assign sext_ln27_50_fu_1444_p0 = p_ZL12H_filter_FIR_337;
 
-assign sext_ln30_50_fu_1444_p1 = sext_ln30_50_fu_1444_p0;
+assign sext_ln27_50_fu_1444_p1 = sext_ln27_50_fu_1444_p0;
 
-assign sext_ln30_51_fu_1452_p0 = p_ZL12H_filter_FIR_336;
+assign sext_ln27_51_fu_1452_p0 = p_ZL12H_filter_FIR_336;
 
-assign sext_ln30_51_fu_1452_p1 = sext_ln30_51_fu_1452_p0;
+assign sext_ln27_51_fu_1452_p1 = sext_ln27_51_fu_1452_p0;
 
-assign sext_ln30_52_fu_1460_p0 = p_ZL12H_filter_FIR_335;
+assign sext_ln27_52_fu_1460_p0 = p_ZL12H_filter_FIR_335;
 
-assign sext_ln30_52_fu_1460_p1 = sext_ln30_52_fu_1460_p0;
+assign sext_ln27_52_fu_1460_p1 = sext_ln27_52_fu_1460_p0;
 
-assign sext_ln30_53_fu_1468_p0 = p_ZL12H_filter_FIR_334;
+assign sext_ln27_53_fu_1468_p0 = p_ZL12H_filter_FIR_334;
 
-assign sext_ln30_53_fu_1468_p1 = sext_ln30_53_fu_1468_p0;
+assign sext_ln27_53_fu_1468_p1 = sext_ln27_53_fu_1468_p0;
 
-assign sext_ln30_54_fu_1476_p0 = p_ZL12H_filter_FIR_333;
+assign sext_ln27_54_fu_1476_p0 = p_ZL12H_filter_FIR_333;
 
-assign sext_ln30_54_fu_1476_p1 = sext_ln30_54_fu_1476_p0;
+assign sext_ln27_54_fu_1476_p1 = sext_ln27_54_fu_1476_p0;
 
-assign sext_ln30_55_fu_1484_p0 = p_ZL12H_filter_FIR_332;
+assign sext_ln27_55_fu_1484_p0 = p_ZL12H_filter_FIR_332;
 
-assign sext_ln30_55_fu_1484_p1 = sext_ln30_55_fu_1484_p0;
+assign sext_ln27_55_fu_1484_p1 = sext_ln27_55_fu_1484_p0;
 
-assign sext_ln30_56_fu_1492_p0 = p_ZL12H_filter_FIR_331;
+assign sext_ln27_56_fu_1492_p0 = p_ZL12H_filter_FIR_331;
 
-assign sext_ln30_56_fu_1492_p1 = sext_ln30_56_fu_1492_p0;
+assign sext_ln27_56_fu_1492_p1 = sext_ln27_56_fu_1492_p0;
 
-assign sext_ln30_57_fu_1500_p0 = p_ZL12H_filter_FIR_330;
+assign sext_ln27_57_fu_1500_p0 = p_ZL12H_filter_FIR_330;
 
-assign sext_ln30_57_fu_1500_p1 = sext_ln30_57_fu_1500_p0;
+assign sext_ln27_57_fu_1500_p1 = sext_ln27_57_fu_1500_p0;
 
-assign sext_ln30_58_fu_1508_p0 = p_ZL12H_filter_FIR_329;
+assign sext_ln27_58_fu_1508_p0 = p_ZL12H_filter_FIR_329;
 
-assign sext_ln30_58_fu_1508_p1 = sext_ln30_58_fu_1508_p0;
+assign sext_ln27_58_fu_1508_p1 = sext_ln27_58_fu_1508_p0;
 
-assign sext_ln30_59_fu_1516_p0 = p_ZL12H_filter_FIR_328;
+assign sext_ln27_59_fu_1516_p0 = p_ZL12H_filter_FIR_328;
 
-assign sext_ln30_59_fu_1516_p1 = sext_ln30_59_fu_1516_p0;
+assign sext_ln27_59_fu_1516_p1 = sext_ln27_59_fu_1516_p0;
 
-assign sext_ln30_5_fu_1080_p0 = p_ZL12H_filter_FIR_386;
+assign sext_ln27_5_fu_1080_p0 = p_ZL12H_filter_FIR_386;
 
-assign sext_ln30_5_fu_1080_p1 = sext_ln30_5_fu_1080_p0;
+assign sext_ln27_5_fu_1080_p1 = sext_ln27_5_fu_1080_p0;
 
-assign sext_ln30_60_fu_1524_p0 = p_ZL12H_filter_FIR_327;
+assign sext_ln27_60_fu_1524_p0 = p_ZL12H_filter_FIR_327;
 
-assign sext_ln30_60_fu_1524_p1 = sext_ln30_60_fu_1524_p0;
+assign sext_ln27_60_fu_1524_p1 = sext_ln27_60_fu_1524_p0;
 
-assign sext_ln30_61_fu_1532_p0 = p_ZL12H_filter_FIR_326;
+assign sext_ln27_61_fu_1532_p0 = p_ZL12H_filter_FIR_326;
 
-assign sext_ln30_61_fu_1532_p1 = sext_ln30_61_fu_1532_p0;
+assign sext_ln27_61_fu_1532_p1 = sext_ln27_61_fu_1532_p0;
 
-assign sext_ln30_62_fu_1540_p0 = p_ZL12H_filter_FIR_325;
+assign sext_ln27_62_fu_1540_p0 = p_ZL12H_filter_FIR_325;
 
-assign sext_ln30_62_fu_1540_p1 = sext_ln30_62_fu_1540_p0;
+assign sext_ln27_62_fu_1540_p1 = sext_ln27_62_fu_1540_p0;
 
-assign sext_ln30_63_fu_1548_p0 = p_ZL12H_filter_FIR_324;
+assign sext_ln27_63_fu_1548_p0 = p_ZL12H_filter_FIR_324;
 
-assign sext_ln30_63_fu_1548_p1 = sext_ln30_63_fu_1548_p0;
+assign sext_ln27_63_fu_1548_p1 = sext_ln27_63_fu_1548_p0;
 
-assign sext_ln30_64_fu_1556_p0 = p_ZL12H_filter_FIR_323;
+assign sext_ln27_64_fu_1556_p0 = p_ZL12H_filter_FIR_323;
 
-assign sext_ln30_64_fu_1556_p1 = sext_ln30_64_fu_1556_p0;
+assign sext_ln27_64_fu_1556_p1 = sext_ln27_64_fu_1556_p0;
 
-assign sext_ln30_65_fu_1564_p0 = p_ZL12H_filter_FIR_322;
+assign sext_ln27_65_fu_1564_p0 = p_ZL12H_filter_FIR_322;
 
-assign sext_ln30_65_fu_1564_p1 = sext_ln30_65_fu_1564_p0;
+assign sext_ln27_65_fu_1564_p1 = sext_ln27_65_fu_1564_p0;
 
-assign sext_ln30_66_fu_1572_p0 = p_ZL12H_filter_FIR_321;
+assign sext_ln27_66_fu_1572_p0 = p_ZL12H_filter_FIR_321;
 
-assign sext_ln30_66_fu_1572_p1 = sext_ln30_66_fu_1572_p0;
+assign sext_ln27_66_fu_1572_p1 = sext_ln27_66_fu_1572_p0;
 
-assign sext_ln30_67_fu_1580_p0 = p_ZL12H_filter_FIR_320;
+assign sext_ln27_67_fu_1580_p0 = p_ZL12H_filter_FIR_320;
 
-assign sext_ln30_67_fu_1580_p1 = sext_ln30_67_fu_1580_p0;
+assign sext_ln27_67_fu_1580_p1 = sext_ln27_67_fu_1580_p0;
 
-assign sext_ln30_68_fu_1588_p0 = p_ZL12H_filter_FIR_319;
+assign sext_ln27_68_fu_1588_p0 = p_ZL12H_filter_FIR_319;
 
-assign sext_ln30_68_fu_1588_p1 = sext_ln30_68_fu_1588_p0;
+assign sext_ln27_68_fu_1588_p1 = sext_ln27_68_fu_1588_p0;
 
-assign sext_ln30_69_fu_1596_p0 = p_ZL12H_filter_FIR_318;
+assign sext_ln27_69_fu_1596_p0 = p_ZL12H_filter_FIR_318;
 
-assign sext_ln30_69_fu_1596_p1 = sext_ln30_69_fu_1596_p0;
+assign sext_ln27_69_fu_1596_p1 = sext_ln27_69_fu_1596_p0;
 
-assign sext_ln30_6_fu_1088_p0 = p_ZL12H_filter_FIR_385;
+assign sext_ln27_6_fu_1088_p0 = p_ZL12H_filter_FIR_385;
 
-assign sext_ln30_6_fu_1088_p1 = sext_ln30_6_fu_1088_p0;
+assign sext_ln27_6_fu_1088_p1 = sext_ln27_6_fu_1088_p0;
 
-assign sext_ln30_70_fu_1604_p0 = p_ZL12H_filter_FIR_317;
+assign sext_ln27_70_fu_1604_p0 = p_ZL12H_filter_FIR_317;
 
-assign sext_ln30_70_fu_1604_p1 = sext_ln30_70_fu_1604_p0;
+assign sext_ln27_70_fu_1604_p1 = sext_ln27_70_fu_1604_p0;
 
-assign sext_ln30_71_fu_1612_p0 = p_ZL12H_filter_FIR_316;
+assign sext_ln27_71_fu_1612_p0 = p_ZL12H_filter_FIR_316;
 
-assign sext_ln30_71_fu_1612_p1 = sext_ln30_71_fu_1612_p0;
+assign sext_ln27_71_fu_1612_p1 = sext_ln27_71_fu_1612_p0;
 
-assign sext_ln30_72_fu_1620_p0 = p_ZL12H_filter_FIR_315;
+assign sext_ln27_72_fu_1620_p0 = p_ZL12H_filter_FIR_315;
 
-assign sext_ln30_72_fu_1620_p1 = sext_ln30_72_fu_1620_p0;
+assign sext_ln27_72_fu_1620_p1 = sext_ln27_72_fu_1620_p0;
 
-assign sext_ln30_73_fu_1628_p0 = p_ZL12H_filter_FIR_314;
+assign sext_ln27_73_fu_1628_p0 = p_ZL12H_filter_FIR_314;
 
-assign sext_ln30_74_fu_1636_p0 = p_ZL12H_filter_FIR_313;
+assign sext_ln27_74_fu_1636_p0 = p_ZL12H_filter_FIR_313;
 
-assign sext_ln30_74_fu_1636_p1 = sext_ln30_74_fu_1636_p0;
+assign sext_ln27_74_fu_1636_p1 = sext_ln27_74_fu_1636_p0;
 
-assign sext_ln30_75_fu_1644_p0 = p_ZL12H_filter_FIR_312;
+assign sext_ln27_75_fu_1644_p0 = p_ZL12H_filter_FIR_312;
 
-assign sext_ln30_75_fu_1644_p1 = sext_ln30_75_fu_1644_p0;
+assign sext_ln27_75_fu_1644_p1 = sext_ln27_75_fu_1644_p0;
 
-assign sext_ln30_76_fu_1652_p0 = p_ZL12H_filter_FIR_311;
+assign sext_ln27_76_fu_1652_p0 = p_ZL12H_filter_FIR_311;
 
-assign sext_ln30_76_fu_1652_p1 = sext_ln30_76_fu_1652_p0;
+assign sext_ln27_76_fu_1652_p1 = sext_ln27_76_fu_1652_p0;
 
-assign sext_ln30_77_fu_1660_p0 = p_ZL12H_filter_FIR_310;
+assign sext_ln27_77_fu_1660_p0 = p_ZL12H_filter_FIR_310;
 
-assign sext_ln30_77_fu_1660_p1 = sext_ln30_77_fu_1660_p0;
+assign sext_ln27_77_fu_1660_p1 = sext_ln27_77_fu_1660_p0;
 
-assign sext_ln30_78_fu_1668_p0 = p_ZL12H_filter_FIR_309;
+assign sext_ln27_78_fu_1668_p0 = p_ZL12H_filter_FIR_309;
 
-assign sext_ln30_78_fu_1668_p1 = sext_ln30_78_fu_1668_p0;
+assign sext_ln27_78_fu_1668_p1 = sext_ln27_78_fu_1668_p0;
 
-assign sext_ln30_79_fu_1676_p0 = p_ZL12H_filter_FIR_308;
+assign sext_ln27_79_fu_1676_p0 = p_ZL12H_filter_FIR_308;
 
-assign sext_ln30_79_fu_1676_p1 = sext_ln30_79_fu_1676_p0;
+assign sext_ln27_79_fu_1676_p1 = sext_ln27_79_fu_1676_p0;
 
-assign sext_ln30_7_fu_1096_p0 = p_ZL12H_filter_FIR_384;
+assign sext_ln27_7_fu_1096_p0 = p_ZL12H_filter_FIR_384;
 
-assign sext_ln30_7_fu_1096_p1 = sext_ln30_7_fu_1096_p0;
+assign sext_ln27_7_fu_1096_p1 = sext_ln27_7_fu_1096_p0;
 
-assign sext_ln30_81_fu_1688_p0 = p_ZL12H_filter_FIR_306;
+assign sext_ln27_81_fu_1688_p0 = p_ZL12H_filter_FIR_306;
 
-assign sext_ln30_81_fu_1688_p1 = sext_ln30_81_fu_1688_p0;
+assign sext_ln27_81_fu_1688_p1 = sext_ln27_81_fu_1688_p0;
 
-assign sext_ln30_82_fu_1696_p0 = p_ZL12H_filter_FIR_305;
+assign sext_ln27_82_fu_1696_p0 = p_ZL12H_filter_FIR_305;
 
-assign sext_ln30_82_fu_1696_p1 = sext_ln30_82_fu_1696_p0;
+assign sext_ln27_82_fu_1696_p1 = sext_ln27_82_fu_1696_p0;
 
-assign sext_ln30_83_fu_1704_p0 = p_ZL12H_filter_FIR_304;
+assign sext_ln27_83_fu_1704_p0 = p_ZL12H_filter_FIR_304;
 
-assign sext_ln30_83_fu_1704_p1 = sext_ln30_83_fu_1704_p0;
+assign sext_ln27_83_fu_1704_p1 = sext_ln27_83_fu_1704_p0;
 
-assign sext_ln30_84_fu_1712_p0 = p_ZL12H_filter_FIR_303;
+assign sext_ln27_84_fu_1712_p0 = p_ZL12H_filter_FIR_303;
 
-assign sext_ln30_84_fu_1712_p1 = sext_ln30_84_fu_1712_p0;
+assign sext_ln27_84_fu_1712_p1 = sext_ln27_84_fu_1712_p0;
 
-assign sext_ln30_85_fu_1720_p0 = p_ZL12H_filter_FIR_302;
+assign sext_ln27_85_fu_1720_p0 = p_ZL12H_filter_FIR_302;
 
-assign sext_ln30_86_fu_1728_p0 = p_ZL12H_filter_FIR_301;
+assign sext_ln27_86_fu_1728_p0 = p_ZL12H_filter_FIR_301;
 
-assign sext_ln30_87_fu_1736_p0 = p_ZL12H_filter_FIR_300;
+assign sext_ln27_87_fu_1736_p0 = p_ZL12H_filter_FIR_300;
 
-assign sext_ln30_87_fu_1736_p1 = sext_ln30_87_fu_1736_p0;
+assign sext_ln27_87_fu_1736_p1 = sext_ln27_87_fu_1736_p0;
 
-assign sext_ln30_88_fu_1744_p0 = p_ZL12H_filter_FIR_299;
+assign sext_ln27_88_fu_1744_p0 = p_ZL12H_filter_FIR_299;
 
-assign sext_ln30_88_fu_1744_p1 = sext_ln30_88_fu_1744_p0;
+assign sext_ln27_88_fu_1744_p1 = sext_ln27_88_fu_1744_p0;
 
-assign sext_ln30_89_fu_1752_p0 = p_ZL12H_filter_FIR_298;
+assign sext_ln27_89_fu_1752_p0 = p_ZL12H_filter_FIR_298;
 
-assign sext_ln30_89_fu_1752_p1 = sext_ln30_89_fu_1752_p0;
+assign sext_ln27_89_fu_1752_p1 = sext_ln27_89_fu_1752_p0;
 
-assign sext_ln30_8_fu_1104_p0 = p_ZL12H_filter_FIR_383;
+assign sext_ln27_8_fu_1104_p0 = p_ZL12H_filter_FIR_383;
 
-assign sext_ln30_8_fu_1104_p1 = sext_ln30_8_fu_1104_p0;
+assign sext_ln27_8_fu_1104_p1 = sext_ln27_8_fu_1104_p0;
 
-assign sext_ln30_90_fu_1760_p0 = p_ZL12H_filter_FIR_297;
+assign sext_ln27_90_fu_1760_p0 = p_ZL12H_filter_FIR_297;
 
-assign sext_ln30_90_fu_1760_p1 = sext_ln30_90_fu_1760_p0;
+assign sext_ln27_90_fu_1760_p1 = sext_ln27_90_fu_1760_p0;
 
-assign sext_ln30_91_fu_1768_p0 = p_ZL12H_filter_FIR_296;
+assign sext_ln27_91_fu_1768_p0 = p_ZL12H_filter_FIR_296;
 
-assign sext_ln30_91_fu_1768_p1 = sext_ln30_91_fu_1768_p0;
+assign sext_ln27_91_fu_1768_p1 = sext_ln27_91_fu_1768_p0;
 
-assign sext_ln30_92_fu_1776_p0 = p_ZL12H_filter_FIR_295;
+assign sext_ln27_92_fu_1776_p0 = p_ZL12H_filter_FIR_295;
 
-assign sext_ln30_92_fu_1776_p1 = sext_ln30_92_fu_1776_p0;
+assign sext_ln27_92_fu_1776_p1 = sext_ln27_92_fu_1776_p0;
 
-assign sext_ln30_93_fu_1784_p0 = p_ZL12H_filter_FIR_294;
+assign sext_ln27_93_fu_1784_p0 = p_ZL12H_filter_FIR_294;
 
-assign sext_ln30_93_fu_1784_p1 = sext_ln30_93_fu_1784_p0;
+assign sext_ln27_93_fu_1784_p1 = sext_ln27_93_fu_1784_p0;
 
-assign sext_ln30_94_fu_1792_p0 = p_ZL12H_filter_FIR_293;
+assign sext_ln27_94_fu_1792_p0 = p_ZL12H_filter_FIR_293;
 
-assign sext_ln30_94_fu_1792_p1 = sext_ln30_94_fu_1792_p0;
+assign sext_ln27_94_fu_1792_p1 = sext_ln27_94_fu_1792_p0;
 
-assign sext_ln30_95_fu_1800_p0 = p_ZL12H_filter_FIR_292;
+assign sext_ln27_95_fu_1800_p0 = p_ZL12H_filter_FIR_292;
 
-assign sext_ln30_95_fu_1800_p1 = sext_ln30_95_fu_1800_p0;
+assign sext_ln27_95_fu_1800_p1 = sext_ln27_95_fu_1800_p0;
 
-assign sext_ln30_97_fu_1812_p0 = p_ZL12H_filter_FIR_290;
+assign sext_ln27_97_fu_1812_p0 = p_ZL12H_filter_FIR_290;
 
-assign sext_ln30_97_fu_1812_p1 = sext_ln30_97_fu_1812_p0;
+assign sext_ln27_97_fu_1812_p1 = sext_ln27_97_fu_1812_p0;
 
-assign sext_ln30_98_fu_1824_p0 = p_ZL12H_filter_FIR_288;
+assign sext_ln27_98_fu_1824_p0 = p_ZL12H_filter_FIR_288;
 
-assign sext_ln30_98_fu_1824_p1 = sext_ln30_98_fu_1824_p0;
+assign sext_ln27_98_fu_1824_p1 = sext_ln27_98_fu_1824_p0;
 
-assign sext_ln30_99_fu_1832_p0 = p_ZL12H_filter_FIR_287;
+assign sext_ln27_99_fu_1832_p0 = p_ZL12H_filter_FIR_287;
 
-assign sext_ln30_9_fu_1112_p0 = p_ZL12H_filter_FIR_382;
+assign sext_ln27_9_fu_1112_p0 = p_ZL12H_filter_FIR_382;
 
-assign sext_ln30_9_fu_1112_p1 = sext_ln30_9_fu_1112_p0;
+assign sext_ln27_9_fu_1112_p1 = sext_ln27_9_fu_1112_p0;
 
 assign sum1_cast_fu_4448_p1 = $signed(sum1_fu_4442_p2);
 
-assign sum1_fu_4442_p2 = ($signed(sext_ln30_27_fu_1256_p1) + $signed(sext_ln30_25_fu_1240_p1));
+assign sum1_fu_4442_p2 = ($signed(sext_ln27_27_fu_1256_p1) + $signed(sext_ln27_25_fu_1240_p1));
 
 assign sum_cast_fu_4380_p1 = $signed(sum_fu_4374_p2);
 
-assign sum_fu_4374_p2 = ($signed(sext_ln30_72_fu_1620_p1) + $signed(sext_ln30_71_fu_1612_p1));
+assign sum_fu_4374_p2 = ($signed(sext_ln27_72_fu_1620_p1) + $signed(sext_ln27_71_fu_1612_p1));
 
 assign tmp100_cast_fu_4702_p1 = $signed(tmp100_fu_4696_p2);
 
-assign tmp100_fu_4696_p2 = ($signed(sext_ln30_243_fu_2800_p1) + $signed(sext_ln30_255_fu_2888_p1));
+assign tmp100_fu_4696_p2 = ($signed(sext_ln27_243_fu_2800_p1) + $signed(sext_ln27_255_fu_2888_p1));
 
 assign tmp101_cast_fu_4412_p1 = $signed(tmp101_fu_4406_p2);
 
-assign tmp101_fu_4406_p2 = ($signed(sext_ln30_92_fu_1776_p1) + $signed(sext_ln30_62_fu_1540_p1));
+assign tmp101_fu_4406_p2 = ($signed(sext_ln27_92_fu_1776_p1) + $signed(sext_ln27_62_fu_1540_p1));
 
-assign tmp102_fu_4416_p2 = ($signed(tmp101_cast_fu_4412_p1) - $signed(sext_ln30_120_fu_1984_p1));
+assign tmp102_fu_4416_p2 = ($signed(tmp101_cast_fu_4412_p1) - $signed(sext_ln27_120_fu_1984_p1));
 
-assign tmp103_fu_4422_p2 = ($signed(tmp102_fu_4416_p2) - $signed(sext_ln30_261_fu_2932_p1));
+assign tmp103_fu_4422_p2 = ($signed(tmp102_fu_4416_p2) - $signed(sext_ln27_261_fu_2932_p1));
 
-assign tmp107_fu_4734_p2 = ($signed(sext_ln30_145_fu_2168_p1) + $signed(sext_ln30_115_fu_1948_p1));
+assign tmp107_fu_4734_p2 = ($signed(sext_ln27_145_fu_2168_p1) + $signed(sext_ln27_115_fu_1948_p1));
 
-assign tmp108_fu_4740_p2 = ($signed(sext_ln30_236_fu_2752_p1) + $signed(sext_ln30_266_fu_2968_p1));
+assign tmp108_fu_4740_p2 = ($signed(sext_ln27_236_fu_2752_p1) + $signed(sext_ln27_266_fu_2968_p1));
 
-assign tmp109_fu_4746_p2 = ($signed(sext_ln30_151_fu_2204_p1) + $signed(sext_ln30_103_fu_1860_p1));
+assign tmp109_fu_4746_p2 = ($signed(sext_ln27_151_fu_2204_p1) + $signed(sext_ln27_103_fu_1860_p1));
 
-assign tmp10_fu_3898_p2 = ($signed(tmp9_fu_3892_p2) - $signed(sext_ln30_297_fu_3200_p1));
+assign tmp10_fu_3898_p2 = ($signed(tmp9_fu_3892_p2) - $signed(sext_ln27_297_fu_3200_p1));
 
-assign tmp110_fu_4756_p2 = ($signed(sext_ln30_230_fu_2716_p1) + $signed(sext_ln30_278_fu_3052_p1));
+assign tmp110_fu_4756_p2 = ($signed(sext_ln27_230_fu_2716_p1) + $signed(sext_ln27_278_fu_3052_p1));
 
-assign tmp111_fu_4766_p2 = ($signed(sext_ln30_130_fu_2060_p1) + $signed(sext_ln30_102_fu_1852_p1));
+assign tmp111_fu_4766_p2 = ($signed(sext_ln27_130_fu_2060_p1) + $signed(sext_ln27_102_fu_1852_p1));
 
-assign tmp112_fu_4452_p2 = ($signed(sext_ln30_61_fu_1532_p1) - $signed(sum1_cast_fu_4448_p1));
+assign tmp112_fu_4452_p2 = ($signed(sext_ln27_61_fu_1532_p1) - $signed(sum1_cast_fu_4448_p1));
 
 assign tmp113_cast_fu_4464_p1 = $signed(tmp113_fu_4458_p2);
 
-assign tmp113_fu_4458_p2 = ($signed(tmp112_fu_4452_p2) + $signed(sext_ln23_3_fu_3376_p1));
+assign tmp113_fu_4458_p2 = ($signed(tmp112_fu_4452_p2) + $signed(sext_ln20_3_fu_3376_p1));
 
-assign tmp117_fu_4776_p2 = ($signed(sext_ln30_251_fu_2856_p1) + $signed(sext_ln30_279_fu_3060_p1));
+assign tmp117_fu_4776_p2 = ($signed(sext_ln27_251_fu_2856_p1) + $signed(sext_ln27_279_fu_3060_p1));
 
 assign tmp118_cast_fu_4792_p1 = $signed(tmp118_fu_4786_p2);
 
-assign tmp118_fu_4786_p2 = ($signed(sext_ln30_143_fu_2152_p1) + $signed(sext_ln30_95_fu_1800_p1));
+assign tmp118_fu_4786_p2 = ($signed(sext_ln27_143_fu_2152_p1) + $signed(sext_ln27_95_fu_1800_p1));
 
 assign tmp119_cast_fu_4802_p1 = $signed(tmp119_fu_4796_p2);
 
-assign tmp119_fu_4796_p2 = ($signed(sext_ln30_238_fu_2764_p1) + $signed(sext_ln30_286_fu_3112_p1));
+assign tmp119_fu_4796_p2 = ($signed(sext_ln27_238_fu_2764_p1) + $signed(sext_ln27_286_fu_3112_p1));
 
 assign tmp11_cast_fu_3910_p1 = $signed(tmp11_fu_3904_p2);
 
-assign tmp11_fu_3904_p2 = ($signed(tmp10_fu_3898_p2) - $signed(sext_ln30_305_fu_3272_p1));
+assign tmp11_fu_3904_p2 = ($signed(tmp10_fu_3898_p2) - $signed(sext_ln27_305_fu_3272_p1));
 
 assign tmp120_cast_fu_4856_p1 = $signed(tmp120_fu_4850_p2);
 
-assign tmp120_fu_4850_p2 = ($signed(sext_ln30_93_fu_1784_p1) + $signed(sext_ln30_79_fu_1676_p1));
+assign tmp120_fu_4850_p2 = ($signed(sext_ln27_93_fu_1784_p1) + $signed(sext_ln27_79_fu_1676_p1));
 
 assign tmp1213_fu_4538_p2 = ($signed(tmp72_cast_fu_4534_p1) + $signed(tmp62_cast_fu_4514_p1));
 
 assign tmp121_cast_fu_4866_p1 = $signed(tmp121_fu_4860_p2);
 
-assign tmp121_fu_4860_p2 = ($signed(sext_ln30_288_fu_3128_p1) + $signed(sext_ln30_300_fu_3232_p1));
+assign tmp121_fu_4860_p2 = ($signed(sext_ln27_288_fu_3128_p1) + $signed(sext_ln27_300_fu_3232_p1));
 
 assign tmp123_cast_fu_4882_p1 = $signed(tmp123_fu_4876_p2);
 
-assign tmp123_fu_4876_p2 = ($signed(sext_ln30_129_fu_2052_p1) + $signed(sext_ln30_69_fu_1596_p1));
+assign tmp123_fu_4876_p2 = ($signed(sext_ln27_129_fu_2052_p1) + $signed(sext_ln27_69_fu_1596_p1));
 
 assign tmp124_cast_fu_4892_p1 = $signed(tmp124_fu_4886_p2);
 
-assign tmp124_fu_4886_p2 = ($signed(sext_ln30_252_fu_2864_p1) + $signed(sext_ln30_310_fu_3312_p1));
+assign tmp124_fu_4886_p2 = ($signed(sext_ln27_252_fu_2864_p1) + $signed(sext_ln27_310_fu_3312_p1));
 
 assign tmp125_cast_fu_4550_p1 = $signed(tmp125_fu_4544_p2);
 
-assign tmp125_fu_4544_p2 = ($signed(sext_ln30_32_fu_1296_p1) + $signed(sext_ln30_20_fu_1200_p1));
+assign tmp125_fu_4544_p2 = ($signed(sext_ln27_32_fu_1296_p1) + $signed(sext_ln27_20_fu_1200_p1));
 
-assign tmp126_fu_4554_p2 = ($signed(tmp125_cast_fu_4550_p1) - $signed(sext_ln30_90_fu_1760_p1));
+assign tmp126_fu_4554_p2 = ($signed(tmp125_cast_fu_4550_p1) - $signed(sext_ln27_90_fu_1760_p1));
 
-assign tmp127_fu_4560_p2 = ($signed(tmp126_fu_4554_p2) - $signed(sext_ln30_291_fu_3152_p1));
+assign tmp127_fu_4560_p2 = ($signed(tmp126_fu_4554_p2) - $signed(sext_ln27_291_fu_3152_p1));
 
-assign tmp12_fu_3914_p2 = ($signed(tmp11_cast_fu_3910_p1) + $signed(sext_ln30_313_fu_3336_p1));
+assign tmp12_fu_3914_p2 = ($signed(tmp11_cast_fu_3910_p1) + $signed(sext_ln27_313_fu_3336_p1));
 
-assign tmp131_fu_4998_p2 = ($signed(sext_ln30_167_fu_2320_p1) + $signed(sext_ln30_56_fu_1492_p1));
+assign tmp131_fu_4998_p2 = ($signed(sext_ln27_167_fu_2320_p1) + $signed(sext_ln27_56_fu_1492_p1));
 
-assign tmp132_fu_5008_p2 = ($signed(sext_ln30_214_fu_2600_p1) + $signed(sext_ln30_321_fu_3416_p1));
+assign tmp132_fu_5008_p2 = ($signed(sext_ln27_214_fu_2600_p1) + $signed(sext_ln27_321_fu_3416_p1));
 
-assign tmp133_fu_5018_p2 = ($signed(sext_ln30_98_fu_1824_p1) + $signed(sext_ln30_38_fu_1348_p1));
+assign tmp133_fu_5018_p2 = ($signed(sext_ln27_98_fu_1824_p1) + $signed(sext_ln27_38_fu_1348_p1));
 
-assign tmp134_fu_5024_p2 = ($signed(sext_ln30_283_fu_3088_p1) + $signed(sext_ln30_337_fu_3556_p1));
+assign tmp134_fu_5024_p2 = ($signed(sext_ln27_283_fu_3088_p1) + $signed(sext_ln27_337_fu_3556_p1));
 
 assign tmp135_cast_fu_4586_p1 = $signed(tmp135_fu_4580_p2);
 
-assign tmp135_fu_4580_p2 = ($signed(sext_ln30_17_fu_1176_p1) - $signed(sext_ln30_16_fu_1168_p1));
+assign tmp135_fu_4580_p2 = ($signed(sext_ln27_17_fu_1176_p1) - $signed(sext_ln27_16_fu_1168_p1));
 
-assign tmp136_fu_4590_p2 = ($signed(tmp135_cast_fu_4586_p1) - $signed(sext_ln30_37_fu_1340_p1));
+assign tmp136_fu_4590_p2 = ($signed(tmp135_cast_fu_4586_p1) - $signed(sext_ln27_37_fu_1340_p1));
 
 assign tmp137_cast_fu_4602_p1 = $signed(tmp137_fu_4596_p2);
 
-assign tmp137_fu_4596_p2 = ($signed(tmp136_fu_4590_p2) - $signed(sext_ln30_338_fu_3564_p1));
+assign tmp137_fu_4596_p2 = ($signed(tmp136_fu_4590_p2) - $signed(sext_ln27_338_fu_3564_p1));
 
-assign tmp138_fu_4606_p2 = ($signed(tmp137_cast_fu_4602_p1) + $signed(sext_ln30_356_fu_3728_p1));
+assign tmp138_fu_4606_p2 = ($signed(tmp137_cast_fu_4602_p1) + $signed(sext_ln27_356_fu_3728_p1));
 
 assign tmp139_cast_fu_8399_p1 = tmp139_reg_10793_pp0_iter1_reg;
 
-assign tmp139_fu_4612_p2 = ($signed(tmp138_fu_4606_p2) - $signed(sext_ln30_357_fu_3736_p1));
+assign tmp139_fu_4612_p2 = ($signed(tmp138_fu_4606_p2) - $signed(sext_ln27_357_fu_3736_p1));
 
-assign tmp13_fu_3920_p2 = ($signed(tmp12_fu_3914_p2) - $signed(sext_ln30_336_fu_3548_p1));
+assign tmp13_fu_3920_p2 = ($signed(tmp12_fu_3914_p2) - $signed(sext_ln27_336_fu_3548_p1));
 
 assign tmp147_cast_fu_5036_p1 = $signed(tmp147_fu_5030_p2);
 
-assign tmp147_fu_5030_p2 = ($signed(sext_ln30_60_fu_1524_p1) + $signed(sext_ln30_36_fu_1332_p1));
+assign tmp147_fu_5030_p2 = ($signed(sext_ln27_60_fu_1524_p1) + $signed(sext_ln27_36_fu_1332_p1));
 
 assign tmp148_cast_fu_5046_p1 = $signed(tmp148_fu_5040_p2);
 
-assign tmp148_fu_5040_p2 = ($signed(sext_ln30_317_fu_3384_p1) + $signed(sext_ln30_339_fu_3572_p1));
+assign tmp148_fu_5040_p2 = ($signed(sext_ln27_317_fu_3384_p1) + $signed(sext_ln27_339_fu_3572_p1));
 
 assign tmp149_cast_fu_4656_p1 = $signed(tmp149_fu_4650_p2);
 
-assign tmp149_fu_4650_p2 = ($signed(sext_ln30_81_fu_1688_p1) + $signed(sext_ln30_1_fu_1048_p1));
+assign tmp149_fu_4650_p2 = ($signed(sext_ln27_81_fu_1688_p1) + $signed(sext_ln27_1_fu_1048_p1));
 
-assign tmp150_fu_4660_p2 = ($signed(tmp149_cast_fu_4656_p1) - $signed(sext_ln30_114_fu_1940_p1));
+assign tmp150_fu_4660_p2 = ($signed(tmp149_cast_fu_4656_p1) - $signed(sext_ln27_114_fu_1940_p1));
 
-assign tmp151_fu_4666_p2 = ($signed(tmp150_fu_4660_p2) - $signed(sext_ln30_267_fu_2976_p1));
+assign tmp151_fu_4666_p2 = ($signed(tmp150_fu_4660_p2) - $signed(sext_ln27_267_fu_2976_p1));
 
 assign tmp157_fu_4706_p2 = ($signed(tmp100_cast_fu_4702_p1) + $signed(tmp99_cast_fu_4692_p1));
 
 assign tmp159_cast_fu_5088_p1 = $signed(tmp159_fu_5082_p2);
 
-assign tmp159_fu_5082_p2 = ($signed(sext_ln30_46_fu_1412_p1) + $signed(sext_ln30_35_fu_1320_p1));
+assign tmp159_fu_5082_p2 = ($signed(sext_ln27_46_fu_1412_p1) + $signed(sext_ln27_35_fu_1320_p1));
 
 assign tmp15_fu_3936_p2 = ($signed(tmp1_cast_fu_3932_p1) + $signed(tmp13_fu_3920_p2));
 
 assign tmp160_cast_fu_5098_p1 = $signed(tmp160_fu_5092_p2);
 
-assign tmp160_fu_5092_p2 = ($signed(sext_ln30_331_fu_3492_p1) + $signed(sext_ln30_340_fu_3584_p1));
+assign tmp160_fu_5092_p2 = ($signed(sext_ln27_331_fu_3492_p1) + $signed(sext_ln27_340_fu_3584_p1));
 
 assign tmp161_cast_fu_4718_p1 = $signed(tmp161_fu_4712_p2);
 
-assign tmp161_fu_4712_p2 = ($signed(sext_ln30_124_fu_2016_p1) - $signed(sext_ln30_134_fu_2092_p1));
+assign tmp161_fu_4712_p2 = ($signed(sext_ln27_124_fu_2016_p1) - $signed(sext_ln27_134_fu_2092_p1));
 
-assign tmp162_fu_4722_p2 = ($signed(tmp161_cast_fu_4718_p1) - $signed(sext_ln30_247_fu_2824_p1));
+assign tmp162_fu_4722_p2 = ($signed(tmp161_cast_fu_4718_p1) - $signed(sext_ln27_247_fu_2824_p1));
 
-assign tmp163_fu_4728_p2 = ($signed(tmp162_fu_4722_p2) + $signed(sext_ln30_257_fu_2900_p1));
+assign tmp163_fu_4728_p2 = ($signed(tmp162_fu_4722_p2) + $signed(sext_ln27_257_fu_2900_p1));
 
 assign tmp164_fu_8456_p1 = 26'd133;
 
@@ -6710,39 +6710,39 @@ assign tmp179_fu_4806_p2 = ($signed(tmp119_cast_fu_4802_p1) + $signed(tmp118_cas
 
 assign tmp17_cast_fu_4076_p1 = $signed(tmp17_fu_4070_p2);
 
-assign tmp17_fu_4070_p2 = ($signed(sext_ln30_43_fu_1388_p1) + $signed(sext_ln30_28_fu_1264_p1));
+assign tmp17_fu_4070_p2 = ($signed(sext_ln27_43_fu_1388_p1) + $signed(sext_ln27_28_fu_1264_p1));
 
 assign tmp181_cast_fu_5200_p1 = $signed(tmp181_fu_5194_p2);
 
-assign tmp181_fu_5194_p2 = ($signed(sext_ln30_105_fu_1876_p1) + $signed(sext_ln30_23_fu_1224_p1));
+assign tmp181_fu_5194_p2 = ($signed(sext_ln27_105_fu_1876_p1) + $signed(sext_ln27_23_fu_1224_p1));
 
 assign tmp182_cast_fu_5210_p1 = $signed(tmp182_fu_5204_p2);
 
-assign tmp182_fu_5204_p2 = ($signed(sext_ln30_276_fu_3036_p1) + $signed(sext_ln30_350_fu_3680_p1));
+assign tmp182_fu_5204_p2 = ($signed(sext_ln27_276_fu_3036_p1) + $signed(sext_ln27_350_fu_3680_p1));
 
 assign tmp183_cast_fu_4818_p1 = $signed(tmp183_fu_4812_p2);
 
-assign tmp183_fu_4812_p2 = ($signed(sext_ln30_94_fu_1792_p1) - $signed(sext_ln30_100_fu_1840_p1));
+assign tmp183_fu_4812_p2 = ($signed(sext_ln27_94_fu_1792_p1) - $signed(sext_ln27_100_fu_1840_p1));
 
 assign tmp187_cast_fu_5262_p1 = $signed(tmp187_fu_5256_p2);
 
-assign tmp187_fu_5256_p2 = ($signed(sext_ln30_67_fu_1580_p1) + $signed(sext_ln30_22_fu_1216_p1));
+assign tmp187_fu_5256_p2 = ($signed(sext_ln27_67_fu_1580_p1) + $signed(sext_ln27_22_fu_1216_p1));
 
 assign tmp188_cast_fu_5272_p1 = $signed(tmp188_fu_5266_p2);
 
-assign tmp188_fu_5266_p2 = ($signed(sext_ln30_312_fu_3328_p1) + $signed(sext_ln30_351_fu_3688_p1));
+assign tmp188_fu_5266_p2 = ($signed(sext_ln27_312_fu_3328_p1) + $signed(sext_ln27_351_fu_3688_p1));
 
 assign tmp189_cast_fu_4834_p1 = $signed(tmp189_fu_4828_p2);
 
-assign tmp189_fu_4828_p2 = ($signed(sext_ln30_107_fu_1892_p1) - $signed(sext_ln30_88_fu_1744_p1));
+assign tmp189_fu_4828_p2 = ($signed(sext_ln27_107_fu_1892_p1) - $signed(sext_ln27_88_fu_1744_p1));
 
 assign tmp18_cast_fu_4086_p1 = $signed(tmp18_fu_4080_p2);
 
-assign tmp18_fu_4080_p2 = ($signed(sext_ln30_53_fu_1468_p1) + $signed(sext_ln30_136_fu_2104_p1));
+assign tmp18_fu_4080_p2 = ($signed(sext_ln27_53_fu_1468_p1) + $signed(sext_ln27_136_fu_2104_p1));
 
-assign tmp190_fu_4838_p2 = ($signed(tmp189_cast_fu_4834_p1) + $signed(sext_ln30_274_fu_3020_p1));
+assign tmp190_fu_4838_p2 = ($signed(tmp189_cast_fu_4834_p1) + $signed(sext_ln27_274_fu_3020_p1));
 
-assign tmp191_fu_4844_p2 = ($signed(tmp190_fu_4838_p2) - $signed(sext_ln30_293_fu_3168_p1));
+assign tmp191_fu_4844_p2 = ($signed(tmp190_fu_4838_p2) - $signed(sext_ln27_293_fu_3168_p1));
 
 assign tmp192_fu_8910_p2 = ($signed(p_shl577_fu_8895_p1) + $signed(p_shl578_fu_8906_p1));
 
@@ -6758,7 +6758,7 @@ assign tmp19_fu_4120_p2 = ($signed(tmp29_cast_fu_4116_p1) + $signed(tmp20_cast_f
 
 assign tmp1_cast_fu_3932_p1 = $signed(tmp1_fu_3926_p2);
 
-assign tmp1_fu_3926_p2 = ($signed(sext_ln30_341_fu_3592_p1) + $signed(sext_ln30_366_fu_3808_p1));
+assign tmp1_fu_3926_p2 = ($signed(sext_ln27_341_fu_3592_p1) + $signed(sext_ln27_366_fu_3808_p1));
 
 assign tmp200_cast_fu_4920_p1 = $signed(tmp200_fu_4914_p2);
 
@@ -6766,47 +6766,47 @@ assign tmp200_fu_4914_p2 = ($signed(24'd0) - $signed(p_shl573_fu_4910_p1));
 
 assign tmp201_cast_fu_5390_p1 = $signed(tmp201_fu_5384_p2);
 
-assign tmp201_fu_5384_p2 = ($signed(sext_ln30_44_fu_1396_p1) + $signed(sext_ln30_11_fu_1128_p1));
+assign tmp201_fu_5384_p2 = ($signed(sext_ln27_44_fu_1396_p1) + $signed(sext_ln27_11_fu_1128_p1));
 
 assign tmp202_cast_fu_5400_p1 = $signed(tmp202_fu_5394_p2);
 
-assign tmp202_fu_5394_p2 = ($signed(sext_ln23_5_fu_3508_p1) + $signed(sext_ln30_362_fu_3776_p1));
+assign tmp202_fu_5394_p2 = ($signed(sext_ln20_5_fu_3508_p1) + $signed(sext_ln27_362_fu_3776_p1));
 
 assign tmp203_cast_fu_4930_p1 = $signed(tmp203_fu_4924_p2);
 
-assign tmp203_fu_4924_p2 = ($signed(sext_ln30_64_fu_1556_p1) - $signed(sext_ln30_89_fu_1752_p1));
+assign tmp203_fu_4924_p2 = ($signed(sext_ln27_64_fu_1556_p1) - $signed(sext_ln27_89_fu_1752_p1));
 
-assign tmp204_fu_4934_p2 = ($signed(tmp203_cast_fu_4930_p1) - $signed(sext_ln30_292_fu_3160_p1));
+assign tmp204_fu_4934_p2 = ($signed(tmp203_cast_fu_4930_p1) - $signed(sext_ln27_292_fu_3160_p1));
 
-assign tmp205_fu_4940_p2 = ($signed(tmp204_fu_4934_p2) + $signed(sext_ln30_315_fu_3352_p1));
+assign tmp205_fu_4940_p2 = ($signed(tmp204_fu_4934_p2) + $signed(sext_ln27_315_fu_3352_p1));
 
 assign tmp206_fu_4970_p2 = ($signed(p_shl571_fu_4954_p1) - $signed(p_shl572_fu_4966_p1));
 
 assign tmp207_cast_fu_5416_p1 = $signed(tmp207_fu_5410_p2);
 
-assign tmp207_fu_5410_p2 = ($signed(sext_ln30_30_fu_1280_p1) + $signed(sext_ln30_10_fu_1120_p1));
+assign tmp207_fu_5410_p2 = ($signed(sext_ln27_30_fu_1280_p1) + $signed(sext_ln27_10_fu_1120_p1));
 
 assign tmp208_cast_fu_5426_p1 = $signed(tmp208_fu_5420_p2);
 
-assign tmp208_fu_5420_p2 = ($signed(sext_ln30_343_fu_3624_p1) + $signed(sext_ln30_363_fu_3784_p1));
+assign tmp208_fu_5420_p2 = ($signed(sext_ln27_343_fu_3624_p1) + $signed(sext_ln27_363_fu_3784_p1));
 
 assign tmp209_cast_fu_4982_p1 = $signed(tmp209_fu_4976_p2);
 
-assign tmp209_fu_4976_p2 = ($signed(sext_ln30_128_fu_2044_p1) - $signed(sext_ln30_58_fu_1508_p1));
+assign tmp209_fu_4976_p2 = ($signed(sext_ln27_128_fu_2044_p1) - $signed(sext_ln27_58_fu_1508_p1));
 
 assign tmp20_cast_fu_4106_p1 = $signed(tmp20_fu_4100_p2);
 
-assign tmp20_fu_4100_p2 = ($signed(sext_ln30_245_fu_2812_p1) + $signed(sext_ln30_324_fu_3440_p1));
+assign tmp20_fu_4100_p2 = ($signed(sext_ln27_245_fu_2812_p1) + $signed(sext_ln27_324_fu_3440_p1));
 
-assign tmp210_fu_4986_p2 = ($signed(tmp209_cast_fu_4982_p1) + $signed(sext_ln30_253_fu_2872_p1));
+assign tmp210_fu_4986_p2 = ($signed(tmp209_cast_fu_4982_p1) + $signed(sext_ln27_253_fu_2872_p1));
 
-assign tmp211_fu_4992_p2 = ($signed(tmp210_fu_4986_p2) - $signed(sext_ln30_319_fu_3400_p1));
+assign tmp211_fu_4992_p2 = ($signed(tmp210_fu_4986_p2) - $signed(sext_ln27_319_fu_3400_p1));
 
 assign tmp212_fu_8493_p1 = 24'd29;
 
 assign tmp21_cast_fu_3974_p1 = $signed(tmp21_fu_3968_p2);
 
-assign tmp21_fu_3968_p2 = ($signed(sext_ln30_63_fu_1548_p1) - $signed(sext_ln30_70_fu_1604_p1));
+assign tmp21_fu_3968_p2 = ($signed(sext_ln27_63_fu_1548_p1) - $signed(sext_ln27_70_fu_1604_p1));
 
 assign tmp223_cast_fu_5056_p1 = tmp223_fu_5050_p2;
 
@@ -6822,45 +6822,45 @@ assign tmp228_fu_5128_p2 = ($signed(p_shl3_fu_5108_p3) - $signed(p_shl569_fu_512
 
 assign tmp229_cast_fu_5516_p1 = $signed(tmp229_fu_5510_p2);
 
-assign tmp229_fu_5510_p2 = ($signed(sext_ln30_19_fu_1192_p1) + $signed(sext_ln30_8_fu_1104_p1));
+assign tmp229_fu_5510_p2 = ($signed(sext_ln27_19_fu_1192_p1) + $signed(sext_ln27_8_fu_1104_p1));
 
-assign tmp22_fu_3978_p2 = ($signed(tmp21_cast_fu_3974_p1) + $signed(sext_ln30_97_fu_1812_p1));
+assign tmp22_fu_3978_p2 = ($signed(tmp21_cast_fu_3974_p1) + $signed(sext_ln27_97_fu_1812_p1));
 
 assign tmp230_cast_fu_5526_p1 = $signed(tmp230_fu_5520_p2);
 
-assign tmp230_fu_5520_p2 = ($signed(sext_ln30_354_fu_3712_p1) + $signed(sext_ln30_365_fu_3800_p1));
+assign tmp230_fu_5520_p2 = ($signed(sext_ln27_354_fu_3712_p1) + $signed(sext_ln27_365_fu_3800_p1));
 
 assign tmp231_cast_fu_5140_p1 = $signed(tmp231_fu_5134_p2);
 
-assign tmp231_fu_5134_p2 = ($signed(sext_ln30_91_fu_1768_p1) - $signed(sext_ln30_29_fu_1272_p1));
+assign tmp231_fu_5134_p2 = ($signed(sext_ln27_91_fu_1768_p1) - $signed(sext_ln27_29_fu_1272_p1));
 
-assign tmp232_fu_5144_p2 = ($signed(tmp231_cast_fu_5140_p1) + $signed(sext_ln30_290_fu_3144_p1));
+assign tmp232_fu_5144_p2 = ($signed(tmp231_cast_fu_5140_p1) + $signed(sext_ln27_290_fu_3144_p1));
 
-assign tmp233_fu_5150_p2 = ($signed(tmp232_fu_5144_p2) - $signed(sext_ln30_344_fu_3632_p1));
+assign tmp233_fu_5150_p2 = ($signed(tmp232_fu_5144_p2) - $signed(sext_ln27_344_fu_3632_p1));
 
-assign tmp235_fu_5570_p2 = ($signed(sext_ln30_48_fu_1428_p1) + $signed(sext_ln30_5_fu_1080_p1));
+assign tmp235_fu_5570_p2 = ($signed(sext_ln27_48_fu_1428_p1) + $signed(sext_ln27_5_fu_1080_p1));
 
-assign tmp236_fu_5580_p2 = ($signed(sext_ln30_329_fu_3476_p1) + $signed(sext_ln30_368_fu_3824_p1));
+assign tmp236_fu_5580_p2 = ($signed(sext_ln27_329_fu_3476_p1) + $signed(sext_ln27_368_fu_3824_p1));
 
 assign tmp237_cast_fu_5162_p1 = $signed(tmp237_fu_5156_p2);
 
-assign tmp237_fu_5156_p2 = ($signed(sext_ln30_82_fu_1696_p1) - $signed(sext_ln30_26_fu_1248_p1));
+assign tmp237_fu_5156_p2 = ($signed(sext_ln27_82_fu_1696_p1) - $signed(sext_ln27_26_fu_1248_p1));
 
 assign tmp23_cast_fu_3990_p1 = $signed(tmp23_fu_3984_p2);
 
-assign tmp23_fu_3984_p2 = ($signed(tmp22_fu_3978_p2) - $signed(sext_ln30_104_fu_1868_p1));
+assign tmp23_fu_3984_p2 = ($signed(tmp22_fu_3978_p2) - $signed(sext_ln27_104_fu_1868_p1));
 
 assign tmp243_cast_fu_5178_p1 = $signed(tmp243_fu_5172_p2);
 
-assign tmp243_fu_5172_p2 = ($signed(sext_ln30_76_fu_1652_p1) - $signed(sext_ln30_24_fu_1232_p1));
+assign tmp243_fu_5172_p2 = ($signed(sext_ln27_76_fu_1652_p1) - $signed(sext_ln27_24_fu_1232_p1));
 
-assign tmp244_fu_5182_p2 = ($signed(tmp243_cast_fu_5178_p1) + $signed(sext_ln30_303_fu_3256_p1));
+assign tmp244_fu_5182_p2 = ($signed(tmp243_cast_fu_5178_p1) + $signed(sext_ln27_303_fu_3256_p1));
 
-assign tmp245_fu_5188_p2 = ($signed(tmp244_fu_5182_p2) - $signed(sext_ln30_349_fu_3672_p1));
+assign tmp245_fu_5188_p2 = ($signed(tmp244_fu_5182_p2) - $signed(sext_ln27_349_fu_3672_p1));
 
 assign tmp249_fu_5214_p2 = ($signed(tmp182_cast_fu_5210_p1) + $signed(tmp181_cast_fu_5200_p1));
 
-assign tmp24_fu_3994_p2 = ($signed(tmp23_cast_fu_3990_p1) - $signed(sext_ln30_277_fu_3044_p1));
+assign tmp24_fu_3994_p2 = ($signed(tmp23_cast_fu_3990_p1) - $signed(sext_ln27_277_fu_3044_p1));
 
 assign tmp250_fu_5250_p2 = ($signed(p_neg564_fu_5232_p2) - $signed(p_shl565_fu_5246_p1));
 
@@ -6872,19 +6872,19 @@ assign tmp254_fu_5298_p2 = ($signed(p_shl562_fu_5294_p1) + $signed(tmp253_cast_f
 
 assign tmp257_cast_fu_5310_p1 = $signed(tmp257_fu_5304_p2);
 
-assign tmp257_fu_5304_p2 = ($signed(sext_ln30_31_fu_1288_p1) - $signed(sext_ln30_15_fu_1160_p1));
+assign tmp257_fu_5304_p2 = ($signed(sext_ln27_31_fu_1288_p1) - $signed(sext_ln27_15_fu_1160_p1));
 
-assign tmp25_fu_4000_p2 = ($signed(tmp24_fu_3994_p2) + $signed(sext_ln30_284_fu_3100_p1));
+assign tmp25_fu_4000_p2 = ($signed(tmp24_fu_3994_p2) + $signed(sext_ln27_284_fu_3100_p1));
 
 assign tmp263_cast_fu_5326_p1 = $signed(tmp263_fu_5320_p2);
 
-assign tmp263_fu_5320_p2 = ($signed(sext_ln30_51_fu_1452_p1) - $signed(sext_ln30_14_fu_1152_p1));
+assign tmp263_fu_5320_p2 = ($signed(sext_ln27_51_fu_1452_p1) - $signed(sext_ln27_14_fu_1152_p1));
 
-assign tmp264_fu_5330_p2 = ($signed(tmp263_cast_fu_5326_p1) + $signed(sext_ln30_326_fu_3452_p1));
+assign tmp264_fu_5330_p2 = ($signed(tmp263_cast_fu_5326_p1) + $signed(sext_ln27_326_fu_3452_p1));
 
 assign tmp265_cast_fu_5342_p1 = tmp265_fu_5336_p2;
 
-assign tmp265_fu_5336_p2 = ($signed(tmp264_fu_5330_p2) - $signed(sext_ln30_359_fu_3752_p1));
+assign tmp265_fu_5336_p2 = ($signed(tmp264_fu_5330_p2) - $signed(sext_ln27_359_fu_3752_p1));
 
 assign tmp266_cast_fu_5364_p1 = $signed(tmp266_fu_5358_p2);
 
@@ -6892,9 +6892,9 @@ assign tmp266_fu_5358_p2 = ($signed(p_shl561_fu_5354_p1) - $signed(tmp265_cast_f
 
 assign tmp269_cast_fu_5374_p1 = $signed(tmp269_fu_5368_p2);
 
-assign tmp269_fu_5368_p2 = ($signed(sext_ln30_45_fu_1404_p1) - $signed(sext_ln30_12_fu_1136_p1));
+assign tmp269_fu_5368_p2 = ($signed(sext_ln27_45_fu_1404_p1) - $signed(sext_ln27_12_fu_1136_p1));
 
-assign tmp26_fu_4006_p2 = ($signed(tmp25_fu_4000_p2) - $signed(sext_ln30_309_fu_3304_p1));
+assign tmp26_fu_4006_p2 = ($signed(tmp25_fu_4000_p2) - $signed(sext_ln27_309_fu_3304_p1));
 
 assign tmp275_fu_5404_p2 = ($signed(tmp202_cast_fu_5400_p1) + $signed(tmp201_cast_fu_5390_p1));
 
@@ -6904,7 +6904,7 @@ assign tmp279_cast_fu_5436_p1 = tmp279_fu_5430_p2;
 
 assign tmp279_fu_5430_p2 = ($signed(tmp208_cast_fu_5426_p1) + $signed(tmp207_cast_fu_5416_p1));
 
-assign tmp27_fu_4012_p2 = ($signed(tmp26_fu_4006_p2) + $signed(sext_ln30_316_fu_3360_p1));
+assign tmp27_fu_4012_p2 = ($signed(tmp26_fu_4006_p2) + $signed(sext_ln27_316_fu_3360_p1));
 
 assign tmp280_cast_fu_5458_p1 = $signed(tmp280_fu_5452_p2);
 
@@ -6912,11 +6912,11 @@ assign tmp280_fu_5452_p2 = ($signed(p_shl558_fu_5448_p1) - $signed(tmp279_cast_f
 
 assign tmp283_cast_fu_5468_p1 = $signed(tmp283_fu_5462_p2);
 
-assign tmp283_fu_5462_p2 = ($signed(sext_ln30_9_fu_1112_p1) - $signed(sext_ln30_68_fu_1588_p1));
+assign tmp283_fu_5462_p2 = ($signed(sext_ln27_9_fu_1112_p1) - $signed(sext_ln27_68_fu_1588_p1));
 
-assign tmp284_fu_5472_p2 = ($signed(tmp283_cast_fu_5468_p1) - $signed(sext_ln30_311_fu_3320_p1));
+assign tmp284_fu_5472_p2 = ($signed(tmp283_cast_fu_5468_p1) - $signed(sext_ln27_311_fu_3320_p1));
 
-assign tmp285_fu_5478_p2 = ($signed(tmp284_fu_5472_p2) + $signed(sext_ln30_364_fu_3792_p1));
+assign tmp285_fu_5478_p2 = ($signed(tmp284_fu_5472_p2) + $signed(sext_ln27_364_fu_3792_p1));
 
 assign tmp286_fu_5504_p2 = ($signed(p_shl4_fu_5484_p3) - $signed(p_shl557_fu_5500_p1));
 
@@ -6930,39 +6930,39 @@ assign tmp290_fu_5560_p2 = ($signed(p_shl554_fu_5544_p1) + $signed(p_shl555_fu_5
 
 assign tmp29_cast_fu_4116_p1 = $signed(tmp29_fu_4110_p2);
 
-assign tmp29_fu_4110_p2 = ($signed(sext_ln30_332_fu_3516_p1) + $signed(sext_ln30_345_fu_3640_p1));
+assign tmp29_fu_4110_p2 = ($signed(sext_ln27_332_fu_3516_p1) + $signed(sext_ln27_345_fu_3640_p1));
 
 assign tmp2_cast_fu_4034_p1 = $signed(tmp2_fu_4028_p2);
 
-assign tmp2_fu_4028_p2 = ($signed(tmp31_cast_fu_4024_p1) + $signed(sext_ln30_50_fu_1444_p1));
+assign tmp2_fu_4028_p2 = ($signed(tmp31_cast_fu_4024_p1) + $signed(sext_ln27_50_fu_1444_p1));
 
 assign tmp30_cast_fu_4162_p1 = $signed(tmp30_fu_4156_p2);
 
-assign tmp30_fu_4156_p2 = ($signed(sext_ln30_121_fu_1992_p1) + $signed(sext_ln30_260_fu_2924_p1));
+assign tmp30_fu_4156_p2 = ($signed(sext_ln27_121_fu_1992_p1) + $signed(sext_ln27_260_fu_2924_p1));
 
 assign tmp31_cast_fu_4024_p1 = $signed(tmp31_fu_4018_p2);
 
-assign tmp31_fu_4018_p2 = ($signed(sext_ln30_33_fu_1304_p1) - $signed(sext_ln30_42_fu_1380_p1));
+assign tmp31_fu_4018_p2 = ($signed(sext_ln27_33_fu_1304_p1) - $signed(sext_ln27_42_fu_1380_p1));
 
-assign tmp325_fu_5590_p2 = ($signed(sext_ln30_206_fu_2548_p1) + $signed(sext_ln30_175_fu_2372_p1));
+assign tmp325_fu_5590_p2 = ($signed(sext_ln27_206_fu_2548_p1) + $signed(sext_ln27_175_fu_2372_p1));
 
 assign tmp326_fu_8574_p2 = ($signed(19'd0) - $signed(p_shl552_fu_8570_p1));
 
-assign tmp333_fu_5596_p2 = ($signed(sext_ln30_210_fu_2576_p1) + $signed(sext_ln30_171_fu_2344_p1));
+assign tmp333_fu_5596_p2 = ($signed(sext_ln27_210_fu_2576_p1) + $signed(sext_ln27_171_fu_2344_p1));
 
-assign tmp353_fu_5602_p2 = ($signed(sext_ln30_221_fu_2644_p1) + $signed(sext_ln30_160_fu_2276_p1));
+assign tmp353_fu_5602_p2 = ($signed(sext_ln27_221_fu_2644_p1) + $signed(sext_ln27_160_fu_2276_p1));
 
 assign tmp354_fu_8640_p2 = ($signed(p_neg548_fu_8623_p2) - $signed(p_shl549_fu_8636_p1));
 
 assign tmp355_cast_fu_8650_p1 = tmp355_reg_10896_pp0_iter1_reg;
 
-assign tmp355_fu_5608_p2 = ($signed(sext_ln30_222_fu_2652_p1) + $signed(sext_ln30_159_fu_2268_p1));
+assign tmp355_fu_5608_p2 = ($signed(sext_ln27_222_fu_2652_p1) + $signed(sext_ln27_159_fu_2268_p1));
 
 assign tmp356_fu_8664_p2 = ($signed(p_shl546_fu_8660_p1) - $signed(tmp355_cast_fu_8650_p1));
 
 assign tmp359_cast_fu_8944_p1 = tmp359_reg_10902_pp0_iter2_reg;
 
-assign tmp359_fu_5614_p2 = ($signed(sext_ln30_224_fu_2668_p1) + $signed(sext_ln30_157_fu_2252_p1));
+assign tmp359_fu_5614_p2 = ($signed(sext_ln27_224_fu_2668_p1) + $signed(sext_ln27_157_fu_2252_p1));
 
 assign tmp35_fu_4058_p2 = ($signed(tmp3_cast_fu_4054_p1) + $signed(tmp2_cast_fu_4034_p1));
 
@@ -6970,11 +6970,11 @@ assign tmp360_cast_fu_8964_p1 = $signed(tmp360_fu_8958_p2);
 
 assign tmp360_fu_8958_p2 = ($signed(p_shl545_fu_8954_p1) - $signed(tmp359_cast_fu_8944_p1));
 
-assign tmp361_fu_5620_p2 = ($signed(sext_ln30_225_fu_2676_p1) + $signed(sext_ln30_156_fu_2244_p1));
+assign tmp361_fu_5620_p2 = ($signed(sext_ln27_225_fu_2676_p1) + $signed(sext_ln27_156_fu_2244_p1));
 
-assign tmp367_fu_5626_p2 = ($signed(sext_ln30_228_fu_2700_p1) + $signed(sext_ln30_153_fu_2220_p1));
+assign tmp367_fu_5626_p2 = ($signed(sext_ln27_228_fu_2700_p1) + $signed(sext_ln27_153_fu_2220_p1));
 
-assign tmp377_fu_5632_p2 = ($signed(sext_ln30_239_fu_2772_p1) + $signed(sext_ln30_142_fu_2144_p1));
+assign tmp377_fu_5632_p2 = ($signed(sext_ln27_239_fu_2772_p1) + $signed(sext_ln27_142_fu_2144_p1));
 
 assign tmp378_cast_fu_9146_p1 = $signed(tmp378_fu_9140_p2);
 
@@ -6982,27 +6982,27 @@ assign tmp378_fu_9140_p2 = ($signed(p_shl539_fu_9125_p1) + $signed(p_shl540_fu_9
 
 assign tmp397_cast_fu_8730_p1 = tmp397_reg_10926_pp0_iter1_reg;
 
-assign tmp397_fu_5638_p2 = ($signed(sext_ln30_259_fu_2916_p1) + $signed(sext_ln30_122_fu_2000_p1));
+assign tmp397_fu_5638_p2 = ($signed(sext_ln27_259_fu_2916_p1) + $signed(sext_ln27_122_fu_2000_p1));
 
 assign tmp3_cast_fu_4054_p1 = $signed(tmp3_fu_4048_p2);
 
-assign tmp3_fu_4048_p2 = ($signed(tmp4_cast_fu_4044_p1) + $signed(sext_ln30_152_fu_2212_p1));
+assign tmp3_fu_4048_p2 = ($signed(tmp4_cast_fu_4044_p1) + $signed(sext_ln27_152_fu_2212_p1));
 
-assign tmp405_fu_5644_p2 = ($signed(sext_ln30_265_fu_2960_p1) + $signed(sext_ln30_116_fu_1956_p1));
+assign tmp405_fu_5644_p2 = ($signed(sext_ln27_265_fu_2960_p1) + $signed(sext_ln27_116_fu_1956_p1));
 
-assign tmp415_fu_5650_p2 = ($signed(sext_ln30_275_fu_3028_p1) + $signed(sext_ln30_106_fu_1884_p1));
+assign tmp415_fu_5650_p2 = ($signed(sext_ln27_275_fu_3028_p1) + $signed(sext_ln27_106_fu_1884_p1));
 
 assign tmp416_fu_8800_p2 = ($signed(p_shl533_fu_8785_p1) - $signed(p_shl534_fu_8796_p1));
 
-assign tmp423_fu_5656_p2 = ($signed(sext_ln30_294_fu_3176_p1) + $signed(sext_ln30_87_fu_1736_p1));
+assign tmp423_fu_5656_p2 = ($signed(sext_ln27_294_fu_3176_p1) + $signed(sext_ln27_87_fu_1736_p1));
 
-assign tmp431_fu_5662_p2 = ($signed(sext_ln30_304_fu_3264_p1) + $signed(sext_ln30_75_fu_1644_p1));
+assign tmp431_fu_5662_p2 = ($signed(sext_ln27_304_fu_3264_p1) + $signed(sext_ln27_75_fu_1644_p1));
 
 assign tmp432_fu_8866_p2 = ($signed(p_shl529_fu_8862_p1) - $signed(p_shl527_fu_8851_p1));
 
 assign tmp435_cast_fu_9518_p1 = tmp435_reg_10956_pp0_iter6_reg;
 
-assign tmp435_fu_5668_p2 = ($signed(sext_ln30_323_fu_3432_p1) + $signed(sext_ln30_54_fu_1476_p1));
+assign tmp435_fu_5668_p2 = ($signed(sext_ln27_323_fu_3432_p1) + $signed(sext_ln27_54_fu_1476_p1));
 
 assign tmp436_cast_fu_9538_p1 = $signed(tmp436_fu_9532_p2);
 
@@ -7014,45 +7014,45 @@ assign tmp45_fu_4130_p2 = ($signed(tmp19_cast_fu_4126_p1) + $signed(tmp5_cast_fu
 
 assign tmp47_cast_fu_4246_p1 = $signed(tmp47_fu_4240_p2);
 
-assign tmp47_fu_4240_p2 = ($signed(sext_ln30_47_fu_1420_p1) + $signed(sext_ln30_330_fu_3484_p1));
+assign tmp47_fu_4240_p2 = ($signed(sext_ln27_47_fu_1420_p1) + $signed(sext_ln27_330_fu_3484_p1));
 
 assign tmp48_cast_fu_4300_p1 = $signed(tmp48_fu_4294_p2);
 
-assign tmp48_fu_4294_p2 = ($signed(sext_ln30_77_fu_1660_p1) + $signed(sext_ln30_302_fu_3248_p1));
+assign tmp48_fu_4294_p2 = ($signed(sext_ln27_77_fu_1660_p1) + $signed(sext_ln27_302_fu_3248_p1));
 
 assign tmp49_cast_fu_4344_p1 = $signed(tmp49_fu_4338_p2);
 
-assign tmp49_fu_4338_p2 = ($signed(tmp50_cast_fu_4334_p1) + $signed(sext_ln30_133_fu_2084_p1));
+assign tmp49_fu_4338_p2 = ($signed(tmp50_cast_fu_4334_p1) + $signed(sext_ln27_133_fu_2084_p1));
 
 assign tmp4_cast_fu_4044_p1 = $signed(tmp4_fu_4038_p2);
 
-assign tmp4_fu_4038_p2 = ($signed(sext_ln30_229_fu_2708_p1) + $signed(sext_ln30_327_fu_3460_p1));
+assign tmp4_fu_4038_p2 = ($signed(sext_ln27_229_fu_2708_p1) + $signed(sext_ln27_327_fu_3460_p1));
 
 assign tmp50_cast_fu_4334_p1 = $signed(tmp50_fu_4328_p2);
 
-assign tmp50_fu_4328_p2 = ($signed(sext_ln30_132_fu_2076_p1) + $signed(sext_ln30_150_fu_2196_p1));
+assign tmp50_fu_4328_p2 = ($signed(sext_ln27_132_fu_2076_p1) + $signed(sext_ln27_150_fu_2196_p1));
 
 assign tmp51_cast_fu_4142_p1 = $signed(tmp51_fu_4136_p2);
 
-assign tmp51_fu_4136_p2 = ($signed(sext_ln30_18_fu_1184_p1) - $signed(sext_ln30_13_fu_1144_p1));
+assign tmp51_fu_4136_p2 = ($signed(sext_ln27_18_fu_1184_p1) - $signed(sext_ln27_13_fu_1144_p1));
 
 assign tmp52_cast_fu_4152_p1 = $signed(tmp52_fu_4146_p2);
 
-assign tmp52_fu_4146_p2 = ($signed(tmp51_cast_fu_4142_p1) - $signed(sext_ln30_59_fu_1516_p1));
+assign tmp52_fu_4146_p2 = ($signed(tmp51_cast_fu_4142_p1) - $signed(sext_ln27_59_fu_1516_p1));
 
 assign tmp54_fu_4166_p2 = ($signed(tmp30_cast_fu_4162_p1) + $signed(tmp52_cast_fu_4152_p1));
 
-assign tmp55_fu_4172_p2 = ($signed(tmp54_fu_4166_p2) - $signed(sext_ln30_318_fu_3392_p1));
+assign tmp55_fu_4172_p2 = ($signed(tmp54_fu_4166_p2) - $signed(sext_ln27_318_fu_3392_p1));
 
-assign tmp56_fu_4178_p2 = ($signed(tmp55_fu_4172_p2) + $signed(sext_ln30_355_fu_3720_p1));
+assign tmp56_fu_4178_p2 = ($signed(tmp55_fu_4172_p2) + $signed(sext_ln27_355_fu_3720_p1));
 
-assign tmp57_fu_4184_p2 = ($signed(tmp56_fu_4178_p2) - $signed(sext_ln30_360_fu_3760_p1));
+assign tmp57_fu_4184_p2 = ($signed(tmp56_fu_4178_p2) - $signed(sext_ln27_360_fu_3760_p1));
 
 assign tmp58_fu_4214_p2 = ($signed(p_shl590_fu_4198_p1) - $signed(p_shl591_fu_4210_p1));
 
 assign tmp59_cast_fu_4364_p1 = $signed(tmp59_fu_4358_p2);
 
-assign tmp59_fu_4358_p2 = ($signed(tmp60_cast_fu_4354_p1) + $signed(sext_ln30_231_fu_2724_p1));
+assign tmp59_fu_4358_p2 = ($signed(tmp60_cast_fu_4354_p1) + $signed(sext_ln27_231_fu_2724_p1));
 
 assign tmp5_cast_fu_4096_p1 = $signed(tmp5_fu_4090_p2);
 
@@ -7060,9 +7060,9 @@ assign tmp5_fu_4090_p2 = ($signed(tmp18_cast_fu_4086_p1) + $signed(tmp17_cast_fu
 
 assign tmp60_cast_fu_4354_p1 = $signed(tmp60_fu_4348_p2);
 
-assign tmp60_fu_4348_p2 = ($signed(sext_ln30_248_fu_2832_p1) + $signed(sext_ln30_249_fu_2840_p1));
+assign tmp60_fu_4348_p2 = ($signed(sext_ln27_248_fu_2832_p1) + $signed(sext_ln27_249_fu_2840_p1));
 
-assign tmp61_fu_4432_p2 = ($signed(sext_ln30_289_fu_3136_p1) + $signed(sext_ln23_2_fu_3368_p1));
+assign tmp61_fu_4432_p2 = ($signed(sext_ln27_289_fu_3136_p1) + $signed(sext_ln20_2_fu_3368_p1));
 
 assign tmp62_cast_fu_4514_p1 = $signed(tmp62_fu_4508_p2);
 
@@ -7070,23 +7070,23 @@ assign tmp62_fu_4508_p2 = ($signed(tmp71_cast_fu_4504_p1) + $signed(p_ZL12H_filt
 
 assign tmp63_cast_fu_4226_p1 = $signed(tmp63_fu_4220_p2);
 
-assign tmp63_fu_4220_p2 = ($signed(sext_ln30_6_fu_1088_p1) - $signed(sext_ln30_40_fu_1364_p1));
+assign tmp63_fu_4220_p2 = ($signed(sext_ln27_6_fu_1088_p1) - $signed(sext_ln27_40_fu_1364_p1));
 
 assign tmp64_cast_fu_4236_p1 = $signed(tmp64_fu_4230_p2);
 
-assign tmp64_fu_4230_p2 = ($signed(tmp63_cast_fu_4226_p1) - $signed(sext_ln30_41_fu_1372_p1));
+assign tmp64_fu_4230_p2 = ($signed(tmp63_cast_fu_4226_p1) - $signed(sext_ln27_41_fu_1372_p1));
 
 assign tmp66_fu_4250_p2 = ($signed(tmp47_cast_fu_4246_p1) + $signed(tmp64_cast_fu_4236_p1));
 
-assign tmp67_fu_4256_p2 = ($signed(tmp66_fu_4250_p2) - $signed(sext_ln30_334_fu_3532_p1));
+assign tmp67_fu_4256_p2 = ($signed(tmp66_fu_4250_p2) - $signed(sext_ln27_334_fu_3532_p1));
 
-assign tmp68_fu_4262_p2 = ($signed(tmp67_fu_4256_p2) - $signed(sext_ln30_335_fu_3540_p1));
+assign tmp68_fu_4262_p2 = ($signed(tmp67_fu_4256_p2) - $signed(sext_ln27_335_fu_3540_p1));
 
 assign tmp69_cast_fu_8317_p1 = tmp69_reg_10770_pp0_iter1_reg;
 
-assign tmp69_fu_4268_p2 = ($signed(tmp68_fu_4262_p2) + $signed(sext_ln30_367_fu_3816_p1));
+assign tmp69_fu_4268_p2 = ($signed(tmp68_fu_4262_p2) + $signed(sext_ln27_367_fu_3816_p1));
 
-assign tmp6_fu_3870_p2 = ($signed(tmp_cast_fu_3866_p1) - $signed(sext_ln30_39_fu_1356_p1));
+assign tmp6_fu_3870_p2 = ($signed(tmp_cast_fu_3866_p1) - $signed(sext_ln27_39_fu_1356_p1));
 
 assign tmp71_cast_fu_4504_p1 = $signed(tmp71_fu_4498_p2);
 
@@ -7100,59 +7100,59 @@ assign tmp73_cast_fu_4524_p1 = $signed(tmp73_fu_4518_p2);
 
 assign tmp73_fu_4518_p2 = ($signed(p_ZL12H_filter_FIR_39_load_cast_fu_4490_p1) + $signed(p_ZL12H_filter_FIR_23_load_cast_fu_4494_p1));
 
-assign tmp74_fu_4570_p2 = ($signed(sext_ln23_7_fu_3608_p1) + $signed(sext_ln30_353_fu_3704_p1));
+assign tmp74_fu_4570_p2 = ($signed(sext_ln20_7_fu_3608_p1) + $signed(sext_ln27_353_fu_3704_p1));
 
 assign tmp75_cast_fu_4280_p1 = $signed(tmp75_fu_4274_p2);
 
-assign tmp75_fu_4274_p2 = ($signed(sext_ln30_3_fu_1064_p1) - $signed(sext_ln30_55_fu_1484_p1));
+assign tmp75_fu_4274_p2 = ($signed(sext_ln27_3_fu_1064_p1) - $signed(sext_ln27_55_fu_1484_p1));
 
 assign tmp76_cast_fu_4290_p1 = $signed(tmp76_fu_4284_p2);
 
-assign tmp76_fu_4284_p2 = ($signed(tmp75_cast_fu_4280_p1) - $signed(sext_ln30_57_fu_1500_p1));
+assign tmp76_fu_4284_p2 = ($signed(tmp75_cast_fu_4280_p1) - $signed(sext_ln27_57_fu_1500_p1));
 
 assign tmp78_fu_4304_p2 = ($signed(tmp48_cast_fu_4300_p1) + $signed(tmp76_cast_fu_4290_p1));
 
-assign tmp79_fu_4310_p2 = ($signed(tmp78_fu_4304_p2) - $signed(sext_ln30_320_fu_3408_p1));
+assign tmp79_fu_4310_p2 = ($signed(tmp78_fu_4304_p2) - $signed(sext_ln27_320_fu_3408_p1));
 
 assign tmp7_cast_fu_3882_p1 = $signed(tmp7_fu_3876_p2);
 
-assign tmp7_fu_3876_p2 = ($signed(tmp6_fu_3870_p2) + $signed(sext_ln30_66_fu_1572_p1));
+assign tmp7_fu_3876_p2 = ($signed(tmp6_fu_3870_p2) + $signed(sext_ln27_66_fu_1572_p1));
 
-assign tmp80_fu_4316_p2 = ($signed(tmp79_fu_4310_p2) - $signed(sext_ln30_322_fu_3424_p1));
+assign tmp80_fu_4316_p2 = ($signed(tmp79_fu_4310_p2) - $signed(sext_ln27_322_fu_3424_p1));
 
-assign tmp81_fu_4322_p2 = ($signed(tmp80_fu_4316_p2) + $signed(sext_ln30_370_fu_3840_p1));
+assign tmp81_fu_4322_p2 = ($signed(tmp80_fu_4316_p2) + $signed(sext_ln27_370_fu_3840_p1));
 
 assign tmp87_fu_4368_p2 = ($signed(tmp59_cast_fu_4364_p1) + $signed(tmp49_cast_fu_4344_p1));
 
 assign tmp88_fu_8389_p2 = ($signed(p_neg585_fu_8372_p2) - $signed(p_shl586_fu_8385_p1));
 
-assign tmp89_fu_4628_p2 = ($signed(tmp90_cast_fu_4624_p1) + $signed(sext_ln30_65_fu_1564_p1));
+assign tmp89_fu_4628_p2 = ($signed(tmp90_cast_fu_4624_p1) + $signed(sext_ln27_65_fu_1564_p1));
 
-assign tmp8_fu_3886_p2 = ($signed(tmp7_cast_fu_3882_p1) - $signed(sext_ln30_74_fu_1636_p1));
+assign tmp8_fu_3886_p2 = ($signed(tmp7_cast_fu_3882_p1) - $signed(sext_ln27_74_fu_1636_p1));
 
 assign tmp90_cast_fu_4624_p1 = $signed(tmp90_fu_4618_p2);
 
-assign tmp90_fu_4618_p2 = ($signed(sext_ln30_2_fu_1056_p1) + $signed(sext_ln30_112_fu_1924_p1));
+assign tmp90_fu_4618_p2 = ($signed(sext_ln27_2_fu_1056_p1) + $signed(sext_ln27_112_fu_1924_p1));
 
-assign tmp91_fu_4644_p2 = ($signed(tmp92_cast_fu_4640_p1) + $signed(sext_ln30_269_fu_2988_p1));
+assign tmp91_fu_4644_p2 = ($signed(tmp92_cast_fu_4640_p1) + $signed(sext_ln27_269_fu_2988_p1));
 
 assign tmp92_cast_fu_4640_p1 = $signed(tmp92_fu_4634_p2);
 
-assign tmp92_fu_4634_p2 = ($signed(sext_ln30_314_fu_3344_p1) + $signed(sext_ln30_371_fu_3848_p1));
+assign tmp92_fu_4634_p2 = ($signed(sext_ln27_314_fu_3344_p1) + $signed(sext_ln27_371_fu_3848_p1));
 
-assign tmp93_fu_4676_p2 = ($signed(sext_ln23_1_fu_3220_p1) + $signed(sext_ln30_372_fu_3856_p1));
+assign tmp93_fu_4676_p2 = ($signed(sext_ln20_1_fu_3220_p1) + $signed(sext_ln27_372_fu_3856_p1));
 
-assign tmp94_fu_4384_p2 = ($signed(sext_ln30_78_fu_1668_p1) - $signed(sum_cast_fu_4380_p1));
+assign tmp94_fu_4384_p2 = ($signed(sext_ln27_78_fu_1668_p1) - $signed(sum_cast_fu_4380_p1));
 
 assign tmp95_cast_fu_4396_p1 = $signed(tmp95_fu_4390_p2);
 
-assign tmp95_fu_4390_p2 = ($signed(tmp94_fu_4384_p2) + $signed(sext_ln30_301_fu_3240_p1));
+assign tmp95_fu_4390_p2 = ($signed(tmp94_fu_4384_p2) + $signed(sext_ln27_301_fu_3240_p1));
 
 assign tmp99_cast_fu_4692_p1 = $signed(tmp99_fu_4686_p2);
 
-assign tmp99_fu_4686_p2 = ($signed(sext_ln30_138_fu_2116_p1) + $signed(sext_ln30_126_fu_2028_p1));
+assign tmp99_fu_4686_p2 = ($signed(sext_ln27_138_fu_2116_p1) + $signed(sext_ln27_126_fu_2028_p1));
 
-assign tmp9_fu_3892_p2 = ($signed(tmp8_fu_3886_p2) - $signed(sext_ln30_84_fu_1712_p1));
+assign tmp9_fu_3892_p2 = ($signed(tmp8_fu_3886_p2) - $signed(sext_ln27_84_fu_1712_p1));
 
 assign tmp_10_fu_8378_p3 = {{tmp87_reg_10782_pp0_iter1_reg}, {5'd0}};
 
@@ -7274,14 +7274,14 @@ assign tmp_9_fu_8348_p3 = {{tmp81_reg_10776_pp0_iter1_reg}, {3'd0}};
 
 assign tmp_cast_fu_3866_p1 = $signed(tmp_fu_3860_p2);
 
-assign tmp_fu_3860_p2 = ($signed(sext_ln30_34_fu_1312_p1) + $signed(sext_ln30_7_fu_1096_p1));
+assign tmp_fu_3860_p2 = ($signed(sext_ln27_34_fu_1312_p1) + $signed(sext_ln27_7_fu_1096_p1));
 
 always @ (posedge ap_clk) begin
-    add_ln30_82_reg_10967[3:0] <= 4'b0000;
-    add_ln30_82_reg_10967_pp0_iter1_reg[3:0] <= 4'b0000;
-    add_ln30_112_reg_10992[1:0] <= 2'b00;
-    add_ln30_112_reg_10992_pp0_iter1_reg[1:0] <= 2'b00;
-    add_ln30_112_reg_10992_pp0_iter2_reg[1:0] <= 2'b00;
+    add_ln27_82_reg_10967[3:0] <= 4'b0000;
+    add_ln27_82_reg_10967_pp0_iter1_reg[3:0] <= 4'b0000;
+    add_ln27_112_reg_10992[1:0] <= 2'b00;
+    add_ln27_112_reg_10992_pp0_iter1_reg[1:0] <= 2'b00;
+    add_ln27_112_reg_10992_pp0_iter2_reg[1:0] <= 2'b00;
 end
 
 endmodule //FIR_HLS_FIR_filter

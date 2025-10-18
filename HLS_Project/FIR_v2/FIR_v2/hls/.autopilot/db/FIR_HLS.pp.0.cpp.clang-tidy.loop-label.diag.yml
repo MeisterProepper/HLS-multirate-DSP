@@ -38,21 +38,39 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_29_1:  '
-    FileOffset:      29
-    FilePath:        FIR_HLS.cpp
+    Message:         'Added loop label VITIS_LOOP_64_1:  '
+    FileOffset:      64
+    FilePath:        'C:\AMD\Vitis\2024.2\common\technology\autopilot\ap_shift_reg.h'
     Replacements:    
       - FilePath:        'C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp'
-        Offset:          940421
+        Offset:          999895
         Length:          0
-        ReplacementText: 'VITIS_LOOP_29_1: '
+        ReplacementText: 'VITIS_LOOP_64_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_33_2:  '
-    FileOffset:      33
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        'C:\AMD\Vitis\2024.2\common\technology\autopilot\ap_shift_reg.h'
+    Replacements:    
+      - FilePath:        'C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp'
+        Offset:          1000099
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
     FilePath:        FIR_HLS.cpp
     Replacements:    
       - FilePath:        'C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp'
-        Offset:          940511
+        Offset:          1006350
         Length:          0
-        ReplacementText: 'VITIS_LOOP_33_2: '
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_30_2:  '
+    FileOffset:      30
+    FilePath:        FIR_HLS.cpp
+    Replacements:    
+      - FilePath:        'C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp'
+        Offset:          1006440
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_30_2: '
 ...

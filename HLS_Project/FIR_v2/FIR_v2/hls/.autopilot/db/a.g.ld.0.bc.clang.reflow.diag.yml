@@ -17,11 +17,11 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: FIR_HLS.cpp, Line: 13, Column: 27 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 11, Column: 15 }
 Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
 Args:            
   - Callee:          'FIR_filter(ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
     DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
@@ -30,33 +30,33 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: FIR_HLS.cpp, Line: 33, Column: 19 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 30, Column: 19 }
 Function:        _Z10FIR_filterP8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEPKS2_iS2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_33_2
+  - LoopName:        VITIS_LOOP_30_2
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: FIR_HLS.cpp, Line: 29, Column: 19 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 26, Column: 19 }
 Function:        _Z10FIR_filterP8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEPKS2_iS2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_29_1
+  - LoopName:        VITIS_LOOP_26_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 17, Column: 0 }
 Function:        _Z10FIR_filterP8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEPKS2_iS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_33_2
+  - LoopName:        VITIS_LOOP_30_2
   - String:          ''' ('
-  - LoopLoc:         'FIR_HLS.cpp:33:19'
+  - LoopLoc:         'FIR_HLS.cpp:30:19'
   - String:          ') '
   - String:          'in function '''
   - String:          FIR_filter
@@ -66,13 +66,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 17, Column: 0 }
 Function:        _Z10FIR_filterP8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEPKS2_iS2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_29_1
+  - LoopName:        VITIS_LOOP_26_1
   - String:          ''' ('
-  - LoopLoc:         'FIR_HLS.cpp:29:19'
+  - LoopLoc:         'FIR_HLS.cpp:26:19'
   - String:          ') '
   - String:          'in function '''
   - String:          FIR_filter
@@ -82,11 +82,11 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: FIR_HLS.cpp, Line: 13, Column: 27 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 11, Column: 15 }
 Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
 Args:            
   - Callee:          'FIR_filter(ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
     DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
@@ -165,11 +165,11 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: FIR_HLS.cpp, Line: 13, Column: 27 }
+DebugLoc:        { File: FIR_HLS.cpp, Line: 11, Column: 15 }
 Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
 Args:            
   - Callee:          'FIR_filter(ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
     DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }

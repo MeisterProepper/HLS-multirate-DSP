@@ -265,11 +265,4 @@ assign input_r_TREADY = regslice_both_input_r_U_ack_in;
 
 assign output_r_TVALID = regslice_both_output_r_U_vld_out;
 
-
-reg find_kernel_block = 0;
-// synthesis translate_off
-`include "FIR_HLS_hls_deadlock_kernel_monitor_top.vh"
-// synthesis translate_on
-
 endmodule //FIR_HLS
-

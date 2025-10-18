@@ -1,0 +1,1931 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/HLS-multirate-DSP/Matlab/FIR_multirate_HLS.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_multirate_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_HLS_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.dat' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.res' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.res' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_Project/FIR_v5/hls_config.cfg(5)
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: C:/AMD/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 18 16:01:27 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/hls_data.json outdir=C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip srcdir=C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip/misc
+INFO: Copied 51 verilog file(s) to C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip/hdl/verilog
+INFO: Copied 49 vhdl file(s) to C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip/hdl/vhdl/FIR_HLS.vhd (FIR_HLS)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add axi4stream interface input_r
+INFO: Add axi4stream interface output_r
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMD/Vivado/2024.2/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip/component.xml
+INFO: Created IP archive C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip/xilinx_com_hls_FIR_HLS_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 18 16:01:37 2025...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+
+C:\HLS-multirate-DSP\HLS_Project\FIR_v5\FIR_v5\hls\impl\verilog>C:/AMD/Vivado/2024.2/bin/vivado  -mode batch -source run_vivado.tcl   || exit $? 
+WARNING: C:/AMD/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 18 16:01:40 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado.tcl
+# source ./settings.tcl
+## set top_module FIR_HLS
+## set language verilog
+## set family zynquplus
+## set device xck26
+## set package -sfvc784
+## set speed -2LV-c
+## set clock ap_clk
+## set fsm_ext "off"
+## set add_io_buffers false 
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "10.000"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set other_clks_freq_hz {}
+# set ip_vlnv xilinx.com:hls:FIR_HLS:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl 1
+# set impl_props {}
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project FIR_v5
+# dict set report_options hls_solution hls
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options topmodule "FIR_HLS"
+# dict set report_options funcmodules {FIR_HLS_FIR_filter_1 FIR_HLS_FIR_filter_2 FIR_HLS_FIR_filter}
+# dict set report_options bindmodules {FIR_HLS_mul_16s_13s_28_1_0 FIR_HLS_mac_muladd_16s_10s_28s_28_4_0 FIR_HLS_mac_muladd_16s_14ns_28s_30_4_0 FIR_HLS_am_addmul_16s_16s_13ns_30_4_0 FIR_HLS_ama_addmuladd_16s_16s_8ns_30s_30_4_0 FIR_HLS_ama_addmuladd_16s_16s_12s_30s_30_4_0 FIR_HLS_mul_18s_7ns_24_1_1 FIR_HLS_mac_mul_sub_16s_15ns_16s_31_4_1 FIR_HLS_ama_addmuladd_17s_17s_6s_24s_24_4_1 FIR_HLS_am_addmul_16s_16s_14ns_31_4_1 FIR_HLS_am_addmul_16s_16s_11ns_29_4_1 FIR_HLS_am_addmul_16s_16s_10ns_28_4_1 FIR_HLS_am_addmul_16s_16s_11s_28_4_1 FIR_HLS_am_addmul_16s_16s_10s_27_4_1 FIR_HLS_am_addmul_16s_16s_9ns_27_4_1 FIR_HLS_am_addmul_16s_16s_9ns_26_4_1 FIR_HLS_am_addmul_16s_16s_9s_26_4_1 FIR_HLS_ama_addmuladd_16s_16s_9s_24s_25_4_1 FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1 FIR_HLS_am_addmul_16s_16s_7ns_25_4_1 FIR_HLS_ama_addmuladd_16s_16s_7ns_23s_25_4_1 FIR_HLS_ama_addmuladd_16s_16s_4ns_24s_24_4_1 FIR_HLS_ama_addmuladd_16s_16s_11s_31s_31_4_1 FIR_HLS_ama_addmuladd_16s_16s_11s_29s_29_4_1 FIR_HLS_ama_addmuladd_16s_16s_10ns_28s_28_4_1 FIR_HLS_ama_addmuladd_16s_16s_9ns_28s_28_4_1 FIR_HLS_ama_addmuladd_16s_16s_10s_27s_27_4_1 FIR_HLS_ama_addmuladd_16s_16s_8ns_27s_27_4_1 FIR_HLS_ama_addmuladd_16s_16s_8s_26s_26_4_1 FIR_HLS_ama_addmuladd_16s_16s_9ns_27s_27_4_1 FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_26_4_1 FIR_HLS_ama_addmuladd_16s_16s_7s_25s_26_4_1 FIR_HLS_ama_addmuladd_16s_16s_8ns_25s_26_4_1 FIR_HLS_ama_addmuladd_16s_16s_7s_25s_25_4_1 FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1 FIR_HLS_ama_addmuladd_17s_17s_10ns_27s_28_4_1 FIR_HLS_ama_addmuladd_16s_16s_13s_29s_30_4_1 FIR_HLS_ama_addmuladd_16s_16s_12s_28s_29_4_1 FIR_HLS_ama_addmuladd_16s_16s_11s_28s_28_4_1 FIR_HLS_ama_addmuladd_16s_16s_9ns_27s_28_4_1 FIR_HLS_ama_addmuladd_16s_16s_9s_27s_27_4_1 FIR_HLS_ama_addmuladd_16s_16s_10s_26s_27_4_1 FIR_HLS_ama_addmuladd_16s_16s_7ns_25ns_25_4_1 FIR_HLS_ama_addmuladd_16s_16s_8s_25ns_25_4_1 FIR_HLS_regslice_both}
+# dict set report_options max_module_depth 6
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMD/Vivado/2024.2/data/ip'.
+# create_bd_design bd_0
+Wrote  : <C:\HLS-multirate-DSP\HLS_Project\FIR_v5\FIR_v5\hls\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { $target_clk_freq_hz ne "" } { 
+#   foreach bd_clk_port $bd_clk_ports {
+#     # Remove "_0" suffix from BD ports & interfaces so they match IP ports 
+#     set clk_name [regsub {_0$} [get_property name $bd_clk_port] {}]
+#     set port_freq_hz $target_clk_freq_hz
+#     if { [dict exists $other_clks_freq_hz $clk_name] } {
+#         set port_freq_hz [dict get $other_clks_freq_hz $clk_name]
+#     }
+#     set_property CONFIG.FREQ_HZ $port_freq_hz $bd_clk_port
+#   }
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}'
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Wrote  : <C:\HLS-multirate-DSP\HLS_Project\FIR_v5\FIR_v5\hls\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+Verilog Output written to : C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 529.102 ; gain = 0.000
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2025-10-18 16:01:59 +0200
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sat Oct 18 16:02:00 2025] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Sat Oct 18 16:02:00 2025] Launched synth_1...
+Run output will be captured here: C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/synth_1/runme.log
+[Sat Oct 18 16:02:00 2025] Waiting for synth_1 to finish...
+
+WARNING: C:/AMD/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+*** Running vivado
+    with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+
+
+WARNING: C:/AMD/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 18 16:03:46 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 57339
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMD/Vivado/2024.2/data/ip'.
+Command: synth_design -top bd_0_wrapper -part xck26-sfvc784-2LV-c -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6776
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1675.039 ; gain = 177.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0' [c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-7888-DESKTOP-92OKADH/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-7888-DESKTOP-92OKADH/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0' (0#1) [c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (0#1) [c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1786.090 ; gain = 288.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1786.090 ; gain = 288.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1786.090 ; gain = 288.980
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1786.090 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Finished Parsing XDC File [c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Parsing XDC File [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/FIR_HLS.xdc]
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1810.801 ; gain = 0.641
+Finished Parsing XDC File [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/FIR_HLS.xdc]
+Parsing XDC File [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1810.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1810.801 ; gain = 313.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1810.801 ; gain = 313.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i/hls_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1810.801 ; gain = 313.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1810.801 ; gain = 313.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.801 ; gain = 313.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2506.289 ; gain = 1009.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2506.289 ; gain = 1009.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2515.855 ; gain = 1018.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |bd_0_hls_inst_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |bd_0_hls_inst |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 2732.711 ; gain = 1210.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2732.711 ; gain = 1235.602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.711 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 77475aea
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 2732.711 ; gain = 2230.582
+INFO: [Common 17-1381] The checkpoint 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 18 16:04:50 2025...
+[Sat Oct 18 16:04:56 2025] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:02:56 . Memory (MB): peak = 529.102 ; gain = 0.000
+TIMESTAMP: HLS-REPORT: synthesis open_run: 2025-10-18 16:04:56 +0200
+INFO: HLS-REPORT: Opening synthesis design database: open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xck26-sfvc784-2LV-c
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint 'c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1549.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 251 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/FIR_HLS.xdc]
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1549.555 ; gain = 0.000
+Finished Parsing XDC File [C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/FIR_HLS.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1933.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 53 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 53 instances
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1933.785 ; gain = 1404.684
+TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2025-10-18 16:05:23 +0200
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/FIR_HLS_utilization_synth.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/FIR_HLS_utilization_hierarchical_synth.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/FIR_HLS_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 3270.918 ; gain = 1337.133
+INFO: HLS-REPORT: Running report: report_power -file ./report/FIR_HLS_power_synth.rpt -xpe ./FIR_HLS_power.xpe
+Command: report_power -file ./report/FIR_HLS_power_synth.rpt -xpe ./FIR_HLS_power.xpe
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/FIR_HLS_timing_paths_synth.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/FIR_HLS_design_analysis_synth.rpt
+INFO: [Implflow 30-839]  
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report synth -file ./report/FIR_HLS_failfast_synth.rpt
+ -I- design metrics completed in 0 seconds
+ -I- DONT_TOUCH metric completed in 0 seconds
+ -I- MARK_DEBUG metric completed in 1 seconds
+ -I- utilization metrics completed in 1 seconds
+ -I- control set metrics completed in 0 seconds
+ -I- methodology check metrics completed in 3 seconds
+ -I- average fanout metrics completed in 4 seconds (0 modules)
+ -I- non-FD high fanout nets completed in 1 seconds
+ -I- path budgeting metrics completed in 2 seconds
+#  +-----------------------------------------------------------------------------------------+
+#  | Design Summary                                                                          |
+#  | design_1                                                                                |
+#  | xck26-sfvc784-2LV-c                                                                     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Criteria                                                  | Guideline | Actual | Status |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | LUT                                                       | 70%       | 1.39%  | OK     |
+#  | FD                                                        | 50%       | 1.57%  | OK     |
+#  | LUTRAM+SRL                                                | 25%       | 0.42%  | OK     |
+#  | CARRY8                                                    | 25%       | 0.92%  | OK     |
+#  | MUXF7                                                     | 15%       | 0.11%  | OK     |
+#  | DSP                                                       | 80%       | 4.25%  | OK     |
+#  | RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+#  | URAM                                                      | 80%       | 0.00%  | OK     |
+#  | DSP+RAMB+URAM (Avg)                                       | 70%       | 4.25%  | OK     |
+#  | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+#  | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+#  | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+#  | Control Sets                                              | 2196      | 25     | OK     |
+#  | Average Fanout for modules > 100k cells                   | 4         | 0.93   | OK     |
+#  | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+#  | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+#  | TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+#  | TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+#  | TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+#  | TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Number of paths above max LUT budgeting (0.391ns)         | 0         | 0      | OK     |
+#  | Number of paths above max Net budgeting (0.263ns)         | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+ -I- Generated file C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/report/FIR_HLS_failfast_synth.rpt
+ -I- Number of criteria to review: 0
+ -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
+ -I- report_failfast completed in 12 seconds
+TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2025-10-18 16:06:02 +0200
+TIMESTAMP: HLS-REPORT: synth extract_util_hier: 2025-10-18 16:06:02 +0200
+TIMESTAMP: HLS-REPORT: synth get_cell_hier_data: 2025-10-18 16:06:02 +0200
+TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2025-10-18 16:06:02 +0200
+TIMESTAMP: HLS-REPORT: synth process timing paths: 2025-10-18 16:06:02 +0200
+TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2025-10-18 16:06:02 +0200
+TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2025-10-18 16:06:02 +0200
+HLS EXTRACTION: synth area_totals:  0 117120 234240 1248 288 0 64
+HLS EXTRACTION: synth area_current: 0 1629 3685 53 0 0 243 0 0 0
+HLS EXTRACTION: synth resources_dict: AVAIL_LUT 117120 LUT 1629 AVAIL_FF 234240 FF 3685 AVAIL_DSP 1248 DSP 53 AVAIL_BRAM 288 BRAM 0 AVAIL_URAM 64 URAM 0 LATCH 0 SRL 243 AVAIL_CLB 0 CLB 0
+INFO: HLS-REPORT: generated C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/report/vivado_syn.xml
+INFO: HLS-REPORT: generated C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/report/verilog/FIR_HLS_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2024.2
+Project:             FIR_v5
+Solution:            hls
+Device target:       xck26-sfvc784-2LV-c
+Report date:         Sat Oct 18 16:06:04 +0200 2025
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           1629
+FF:            3685
+DSP:             53
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:            243
+CLB:              0
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      3.922
+Timing met
+
+TIMESTAMP: HLS-REPORT: synthesis end: 2025-10-18 16:06:04 +0200
+# if { $has_impl } {
+#   # launch run impl
+#   if { [llength $impl_props] } {
+#     set_property -dict $impl_props [get_runs impl_1]
+#   }
+#   launch_runs impl_1
+#   wait_on_run impl_1
+#   # impl reports
+#   hls_vivado_reports_impl impl_1 $report_options
+# }
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3270.918 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Sat Oct 18 16:06:05 2025] Launched impl_1...
+Run output will be captured here: C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/runme.log
+[Sat Oct 18 16:06:05 2025] Waiting for impl_1 to finish...
+
+WARNING: C:/AMD/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+*** Running vivado
+    with args -log bd_0_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+
+
+WARNING: C:/AMD/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 18 16:06:16 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 57339
+Command: open_checkpoint C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1490.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 251 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1490.812 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2203.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 53 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 53 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2203.883 ; gain = 1881.570
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMD/Vivado/2024.2/data/ip'.
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2257.500 ; gain = 45.473
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2302.340 ; gain = 44.840
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Phase 1 Initialization | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 118d398c9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 52 load pin(s).
+INFO: [Opt 31-925] Fixed cascade connection for DSP: bd_0_i/hls_inst/inst/grp_FIR_filter_1_fu_398/mac_muladd_16s_14ns_28s_30_4_0_U5/FIR_HLS_mac_muladd_16s_14ns_28s_30_4_0_DSP48_0_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_10s_26s_27_4_1_U73/FIR_HLS_ama_addmuladd_16s_16s_10s_26s_27_4_1_DSP48_0_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_7s_25s_26_4_1_U61/FIR_HLS_ama_addmuladd_16s_16s_7s_25s_26_4_1_DSP48_0_U/p_reg_reg
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1c4cc0945
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Retarget | Checksum: 1c4cc0945
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1d2a2ad3a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Constant propagation | Checksum: 1d2a2ad3a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2723.277 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1382b0074
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Sweep | Checksum: 1382b0074
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1382b0074
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+BUFG optimization | Checksum: 1382b0074
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1382b0074
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Shift Register Optimization | Checksum: 1382b0074
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1382b0074
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Post Processing Netlist | Checksum: 1382b0074
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Phase 9 Finalization | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2723.277 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2723.277 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2067bb8c8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2723.277 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2723.277 ; gain = 517.395
+INFO: [Vivado 12-24828] Executing command : report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+Command: report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 3610.918 ; gain = 887.641
+generate_parallel_reports: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 3610.918 ; gain = 887.641
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3610.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3610.918 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b6efe358
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3610.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1a9f90881
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.710 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2161caa91
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2161caa91
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3610.918 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 2161caa91
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1dad640ce
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3164] Check ILP status : ILP-based clock placer is skipped.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 2316bbbf3
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 2316bbbf3
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 21991bb40
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 21991bb40
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 3610.918 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 21991bb40
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 3610.918 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: 288e4786b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 288e4786b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 288e4786b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 2e3ff62d4
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:50 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2e3ff62d4
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:50 . Memory (MB): peak = 3610.918 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 119 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 58 nets or LUTs. Breaked 0 LUT, combined 58 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 1 candidate driver set for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 2 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 2 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3611.949 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3611.949 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             58  |                    58  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             58  |                    59  |           0  |           5  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2d0bf4dae
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:52 . Memory (MB): peak = 3611.949 ; gain = 1.031
+Phase 2.5 Global Place Phase2 | Checksum: 23d6f86b4
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:00 . Memory (MB): peak = 3611.949 ; gain = 1.031
+Phase 2 Global Placement | Checksum: 23d6f86b4
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:00 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 328d0d9a4
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:08 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 28eef2a87
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:09 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 2178df191
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:24 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1ee95eb03
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:32 . Memory (MB): peak = 3611.949 ; gain = 1.031
+Phase 3.3.2 Slice Area Swap | Checksum: 1ee95eb03
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:32 . Memory (MB): peak = 3611.949 ; gain = 1.031
+Phase 3.3 Small Shape DP | Checksum: 262781e27
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:48 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 22c337dc7
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:48 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 2293163ad
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:48 . Memory (MB): peak = 3611.949 ; gain = 1.031
+Phase 3 Detail Placement | Checksum: 2293163ad
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:48 . Memory (MB): peak = 3611.949 ; gain = 1.031
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 27227e7bc
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.972 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 208e6abfa
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.469 . Memory (MB): peak = 3676.289 ; gain = 0.000
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+INFO: [Place 46-35] Processed net bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438_ap_start_reg, inserted BUFG to drive 1048 loads.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 14b657938
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3677.410 ; gain = 1.121
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1af6f751d
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:02:03 . Memory (MB): peak = 3677.410 ; gain = 66.492
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=4.972. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1a349e8a8
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:02:03 . Memory (MB): peak = 3677.410 ; gain = 66.492
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:02:03 . Memory (MB): peak = 3677.410 ; gain = 66.492
+Phase 4.1 Post Commit Optimization | Checksum: 1a349e8a8
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:02:03 . Memory (MB): peak = 3677.410 ; gain = 66.492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3700.254 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 18b608b98
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:14 . Memory (MB): peak = 3700.254 ; gain = 89.336
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 18b608b98
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:14 . Memory (MB): peak = 3700.254 ; gain = 89.336
+Phase 4.3 Placer Reporting | Checksum: 18b608b98
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:14 . Memory (MB): peak = 3700.254 ; gain = 89.336
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3700.254 ; gain = 0.000
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:14 . Memory (MB): peak = 3700.254 ; gain = 89.336
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 23559ea62
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:14 . Memory (MB): peak = 3700.254 ; gain = 89.336
+Ending Placer Task | Checksum: 1c19ae025
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:14 . Memory (MB): peak = 3700.254 ; gain = 89.336
+81 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:05 ; elapsed = 00:02:19 . Memory (MB): peak = 3700.254 ; gain = 89.336
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file bd_0_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 3700.254 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_placed.rpt -pb bd_0_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3700.254 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3700.254 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.828 . Memory (MB): peak = 3700.254 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3700.254 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 3700.254 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3700.254 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3700.254 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3700.254 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3704.391 ; gain = 4.137
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 4.972 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+92 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3722.297 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.913 . Memory (MB): peak = 3722.297 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3722.297 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 3722.297 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3722.297 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3722.297 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3722.297 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2b9ae653 ConstDB: 0 ShapeSum: e7d1d096 RouteDB: ae2e293c
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3722.371 ; gain = 0.000
+WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_r_tready" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_r_tready". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_r_tdata[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_r_tdata[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Post Restoration Checksum: NetGraph: fe19c379 | NumContArr: badcdaf3 | Constraints: 158e23d8 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2912dbce1
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3733.086 ; gain = 10.719
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2912dbce1
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3733.086 ; gain = 10.719
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2912dbce1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3733.086 ; gain = 10.719
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1f08df16e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3769.355 ; gain = 46.988
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 21fdb675b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3769.355 ; gain = 46.988
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.948  | TNS=0.000  | WHS=0.027  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 7355
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 7243
+  Number of Partially Routed Nets     = 112
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 169788db0
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 3783.012 ; gain = 60.645
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 169788db0
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 3783.012 ; gain = 60.645
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 197b5dd4a
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 3783.012 ; gain = 60.645
+Phase 4 Initial Routing | Checksum: 14ee60e92
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 3783.012 ; gain = 60.645
+
+Phase 5 Initial Routing Verification
+
+Post Initial-Routing Verification
+---------------------------------
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[47] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[46] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[45] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[44] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[43] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[42] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[41] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[40] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[39] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[38] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[37] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[36] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[35] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[34] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[33] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[32] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[31] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[30] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[29] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[28] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-170] Too many nets were not completely routed. Further warnings disabled. Run 'report_route_status' for more information.
+Resolution: In order to see more information about the partially routed nets, run report_route_status with the -verbose option.
+INFO: [Route 35-3320] Number of nets that did not attempt to route: 7459
+
+Unroutable connection Types: 
+----------------------------
+Checking all reachable nodes within 5 hops of driver and load 
+
+Unroute Type 1 : Site pin does not reach interconnect fabric
+
+	Type 1DSP48E2.PCOUT0->DSP48E2.PCIN0]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4984] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[0]
+	-----DSP48E2_X4Y68/PCOUT0 -> DSP48E2_X4Y67/PCIN0
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[0] Load Term [10271]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[0]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN0 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT0 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[0]  Net Driver: DSP48E2_X4Y68/PCOUT0
+	Type 2DSP48E2.PCOUT1->DSP48E2.PCIN1]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4983] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[1]
+	-----DSP48E2_X4Y68/PCOUT1 -> DSP48E2_X4Y67/PCIN1
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[1] Load Term [10269]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[1]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN1 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT1 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[1]  Net Driver: DSP48E2_X4Y68/PCOUT1
+	Type 3DSP48E2.PCOUT10->DSP48E2.PCIN10]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4974] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[10]
+	-----DSP48E2_X4Y68/PCOUT10 -> DSP48E2_X4Y67/PCIN10
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[10] Load Term [10251]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[10]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN10 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT10 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[10]  Net Driver: DSP48E2_X4Y68/PCOUT10
+	Type 4DSP48E2.PCOUT11->DSP48E2.PCIN11]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4973] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[11]
+	-----DSP48E2_X4Y68/PCOUT11 -> DSP48E2_X4Y67/PCIN11
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[11] Load Term [10249]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[11]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN11 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT11 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[11]  Net Driver: DSP48E2_X4Y68/PCOUT11
+	Type 5DSP48E2.PCOUT12->DSP48E2.PCIN12]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4972] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[12]
+	-----DSP48E2_X4Y68/PCOUT12 -> DSP48E2_X4Y67/PCIN12
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[12] Load Term [10247]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[12]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN12 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT12 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[12]  Net Driver: DSP48E2_X4Y68/PCOUT12
+	Type 6DSP48E2.PCOUT13->DSP48E2.PCIN13]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4971] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[13]
+	-----DSP48E2_X4Y68/PCOUT13 -> DSP48E2_X4Y67/PCIN13
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[13] Load Term [10245]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[13]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN13 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT13 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[13]  Net Driver: DSP48E2_X4Y68/PCOUT13
+	Type 7DSP48E2.PCOUT14->DSP48E2.PCIN14]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4970] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[14]
+	-----DSP48E2_X4Y68/PCOUT14 -> DSP48E2_X4Y67/PCIN14
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[14] Load Term [10243]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[14]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN14 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT14 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[14]  Net Driver: DSP48E2_X4Y68/PCOUT14
+	Type 8DSP48E2.PCOUT15->DSP48E2.PCIN15]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4969] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[15]
+	-----DSP48E2_X4Y68/PCOUT15 -> DSP48E2_X4Y67/PCIN15
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[15] Load Term [10241]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[15]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN15 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT15 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[15]  Net Driver: DSP48E2_X4Y68/PCOUT15
+	Type 9DSP48E2.PCOUT16->DSP48E2.PCIN16]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4968] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[16]
+	-----DSP48E2_X4Y68/PCOUT16 -> DSP48E2_X4Y67/PCIN16
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[16] Load Term [10239]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[16]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN16 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT16 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[16]  Net Driver: DSP48E2_X4Y68/PCOUT16
+	Type 10DSP48E2.PCOUT17->DSP48E2.PCIN17]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4967] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[17]
+	-----DSP48E2_X4Y68/PCOUT17 -> DSP48E2_X4Y67/PCIN17
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[17] Load Term [10237]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[17]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN17 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT17 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[17]  Net Driver: DSP48E2_X4Y68/PCOUT17
+	Type 11DSP48E2.PCOUT18->DSP48E2.PCIN18]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4966] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[18]
+	-----DSP48E2_X4Y68/PCOUT18 -> DSP48E2_X4Y67/PCIN18
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[18] Load Term [10235]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[18]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN18 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT18 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[18]  Net Driver: DSP48E2_X4Y68/PCOUT18
+	Type 12DSP48E2.PCOUT19->DSP48E2.PCIN19]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4965] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[19]
+	-----DSP48E2_X4Y68/PCOUT19 -> DSP48E2_X4Y67/PCIN19
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[19] Load Term [10233]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[19]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN19 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT19 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[19]  Net Driver: DSP48E2_X4Y68/PCOUT19
+	Type 13DSP48E2.PCOUT2->DSP48E2.PCIN2]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4982] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[2]
+	-----DSP48E2_X4Y68/PCOUT2 -> DSP48E2_X4Y67/PCIN2
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[2] Load Term [10267]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[2]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN2 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT2 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[2]  Net Driver: DSP48E2_X4Y68/PCOUT2
+	Type 14DSP48E2.PCOUT20->DSP48E2.PCIN20]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4964] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[20]
+	-----DSP48E2_X4Y68/PCOUT20 -> DSP48E2_X4Y67/PCIN20
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[20] Load Term [10231]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[20]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN20 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT20 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[20]  Net Driver: DSP48E2_X4Y68/PCOUT20
+	Type 15DSP48E2.PCOUT21->DSP48E2.PCIN21]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4963] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[21]
+	-----DSP48E2_X4Y68/PCOUT21 -> DSP48E2_X4Y67/PCIN21
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[21] Load Term [10229]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[21]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN21 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT21 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[21]  Net Driver: DSP48E2_X4Y68/PCOUT21
+	Type 16DSP48E2.PCOUT22->DSP48E2.PCIN22]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4962] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[22]
+	-----DSP48E2_X4Y68/PCOUT22 -> DSP48E2_X4Y67/PCIN22
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[22] Load Term [10227]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[22]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN22 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT22 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[22]  Net Driver: DSP48E2_X4Y68/PCOUT22
+	Type 17DSP48E2.PCOUT23->DSP48E2.PCIN23]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4961] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[23]
+	-----DSP48E2_X4Y68/PCOUT23 -> DSP48E2_X4Y67/PCIN23
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[23] Load Term [10225]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[23]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN23 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT23 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[23]  Net Driver: DSP48E2_X4Y68/PCOUT23
+	Type 18DSP48E2.PCOUT24->DSP48E2.PCIN24]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4960] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[24]
+	-----DSP48E2_X4Y68/PCOUT24 -> DSP48E2_X4Y67/PCIN24
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[24] Load Term [10223]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[24]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN24 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT24 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[24]  Net Driver: DSP48E2_X4Y68/PCOUT24
+	Type 19DSP48E2.PCOUT25->DSP48E2.PCIN25]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4959] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[25]
+	-----DSP48E2_X4Y68/PCOUT25 -> DSP48E2_X4Y67/PCIN25
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[25] Load Term [10221]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[25]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN25 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT25 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[25]  Net Driver: DSP48E2_X4Y68/PCOUT25
+	Type 20DSP48E2.PCOUT26->DSP48E2.PCIN26]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4958] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[26]
+	-----DSP48E2_X4Y68/PCOUT26 -> DSP48E2_X4Y67/PCIN26
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[26] Load Term [10219]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[26]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN26 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT26 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[26]  Net Driver: DSP48E2_X4Y68/PCOUT26
+	Type 21DSP48E2.PCOUT27->DSP48E2.PCIN27]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4957] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[27]
+	-----DSP48E2_X4Y68/PCOUT27 -> DSP48E2_X4Y67/PCIN27
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[27] Load Term [10217]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[27]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN27 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT27 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[27]  Net Driver: DSP48E2_X4Y68/PCOUT27
+	Type 22DSP48E2.PCOUT28->DSP48E2.PCIN28]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4956] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[28]
+	-----DSP48E2_X4Y68/PCOUT28 -> DSP48E2_X4Y67/PCIN28
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[28] Load Term [10215]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[28]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN28 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT28 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[28]  Net Driver: DSP48E2_X4Y68/PCOUT28
+	Type 23DSP48E2.PCOUT29->DSP48E2.PCIN29]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4955] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[29]
+	-----DSP48E2_X4Y68/PCOUT29 -> DSP48E2_X4Y67/PCIN29
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[29] Load Term [10213]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[29]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN29 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT29 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[29]  Net Driver: DSP48E2_X4Y68/PCOUT29
+	Type 24DSP48E2.PCOUT3->DSP48E2.PCIN3]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4981] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[3]
+	-----DSP48E2_X4Y68/PCOUT3 -> DSP48E2_X4Y67/PCIN3
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[3] Load Term [10265]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[3]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN3 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT3 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[3]  Net Driver: DSP48E2_X4Y68/PCOUT3
+	Type 25DSP48E2.PCOUT30->DSP48E2.PCIN30]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4954] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[30]
+	-----DSP48E2_X4Y68/PCOUT30 -> DSP48E2_X4Y67/PCIN30
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[30] Load Term [10211]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[30]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN30 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT30 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[30]  Net Driver: DSP48E2_X4Y68/PCOUT30
+	Type 26DSP48E2.PCOUT31->DSP48E2.PCIN31]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4953] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[31]
+	-----DSP48E2_X4Y68/PCOUT31 -> DSP48E2_X4Y67/PCIN31
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[31] Load Term [10209]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[31]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN31 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT31 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[31]  Net Driver: DSP48E2_X4Y68/PCOUT31
+	Type 27DSP48E2.PCOUT32->DSP48E2.PCIN32]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4952] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[32]
+	-----DSP48E2_X4Y68/PCOUT32 -> DSP48E2_X4Y67/PCIN32
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[32] Load Term [10207]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[32]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN32 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT32 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[32]  Net Driver: DSP48E2_X4Y68/PCOUT32
+	Type 28DSP48E2.PCOUT33->DSP48E2.PCIN33]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4951] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[33]
+	-----DSP48E2_X4Y68/PCOUT33 -> DSP48E2_X4Y67/PCIN33
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[33] Load Term [10205]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[33]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN33 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT33 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[33]  Net Driver: DSP48E2_X4Y68/PCOUT33
+	Type 29DSP48E2.PCOUT34->DSP48E2.PCIN34]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4950] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[34]
+	-----DSP48E2_X4Y68/PCOUT34 -> DSP48E2_X4Y67/PCIN34
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[34] Load Term [10203]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[34]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN34 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT34 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[34]  Net Driver: DSP48E2_X4Y68/PCOUT34
+	Type 30DSP48E2.PCOUT35->DSP48E2.PCIN35]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4949] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[35]
+	-----DSP48E2_X4Y68/PCOUT35 -> DSP48E2_X4Y67/PCIN35
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[35] Load Term [10201]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[35]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN35 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT35 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[35]  Net Driver: DSP48E2_X4Y68/PCOUT35
+	Type 31DSP48E2.PCOUT36->DSP48E2.PCIN36]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4948] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[36]
+	-----DSP48E2_X4Y68/PCOUT36 -> DSP48E2_X4Y67/PCIN36
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[36] Load Term [10199]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[36]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN36 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT36 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[36]  Net Driver: DSP48E2_X4Y68/PCOUT36
+	Type 32DSP48E2.PCOUT37->DSP48E2.PCIN37]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4947] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[37]
+	-----DSP48E2_X4Y68/PCOUT37 -> DSP48E2_X4Y67/PCIN37
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[37] Load Term [10197]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[37]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN37 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT37 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[37]  Net Driver: DSP48E2_X4Y68/PCOUT37
+	Type 33DSP48E2.PCOUT38->DSP48E2.PCIN38]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4946] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[38]
+	-----DSP48E2_X4Y68/PCOUT38 -> DSP48E2_X4Y67/PCIN38
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[38] Load Term [10195]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[38]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN38 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT38 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[38]  Net Driver: DSP48E2_X4Y68/PCOUT38
+	Type 34DSP48E2.PCOUT39->DSP48E2.PCIN39]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4945] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[39]
+	-----DSP48E2_X4Y68/PCOUT39 -> DSP48E2_X4Y67/PCIN39
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[39] Load Term [10193]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[39]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN39 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT39 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[39]  Net Driver: DSP48E2_X4Y68/PCOUT39
+	Type 35DSP48E2.PCOUT4->DSP48E2.PCIN4]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4980] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[4]
+	-----DSP48E2_X4Y68/PCOUT4 -> DSP48E2_X4Y67/PCIN4
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[4] Load Term [10263]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[4]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN4 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT4 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[4]  Net Driver: DSP48E2_X4Y68/PCOUT4
+	Type 36DSP48E2.PCOUT40->DSP48E2.PCIN40]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4944] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[40]
+	-----DSP48E2_X4Y68/PCOUT40 -> DSP48E2_X4Y67/PCIN40
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[40] Load Term [10191]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[40]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN40 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT40 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[40]  Net Driver: DSP48E2_X4Y68/PCOUT40
+	Type 37DSP48E2.PCOUT41->DSP48E2.PCIN41]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4943] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[41]
+	-----DSP48E2_X4Y68/PCOUT41 -> DSP48E2_X4Y67/PCIN41
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[41] Load Term [10189]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[41]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN41 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT41 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[41]  Net Driver: DSP48E2_X4Y68/PCOUT41
+	Type 38DSP48E2.PCOUT42->DSP48E2.PCIN42]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4942] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[42]
+	-----DSP48E2_X4Y68/PCOUT42 -> DSP48E2_X4Y67/PCIN42
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[42] Load Term [10187]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[42]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN42 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT42 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[42]  Net Driver: DSP48E2_X4Y68/PCOUT42
+	Type 39DSP48E2.PCOUT43->DSP48E2.PCIN43]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4941] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[43]
+	-----DSP48E2_X4Y68/PCOUT43 -> DSP48E2_X4Y67/PCIN43
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[43] Load Term [10185]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[43]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN43 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT43 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[43]  Net Driver: DSP48E2_X4Y68/PCOUT43
+	Type 40DSP48E2.PCOUT44->DSP48E2.PCIN44]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4940] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[44]
+	-----DSP48E2_X4Y68/PCOUT44 -> DSP48E2_X4Y67/PCIN44
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[44] Load Term [10183]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[44]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN44 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT44 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[44]  Net Driver: DSP48E2_X4Y68/PCOUT44
+	Type 41DSP48E2.PCOUT45->DSP48E2.PCIN45]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4939] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[45]
+	-----DSP48E2_X4Y68/PCOUT45 -> DSP48E2_X4Y67/PCIN45
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[45] Load Term [10181]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[45]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN45 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT45 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[45]  Net Driver: DSP48E2_X4Y68/PCOUT45
+	Type 42DSP48E2.PCOUT46->DSP48E2.PCIN46]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4938] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[46]
+	-----DSP48E2_X4Y68/PCOUT46 -> DSP48E2_X4Y67/PCIN46
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[46] Load Term [10179]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[46]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN46 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT46 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[46]  Net Driver: DSP48E2_X4Y68/PCOUT46
+	Type 43DSP48E2.PCOUT47->DSP48E2.PCIN47]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4937] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[47]
+	-----DSP48E2_X4Y68/PCOUT47 -> DSP48E2_X4Y67/PCIN47
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[47] Load Term [10177]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[47]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN47 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT47 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[47]  Net Driver: DSP48E2_X4Y68/PCOUT47
+	Type 44DSP48E2.PCOUT5->DSP48E2.PCIN5]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4979] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[5]
+	-----DSP48E2_X4Y68/PCOUT5 -> DSP48E2_X4Y67/PCIN5
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[5] Load Term [10261]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[5]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN5 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT5 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[5]  Net Driver: DSP48E2_X4Y68/PCOUT5
+	Type 45DSP48E2.PCOUT6->DSP48E2.PCIN6]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4978] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[6]
+	-----DSP48E2_X4Y68/PCOUT6 -> DSP48E2_X4Y67/PCIN6
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[6] Load Term [10259]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[6]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN6 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT6 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[6]  Net Driver: DSP48E2_X4Y68/PCOUT6
+	Type 46DSP48E2.PCOUT7->DSP48E2.PCIN7]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4977] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[7]
+	-----DSP48E2_X4Y68/PCOUT7 -> DSP48E2_X4Y67/PCIN7
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[7] Load Term [10257]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[7]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN7 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT7 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[7]  Net Driver: DSP48E2_X4Y68/PCOUT7
+	Type 47DSP48E2.PCOUT8->DSP48E2.PCIN8]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4976] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[8]
+	-----DSP48E2_X4Y68/PCOUT8 -> DSP48E2_X4Y67/PCIN8
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[8] Load Term [10255]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[8]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN8 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT8 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[8]  Net Driver: DSP48E2_X4Y68/PCOUT8
+	Type 48DSP48E2.PCOUT9->DSP48E2.PCIN9]
+	-----Num Open nets: 1
+	-----Representative Net: Net[4975] bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[9]
+	-----DSP48E2_X4Y68/PCOUT9 -> DSP48E2_X4Y67/PCIN9
+	-----Driver Term: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/PCOUT[9] Load Term [10253]: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_6ns_25s_26_4_1_U66/FIR_HLS_ama_addmuladd_16s_16s_6ns_25s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/PCIN[9]
+	Driver Pin does not reach Interconnect fabric within 5 hops.
+	Load Pin does not reach Interconnect fabric within 5 hops 
+	Pins Reached within 5 hops from Driver
+	DSP48E2_X4Y69/PCIN9 Net on Pin: 
+	Pins Reached within 5 hops from Load
+	DSP48E2_X4Y66/PCOUT9 Net on Pin: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[9]  Net Driver: DSP48E2_X4Y68/PCOUT9
+Phase 5 Initial Routing Verification | Checksum: 14ee60e92
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 3783.012 ; gain = 60.645
+
+Phase 6 Verifying routed nets
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[47] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[46] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[45] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[44] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[43] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[42] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[41] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[40] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[39] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[38] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[37] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[36] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[35] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[34] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[33] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[32] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[31] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[30] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[29] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-54] Net: bd_0_i/hls_inst/inst/grp_FIR_filter_fu_438/ama_addmuladd_16s_16s_8s_25s_25_4_1_U50/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/PCOUT[28] is not completely routed.
+Resolution: Run report_route_status for more information.
+CRITICAL WARNING: [Route 35-170] Too many nets were not completely routed. Further warnings disabled. Run 'report_route_status' for more information.
+Resolution: In order to see more information about the partially routed nets, run report_route_status with the -verbose option.
+ERROR: [Route 35-7] Design has 48 unroutable pins, potentially caused by placement issue or user provided physical constraints.
+Resolution: Please check if the unroute is caused by an incorrect physical constraint on the driver/load pair of the unrouted net. If so, please remove or modify the constraint and re-run placer.
+
+ Verification failed
+Phase 6 Verifying routed nets | Checksum: 14ee60e92
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 3783.012 ; gain = 60.645
+ERROR: [Route 35-4445] route_design is terminated due to errors/critical warnings issued before and during initial routing. The issues reported cannot be resolved later in route_design.
+Resolution: Please review previous errors/critical warnings messages to determine the reason for router exit during initial routing stage. To know the state of route database please run report_route_status.
+Total Elapsed time in route_design: 14.623 secs
+INFO: [Route 35-17] Router encountered errors. Please check the log file for details
+Ending Routing Task | Checksum: 1a80728af
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 3783.012 ; gain = 60.645
+Running DRC after route_design as it did not complete successfully
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Common 17-83] Releasing license: Implementation
+103 Infos, 28 Warnings, 42 Critical Warnings and 2 Errors encountered.
+route_design failed
+route_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:22 . Memory (MB): peak = 3783.012 ; gain = 60.715
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3783.012 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.865 . Memory (MB): peak = 3783.012 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3783.012 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 3783.012 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3783.012 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3783.012 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3783.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/HLS-multirate-DSP/HLS_Project/FIR_v5/FIR_v5/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_routed_error.dcp' has been generated.
+ERROR: [Common 17-39] 'route_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 18 16:10:40 2025...
+[Sat Oct 18 16:10:45 2025] impl_1 finished
+ERROR: [Vivado 12-13638] Failed runs(s) : 'impl_1'
+wait_on_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:04:40 . Memory (MB): peak = 3270.918 ; gain = 0.000
+ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+
+    while executing
+"wait_on_run impl_1"
+    invoked from within
+"if { $has_impl } {
+  # launch run impl
+  if { [llength $impl_props] } {
+    set_property -dict $impl_props [get_runs impl_1]
+  }
+  launch_runs impl_1
+..."
+    (file "run_vivado.tcl" line 175)
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 18 16:10:45 2025...
+ERROR: [HLS 200-478] vivado returned an error 
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 566.142 seconds; peak allocated memory: 338.285 MB.

@@ -1,0 +1,92 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sat Oct 18 16:41:10 2025
+| Host         : DESKTOP-92OKADH running 64-bit major release  (build 9200)
+| Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+| Design       : bd_0_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_bd_0_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 11
++-----------+----------+-------------------+--------+
+| Rule      | Severity | Description       | Checks |
++-----------+----------+-------------------+--------+
+| DPIP-2    | Warning  | Input pipelining  | 10     |
+| RTSTAT-10 | Warning  | No routable loads | 1      |
++-----------+----------+-------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_11ns_29_4_1_U1/FIR_HLS_am_addmul_16s_16s_11ns_29_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_11ns_29_4_1_U1/FIR_HLS_am_addmul_16s_16s_11ns_29_4_1_DSP48_0_U/p_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/am_addmul_17s_17s_6s_23_4_1_U17/FIR_HLS_am_addmul_17s_17s_6s_23_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/am_addmul_17s_17s_6s_23_4_1_U17/FIR_HLS_am_addmul_17s_17s_6s_23_4_1_DSP48_0_U/p_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8ns_24s_25_4_1_U34/FIR_HLS_ama_addmuladd_16s_16s_8ns_24s_25_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8ns_24s_25_4_1_U34/FIR_HLS_ama_addmuladd_16s_16s_8ns_24s_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8s_25s_25_4_1_U44/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8s_25s_25_4_1_U44/FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_24s_26_4_1_U39/FIR_HLS_ama_addmuladd_16s_16s_9ns_24s_26_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_24s_26_4_1_U39/FIR_HLS_ama_addmuladd_16s_16s_9ns_24s_26_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#8 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_17s_17s_10ns_27s_28_4_1_U28/FIR_HLS_ama_addmuladd_17s_17s_10ns_27s_28_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_17s_17s_10ns_27s_28_4_1_U28/FIR_HLS_ama_addmuladd_17s_17s_10ns_27s_28_4_1_DSP48_0_U/p_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#9 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_submuladd_18s_16s_6ns_22s_24_4_1_U42/FIR_HLS_ama_submuladd_18s_16s_6ns_22s_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_submuladd_18s_16s_6ns_22s_24_4_1_U42/FIR_HLS_ama_submuladd_18s_16s_6ns_22s_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#10 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/mac_mul_sub_16s_15ns_16s_31_4_1_U35/FIR_HLS_mac_mul_sub_16s_15ns_16s_31_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/mac_mul_sub_16s_15ns_16s_31_4_1_U35/FIR_HLS_mac_mul_sub_16s_15ns_16s_31_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+14 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/regslice_both_output_r_U/output_r_TDATA[13:0].
+Related violations: <none>
+
+

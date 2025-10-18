@@ -1,0 +1,710 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date              : Sat Oct 18 16:35:10 2025
+| Host              : DESKTOP-92OKADH running 64-bit major release  (build 9200)
+| Command           : report_timing -max_paths 10 -file ./report/FIR_HLS_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : C
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[39]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[39])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[39]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<39>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[39]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[39])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[40]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[40])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[40]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<40>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[40]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[40])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[41]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[41])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[41]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<41>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[41]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[41])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[42]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[42])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[42]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<42>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[42]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[42])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[43]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[43])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[43]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<43>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[43]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[43])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[44]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[44])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[44]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<44>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[44]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[44])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[45]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[45])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[45]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<45>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[45]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[45])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[46]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[46])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[46]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<46>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[46]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[46])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.498ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[47]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.429ns  (logic 3.219ns (72.680%)  route 1.210ns (27.320%))
+  Logic Levels:           8  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=2)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.107     0.107    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     1.460 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=75, unplaced)        0.303     1.763    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/DOUTADOUT[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.846 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1/O
+                         net (fo=1, unplaced)         0.025     1.871    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.160 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0/CO[7]
+                         net (fo=1, unplaced)         0.006     2.166    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     2.327 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24/O[5]
+                         net (fo=6, unplaced)         0.177     2.504    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp71_cast_fu_1136_p1__0[13]
+                         LUT2 (Prop_LUT2_I0_O)        0.144     2.648 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0/O
+                         net (fo=1, unplaced)         0.250     2.898    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0_n_0
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.154     3.052 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0/CO[7]
+                         net (fo=1, unplaced)         0.006     3.058    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     3.172 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0/O[3]
+                         net (fo=28, unplaced)        0.443     3.615    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/C[39]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[39]_C_DATA[39])
+                                                      0.135     3.750 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[39]
+                         net (fo=2, unplaced)         0.000     3.750    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<39>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[39]_ALU_OUT[47])
+                                                      0.786     4.536 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     4.536    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[47]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[47])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.536    
+  -------------------------------------------------------------------
+                         slack                                  5.498    
+
+Slack (MET) :             5.513ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[31]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.415ns  (logic 3.371ns (76.353%)  route 1.044ns (23.647%))
+  Logic Levels:           9  (CARRY8=4 DSP_ALU=1 DSP_C_DATA=1 LUT2=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 10.055 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.106     0.106    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      1.331     1.437 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/DOUTBDOUT[0]
+                         net (fo=77, unplaced)        0.303     1.740    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/A[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.083     1.823 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_72/O
+                         net (fo=1, unplaced)         0.025     1.848    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_72_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.289     2.137 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22/CO[7]
+                         net (fo=1, unplaced)         0.006     2.143    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.106     2.249 f  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_75/O[1]
+                         net (fo=4, unplaced)         0.158     2.407    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/tmp105_cast_fu_1591_p1__0[9]
+                         LUT3 (Prop_LUT3_I0_O)        0.138     2.545 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_43__4/O
+                         net (fo=2, unplaced)         0.234     2.779    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_43__4_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.057     2.836 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_51__1/O
+                         net (fo=1, unplaced)         0.030     2.866    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_51__1_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.275     3.141 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20/CO[7]
+                         net (fo=1, unplaced)         0.006     3.147    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.171     3.318 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19/O[7]
+                         net (fo=24, unplaced)        0.282     3.600    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/C[31]
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[31]_C_DATA[31])
+                                                      0.135     3.735 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C_DATA[31]
+                         net (fo=2, unplaced)         0.000     3.735    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA.C_DATA<31>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[31]_ALU_OUT[31])
+                                                      0.786     4.521 r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST/ALU_OUT[31]
+                         net (fo=1, unplaced)         0.000     4.521    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_ALU.ALU_OUT<31>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[31]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3117, unset)         0.055    10.055    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000    10.055    
+                         clock uncertainty           -0.035    10.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[31])
+                                                      0.014    10.034    bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41/FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                         10.034    
+                         arrival time                          -4.521    
+  -------------------------------------------------------------------
+                         slack                                  5.513    
+
+
+
+

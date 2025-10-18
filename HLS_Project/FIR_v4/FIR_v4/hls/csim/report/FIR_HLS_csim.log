@@ -1,0 +1,39 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../FIR_HLS_TB.cpp in debug mode
+   Generating csim.exe
+INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_DSP_multirate.dat
+INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_DSP_multirate.dat
+INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_DSP_multirate.res
+INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_DSP_multirate.res
+INFO: Input and reference data lengths match.
+Mismatch at sample  280: ref=-11734, dut= -9996
+Mismatch at sample  281: ref=-15776, dut=-13799
+Mismatch at sample  282: ref=-19073, dut=-18670
+Mismatch at sample  283: ref=-22035, dut=-25736
+Mismatch at sample  284: ref=-25273, dut= 32048
+Mismatch at sample  285: ref=-27897, dut= 28944
+Mismatch at sample  286: ref=-29827, dut=-30529
+Mismatch at sample  287: ref=-31175, dut=-14373
+Mismatch at sample  288: ref=-32371, dut=  7062
+Mismatch at sample  289: ref= 32763, dut= 25933
+Mismatch at sample  290: ref=-32759, dut=-32013
+Mismatch at sample  291: ref=-32143, dut= 26563
+Mismatch at sample  292: ref=-31063, dut=  8371
+Mismatch at sample  293: ref=-29258, dut=-12455
+Mismatch at sample  294: ref=-27465, dut=-28166
+Mismatch at sample  295: ref=-25203, dut= 31639
+Mismatch at sample  296: ref=-22261, dut=-30474
+Mismatch at sample  297: ref=-18808, dut=-22506
+Mismatch at sample  298: ref=-15742, dut=-15337
+Mismatch at sample  299: ref=-12392, dut=-10411
+Mismatch at sample  300: ref= -8250, dut= -6508
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 21
+Status: FAIL [!!] (21 samples out of tolerance)
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

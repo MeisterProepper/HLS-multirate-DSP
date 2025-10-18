@@ -1,0 +1,11 @@
+{
+  "name": "FIR_v5",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "FIR_v5"
+  }
+}

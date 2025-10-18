@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'FIR_HLS'
 ================================================================
 + General Information: 
-    * Date:           Sat Oct 18 12:58:43 2025
+    * Date:           Sat Oct 18 22:44:37 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        FIR_v2
     * Solution:       hls (Vivado IP Flow Target)
@@ -477,97 +477,97 @@
 |    ama_addmuladd_16s_16s_9s_26s_26_4_1_U73    | 1   |        | tmp443       | add  | dsp_slice | 3       |
 |    ama_addmuladd_16s_16s_9s_26s_26_4_1_U73    | 1   |        | tmp443_cast  | sext | dsp_slice | 3       |
 |    ama_addmuladd_16s_16s_9s_26s_26_4_1_U73    | 1   |        | tmp444       | mul  | dsp_slice | 3       |
-|    add_ln30_fu_5674_p2                        |     |        | add_ln30     | add  | fabric    | 0       |
-|    add_ln30_1_fu_5684_p2                      |     |        | add_ln30_1   | add  | fabric    | 0       |
-|    add_ln30_2_fu_5694_p2                      |     |        | add_ln30_2   | add  | fabric    | 0       |
-|    ama_addmul_sub_16s_16s_13ns_18s_30_4_1_U18 | 1   |        | sub_ln30     | sub  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_12ns_30s_30_4_1_U50  | 1   |        | add_ln30_3   | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_12ns_30s_30_4_1_U51  | 1   |        | add_ln30_4   | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_12ns_30s_31_4_1_U75  | 1   |        | add_ln30_5   | add  | dsp_slice | 3       |
-|    add_ln30_6_fu_9309_p2                      |     |        | add_ln30_6   | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_10ns_29s_29_4_1_U52  | 1   |        | add_ln30_7   | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_10s_28s_28_4_1_U53   | 1   |        | add_ln30_8   | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8ns_28s_28_4_1_U76   | 1   |        | add_ln30_9   | add  | dsp_slice | 3       |
-|    add_ln30_10_fu_9317_p2                     |     |        | add_ln30_10  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_11s_28s_28_4_1_U54   | 1   |        | add_ln30_12  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_10s_27s_27_4_1_U55   | 1   |        | add_ln30_13  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_11s_27s_28_4_1_U77   | 1   |        | add_ln30_14  | add  | dsp_slice | 3       |
-|    add_ln30_15_fu_9338_p2                     |     |        | add_ln30_15  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_8ns_19s_25_4_1_U24   | 1   |        | add_ln30_16  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_10ns_27s_28_4_1_U25  | 1   |        | add_ln30_17  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9ns_28s_28_4_1_U56   | 1   |        | add_ln30_18  | add  | dsp_slice | 3       |
-|    add_ln30_19_fu_9159_p2                     |     |        | add_ln30_19  | add  | fabric    | 0       |
-|    add_ln30_20_fu_9351_p2                     |     |        | add_ln30_20  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_9ns_27s_27_4_1_U57   | 1   |        | add_ln30_22  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9s_27s_27_4_1_U58    | 1   |        | add_ln30_23  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8ns_27s_27_4_1_U78   | 1   |        | add_ln30_24  | add  | dsp_slice | 3       |
-|    add_ln30_25_fu_9373_p2                     |     |        | add_ln30_25  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_10s_27s_27_4_1_U59   | 1   |        | add_ln30_26  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9s_25s_26_4_1_U29    | 1   |        | add_ln30_27  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_10s_26s_27_4_1_U60   | 1   |        | add_ln30_28  | add  | dsp_slice | 3       |
-|    add_ln30_29_fu_9170_p2                     |     |        | add_ln30_29  | add  | fabric    | 0       |
-|    add_ln30_30_fu_9386_p2                     |     |        | add_ln30_30  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_8ns_24s_25_4_1_U30   | 1   |        | add_ln30_31  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9ns_26s_27_4_1_U31   | 1   |        | add_ln30_32  | add  | dsp_slice | 3       |
-|    add_ln30_33_fu_8974_p2                     |     |        | add_ln30_33  | add  | fabric    | 0       |
-|    add_ln30_34_fu_8983_p2                     |     |        | add_ln30_34  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_8ns_25s_26_4_1_U32   | 1   |        | add_ln30_35  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9s_26s_26_4_1_U61    | 1   |        | add_ln30_36  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9s_26s_27_4_1_U79    | 1   |        | add_ln30_37  | add  | dsp_slice | 3       |
-|    add_ln30_38_fu_9402_p2                     |     |        | add_ln30_38  | add  | fabric    | 0       |
-|    add_ln30_39_fu_9411_p2                     |     |        | add_ln30_39  | add  | fabric    | 0       |
-|    add_ln30_40_fu_9421_p2                     |     |        | add_ln30_40  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_9s_31s_31_4_1_U80    | 1   |        | add_ln30_42  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8ns_26s_26_4_1_U62   | 1   |        | add_ln30_43  | add  | dsp_slice | 3       |
-|    add_ln30_44_fu_9182_p2                     |     |        | add_ln30_44  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_6ns_25s_25_4_1_U63   | 1   |        | add_ln30_46  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9s_26s_27_4_1_U36    | 1   |        | add_ln30_47  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8s_27s_27_4_1_U64    | 1   |        | add_ln30_48  | add  | dsp_slice | 3       |
-|    add_ln30_49_fu_9191_p2                     |     |        | add_ln30_49  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_7ns_26s_26_4_1_U37   | 1   |        | add_ln30_51  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_7ns_26s_26_4_1_U38   | 1   |        | add_ln30_52  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8ns_26s_26_4_1_U65   | 1   |        | add_ln30_53  | add  | dsp_slice | 3       |
-|    add_ln30_54_fu_9202_p2                     |     |        | add_ln30_54  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_8s_24s_25_4_1_U39    | 1   |        | add_ln30_55  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8s_25s_25_4_1_U40    | 1   |        | add_ln30_56  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8s_25s_26_4_1_U66    | 1   |        | add_ln30_57  | add  | dsp_slice | 3       |
-|    add_ln30_58_fu_9215_p2                     |     |        | add_ln30_58  | add  | fabric    | 0       |
-|    add_ln30_59_fu_9224_p2                     |     |        | add_ln30_59  | add  | fabric    | 0       |
-|    ama_addmuladd_17s_17s_8s_31s_31_4_1_U81    | 1   |        | add_ln30_61  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_7ns_25s_25_4_1_U67   | 1   |        | add_ln30_62  | add  | dsp_slice | 3       |
-|    add_ln30_63_fu_9545_p2                     |     |        | add_ln30_63  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_7ns_25s_25_4_1_U68   | 1   |        | add_ln30_64  | add  | dsp_slice | 3       |
-|    ama_addmuladd_17s_17s_8s_23s_25_4_1_U10    | 1   |        | add_ln30_65  | add  | dsp_slice | 3       |
-|    add_ln30_66_fu_9236_p2                     |     |        | add_ln30_66  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_8s_26s_26_4_1_U69    | 1   |        | add_ln30_68  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_7ns_24s_24_4_1_U70   | 1   |        | add_ln30_69  | add  | dsp_slice | 3       |
-|    add_ln30_70_fu_9245_p2                     |     |        | add_ln30_70  | add  | fabric    | 0       |
-|    ama_addmuladd_18s_16s_7ns_25s_26_4_1_U12   | 1   |        | add_ln30_71  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_8s_25s_25_4_1_U44    | 1   |        | add_ln30_72  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_6ns_24s_24_4_1_U71   | 1   |        | add_ln30_77  | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_7s_21s_23_4_1_U46    | 1   |        | add_ln30_79  | add  | dsp_slice | 3       |
-|    ama_submuladd_19s_16s_6ns_25s_26_4_1_U5    | 1   |        | add_ln30_83  | add  | dsp_slice | 3       |
-|    ama_addmuladd_17s_18s_6ns_26s_26_4_1_U6    | 1   |        | add_ln30_84  | add  | dsp_slice | 3       |
-|    ama_addmuladd_17s_17s_7s_24s_25_4_1_U13    | 1   |        | add_ln30_85  | add  | dsp_slice | 3       |
-|    add_ln30_86_fu_9016_p2                     |     |        | add_ln30_86  | add  | fabric    | 0       |
-|    add_ln30_87_fu_9025_p2                     |     |        | add_ln30_87  | add  | fabric    | 0       |
-|    ama_addmuladd_17s_17s_6s_24s_24_4_1_U49    | 1   |        | add_ln30_90  | add  | dsp_slice | 3       |
-|    ama_addmuladd_19s_16s_5ns_21s_24_4_1_U4    | 1   |        | add_ln30_93  | add  | dsp_slice | 3       |
-|    add_ln30_94_fu_9037_p2                     |     |        | add_ln30_94  | add  | fabric    | 0       |
-|    ama_submuladd_18s_16s_5ns_24s_24_4_1_U14   | 1   |        | add_ln30_96  | add  | dsp_slice | 3       |
-|    ama_submuladd_19s_16s_5ns_23s_24_4_1_U7    | 1   |        | add_ln30_97  | add  | dsp_slice | 3       |
-|    add_ln30_98_fu_9049_p2                     |     |        | add_ln30_98  | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_5ns_24s_24_4_1_U72   | 1   |        | add_ln30_100 | add  | dsp_slice | 3       |
-|    add_ln30_103_fu_9297_p2                    |     |        | add_ln30_103 | add  | fabric    | 0       |
-|    ama_submuladd_18s_16s_4ns_23s_23_4_1_U15   | 1   |        | add_ln30_105 | add  | dsp_slice | 3       |
-|    ama_submuladd_18s_16s_4ns_21s_22_4_1_U16   | 1   |        | add_ln30_108 | add  | dsp_slice | 3       |
-|    add_ln30_110_fu_9073_p2                    |     |        | add_ln30_110 | add  | fabric    | 0       |
-|    ama_addmuladd_17s_17s_6ns_25s_25_4_1_U17   | 1   |        | add_ln30_113 | add  | dsp_slice | 3       |
-|    add_ln30_114_fu_9095_p2                    |     |        | add_ln30_114 | add  | fabric    | 0       |
-|    ama_addmuladd_16s_16s_6ns_25s_25_4_1_U48   | 1   |        | add_ln30_115 | add  | dsp_slice | 3       |
-|    ama_addmuladd_16s_16s_9s_26s_26_4_1_U73    | 1   |        | add_ln30_116 | add  | dsp_slice | 3       |
-|    ama_addmuladd_18s_18s_6ns_26ns_26_4_1_U74  | 1   |        | add_ln30_117 | add  | dsp_slice | 3       |
-|    add_ln30_120_fu_9471_p2                    |     |        | add_ln30_120 | add  | fabric    | 0       |
+|    add_ln27_fu_5674_p2                        |     |        | add_ln27     | add  | fabric    | 0       |
+|    add_ln27_1_fu_5684_p2                      |     |        | add_ln27_1   | add  | fabric    | 0       |
+|    add_ln27_2_fu_5694_p2                      |     |        | add_ln27_2   | add  | fabric    | 0       |
+|    ama_addmul_sub_16s_16s_13ns_18s_30_4_1_U18 | 1   |        | sub_ln27     | sub  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_12ns_30s_30_4_1_U50  | 1   |        | add_ln27_3   | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_12ns_30s_30_4_1_U51  | 1   |        | add_ln27_4   | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_12ns_30s_31_4_1_U75  | 1   |        | add_ln27_5   | add  | dsp_slice | 3       |
+|    add_ln27_6_fu_9309_p2                      |     |        | add_ln27_6   | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_10ns_29s_29_4_1_U52  | 1   |        | add_ln27_7   | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_10s_28s_28_4_1_U53   | 1   |        | add_ln27_8   | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8ns_28s_28_4_1_U76   | 1   |        | add_ln27_9   | add  | dsp_slice | 3       |
+|    add_ln27_10_fu_9317_p2                     |     |        | add_ln27_10  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_11s_28s_28_4_1_U54   | 1   |        | add_ln27_12  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_10s_27s_27_4_1_U55   | 1   |        | add_ln27_13  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_11s_27s_28_4_1_U77   | 1   |        | add_ln27_14  | add  | dsp_slice | 3       |
+|    add_ln27_15_fu_9338_p2                     |     |        | add_ln27_15  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_8ns_19s_25_4_1_U24   | 1   |        | add_ln27_16  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_10ns_27s_28_4_1_U25  | 1   |        | add_ln27_17  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9ns_28s_28_4_1_U56   | 1   |        | add_ln27_18  | add  | dsp_slice | 3       |
+|    add_ln27_19_fu_9159_p2                     |     |        | add_ln27_19  | add  | fabric    | 0       |
+|    add_ln27_20_fu_9351_p2                     |     |        | add_ln27_20  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_9ns_27s_27_4_1_U57   | 1   |        | add_ln27_22  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9s_27s_27_4_1_U58    | 1   |        | add_ln27_23  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8ns_27s_27_4_1_U78   | 1   |        | add_ln27_24  | add  | dsp_slice | 3       |
+|    add_ln27_25_fu_9373_p2                     |     |        | add_ln27_25  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_10s_27s_27_4_1_U59   | 1   |        | add_ln27_26  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9s_25s_26_4_1_U29    | 1   |        | add_ln27_27  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_10s_26s_27_4_1_U60   | 1   |        | add_ln27_28  | add  | dsp_slice | 3       |
+|    add_ln27_29_fu_9170_p2                     |     |        | add_ln27_29  | add  | fabric    | 0       |
+|    add_ln27_30_fu_9386_p2                     |     |        | add_ln27_30  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_8ns_24s_25_4_1_U30   | 1   |        | add_ln27_31  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9ns_26s_27_4_1_U31   | 1   |        | add_ln27_32  | add  | dsp_slice | 3       |
+|    add_ln27_33_fu_8974_p2                     |     |        | add_ln27_33  | add  | fabric    | 0       |
+|    add_ln27_34_fu_8983_p2                     |     |        | add_ln27_34  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_8ns_25s_26_4_1_U32   | 1   |        | add_ln27_35  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9s_26s_26_4_1_U61    | 1   |        | add_ln27_36  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9s_26s_27_4_1_U79    | 1   |        | add_ln27_37  | add  | dsp_slice | 3       |
+|    add_ln27_38_fu_9402_p2                     |     |        | add_ln27_38  | add  | fabric    | 0       |
+|    add_ln27_39_fu_9411_p2                     |     |        | add_ln27_39  | add  | fabric    | 0       |
+|    add_ln27_40_fu_9421_p2                     |     |        | add_ln27_40  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_9s_31s_31_4_1_U80    | 1   |        | add_ln27_42  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8ns_26s_26_4_1_U62   | 1   |        | add_ln27_43  | add  | dsp_slice | 3       |
+|    add_ln27_44_fu_9182_p2                     |     |        | add_ln27_44  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_6ns_25s_25_4_1_U63   | 1   |        | add_ln27_46  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9s_26s_27_4_1_U36    | 1   |        | add_ln27_47  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8s_27s_27_4_1_U64    | 1   |        | add_ln27_48  | add  | dsp_slice | 3       |
+|    add_ln27_49_fu_9191_p2                     |     |        | add_ln27_49  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_7ns_26s_26_4_1_U37   | 1   |        | add_ln27_51  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_7ns_26s_26_4_1_U38   | 1   |        | add_ln27_52  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8ns_26s_26_4_1_U65   | 1   |        | add_ln27_53  | add  | dsp_slice | 3       |
+|    add_ln27_54_fu_9202_p2                     |     |        | add_ln27_54  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_8s_24s_25_4_1_U39    | 1   |        | add_ln27_55  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8s_25s_25_4_1_U40    | 1   |        | add_ln27_56  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8s_25s_26_4_1_U66    | 1   |        | add_ln27_57  | add  | dsp_slice | 3       |
+|    add_ln27_58_fu_9215_p2                     |     |        | add_ln27_58  | add  | fabric    | 0       |
+|    add_ln27_59_fu_9224_p2                     |     |        | add_ln27_59  | add  | fabric    | 0       |
+|    ama_addmuladd_17s_17s_8s_31s_31_4_1_U81    | 1   |        | add_ln27_61  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_7ns_25s_25_4_1_U67   | 1   |        | add_ln27_62  | add  | dsp_slice | 3       |
+|    add_ln27_63_fu_9545_p2                     |     |        | add_ln27_63  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_7ns_25s_25_4_1_U68   | 1   |        | add_ln27_64  | add  | dsp_slice | 3       |
+|    ama_addmuladd_17s_17s_8s_23s_25_4_1_U10    | 1   |        | add_ln27_65  | add  | dsp_slice | 3       |
+|    add_ln27_66_fu_9236_p2                     |     |        | add_ln27_66  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_8s_26s_26_4_1_U69    | 1   |        | add_ln27_68  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_7ns_24s_24_4_1_U70   | 1   |        | add_ln27_69  | add  | dsp_slice | 3       |
+|    add_ln27_70_fu_9245_p2                     |     |        | add_ln27_70  | add  | fabric    | 0       |
+|    ama_addmuladd_18s_16s_7ns_25s_26_4_1_U12   | 1   |        | add_ln27_71  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_8s_25s_25_4_1_U44    | 1   |        | add_ln27_72  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_6ns_24s_24_4_1_U71   | 1   |        | add_ln27_77  | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_7s_21s_23_4_1_U46    | 1   |        | add_ln27_79  | add  | dsp_slice | 3       |
+|    ama_submuladd_19s_16s_6ns_25s_26_4_1_U5    | 1   |        | add_ln27_83  | add  | dsp_slice | 3       |
+|    ama_addmuladd_17s_18s_6ns_26s_26_4_1_U6    | 1   |        | add_ln27_84  | add  | dsp_slice | 3       |
+|    ama_addmuladd_17s_17s_7s_24s_25_4_1_U13    | 1   |        | add_ln27_85  | add  | dsp_slice | 3       |
+|    add_ln27_86_fu_9016_p2                     |     |        | add_ln27_86  | add  | fabric    | 0       |
+|    add_ln27_87_fu_9025_p2                     |     |        | add_ln27_87  | add  | fabric    | 0       |
+|    ama_addmuladd_17s_17s_6s_24s_24_4_1_U49    | 1   |        | add_ln27_90  | add  | dsp_slice | 3       |
+|    ama_addmuladd_19s_16s_5ns_21s_24_4_1_U4    | 1   |        | add_ln27_93  | add  | dsp_slice | 3       |
+|    add_ln27_94_fu_9037_p2                     |     |        | add_ln27_94  | add  | fabric    | 0       |
+|    ama_submuladd_18s_16s_5ns_24s_24_4_1_U14   | 1   |        | add_ln27_96  | add  | dsp_slice | 3       |
+|    ama_submuladd_19s_16s_5ns_23s_24_4_1_U7    | 1   |        | add_ln27_97  | add  | dsp_slice | 3       |
+|    add_ln27_98_fu_9049_p2                     |     |        | add_ln27_98  | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_5ns_24s_24_4_1_U72   | 1   |        | add_ln27_100 | add  | dsp_slice | 3       |
+|    add_ln27_103_fu_9297_p2                    |     |        | add_ln27_103 | add  | fabric    | 0       |
+|    ama_submuladd_18s_16s_4ns_23s_23_4_1_U15   | 1   |        | add_ln27_105 | add  | dsp_slice | 3       |
+|    ama_submuladd_18s_16s_4ns_21s_22_4_1_U16   | 1   |        | add_ln27_108 | add  | dsp_slice | 3       |
+|    add_ln27_110_fu_9073_p2                    |     |        | add_ln27_110 | add  | fabric    | 0       |
+|    ama_addmuladd_17s_17s_6ns_25s_25_4_1_U17   | 1   |        | add_ln27_113 | add  | dsp_slice | 3       |
+|    add_ln27_114_fu_9095_p2                    |     |        | add_ln27_114 | add  | fabric    | 0       |
+|    ama_addmuladd_16s_16s_6ns_25s_25_4_1_U48   | 1   |        | add_ln27_115 | add  | dsp_slice | 3       |
+|    ama_addmuladd_16s_16s_9s_26s_26_4_1_U73    | 1   |        | add_ln27_116 | add  | dsp_slice | 3       |
+|    ama_addmuladd_18s_18s_6ns_26ns_26_4_1_U74  | 1   |        | add_ln27_117 | add  | dsp_slice | 3       |
+|    add_ln27_120_fu_9471_p2                    |     |        | add_ln27_120 | add  | fabric    | 0       |
 +-----------------------------------------------+-----+--------+--------------+------+-----------+---------+
 
 
@@ -586,7 +586,7 @@
 | interface | mode=axis port=input          | FIR_HLS.cpp:7 in fir_hls, input  |
 | interface | mode=axis port=output         | FIR_HLS.cpp:8 in fir_hls, output |
 | interface | mode=ap_ctrl_none port=return | FIR_HLS.cpp:9 in fir_hls, return |
-| pipeline  |                               | FIR_HLS.cpp:21 in fir_filter     |
+| pipeline  |                               | FIR_HLS.cpp:18 in fir_filter     |
 +-----------+-------------------------------+----------------------------------+
 
 

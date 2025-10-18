@@ -18,13 +18,23 @@ C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cp
       ^~~
       VITIS_LOOP_1248_1: 
 C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:4048:7: note: FIX-IT applied suggested code changes
-C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:5939:2: warning: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8356:9: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < __SHIFT_DEPTH__; ++i)
+        ^~~
+        VITIS_LOOP_64_1: 
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8356:9: note: FIX-IT applied suggested code changes
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8363:9: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < __SHIFT_DEPTH__; ++i)
+        ^~~
+        VITIS_LOOP_71_1: 
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8363:9: note: FIX-IT applied suggested code changes
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8513:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
  for(int i=0; i < N_delays; i++)
  ^~~
- VITIS_LOOP_29_1: 
-C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:5939:2: note: FIX-IT applied suggested code changes
-C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:5943:2: warning: Added loop label VITIS_LOOP_33_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_26_1: 
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8513:2: note: FIX-IT applied suggested code changes
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8517:2: warning: Added loop label VITIS_LOOP_30_2:   [xilinx-label-all-loops]
  for(int i=1; i < N_delays; i++)
  ^~~
- VITIS_LOOP_33_2: 
-C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:5943:2: note: FIX-IT applied suggested code changes
+ VITIS_LOOP_30_2: 
+C:\HLS-multirate-DSP\HLS_Project\FIR_v2\FIR_v2\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8517:2: note: FIX-IT applied suggested code changes

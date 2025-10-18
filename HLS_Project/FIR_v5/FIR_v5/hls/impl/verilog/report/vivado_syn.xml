@@ -1,0 +1,345 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>4.502</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>4.502</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>4.502</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>5.498</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>5.498</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>5.498</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>5.498</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>1</BRAM>
+    <CLB>0</CLB>
+    <DSP>81</DSP>
+    <FF>2630</FF>
+    <LATCH>0</LATCH>
+    <LUT>2552</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>288</BRAM>
+    <CLB>0</CLB>
+    <DSP>1248</DSP>
+    <FF>234240</FF>
+    <LUT>117120</LUT>
+    <URAM>64</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="FIR_HLS" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="27">am_addmul_16s_16s_13ns_29_4_1_U120 am_addmul_16s_16s_13ns_30_4_1_U102 ama_addmuladd_16s_16s_12s_29s_29_4_1_U122 ama_addmuladd_16s_16s_12s_30s_30_4_1_U110 ama_addmuladd_16s_16s_8ns_29s_29_4_1_U121 ama_addmuladd_16s_16s_8ns_30s_30_4_1_U106 grp_FIR_filter_fu_188 mac_muladd_16s_10s_28s_28_4_1_U101 mac_muladd_16s_10s_28s_28_4_1_U104 mac_muladd_16s_10s_28s_28_4_1_U112 mac_muladd_16s_10s_28s_28_4_1_U119 mac_muladd_16s_13ns_27s_29_4_1_U116 mac_muladd_16s_13ns_27s_30_4_1_U108 mac_muladd_16s_13ns_28s_29_4_1_U115 mac_muladd_16s_13ns_28s_30_4_1_U109 mac_muladd_16s_14ns_24s_29_4_1_U114 mac_muladd_16s_14ns_24s_30_4_1_U107 mac_muladd_16s_6ns_24s_24_4_1_U103 mac_muladd_16s_6ns_24s_24_4_1_U111 mac_muladd_16s_6ns_24s_24_4_1_U117 mac_muladd_16s_6ns_24s_24_4_1_U99 mac_muladd_16s_8ns_27s_27_4_1_U100 mac_muladd_16s_8ns_27s_27_4_1_U105 mac_muladd_16s_8ns_27s_27_4_1_U113 mac_muladd_16s_8ns_27s_27_4_1_U118 regslice_both_input_r_U regslice_both_output_r_U</SubModules>
+    <Resources BRAM="1" DSP="81" FF="2630" LUT="2552" LogicLUT="2552" RAMB18="1"/>
+    <LocalResources FF="869" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/am_addmul_16s_16s_13ns_29_4_1_U120" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_13ns_29_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/am_addmul_16s_16s_13ns_30_4_1_U102" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_13ns_30_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ama_addmuladd_16s_16s_12s_29s_29_4_1_U122" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_12s_29s_29_4_1">
+    <Resources DSP="1" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ama_addmuladd_16s_16s_12s_30s_30_4_1_U110" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_12s_30s_30_4_1">
+    <Resources DSP="1" LUT="43" LogicLUT="43"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ama_addmuladd_16s_16s_8ns_29s_29_4_1_U121" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8ns_29s_29_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ama_addmuladd_16s_16s_8ns_30s_30_4_1_U106" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8ns_30s_30_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_FIR_filter">
+    <SubModules count="46">H_filter_FIR_kernel_U am_addmul_16s_16s_10ns_28_4_1_U2 am_addmul_16s_16s_10s_26_4_1_U14 am_addmul_16s_16s_10s_27_4_1_U4 am_addmul_16s_16s_11ns_29_4_1_U1 am_addmul_16s_16s_11s_28_4_1_U3 am_addmul_16s_16s_14ns_31_4_1_U10 am_addmul_16s_16s_8ns_25_4_1_U7 am_addmul_16s_16s_8s_24_4_1_U9 am_addmul_16s_16s_8s_25_4_1_U16 am_addmul_16s_16s_8s_25_4_1_U8 am_addmul_16s_16s_9ns_27_4_1_U5 am_addmul_16s_16s_9ns_27_4_1_U6 am_addmul_17s_17s_6s_23_4_1_U17 ama_addmuladd_16s_16s_10ns_28s_28_4_1_U12 ama_addmuladd_16s_16s_10s_26s_27_4_1_U36 ama_addmuladd_16s_16s_10s_27s_27_4_1_U15 ama_addmuladd_16s_16s_10s_27s_27_4_1_U18 ama_addmuladd_16s_16s_11s_28s_28_4_1_U26 ama_addmuladd_16s_16s_11s_29s_29_4_1_U11 ama_addmuladd_16s_16s_11s_31s_31_4_1_U23 ama_addmuladd_16s_16s_12s_28s_29_4_1_U25 ama_addmuladd_16s_16s_13s_29s_30_4_1_U24 ama_addmuladd_16s_16s_4ns_23s_23_4_1_U32 ama_addmuladd_16s_16s_6ns_31s_31_4_1_U45 ama_addmuladd_16s_16s_7ns_24s_25_4_1_U43 ama_addmuladd_16s_16s_7ns_25s_25_4_1_U30 ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41 ama_addmuladd_16s_16s_7ns_25s_26_4_1_U40 ama_addmuladd_16s_16s_7s_24s_24_4_1_U22 ama_addmuladd_16s_16s_7s_25s_25_4_1_U20 ama_addmuladd_16s_16s_8ns_24s_25_4_1_U34 ama_addmuladd_16s_16s_8ns_27s_27_4_1_U19 ama_addmuladd_16s_16s_8s_25s_25_4_1_U21 ama_addmuladd_16s_16s_8s_25s_25_4_1_U44 ama_addmuladd_16s_16s_8s_26s_26_4_1_U27 ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33 ama_addmuladd_16s_16s_9ns_24s_26_4_1_U39 ama_addmuladd_16s_16s_9ns_27s_28_4_1_U29 ama_addmuladd_16s_16s_9ns_28s_28_4_1_U13 ama_addmuladd_16s_16s_9s_25s_26_4_1_U37 ama_addmuladd_16s_16s_9s_25s_26_4_1_U38 ama_addmuladd_16s_16s_9s_27s_27_4_1_U31 ama_addmuladd_17s_17s_10ns_27s_28_4_1_U28 ama_submuladd_18s_16s_6ns_22s_24_4_1_U42 mac_mul_sub_16s_15ns_16s_31_4_1_U35</SubModules>
+    <Resources BRAM="1" DSP="45" FF="1679" LUT="2237" LogicLUT="2237" RAMB18="1"/>
+    <LocalResources FF="1679" LUT="268" LogicLUT="268"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_FIR_filter_H_filter_FIR_kernel_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="1569" LogicLUT="1569" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_10ns_28_4_1_U2" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_10ns_28_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_10s_26_4_1_U14" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_10s_26_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_10s_27_4_1_U4" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_10s_27_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_11ns_29_4_1_U1" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_11ns_29_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_11s_28_4_1_U3" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_11s_28_4_1">
+    <Resources DSP="1" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_14ns_31_4_1_U10" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_14ns_31_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_8ns_25_4_1_U7" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_8ns_25_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_8s_24_4_1_U9" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_8s_24_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_8s_25_4_1_U16" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_8s_25_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_8s_25_4_1_U8" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_8s_25_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_9ns_27_4_1_U5" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_9ns_27_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_16s_16s_9ns_27_4_1_U6" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_16s_16s_9ns_27_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/am_addmul_17s_17s_6s_23_4_1_U17" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_am_addmul_17s_17s_6s_23_4_1">
+    <Resources DSP="1" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_10ns_28s_28_4_1_U12" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_10ns_28s_28_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_10s_26s_27_4_1_U36" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_10s_26s_27_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_10s_27s_27_4_1_U15" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_10s_27s_27_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_10s_27s_27_4_1_U18" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_10s_27s_27_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_11s_28s_28_4_1_U26" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_11s_28s_28_4_1">
+    <Resources DSP="1" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_11s_29s_29_4_1_U11" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_11s_29s_29_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_11s_31s_31_4_1_U23" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_11s_31s_31_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_12s_28s_29_4_1_U25" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_12s_28s_29_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_13s_29s_30_4_1_U24" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_13s_29s_30_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_4ns_23s_23_4_1_U32" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_4ns_23s_23_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_6ns_31s_31_4_1_U45" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_6ns_31s_31_4_1">
+    <Resources DSP="1" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_24s_25_4_1_U43" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_7ns_24s_25_4_1">
+    <Resources DSP="1" LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U30" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_25_4_1_U41" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_25_4_1">
+    <Resources DSP="1" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7ns_25s_26_4_1_U40" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_7ns_25s_26_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7s_24s_24_4_1_U22" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_7s_24s_24_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_7s_25s_25_4_1_U20" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_7s_25s_25_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8ns_24s_25_4_1_U34" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8ns_24s_25_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8ns_27s_27_4_1_U19" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8ns_27s_27_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8s_25s_25_4_1_U21" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8s_25s_25_4_1_U44" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8s_25s_25_4_1">
+    <Resources DSP="1" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_8s_26s_26_4_1_U27" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_8s_26s_26_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_24s_26_4_1_U39" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9ns_24s_26_4_1">
+    <Resources DSP="1" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_27s_28_4_1_U29" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9ns_27s_28_4_1">
+    <Resources DSP="1" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_28s_28_4_1_U13" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9ns_28s_28_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9s_25s_26_4_1_U37" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9s_25s_26_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9s_25s_26_4_1_U38" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9s_25s_26_4_1">
+    <Resources DSP="1" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9s_27s_27_4_1_U31" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_16s_16s_9s_27s_27_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_addmuladd_17s_17s_10ns_27s_28_4_1_U28" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_addmuladd_17s_17s_10ns_27s_28_4_1">
+    <Resources DSP="1" LUT="33" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/ama_submuladd_18s_16s_6ns_22s_24_4_1_U42" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_ama_submuladd_18s_16s_6ns_22s_24_4_1">
+    <Resources DSP="1" LUT="38" LogicLUT="38"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_filter_fu_188/mac_mul_sub_16s_15ns_16s_31_4_1_U35" DEPTH="2" FILE_NAME="FIR_HLS_FIR_filter.v" ORIG_REF_NAME="FIR_HLS_mac_mul_sub_16s_15ns_16s_31_4_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_10s_28s_28_4_1_U101" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_10s_28s_28_4_1">
+    <Resources DSP="2" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_10s_28s_28_4_1_U104" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_10s_28s_28_4_1">
+    <Resources DSP="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_10s_28s_28_4_1_U112" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_10s_28s_28_4_1">
+    <Resources DSP="2" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_10s_28s_28_4_1_U119" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_10s_28s_28_4_1">
+    <Resources DSP="2" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_13ns_27s_29_4_1_U116" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_13ns_27s_29_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_13ns_27s_30_4_1_U108" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_13ns_27s_30_4_1">
+    <Resources DSP="1" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_13ns_28s_29_4_1_U115" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_13ns_28s_29_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_13ns_28s_30_4_1_U109" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_13ns_28s_30_4_1">
+    <Resources DSP="1" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_14ns_24s_29_4_1_U114" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_14ns_24s_29_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_14ns_24s_30_4_1_U107" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_14ns_24s_30_4_1">
+    <Resources DSP="1" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_6ns_24s_24_4_1_U103" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_6ns_24s_24_4_1">
+    <Resources DSP="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_6ns_24s_24_4_1_U111" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_6ns_24s_24_4_1">
+    <Resources DSP="2" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_6ns_24s_24_4_1_U117" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_6ns_24s_24_4_1">
+    <Resources DSP="2" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_6ns_24s_24_4_1_U99" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_6ns_24s_24_4_1">
+    <Resources DSP="2" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_8ns_27s_27_4_1_U100" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_8ns_27s_27_4_1">
+    <Resources DSP="2" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_8ns_27s_27_4_1_U105" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_8ns_27s_27_4_1">
+    <Resources DSP="2" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_8ns_27s_27_4_1_U113" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_8ns_27s_27_4_1">
+    <Resources DSP="2" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_16s_8ns_27s_27_4_1_U118" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_mac_muladd_16s_8ns_27s_27_4_1">
+    <Resources DSP="2" LUT="60" LogicLUT="60"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_input_r_U" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_regslice_both">
+    <Resources FF="49" LUT="36" LogicLUT="36"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_output_r_U" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_regslice_both">
+    <Resources FF="33" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="4.429" DATAPATH_LOGIC_DELAY="3.219" DATAPATH_NET_DELAY="1.210" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[39]" LOGIC_LEVELS="8" MAX_FANOUT="75" SLACK="5.498" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_FIR_filter_H_filter_FIR_kernel_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4996"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4964"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.429" DATAPATH_LOGIC_DELAY="3.219" DATAPATH_NET_DELAY="1.210" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[40]" LOGIC_LEVELS="8" MAX_FANOUT="75" SLACK="5.498" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_FIR_filter_H_filter_FIR_kernel_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4996"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4964"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.429" DATAPATH_LOGIC_DELAY="3.219" DATAPATH_NET_DELAY="1.210" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[41]" LOGIC_LEVELS="8" MAX_FANOUT="75" SLACK="5.498" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_FIR_filter_H_filter_FIR_kernel_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4996"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4964"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.429" DATAPATH_LOGIC_DELAY="3.219" DATAPATH_NET_DELAY="1.210" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[42]" LOGIC_LEVELS="8" MAX_FANOUT="75" SLACK="5.498" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_FIR_filter_H_filter_FIR_kernel_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4996"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4964"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.429" DATAPATH_LOGIC_DELAY="3.219" DATAPATH_NET_DELAY="1.210" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/ALU_OUT[43]" LOGIC_LEVELS="8" MAX_FANOUT="75" SLACK="5.498" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_FIR_filter_H_filter_FIR_kernel_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_65__1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4996"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_22__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_30__0" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="4964"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_20__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/H_filter_FIR_kernel_U/p_reg_reg_i_19__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_filter.v" LINE_NUMBER="1666"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_filter_fu_188/ama_addmuladd_16s_16s_9ns_22s_26_4_1_U33/FIR_HLS_ama_addmuladd_16s_16s_9ns_22s_26_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/FIR_HLS_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/FIR_HLS_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/FIR_HLS_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/FIR_HLS_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/FIR_HLS_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/FIR_HLS_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/FIR_HLS_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

@@ -1,0 +1,22 @@
+---
+MainSourceFile:  'C:/HLS-multirate-DSP/HLS_Project/FIR_v4/FIR_v4/hls/.autopilot/db/FIR_HLS.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_65_1:  '
+    FileOffset:      65
+    FilePath:        FIR_HLS.cpp
+    Replacements:    
+      - FilePath:        'C:\HLS-multirate-DSP\HLS_Project\FIR_v4\FIR_v4\hls\.autopilot\db\FIR_HLS.pp.0.cpp'
+        Offset:          757445
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_65_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_2:  '
+    FileOffset:      69
+    FilePath:        FIR_HLS.cpp
+    Replacements:    
+      - FilePath:        'C:\HLS-multirate-DSP\HLS_Project\FIR_v4\FIR_v4\hls\.autopilot\db\FIR_HLS.pp.0.cpp'
+        Offset:          757531
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_2: '
+...

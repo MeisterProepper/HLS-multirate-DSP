@@ -6,7 +6,7 @@
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                        | Instructions | Description                                                                            |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                             |    595       | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                             |    588       | After all functions are compiled and linked into a single design                       |
 |               |                             |              |                                                                                        |
 | Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
 |               | (1) unroll                  | 12,937       | user unroll pragmas are applied                                                        |
@@ -36,8 +36,8 @@
 +---------------+----------------+--------------+---------------+--------------+-------------+---------------+
 | Function      | Location       | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
 +---------------+----------------+--------------+---------------+--------------+-------------+---------------+
-| + FIR_HLS     | FIR_HLS.cpp:6  | 595          | 2,148         | 1,960        | 1,960       | 1,968         |
-|    FIR_filter | FIR_HLS.cpp:20 | 563          | 2,139         | 1,951        | 1,951       | 1,952         |
+| + FIR_HLS     | FIR_HLS.cpp:6  | 588          | 2,148         | 1,960        | 1,960       | 1,968         |
+|    FIR_filter | FIR_HLS.cpp:17 | 563          | 2,139         | 1,951        | 1,951       | 1,952         |
 +---------------+----------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings
