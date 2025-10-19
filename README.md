@@ -3,7 +3,7 @@ This project investigates various implementation strategies for a multi-rate fil
 The aim is to analyse the effects of different optimisation approaches and architectural decisions on the synthesis results, latency and resource utilisation.
 
 
-![Filter](Filter.png)
+![Filter](Filter_multirate.png)
 
 ## Objective
 
