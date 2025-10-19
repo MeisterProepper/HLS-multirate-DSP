@@ -1,5 +1,5 @@
 #include <hls_stream.h>
-#include "c:/HLS-multirate-DSP/Matlab/FIR_multirate_DSP.h"
+#include "../../Matlab/FIR_multirate_DSP.h"
 
 
 

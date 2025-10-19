@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=FIR_HLS" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="FIR_HLS.cpp:6:0" msg_body="Inlining function 'FIR_filter(short*, short const*, short, short, int)' into 'FIR_HLS(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)'">
+        <args Callee="FIR_filter(short*, short const*, short, short, int)" Callee-DebugLoc="File FIR_HLS.cpp Line 20 Column 0" Caller="FIR_HLS(hls::stream&lt;short, 0&gt;&amp;, hls::stream&lt;short, 0&gt;&amp;)" Caller-DebugLoc="File FIR_HLS.cpp Line 6 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,7 +1,7 @@
 #include <hls_stream.h>
 #include <ap_fixed.h>
 #include <ap_shift_reg.h>
-#include "c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h"
+#include "../../Matlab/FIR_normal_HLS.h"
 
 
 typedef ap_fixed<16,1> fir_data_t; 

@@ -20,8 +20,8 @@ int num_input_samples = 0;
 int num_reference_samples = 0;
 
 // File names
-const char INPUT_FILENAME[]     = "c:/HLS-multirate-DSP/Matlab/TS_DSP_multirate.dat";
-const char REFERENCE_FILENAME[] = "c:/HLS-multirate-DSP/Matlab/TS_DSP_multirate.res";
+const char INPUT_FILENAME[]     = "../../../../../../Matlab/TS_DSP_multirate.dat";
+const char REFERENCE_FILENAME[] = "../../../../../../Matlab/TS_DSP_multirate.res";
 
 // ------------------------------------------------------------
 // Helper function: read stimulus file into HLS stream

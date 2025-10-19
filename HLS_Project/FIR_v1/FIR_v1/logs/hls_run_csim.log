@@ -6,13 +6,13 @@ INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-D
 INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v1/FIR_HLS.cpp' to the project
 INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(8)
 INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v1/FIR_HLS.h' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/HLS-multirate-DSP/Matlab/FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'syn.file=../../Matlab/FIR_normal_DSP.h' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(9)
 INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_normal_DSP.h' to the project
 INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(10)
 INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_Project/FIR_v1/FIR_HLS_TB.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=C:/HLS-multirate-DSP/Matlab/TS_DSP_normal.dat' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_DSP_normal.dat' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(11)
 INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_DSP_normal.dat' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=C:/HLS-multirate-DSP/Matlab/TS_DSP_normal.res' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_DSP_normal.res' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(12)
 INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_DSP_normal.res' to the project
 INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(13)
 INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_Project/FIR_v1/hls_config.cfg(4)
@@ -25,12 +25,11 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
    Compiling ../../../../FIR_HLS_TB.cpp in debug mode
-   Compiling ../../../../FIR_HLS.cpp in debug mode
    Generating csim.exe
-INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_DSP_normal.dat
-INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_DSP_normal.dat
-INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_DSP_normal.res
-INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_DSP_normal.res
+INFO: Reading ../../../../../../Matlab/TS_DSP_normal.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_DSP_normal.dat
+INFO: Reading ../../../../../../Matlab/TS_DSP_normal.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_DSP_normal.res
 INFO: Input and reference data lengths match.
 Mismatch at sample  408: ref=-32766, dut= 32767
 Mismatch at sample  433: ref= 32766, dut=-32768
@@ -44,5 +43,5 @@ Status: FAIL [!!] (3 samples out of tolerance)
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.496 seconds; peak allocated memory: 273.992 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 21s
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.097 seconds; peak allocated memory: 273.598 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s
