@@ -1,0 +1,133 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'FIR_filtertest_2'" level="0">
+<item name = "Date">Tue Nov  4 00:15:15 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">FIR_v5</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.750 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_FIR_filtertest_2_Pipeline_VITIS_LOOP_83_1_fu_56">FIR_filtertest_2_Pipeline_VITIS_LOOP_83_1, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 39, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 2, 39, 116, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 80, -</column>
+<column name="Register">-, -, 21, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_FIR_filtertest_2_Pipeline_VITIS_LOOP_83_1_fu_56">FIR_filtertest_2_Pipeline_VITIS_LOOP_83_1, 0, 1, 39, 111, 0</column>
+<column name="mul_15s_16s_31_1_1_U6">mul_15s_16s_31_1_1, 0, 1, 0, 5, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln81_fu_87_p2">+, 0, 0, 39, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="FIR_coe_address0">9, 2, 3, 6</column>
+<column name="FIR_coe_ce0">9, 2, 1, 2</column>
+<column name="FIR_delays_address0">9, 2, 3, 6</column>
+<column name="FIR_delays_ce0">9, 2, 1, 2</column>
+<column name="FIR_delays_ce1">9, 2, 1, 2</column>
+<column name="FIR_delays_we0">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">26, 5, 1, 5</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="grp_FIR_filtertest_2_Pipeline_VITIS_LOOP_83_1_fu_56_ap_start_reg">1, 0, 1, 0</column>
+<column name="y_reg_118">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="ap_return">out, 16, ap_ctrl_hs, FIR_filtertest.2, return value</column>
+<column name="FIR_delays_address0">out, 3, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_ce0">out, 1, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_we0">out, 1, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_d0">out, 32, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_q0">in, 32, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_address1">out, 3, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_ce1">out, 1, ap_memory, FIR_delays, array</column>
+<column name="FIR_delays_q1">in, 32, ap_memory, FIR_delays, array</column>
+<column name="FIR_coe_address0">out, 3, ap_memory, FIR_coe, array</column>
+<column name="FIR_coe_ce0">out, 1, ap_memory, FIR_coe, array</column>
+<column name="FIR_coe_q0">in, 15, ap_memory, FIR_coe, array</column>
+<column name="x_n">in, 16, ap_none, x_n, scalar</column>
+</table>
+</item>
+</section>
+</profile>

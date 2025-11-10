@@ -13,7 +13,7 @@
  
 #define N_DELAYS_FIR 392
 typedef ap_fixed<16,1> coef_data_t; 
-typedef ap_fixed<16,1> delay_data_t; 
+typedef ap_fixed<32,1> delay_data_t; 
  
 static delay_data_t H_filter_FIR[N_DELAYS_FIR]; 
 const coef_data_t b_FIR[392]={

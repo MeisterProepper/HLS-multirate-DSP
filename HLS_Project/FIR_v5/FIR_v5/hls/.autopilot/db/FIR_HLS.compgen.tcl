@@ -1,95 +1,47 @@
 # This script segment is generated automatically by AutoPilot
 
-set name FIR_HLS_mul_16s_8s_24_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name FIR_HLS_mul_16s_12s_27_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name FIR_HLS_mul_16s_13ns_28_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_9ns_32s_32_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_6ns_24s_24_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_9ns_30s_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_8ns_27s_27_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_b_FIR_dec_int_40_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_10s_28s_28_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_H_filter_FIR_dec_40_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_am_addmul_16s_16s_13ns_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_H_filter_FIR_kernel_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_ama_addmuladd_16s_16s_8ns_30s_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_H_filter_FIR_dec_43_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_14ns_24s_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_b_FIR_dec_int_43_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_13ns_27s_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_b_FIR_dec_int_41_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_13ns_28s_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_ama_addmuladd_16s_16s_12s_30s_30_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_14ns_24s_29_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_13ns_28s_29_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_mac_muladd_16s_13ns_27s_29_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_am_addmul_16s_16s_13ns_29_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_ama_addmuladd_16s_16s_8ns_29s_29_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler FIR_HLS_ama_addmuladd_16s_16s_12s_29s_29_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler FIR_HLS_b_FIR_dec_int_42_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -105,7 +57,7 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 141 \
+    id 42 \
     name input_r \
     reset_level 0 \
     sync_rst true \
@@ -124,7 +76,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 142 \
+    id 43 \
     name output_r \
     reset_level 0 \
     sync_rst true \

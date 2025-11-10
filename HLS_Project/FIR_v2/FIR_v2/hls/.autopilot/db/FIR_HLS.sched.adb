@@ -588,7 +588,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
+				<m_delay>3.39</m_delay>
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -714,7 +714,7 @@
 					<Obj>
 						<type>2</type>
 						<id>408</id>
-						<name>FIR_filter</name>
+						<name>FIR_filtertest</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -738,7 +738,7 @@
 					<bitwidth>16</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:FIR_filter&gt;</content>
+				<content>&lt;constant:FIR_filtertest&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -3577,8 +3577,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>8</mMinLatency>
-			<mMaxLatency>8</mMaxLatency>
+			<mMinLatency>1</mMinLatency>
+			<mMaxLatency>1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -3599,20 +3599,20 @@
 			<first>401</first>
 			<second>
 				<first>0</first>
-				<second>7</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>402</first>
 			<second>
-				<first>7</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>403</first>
 			<second>
-				<first>8</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3624,7 +3624,7 @@
 			<first>404</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>8</second>
+				<second>1</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

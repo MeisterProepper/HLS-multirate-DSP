@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="FIR_HLS_FIR_HLS,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.473313,HLS_SYN_LAT=8,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=11599,HLS_SYN_LUT=8355,HLS_VERSION=2024_2}" *)
+(* CORE_GENERATION_INFO="FIR_HLS_FIR_HLS,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.928000,HLS_SYN_LAT=1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=12470,HLS_SYN_LUT=17169,HLS_VERSION=2024_2}" *)
 
 module FIR_HLS (
         ap_clk,
@@ -19,15 +19,8 @@ module FIR_HLS (
         output_r_TREADY
 );
 
-parameter    ap_ST_fsm_state1 = 9'd1;
-parameter    ap_ST_fsm_state2 = 9'd2;
-parameter    ap_ST_fsm_state3 = 9'd4;
-parameter    ap_ST_fsm_state4 = 9'd8;
-parameter    ap_ST_fsm_state5 = 9'd16;
-parameter    ap_ST_fsm_state6 = 9'd32;
-parameter    ap_ST_fsm_state7 = 9'd64;
-parameter    ap_ST_fsm_state8 = 9'd128;
-parameter    ap_ST_fsm_state9 = 9'd256;
+parameter    ap_ST_fsm_state1 = 2'd1;
+parameter    ap_ST_fsm_state2 = 2'd2;
 
 input   ap_clk;
 input   ap_rst_n;
@@ -40,28 +33,22 @@ input   output_r_TREADY;
 
  reg    ap_rst_n_inv;
 reg    input_r_TDATA_blk_n;
-(* fsm_encoding = "none" *) reg   [8:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    output_r_TDATA_blk_n;
-wire    ap_CS_fsm_state8;
-wire    ap_CS_fsm_state9;
-wire   [15:0] grp_FIR_filter_fu_827_ap_return;
-reg    grp_FIR_filter_fu_827_ap_start;
-wire    grp_FIR_filter_fu_827_ap_done;
-wire    grp_FIR_filter_fu_827_ap_idle;
-wire    grp_FIR_filter_fu_827_ap_ready;
-reg   [8:0] ap_NS_fsm;
+wire    ap_CS_fsm_state2;
+wire   [15:0] p_0_FIR_filtertest_fu_827_ap_return;
+reg    p_0_FIR_filtertest_fu_827_ap_start;
+wire    p_0_FIR_filtertest_fu_827_ap_done;
+wire    p_0_FIR_filtertest_fu_827_ap_idle;
+wire    p_0_FIR_filtertest_fu_827_ap_ready;
+reg    ap_block_state1_ignore_call7;
+reg    ap_block_state1;
+reg   [1:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
-wire    ap_ST_fsm_state2_blk;
-wire    ap_ST_fsm_state3_blk;
-wire    ap_ST_fsm_state4_blk;
-wire    ap_ST_fsm_state5_blk;
-wire    ap_ST_fsm_state6_blk;
-wire    ap_ST_fsm_state7_blk;
-reg    ap_ST_fsm_state8_blk;
-reg    ap_ST_fsm_state9_blk;
+reg    ap_ST_fsm_state2_blk;
 wire    regslice_both_output_r_U_apdone_blk;
-reg    ap_block_state9;
+reg    ap_block_state2;
 wire    regslice_both_input_r_U_apdone_blk;
 wire   [15:0] input_r_TDATA_int_regslice;
 wire    input_r_TVALID_int_regslice;
@@ -74,18 +61,18 @@ wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 9'd1;
+#0 ap_CS_fsm = 2'd1;
 end
 
-FIR_HLS_FIR_filter grp_FIR_filter_fu_827(
+FIR_HLS_FIR_filtertest p_0_FIR_filtertest_fu_827(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_FIR_filter_fu_827_ap_start),
-    .ap_done(grp_FIR_filter_fu_827_ap_done),
-    .ap_idle(grp_FIR_filter_fu_827_ap_idle),
-    .ap_ready(grp_FIR_filter_fu_827_ap_ready),
+    .ap_start(p_0_FIR_filtertest_fu_827_ap_start),
+    .ap_done(p_0_FIR_filtertest_fu_827_ap_done),
+    .ap_idle(p_0_FIR_filtertest_fu_827_ap_idle),
+    .ap_ready(p_0_FIR_filtertest_fu_827_ap_ready),
     .x_n(input_r_TDATA_int_regslice),
-    .ap_return(grp_FIR_filter_fu_827_ap_return)
+    .ap_return(p_0_FIR_filtertest_fu_827_ap_return)
 );
 
 FIR_HLS_regslice_both #(
@@ -107,7 +94,7 @@ FIR_HLS_regslice_both #(
 regslice_both_output_r_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .data_in(grp_FIR_filter_fu_827_ap_return),
+    .data_in(p_0_FIR_filtertest_fu_827_ap_return),
     .vld_in(output_r_TVALID_int_regslice),
     .ack_in(output_r_TREADY_int_regslice),
     .data_out(output_r_TDATA),
@@ -125,46 +112,18 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if ((input_r_TVALID_int_regslice == 1'b0)) begin
+    if ((1'b1 == ap_block_state1)) begin
         ap_ST_fsm_state1_blk = 1'b1;
     end else begin
         ap_ST_fsm_state1_blk = 1'b0;
     end
 end
 
-assign ap_ST_fsm_state2_blk = 1'b0;
-
-assign ap_ST_fsm_state3_blk = 1'b0;
-
-assign ap_ST_fsm_state4_blk = 1'b0;
-
-assign ap_ST_fsm_state5_blk = 1'b0;
-
-assign ap_ST_fsm_state6_blk = 1'b0;
-
-assign ap_ST_fsm_state7_blk = 1'b0;
-
 always @ (*) begin
-    if ((output_r_TREADY_int_regslice == 1'b0)) begin
-        ap_ST_fsm_state8_blk = 1'b1;
+    if ((1'b1 == ap_block_state2)) begin
+        ap_ST_fsm_state2_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state8_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state9)) begin
-        ap_ST_fsm_state9_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state9_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
-        grp_FIR_filter_fu_827_ap_start = 1'b1;
-    end else begin
-        grp_FIR_filter_fu_827_ap_start = 1'b0;
+        ap_ST_fsm_state2_blk = 1'b0;
     end
 end
 
@@ -177,7 +136,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
         input_r_TREADY_int_regslice = 1'b1;
     end else begin
         input_r_TREADY_int_regslice = 1'b0;
@@ -185,7 +144,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state8))) begin
+    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state1))) begin
         output_r_TDATA_blk_n = output_r_TREADY_int_regslice;
     end else begin
         output_r_TDATA_blk_n = 1'b1;
@@ -193,7 +152,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state8) & (output_r_TREADY_int_regslice == 1'b1))) begin
+    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
         output_r_TVALID_int_regslice = 1'b1;
     end else begin
         output_r_TVALID_int_regslice = 1'b0;
@@ -201,44 +160,27 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if (((1'b0 == ap_block_state1_ignore_call7) & (1'b1 == ap_CS_fsm_state1))) begin
+        p_0_FIR_filtertest_fu_827_ap_start = 1'b1;
+    end else begin
+        p_0_FIR_filtertest_fu_827_ap_start = 1'b0;
+    end
+end
+
+always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((1'b1 == ap_CS_fsm_state1) & (input_r_TVALID_int_regslice == 1'b1))) begin
+            if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
-        end
-        ap_ST_fsm_state3 : begin
-            ap_NS_fsm = ap_ST_fsm_state4;
-        end
-        ap_ST_fsm_state4 : begin
-            ap_NS_fsm = ap_ST_fsm_state5;
-        end
-        ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
-        end
-        ap_ST_fsm_state6 : begin
-            ap_NS_fsm = ap_ST_fsm_state7;
-        end
-        ap_ST_fsm_state7 : begin
-            ap_NS_fsm = ap_ST_fsm_state8;
-        end
-        ap_ST_fsm_state8 : begin
-            if (((1'b1 == ap_CS_fsm_state8) & (output_r_TREADY_int_regslice == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state9;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state8;
-            end
-        end
-        ap_ST_fsm_state9 : begin
-            if (((1'b1 == ap_CS_fsm_state9) & (1'b0 == ap_block_state9))) begin
+            if (((1'b0 == ap_block_state2) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state9;
+                ap_NS_fsm = ap_ST_fsm_state2;
             end
         end
         default : begin
@@ -249,12 +191,18 @@ end
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
-
-assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
+assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 always @ (*) begin
-    ap_block_state9 = ((output_r_TREADY_int_regslice == 1'b0) | (regslice_both_output_r_U_apdone_blk == 1'b1));
+    ap_block_state1 = ((output_r_TREADY_int_regslice == 1'b0) | (input_r_TVALID_int_regslice == 1'b0));
+end
+
+always @ (*) begin
+    ap_block_state1_ignore_call7 = ((output_r_TREADY_int_regslice == 1'b0) | (input_r_TVALID_int_regslice == 1'b0));
+end
+
+always @ (*) begin
+    ap_block_state2 = ((output_r_TREADY_int_regslice == 1'b0) | (regslice_both_output_r_U_apdone_blk == 1'b1));
 end
 
 always @ (*) begin

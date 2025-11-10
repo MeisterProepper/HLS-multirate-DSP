@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2024.2 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sat Oct 18 16:27:30 2025</td></tr>
+<tr><td><b>Date</b></td><td>Tue Nov  4 00:15:20 2025</td></tr>
 <tr><td><b>Host</b></td><td>DESKTOP-92OKADH running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/AMD/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\HLS-multirate-DSP\HLS_Project\FIR_v5\hls_config.cfg --work_dir FIR_v5 </td></tr>
 </table></center><br>
@@ -3416,7 +3416,7 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 11
+<pre>Violations found: 8
 </pre>
 <pre>Rule Specs Violated: 2
 </pre>
@@ -3434,123 +3434,90 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">11</td>
-<td align="left">Kernel</td>
+<td align="left">6</td>
+<td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">**** Estimated Fmax: 182.42 MHz
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.FIR_HLS.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_83_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.FIR_HLS.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_83_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.FIR_HLS.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_65_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.FIR_HLS.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_83_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.FIR_HLS.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_83_1'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">8</td>
 <td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('114_write_ln70', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=70">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_kernel_load', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a> on array 'H_filter_FIR_kernel' due to limited memory ports (II = 87). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.FIR_HLS.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 88, Depth = 88, function 'FIR_filter'
+<td align="left">**** Estimated Fmax: 170.36 MHz
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">7</td>
 <td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('111_write_ln70', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=70">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_kernel_load_3', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a> on array 'H_filter_FIR_kernel' due to limited memory ports (II = 86). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_kernel_load_3', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a>) on array 'H_filter_FIR_kernel' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.FIR_HLS.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 88, Depth = 100, function 'FIR_HLS'
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">**** Loop Constraint Status: All loop constraints were satisfied.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">3</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_kernel_load_43', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a>) on array 'H_filter_FIR_kernel' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('103_write_ln70', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=70">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_kernel_load_11', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a> on array 'H_filter_FIR_kernel' due to limited memory ports (II = 82). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_kernel_load_1', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a>) on array 'H_filter_FIR_kernel' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_kernel_load_49', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a>) on array 'H_filter_FIR_kernel' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('50_write_ln70', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=70">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_kernel_load_64', <a href="file:///C:/HLS-multirate-DSP/HLS_Project/FIR_v5\FIR_HLS.cpp#line=66">FIR_HLS.cpp</a> on array 'H_filter_FIR_kernel' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR_kernel'.
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.FIR_HLS.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_69_2'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

@@ -3,30 +3,147 @@
         "name": "FIR_HLS",
         "file": "FIR_HLS.cpp",
         "fileloc": "13",
-        "instructions": "256",
-        "total_instructions": "913",
-        "calls": "1",
+        "instructions": "69",
+        "total_instructions": "423",
+        "calls": "1 4 3 2 7 6 2 2 2 2",
         "basicblocks": "6",
         "loads": {
-            "G": "39"
+            "G": "8",
+            "L": "1"
         },
         "stores": {
-            "G": "42"
+            "G": "9"
         }
     },
     "1": {
-        "name": "FIR_filter",
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_83_1",
         "file": "FIR_HLS.cpp",
-        "fileloc": "56",
-        "instructions": "657",
-        "total_instructions": "657",
+        "fileloc": "23",
+        "instructions": "29",
+        "total_instructions": "29",
         "calls": "",
-        "basicblocks": "1",
+        "basicblocks": "4",
         "loads": {
-            "G": "116"
+            "G": "2",
+            "L": "1"
         },
         "stores": {
-            "G": "117"
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "FIR_filtertest.2",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "77",
+        "instructions": "13",
+        "total_instructions": "42",
+        "calls": "5",
+        "basicblocks": "1",
+        "loads": {
+            "G": "2"
+        }
+    },
+    "3": {
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_83_12",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "26",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_83_11",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "25",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "FIR_filtertest.2_Pipeline_VITIS_LOOP_83_1",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "83",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_69_2",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "32",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_65_1",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "32",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
         }
     }
 }

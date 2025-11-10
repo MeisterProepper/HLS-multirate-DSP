@@ -1,11 +1,12 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../FIR_HLS_TB.cpp in debug mode
    Compiling ../../../../FIR_HLS.cpp in debug mode
    Generating csim.exe
-INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.dat
-INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.dat
-INFO: Reading c:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.res
-INFO: Read 460 samples from c:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.res
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.res
 INFO: Input and reference data lengths match.
 Mismatch at sample  280: ref=-0.358093, dut=-0.304932
 Mismatch at sample  281: ref=-0.481445, dut=-0.420898

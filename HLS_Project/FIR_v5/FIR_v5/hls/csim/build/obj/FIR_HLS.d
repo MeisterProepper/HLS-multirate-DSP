@@ -17,4 +17,4 @@ obj/FIR_HLS.o: ../../../../FIR_HLS.cpp ../../../../FIR_HLS.h \
   C:/AMD/Vitis/2024.2/include/etc/ap_int_special.h \
   C:/AMD/Vitis/2024.2/include/etc/ap_fixed_ref.h \
   C:/AMD/Vitis/2024.2/include/etc/ap_fixed_special.h \
-  c:/HLS-multirate-DSP/Matlab/FIR_multirate_HLS.h
+  ../../../../../../Matlab/FIR_multirate_HLS.h

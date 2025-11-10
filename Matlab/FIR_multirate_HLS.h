@@ -14,7 +14,7 @@
 #include <ap_fixed.h> 
  
 typedef ap_fixed<16,1> coef_data_t; 
-typedef ap_fixed<16,1> delay_data_t; 
+typedef ap_fixed<32,1> delay_data_t; 
  
 #define N_DELAYS_FIR_kernel_MM 117
 #define N_DELAYS_FIR_dec_int_40 6

@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 6,
-    "calls": "1 1 1 1 1 1 1 1 1",
+    "calls": "2 2 2 2 1 2 2 2 2",
     "file": "FIR_HLS.cpp",
     "fileloc": 13,
     "instructions": 109,
@@ -13,21 +13,37 @@
     "stores": {
       "G": 14
     },
-    "total_instructions": 487
+    "total_instructions": 438
   },
   "1": {
-    "basicblocks": 7,
+    "basicblocks": 5,
     "calls": "",
     "file": "FIR_HLS.cpp",
     "fileloc": 56,
-    "instructions": 42,
+    "instructions": 41,
     "loads": {
-      "L": 3
+      "G": 3
     },
     "name": "FIR_filter",
     "stores": {
-      "L": 3
+      "G": 2,
+      "L": 1
     },
-    "total_instructions": 42
+    "total_instructions": 41
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 77,
+    "instructions": 36,
+    "loads": {
+      "L": 4
+    },
+    "name": "FIR_filtertest",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
   }
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FIR_HLS'" level="0">
-<item name = "Date">Sat Oct 18 22:44:11 2025
+<item name = "Date">Mon Nov  3 23:41:01 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">FIR_v2</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.473 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.928 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8, 8, 80.000 ns, 80.000 ns, 9, 9, no</column>
+<column name="">1, 1, 10.000 ns, 10.000 ns, 2, 2, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_FIR_filter_fu_827">FIR_filter, 7, 7, 70.000 ns, 70.000 ns, 1, 1, yes</column>
+<column name="p_0_FIR_filtertest_fu_827">FIR_filtertest, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

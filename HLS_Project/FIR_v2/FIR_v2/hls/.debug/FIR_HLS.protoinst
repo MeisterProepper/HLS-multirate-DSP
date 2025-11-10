@@ -3,7 +3,7 @@
 	"modules": {
 		"FIR_HLS": {
 			"proto_instances": {
-				"grp_FIR_filter_fu_827/grp_FIR_filter_fu_827_activity": {
+				"p_0_FIR_filtertest_fu_827/p_0_FIR_filtertest_fu_827_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

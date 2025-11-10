@@ -1,10 +1,10 @@
 {
     "1": {
-        "name": "FIR_filter",
+        "name": "FIR_filtertest",
         "file": "FIR_HLS.cpp",
-        "fileloc": "17",
-        "instructions": "2112",
-        "total_instructions": "2112",
+        "fileloc": "35",
+        "instructions": "1545",
+        "total_instructions": "1545",
         "calls": "",
         "basicblocks": "1",
         "loads": {
@@ -19,7 +19,7 @@
         "file": "FIR_HLS.cpp",
         "fileloc": "6",
         "instructions": "10",
-        "total_instructions": "2122",
+        "total_instructions": "1555",
         "calls": "1",
         "basicblocks": "1"
     }

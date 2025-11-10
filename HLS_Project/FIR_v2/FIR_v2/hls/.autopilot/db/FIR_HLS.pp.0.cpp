@@ -8398,10 +8398,10 @@ class ap_shift_reg
     __SHIFT_T__ Array[__SHIFT_DEPTH__] __attribute__((no_ctor));
 };
 # 4 "./FIR_HLS.h" 2
-# 1 "c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h" 1
-# 15 "c:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h"
+# 1 "./../../Matlab/FIR_normal_HLS.h" 1
+# 15 "./../../Matlab/FIR_normal_HLS.h"
 typedef ap_fixed<16,1> coef_data_t;
-typedef ap_fixed<16,1> delay_data_t;
+typedef ap_fixed<32,1> delay_data_t;
 
 static delay_data_t H_filter_FIR[392];
 const coef_data_t b_FIR[392]={
@@ -8481,6 +8481,8 @@ static ap_shift_reg<fir_data_t,392> fir_shiftreg;
 __attribute__((sdx_kernel("FIR_HLS", 0))) void FIR_HLS(hls::stream<fir_data_t> &input, hls::stream<fir_data_t> &output);
 
 fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n);
+
+fir_data_t FIR_filtertest(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n);
 # 2 "FIR_HLS.cpp" 2
 
 
@@ -8495,7 +8497,7 @@ __attribute__((sdx_kernel("FIR_HLS", 0))) void FIR_HLS(hls::stream<fir_data_t> &
 #pragma HLS INTERFACE mode=axis port=output
 #pragma HLS INTERFACE mode=ap_ctrl_none port=return
 
- output.write(FIR_filter(H_filter_FIR, b_FIR, 392,input.read()));
+ output.write(FIR_filtertest(H_filter_FIR, b_FIR, 392,input.read()));
 }
 
 
@@ -8506,17 +8508,27 @@ fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], in
  fir_data_t y;
  ap_fixed<32,2> FIR_accu32=0;
 
-
  FIR_delays[N_delays-1] = x_n;
-
  FIR_accu32 = 0;
- VITIS_LOOP_26_1: for(int i=0; i < N_delays; i++)
+ VITIS_LOOP_24_1: for(int i=0; i < N_delays; i++)
   FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
 
-
- VITIS_LOOP_30_2: for(int i=1; i < N_delays; i++)
+ VITIS_LOOP_27_2: for(int i=1; i < N_delays; i++)
   FIR_delays[i-1] = FIR_delays[i];
 
  y = (fir_data_t) (FIR_accu32);
+ return y;
+}
+
+
+fir_data_t FIR_filtertest(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
+#pragma HLS PIPELINE
+ fir_data_t y;
+
+    y = FIR_delays[0] + x_n * FIR_coe[0];
+
+ VITIS_LOOP_41_1: for(int i=1; i < N_delays; i++)
+  FIR_delays[i-1] = FIR_delays[i] + FIR_coe[i] * x_n;
+
  return y;
 }
