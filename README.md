@@ -3,7 +3,7 @@ This project investigates various implementation strategies for a multi-rate fil
 The aim is to analyse the effects of different optimisation approaches and architectural decisions on the synthesis results, latency and resource utilisation.
 
 
-![Filter](Filter_multirate.png)
+![Filter](DEC_KERNEL_INT.png)
 
 ## Objective
 
@@ -25,7 +25,83 @@ The aim is to analyse the effects of different optimisation approaches and archi
 | Toolchain | Xilinx Vivado / Vitis 2024.2 |
 
 
-## 🔬 Implementation Variants
+## HLS Wrapper
+![Filter](Filter.png)
+In High-Level Synthesis (HLS), the wrapper serves as the top-level interface between the algorithmic description of the filter and the hardware synthesis environment.
+It defines how data is passed into and out of the design, manages streaming or block-based processing, and specifies synthesis directives for interfaces and control signals.
+
+### Purpose
+The HLS wrapper encapsulates the FIR or multirate filter implementation and exposes a hardware-compatible interface that can be synthesized into RTL.
+It also provides a clear separation between:
+- the algorithmic core (pure signal processing logic) and
+- the hardware interface layer (AXI, handshake, clock, reset, etc.).
+
+This modular approach simplifies verification and enables consistent reuse of the same filter core in different hardware contexts (e.g., standalone block, IP core, or system integration).
+
+### Structure
+A typical HLS wrapper includes:
+- Function prototype: defines all top-level ports and their data types
+- Interface pragmas: specify the communication type (e.g., AXI stream or AXI Lite)
+- Internal call: connects the wrapper to the actual processing function (e.g., fir_core())
+
+
+### Example
+
+```
+void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
+  #pragma HLS INTERFACE mode=axis port=input
+  #pragma HLS INTERFACE mode=axis port=output
+  #pragma HLS INTERFACE mode=ap_ctrl_none port=return
+  fir_function(input, output);
+}
+```
+- _hls::stream<short> &input_ specifies that the data is available via the _input_ port as a stream in short format, i.e. only one arrives at a time; the same applies to _output_. The direction of the data flow is only determined with the function.
+- Since the wrapper function and thus also the main function are required, the interfaces still need to be defined. To do this, _#pragma HLS INTERFACE mode=axis port=input_ is used, which specifies that the input port should be an AXI stream interface.
+- The directive _#pragma HLS INTERFACE mode=ap_ctrl_none port=return_ removes the control ports. These are not necessary, as control is data-driven via the Axi Stream interface.
+
+### Benefits
+- Provides a consistent hardware interface across all FIR and multirate variants
+- Simplifies system integration into larger HLS or RTL environments
+- Allows unified testing with the same interface in simulation and synthesis
+- Keeps algorithm and interface design cleanly separated
+
+
+## Implementation Variants of FIR Filters
+To ensure an efficient implementation of multirate filters, the design first focuses on different FIR filter architectures.
+These filters serve as the foundation for the later multirate structures, such as decimators and interpolators.
+By analyzing and implementing several FIR variants, the goal is to identify architectural trade-offs between performance, resource utilization, and synthesis efficiency in HLS.
+
+
+### Direct form FIR filter
+![Filter](Direct_FIR.png)
+
+The direct form FIR filter implements the convolution sum directly:
+```math
+y[n]= \sum_{k=0}^{N−1​}b[k] \cdot x[n−k]
+```
+Each tap multiplies a delayed version of the input signal by a corresponding coefficient.
+The results are then summed to produce the output sample.
+
+
+### Transposed form FIR filter
+![Filter](Transposed_FIR.png)
+
+The transposed FIR structure is obtained by reversing the signal flow of the direct form.
+Instead of delaying the input samples, the partial sums are delayed and accumulated as new input samples arrive.
+
+
+### Folded form FIR filter
+![Filter](Folded_FIR.png)
+
+The folded FIR filter reduces hardware resources by reusing functional units (e.g., multipliers and adders) over multiple clock cycles.
+Instead of computing all taps in parallel, a smaller number of multipliers is time-multiplexed across the filter taps.
+
+
+
+
+
+
+
 
 A total of **nine HLS implementations** were developed, differing in structure, optimization level, and IP block usage:
 
