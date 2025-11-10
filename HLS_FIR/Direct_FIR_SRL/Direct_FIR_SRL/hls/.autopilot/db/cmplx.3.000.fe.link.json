@@ -1,0 +1,38 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 6,
+    "instructions": 52,
+    "name": "FIR_HLS",
+    "total_instructions": 532
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FIR_HLS.h",
+    "fileloc": 9,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FIR_normal_HLS.h",
+    "fileloc": 19,
+    "instructions": 393,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 151705
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2 1",
+    "file": "FIR_HLS.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 151713
+  }
+}

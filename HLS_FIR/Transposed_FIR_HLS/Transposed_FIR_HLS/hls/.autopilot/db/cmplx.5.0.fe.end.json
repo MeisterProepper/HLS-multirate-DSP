@@ -1,0 +1,34 @@
+{
+    "1": {
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_20_1",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "11",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "2",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "FIR_HLS",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "6",
+        "instructions": "16",
+        "total_instructions": "44",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1"
+        }
+    }
+}

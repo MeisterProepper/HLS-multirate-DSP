@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5584" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:47:9" msg_body="there are more than one pragma inline in the function scope, ignore the pragma">
+        <args/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Array bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Array bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=FIR_HLS" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="FIR_HLS.cpp:17:19" msg_body="Loop 'VITIS_LOOP_17_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_17_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="FIR_HLS.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_17_1' (FIR_HLS.cpp:17:19) in function 'FIR_HLS' completely with a factor of 391">
+        <args Factor="391" LoopLoc="FIR_HLS.cpp:17:19" LoopName="VITIS_LOOP_17_1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

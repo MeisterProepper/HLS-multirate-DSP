@@ -1,0 +1,30 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Array bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AMD/Vitis/2024.2/common/technology/autopilot\ap_shift_reg.h:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ap_shift_reg&lt;__SHIFT_T__, __SHIFT_DEPTH__&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Array bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=FIR_HLS" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="FIR_HLS.cpp:6:0" msg_body="Inlining function 'FIR_filter(ap_fixed&lt;32, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'FIR_HLS(hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="FIR_filter(ap_fixed&lt;32, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File FIR_HLS.cpp Line 14 Column 0" Caller="FIR_HLS(hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File FIR_HLS.cpp Line 6 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

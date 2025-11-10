@@ -1,0 +1,11 @@
+{
+  "name": "Direct_FIR_SRL",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Direct_FIR_SRL"
+  }
+}

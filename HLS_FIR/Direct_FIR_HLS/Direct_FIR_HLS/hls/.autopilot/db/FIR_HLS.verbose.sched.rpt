@@ -1,0 +1,134 @@
+
+
+================================================================
+== Vitis HLS Report for 'FIR_HLS'
+================================================================
+* Date:           Mon Nov 10 22:40:08 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        Direct_FIR_HLS
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.154 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      326|      326|  3.260 us|  3.260 us|  327|  327|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.31>
+ST_1 : Operation 4 [1/1] (0.07ns)   --->   "%input_r_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [FIR_HLS.cpp:11]   --->   Operation 4 'read' 'input_r_read' <Predicate = true> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 5 [2/2] (1.23ns)   --->   "%p_0 = call i16 @FIR_filter, i16 %input_r_read, i16 %H_filter_FIR" [FIR_HLS.cpp:11]   --->   Operation 5 'call' 'p_0' <Predicate = true> <Delay = 1.23> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.45>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%p_0 = call i16 @FIR_filter, i16 %input_r_read, i16 %H_filter_FIR" [FIR_HLS.cpp:11]   --->   Operation 6 'call' 'p_0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 7 [2/2] (0.45ns)   --->   "%write_ln11 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %p_0" [FIR_HLS.cpp:11]   --->   Operation 7 'write' 'write_ln11' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+
+State 3 <SV = 2> <Delay = 0.45>
+ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [FIR_HLS.cpp:6]   --->   Operation 8 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln6 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [FIR_HLS.cpp:6]   --->   Operation 9 'specinterface' 'specinterface_ln6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/2] (0.45ns)   --->   "%write_ln11 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %p_0" [FIR_HLS.cpp:11]   --->   Operation 14 'write' 'write_ln11' <Predicate = true> <Delay = 0.45> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln12 = ret" [FIR_HLS.cpp:12]   --->   Operation 15 'ret' 'ret_ln12' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.316ns
+The critical path consists of the following:
+	axis read operation ('input_r_read', FIR_HLS.cpp:11) on port 'input_r' (FIR_HLS.cpp:11) [10]  (0.079 ns)
+	'call' operation 16 bit ('p_0', FIR_HLS.cpp:11) to 'FIR_filter' [11]  (1.237 ns)
+
+ <State 2>: 0.453ns
+The critical path consists of the following:
+	'call' operation 16 bit ('p_0', FIR_HLS.cpp:11) to 'FIR_filter' [11]  (0.000 ns)
+	axis write operation ('write_ln11', FIR_HLS.cpp:11) on port 'output_r' (FIR_HLS.cpp:11) [12]  (0.453 ns)
+
+ <State 3>: 0.453ns
+The critical path consists of the following:
+	axis write operation ('write_ln11', FIR_HLS.cpp:11) on port 'output_r' (FIR_HLS.cpp:11) [12]  (0.453 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

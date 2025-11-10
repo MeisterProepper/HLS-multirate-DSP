@@ -1,0 +1,11 @@
+{
+  "name": "Folded_FIR_HLS",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Folded_FIR_HLS"
+  }
+}

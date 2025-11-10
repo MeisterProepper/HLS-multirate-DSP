@@ -1,0 +1,68 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../FIR_HLS_TB.cpp in debug mode
+   Compiling ../../../../FIR_HLS.cpp in debug mode
+   Generating csim.exe
+INFO: Reading ../../../../../../Matlab/TS_HLS_normal.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_normal.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_normal.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_normal.res
+INFO: Input and reference data lengths match.
+Mismatch at sample  395: ref=-0.0628052, dut=-0.0607605
+Mismatch at sample  396: ref=0.0627747, dut=0.0652466
+Mismatch at sample  397: ref=0.187347, dut=0.190216
+Mismatch at sample  398: ref=0.30896, dut=0.312195
+Mismatch at sample  399: ref=0.42572, dut=0.42923
+Mismatch at sample  400: ref=0.535736, dut=0.53952
+Mismatch at sample  401: ref=0.637329, dut=0.641266
+Mismatch at sample  402: ref=0.728851, dut=0.732941
+Mismatch at sample  403: ref=0.808899, dut=0.813019
+Mismatch at sample  404: ref=0.87619, dut=0.88031
+Mismatch at sample  405: ref=0.929657, dut=0.933685
+Mismatch at sample  406: ref=0.968445, dut=0.972351
+Mismatch at sample  407: ref=0.991974, dut=0.995697
+Mismatch at sample  408: ref=0.999878, dut=-0.996704
+Mismatch at sample  409: ref=0.991974, dut=0.995117
+Mismatch at sample  410: ref=0.968445, dut=0.971222
+Mismatch at sample  411: ref=0.929657, dut=0.932007
+Mismatch at sample  420: ref=0.0627747, dut=0.0606995
+Mismatch at sample  421: ref=-0.0628052, dut=-0.0653076
+Mismatch at sample  422: ref=-0.187378, dut=-0.190277
+Mismatch at sample  423: ref=-0.30899, dut=-0.312256
+Mismatch at sample  424: ref=-0.425751, dut=-0.429291
+Mismatch at sample  425: ref=-0.535767, dut=-0.539581
+Mismatch at sample  426: ref=-0.63736, dut=-0.641327
+Mismatch at sample  427: ref=-0.728882, dut=-0.733002
+Mismatch at sample  428: ref=-0.808929, dut=-0.81308
+Mismatch at sample  429: ref=-0.876221, dut=-0.880371
+Mismatch at sample  430: ref=-0.929688, dut=-0.933746
+Mismatch at sample  431: ref=-0.968475, dut=-0.972412
+Mismatch at sample  432: ref=-0.992004, dut=-0.995758
+Mismatch at sample  433: ref=-0.999908, dut=0.996613
+Mismatch at sample  434: ref=-0.992004, dut=-0.995178
+Mismatch at sample  435: ref=-0.968475, dut=-0.971283
+Mismatch at sample  436: ref=-0.929688, dut=-0.932068
+Mismatch at sample  445: ref=-0.0628052, dut=-0.0607605
+Mismatch at sample  446: ref=0.0627747, dut=0.0652466
+Mismatch at sample  447: ref=0.187347, dut=0.190216
+Mismatch at sample  448: ref=0.30896, dut=0.312195
+Mismatch at sample  449: ref=0.42572, dut=0.42923
+Mismatch at sample  450: ref=0.535736, dut=0.53952
+Mismatch at sample  451: ref=0.637329, dut=0.641266
+Mismatch at sample  452: ref=0.728851, dut=0.732941
+Mismatch at sample  453: ref=0.808899, dut=0.813019
+Mismatch at sample  454: ref=0.87619, dut=0.88031
+Mismatch at sample  455: ref=0.929657, dut=0.933685
+Mismatch at sample  456: ref=0.968445, dut=0.972351
+Mismatch at sample  457: ref=0.991974, dut=0.995697
+Mismatch at sample  458: ref=0.999878, dut=-0.996704
+Mismatch at sample  459: ref=0.991974, dut=0.995117
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 49
+Status: FAIL [!!] (49 samples out of tolerance)
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

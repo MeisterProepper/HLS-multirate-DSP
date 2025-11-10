@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "C:/HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\Transposed_FIR_HLS\\Transposed_FIR_HLS.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/10/25 22:58:56",
+ "timestampMillis": "1762811936602",
+ "buildStep": {
+  "cmdId": "86765ffa-b8f5-4d1b-9b0a-f8d39ccb5001",
+  "name": "vitis-run",
+  "logFile": "C:/HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\Transposed_FIR_HLS\\logs\\Transposed_FIR_HLS.steps.log",
+  "commandLine": "C:/AMD/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\hls_config.cfg --work_dir Transposed_FIR_HLS ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\hls_config.cfg",
+   "--work_dir",
+   "Transposed_FIR_HLS"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/25 22:58:56",
+ "timestampMillis": "1762811936603",
+ "status": {
+  "cmdId": "86765ffa-b8f5-4d1b-9b0a-f8d39ccb5001",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/10/25 22:59:02",
+ "timestampMillis": "1762811942777",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "FIR_HLS",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\FIR_HLS.cpp",
+     "C:/HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\FIR_HLS.h",
+     "C:/HLS-multirate-DSP\\Matlab\\FIR_normal_HLS.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/10/25 22:59:02",
+ "timestampMillis": "1762811942778",
+ "buildStep": {
+  "cmdId": "3146eca7-da33-43a4-afc0-c71a9e66fec8",
+  "name": "",
+  "logFile": "C:/HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS\\Transposed_FIR_HLS\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_FIR_HLS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/25 22:59:02",
+ "timestampMillis": "1762811942779",
+ "status": {
+  "cmdId": "3146eca7-da33-43a4-afc0-c71a9e66fec8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/25 22:59:10",
+ "timestampMillis": "1762811950748",
+ "status": {
+  "cmdId": "3146eca7-da33-43a4-afc0-c71a9e66fec8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/25 22:59:10",
+ "timestampMillis": "1762811950905",
+ "status": {
+  "cmdId": "86765ffa-b8f5-4d1b-9b0a-f8d39ccb5001",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/25 22:59:10",
+ "timestampMillis": "1762811950905",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/25 22:59:10",
+ "timestampMillis": "1762811950906",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
