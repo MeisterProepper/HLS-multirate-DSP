@@ -27,6 +27,8 @@ The aim is to analyse the effects of different optimisation approaches and archi
 
 ## HLS Wrapper
 ![Filter](Filter.png)
+
+
 In High-Level Synthesis (HLS), the wrapper serves as the top-level interface between the algorithmic description of the filter and the hardware synthesis environment.
 It defines how data is passed into and out of the design, manages streaming or block-based processing, and specifies synthesis directives for interfaces and control signals.
 
@@ -48,7 +50,7 @@ A typical HLS wrapper includes:
 ### Example
 
 ```
-void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
+void FIR_HLS(hls::stream<short> &input, hls::stream<short> &output){
   #pragma HLS INTERFACE mode=axis port=input
   #pragma HLS INTERFACE mode=axis port=output
   #pragma HLS INTERFACE mode=ap_ctrl_none port=return
@@ -81,6 +83,99 @@ y[n]= \sum_{k=0}^{N−1​}b[k] \cdot x[n−k]
 ```
 Each tap multiplies a delayed version of the input signal by a corresponding coefficient.
 The results are then summed to produce the output sample.
+
+#### DSP code of the direct form FIR filter 
+A classical DSP implementation of this filter typically uses fixed-point arithmetic with standard C types such as short and int.
+
+```
+short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
+	short i, y;
+	int FIR_accu32=0;
+
+	FIR_delays[N_delays-1] = x_n;
+
+	FIR_accu32	= 0;		
+	for(i=0; i < N_delays; i++)	
+		FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
+	
+	for(i=1; i < N_delays; i++)				
+		FIR_delays[i-1] = FIR_delays[i];
+
+	y = (short) (FIR_accu32 >> shift);
+	return y;
+}
+```
+
+The implementation was straightforward, as the DSP code was already available.
+However, this version is not optimized for HLS. It contains two separate loops: one for the filter calculation and another for updating the shift register.
+Even with appropriate HLS directives, it is not possible to efficiently merge these loops into a single pipeline in hardware.
+See the table below for a comparison of resource usage and performance.
+
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal DSP code 			|   |   |   |   |   |
+|  DSP code with #pragmas   |   |   |   |   |   |
+
+
+
+
+
+#### HLS optimized code of the direct form FIR filter 
+For the HLS-optimized version, the two loops from the DSP reference are merged into a single loop, enabling fully pipelined execution.
+Additionally, fixed-point data types (ap_int or ap_fixed) are used instead of standard C integers.
+This removes the need for manual shifting and casting, simplifies arithmetic operations, and ensures bit-accurate hardware synthesis.
+
+
+
+```
+fir_data_t FIR_filter(fir_data_t  FIR_delays[], const fir_coef_t FIR_coe[], short int N_delays, fir_data_t  x_n){
+	fir_data_t  y;
+
+	ap_fixed<32,1> FIR_accu32=0;
+		
+	for(int i= N_delays-1; i >= 0; i--){
+		FIR_delays[i] = FIR_delays[i-1];
+		FIR_accu32 += FIR_delays[i] * FIR_coe[i];
+		}
+
+	FIR_accu32 += x_n * FIR_coe[0]
+	FIR_delays[i] = x_n;
+	y = FIR_accu32;
+	return y;
+}
+```
+
+
+
+
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal HLS code 			|   |   |   |   |   |
+|  HLS code with #pragmas   |   |   |   |   |   |
+
+
+
+#### HLS optimized alternative code with SRL of the direct form FIR filter 
+
+In the HLS-optimized variant using Shift Register Logic (SRL), the filter uses a hardware SRL primitive to automatically implement the shift register.
+Note: This version cannot be implemented as a separate function, because SRLs cannot be passed as function arguments in HLS.
+Instead, the SRL-based implementation must reside directly in the main top-level function.
+
+- The shift register loop is eliminated, as the HLS SRL primitive handles all data shifting automatically.
+- Only the accumulation loop remains for computing the FIR output.
+- Fixed-point types (ap_int or ap_fixed) are used to avoid manual shifting and casting.
+- The design allows fully pipelined execution, reducing latency and improving resource usage.
+
+```
+SRL Logic
+}
+```
+
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal HLS-SRL code 			|   |   |   |   |   |
+|  HLS-SRL code with #pragmas   |   |   |   |   |   |
+
 
 
 ### Transposed form FIR filter
@@ -119,20 +214,6 @@ A total of **nine HLS implementations** were developed, differing in structure, 
 
 The FIR filter is implemented using the Vitis Unified IDE. Since this is an HLS implementation, the filter is implemented in all its previously described variants as C/C++ code. To do this, the code is divided into two functions. First, an HLS wrapper is used, which is responsible for the interfaces to generate the AXI stream interfaces. This is followed by the actual filter function that executes the FIR filter follows.
 
-### HLS Wrapper
-
-```
-void HLS_FIR(hls::stream<short> &input, hls::stream<short> &output){
-  #pragma HLS INTERFACE mode=axis port=input
-  #pragma HLS INTERFACE mode=axis port=output
-  #pragma HLS INTERFACE mode=ap_ctrl_none port=return
-  fir_function(input, output);
-}
-```
-- _hls::stream<short> &input_ specifies that the data is available via the _input_ port as a stream in short format, i.e. only one arrives at a time; the same applies to _output_. The direction of the data flow is only determined with the function.
-- Since the wrapper function and thus also the main function are required, the interfaces still need to be defined. To do this, _#pragma HLS INTERFACE mode=axis port=input_ is used, which specifies that the input port should be an AXI stream interface.
-- The directive _#pragma HLS INTERFACE mode=ap_ctrl_none port=return_ removes the control ports. These are not necessary, as control is data-driven via the Axi Stream interface.
-
 
 ### Filterfunction
 
@@ -152,10 +233,9 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, 
 	for(i=1; i < N_delays; i++)				
 		FIR_delays[i-1] = FIR_delays[i];
 
-	y = (short) (FIR_accu32 >>shift);
+	y = (short) (FIR_accu32 >> shift);
 	return y;
 }
-
 ```
 
 #### HLS code of the FIR filter function
