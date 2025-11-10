@@ -167,8 +167,9 @@ Instead, the SRL-based implementation must reside directly in the main top-level
 - The design allows fully pipelined execution, reducing latency and improving resource usage.
 
 ```
+
 SRL Logic
-}
+
 ```
 
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
@@ -185,6 +186,15 @@ The transposed FIR structure is obtained by reversing the signal flow of the dir
 Instead of delaying the input samples, the partial sums are delayed and accumulated as new input samples arrive.
 
 
+```
+transposed code
+```
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal HLS code 			|   |   |   |   |   |
+|  HLS code with #pragmas   |   |   |   |   |   |
+
+
 ### Folded form FIR filter
 ![Filter](Folded_FIR.png)
 
@@ -192,83 +202,88 @@ The folded FIR filter reduces hardware resources by reusing functional units (e.
 Instead of computing all taps in parallel, a smaller number of multipliers is time-multiplexed across the filter taps.
 
 
-
-
-
-
-
-
-A total of **nine HLS implementations** were developed, differing in structure, optimization level, and IP block usage:
-
-| No. | Category | Description |
-|-----|-----------|-------------|
-| **1** | Single-Rate | FIR filter in DSP-style implementation (reference) |
-| **2** | Single-Rate | FIR filter with HLS-specific optimizations (`#pragma`, static arrays) |
-| **3** | Single-Rate | FIR filter using the **Xilinx FIR IP block** |
-| **4** | Multirate | Multirate filter in DSP-style implementation (reference) |
-| **5** | Multirate | Multirate filter with HLS-specific optimizations (`#pragma`, static arrays) |
-| **6** | Multirate | Multirate filter using **Xilinx FIR IP block** |
-
-
-## Implementation
-
-The FIR filter is implemented using the Vitis Unified IDE. Since this is an HLS implementation, the filter is implemented in all its previously described variants as C/C++ code. To do this, the code is divided into two functions. First, an HLS wrapper is used, which is responsible for the interfaces to generate the AXI stream interfaces. This is followed by the actual filter function that executes the FIR filter follows.
-
-
-### Filterfunction
-
-#### DSP code of the FIR filter function
-
 ```
-short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
-	short i, y;
-	int FIR_accu32=0;
-
-	FIR_delays[N_delays-1] = x_n;
-
-	FIR_accu32	= 0;		
-	for(i=0; i < N_delays; i++)	
-		FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
-	
-	for(i=1; i < N_delays; i++)				
-		FIR_delays[i-1] = FIR_delays[i];
-
-	y = (short) (FIR_accu32 >> shift);
-	return y;
-}
+folded code
 ```
 
-#### HLS code of the FIR filter function
-
-```
-typedef ap_fixed<16,1> fir_data_t; //defining a fixed-point data type
-
-fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
-    #pragma HLS PIPELINE
-	fir_data_t y;
-	ap_fixed<32,2> FIR_accu32=0;
-
-	FIR_delays[N_delays-1] = x_n;	// read input sample from ADC 
-	FIR_accu32	= 0;				// clear accu
-	for(int i=0; i < N_delays; i++)		// FIR filter routine
-		FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
-
-	for(int i=1; i < N_delays; i++)				
-		FIR_delays[i-1] = FIR_delays[i];
- 
-	y = (fir_data_t) (FIR_accu32);
-	return y;
-}
-
-```
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal HLS code 			|   |   |   |   |   |
+|  HLS code with #pragmas   |   |   |   |   |   |
 
 
 
-#### HLS code with FIR filter IP core
+### Summary of FIR Variants
 
-```
-void
-```
+
+
+
+
+## Multirate FIR Filter
+
+
+
+After the single-rate FIR architectures have been analyzed and optimized, the next step is to extend these implementations to a multirate filter system.
+This system is composed of three main components — a decimator, a kernel filter, and an interpolator — forming a complete sample-rate conversion chain.
+The objective is to evaluate the efficiency of these multirate structures in High-Level Synthesis (HLS) and to assess how architectural decisions (e.g., FIR structure, use of SRL, and polyphase decomposition) affect synthesis performance, latency, and resource utilization.
+
+
+### Concept and System Overview
+
+A multirate system modifies the sampling rate of a signal by integer or fractional factors.
+It typically includes:
+
+- Decimator — reduces the sampling rate by a factor M after low-pass filtering to prevent aliasing.
+- Kernel Filter — performs core filtering or spectral shaping at the reduced rate, enabling computational savings.
+- Interpolator — increases the sampling rate by a factor L through zero-insertion and low-pass filtering to reconstruct the continuous-time equivalent.
+
+The overall structure is illustrated below:
+
+
+
+
+
+
+
+
+
+
+
+![Filter](DEC_KERNEL_INT.png)
+
+
+
+
+
+
+
+
+
+
+
+![Filter](Filter_multirate.png)
+
+
+
+### Multirate Filter — Variant Combinations
+
+| Variant # | Decimator FIR | Kernel FIR    | Interpolator FIR | Latency [ns] | FF  | LUT  | BRAM | DSP |
+|-----------|---------------|---------------|-----------------|--------------|-----|------|------|-----|
+| 1         | Direct        | Direct        | Direct          |              |     |      |      |     |
+| 2         | Direct        | Direct        | Transposed      |              |     |      |      |     |
+| 3         | Direct        | Transposed    | Direct          |              |     |      |      |     |
+| 4         | Direct        | Transposed    | Transposed      |              |     |      |      |     |
+| 5         | Direct        | Folded        | Direct          |              |     |      |      |     |
+| 6         | Direct        | Folded        | Transposed      |              |     |      |      |     |
+| 7         | Transposed    | Direct        | Direct          |              |     |      |      |     |
+| 8         | Transposed    | Direct        | Transposed      |              |     |      |      |     |
+| 9         | Transposed    | Transposed    | Direct          |              |     |      |      |     |
+| 10        | Transposed    | Transposed    | Transposed      |              |     |      |      |     |
+| 11        | Transposed    | Folded        | Direct          |              |     |      |      |     |
+| 12        | Transposed    | Folded        | Transposed      |              |     |      |      |     |
+
+
+
 
 
 
