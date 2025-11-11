@@ -113,8 +113,8 @@ See the table below for a comparison of resource usage and performance.
 
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
 |---|---|---|---|---|---|
-|  normal DSP code 			|   |   |   |   |   |
-|  DSP code with #pragmas   |   |   |   |   |   |
+|  normal DSP code 			|  7940  |  167  |  134  |  2  |  1  |
+|  DSP code with #pragmas   |  80  |  9259 |  4937 | 0  |  81 |
 
 
 
@@ -128,7 +128,7 @@ This removes the need for manual shifting and casting, simplifies arithmetic ope
 
 
 ```
-fir_data_t FIR_filter(fir_data_t  FIR_delays[], const fir_coef_t FIR_coe[], short int N_delays, fir_data_t  x_n){
+fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
 	fir_data_t  y;
 
 	ap_fixed<32,1> FIR_accu32=0;
@@ -138,8 +138,8 @@ fir_data_t FIR_filter(fir_data_t  FIR_delays[], const fir_coef_t FIR_coe[], shor
 		FIR_accu32 += FIR_delays[i] * FIR_coe[i];
 		}
 
-	FIR_accu32 += x_n * FIR_coe[0]
-	FIR_delays[i] = x_n;
+	FIR_accu32 += x_n * FIR_coe[0];
+	FIR_delays[0] = x_n;
 	y = FIR_accu32;
 	return y;
 }
@@ -150,8 +150,8 @@ fir_data_t FIR_filter(fir_data_t  FIR_delays[], const fir_coef_t FIR_coe[], shor
 
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
 |---|---|---|---|---|---|
-|  normal HLS code 			|   |   |   |   |   |
-|  HLS code with #pragmas   |   |   |   |   |   |
+|  normal HLS code 			|  3980  |  150  |  239  |  1  |  2  |
+|  HLS code with #pragmas   |  3260 | 5663  |  9408  |  1 |  81  |
 
 
 
@@ -168,14 +168,19 @@ Instead, the SRL-based implementation must reside directly in the main top-level
 
 ```
 
-SRL Logic
+ap_fixed<32,1> FIR_accu32=0;
+fir_shiftreg.shift(input.read());
+for(int i= 0; i < N_DELAYS_FIR-1; i++){
+	FIR_accu32 += fir_shiftreg.read(i) * b_FIR[i];
+}    
+output.write(FIR_accu32);
 
 ```
 
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
 |---|---|---|---|---|---|
-|  normal HLS-SRL code 			|   |   |   |   |   |
-|  HLS-SRL code with #pragmas   |   |   |   |   |   |
+|  normal HLS-SRL code 			|  3970  |  150  |  469 |  0  |  1  |
+|  HLS-SRL code with #pragmas   |  3910  |  5574  |  5660 |  0 |  81 |
 
 
 
@@ -187,12 +192,27 @@ Instead of delaying the input samples, the partial sums are delayed and accumula
 
 
 ```
-transposed code
+fir_data_t FIR_filter(accu_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
+    #pragma HLS PIPELINE
+	fir_data_t y;
+
+    y = FIR_delays[0] + x_n * FIR_coe[0];
+
+	for(int i=1; i < N_delays; i++)
+		FIR_delays[i-1] = FIR_delays[i] + FIR_coe[i] * x_n;
+
+	return y;
+}
 ```
+
+
+
+
+
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
 |---|---|---|---|---|---|
-|  normal HLS code 			|   |   |   |   |   |
-|  HLS code with #pragmas   |   |   |   |   |   |
+|  normal HLS code 			|  3960 |  85  |  229 |  2  |  2  |
+|  HLS code with #pragmas   |  10 |   3675  |  6760  |  0 |  208  |
 
 
 ### Folded form FIR filter
