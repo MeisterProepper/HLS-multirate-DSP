@@ -1,0 +1,324 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/Folded_FIR_HLS 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/FIR_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/FIR_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=../../Matlab/FIR_normal_HLS.h' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/FIR_HLS_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_normal.dat' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_normal.res' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.res' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../FIR_HLS.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../FIR_HLS.cpp:1:
+In file included from ../../../../FIR_HLS.h:2:
+In file included from C:/AMD/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from C:/AMD/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/AMD/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/AMD/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/AMD/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/AMD/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/AMD/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/AMD/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/AMD/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+INFO: Reading ../../../../../../Matlab/TS_HLS_normal.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_normal.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_normal.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_normal.res
+INFO: Input and reference data lengths match.
+Mismatch at sample  196: ref=0.128998, dut=0.112946
+Mismatch at sample  197: ref=0.205811, dut=0.157867
+Mismatch at sample  198: ref=0.294556, dut=0.215515
+Mismatch at sample  199: ref=0.392212, dut=0.283295
+Mismatch at sample  200: ref=0.494934, dut=-0.100525
+Mismatch at sample  201: ref=0.598419, dut=-0.339569
+Mismatch at sample  202: ref=0.698212, dut=-0.354645
+Mismatch at sample  203: ref=0.789948, dut=-0.330841
+Mismatch at sample  204: ref=0.869781, dut=-0.276855
+Mismatch at sample  205: ref=0.934509, dut=-0.22583
+Mismatch at sample  206: ref=0.981781, dut=-0.188507
+Mismatch at sample  207: ref=-0.989838, dut=-0.166168
+Mismatch at sample  208: ref=-0.980865, dut=-0.15921
+Mismatch at sample  209: ref=-0.990906, dut=-0.167267
+Mismatch at sample  210: ref=0.980988, dut=-0.189362
+Mismatch at sample  211: ref=0.93631, dut=-0.224121
+Mismatch at sample  212: ref=0.876892, dut=-0.269867
+Mismatch at sample  213: ref=0.804565, dut=-0.316406
+Mismatch at sample  214: ref=0.721191, dut=-0.331818
+Mismatch at sample  215: ref=0.628448, dut=-0.309723
+Mismatch at sample  216: ref=0.527832, dut=-0.0678406
+Mismatch at sample  217: ref=0.420593, dut=0.311432
+Mismatch at sample  218: ref=0.307922, dut=0.228638
+Mismatch at sample  219: ref=0.190918, dut=0.142731
+Mismatch at sample  220: ref=0.0707397, dut=0.0544128
+Mismatch at sample  221: ref=-0.0513306, dut=-0.0355225
+Mismatch at sample  222: ref=-0.173798, dut=-0.126129
+Mismatch at sample  223: ref=-0.294922, dut=-0.216156
+Mismatch at sample  224: ref=-0.412842, dut=-0.304199
+Mismatch at sample  225: ref=-0.525391, dut=0.141083
+Mismatch at sample  226: ref=-0.630432, dut=0.36264
+Mismatch at sample  227: ref=-0.725769, dut=0.354065
+Mismatch at sample  228: ref=-0.809418, dut=0.302643
+Mismatch at sample  229: ref=-0.879639, dut=0.221436
+Mismatch at sample  230: ref=-0.934998, dut=0.179779
+Mismatch at sample  231: ref=-0.974518, dut=0.150208
+Mismatch at sample  232: ref=-0.99762, dut=0.133118
+Mismatch at sample  233: ref=0.99585, dut=0.128632
+Mismatch at sample  234: ref=-0.994354, dut=0.136444
+Mismatch at sample  235: ref=-0.968781, dut=0.156036
+Mismatch at sample  236: ref=-0.928192, dut=0.186707
+Mismatch at sample  237: ref=-0.873566, dut=0.227631
+Mismatch at sample  238: ref=-0.806, dut=0.306213
+Mismatch at sample  239: ref=-0.726624, dut=0.353424
+Mismatch at sample  240: ref=-0.636597, dut=0.356689
+Mismatch at sample  241: ref=-0.53714, dut=0.129547
+Mismatch at sample  242: ref=-0.429535, dut=-0.320648
+Mismatch at sample  243: ref=-0.315155, dut=-0.236145
+Mismatch at sample  244: ref=-0.195526, dut=-0.147583
+Mismatch at sample  245: ref=-0.0722351, dut=-0.0561829
+Mismatch at sample  246: ref=0.052887, dut=0.0368347
+Mismatch at sample  247: ref=0.177917, dut=0.129974
+Mismatch at sample  248: ref=0.300751, dut=0.221741
+Mismatch at sample  249: ref=0.419342, dut=0.310425
+Mismatch at sample  250: ref=0.531525, dut=-0.189301
+Mismatch at sample  251: ref=0.635223, dut=-0.409119
+Mismatch at sample  252: ref=0.728638, dut=-0.387604
+Mismatch at sample  253: ref=0.810028, dut=-0.31723
+Mismatch at sample  254: ref=0.878021, dut=-0.214264
+Mismatch at sample  255: ref=0.93158, dut=-0.174408
+Mismatch at sample  256: ref=0.96994, dut=-0.145996
+Mismatch at sample  257: ref=0.992645, dut=-0.129333
+Mismatch at sample  258: ref=0.999573, dut=-0.12442
+Mismatch at sample  259: ref=0.990845, dut=-0.131165
+Mismatch at sample  260: ref=0.966827, dut=-0.14917
+Mismatch at sample  261: ref=0.928009, dut=-0.178101
+Mismatch at sample  262: ref=0.875092, dut=-0.217346
+Mismatch at sample  263: ref=0.808868, dut=-0.318542
+Mismatch at sample  264: ref=0.730316, dut=-0.386108
+Mismatch at sample  265: ref=0.640503, dut=-0.404083
+Mismatch at sample  266: ref=0.540619, dut=-0.18042
+Mismatch at sample  267: ref=0.432068, dut=0.322906
+Mismatch at sample  268: ref=0.316406, dut=0.237122
+Mismatch at sample  269: ref=0.195343, dut=0.147156
+Mismatch at sample  270: ref=0.0707092, dut=0.0543823
+Mismatch at sample  271: ref=-0.0554504, dut=-0.0396423
+Mismatch at sample  272: ref=-0.181061, dut=-0.133392
+Mismatch at sample  273: ref=-0.303986, dut=-0.22522
+Mismatch at sample  274: ref=-0.42215, dut=-0.313477
+Mismatch at sample  275: ref=-0.533478, dut=0.216217
+Mismatch at sample  276: ref=-0.636078, dut=0.437073
+Mismatch at sample  277: ref=-0.728271, dut=0.409882
+Mismatch at sample  278: ref=-0.808594, dut=0.330261
+Mismatch at sample  279: ref=-0.875793, dut=0.215973
+Mismatch at sample  280: ref=-0.928925, dut=0.176514
+Mismatch at sample  281: ref=-0.967316, dut=0.148071
+Mismatch at sample  282: ref=-0.990448, dut=0.130951
+Mismatch at sample  283: ref=-0.998169, dut=0.125275
+Mismatch at sample  284: ref=-0.990417, dut=0.131012
+Mismatch at sample  285: ref=-0.967407, dut=0.148041
+Mismatch at sample  286: ref=-0.929474, dut=0.176056
+Mismatch at sample  287: ref=-0.877167, dut=0.214691
+Mismatch at sample  288: ref=-0.811218, dut=0.327759
+Mismatch at sample  289: ref=-0.732574, dut=0.405731
+Mismatch at sample  290: ref=-0.642303, dut=0.43103
+Mismatch at sample  291: ref=-0.541718, dut=0.20813
+Mismatch at sample  292: ref=-0.432312, dut=-0.323456
+Mismatch at sample  293: ref=-0.315796, dut=-0.236816
+Mismatch at sample  294: ref=-0.194, dut=-0.146118
+Mismatch at sample  295: ref=-0.0689087, dut=-0.052887
+Mismatch at sample  296: ref=0.0574341, dut=0.0413208
+Mismatch at sample  297: ref=0.182892, dut=0.134918
+Mismatch at sample  298: ref=0.305359, dut=0.226288
+Mismatch at sample  299: ref=0.422852, dut=0.313904
+Mismatch at sample  300: ref=0.533447, dut=-0.223572
+Mismatch at sample  301: ref=0.635315, dut=-0.445831
+Mismatch at sample  302: ref=0.726929, dut=-0.417969
+Mismatch at sample  303: ref=0.806885, dut=-0.336609
+Mismatch at sample  304: ref=0.874023, dut=-0.219482
+Mismatch at sample  305: ref=0.927368, dut=-0.17984
+Mismatch at sample  306: ref=0.966156, dut=-0.15097
+Mismatch at sample  307: ref=0.989929, dut=-0.13324
+Mismatch at sample  308: ref=0.998291, dut=-0.126923
+Mismatch at sample  309: ref=0.99115, dut=-0.13205
+Mismatch at sample  310: ref=0.968597, dut=-0.14859
+Mismatch at sample  311: ref=0.930908, dut=-0.176361
+Mismatch at sample  312: ref=0.878632, dut=-0.214966
+Mismatch at sample  313: ref=0.812469, dut=-0.331146
+Mismatch at sample  314: ref=0.733398, dut=-0.411652
+Mismatch at sample  315: ref=0.642578, dut=-0.438721
+Mismatch at sample  316: ref=0.541412, dut=-0.215759
+Mismatch at sample  317: ref=0.431488, dut=0.322357
+Mismatch at sample  318: ref=0.314606, dut=0.235321
+Mismatch at sample  319: ref=0.192627, dut=0.14447
+Mismatch at sample  320: ref=0.0675964, dut=0.0512695
+Mismatch at sample  321: ref=-0.0585022, dut=-0.0426941
+Mismatch at sample  322: ref=-0.183563, dut=-0.135864
+Mismatch at sample  323: ref=-0.305542, dut=-0.226746
+Mismatch at sample  324: ref=-0.422546, dut=-0.313873
+Mismatch at sample  325: ref=-0.532684, dut=0.218964
+Mismatch at sample  326: ref=-0.634277, dut=0.442535
+Mismatch at sample  327: ref=-0.7258, dut=0.416779
+Mismatch at sample  328: ref=-0.805817, dut=0.337738
+Mismatch at sample  329: ref=-0.87323, dut=0.222931
+Mismatch at sample  330: ref=-0.926941, dut=0.182922
+Mismatch at sample  331: ref=-0.966187, dut=0.153595
+Mismatch at sample  332: ref=-0.990387, dut=0.135437
+Mismatch at sample  333: ref=-0.999084, dut=0.128754
+Mismatch at sample  334: ref=-0.992157, dut=0.133698
+Mismatch at sample  335: ref=-0.969666, dut=0.150177
+Mismatch at sample  336: ref=-0.931854, dut=0.17807
+Mismatch at sample  337: ref=-0.879333, dut=0.216949
+Mismatch at sample  338: ref=-0.812805, dut=0.330902
+Mismatch at sample  339: ref=-0.733307, dut=0.409393
+Mismatch at sample  340: ref=-0.64212, dut=0.434875
+Mismatch at sample  341: ref=-0.54068, dut=0.211151
+Mismatch at sample  342: ref=-0.430634, dut=-0.321747
+Mismatch at sample  343: ref=-0.313751, dut=-0.234711
+Mismatch at sample  344: ref=-0.191895, dut=-0.143982
+Mismatch at sample  345: ref=-0.0671082, dut=-0.0510559
+Mismatch at sample  346: ref=0.0586243, dut=0.042572
+Mismatch at sample  347: ref=0.18335, dut=0.135406
+Mismatch at sample  348: ref=0.305023, dut=0.225952
+Mismatch at sample  349: ref=0.421783, dut=0.312866
+Mismatch at sample  350: ref=0.53183, dut=-0.211395
+Mismatch at sample  351: ref=0.633484, dut=-0.435516
+Mismatch at sample  352: ref=0.725128, dut=-0.411896
+Mismatch at sample  353: ref=0.80542, dut=-0.335846
+Mismatch at sample  354: ref=0.873108, dut=-0.224365
+Mismatch at sample  355: ref=0.927155, dut=-0.184021
+Mismatch at sample  356: ref=0.966644, dut=-0.154449
+Mismatch at sample  357: ref=0.990997, dut=-0.136139
+Mismatch at sample  358: ref=0.999786, dut=-0.129425
+Mismatch at sample  359: ref=0.992798, dut=-0.134399
+Mismatch at sample  360: ref=0.970123, dut=-0.151062
+Mismatch at sample  361: ref=0.932098, dut=-0.179169
+Mismatch at sample  362: ref=0.879272, dut=-0.218323
+Mismatch at sample  363: ref=0.8125, dut=-0.328949
+Mismatch at sample  364: ref=0.732819, dut=-0.404388
+Mismatch at sample  365: ref=0.64151, dut=-0.427673
+Mismatch at sample  366: ref=0.54007, dut=-0.2034
+Mismatch at sample  367: ref=0.430084, dut=0.320923
+Mismatch at sample  368: ref=0.313354, dut=0.23407
+Mismatch at sample  369: ref=0.191772, dut=0.143585
+Mismatch at sample  370: ref=0.0671997, dut=0.0509033
+Mismatch at sample  371: ref=-0.0583191, dut=-0.0424805
+Mismatch at sample  372: ref=-0.182831, dut=-0.135132
+Mismatch at sample  373: ref=-0.304413, dut=-0.225586
+Mismatch at sample  374: ref=-0.421173, dut=-0.312439
+Mismatch at sample  375: ref=-0.531281, dut=0.205627
+Mismatch at sample  376: ref=-0.633057, dut=0.429504
+Mismatch at sample  377: ref=-0.724884, dut=0.407135
+Mismatch at sample  378: ref=-0.805328, dut=0.332977
+Mismatch at sample  379: ref=-0.873108, dut=0.223602
+Mismatch at sample  380: ref=-0.927185, dut=0.183228
+Mismatch at sample  381: ref=-0.966644, dut=0.153717
+Mismatch at sample  382: ref=-0.990845, dut=0.135559
+Mismatch at sample  383: ref=-0.99939, dut=0.129059
+Mismatch at sample  384: ref=-0.992065, dut=0.134369
+Mismatch at sample  385: ref=-0.969025, dut=0.151428
+Mismatch at sample  386: ref=-0.930542, dut=0.179962
+Mismatch at sample  387: ref=-0.877258, dut=0.219574
+Mismatch at sample  388: ref=-0.809967, dut=0.32843
+Mismatch at sample  389: ref=-0.729767, dut=0.402405
+Mismatch at sample  390: ref=-0.637878, dut=0.424835
+Mismatch at sample  391: ref=-0.535767, dut=0.201324
+Mismatch at sample  392: ref=-0.425751, dut=-0.316833
+Mismatch at sample  393: ref=-0.30899, dut=-0.22995
+Mismatch at sample  394: ref=-0.187378, dut=-0.139435
+Mismatch at sample  395: ref=-0.0628052, dut=-0.0467529
+Mismatch at sample  396: ref=0.0627747, dut=0.0466919
+Mismatch at sample  397: ref=0.187347, dut=0.139404
+Mismatch at sample  398: ref=0.30896, dut=0.229889
+Mismatch at sample  399: ref=0.42572, dut=0.316772
+Mismatch at sample  400: ref=0.535736, dut=-0.201385
+Mismatch at sample  401: ref=0.637329, dut=-0.416931
+Mismatch at sample  402: ref=0.728851, dut=-0.397644
+Mismatch at sample  403: ref=0.808899, dut=-0.326416
+Mismatch at sample  404: ref=0.87619, dut=-0.220032
+Mismatch at sample  405: ref=0.929657, dut=-0.180237
+Mismatch at sample  406: ref=0.968445, dut=-0.151367
+Mismatch at sample  407: ref=0.991974, dut=-0.13385
+Mismatch at sample  408: ref=0.999878, dut=-0.127991
+Mismatch at sample  409: ref=0.991974, dut=-0.13385
+Mismatch at sample  410: ref=0.968445, dut=-0.151367
+Mismatch at sample  411: ref=0.929657, dut=-0.180237
+Mismatch at sample  412: ref=0.87619, dut=-0.220032
+Mismatch at sample  413: ref=0.808899, dut=-0.326416
+Mismatch at sample  414: ref=0.728851, dut=-0.397644
+Mismatch at sample  415: ref=0.637329, dut=-0.416931
+Mismatch at sample  416: ref=0.535736, dut=-0.201385
+Mismatch at sample  417: ref=0.42572, dut=0.316772
+Mismatch at sample  418: ref=0.30896, dut=0.229889
+Mismatch at sample  419: ref=0.187347, dut=0.139404
+Mismatch at sample  420: ref=0.0627747, dut=0.0466919
+Mismatch at sample  421: ref=-0.0628052, dut=-0.0467529
+Mismatch at sample  422: ref=-0.187378, dut=-0.139435
+Mismatch at sample  423: ref=-0.30899, dut=-0.22995
+Mismatch at sample  424: ref=-0.425751, dut=-0.316833
+Mismatch at sample  425: ref=-0.535767, dut=0.201324
+Mismatch at sample  426: ref=-0.63736, dut=0.41687
+Mismatch at sample  427: ref=-0.728882, dut=0.397583
+Mismatch at sample  428: ref=-0.808929, dut=0.326385
+Mismatch at sample  429: ref=-0.876221, dut=0.219971
+Mismatch at sample  430: ref=-0.929688, dut=0.180206
+Mismatch at sample  431: ref=-0.968475, dut=0.151306
+Mismatch at sample  432: ref=-0.992004, dut=0.13382
+Mismatch at sample  433: ref=-0.999908, dut=0.12793
+Mismatch at sample  434: ref=-0.992004, dut=0.13382
+Mismatch at sample  435: ref=-0.968475, dut=0.151306
+Mismatch at sample  436: ref=-0.929688, dut=0.180206
+Mismatch at sample  437: ref=-0.876221, dut=0.219971
+Mismatch at sample  438: ref=-0.808929, dut=0.326385
+Mismatch at sample  439: ref=-0.728882, dut=0.397583
+Mismatch at sample  440: ref=-0.63736, dut=0.41687
+Mismatch at sample  441: ref=-0.535767, dut=0.201324
+Mismatch at sample  442: ref=-0.425751, dut=-0.316833
+Mismatch at sample  443: ref=-0.30899, dut=-0.22995
+Mismatch at sample  444: ref=-0.187378, dut=-0.139435
+Mismatch at sample  445: ref=-0.0628052, dut=-0.0467529
+Mismatch at sample  446: ref=0.0627747, dut=0.0466919
+Mismatch at sample  447: ref=0.187347, dut=0.139404
+Mismatch at sample  448: ref=0.30896, dut=0.229889
+Mismatch at sample  449: ref=0.42572, dut=0.316772
+Mismatch at sample  450: ref=0.535736, dut=-0.201385
+Mismatch at sample  451: ref=0.637329, dut=-0.416931
+Mismatch at sample  452: ref=0.728851, dut=-0.397644
+Mismatch at sample  453: ref=0.808899, dut=-0.326416
+Mismatch at sample  454: ref=0.87619, dut=-0.220032
+Mismatch at sample  455: ref=0.929657, dut=-0.180237
+Mismatch at sample  456: ref=0.968445, dut=-0.151367
+Mismatch at sample  457: ref=0.991974, dut=-0.13385
+Mismatch at sample  458: ref=0.999878, dut=-0.127991
+Mismatch at sample  459: ref=0.991974, dut=-0.13385
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 264
+Status: FAIL [!!] (264 samples out of tolerance)
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.894 seconds; peak allocated memory: 273.215 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s

@@ -1,0 +1,19 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../FIR_HLS_TB.cpp in debug mode
+   Compiling ../../../../FIR_HLS.cpp in debug mode
+   Generating csim.exe
+INFO: Reading ../../../../../../Matlab/TS_HLS_normal.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_normal.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_normal.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_normal.res
+INFO: Input and reference data lengths match.
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 0
+Status: PASS [OK]
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FIR_HLS'" level="0">
-<item name = "Date">Mon Nov 10 23:51:38 2025
+<item name = "Date">Tue Nov 11 22:14:59 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">Folded_FIR_HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.629 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 5.750 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">597, 597, 5.970 us, 5.970 us, 598, 598, no</column>
+<column name="">6, 6, 60.000 ns, 60.000 ns, 7, 7, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_FIR_HLS_Pipeline_VITIS_LOOP_26_1_fu_72">FIR_HLS_Pipeline_VITIS_LOOP_26_1, 200, 200, 2.000 us, 2.000 us, 196, 196, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_FIR_HLS_Pipeline_VITIS_LOOP_30_2_fu_81">FIR_HLS_Pipeline_VITIS_LOOP_30_2, 393, 393, 3.930 us, 3.930 us, 392, 392, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_FIR_filter_fu_827">FIR_filter, 5, 5, 50.000 ns, 50.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

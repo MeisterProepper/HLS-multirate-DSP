@@ -9,22 +9,22 @@
       "L": 1
     },
     "name": "FIR_HLS",
-    "total_instructions": 118
+    "total_instructions": 12161
   },
   "1": {
-    "basicblocks": 44,
+    "basicblocks": 5505,
     "calls": "",
     "file": "FIR_HLS.cpp",
     "fileloc": 18,
-    "instructions": 109,
+    "instructions": 12152,
     "loads": {
-      "G": 8
+      "G": 1567
     },
     "name": "FIR_filter",
     "stores": {
-      "G": 2,
+      "G": 392,
       "L": 1
     },
-    "total_instructions": 109
+    "total_instructions": 12152
   }
 }

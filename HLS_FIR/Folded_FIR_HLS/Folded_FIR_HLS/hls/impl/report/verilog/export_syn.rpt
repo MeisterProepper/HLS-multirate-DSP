@@ -1,0 +1,687 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Tue Nov 11 22:29:33 +0100 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         Folded_FIR_HLS
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xck26-sfvc784-2LV-c
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              5220
+FF:               8527
+DSP:              81
+BRAM:             0
+URAM:             0
+SRL:              56
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 4.429       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                          | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                          | 5220 | 8527 | 81  |      |      |     |        |      |         |          |        |
+|   (inst)                                      |      | 24   |     |      |      |     |        |      |         |          |        |
+|   grp_FIR_filter_fu_827                       | 5168 | 8429 | 81  |      |      |     |        |      |         |          |        |
+|     (grp_FIR_filter_fu_827)                   | 3729 | 8429 |     |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10ns_28_4_1_U26         |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10ns_28_4_1_U28         |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10s_27_4_1_U19          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10s_27_4_1_U20          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_10s_27_4_1_U23          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_11ns_28_4_1_U33         |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_11s_28_4_1_U24          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_11s_28_4_1_U25          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_12ns_30_4_1_U34         |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_12s_29_4_1_U30          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_12s_29_4_1_U31          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_12s_29_4_1_U32          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_13ns_31_4_1_U35         |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_13ns_31_4_1_U36         |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_8ns_26_4_1_U10          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9ns_26_4_1_U14          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9ns_27_4_1_U17          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9ns_27_4_1_U21          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_16s_16s_9s_26_4_1_U12           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_17s_17s_7ns_25_4_1_U52          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_addmul_17s_17s_8s_26_4_1_U47           |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_submul_17s_17s_6ns_25_4_1_U49          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_submul_17s_17s_8ns_26_4_1_U46          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_submul_17s_17s_9ns_27_4_1_U43          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     am_submul_18s_17s_7ns_27_4_1_U42          |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10ns_27s_27_4_1_U64 | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10ns_28s_28_4_1_U69 | 26   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_24s_26_4_1_U2   | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_27s_27_4_1_U60  | 103  |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_27s_27_4_1_U62  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_27s_27_4_1_U63  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_10s_28s_28_4_1_U67  | 5    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11ns_28s_29_4_1_U27 | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11s_20s_27_4_1_U29  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11s_27s_27_4_1_U65  | 70   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11s_28s_28_4_1_U66  | 6    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_11s_29s_29_4_1_U73  | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_12s_29s_29_4_1_U71  | 84   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_12s_29s_29_4_1_U72  | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_13ns_30s_30_4_1_U75 | 37   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_13ns_31s_31_4_1_U76 | 3    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_14ns_31s_31_4_1_U77 | 111  |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_6ns_22s_23_4_1_U3   | 21   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_25s_25_4_1_U54  | 100  |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_25s_25_4_1_U55  | 56   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_26s_26_4_1_U53  | 5    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_7ns_27s_27_4_1_U16  | 22   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_25s_26_4_1_U13  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_26s_26_4_1_U57  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_26s_26_4_1_U59  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_26s_26_4_1_U7   | 48   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_26s_26_4_1_U9   | 5    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80  | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_24s_25_4_1_U4    | 68   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_26s_26_4_1_U5    | 23   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_8s_26s_26_4_1_U56   | 82   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_25s_26_4_1_U22  | 73   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_26s_26_4_1_U68  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_26s_27_4_1_U18  | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_27s_27_4_1_U61  | 5    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_28s_28_4_1_U70  | 28   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9ns_28s_28_4_1_U74  | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_26s_26_4_1_U11   | 17   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_26s_26_4_1_U15   | 23   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_26s_26_4_1_U58   | 49   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_26s_26_4_1_U6    | 21   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_16s_16s_9s_27s_27_4_1_U8    | 115  |      | 2   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_17s_7s_24s_25_4_1_U48   | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_17s_9s_25s_26_4_1_U45   |      |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_17s_9s_27s_28_4_1_U44   | 21   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_17s_17s_9s_27s_28_4_1_U81   | 6    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_17s_7ns_27s_27_4_1_U78  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_addmuladd_18s_18s_6ns_26s_26_4_1_U37  | 51   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_17s_17s_5ns_22s_23_4_1_U51  | 55   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_17s_17s_5ns_24s_24_4_1_U50  | 22   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_17s_17s_6ns_26s_27_4_1_U79  | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_17s_18s_6ns_23s_25_4_1_U40  | 27   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_17s_18s_7ns_26s_27_4_1_U38  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_18s_17s_6ns_22s_25_4_1_U41  | 25   |      | 1   |      |      |     |        |      |         |          |        |
+|     ama_submuladd_18s_17s_7ns_25s_26_4_1_U39  | 22   |      | 1   |      |      |     |        |      |         |          |        |
+|   regslice_both_input_r_U                     | 26   | 37   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_r_U                    | 26   | 37   |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 4.46%  | OK     |
+| FD                                                        | 50%       | 3.64%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.10%  | OK     |
+| CARRY8                                                    | 25%       | 5.12%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 6.49%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| URAM                                                      | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 6.49%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 2196      | 9      | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.03   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.391ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.263ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                                                                                      | ENDPOINT PIN                               | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                                                                                     |                                            |              |            |                |          DELAY |        DELAY |
++-------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 5.571 | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK | regslice_both_output_r_U/data_p1_reg[12]/D |           16 |          2 |          4.390 |          2.426 |        1.964 |
+| Path2 | 5.581 | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK | regslice_both_output_r_U/data_p1_reg[15]/D |           16 |          2 |          4.380 |          2.474 |        1.906 |
+| Path3 | 5.602 | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK | regslice_both_output_r_U/data_p1_reg[14]/D |           16 |          2 |          4.359 |          2.453 |        1.906 |
+| Path4 | 5.602 | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK | regslice_both_output_r_U/data_p1_reg[9]/D  |           16 |          2 |          4.359 |          2.394 |        1.965 |
+| Path5 | 5.613 | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK | regslice_both_output_r_U/data_p1_reg[10]/D |           16 |          2 |          4.348 |          2.381 |        1.967 |
++-------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                                                     | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[12]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[12]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[15]_i_2                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[15]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[14]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[14]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[9]_i_1                                                                                                         | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[9]                                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[10]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[10]                                                                                                        | REGISTER.SDR.FDRE      |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                                                     | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[12]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[12]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[15]_i_2                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[15]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[14]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[14]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[9]_i_1                                                                                                         | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[9]                                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[10]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[10]                                                                                                        | REGISTER.SDR.FDRE      |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                                                     | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[12]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[12]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[15]_i_2                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[15]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[14]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[14]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[9]_i_1                                                                                                         | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[9]                                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[10]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[10]                                                                                                        | REGISTER.SDR.FDRE      |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                                                     | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[12]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[12]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[15]_i_2                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[15]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[14]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[14]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[9]_i_1                                                                                                         | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[9]                                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[10]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[10]                                                                                                        | REGISTER.SDR.FDRE      |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                                                     | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[12]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[12]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[15]_i_2                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[15]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_162                                                                                                     | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_169                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_79                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_86                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_53                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_36                                                                                                          | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_44                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_3                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_8                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_16                                                                                                          | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[14]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[14]                                                                                                        | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[9]_i_1                                                                                                         | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[9]                                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_FIR_filter_fu_827/ama_addmuladd_16s_16s_8ns_26s_27_4_1_U80/FIR_HLS_ama_addmuladd_16s_16s_8ns_26s_27_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_130                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_99                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_103                                                                                                          | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_80                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_97                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[15]_i_104                                                                                                         | CLB.LUT.LUT2           |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_55                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_47                                                                                                           | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_55                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_27                                                                                                       | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_18                                                                                                      | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_5                                                                                                            | CLB.LUT.LUT3           |
+    | grp_FIR_filter_fu_827/data_p2[7]_i_13                                                                                                           | CLB.LUT.LUT4           |
+    | grp_FIR_filter_fu_827/data_p2_reg[7]_i_1                                                                                                        | CLB.CARRY.CARRY8       |
+    | grp_FIR_filter_fu_827/data_p2_reg[15]_i_2                                                                                                       | CLB.CARRY.CARRY8       |
+    | regslice_both_output_r_U/data_p1[10]_i_1                                                                                                        | CLB.LUT.LUT4           |
+    | regslice_both_output_r_U/data_p1_reg[10]                                                                                                        | REGISTER.SDR.FDRE      |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+----------------------------------------------------------------+
+| Report Type              | Report Location                                                |
++--------------------------+----------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/FIR_HLS_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/FIR_HLS_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/FIR_HLS_power_synth.rpt                    |
+| timing                   | impl/verilog/report/FIR_HLS_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/FIR_HLS_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/FIR_HLS_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/FIR_HLS_utilization_hierarchical_synth.rpt |
++--------------------------+----------------------------------------------------------------+
+
+

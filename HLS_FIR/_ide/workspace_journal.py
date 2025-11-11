@@ -107,3 +107,66 @@ comp.run(operation="SYNTHESIS")
 
 comp.run(operation="IMPLEMENTATION")
 
+comp = client.get_component(name="Folded_FIR_HLS")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION_DEBUG")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp = client.get_component(name="Direct_FIR_DSP")
+comp.run(operation="C_SIMULATION")
+
+comp = client.get_component(name="Folded_FIR_HLS")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="IMPLEMENTATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="IMPLEMENTATION")
+
+comp = client.clone_component(name="Folded_FIR_HLS",new_name="Transposed_Folded_FIR_HLS")
+
+comp = client.get_component(name="Transposed_Folded_FIR_HLS")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp = client.clone_component(name="Folded_FIR_HLS",new_name="Folded_FIR_SRL")
+
+comp = client.get_component(name="Folded_FIR_SRL")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+client.delete_component(name="Folded_FIR_SRL")
+

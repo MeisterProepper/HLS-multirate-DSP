@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FIR_HLS'" level="0">
-<item name = "Date">Mon Nov 10 23:51:38 2025
+<item name = "Date">Tue Nov 11 22:14:59 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">Folded_FIR_HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.629 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 5.750 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">597, 597, 5.970 us, 5.970 us, 598, 598, no</column>
+<column name="">6, 6, 60.000 ns, 60.000 ns, 7, 7, no</column>
 </table>
 </item>
 <item name = "Detail">
