@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2024.2
+Project:             Direct_FIR_SRL
+Solution:            hls
+Device target:       xck26-sfvc784-2LV-c
+Report date:         Tue Nov 11 01:35:56 +0100 2025
+
+#=== Post-Implementation Resource usage ===
+SLICE:            0
+LUT:           5574
+FF:            5665
+DSP:             81
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:            208
+CLB:           1049
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      9.882
+CP achieved post-implementation: 9.804
+Timing met

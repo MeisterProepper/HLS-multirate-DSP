@@ -1,6 +1,6 @@
 {
     "1": {
-        "name": "FIR_HLS_Pipeline_VITIS_LOOP_28_1",
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_29_1",
         "file": "FIR_HLS.cpp",
         "fileloc": "13",
         "instructions": "31",
@@ -34,7 +34,7 @@
         }
     },
     "2": {
-        "name": "FIR_HLS_Pipeline_VITIS_LOOP_32_2",
+        "name": "FIR_HLS_Pipeline_VITIS_LOOP_33_2",
         "file": "FIR_HLS.cpp",
         "fileloc": "13",
         "instructions": "20",

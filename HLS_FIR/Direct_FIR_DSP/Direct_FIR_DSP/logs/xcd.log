@@ -48,3 +48,84 @@
 11/10/25 22:05:43: Socket received request to stop server.
 11/10/25 22:05:43: Dispatch Server: do_await_stop
 11/10/25 22:05:43: SERVER: destructor for server bound to port 59973
+11/10/25 23:14:02: Running xcd server. This server was built by gradle.
+11/10/25 23:14:02: Server was asked to start on port: '49920'
+11/10/25 23:14:02: Server is using token UUID: 'ff3a9de4-a41e-4d86-920d-81c4460d3e65'
+11/10/25 23:14:02: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/10/25 23:14:02: Attempting to start server on port '49920'
+11/10/25 23:14:02: Running Dispatch Server
+11/10/25 23:14:02: Version 2.2.0
+11/10/25 23:14:04: Dispatch Server: Accepted socket connection from client
+11/10/25 23:14:04: Starting Socket connection
+11/10/25 23:14:04: EXCHANGE_TOKEN received, server token: ff3a9de4-a41e-4d86-920d-81c4460d3e65, passed token: ff3a9de4-a41e-4d86-920d-81c4460d3e65
+11/10/25 23:14:04: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/10/25 23:14:04: SESSION_MGR: creating session with session uuid: 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:14:04: KERNEL_SVC: creating session with uuid: 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:14:04: GUIDANCE_SMGR: creating guidance session with uuid: 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:14:04: SYSTEM_DIAGRAM: creating session with uuid: 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:14:11: Dispatch Server: Accepted socket connection from client
+11/10/25 23:14:11: Starting Socket connection
+11/10/25 23:15:06: SESSION_MGR: closing session for UUID 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:15:06: KERNEL_SVC: closing session for UUID 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:15:06: GUIDANCE_SMGR: closing session for UUID 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:15:06: SYSTEM_DIAGRAM: closing session for UUID 'c4ec61e3-705f-4e26-b383-e6cbbcf588a1' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:15:06: STOP_SERVER received, server token: ff3a9de4-a41e-4d86-920d-81c4460d3e65, passed token: ff3a9de4-a41e-4d86-920d-81c4460d3e65
+11/10/25 23:15:06: Socket received request to stop server.
+11/10/25 23:15:06: Dispatch Server: do_await_stop
+11/10/25 23:15:06: SERVER: destructor for server bound to port 49920
+11/10/25 23:58:19: Running xcd server. This server was built by gradle.
+11/10/25 23:58:19: Server was asked to start on port: '63304'
+11/10/25 23:58:19: Server is using token UUID: '452420ef-e05f-43ef-8c72-2b342b590a56'
+11/10/25 23:58:19: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/10/25 23:58:19: Attempting to start server on port '63304'
+11/10/25 23:58:19: Running Dispatch Server
+11/10/25 23:58:19: Version 2.2.0
+11/10/25 23:58:21: Dispatch Server: Accepted socket connection from client
+11/10/25 23:58:21: Starting Socket connection
+11/10/25 23:58:21: EXCHANGE_TOKEN received, server token: 452420ef-e05f-43ef-8c72-2b342b590a56, passed token: 452420ef-e05f-43ef-8c72-2b342b590a56
+11/10/25 23:58:21: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/10/25 23:58:21: SESSION_MGR: creating session with session uuid: 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:21: KERNEL_SVC: creating session with uuid: 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:21: GUIDANCE_SMGR: creating guidance session with uuid: 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:21: SYSTEM_DIAGRAM: creating session with uuid: 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' and name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:27: Dispatch Server: Accepted socket connection from client
+11/10/25 23:58:27: Starting Socket connection
+11/10/25 23:58:43: SESSION_MGR: closing session for UUID 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:43: KERNEL_SVC: closing session for UUID 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:43: GUIDANCE_SMGR: closing session for UUID 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:43: SYSTEM_DIAGRAM: closing session for UUID 'a08e6082-6f14-4b10-8dbb-38a53e6ce2d3' with name 'v++_compile_Direct_FIR_DSP'
+11/10/25 23:58:43: STOP_SERVER received, server token: 452420ef-e05f-43ef-8c72-2b342b590a56, passed token: 452420ef-e05f-43ef-8c72-2b342b590a56
+11/10/25 23:58:43: Socket received request to stop server.
+11/10/25 23:58:43: Dispatch Server: do_await_stop
+11/10/25 23:58:43: SERVER: destructor for server bound to port 63304
+11/10/25 23:59:08: Running xcd server. This server was built by gradle.
+11/10/25 23:59:08: Server was asked to start on port: '63308'
+11/10/25 23:59:08: Server is using token UUID: '46363e56-4d34-4dd6-a883-f54bdf1b7df6'
+11/10/25 23:59:08: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/10/25 23:59:08: Attempting to start server on port '63308'
+11/10/25 23:59:08: Running Dispatch Server
+11/10/25 23:59:08: Version 2.2.0
+11/10/25 23:59:09: Dispatch Server: Accepted socket connection from client
+11/10/25 23:59:09: Starting Socket connection
+11/10/25 23:59:09: EXCHANGE_TOKEN received, server token: 46363e56-4d34-4dd6-a883-f54bdf1b7df6, passed token: 46363e56-4d34-4dd6-a883-f54bdf1b7df6
+11/10/25 23:59:09: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/10/25 23:59:10: SESSION_MGR: creating session with session uuid: '484a3050-df03-40ae-9af6-2a089c9a4116' and name 'vitis-run_compile_Direct_FIR_DSP'
+11/10/25 23:59:10: KERNEL_SVC: creating session with uuid: '484a3050-df03-40ae-9af6-2a089c9a4116' and name 'vitis-run_compile_Direct_FIR_DSP'
+11/10/25 23:59:10: GUIDANCE_SMGR: creating guidance session with uuid: '484a3050-df03-40ae-9af6-2a089c9a4116' and name 'vitis-run_compile_Direct_FIR_DSP'
+11/10/25 23:59:10: SYSTEM_DIAGRAM: creating session with uuid: '484a3050-df03-40ae-9af6-2a089c9a4116' and name 'vitis-run_compile_Direct_FIR_DSP'
+11/10/25 23:59:16: Dispatch Server: Accepted socket connection from client
+11/10/25 23:59:16: Starting Socket connection
+11/10/25 23:59:57: Dispatch Server: Accepted socket connection from client
+11/10/25 23:59:57: Starting Socket connection
+11/11/25 00:01:05: Dispatch Server: Accepted socket connection from client
+11/11/25 00:01:05: Starting Socket connection
+11/11/25 00:03:07: Dispatch Server: Accepted socket connection from client
+11/11/25 00:03:07: Starting Socket connection
+11/11/25 00:06:15: SESSION_MGR: closing session for UUID '484a3050-df03-40ae-9af6-2a089c9a4116' with name 'vitis-run_compile_Direct_FIR_DSP'
+11/11/25 00:06:15: KERNEL_SVC: closing session for UUID '484a3050-df03-40ae-9af6-2a089c9a4116' with name 'vitis-run_compile_Direct_FIR_DSP'
+11/11/25 00:06:15: GUIDANCE_SMGR: closing session for UUID '484a3050-df03-40ae-9af6-2a089c9a4116' with name 'vitis-run_compile_Direct_FIR_DSP'
+11/11/25 00:06:15: SYSTEM_DIAGRAM: closing session for UUID '484a3050-df03-40ae-9af6-2a089c9a4116' with name 'vitis-run_compile_Direct_FIR_DSP'
+11/11/25 00:06:15: STOP_SERVER received, server token: 46363e56-4d34-4dd6-a883-f54bdf1b7df6, passed token: 46363e56-4d34-4dd6-a883-f54bdf1b7df6
+11/11/25 00:06:15: Socket received request to stop server.
+11/11/25 00:06:15: Dispatch Server: do_await_stop
+11/11/25 00:06:15: SERVER: destructor for server bound to port 63308

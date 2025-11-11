@@ -1,0 +1,339 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Nov 11 01:32:28 2025
+| Host         : DESKTOP-92OKADH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xck26
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   261 |
+|    Minimum number of control sets                        |   261 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   271 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   261 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   261 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             402 |           92 |
+| Yes          | No                    | No                     |            5263 |          734 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------------------+------------------+------------------+----------------+--------------+
+| Clock Signal |                     Enable Signal                     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+-------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state12                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_r_U/load_p2  |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state98                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_r_U/load_p1  |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_r_U/load_p1 |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_r_U/load_p2 |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state10                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state101               |                  |                8 |             16 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state73                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state320               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state81                |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state32                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state158               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state119               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state322               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state131               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state121               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state92                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state127               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state138               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state62                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state126               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state129               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state15                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state11                |                  |                9 |             16 |         1.78 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state75                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state157               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state16                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state161               |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state162               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state147               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state13                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state332               |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state137               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state327               |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state120               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state118               |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state125               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state108               |                  |                9 |             16 |         1.78 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state303               |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state31                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state111               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state107               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state282               |                  |                8 |             16 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state279               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state315               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state14                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state28                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state305               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state3                 |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state79                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state66                |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state165               |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state319               |                  |                8 |             16 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state176               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state17                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state68                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state42                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state94                |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state22                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state51                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state164               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state18                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state180               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state91                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state9                 |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state83                |                  |               11 |             16 |         1.45 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state78                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state58                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state25                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state27                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state8                 |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state69                |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state56                |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state29                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state39                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state371               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state356               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state250               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state257               |                  |                8 |             16 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state38                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state243               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state248               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state372               |                  |                8 |             16 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state274               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state295               |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state347               |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state241               |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state306               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state370               |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state36                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state343               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state236               |                  |                8 |             16 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state304               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state26                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state348               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state4                 |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state354               |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state24                |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state352               |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state40                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state234               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state341               |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state253               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state344               |                  |                9 |             16 |         1.78 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state298               |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state289               |                  |                9 |             16 |         1.78 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state339               |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state5                 |                  |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state82                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state99                |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state41                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state7                 |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state60                |                  |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state43                |                  |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state65                |                  |                7 |             16 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state57                |                  |                4 |             16 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state67                |                  |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state215               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state20                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state19                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state270               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state273               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state233               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state227               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state264               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state229               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state310               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state30                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state33                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state50                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state333               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state34                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state37                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state340               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state35                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state86                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state72                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state74                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state48                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state71                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state47                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state44                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state85                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state93                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state95                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state96                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state97                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state103               |                  |                4 |             17 |         4.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state134               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state105               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state87                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state46                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state110               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state49                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state112               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state80                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state133               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state139               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state55                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state59                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state143               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state148               |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state64                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state21                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state76                |                  |                3 |             17 |         5.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state102               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state54                |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state155               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state309               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state318               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state299               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state362               |                  |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state308               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state70                |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state364               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state359               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state326               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state45                |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state375               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state141               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state292               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state350               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state109               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state61                |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state379               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state149               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state337               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state63                |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state378               |                  |                2 |             18 |         9.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state381               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state260               |                  |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state254               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state290               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state330               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state361               |                  |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state313               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state324               |                  |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state383               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state386               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state346               |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state88                |                  |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state321               |                  |                3 |             20 |         6.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state323               |                  |                3 |             21 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state365               |                  |                3 |             22 |         7.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state382               |                  |                3 |             23 |         7.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state367               |                  |                4 |             24 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state376               |                  |                4 |             24 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state377               |                  |                5 |             24 |         4.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state312               |                  |                3 |             24 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state388               |                  |                5 |             26 |         5.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state271               |                  |                9 |             26 |         2.89 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state380               |                  |                4 |             26 |         6.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state266               |                  |               10 |             26 |         2.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state230               |                  |                4 |             27 |         6.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state221               |                  |                5 |             27 |         5.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state240               |                  |                6 |             27 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state387               |                  |                4 |             27 |         6.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state360               |                  |                4 |             27 |         6.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state245               |                  |                7 |             27 |         3.86 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state231               |                  |                4 |             27 |         6.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state216               |                  |               10 |             28 |         2.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state335               |                  |                4 |             28 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state225               |                  |                4 |             28 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state217               |                  |                8 |             28 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state286               |                  |                4 |             28 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state206               |                  |                7 |             28 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state300               |                  |                4 |             29 |         7.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state209               |                  |                4 |             29 |         7.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state262               |                  |                4 |             29 |         7.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state210               |                  |               11 |             29 |         2.64 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state249               |                  |                4 |             30 |         7.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state272               |                  |                4 |             31 |         7.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state212               |                  |                4 |             31 |         7.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state202               |                  |               12 |             31 |         2.58 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state201               |                  |               13 |             32 |         2.46 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state204               |                  |                4 |             32 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state228               |                  |                4 |             32 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state311               |                  |               11 |             42 |         3.82 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state358               |                  |               15 |             42 |         2.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state281               |                  |               14 |             42 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state288               |                  |               15 |             43 |         2.87 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state256               |                  |               14 |             43 |         3.07 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state294               |                  |               10 |             43 |         4.30 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state296               |                  |               14 |             43 |         3.07 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state334               |                  |               12 |             43 |         3.58 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state353               |                  |                8 |             43 |         5.38 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state366               |                  |                7 |             44 |         6.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state258               |                  |               10 |             44 |         4.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state265               |                  |               16 |             44 |         2.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state280               |                  |                8 |             44 |         5.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state317               |                  |                8 |             44 |         5.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state242               |                  |                8 |             44 |         5.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state235               |                  |                9 |             45 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state226               |                  |               17 |             45 |         2.65 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state336               |                  |               14 |             46 |         3.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state219               |                  |                9 |             46 |         5.11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state328               |                  |               10 |             46 |         4.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state373               |                  |                7 |             47 |         6.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_r_U/D[1]     |                  |               33 |            208 |         6.30 |
+|  ap_clk      |                                                       | ap_rst_n         |               92 |            402 |         4.37 |
++--------------+-------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

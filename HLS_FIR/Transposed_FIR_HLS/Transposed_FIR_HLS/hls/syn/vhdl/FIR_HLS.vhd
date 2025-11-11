@@ -24,30 +24,19 @@ end;
 architecture behav of FIR_HLS is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "FIR_HLS_FIR_HLS,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.870000,HLS_SYN_LAT=396,HLS_SYN_TPT=none,HLS_SYN_MEM=3,HLS_SYN_DSP=0,HLS_SYN_FF=73,HLS_SYN_LUT=236,HLS_VERSION=2024_2}";
+    "FIR_HLS_FIR_HLS,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.928000,HLS_SYN_LAT=1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=12470,HLS_SYN_LUT=17169,HLS_VERSION=2024_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (3 downto 0) := "0010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (3 downto 0) := "0100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (3 downto 0) := "1000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (1 downto 0) := "10";
+    constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
-    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
-    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
-    constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
-    constant ap_const_lv25_1FFFEEA : STD_LOGIC_VECTOR (24 downto 0) := "1111111111111111011101010";
-    constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
-    constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
-    constant ap_const_boolean_1 : BOOLEAN := true;
+    constant ap_const_boolean_0 : BOOLEAN := false;
 
     signal ap_rst_n_inv : STD_LOGIC;
-    signal H_accu_FIR_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal H_accu_FIR_ce0 : STD_LOGIC;
-    signal H_accu_FIR_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal H_accu_FIR_q1 : STD_LOGIC_VECTOR (31 downto 0);
     signal input_r_TDATA_blk_n : STD_LOGIC;
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (3 downto 0) := "0001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (1 downto 0) := "01";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
@@ -55,45 +44,29 @@ architecture behav of FIR_HLS is
     signal output_r_TDATA_blk_n : STD_LOGIC;
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal ap_CS_fsm_state3 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal x_n_reg_104 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_done : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_idle : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_ready : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce0 : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_we0 : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce1 : STD_LOGIC;
-    signal grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state4 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal H_accu_FIR_ce0_local : STD_LOGIC;
-    signal mul_ln18_fu_77_p1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal mul_ln18_fu_77_p2 : STD_LOGIC_VECTOR (24 downto 0);
-    signal sext_ln18_1_fu_83_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal add_ln18_fu_87_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
+    signal p_0_FIR_filter_fu_827_ap_return : STD_LOGIC_VECTOR (15 downto 0);
+    signal p_0_FIR_filter_fu_827_ap_start : STD_LOGIC;
+    signal p_0_FIR_filter_fu_827_ap_done : STD_LOGIC;
+    signal p_0_FIR_filter_fu_827_ap_idle : STD_LOGIC;
+    signal p_0_FIR_filter_fu_827_ap_ready : STD_LOGIC;
+    signal ap_block_state1_ignore_call7 : BOOLEAN;
+    signal ap_block_state1 : BOOLEAN;
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
-    signal ap_ST_fsm_state3_blk : STD_LOGIC;
-    signal ap_ST_fsm_state4_blk : STD_LOGIC;
     signal regslice_both_output_r_U_apdone_blk : STD_LOGIC;
+    signal ap_block_state2 : BOOLEAN;
     signal regslice_both_input_r_U_apdone_blk : STD_LOGIC;
     signal input_r_TDATA_int_regslice : STD_LOGIC_VECTOR (15 downto 0);
     signal input_r_TVALID_int_regslice : STD_LOGIC;
     signal input_r_TREADY_int_regslice : STD_LOGIC;
     signal regslice_both_input_r_U_ack_in : STD_LOGIC;
-    signal output_r_TDATA_int_regslice : STD_LOGIC_VECTOR (15 downto 0);
     signal output_r_TVALID_int_regslice : STD_LOGIC;
     signal output_r_TREADY_int_regslice : STD_LOGIC;
     signal regslice_both_output_r_U_vld_out : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_20_1 IS
+    component FIR_HLS_FIR_filter IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -101,47 +74,8 @@ architecture behav of FIR_HLS is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        sext_ln20 : IN STD_LOGIC_VECTOR (15 downto 0);
-        H_accu_FIR_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        H_accu_FIR_ce0 : OUT STD_LOGIC;
-        H_accu_FIR_we0 : OUT STD_LOGIC;
-        H_accu_FIR_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        H_accu_FIR_address1 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        H_accu_FIR_ce1 : OUT STD_LOGIC;
-        H_accu_FIR_q1 : IN STD_LOGIC_VECTOR (31 downto 0) );
-    end component;
-
-
-    component FIR_HLS_mul_16s_10s_25_1_1 IS
-    generic (
-        ID : INTEGER;
-        NUM_STAGE : INTEGER;
-        din0_WIDTH : INTEGER;
-        din1_WIDTH : INTEGER;
-        dout_WIDTH : INTEGER );
-    port (
-        din0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (9 downto 0);
-        dout : OUT STD_LOGIC_VECTOR (24 downto 0) );
-    end component;
-
-
-    component FIR_HLS_H_accu_FIR_RAM_AUTO_1R1W IS
-    generic (
-        DataWidth : INTEGER;
-        AddressRange : INTEGER;
-        AddressWidth : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (8 downto 0);
-        ce0 : IN STD_LOGIC;
-        we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (8 downto 0);
-        ce1 : IN STD_LOGIC;
-        q1 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        x_n : IN STD_LOGIC_VECTOR (15 downto 0);
+        ap_return : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -163,51 +97,16 @@ architecture behav of FIR_HLS is
 
 
 begin
-    H_accu_FIR_U : component FIR_HLS_H_accu_FIR_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 32,
-        AddressRange => 392,
-        AddressWidth => 9)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst_n_inv,
-        address0 => H_accu_FIR_address0,
-        ce0 => H_accu_FIR_ce0,
-        we0 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_we0,
-        d0 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_d0,
-        q0 => H_accu_FIR_q0,
-        address1 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address1,
-        ce1 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce1,
-        q1 => H_accu_FIR_q1);
-
-    grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65 : component FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_20_1
+    p_0_FIR_filter_fu_827 : component FIR_HLS_FIR_filter
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start,
-        ap_done => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_done,
-        ap_idle => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_idle,
-        ap_ready => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_ready,
-        sext_ln20 => x_n_reg_104,
-        H_accu_FIR_address0 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address0,
-        H_accu_FIR_ce0 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce0,
-        H_accu_FIR_we0 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_we0,
-        H_accu_FIR_d0 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_d0,
-        H_accu_FIR_address1 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address1,
-        H_accu_FIR_ce1 => grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce1,
-        H_accu_FIR_q1 => H_accu_FIR_q1);
-
-    mul_16s_10s_25_1_1_U6 : component FIR_HLS_mul_16s_10s_25_1_1
-    generic map (
-        ID => 1,
-        NUM_STAGE => 1,
-        din0_WIDTH => 16,
-        din1_WIDTH => 10,
-        dout_WIDTH => 25)
-    port map (
-        din0 => x_n_reg_104,
-        din1 => mul_ln18_fu_77_p1,
-        dout => mul_ln18_fu_77_p2);
+        ap_start => p_0_FIR_filter_fu_827_ap_start,
+        ap_done => p_0_FIR_filter_fu_827_ap_done,
+        ap_idle => p_0_FIR_filter_fu_827_ap_idle,
+        ap_ready => p_0_FIR_filter_fu_827_ap_ready,
+        x_n => input_r_TDATA_int_regslice,
+        ap_return => p_0_FIR_filter_fu_827_ap_return);
 
     regslice_both_input_r_U : component FIR_HLS_regslice_both
     generic map (
@@ -229,7 +128,7 @@ begin
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        data_in => output_r_TDATA_int_regslice,
+        data_in => p_0_FIR_filter_fu_827_ap_return,
         vld_in => output_r_TVALID_int_regslice,
         ack_in => output_r_TREADY_int_regslice,
         data_out => output_r_TDATA,
@@ -253,100 +152,31 @@ begin
     end process;
 
 
-    grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start_reg_assign_proc : process(ap_clk)
-    begin
-        if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst_n_inv = '1') then
-                grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start_reg <= ap_const_logic_0;
-            else
-                if (((ap_const_logic_1 = ap_CS_fsm_state3) and (output_r_TREADY_int_regslice = ap_const_logic_1))) then 
-                    grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_ready = ap_const_logic_1)) then 
-                    grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start_reg <= ap_const_logic_0;
-                end if; 
-            end if;
-        end if;
-    end process;
-
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                x_n_reg_104 <= input_r_TDATA_int_regslice;
-            end if;
-        end if;
-    end process;
-
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_CS_fsm_state3, grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_done, ap_CS_fsm_state4, regslice_both_output_r_U_apdone_blk, input_r_TVALID_int_regslice, output_r_TREADY_int_regslice)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_block_state1, ap_block_state2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (input_r_TVALID_int_regslice = ap_const_logic_1))) then
+                if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state2) and (output_r_TREADY_int_regslice = ap_const_logic_1))) then
-                    ap_NS_fsm <= ap_ST_fsm_state3;
+                if (((ap_const_boolean_0 = ap_block_state2) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                    ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 end if;
-            when ap_ST_fsm_state3 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state3) and (output_r_TREADY_int_regslice = ap_const_logic_1))) then
-                    ap_NS_fsm <= ap_ST_fsm_state4;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state3;
-                end if;
-            when ap_ST_fsm_state4 => 
-                if ((not(((grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_done = ap_const_logic_0) or (regslice_both_output_r_U_apdone_blk = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
-                    ap_NS_fsm <= ap_ST_fsm_state1;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state4;
-                end if;
             when others =>  
-                ap_NS_fsm <= "XXXX";
+                ap_NS_fsm <= "XX";
         end case;
     end process;
-
-    H_accu_FIR_address0_assign_proc : process(grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address0, ap_CS_fsm_state4)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            H_accu_FIR_address0 <= grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_address0;
-        else 
-            H_accu_FIR_address0 <= ap_const_lv9_0;
-        end if; 
-    end process;
-
-
-    H_accu_FIR_ce0_assign_proc : process(grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce0, ap_CS_fsm_state4, H_accu_FIR_ce0_local)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            H_accu_FIR_ce0 <= grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_H_accu_FIR_ce0;
-        else 
-            H_accu_FIR_ce0 <= H_accu_FIR_ce0_local;
-        end if; 
-    end process;
-
-
-    H_accu_FIR_ce0_local_assign_proc : process(ap_CS_fsm_state1, input_r_TVALID_int_regslice)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state1) and (input_r_TVALID_int_regslice = ap_const_logic_1))) then 
-            H_accu_FIR_ce0_local <= ap_const_logic_1;
-        else 
-            H_accu_FIR_ce0_local <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    add_ln18_fu_87_p2 <= std_logic_vector(signed(sext_ln18_1_fu_83_p1) + signed(H_accu_FIR_q0));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
-    ap_CS_fsm_state3 <= ap_CS_fsm(2);
-    ap_CS_fsm_state4 <= ap_CS_fsm(3);
 
-    ap_ST_fsm_state1_blk_assign_proc : process(input_r_TVALID_int_regslice)
+    ap_ST_fsm_state1_blk_assign_proc : process(ap_block_state1)
     begin
-        if ((input_r_TVALID_int_regslice = ap_const_logic_0)) then 
+        if ((ap_const_boolean_1 = ap_block_state1)) then 
             ap_ST_fsm_state1_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state1_blk <= ap_const_logic_0;
@@ -354,9 +184,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state2_blk_assign_proc : process(output_r_TREADY_int_regslice)
+    ap_ST_fsm_state2_blk_assign_proc : process(ap_block_state2)
     begin
-        if ((output_r_TREADY_int_regslice = ap_const_logic_0)) then 
+        if ((ap_const_boolean_1 = ap_block_state2)) then 
             ap_ST_fsm_state2_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state2_blk <= ap_const_logic_0;
@@ -364,23 +194,21 @@ begin
     end process;
 
 
-    ap_ST_fsm_state3_blk_assign_proc : process(output_r_TREADY_int_regslice)
+    ap_block_state1_assign_proc : process(input_r_TVALID_int_regslice, output_r_TREADY_int_regslice)
     begin
-        if ((output_r_TREADY_int_regslice = ap_const_logic_0)) then 
-            ap_ST_fsm_state3_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state3_blk <= ap_const_logic_0;
-        end if; 
+                ap_block_state1 <= ((output_r_TREADY_int_regslice = ap_const_logic_0) or (input_r_TVALID_int_regslice = ap_const_logic_0));
     end process;
 
 
-    ap_ST_fsm_state4_blk_assign_proc : process(grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_done, regslice_both_output_r_U_apdone_blk)
+    ap_block_state1_ignore_call7_assign_proc : process(input_r_TVALID_int_regslice, output_r_TREADY_int_regslice)
     begin
-        if (((grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_done = ap_const_logic_0) or (regslice_both_output_r_U_apdone_blk = ap_const_logic_1))) then 
-            ap_ST_fsm_state4_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state4_blk <= ap_const_logic_0;
-        end if; 
+                ap_block_state1_ignore_call7 <= ((output_r_TREADY_int_regslice = ap_const_logic_0) or (input_r_TVALID_int_regslice = ap_const_logic_0));
+    end process;
+
+
+    ap_block_state2_assign_proc : process(regslice_both_output_r_U_apdone_blk, output_r_TREADY_int_regslice)
+    begin
+                ap_block_state2 <= ((output_r_TREADY_int_regslice = ap_const_logic_0) or (regslice_both_output_r_U_apdone_blk = ap_const_logic_1));
     end process;
 
 
@@ -389,7 +217,6 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start <= grp_FIR_HLS_Pipeline_VITIS_LOOP_20_1_fu_65_ap_start_reg;
 
     input_r_TDATA_blk_n_assign_proc : process(ap_CS_fsm_state1, input_r_TVALID_int_regslice)
     begin
@@ -402,38 +229,44 @@ begin
 
     input_r_TREADY <= regslice_both_input_r_U_ack_in;
 
-    input_r_TREADY_int_regslice_assign_proc : process(ap_CS_fsm_state1, input_r_TVALID_int_regslice)
+    input_r_TREADY_int_regslice_assign_proc : process(ap_CS_fsm_state1, ap_block_state1)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state1) and (input_r_TVALID_int_regslice = ap_const_logic_1))) then 
+        if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             input_r_TREADY_int_regslice <= ap_const_logic_1;
         else 
             input_r_TREADY_int_regslice <= ap_const_logic_0;
         end if; 
     end process;
 
-    mul_ln18_fu_77_p1 <= ap_const_lv25_1FFFEEA(10 - 1 downto 0);
 
-    output_r_TDATA_blk_n_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state3, output_r_TREADY_int_regslice)
+    output_r_TDATA_blk_n_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state2, output_r_TREADY_int_regslice)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state3) or (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             output_r_TDATA_blk_n <= output_r_TREADY_int_regslice;
         else 
             output_r_TDATA_blk_n <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_r_TDATA_int_regslice <= add_ln18_fu_87_p2(31 downto 16);
     output_r_TVALID <= regslice_both_output_r_U_vld_out;
 
-    output_r_TVALID_int_regslice_assign_proc : process(ap_CS_fsm_state2, output_r_TREADY_int_regslice)
+    output_r_TVALID_int_regslice_assign_proc : process(ap_CS_fsm_state1, ap_block_state1)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state2) and (output_r_TREADY_int_regslice = ap_const_logic_1))) then 
+        if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             output_r_TVALID_int_regslice <= ap_const_logic_1;
         else 
             output_r_TVALID_int_regslice <= ap_const_logic_0;
         end if; 
     end process;
 
-        sext_ln18_1_fu_83_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(mul_ln18_fu_77_p2),32));
+
+    p_0_FIR_filter_fu_827_ap_start_assign_proc : process(ap_CS_fsm_state1, ap_block_state1_ignore_call7)
+    begin
+        if (((ap_const_boolean_0 = ap_block_state1_ignore_call7) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+            p_0_FIR_filter_fu_827_ap_start <= ap_const_logic_1;
+        else 
+            p_0_FIR_filter_fu_827_ap_start <= ap_const_logic_0;
+        end if; 
+    end process;
 
 end behav;

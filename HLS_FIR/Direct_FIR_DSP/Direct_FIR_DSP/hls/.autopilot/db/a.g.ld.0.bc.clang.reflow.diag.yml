@@ -54,9 +54,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_28_1
+  - LoopName:        VITIS_LOOP_29_1
   - String:          '> at '
-  - LoopLoc:         'FIR_HLS.cpp:28:19'
+  - LoopLoc:         'FIR_HLS.cpp:29:19'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -64,8 +64,8 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_32_2
+  - LoopName:        VITIS_LOOP_33_2
   - String:          '> at '
-  - LoopLoc:         'FIR_HLS.cpp:32:19'
+  - LoopLoc:         'FIR_HLS.cpp:33:19'
   - String:          ' '
 ...

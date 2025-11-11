@@ -1,6 +1,5 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../FIR_HLS_TB.cpp in debug mode
    Compiling ../../../../FIR_HLS.cpp in debug mode
    Generating csim.exe
 INFO: Reading ../../../../../../Matlab/TS_HLS_normal.dat

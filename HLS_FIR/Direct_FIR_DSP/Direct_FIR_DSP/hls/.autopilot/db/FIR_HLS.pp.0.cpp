@@ -385,6 +385,7 @@ __attribute__((sdx_kernel("FIR_HLS", 0))) void FIR_HLS(hls::stream<short> &input
 
 
 short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
+
  short i, y;
  int FIR_accu32=0;
 
@@ -392,11 +393,11 @@ short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, 
  FIR_delays[N_delays-1] = x_n;
 
  FIR_accu32 = 0;
- VITIS_LOOP_28_1: for(i=0; i < N_delays; i++)
+ VITIS_LOOP_29_1: for(i=0; i < N_delays; i++)
   FIR_accu32 += FIR_delays[N_delays-1-i] * FIR_coe[i];
 
 
- VITIS_LOOP_32_2: for(i=1; i < N_delays; i++)
+ VITIS_LOOP_33_2: for(i=1; i < N_delays; i++)
   FIR_delays[i-1] = FIR_delays[i];
 
 

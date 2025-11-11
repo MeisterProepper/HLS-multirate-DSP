@@ -21,9 +21,9 @@ Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/top
 INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/hls_config.cfg(1)
 INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/hls_config.cfg(5)
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 4.781 seconds; current allocated memory: 273.617 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 4 seconds. CPU system time: 2 seconds. Elapsed time: 5.21 seconds; current allocated memory: 272.898 MB.
 INFO: [HLS 200-10] Analyzing design file 'FIR_HLS.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.793 seconds; current allocated memory: 276.285 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.519 seconds; current allocated memory: 275.770 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 200-1995] There were 896 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/Direct_FIR_HLS/hls/syn/report/csynth_design_size.rpt
 INFO: [HLS 200-1995] There were 13,743 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/Direct_FIR_HLS/hls/syn/report/csynth_design_size.rpt
@@ -41,20 +41,20 @@ INFO: [HLS 200-1995] There were 2,352 instructions in the design after the 'Perf
 INFO: [HLS 200-1995] There were 2,352 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/Direct_FIR_HLS/hls/syn/report/csynth_design_size.rpt
 INFO: [HLS 200-1995] There were 2,354 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/Direct_FIR_HLS/hls/syn/report/csynth_design_size.rpt
 INFO: [HLS 200-1995] There were 2,360 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS/Direct_FIR_HLS/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_53_1' is marked as complete unroll implied by the pipeline pragma (FIR_HLS.cpp:53:19)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_1' (FIR_HLS.cpp:53:19) in function 'FIR_filter' completely with a factor of 392 (FIR_HLS.cpp:47:0)
-WARNING: [HLS 214-167] The program may have out of bound array access on variable '_ZL12H_filter_FIR' (FIR_HLS.cpp:54:17)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.003 seconds; current allocated memory: 278.289 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 278.289 MB.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_21_1' is marked as complete unroll implied by the pipeline pragma (FIR_HLS.cpp:21:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_21_1' (FIR_HLS.cpp:21:19) in function 'FIR_filter' completely with a factor of 392 (FIR_HLS.cpp:15:0)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable '_ZL12H_filter_FIR' (FIR_HLS.cpp:22:17)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.786 seconds; current allocated memory: 277.758 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 277.758 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.118 seconds; current allocated memory: 285.223 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.928 seconds; current allocated memory: 284.539 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-62] warning: out of bound array access on variable 'H_filter_FIR'.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.474 seconds; current allocated memory: 287.883 MB.
-INFO: [XFORM 203-11] Balancing expressions in function 'FIR_filter' (FIR_HLS.cpp:47:31)...204 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.665 seconds; current allocated memory: 308.445 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 7.686 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.277 seconds; current allocated memory: 287.121 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'FIR_filter' (FIR_HLS.cpp:15:31)...204 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 3.781 seconds; current allocated memory: 308.836 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.47 seconds; current allocated memory: 418.426 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'FIR_HLS' ...
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -62,62 +62,62 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'FIR_filter' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_111) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_109) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_103) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_102) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_98) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_97) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_94) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_91) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_90) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_89) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_83) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_82) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_80) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_79) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_76) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_75) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_74) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_73) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_69) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_68) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_66) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_65) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_62) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_61) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_60) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_59) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_53) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_52) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_50) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_49) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_46) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_45) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_44) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_43) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_39) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_38) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_36) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_35) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_32) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_31) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_29) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_24) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_23) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_21) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_20) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_17) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_16) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_14) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_10) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_9) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_7) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_6) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_3) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_2) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58_1) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln26) to 3 in order to utilize available DSP registers.
 INFO: [HLS 200-486] Changing DSP latency (root=tmp429) to 3 in order to utilize available DSP registers.
 INFO: [HLS 200-486] Changing DSP latency (root=tmp421) to 3 in order to utilize available DSP registers.
 INFO: [HLS 200-486] Changing DSP latency (root=tmp413) to 3 in order to utilize available DSP registers.
@@ -142,77 +142,77 @@ INFO: [HLS 200-486] Changing DSP latency (root=tmp302) to 3 in order to utilize 
 INFO: [HLS 200-486] Changing DSP latency (root=tmp180) to 3 in order to utilize available DSP registers.
 INFO: [HLS 200-486] Changing DSP latency (root=tmp162) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-61] Pipelining function 'FIR_filter'.
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_389', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_389', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_119', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_119', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_106', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_106', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_58', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_58', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_76', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_76', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('267_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_124', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('267_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_124', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_151', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_151', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_164', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_164', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_168', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_168', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_172', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_172', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
 INFO: [SCHED 204-61] Unable to satisfy pipeline directive for function 'FIR_filter': unable to pipeline.
 INFO: [SCHED 204-61] Pipelining function 'FIR_filter'.
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_389', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_389', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_119', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_119', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_106', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_106', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_58', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_58', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', FIR_HLS.cpp:54) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', FIR_HLS.cpp:22) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_76', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_76', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('267_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_124', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('267_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_124', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_151', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_151', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_164', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_164', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_168', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_168', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln54', FIR_HLS.cpp:54) of variable 'H_filter_FIR_load_172', FIR_HLS.cpp:54 on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+WARNING: [HLS 200-885] The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln22', FIR_HLS.cpp:22) of variable 'H_filter_FIR_load_172', FIR_HLS.cpp:22 on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
 INFO: [SCHED 204-61] Unable to satisfy pipeline directive for function 'FIR_filter': unable to pipeline.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 225 seconds. CPU system time: 1 seconds. Elapsed time: 230.668 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 216 seconds. CPU system time: 1 seconds. Elapsed time: 219.665 seconds; current allocated memory: 418.426 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.091 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.047 seconds; current allocated memory: 418.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'FIR_HLS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.714 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.685 seconds; current allocated memory: 418.426 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 418.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'FIR_filter' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -279,7 +279,7 @@ INFO: [RTGEN 206-100] Generating core module 'mul_18s_10ns_27_1_1': 1 instance(s
 INFO: [RTGEN 206-100] Generating core module 'mul_18s_7ns_25_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_filter'.
 INFO: [RTMG 210-278] Implementing memory 'FIR_HLS_FIR_filter_H_filter_FIR_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 8.014 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 6.736 seconds; current allocated memory: 418.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'FIR_HLS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -288,11 +288,11 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'FIR_HLS/input_r' to 'axis'
 INFO: [RTGEN 206-500] Setting interface mode on port 'FIR_HLS/output_r' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'FIR_HLS' to 'ap_ctrl_none'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_HLS'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 4.156 seconds; current allocated memory: 418.348 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 4.354 seconds; current allocated memory: 418.348 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.39 seconds; current allocated memory: 418.348 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 3 seconds. Elapsed time: 4.849 seconds; current allocated memory: 418.426 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.329 seconds; current allocated memory: 418.426 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.045 seconds; current allocated memory: 418.426 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for FIR_HLS.
 INFO: [VLOG 209-307] Generating Verilog RTL for FIR_HLS.
 INFO: [HLS 200-789] **** Estimated Fmax: 139.79 MHz
-INFO: [HLS 200-112] Total CPU user time: 254 seconds. Total CPU system time: 7 seconds. Total elapsed time: 293.367 seconds; peak allocated memory: 418.348 MB.
-INFO: [v++ 60-791] Total elapsed time: 0h 4m 59s
+INFO: [HLS 200-112] Total CPU user time: 239 seconds. Total CPU system time: 7 seconds. Total elapsed time: 274.647 seconds; peak allocated memory: 418.426 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 4m 39s

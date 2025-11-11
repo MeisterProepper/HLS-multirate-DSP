@@ -1,3 +1,3 @@
 relativeroot=C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS
-original_argv=-c --mode hls --config C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\hls_config.cfg --work_dir Direct_FIR_HLS 
+original_argv=--mode hls --csim --config C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\hls_config.cfg --work_dir Direct_FIR_HLS 
 

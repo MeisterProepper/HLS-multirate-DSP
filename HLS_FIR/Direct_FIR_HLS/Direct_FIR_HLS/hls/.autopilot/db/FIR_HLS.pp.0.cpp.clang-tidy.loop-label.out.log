@@ -28,13 +28,8 @@ C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR
         ^~~
         VITIS_LOOP_71_1: 
 C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8363:9: note: FIX-IT applied suggested code changes
-C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8509:2: warning: Added loop label VITIS_LOOP_41_1:   [xilinx-label-all-loops]
- for(int i=1; i < N_delays; i++)
- ^~~
- VITIS_LOOP_41_1: 
-C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8509:2: note: FIX-IT applied suggested code changes
-C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8521:2: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8506:2: warning: Added loop label VITIS_LOOP_21_1:   [xilinx-label-all-loops]
  for(int i= N_delays-1; i >= 0; i--){
  ^~~
- VITIS_LOOP_53_1: 
-C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8521:2: note: FIX-IT applied suggested code changes
+ VITIS_LOOP_21_1: 
+C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\Direct_FIR_HLS\hls\.autopilot\db\FIR_HLS.pp.0.cpp:8506:2: note: FIX-IT applied suggested code changes

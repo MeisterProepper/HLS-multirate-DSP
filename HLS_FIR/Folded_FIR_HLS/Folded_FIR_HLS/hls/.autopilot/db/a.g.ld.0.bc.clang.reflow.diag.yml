@@ -1,0 +1,87 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/Folded_FIR_HLS/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: ./../../Matlab/FIR_normal_HLS.h, Line: 19, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+    DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_FIR/Folded_FIR_HLS/Folded_FIR_HLS/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 11, Column: 15 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 11, Column: 15 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_FIR_HLS_ir
+Args:            
+  - Callee:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_FIR_HLS_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'FIR_filter(ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          '> at '
+  - LoopLoc:         'FIR_HLS.cpp:26:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_30_2
+  - String:          '> at '
+  - LoopLoc:         'FIR_HLS.cpp:30:22'
+  - String:          ' '
+...

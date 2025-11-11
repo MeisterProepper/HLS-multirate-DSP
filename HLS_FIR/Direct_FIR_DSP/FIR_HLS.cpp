@@ -18,6 +18,7 @@ void FIR_HLS(hls::stream<short> &input, hls::stream<short> &output){
 
 
 short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift){
+    //#pragma HLS PIPELINE
 	short i, y;
 	int FIR_accu32=0;
 

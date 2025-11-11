@@ -8476,13 +8476,9 @@ const coef_data_t b_FIR[392]={
 
 typedef ap_fixed<16,1> fir_data_t;
 
-static ap_shift_reg<fir_data_t,392> fir_shiftreg;
-
 __attribute__((sdx_kernel("FIR_HLS", 0))) void FIR_HLS(hls::stream<fir_data_t> &input, hls::stream<fir_data_t> &output);
 
 fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n);
-
-fir_data_t FIR_filtertest(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n);
 # 2 "FIR_HLS.cpp" 2
 
 
@@ -8499,18 +8495,7 @@ __attribute__((sdx_kernel("FIR_HLS", 0))) void FIR_HLS(hls::stream<fir_data_t> &
 
  output.write(FIR_filter(H_filter_FIR, b_FIR, 392,input.read()));
 }
-# 35 "FIR_HLS.cpp"
-fir_data_t FIR_filtertest(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
-#pragma HLS PIPELINE
- fir_data_t y;
 
-    y = FIR_delays[0] + x_n * FIR_coe[0];
-
- VITIS_LOOP_41_1: for(int i=1; i < N_delays; i++)
-  FIR_delays[i-1] = FIR_delays[i] + FIR_coe[i] * x_n;
-
- return y;
-}
 
 fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
 #pragma HLS PIPELINE
@@ -8518,7 +8503,7 @@ fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], in
 
  ap_fixed<32,1> FIR_accu32=0;
 
- VITIS_LOOP_53_1: for(int i= N_delays-1; i >= 0; i--){
+ VITIS_LOOP_21_1: for(int i= N_delays-1; i >= 0; i--){
   FIR_delays[i] = FIR_delays[i-1];
   FIR_accu32 += FIR_delays[i] * FIR_coe[i];
   }

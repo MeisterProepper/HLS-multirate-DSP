@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'FIR_HLS'
 ================================================================
 + General Information: 
-    * Date:           Mon Nov 10 22:05:09 2025
+    * Date:           Mon Nov 10 23:58:41 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        Direct_FIR_DSP
     * Solution:       hls (Vivado IP Flow Target)
@@ -20,10 +20,10 @@
     |               & Loops               | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF    |    LUT    | URAM|
     +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
     |+ FIR_HLS                            |     -|  4.83|      794|  7.940e+03|         -|      795|     -|        no|  2 (~0%)|  1 (~0%)|  174 (~0%)|  330 (~0%)|    -|
-    | + FIR_HLS_Pipeline_VITIS_LOOP_28_1  |     -|  4.86|      397|  3.970e+03|         -|      397|     -|        no|  1 (~0%)|  1 (~0%)|  115 (~0%)|  136 (~0%)|    -|
-    |  o VITIS_LOOP_28_1                  |     -|  7.30|      395|  3.950e+03|         5|        1|   392|       yes|        -|        -|          -|          -|    -|
-    | + FIR_HLS_Pipeline_VITIS_LOOP_32_2  |     -|  4.83|      393|  3.930e+03|         -|      393|     -|        no|        -|        -|   21 (~0%)|   86 (~0%)|    -|
-    |  o VITIS_LOOP_32_2                  |     -|  7.30|      391|  3.910e+03|         2|        1|   391|       yes|        -|        -|          -|          -|    -|
+    | + FIR_HLS_Pipeline_VITIS_LOOP_29_1  |     -|  4.86|      397|  3.970e+03|         -|      397|     -|        no|  1 (~0%)|  1 (~0%)|  115 (~0%)|  136 (~0%)|    -|
+    |  o VITIS_LOOP_29_1                  |     -|  7.30|      395|  3.950e+03|         5|        1|   392|       yes|        -|        -|          -|          -|    -|
+    | + FIR_HLS_Pipeline_VITIS_LOOP_33_2  |     -|  4.83|      393|  3.930e+03|         -|      393|     -|        no|        -|        -|   21 (~0%)|   86 (~0%)|    -|
+    |  o VITIS_LOOP_33_2                  |     -|  7.30|      391|  3.910e+03|         2|        1|   391|       yes|        -|        -|          -|          -|    -|
     +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
 
 
@@ -75,17 +75,17 @@
 | Name                                | DSP | Pragma | Variable     | Op    | Impl      | Latency |
 +-------------------------------------+-----+--------+--------------+-------+-----------+---------+
 | + FIR_HLS                           | 1   |        |              |       |           |         |
-|  + FIR_HLS_Pipeline_VITIS_LOOP_28_1 | 1   |        |              |       |           |         |
-|    icmp_ln28_fu_90_p2               |     |        | icmp_ln28    | seteq | auto      | 0       |
-|    add_ln28_fu_96_p2                |     |        | add_ln28     | add   | fabric    | 0       |
-|    sub_ln29_fu_107_p2               |     |        | sub_ln29     | sub   | fabric    | 0       |
-|    mac_muladd_16s_14s_32s_32_4_1_U1 | 1   |        | mul_ln29     | mul   | dsp_slice | 3       |
-|    mac_muladd_16s_14s_32s_32_4_1_U1 | 1   |        | sext_ln29_2  | sext  | dsp_slice | 3       |
+|  + FIR_HLS_Pipeline_VITIS_LOOP_29_1 | 1   |        |              |       |           |         |
+|    icmp_ln29_fu_90_p2               |     |        | icmp_ln29    | seteq | auto      | 0       |
+|    add_ln29_fu_96_p2                |     |        | add_ln29     | add   | fabric    | 0       |
+|    sub_ln30_fu_107_p2               |     |        | sub_ln30     | sub   | fabric    | 0       |
+|    mac_muladd_16s_14s_32s_32_4_1_U1 | 1   |        | mul_ln30     | mul   | dsp_slice | 3       |
+|    mac_muladd_16s_14s_32s_32_4_1_U1 | 1   |        | sext_ln30_2  | sext  | dsp_slice | 3       |
 |    mac_muladd_16s_14s_32s_32_4_1_U1 | 1   |        | FIR_accu32_3 | add   | dsp_slice | 3       |
-|  + FIR_HLS_Pipeline_VITIS_LOOP_32_2 | 0   |        |              |       |           |         |
-|    icmp_ln32_fu_66_p2               |     |        | icmp_ln32    | seteq | auto      | 0       |
-|    add_ln33_fu_88_p2                |     |        | add_ln33     | add   | fabric    | 0       |
-|    add_ln32_fu_77_p2                |     |        | add_ln32     | add   | fabric    | 0       |
+|  + FIR_HLS_Pipeline_VITIS_LOOP_33_2 | 0   |        |              |       |           |         |
+|    icmp_ln33_fu_66_p2               |     |        | icmp_ln33    | seteq | auto      | 0       |
+|    add_ln34_fu_88_p2                |     |        | add_ln34     | add   | fabric    | 0       |
+|    add_ln33_fu_77_p2                |     |        | add_ln33     | add   | fabric    | 0       |
 +-------------------------------------+-----+--------+--------------+-------+-----------+---------+
 
 
@@ -98,7 +98,7 @@
 +-------------------------------------+--------+------+------+------+--------+--------------+------+---------+------------------+
 | + FIR_HLS                           |        |      | 2    | 0    |        |              |      |         |                  |
 |   H_filter_FIR_U                    | ram_2p |      | 1    |      |        | H_filter_FIR | auto | 1       | 16, 392, 1       |
-|  + FIR_HLS_Pipeline_VITIS_LOOP_28_1 |        |      | 1    | 0    |        |              |      |         |                  |
+|  + FIR_HLS_Pipeline_VITIS_LOOP_29_1 |        |      | 1    | 0    |        |              |      |         |                  |
 |    b_FIR_U                          | rom_1p |      | 1    |      |        | b_FIR        | auto | 1       | 14, 392, 1       |
 +-------------------------------------+--------+------+------+------+--------+--------------+------+---------+------------------+
 

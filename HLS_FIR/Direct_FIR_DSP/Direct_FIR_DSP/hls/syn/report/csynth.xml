@@ -151,18 +151,18 @@
             <ModuleName>FIR_HLS</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_FIR_HLS_Pipeline_VITIS_LOOP_28_1_fu_72</InstName>
-                    <ModuleName>FIR_HLS_Pipeline_VITIS_LOOP_28_1</ModuleName>
+                    <InstName>grp_FIR_HLS_Pipeline_VITIS_LOOP_29_1_fu_72</InstName>
+                    <ModuleName>FIR_HLS_Pipeline_VITIS_LOOP_29_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>72</ID>
-                    <BindInstances>icmp_ln28_fu_90_p2 add_ln28_fu_96_p2 sub_ln29_fu_107_p2 mac_muladd_16s_14s_32s_32_4_1_U1 mac_muladd_16s_14s_32s_32_4_1_U1 mac_muladd_16s_14s_32s_32_4_1_U1 b_FIR_U</BindInstances>
+                    <BindInstances>icmp_ln29_fu_90_p2 add_ln29_fu_96_p2 sub_ln30_fu_107_p2 mac_muladd_16s_14s_32s_32_4_1_U1 mac_muladd_16s_14s_32s_32_4_1_U1 mac_muladd_16s_14s_32s_32_4_1_U1 b_FIR_U</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_FIR_HLS_Pipeline_VITIS_LOOP_32_2_fu_81</InstName>
-                    <ModuleName>FIR_HLS_Pipeline_VITIS_LOOP_32_2</ModuleName>
+                    <InstName>grp_FIR_HLS_Pipeline_VITIS_LOOP_33_2_fu_81</InstName>
+                    <ModuleName>FIR_HLS_Pipeline_VITIS_LOOP_33_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>81</ID>
-                    <BindInstances>icmp_ln32_fu_66_p2 add_ln33_fu_88_p2 add_ln32_fu_77_p2</BindInstances>
+                    <BindInstances>icmp_ln33_fu_66_p2 add_ln34_fu_88_p2 add_ln33_fu_77_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>H_filter_FIR_U</BindInstances>
@@ -170,9 +170,9 @@
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>FIR_HLS_Pipeline_VITIS_LOOP_28_1</Name>
+            <Name>FIR_HLS_Pipeline_VITIS_LOOP_29_1</Name>
             <Loops>
-                <VITIS_LOOP_28_1/>
+                <VITIS_LOOP_29_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -191,8 +191,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_28_1>
-                        <Name>VITIS_LOOP_28_1</Name>
+                    <VITIS_LOOP_29_1>
+                        <Name>VITIS_LOOP_29_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>392</TripCount>
                         <Latency>395</Latency>
@@ -201,19 +201,19 @@
                         <PipelineDepth>5</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_28_1>
+                    </VITIS_LOOP_29_1>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>FIR_HLS.cpp:22~FIR_HLS.cpp:13</SourceLocation>
+                    <SourceLocation>FIR_HLS.cpp:23~FIR_HLS.cpp:13</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_28_1>
-                            <Name>VITIS_LOOP_28_1</Name>
+                        <VITIS_LOOP_29_1>
+                            <Name>VITIS_LOOP_29_1</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>FIR_HLS.cpp:28~FIR_HLS.cpp:13</SourceLocation>
-                        </VITIS_LOOP_28_1>
+                            <SourceLocation>FIR_HLS.cpp:29~FIR_HLS.cpp:13</SourceLocation>
+                        </VITIS_LOOP_29_1>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -237,19 +237,19 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_28_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln28_fu_90_p2" SOURCE="FIR_HLS.cpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln28" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_28_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln28_fu_96_p2" SOURCE="FIR_HLS.cpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln28" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_28_1" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln29_fu_107_p2" SOURCE="FIR_HLS.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln29" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_28_1" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_14s_32s_32_4_1_U1" SOURCE="FIR_HLS.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln29" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_28_1" OPTYPE="sext" PRAGMA="" RTLNAME="mac_muladd_16s_14s_32s_32_4_1_U1" SOURCE="FIR_HLS.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="sext_ln29_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_28_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_14s_32s_32_4_1_U1" SOURCE="FIR_HLS.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="FIR_accu32_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_29_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln29_fu_90_p2" SOURCE="FIR_HLS.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln29" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_29_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln29_fu_96_p2" SOURCE="FIR_HLS.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_29_1" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln30_fu_107_p2" SOURCE="FIR_HLS.cpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_29_1" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_14s_32s_32_4_1_U1" SOURCE="FIR_HLS.cpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_29_1" OPTYPE="sext" PRAGMA="" RTLNAME="mac_muladd_16s_14s_32s_32_4_1_U1" SOURCE="FIR_HLS.cpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="sext_ln30_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_29_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_14s_32s_32_4_1_U1" SOURCE="FIR_HLS.cpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="FIR_accu32_3" VISIBLE="true"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="b_FIR_U" SOURCE="" STORAGESIZE="14 392 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="b_FIR" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>FIR_HLS_Pipeline_VITIS_LOOP_32_2</Name>
+            <Name>FIR_HLS_Pipeline_VITIS_LOOP_33_2</Name>
             <Loops>
-                <VITIS_LOOP_32_2/>
+                <VITIS_LOOP_33_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -268,8 +268,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_32_2>
-                        <Name>VITIS_LOOP_32_2</Name>
+                    <VITIS_LOOP_33_2>
+                        <Name>VITIS_LOOP_33_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>391</TripCount>
                         <Latency>391</Latency>
@@ -278,19 +278,19 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_32_2>
+                    </VITIS_LOOP_33_2>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>FIR_HLS.cpp:21~FIR_HLS.cpp:13</SourceLocation>
+                    <SourceLocation>FIR_HLS.cpp:22~FIR_HLS.cpp:13</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_32_2>
-                            <Name>VITIS_LOOP_32_2</Name>
+                        <VITIS_LOOP_33_2>
+                            <Name>VITIS_LOOP_33_2</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>FIR_HLS.cpp:33~FIR_HLS.cpp:13</SourceLocation>
-                        </VITIS_LOOP_32_2>
+                            <SourceLocation>FIR_HLS.cpp:34~FIR_HLS.cpp:13</SourceLocation>
+                        </VITIS_LOOP_33_2>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -314,9 +314,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln32_fu_66_p2" SOURCE="FIR_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln32" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_88_p2" SOURCE="FIR_HLS.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_77_p2" SOURCE="FIR_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_33_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln33_fu_66_p2" SOURCE="FIR_HLS.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln33" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_fu_88_p2" SOURCE="FIR_HLS.cpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_77_p2" SOURCE="FIR_HLS.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>

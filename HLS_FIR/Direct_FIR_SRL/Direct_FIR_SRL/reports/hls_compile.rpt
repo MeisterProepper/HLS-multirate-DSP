@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'FIR_HLS'
 ================================================================
 + General Information: 
-    * Date:           Mon Nov 10 22:49:30 2025
+    * Date:           Tue Nov 11 01:19:44 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        Direct_FIR_SRL
     * Solution:       hls (Vivado IP Flow Target)

@@ -12,7 +12,7 @@ void FIR_HLS(hls::stream<fir_data_t> &input, hls::stream<fir_data_t> &output){
 }
 
 fir_data_t FIR_filter(accu_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
-    //#pragma HLS PIPELINE
+    #pragma HLS PIPELINE
 	fir_data_t y;
 
     y = FIR_delays[0] + x_n * FIR_coe[0];

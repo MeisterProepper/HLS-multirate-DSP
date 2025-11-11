@@ -23,8 +23,23 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:9:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="FIR_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="FIR_HLS.cpp:6:0" msg_body="Inlining function 'FIR_filter(ap_fixed&lt;32, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'FIR_HLS(hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)'">
-        <args Callee="FIR_filter(ap_fixed&lt;32, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File FIR_HLS.cpp Line 14 Column 0" Caller="FIR_HLS(hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File FIR_HLS.cpp Line 6 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FIR_HLS.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIR_filter" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="FIR_HLS.cpp:20:19" msg_body="Loop 'VITIS_LOOP_20_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_20_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="FIR_HLS.cpp:14:0" msg_body="Unrolling loop 'VITIS_LOOP_20_1' (FIR_HLS.cpp:20:19) in function 'FIR_filter' completely with a factor of 391">
+        <args Factor="391" LoopLoc="FIR_HLS.cpp:20:19" LoopName="VITIS_LOOP_20_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="./FIR_HLS.h:9:0" msg_body="array_partition dim=1 type=complete  variable=_ZL10H_accu_FIR 1 FIR_HLS ./FIR_HLS.h:9:0 H_accu_FIR">
+        <args PragmaFunction="FIR_HLS" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZL10H_accu_FIR" PragmaType="array_partition" VarName="H_accu_FIR" varLoc="./FIR_HLS.h:9:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="./FIR_HLS.h:9:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'H_accu_FIR' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="H_accu_FIR" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./FIR_HLS.h:9:0" msg_body="Applying array_partition to '_ZL10H_accu_FIR': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL10H_accu_FIR"/>
     </msg>
 </xilinx:hls_fe_msgs>
 
