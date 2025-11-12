@@ -353,7 +353,7 @@ The overall structure is illustrated below:
 
 | Variant # | Decimator FIR | Kernel FIR    | Interpolator FIR | Latency [ns] | FF  | LUT  | BRAM | DSP |
 |-----------|---------------|---------------|-----------------|--------------|-----|------|------|-----|
-| 1         | Direct        | Direct        | Direct          |              |     |      |      |     |
+| 1         | Direct        | Direct        | Direct          |   450 - 110  |   935  |  1051    |  0    |  10   |
 | 2         | Direct        | Direct        | Transposed      |              |     |      |      |     |
 | 3         | Direct        | Transposed    | Direct          |              |     |      |      |     |
 | 4         | Direct        | Transposed    | Transposed      |              |     |      |      |     |
@@ -362,7 +362,7 @@ The overall structure is illustrated below:
 | 7         | Transposed    | Direct        | Direct          |              |     |      |      |     |
 | 8         | Transposed    | Direct        | Transposed      |              |     |      |      |     |
 | 9         | Transposed    | Transposed    | Direct          |              |     |      |      |     |
-| 10        | Transposed    | Transposed    | Transposed      |              |     |      |      |     |
+| 10        | Transposed    | Transposed    | Transposed      |   310 - 70   |  1353  |  657  |  0  |  11  |
 | 11        | Transposed    | Folded        | Direct          |              |     |      |      |     |
 | 12        | Transposed    | Folded        | Transposed      |              |     |      |      |     |
 
