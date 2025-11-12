@@ -118,6 +118,19 @@ See the table below for a comparison of resource usage and performance.
 
 
 
+#### DSP code of the direct form FIR filter 
+
+```
+code
+```
+
+
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal HLS-DSP code 			|   7910  |  145  |  238  |  1  |  1  |
+|  HLS-DSP code with #pragmas   |  60  |  8042  |  4853  |  0  |  81  |
+
+
 
 
 #### HLS optimized code of the direct form FIR filter 
@@ -275,6 +288,8 @@ transposed folded code
 |---|---|---|---|---|---|---|
 |  Direct FIR DSP |  normal DSP code 			|  7940  |  167  |  134  |  2  |  1  |
 |  Direct FIR DSP |  DSP code with #pragmas   	|  80  |  9259 |  4937 | 0  |  81 |
+|  Direct FIR DSP |  normal HLS-DSP code 			|   7910  |  145  |  238  |  1  |  1  |
+|  Direct FIR DSP |  HLS-DSP code with #pragmas   |  60  |  8042  |  4853  |  0  |  81  |
 |  Direct FIR HLS |  normal HLS code 			|  3980  |  150  |  239  |  1  |  2  |
 |  Direct FIR HLS |  HLS code with #pragmas     |  3260 | 5663  |  9408  |  1 |  81  |
 |  Direct FIR SLR |  normal HLS-SRL code 			|  3970  |  150  |  469 |  0  |  1  |
