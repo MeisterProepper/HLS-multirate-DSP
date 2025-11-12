@@ -1,0 +1,198 @@
+<stg><name>FIR_HLS</name>
+
+
+<trans_list>
+
+<trans id="14" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>regslice</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="400" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:6 %input_r_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r
+
+]]></Node>
+<StgValue><ssdm name="input_r_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="401" bw="16" op_0_bw="16" op_1_bw="16" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32" op_74_bw="32" op_75_bw="32" op_76_bw="32" op_77_bw="32" op_78_bw="32" op_79_bw="32" op_80_bw="32" op_81_bw="32" op_82_bw="32" op_83_bw="32" op_84_bw="32" op_85_bw="32" op_86_bw="32" op_87_bw="32" op_88_bw="32" op_89_bw="32" op_90_bw="32" op_91_bw="32" op_92_bw="32" op_93_bw="32" op_94_bw="32" op_95_bw="32" op_96_bw="32" op_97_bw="32" op_98_bw="32" op_99_bw="32" op_100_bw="32" op_101_bw="32" op_102_bw="32" op_103_bw="32" op_104_bw="32" op_105_bw="32" op_106_bw="32" op_107_bw="32" op_108_bw="32" op_109_bw="32" op_110_bw="32" op_111_bw="32" op_112_bw="32" op_113_bw="32" op_114_bw="32" op_115_bw="32" op_116_bw="32" op_117_bw="32" op_118_bw="32" op_119_bw="32" op_120_bw="32" op_121_bw="32" op_122_bw="32" op_123_bw="32" op_124_bw="32" op_125_bw="32" op_126_bw="32" op_127_bw="32" op_128_bw="32" op_129_bw="32" op_130_bw="32" op_131_bw="32" op_132_bw="32" op_133_bw="32" op_134_bw="32" op_135_bw="32" op_136_bw="32" op_137_bw="32" op_138_bw="32" op_139_bw="32" op_140_bw="32" op_141_bw="32" op_142_bw="32" op_143_bw="32" op_144_bw="32" op_145_bw="32" op_146_bw="32" op_147_bw="32" op_148_bw="32" op_149_bw="32" op_150_bw="32" op_151_bw="32" op_152_bw="32" op_153_bw="32" op_154_bw="32" op_155_bw="32" op_156_bw="32" op_157_bw="32" op_158_bw="32" op_159_bw="32" op_160_bw="32" op_161_bw="32" op_162_bw="32" op_163_bw="32" op_164_bw="32" op_165_bw="32" op_166_bw="32" op_167_bw="32" op_168_bw="32" op_169_bw="32" op_170_bw="32" op_171_bw="32" op_172_bw="32" op_173_bw="32" op_174_bw="32" op_175_bw="32" op_176_bw="32" op_177_bw="32" op_178_bw="32" op_179_bw="32" op_180_bw="32" op_181_bw="32" op_182_bw="32" op_183_bw="32" op_184_bw="32" op_185_bw="32" op_186_bw="32" op_187_bw="32" op_188_bw="32" op_189_bw="32" op_190_bw="32" op_191_bw="32" op_192_bw="32" op_193_bw="32" op_194_bw="32" op_195_bw="32" op_196_bw="32" op_197_bw="32" op_198_bw="32" op_199_bw="32" op_200_bw="32" op_201_bw="32" op_202_bw="32" op_203_bw="32" op_204_bw="32" op_205_bw="32" op_206_bw="32" op_207_bw="32" op_208_bw="32" op_209_bw="32" op_210_bw="32" op_211_bw="32" op_212_bw="32" op_213_bw="32" op_214_bw="32" op_215_bw="32" op_216_bw="32" op_217_bw="32" op_218_bw="32" op_219_bw="32" op_220_bw="32" op_221_bw="32" op_222_bw="32" op_223_bw="32" op_224_bw="32" op_225_bw="32" op_226_bw="32" op_227_bw="32" op_228_bw="32" op_229_bw="32" op_230_bw="32" op_231_bw="32" op_232_bw="32" op_233_bw="32" op_234_bw="32" op_235_bw="32" op_236_bw="32" op_237_bw="32" op_238_bw="32" op_239_bw="32" op_240_bw="32" op_241_bw="32" op_242_bw="32" op_243_bw="32" op_244_bw="32" op_245_bw="32" op_246_bw="32" op_247_bw="32" op_248_bw="32" op_249_bw="32" op_250_bw="32" op_251_bw="32" op_252_bw="32" op_253_bw="32" op_254_bw="32" op_255_bw="32" op_256_bw="32" op_257_bw="32" op_258_bw="32" op_259_bw="32" op_260_bw="32" op_261_bw="32" op_262_bw="32" op_263_bw="32" op_264_bw="32" op_265_bw="32" op_266_bw="32" op_267_bw="32" op_268_bw="32" op_269_bw="32" op_270_bw="32" op_271_bw="32" op_272_bw="32" op_273_bw="32" op_274_bw="32" op_275_bw="32" op_276_bw="32" op_277_bw="32" op_278_bw="32" op_279_bw="32" op_280_bw="32" op_281_bw="32" op_282_bw="32" op_283_bw="32" op_284_bw="32" op_285_bw="32" op_286_bw="32" op_287_bw="32" op_288_bw="32" op_289_bw="32" op_290_bw="32" op_291_bw="32" op_292_bw="32" op_293_bw="32" op_294_bw="32" op_295_bw="32" op_296_bw="32" op_297_bw="32" op_298_bw="32" op_299_bw="32" op_300_bw="32" op_301_bw="32" op_302_bw="32" op_303_bw="32" op_304_bw="32" op_305_bw="32" op_306_bw="32" op_307_bw="32" op_308_bw="32" op_309_bw="32" op_310_bw="32" op_311_bw="32" op_312_bw="32" op_313_bw="32" op_314_bw="32" op_315_bw="32" op_316_bw="32" op_317_bw="32" op_318_bw="32" op_319_bw="32" op_320_bw="32" op_321_bw="32" op_322_bw="32" op_323_bw="32" op_324_bw="32" op_325_bw="32" op_326_bw="32" op_327_bw="32" op_328_bw="32" op_329_bw="32" op_330_bw="32" op_331_bw="32" op_332_bw="32" op_333_bw="32" op_334_bw="32" op_335_bw="32" op_336_bw="32" op_337_bw="32" op_338_bw="32" op_339_bw="32" op_340_bw="32" op_341_bw="32" op_342_bw="32" op_343_bw="32" op_344_bw="32" op_345_bw="32" op_346_bw="32" op_347_bw="32" op_348_bw="32" op_349_bw="32" op_350_bw="32" op_351_bw="32" op_352_bw="32" op_353_bw="32" op_354_bw="32" op_355_bw="32" op_356_bw="32" op_357_bw="32" op_358_bw="32" op_359_bw="32" op_360_bw="32" op_361_bw="32" op_362_bw="32" op_363_bw="32" op_364_bw="32" op_365_bw="32" op_366_bw="32" op_367_bw="32" op_368_bw="32" op_369_bw="32" op_370_bw="32" op_371_bw="32" op_372_bw="32" op_373_bw="32" op_374_bw="32" op_375_bw="32" op_376_bw="32" op_377_bw="32" op_378_bw="32" op_379_bw="32" op_380_bw="32" op_381_bw="32" op_382_bw="31" op_383_bw="30" op_384_bw="29" op_385_bw="28" op_386_bw="28" op_387_bw="27" op_388_bw="27" op_389_bw="26" op_390_bw="26" op_391_bw="25" op_392_bw="26">
+<![CDATA[
+entry:7 %p_0 = call i16 @FIR_filter, i16 %input_r_read, i32 %p_ZL11H_accu_FIR1_0, i32 %p_ZL11H_accu_FIR1_1, i32 %p_ZL11H_accu_FIR1_2, i32 %p_ZL11H_accu_FIR1_3, i32 %p_ZL11H_accu_FIR1_4, i32 %p_ZL11H_accu_FIR1_5, i32 %p_ZL11H_accu_FIR1_6, i32 %p_ZL11H_accu_FIR1_7, i32 %p_ZL11H_accu_FIR1_8, i32 %p_ZL11H_accu_FIR1_9, i32 %p_ZL11H_accu_FIR1_10, i32 %p_ZL11H_accu_FIR1_11, i32 %p_ZL11H_accu_FIR1_12, i32 %p_ZL11H_accu_FIR1_13, i32 %p_ZL11H_accu_FIR1_14, i32 %p_ZL11H_accu_FIR1_15, i32 %p_ZL11H_accu_FIR1_16, i32 %p_ZL11H_accu_FIR1_17, i32 %p_ZL11H_accu_FIR1_18, i32 %p_ZL11H_accu_FIR1_19, i32 %p_ZL11H_accu_FIR1_20, i32 %p_ZL11H_accu_FIR1_21, i32 %p_ZL11H_accu_FIR1_22, i32 %p_ZL11H_accu_FIR1_23, i32 %p_ZL11H_accu_FIR1_24, i32 %p_ZL11H_accu_FIR1_25, i32 %p_ZL11H_accu_FIR1_26, i32 %p_ZL11H_accu_FIR1_27, i32 %p_ZL11H_accu_FIR1_28, i32 %p_ZL11H_accu_FIR1_29, i32 %p_ZL11H_accu_FIR1_30, i32 %p_ZL11H_accu_FIR1_31, i32 %p_ZL11H_accu_FIR1_32, i32 %p_ZL11H_accu_FIR1_33, i32 %p_ZL11H_accu_FIR1_34, i32 %p_ZL11H_accu_FIR1_35, i32 %p_ZL11H_accu_FIR1_36, i32 %p_ZL11H_accu_FIR1_37, i32 %p_ZL11H_accu_FIR1_38, i32 %p_ZL11H_accu_FIR1_39, i32 %p_ZL11H_accu_FIR1_40, i32 %p_ZL11H_accu_FIR1_41, i32 %p_ZL11H_accu_FIR1_42, i32 %p_ZL11H_accu_FIR1_43, i32 %p_ZL11H_accu_FIR1_44, i32 %p_ZL11H_accu_FIR1_45, i32 %p_ZL11H_accu_FIR1_46, i32 %p_ZL11H_accu_FIR1_47, i32 %p_ZL11H_accu_FIR1_48, i32 %p_ZL11H_accu_FIR1_49, i32 %p_ZL11H_accu_FIR1_50, i32 %p_ZL11H_accu_FIR1_51, i32 %p_ZL11H_accu_FIR1_52, i32 %p_ZL11H_accu_FIR1_53, i32 %p_ZL11H_accu_FIR1_54, i32 %p_ZL11H_accu_FIR1_55, i32 %p_ZL11H_accu_FIR1_56, i32 %p_ZL11H_accu_FIR1_57, i32 %p_ZL11H_accu_FIR1_58, i32 %p_ZL11H_accu_FIR1_59, i32 %p_ZL11H_accu_FIR1_60, i32 %p_ZL11H_accu_FIR1_61, i32 %p_ZL11H_accu_FIR1_62, i32 %p_ZL11H_accu_FIR1_63, i32 %p_ZL11H_accu_FIR1_64, i32 %p_ZL11H_accu_FIR1_65, i32 %p_ZL11H_accu_FIR1_66, i32 %p_ZL11H_accu_FIR1_67, i32 %p_ZL11H_accu_FIR1_68, i32 %p_ZL11H_accu_FIR1_69, i32 %p_ZL11H_accu_FIR1_70, i32 %p_ZL11H_accu_FIR1_71, i32 %p_ZL11H_accu_FIR1_72, i32 %p_ZL11H_accu_FIR1_73, i32 %p_ZL11H_accu_FIR1_74, i32 %p_ZL11H_accu_FIR1_75, i32 %p_ZL11H_accu_FIR1_76, i32 %p_ZL11H_accu_FIR1_77, i32 %p_ZL11H_accu_FIR1_78, i32 %p_ZL11H_accu_FIR1_79, i32 %p_ZL11H_accu_FIR1_80, i32 %p_ZL11H_accu_FIR1_81, i32 %p_ZL11H_accu_FIR1_82, i32 %p_ZL11H_accu_FIR1_83, i32 %p_ZL11H_accu_FIR1_84, i32 %p_ZL11H_accu_FIR1_85, i32 %p_ZL11H_accu_FIR1_86, i32 %p_ZL11H_accu_FIR1_87, i32 %p_ZL11H_accu_FIR1_88, i32 %p_ZL11H_accu_FIR1_89, i32 %p_ZL11H_accu_FIR1_90, i32 %p_ZL11H_accu_FIR1_91, i32 %p_ZL11H_accu_FIR1_92, i32 %p_ZL11H_accu_FIR1_93, i32 %p_ZL11H_accu_FIR1_94, i32 %p_ZL11H_accu_FIR1_95, i32 %p_ZL11H_accu_FIR1_96, i32 %p_ZL11H_accu_FIR1_97, i32 %p_ZL11H_accu_FIR1_98, i32 %p_ZL11H_accu_FIR1_99, i32 %p_ZL11H_accu_FIR1_100, i32 %p_ZL11H_accu_FIR1_101, i32 %p_ZL11H_accu_FIR1_102, i32 %p_ZL11H_accu_FIR1_103, i32 %p_ZL11H_accu_FIR1_104, i32 %p_ZL11H_accu_FIR1_105, i32 %p_ZL11H_accu_FIR1_106, i32 %p_ZL11H_accu_FIR1_107, i32 %p_ZL11H_accu_FIR1_108, i32 %p_ZL11H_accu_FIR1_109, i32 %p_ZL11H_accu_FIR1_110, i32 %p_ZL11H_accu_FIR1_111, i32 %p_ZL11H_accu_FIR1_112, i32 %p_ZL11H_accu_FIR1_113, i32 %p_ZL11H_accu_FIR1_114, i32 %p_ZL11H_accu_FIR1_115, i32 %p_ZL11H_accu_FIR1_116, i32 %p_ZL11H_accu_FIR1_117, i32 %p_ZL11H_accu_FIR1_118, i32 %p_ZL11H_accu_FIR1_119, i32 %p_ZL11H_accu_FIR1_120, i32 %p_ZL11H_accu_FIR1_121, i32 %p_ZL11H_accu_FIR1_122, i32 %p_ZL11H_accu_FIR1_123, i32 %p_ZL11H_accu_FIR1_124, i32 %p_ZL11H_accu_FIR1_125, i32 %p_ZL11H_accu_FIR1_126, i32 %p_ZL11H_accu_FIR1_127, i32 %p_ZL11H_accu_FIR1_128, i32 %p_ZL11H_accu_FIR1_129, i32 %p_ZL11H_accu_FIR1_130, i32 %p_ZL11H_accu_FIR1_131, i32 %p_ZL11H_accu_FIR1_132, i32 %p_ZL11H_accu_FIR1_133, i32 %p_ZL11H_accu_FIR1_134, i32 %p_ZL11H_accu_FIR1_135, i32 %p_ZL11H_accu_FIR1_136, i32 %p_ZL11H_accu_FIR1_137, i32 %p_ZL11H_accu_FIR1_138, i32 %p_ZL11H_accu_FIR1_139, i32 %p_ZL11H_accu_FIR1_140, i32 %p_ZL11H_accu_FIR1_141, i32 %p_ZL11H_accu_FIR1_142, i32 %p_ZL11H_accu_FIR1_143, i32 %p_ZL11H_accu_FIR1_144, i32 %p_ZL11H_accu_FIR1_145, i32 %p_ZL11H_accu_FIR1_146, i32 %p_ZL11H_accu_FIR1_147, i32 %p_ZL11H_accu_FIR1_148, i32 %p_ZL11H_accu_FIR1_149, i32 %p_ZL11H_accu_FIR1_150, i32 %p_ZL11H_accu_FIR1_151, i32 %p_ZL11H_accu_FIR1_152, i32 %p_ZL11H_accu_FIR1_153, i32 %p_ZL11H_accu_FIR1_154, i32 %p_ZL11H_accu_FIR1_155, i32 %p_ZL11H_accu_FIR1_156, i32 %p_ZL11H_accu_FIR1_157, i32 %p_ZL11H_accu_FIR1_158, i32 %p_ZL11H_accu_FIR1_159, i32 %p_ZL11H_accu_FIR1_160, i32 %p_ZL11H_accu_FIR1_161, i32 %p_ZL11H_accu_FIR1_162, i32 %p_ZL11H_accu_FIR1_163, i32 %p_ZL11H_accu_FIR1_164, i32 %p_ZL11H_accu_FIR1_165, i32 %p_ZL11H_accu_FIR1_166, i32 %p_ZL11H_accu_FIR1_167, i32 %p_ZL11H_accu_FIR1_168, i32 %p_ZL11H_accu_FIR1_169, i32 %p_ZL11H_accu_FIR1_170, i32 %p_ZL11H_accu_FIR1_171, i32 %p_ZL11H_accu_FIR1_172, i32 %p_ZL11H_accu_FIR1_173, i32 %p_ZL11H_accu_FIR1_174, i32 %p_ZL11H_accu_FIR1_175, i32 %p_ZL11H_accu_FIR1_176, i32 %p_ZL11H_accu_FIR1_177, i32 %p_ZL11H_accu_FIR1_178, i32 %p_ZL11H_accu_FIR1_179, i32 %p_ZL11H_accu_FIR1_180, i32 %p_ZL11H_accu_FIR1_181, i32 %p_ZL11H_accu_FIR1_182, i32 %p_ZL11H_accu_FIR1_183, i32 %p_ZL11H_accu_FIR1_184, i32 %p_ZL11H_accu_FIR1_185, i32 %p_ZL11H_accu_FIR1_186, i32 %p_ZL11H_accu_FIR1_187, i32 %p_ZL11H_accu_FIR1_188, i32 %p_ZL11H_accu_FIR1_189, i32 %p_ZL11H_accu_FIR1_190, i32 %p_ZL11H_accu_FIR1_191, i32 %p_ZL11H_accu_FIR1_192, i32 %p_ZL11H_accu_FIR1_193, i32 %p_ZL11H_accu_FIR1_194, i32 %p_ZL11H_accu_FIR1_195, i32 %p_ZL11H_accu_FIR1_196, i32 %p_ZL11H_accu_FIR1_197, i32 %p_ZL11H_accu_FIR1_198, i32 %p_ZL11H_accu_FIR1_199, i32 %p_ZL11H_accu_FIR1_200, i32 %p_ZL11H_accu_FIR1_201, i32 %p_ZL11H_accu_FIR1_202, i32 %p_ZL11H_accu_FIR1_203, i32 %p_ZL11H_accu_FIR1_204, i32 %p_ZL11H_accu_FIR1_205, i32 %p_ZL11H_accu_FIR1_206, i32 %p_ZL11H_accu_FIR1_207, i32 %p_ZL11H_accu_FIR1_208, i32 %p_ZL11H_accu_FIR1_209, i32 %p_ZL11H_accu_FIR1_210, i32 %p_ZL11H_accu_FIR1_211, i32 %p_ZL11H_accu_FIR1_212, i32 %p_ZL11H_accu_FIR1_213, i32 %p_ZL11H_accu_FIR1_214, i32 %p_ZL11H_accu_FIR1_215, i32 %p_ZL11H_accu_FIR1_216, i32 %p_ZL11H_accu_FIR1_217, i32 %p_ZL11H_accu_FIR1_218, i32 %p_ZL11H_accu_FIR1_219, i32 %p_ZL11H_accu_FIR1_220, i32 %p_ZL11H_accu_FIR1_221, i32 %p_ZL11H_accu_FIR1_222, i32 %p_ZL11H_accu_FIR1_223, i32 %p_ZL11H_accu_FIR1_224, i32 %p_ZL11H_accu_FIR1_225, i32 %p_ZL11H_accu_FIR1_226, i32 %p_ZL11H_accu_FIR1_227, i32 %p_ZL11H_accu_FIR1_228, i32 %p_ZL11H_accu_FIR1_229, i32 %p_ZL11H_accu_FIR1_230, i32 %p_ZL11H_accu_FIR1_231, i32 %p_ZL11H_accu_FIR1_232, i32 %p_ZL11H_accu_FIR1_233, i32 %p_ZL11H_accu_FIR1_234, i32 %p_ZL11H_accu_FIR1_235, i32 %p_ZL11H_accu_FIR1_236, i32 %p_ZL11H_accu_FIR1_237, i32 %p_ZL11H_accu_FIR1_238, i32 %p_ZL11H_accu_FIR1_239, i32 %p_ZL11H_accu_FIR1_240, i32 %p_ZL11H_accu_FIR1_241, i32 %p_ZL11H_accu_FIR1_242, i32 %p_ZL11H_accu_FIR1_243, i32 %p_ZL11H_accu_FIR1_244, i32 %p_ZL11H_accu_FIR1_245, i32 %p_ZL11H_accu_FIR1_246, i32 %p_ZL11H_accu_FIR1_247, i32 %p_ZL11H_accu_FIR1_248, i32 %p_ZL11H_accu_FIR1_249, i32 %p_ZL11H_accu_FIR1_250, i32 %p_ZL11H_accu_FIR1_251, i32 %p_ZL11H_accu_FIR1_252, i32 %p_ZL11H_accu_FIR1_253, i32 %p_ZL11H_accu_FIR1_254, i32 %p_ZL11H_accu_FIR1_255, i32 %p_ZL11H_accu_FIR1_256, i32 %p_ZL11H_accu_FIR1_257, i32 %p_ZL11H_accu_FIR1_258, i32 %p_ZL11H_accu_FIR1_259, i32 %p_ZL11H_accu_FIR1_260, i32 %p_ZL11H_accu_FIR1_261, i32 %p_ZL11H_accu_FIR1_262, i32 %p_ZL11H_accu_FIR1_263, i32 %p_ZL11H_accu_FIR1_264, i32 %p_ZL11H_accu_FIR1_265, i32 %p_ZL11H_accu_FIR1_266, i32 %p_ZL11H_accu_FIR1_267, i32 %p_ZL11H_accu_FIR1_268, i32 %p_ZL11H_accu_FIR1_269, i32 %p_ZL11H_accu_FIR1_270, i32 %p_ZL11H_accu_FIR1_271, i32 %p_ZL11H_accu_FIR1_272, i32 %p_ZL11H_accu_FIR1_273, i32 %p_ZL11H_accu_FIR1_274, i32 %p_ZL11H_accu_FIR1_275, i32 %p_ZL11H_accu_FIR1_276, i32 %p_ZL11H_accu_FIR1_277, i32 %p_ZL11H_accu_FIR1_278, i32 %p_ZL11H_accu_FIR1_279, i32 %p_ZL11H_accu_FIR1_280, i32 %p_ZL11H_accu_FIR1_281, i32 %p_ZL11H_accu_FIR1_282, i32 %p_ZL11H_accu_FIR1_283, i32 %p_ZL11H_accu_FIR1_284, i32 %p_ZL11H_accu_FIR1_285, i32 %p_ZL11H_accu_FIR1_286, i32 %p_ZL11H_accu_FIR1_287, i32 %p_ZL11H_accu_FIR1_288, i32 %p_ZL11H_accu_FIR1_289, i32 %p_ZL11H_accu_FIR1_290, i32 %p_ZL11H_accu_FIR1_291, i32 %p_ZL11H_accu_FIR1_292, i32 %p_ZL11H_accu_FIR1_293, i32 %p_ZL11H_accu_FIR1_294, i32 %p_ZL11H_accu_FIR1_295, i32 %p_ZL11H_accu_FIR1_296, i32 %p_ZL11H_accu_FIR1_297, i32 %p_ZL11H_accu_FIR1_298, i32 %p_ZL11H_accu_FIR1_299, i32 %p_ZL11H_accu_FIR1_300, i32 %p_ZL11H_accu_FIR1_301, i32 %p_ZL11H_accu_FIR1_302, i32 %p_ZL11H_accu_FIR1_303, i32 %p_ZL11H_accu_FIR1_304, i32 %p_ZL11H_accu_FIR1_305, i32 %p_ZL11H_accu_FIR1_306, i32 %p_ZL11H_accu_FIR1_307, i32 %p_ZL11H_accu_FIR1_308, i32 %p_ZL11H_accu_FIR1_309, i32 %p_ZL11H_accu_FIR1_310, i32 %p_ZL11H_accu_FIR1_311, i32 %p_ZL11H_accu_FIR1_312, i32 %p_ZL11H_accu_FIR1_313, i32 %p_ZL11H_accu_FIR1_314, i32 %p_ZL11H_accu_FIR1_315, i32 %p_ZL11H_accu_FIR1_316, i32 %p_ZL11H_accu_FIR1_317, i32 %p_ZL11H_accu_FIR1_318, i32 %p_ZL11H_accu_FIR1_319, i32 %p_ZL11H_accu_FIR1_320, i32 %p_ZL11H_accu_FIR1_321, i32 %p_ZL11H_accu_FIR1_322, i32 %p_ZL11H_accu_FIR1_323, i32 %p_ZL11H_accu_FIR1_324, i32 %p_ZL11H_accu_FIR1_325, i32 %p_ZL11H_accu_FIR1_326, i32 %p_ZL11H_accu_FIR1_327, i32 %p_ZL11H_accu_FIR1_328, i32 %p_ZL11H_accu_FIR1_329, i32 %p_ZL11H_accu_FIR1_330, i32 %p_ZL11H_accu_FIR1_331, i32 %p_ZL11H_accu_FIR1_332, i32 %p_ZL11H_accu_FIR1_333, i32 %p_ZL11H_accu_FIR1_334, i32 %p_ZL11H_accu_FIR1_335, i32 %p_ZL11H_accu_FIR1_336, i32 %p_ZL11H_accu_FIR1_337, i32 %p_ZL11H_accu_FIR1_338, i32 %p_ZL11H_accu_FIR1_339, i32 %p_ZL11H_accu_FIR1_340, i32 %p_ZL11H_accu_FIR1_341, i32 %p_ZL11H_accu_FIR1_342, i32 %p_ZL11H_accu_FIR1_343, i32 %p_ZL11H_accu_FIR1_344, i32 %p_ZL11H_accu_FIR1_345, i32 %p_ZL11H_accu_FIR1_346, i32 %p_ZL11H_accu_FIR1_347, i32 %p_ZL11H_accu_FIR1_348, i32 %p_ZL11H_accu_FIR1_349, i32 %p_ZL11H_accu_FIR1_350, i32 %p_ZL11H_accu_FIR1_351, i32 %p_ZL11H_accu_FIR1_352, i32 %p_ZL11H_accu_FIR1_353, i32 %p_ZL11H_accu_FIR1_354, i32 %p_ZL11H_accu_FIR1_355, i32 %p_ZL11H_accu_FIR1_356, i32 %p_ZL11H_accu_FIR1_357, i32 %p_ZL11H_accu_FIR1_358, i32 %p_ZL11H_accu_FIR1_359, i32 %p_ZL11H_accu_FIR1_360, i32 %p_ZL11H_accu_FIR1_361, i32 %p_ZL11H_accu_FIR1_362, i32 %p_ZL11H_accu_FIR1_363, i32 %p_ZL11H_accu_FIR1_364, i32 %p_ZL11H_accu_FIR1_365, i32 %p_ZL11H_accu_FIR1_366, i32 %p_ZL11H_accu_FIR1_367, i32 %p_ZL11H_accu_FIR1_368, i32 %p_ZL11H_accu_FIR1_369, i32 %p_ZL11H_accu_FIR1_370, i32 %p_ZL11H_accu_FIR1_371, i32 %p_ZL11H_accu_FIR1_372, i32 %p_ZL11H_accu_FIR1_373, i32 %p_ZL11H_accu_FIR1_374, i32 %p_ZL11H_accu_FIR1_375, i32 %p_ZL11H_accu_FIR1_376, i32 %p_ZL11H_accu_FIR1_377, i32 %p_ZL11H_accu_FIR1_378, i32 %p_ZL11H_accu_FIR1_379, i31 %p_ZL11H_accu_FIR1_380, i30 %p_ZL11H_accu_FIR1_381, i29 %p_ZL11H_accu_FIR1_382, i28 %p_ZL11H_accu_FIR1_383, i28 %p_ZL11H_accu_FIR1_384, i27 %p_ZL11H_accu_FIR1_385, i27 %p_ZL11H_accu_FIR1_386, i26 %p_ZL11H_accu_FIR1_387, i26 %p_ZL11H_accu_FIR1_388, i25 %p_ZL11H_accu_FIR1_389, i26 %p_ZL11H_accu_FIR1_390
+
+]]></Node>
+<StgValue><ssdm name="p_0"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="2" lat="2">
+<core>regslice</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="402" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:8 %write_ln12 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %p_0
+
+]]></Node>
+<StgValue><ssdm name="write_ln12"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="394" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+entry:0 %spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1
+
+]]></Node>
+<StgValue><ssdm name="spectopmodule_ln6"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="395" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<![CDATA[
+entry:1 %specinterface_ln6 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_0, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln6"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="396" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<![CDATA[
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="397" bw="0" op_0_bw="0" op_1_bw="16">
+<![CDATA[
+entry:3 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="398" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<![CDATA[
+entry:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="11" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="399" bw="0" op_0_bw="0" op_1_bw="16">
+<![CDATA[
+entry:5 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="2">
+<core>regslice</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="402" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:8 %write_ln12 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %output_r, i16 %p_0
+
+]]></Node>
+<StgValue><ssdm name="write_ln12"/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="403" bw="0">
+<![CDATA[
+entry:9 %ret_ln13 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln13"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

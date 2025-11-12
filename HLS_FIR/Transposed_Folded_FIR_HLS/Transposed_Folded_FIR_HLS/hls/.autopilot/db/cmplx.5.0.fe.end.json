@@ -1,0 +1,26 @@
+{
+    "1": {
+        "name": "FIR_filter",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "19",
+        "instructions": "1548",
+        "total_instructions": "1548",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "391"
+        },
+        "stores": {
+            "G": "391"
+        }
+    },
+    "0": {
+        "name": "FIR_HLS",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "6",
+        "instructions": "10",
+        "total_instructions": "1558",
+        "calls": "1",
+        "basicblocks": "1"
+    }
+}

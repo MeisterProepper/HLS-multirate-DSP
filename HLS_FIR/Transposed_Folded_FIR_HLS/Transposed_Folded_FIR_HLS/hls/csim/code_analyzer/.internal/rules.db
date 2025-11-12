@@ -1,0 +1,163 @@
+{
+    "rules": {
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\FIR_HLS.cpp.0.bc', 'C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\FIR_HLS.cpp.0.bc.d']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=c:\\amd\\vitis\\2024.2\\vcxx\\data\\autopilot",
+                "-vitis-hls=C:\\AMD\\Vitis\\2024.2",
+                "--sysroot=C:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-hls-clock-period=10.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=FIR_HLS",
+                "FIR_HLS.cpp",
+                "-o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS.cpp.0.bc"
+            ],
+            "exectime": 1.7697343826293945,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\FIR_HLS_TB.cpp.0.o', 'C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\FIR_HLS_TB.cpp.0.o.d']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS_TB.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\amd\\vitis\\2024.2\\vcxx\\data\\include",
+                "-vitis-hls=C:\\AMD\\Vitis\\2024.2",
+                "--sysroot=C:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=FIR_HLS",
+                "C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/FIR_HLS_TB.cpp",
+                "-o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS_TB.cpp.0.o"
+            ],
+            "exectime": 3.4086408615112305,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\FIR_HLS.cpp.0.o', 'C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\FIR_HLS.cpp.0.o.d']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\amd\\vitis\\2024.2\\vcxx\\data\\include",
+                "-vitis-hls=C:\\AMD\\Vitis\\2024.2",
+                "--sysroot=C:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=FIR_HLS",
+                "FIR_HLS.cpp",
+                "-o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS.cpp.0.o"
+            ],
+            "exectime": 2.576650619506836,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/llvm-link.exe",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS.cpp.0.bc",
+                "-o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 0.0645287036895752,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 0.06506609916687012,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/clang++.exe",
+                "-o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS_TB.cpp.0.o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\FIR_HLS.cpp.0.o",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=FIR_HLS",
+                "-LC:\\AMD\\Vitis\\2024.2\\win64\\tools\\dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-LC:\\AMD\\Vitis\\2024.2\\win64\\tools\\fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-LC:\\AMD\\Vitis\\2024.2\\win64\\tools\\fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-LC:\\AMD\\Vitis\\2024.2\\win64\\tools\\fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-lm",
+                "-LC:\\AMD\\Vitis\\2024.2\\win64\\lib\\csim",
+                "-lhlsm-GCC95-x64",
+                "-lhlsmc++-GCC95-x64",
+                "-lgmp",
+                "-lmpfr",
+                "--sysroot=C:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-LC:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\x86_64-w64-mingw32\\lib",
+                "-LC:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib",
+                "-LC:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc",
+                "-LC:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc\\x86_64-w64-mingw32\\9.5.0",
+                "-LC:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\libexec\\gcc\\x86_64-w64-mingw32\\9.5.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
+                "-fslxpthreads",
+                "-lpthread"
+            ],
+            "exectime": 5.553156852722168,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\hls_ir_info.json']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\/libexec/irInfoDump.exe",
+                "--ir-module",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--json-output",
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\hls_ir_info.json",
+                "--hw-function",
+                "FIR_HLS"
+            ],
+            "exectime": 0.41657066345214844,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
+            "command": [
+                "c:\\amd\\vitis\\2024.2\\vcxx\\libexec\\clang-scan-deps.exe",
+                "--compilation-database=C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
+            ],
+            "exectime": 0.1573352813720703,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS"
+        },
+        "['C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'C:\\\\HLS-multirate-DSP\\\\HLS_FIR\\\\Transposed_Folded_FIR_HLS\\\\Transposed_Folded_FIR_HLS\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
+            "command": [
+                "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
+            ],
+            "exectime": 0.12676191329956055,
+            "cwd": "C:\\HLS-multirate-DSP\\HLS_FIR\\Transposed_Folded_FIR_HLS\\Transposed_Folded_FIR_HLS\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
+        }
+    }
+}

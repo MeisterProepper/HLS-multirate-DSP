@@ -1,0 +1,517 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/FIR_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/FIR_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=../../Matlab/FIR_normal_HLS.h' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_normal_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/FIR_HLS_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_normal.dat' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_normal.res' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_normal.res' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5 seconds. CPU system time: 2 seconds. Elapsed time: 6.453 seconds; current allocated memory: 272.672 MB.
+INFO: [HLS 200-10] Analyzing design file 'FIR_HLS.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.175 seconds; current allocated memory: 275.613 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,184 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 36,010 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,395 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,477 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,479 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,485 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_FIR/Transposed_Folded_FIR_HLS/Transposed_Folded_FIR_HLS/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_32_2' is marked as complete unroll implied by the pipeline pragma (FIR_HLS.cpp:32:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_25_1' is marked as complete unroll implied by the pipeline pragma (FIR_HLS.cpp:25:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_32_2' (FIR_HLS.cpp:32:19) in function 'FIR_filter' completely with a factor of 391 (FIR_HLS.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_25_1' (FIR_HLS.cpp:25:22) in function 'FIR_filter' completely with a factor of 196 (FIR_HLS.cpp:19:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_accu_FIR1' due to pipeline pragma (./FIR_HLS.h:9:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL11H_accu_FIR1': Complete partitioning on dimension 1. (./FIR_HLS.h:9:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 14.696 seconds; current allocated memory: 277.496 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 277.500 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 284.195 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 287.594 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.683 seconds; current allocated memory: 310.156 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.192 seconds; current allocated memory: 317.551 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FIR_HLS' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FIR_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'FIR_filter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'FIR_filter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.493 seconds; current allocated memory: 331.047 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.794 seconds; current allocated memory: 332.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FIR_HLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.594 seconds; current allocated memory: 332.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 333.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FIR_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_31' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_32' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_33' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_34' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_35' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_36' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_37' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_38' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_39' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_48' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_49' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_50' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_51' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_52' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_53' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_54' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_55' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_63' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_64' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_65' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_66' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_67' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_68' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_69' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_70' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_71' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_72' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_73' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_74' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_75' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_76' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_77' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_78' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_79' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_80' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_81' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_82' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_83' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_84' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_85' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_86' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_87' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_88' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_89' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_90' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_91' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_92' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_93' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_94' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_95' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_96' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_97' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_98' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_99' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_100' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_101' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_102' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_103' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_104' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_105' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_106' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_107' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_108' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_109' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_110' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_111' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_112' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_113' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_114' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_115' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_116' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_117' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_118' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_119' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_120' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_121' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_122' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_123' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_124' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_125' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_126' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_127' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_128' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_129' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_130' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_131' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_132' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_133' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_134' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_135' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_136' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_137' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_138' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_139' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_140' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_141' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_142' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_143' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_144' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_145' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_146' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_147' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_148' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_149' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_150' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_151' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_152' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_153' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_154' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_155' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_156' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_157' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_158' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_159' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_160' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_161' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_162' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_163' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_164' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_165' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_166' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_167' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_168' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_169' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_170' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_171' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_172' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_173' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_174' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_175' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_176' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_177' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_178' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_179' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_180' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_181' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_182' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_183' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_184' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_185' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_186' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_187' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_188' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_189' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_190' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_191' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_192' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_193' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_194' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_195' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_196' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_197' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_198' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_199' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_200' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_201' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_202' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_203' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_204' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_205' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_206' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_207' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_208' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_209' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_210' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_211' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_212' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_213' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_214' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_215' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_216' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_217' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_218' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_219' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_220' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_221' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_222' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_223' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_224' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_225' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_226' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_227' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_228' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_229' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_230' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_231' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_232' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_233' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_234' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_235' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_236' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_237' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_238' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_239' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_240' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_241' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_242' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_243' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_244' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_245' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_246' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_247' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_248' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_249' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_250' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_251' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_252' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_253' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_254' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_255' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_256' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_257' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_258' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_259' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_260' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_261' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_262' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_263' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_264' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_265' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_266' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_267' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_268' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_269' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_270' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_271' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_272' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_273' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_274' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_275' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_276' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_277' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_278' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_279' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_280' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_281' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_282' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_283' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_284' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_285' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_286' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_287' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_288' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_289' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_290' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_291' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_292' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_293' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_294' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_295' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_296' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_297' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_298' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_299' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_300' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_301' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_302' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_303' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_304' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_305' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_306' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_307' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_308' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_309' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_310' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_311' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_312' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_313' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_314' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_315' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_316' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_317' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_318' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_319' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_320' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_321' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_322' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_323' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_324' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_325' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_326' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_327' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_328' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_329' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_330' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_331' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_332' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_333' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_334' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_335' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_336' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_337' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_338' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_339' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_340' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_341' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_342' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_343' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_344' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_345' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_346' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_347' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_348' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_349' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_350' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_351' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_352' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_353' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_354' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_355' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_356' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_357' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_358' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_359' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_360' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_361' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_362' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_363' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_364' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_365' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_366' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_367' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_368' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_369' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_370' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_371' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_372' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_373' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_374' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_375' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_376' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_377' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_378' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_379' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_380' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_381' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_382' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_383' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_384' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_385' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_386' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_387' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_388' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_389' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL11H_accu_FIR1_390' is power-on initialization.
+INFO: [RTGEN 206-104] Estimated max fanout for 'FIR_filter' is 12480 from HDL expression: ((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_10ns_26_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_10s_26_1_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_11ns_27_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_11s_27_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_12ns_28_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_12s_28_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_13ns_29_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_14ns_30_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15ns_31_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_6ns_22_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_6s_22_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_7ns_23_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_7s_23_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_8ns_24_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_8s_24_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_9ns_25_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_9s_25_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 17.193 seconds; current allocated memory: 345.773 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FIR_HLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FIR_HLS/input_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FIR_HLS/output_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FIR_HLS' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_HLS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.193 seconds; current allocated memory: 372.531 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.858 seconds; current allocated memory: 373.430 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.207 seconds; current allocated memory: 381.922 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for FIR_HLS.
+INFO: [VLOG 209-307] Generating Verilog RTL for FIR_HLS.
+INFO: [HLS 200-789] **** Estimated Fmax: 254.58 MHz
+INFO: [HLS 200-112] Total CPU user time: 16 seconds. Total CPU system time: 6 seconds. Total elapsed time: 63.61 seconds; peak allocated memory: 382.547 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 10s

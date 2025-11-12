@@ -1,0 +1,2 @@
+XILINX_VITIS='C:/AMD\Vitis\2024.2'
+cmdline: 'C:\AMD\Vitis\2024.2\bin\xcd.bat' -p 57197 -t d962ec30-bfb1-11f0-95b5-f2db482d883e
