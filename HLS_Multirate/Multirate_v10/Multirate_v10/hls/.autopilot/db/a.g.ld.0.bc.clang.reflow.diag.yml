@@ -1,0 +1,355 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: ./../../Matlab/FIR_multirate_HLS.h, Line: 35, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+    DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: ./../../Matlab/FIR_multirate_HLS.h, Line: 57, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+    DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.2
+    DebugLoc:        { File: ./../../Matlab/FIR_multirate_HLS.h, Line: 60, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+    DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: ./../../Matlab/FIR_multirate_HLS.h, Line: 63, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+    DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.4
+    DebugLoc:        { File: ./../../Matlab/FIR_multirate_HLS.h, Line: 66, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_FIR_HLS.pp.0.cpp
+    DebugLoc:        { File: 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db\FIR_HLS.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 73, Column: 21 }
+Function:        _Z9DECIMATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 101, Column: 20 }
+Function:        _Z12INTERPOLATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 5 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 27, Column: 5 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 26 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 59, Column: 21 }
+Function:        _Z9DECIMATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 88, Column: 19 }
+Function:        _Z12INTERPOLATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 5 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 26 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 27, Column: 5 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_FIR_HLS_ir
+Args:            
+  - Callee:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_FIR_HLS_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_41_1
+  - String:          '> at '
+  - LoopLoc:         'FIR_HLS.cpp:41:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_41_1
+  - String:          '> at '
+  - LoopLoc:         'FIR_HLS.cpp:41:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_41_1
+  - String:          '> at '
+  - LoopLoc:         'FIR_HLS.cpp:41:19'
+  - String:          ' '
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 59, Column: 21 }
+Function:        _Z9DECIMATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_.1.1
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>) (.clone)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.1.1)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 64, Column: 21 }
+Function:        _Z9DECIMATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_.1.1
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>) (.clone.clone)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.1.1)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 88, Column: 19 }
+Function:        _Z12INTERPOLATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_.1
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>) (.clone)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.1)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 92, Column: 19 }
+Function:        _Z12INTERPOLATORRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_.1
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>) (.clone.clone)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.1)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 5 }
+Function:        Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+Args:            
+  - Callee:          'DECIMATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.1.1)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 20, Column: 26 }
+Function:        Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+Args:            
+  - Callee:          'FIR_filter(ap_fixed<32, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> const*, int, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 27, Column: 5 }
+Function:        Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+Args:            
+  - Callee:          'INTERPOLATOR(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.1)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 83, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: FIR_HLS.cpp, Line: 18, Column: 5 }
+Function:        _Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_
+Args:            
+  - Callee:          Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'FIR_HLS(hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: FIR_HLS.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

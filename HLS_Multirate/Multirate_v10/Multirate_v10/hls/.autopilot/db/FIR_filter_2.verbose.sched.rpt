@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vitis HLS Report for 'FIR_filter_2'
+================================================================
+* Date:           Wed Nov 12 23:19:51 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        Multirate_v10
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.750 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        9|        9|  90.000 ns|  90.000 ns|    9|    9|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.67>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%FIR_coe_addr = getelementptr i15 %FIR_coe, i64 0, i64 0" [FIR_HLS.cpp:35]   --->   Operation 5 'getelementptr' 'FIR_coe_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%FIR_delays_addr = getelementptr i32 %FIR_delays, i64 0, i64 0" [FIR_HLS.cpp:35]   --->   Operation 6 'getelementptr' 'FIR_delays_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [2/2] (0.67ns)   --->   "%FIR_coe_load = load i3 %FIR_coe_addr" [FIR_HLS.cpp:39]   --->   Operation 7 'load' 'FIR_coe_load' <Predicate = true> <Delay = 0.67> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 5> <ROM>
+ST_1 : Operation 8 [2/2] (0.67ns)   --->   "%FIR_delays_load = load i3 %FIR_delays_addr" [FIR_HLS.cpp:39]   --->   Operation 8 'load' 'FIR_delays_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 5> <RAM>
+
+State 2 <SV = 1> <Delay = 4.07>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%x_n_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %x_n" [FIR_HLS.cpp:35]   --->   Operation 9 'read' 'x_n_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln39 = sext i16 %x_n_read" [FIR_HLS.cpp:39]   --->   Operation 10 'sext' 'sext_ln39' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/2] ( I:0.67ns O:0.67ns )   --->   "%FIR_coe_load = load i3 %FIR_coe_addr" [FIR_HLS.cpp:39]   --->   Operation 11 'load' 'FIR_coe_load' <Predicate = true> <Delay = 0.67> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 5> <ROM>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%sext_ln39_2 = sext i15 %FIR_coe_load" [FIR_HLS.cpp:39]   --->   Operation 12 'sext' 'sext_ln39_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (2.38ns)   --->   "%mul_ln39 = mul i31 %sext_ln39, i31 %sext_ln39_2" [FIR_HLS.cpp:39]   --->   Operation 13 'mul' 'mul_ln39' <Predicate = true> <Delay = 2.38> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.38> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/2] ( I:0.67ns O:0.67ns )   --->   "%FIR_delays_load = load i3 %FIR_delays_addr" [FIR_HLS.cpp:39]   --->   Operation 14 'load' 'FIR_delays_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 5> <RAM>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i31.i1, i31 %mul_ln39, i1 0" [FIR_HLS.cpp:39]   --->   Operation 15 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (1.01ns)   --->   "%add_ln39 = add i32 %FIR_delays_load, i32 %shl_ln" [FIR_HLS.cpp:39]   --->   Operation 16 'add' 'add_ln39' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%y = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %add_ln39, i32 16, i32 31" [FIR_HLS.cpp:39]   --->   Operation 17 'partselect' 'y' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln35 = call void @FIR_filter.2_Pipeline_VITIS_LOOP_41_1, i15 %FIR_coe, i32 %FIR_delays, i16 %x_n_read" [FIR_HLS.cpp:35]   --->   Operation 18 'call' 'call_ln35' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.52>
+ST_4 : Operation 19 [1/2] (1.52ns)   --->   "%call_ln35 = call void @FIR_filter.2_Pipeline_VITIS_LOOP_41_1, i15 %FIR_coe, i32 %FIR_delays, i16 %x_n_read" [FIR_HLS.cpp:35]   --->   Operation 19 'call' 'call_ln35' <Predicate = true> <Delay = 1.52> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln44 = ret i16 %y" [FIR_HLS.cpp:44]   --->   Operation 20 'ret' 'ret_ln44' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.677ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('FIR_coe_addr', FIR_HLS.cpp:35) [5]  (0.000 ns)
+	'load' operation 15 bit ('FIR_coe_load', FIR_HLS.cpp:39) on array 'FIR_coe' [8]  (0.677 ns)
+
+ <State 2>: 4.073ns
+The critical path consists of the following:
+	'load' operation 15 bit ('FIR_coe_load', FIR_HLS.cpp:39) on array 'FIR_coe' [8]  (0.677 ns)
+	'mul' operation 31 bit ('mul_ln39', FIR_HLS.cpp:39) [10]  (2.380 ns)
+	'add' operation 32 bit ('add_ln39', FIR_HLS.cpp:39) [13]  (1.016 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 1.527ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln35', FIR_HLS.cpp:35) to 'FIR_filter.2_Pipeline_VITIS_LOOP_41_1' [15]  (1.527 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

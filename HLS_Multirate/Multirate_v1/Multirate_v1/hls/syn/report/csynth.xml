@@ -1,0 +1,880 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xck26-sfvc784-2LV-c</Part>
+        <TopModelName>FIR_HLS</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.255</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>11</Best-caseLatency>
+            <Average-caseLatency>22</Average-caseLatency>
+            <Worst-caseLatency>32</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.320 us</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>
+                <range>
+                    <min>12</min>
+                    <max>33</max>
+                </range>
+            </DataflowPipelineThroughput>
+            <Interval-min>12</Interval-min>
+            <Interval-max>33</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>FIR_HLS.cpp:12</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>114</DSP>
+            <FF>5482</FF>
+            <LUT>15947</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>288</BRAM_18K>
+            <DSP>1248</DSP>
+            <FF>234240</FF>
+            <LUT>117120</LUT>
+            <URAM>64</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>input_r_TDATA</name>
+            <Object>input_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_TVALID</name>
+            <Object>input_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_TREADY</name>
+            <Object>input_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_TDATA</name>
+            <Object>output_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_TVALID</name>
+            <Object>output_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_TREADY</name>
+            <Object>output_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>FIR_HLS</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>FIR_HLS</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="5">
+            <ModuleName>FIR_HLS</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc_U0</InstName>
+                    <ModuleName>Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>360</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_DECIMATOR_fu_378</InstName>
+                            <ModuleName>DECIMATOR</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>378</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_FIR_filter_1_fu_125</InstName>
+                                    <ModuleName>FIR_filter_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>125</ID>
+                                    <BindInstances>mul_32s_10s_42_1_1_U1 mul_32s_13s_44_1_1_U3 add_ln45_fu_210_p2 mul_32s_14ns_46_1_1_U5 add_ln45_5_fu_247_p2 mul_32s_13s_45_1_1_U4 add_ln45_6_fu_280_p2 mul_32s_10s_42_1_1_U2 add_ln45_7_fu_315_p2</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>grp_FIR_filter_2_fu_154</InstName>
+                                    <ModuleName>FIR_filter_2</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>154</ID>
+                                    <BindInstances>sub_ln45_fu_174_p2 mul_32s_12s_43_1_1_U20 add_ln45_fu_243_p2 add_ln45_1_fu_360_p2 add_ln45_2_fu_467_p2 mul_32s_12s_44_1_1_U21 add_ln45_3_fu_499_p2 sub_ln45_4_fu_545_p2 add_ln45_4_fu_589_p2</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                            <BindInstances>add_ln66_1_fu_372_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_FIR_filter_fu_428</InstName>
+                            <ModuleName>FIR_filter</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>428</ID>
+                            <BindInstances>sub_ln45_fu_676_p2 mul_32s_8s_40_1_1_U42 add_ln45_fu_713_p2 sub_ln45_6_fu_749_p2 add_ln45_9_fu_829_p2 sub_ln45_8_fu_906_p2 add_ln45_10_fu_916_p2 mul_32s_7s_39_1_1_U36 add_ln45_11_fu_943_p2 add_ln45_12_fu_1015_p2 add_ln45_13_fu_1087_p2 mul_32s_6s_38_1_1_U32 add_ln45_14_fu_1124_p2 add_ln45_15_fu_1200_p2 add_ln45_16_fu_1240_p2 add_ln45_17_fu_1312_p2 mul_32s_7s_39_1_1_U37 add_ln45_18_fu_1349_p2 mul_32s_8s_40_1_1_U43 add_ln45_19_fu_1386_p2 sub_ln45_15_fu_1438_p2 add_ln45_20_fu_1448_p2 add_ln45_126_fu_1496_p2 add_ln45_21_fu_1607_p2 mul_32s_8s_40_1_1_U44 add_ln45_22_fu_1634_p2 mul_32s_8s_40_1_1_U45 add_ln45_23_fu_1661_p2 sub_ln45_17_fu_1717_p2 add_ln45_24_fu_1751_p2 add_ln45_25_fu_1831_p2 mul_32s_8s_40_1_1_U46 add_ln45_26_fu_1868_p2 add_ln45_27_fu_1952_p2 add_ln45_131_fu_2008_p2 add_ln45_28_fu_2042_p2 sub_ln45_21_fu_2086_p2 add_ln45_29_fu_2096_p2 mul_32s_9s_41_1_1_U54 add_ln45_30_fu_2133_p2 mul_32s_7s_39_1_1_U38 add_ln45_31_fu_2170_p2 add_ln45_32_fu_2278_p2 add_ln45_33_fu_2372_p2 mul_32s_9s_41_1_1_U55 add_ln45_34_fu_2399_p2 add_ln45_35_fu_2459_p2 add_ln45_36_fu_2539_p2 mul_32s_6s_38_1_1_U33 add_ln45_37_fu_2576_p2 mul_32s_10s_42_1_1_U60 add_ln45_38_fu_2613_p2 sub_ln45_26_fu_2687_p2 add_ln45_39_fu_2697_p2 add_ln45_138_fu_2749_p2 add_ln45_40_fu_2795_p2 mul_32s_8s_40_1_1_U47 add_ln45_41_fu_2832_p2 mul_32s_10s_42_1_1_U61 add_ln45_42_fu_2869_p2 add_ln45_141_fu_2925_p2 add_ln45_43_fu_2959_p2 sub_ln45_27_fu_3007_p2 add_ln45_44_fu_3112_p2 mul_32s_9s_41_1_1_U56 add_ln45_45_fu_3139_p2 mul_32s_10s_42_1_1_U62 add_ln45_46_fu_3166_p2 add_ln45_47_fu_3246_p2 sub_ln45_28_fu_3302_p2 add_ln45_48_fu_3336_p2 mul_32s_10s_42_1_1_U63 add_ln45_49_fu_3373_p2 mul_32s_10s_42_1_1_U64 add_ln45_50_fu_3431_p2 add_ln45_149_fu_3483_p2 add_ln45_51_fu_3529_p2 add_ln45_52_fu_3609_p2 mul_32s_11s_43_1_1_U70 add_ln45_53_fu_3646_p2 mul_32s_11s_43_1_1_U71 add_ln45_54_fu_3683_p2 sub_ln45_33_fu_3735_p2 add_ln45_55_fu_3781_p2 add_ln45_56_fu_3922_p2 mul_32s_12s_44_1_1_U78 add_ln45_57_fu_3949_p2 mul_32s_11s_43_1_1_U72 add_ln45_58_fu_3976_p2 sub_ln45_36_fu_4032_p2 add_ln45_59_fu_4066_p2 add_ln45_154_fu_4118_p2 add_ln45_60_fu_4164_p2 mul_32s_13s_45_1_1_U80 add_ln45_61_fu_4201_p2 mul_32s_11s_43_1_1_U73 add_ln45_62_fu_4259_p2 add_ln45_161_fu_4445_p2 mul_32s_11s_43_1_1_U74 add_ln45_66_fu_4660_p2 mul_32s_13s_45_1_1_U81 add_ln45_67_fu_4697_p2 add_ln45_169_fu_4749_p2 add_ln45_68_fu_4795_p2 sub_ln45_41_fu_4843_p2 add_ln45_69_fu_4954_p2 mul_32s_11s_43_1_1_U75 add_ln45_70_fu_4981_p2 mul_32s_12s_44_1_1_U79 add_ln45_71_fu_5008_p2 add_ln45_72_fu_5088_p2 sub_ln45_44_fu_5140_p2 add_ln45_73_fu_5186_p2 mul_32s_11s_43_1_1_U76 add_ln45_74_fu_5223_p2 mul_32s_11s_43_1_1_U77 add_ln45_75_fu_5281_p2 add_ln45_76_fu_5361_p2 add_ln45_174_fu_5413_p2 add_ln45_77_fu_5459_p2 mul_32s_10s_42_1_1_U65 add_ln45_78_fu_5496_p2 mul_32s_10s_42_1_1_U66 add_ln45_79_fu_5533_p2 sub_ln45_49_fu_5589_p2 add_ln45_80_fu_5623_p2 add_ln45_81_fu_5764_p2 mul_32s_10s_42_1_1_U67 add_ln45_82_fu_5791_p2 mul_32s_9s_41_1_1_U57 add_ln45_83_fu_5818_p2 sub_ln45_51_fu_5874_p2 add_ln45_84_fu_5908_p2 add_ln45_181_fu_5964_p2 add_ln45_85_fu_5998_p2 mul_32s_10s_42_1_1_U68 add_ln45_86_fu_6035_p2 mul_32s_8s_40_1_1_U48 add_ln45_87_fu_6093_p2 add_ln45_184_fu_6145_p2 add_ln45_88_fu_6191_p2 sub_ln45_52_fu_6243_p2 add_ln45_89_fu_6253_p2 mul_32s_10s_42_1_1_U69 add_ln45_90_fu_6290_p2 mul_32s_6s_38_1_1_U34 add_ln45_91_fu_6327_p2 add_ln45_92_fu_6407_p2 add_ln45_93_fu_6514_p2 mul_32s_9s_41_1_1_U58 add_ln45_94_fu_6541_p2 add_ln45_95_fu_6581_p2 add_ln45_96_fu_6689_p2 mul_32s_7s_39_1_1_U39 add_ln45_97_fu_6726_p2 mul_32s_9s_41_1_1_U59 add_ln45_98_fu_6763_p2 sub_ln45_57_fu_6799_p2 add_ln45_99_fu_6844_p2 add_ln45_191_fu_6900_p2 add_ln45_100_fu_6934_p2 add_ln45_101_fu_7002_p2 mul_32s_8s_40_1_1_U49 add_ln45_102_fu_7039_p2 add_ln45_103_fu_7119_p2 sub_ln45_61_fu_7175_p2 add_ln45_104_fu_7209_p2 mul_32s_8s_40_1_1_U50 add_ln45_105_fu_7294_p2 mul_32s_8s_40_1_1_U51 add_ln45_106_fu_7321_p2 add_ln45_197_fu_7377_p2 add_ln45_107_fu_7411_p2 sub_ln45_63_fu_7463_p2 add_ln45_108_fu_7473_p2 mul_32s_8s_40_1_1_U52 add_ln45_109_fu_7510_p2 mul_32s_7s_39_1_1_U40 add_ln45_110_fu_7547_p2 add_ln45_111_fu_7641_p2 add_ln45_112_fu_7681_p2 add_ln45_113_fu_7741_p2 mul_32s_6s_38_1_1_U35 add_ln45_114_fu_7778_p2 add_ln45_115_fu_7850_p2 add_ln45_116_fu_7922_p2 mul_32s_7s_39_1_1_U41 add_ln45_117_fu_7998_p2 sub_ln45_70_fu_8038_p2 add_ln45_118_fu_8048_p2 add_ln45_119_fu_8128_p2 sub_ln45_1_fu_8160_p2 add_ln45_120_fu_8170_p2 mul_32s_8s_40_1_1_U53 add_ln45_121_fu_8207_p2 sub_ln45_72_fu_8259_p2 add_ln45_122_fu_8269_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_INTERPOLATOR_fu_666</InstName>
+                            <ModuleName>INTERPOLATOR</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>666</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_FIR_filter_1_fu_124</InstName>
+                                    <ModuleName>FIR_filter_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>124</ID>
+                                    <BindInstances>mul_32s_10s_42_1_1_U1 mul_32s_13s_44_1_1_U3 add_ln45_fu_210_p2 mul_32s_14ns_46_1_1_U5 add_ln45_5_fu_247_p2 mul_32s_13s_45_1_1_U4 add_ln45_6_fu_280_p2 mul_32s_10s_42_1_1_U2 add_ln45_7_fu_315_p2</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>grp_FIR_filter_2_fu_152</InstName>
+                                    <ModuleName>FIR_filter_2</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>152</ID>
+                                    <BindInstances>sub_ln45_fu_174_p2 mul_32s_12s_43_1_1_U20 add_ln45_fu_243_p2 add_ln45_1_fu_360_p2 add_ln45_2_fu_467_p2 mul_32s_12s_44_1_1_U21 add_ln45_3_fu_499_p2 sub_ln45_4_fu_545_p2 add_ln45_4_fu_589_p2</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>icmp_ln20_fu_716_p2 add_ln25_fu_722_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>FIR_filter_1</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>6.641</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>2</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:37</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>10</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>188</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>315</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U1" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_13s_44_1_1_U3" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_210_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_14ns_46_1_1_U5" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_5_fu_247_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_13s_45_1_1_U4" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_6_fu_280_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_7_fu_315_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_7" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter_2</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>5.855</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>2</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:37</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>206</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>936</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_fu_174_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_12s_43_1_1_U20" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_243_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_1_fu_360_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_2_fu_467_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_12s_44_1_1_U21" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_3_fu_499_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_4_fu_545_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_4_fu_589_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_4" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>DECIMATOR</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.720</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>3</Average-caseLatency>
+                    <Worst-caseLatency>3</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:64</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>624</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>329</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln66_1_fu_372_p2" SOURCE="FIR_HLS.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln66_1" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>7.255</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>19</Best-caseLatency>
+                    <Average-caseLatency>19</Average-caseLatency>
+                    <Worst-caseLatency>19</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.190 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.190 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.190 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>20</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:37</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>100</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>8</UTIL_DSP>
+                    <FF>3797</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>13571</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>11</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_fu_676_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U42" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_713_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_6_fu_749_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_9_fu_829_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_8_fu_906_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_10_fu_916_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_7s_39_1_1_U36" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_11_fu_943_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_12_fu_1015_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_13_fu_1087_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_6s_38_1_1_U32" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_14_fu_1124_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_15_fu_1200_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_16_fu_1240_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_17_fu_1312_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_7s_39_1_1_U37" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_18_fu_1349_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U43" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_19_fu_1386_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_15_fu_1438_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_20_fu_1448_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_126_fu_1496_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_126" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_21_fu_1607_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U44" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_22_fu_1634_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U45" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_23_fu_1661_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_17_fu_1717_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_24_fu_1751_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_24" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_25_fu_1831_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_25" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U46" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_26_fu_1868_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_27_fu_1952_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_131_fu_2008_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_131" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_28_fu_2042_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_21_fu_2086_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_29_fu_2096_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_9s_41_1_1_U54" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_30_fu_2133_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_7s_39_1_1_U38" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_31_fu_2170_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_32_fu_2278_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_33_fu_2372_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_9s_41_1_1_U55" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_34_fu_2399_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_35_fu_2459_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_36_fu_2539_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_6s_38_1_1_U33" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_37_fu_2576_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U60" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_38_fu_2613_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_38" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_26_fu_2687_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_39_fu_2697_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_138_fu_2749_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_138" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_40_fu_2795_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_40" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U47" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_41_fu_2832_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U61" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_42_fu_2869_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_141_fu_2925_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_141" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_43_fu_2959_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_27_fu_3007_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_44_fu_3112_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_9s_41_1_1_U56" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_45_fu_3139_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U62" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_46_fu_3166_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_47_fu_3246_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_28_fu_3302_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_48_fu_3336_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U63" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_49_fu_3373_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U64" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_50_fu_3431_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_149_fu_3483_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_149" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_51_fu_3529_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_52_fu_3609_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U70" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_24" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_53_fu_3646_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U71" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_25" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_54_fu_3683_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_54" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_33_fu_3735_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_55_fu_3781_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_55" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_56_fu_3922_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_12s_44_1_1_U78" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_57_fu_3949_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_57" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U72" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_58_fu_3976_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_58" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_36_fu_4032_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_59_fu_4066_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_154_fu_4118_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_154" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_60_fu_4164_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_60" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_13s_45_1_1_U80" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_61_fu_4201_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U73" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_62_fu_4259_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_62" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_161_fu_4445_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_161" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U74" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_66_fu_4660_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_66" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_13s_45_1_1_U81" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_67_fu_4697_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_67" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_169_fu_4749_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_169" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_68_fu_4795_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_68" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_41_fu_4843_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_69_fu_4954_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_69" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U75" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_70_fu_4981_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_12s_44_1_1_U79" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_71_fu_5008_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_71" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_72_fu_5088_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_72" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_44_fu_5140_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_73_fu_5186_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_73" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U76" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_74_fu_5223_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_11s_43_1_1_U77" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_75_fu_5281_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_75" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_76_fu_5361_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_174_fu_5413_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_174" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_77_fu_5459_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U65" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_78_fu_5496_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_78" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U66" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_79_fu_5533_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_79" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_49_fu_5589_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_80_fu_5623_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_80" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_81_fu_5764_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U67" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_38" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_82_fu_5791_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_82" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_9s_41_1_1_U57" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_83_fu_5818_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_83" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_51_fu_5874_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_84_fu_5908_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_84" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_181_fu_5964_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_181" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_85_fu_5998_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_85" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U68" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_40" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_86_fu_6035_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_86" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U48" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_87_fu_6093_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_87" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_184_fu_6145_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_184" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_88_fu_6191_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_88" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_52_fu_6243_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_89_fu_6253_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_89" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_10s_42_1_1_U69" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_90_fu_6290_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_90" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_6s_38_1_1_U34" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_91_fu_6327_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_92_fu_6407_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_93_fu_6514_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_93" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_9s_41_1_1_U58" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_94_fu_6541_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_94" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_95_fu_6581_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_95" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_96_fu_6689_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_96" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_7s_39_1_1_U39" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_97_fu_6726_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_97" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_9s_41_1_1_U59" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_98_fu_6763_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_98" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_57_fu_6799_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_57" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_99_fu_6844_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_99" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_191_fu_6900_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_191" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_100_fu_6934_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_101_fu_7002_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_101" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U49" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_102_fu_7039_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_102" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_103_fu_7119_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_103" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_61_fu_7175_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_104_fu_7209_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_104" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U50" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_105_fu_7294_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_105" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U51" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_106_fu_7321_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_106" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_197_fu_7377_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_197" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_107_fu_7411_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_107" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_63_fu_7463_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_63" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_108_fu_7473_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_108" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U52" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_109_fu_7510_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_109" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_7s_39_1_1_U40" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_110_fu_7547_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_110" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_111_fu_7641_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_111" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_112_fu_7681_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_112" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_113_fu_7741_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_113" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_6s_38_1_1_U35" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_114_fu_7778_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_114" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_115_fu_7850_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_115" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_116_fu_7922_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_116" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_7s_39_1_1_U41" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_117_fu_7998_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_117" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_70_fu_8038_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_118_fu_8048_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_118" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_119_fu_8128_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_119" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_1_fu_8160_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_120_fu_8170_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_120" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_8s_40_1_1_U53" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_54" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_121_fu_8207_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_121" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_72_fu_8259_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45_72" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_122_fu_8269_p2" SOURCE="FIR_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_122" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>INTERPOLATOR</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.189</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>3</Average-caseLatency>
+                    <Worst-caseLatency>3</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:92</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>572</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>268</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.255</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>32</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.320 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>11 ~ 32</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:19~FIR_HLS.cpp:19</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>114</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>9</UTIL_DSP>
+                    <FF>5482</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>15947</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>13</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln20_fu_716_p2" SOURCE="FIR_HLS.cpp:20" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln20" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_722_p2" SOURCE="FIR_HLS.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln25" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_HLS</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.255</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>32</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.320 us</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>
+                        <range>
+                            <min>12</min>
+                            <max>33</max>
+                        </range>
+                    </DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>12 ~ 33</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>FIR_HLS.cpp:12</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>114</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>9</UTIL_DSP>
+                    <FF>5482</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>15947</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>13</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="input" index="0" direction="in" srcType="stream&lt;ap_fixed&lt;16, 1, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="interface" interface="input_r" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output" index="1" direction="out" srcType="stream&lt;ap_fixed&lt;16, 1, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="interface" interface="output_r" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="input_r" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="16" portPrefix="input_r_">
+            <ports>
+                <port>input_r_TDATA</port>
+                <port>input_r_TREADY</port>
+                <port>input_r_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="16" portPrefix="output_r_">
+            <ports>
+                <port>output_r_TDATA</port>
+                <port>output_r_TREADY</port>
+                <port>output_r_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="output"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">input_r:output_r</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="6">Interface, Direction, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="input_r">in, both, 16, 1, 1</column>
+                    <column name="output_r">out, both, 16, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input">in, stream&lt;ap_fixed&lt;16 1 AP_TRN AP_WRAP 0&gt; 0&gt;&amp;</column>
+                    <column name="output">out, stream&lt;ap_fixed&lt;16 1 AP_TRN AP_WRAP 0&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="input">input_r, interface</column>
+                    <column name="output">output_r, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="FIR_HLS.cpp:9" status="valid" parentFunction="fir_hls" variable="input" isDirective="0" options="mode=axis port=input"/>
+        <Pragma type="interface" location="FIR_HLS.cpp:10" status="valid" parentFunction="fir_hls" variable="output" isDirective="0" options="mode=axis port=output"/>
+        <Pragma type="interface" location="FIR_HLS.cpp:11" status="valid" parentFunction="fir_hls" variable="return" isDirective="0" options="mode=ap_ctrl_none port=return"/>
+        <Pragma type="dataflow" location="FIR_HLS.cpp:12" status="warning" parentFunction="fir_hls" variable="" isDirective="0" options="">
+            <Msg msg_id="214-114" msg_severity="WARNING" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+        </Pragma>
+        <Pragma type="pipeline" location="FIR_HLS.cpp:38" status="valid" parentFunction="fir_filter" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

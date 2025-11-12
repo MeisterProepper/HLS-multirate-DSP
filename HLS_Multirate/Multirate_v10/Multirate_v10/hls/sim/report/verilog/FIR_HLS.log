@@ -1,0 +1,970 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/AMD/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling FIR_HLS_TB.cpp_pre.cpp.tb.cpp
+   Compiling apatb_FIR_HLS.cpp
+   Compiling apatb_FIR_HLS_util.cpp
+   Compiling FIR_HLS.cpp_pre.cpp.tb.cpp
+   Compiling apatb_FIR_HLS_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Input and reference data lengths match.
+Mismatch at sample  280: ref=-0.358093, dut=-0.304932
+Mismatch at sample  281: ref=-0.481445, dut=-0.420898
+Mismatch at sample  282: ref=-0.582062, dut=-0.569702
+Mismatch at sample  283: ref=-0.672455, dut=-0.785156
+Mismatch at sample  284: ref=-0.771301, dut=0.978027
+Mismatch at sample  285: ref=-0.851379, dut=0.883667
+Mismatch at sample  286: ref=-0.910278, dut=-0.931274
+Mismatch at sample  287: ref=-0.951416, dut=-0.438354
+Mismatch at sample  288: ref=-0.987885, dut=0.21582
+Mismatch at sample  289: ref=0.999847, dut=0.791748
+Mismatch at sample  290: ref=-0.999756, dut=-0.976807
+Mismatch at sample  291: ref=-0.980927, dut=0.810913
+Mismatch at sample  292: ref=-0.947968, dut=0.255737
+Mismatch at sample  293: ref=-0.892883, dut=-0.379883
+Mismatch at sample  294: ref=-0.838196, dut=-0.859253
+Mismatch at sample  295: ref=-0.769135, dut=0.96582
+Mismatch at sample  296: ref=-0.679352, dut=-0.930054
+Mismatch at sample  297: ref=-0.573975, dut=-0.686768
+Mismatch at sample  298: ref=-0.480408, dut=-0.46814
+Mismatch at sample  299: ref=-0.378174, dut=-0.317749
+Mismatch at sample  300: ref=-0.251801, dut=-0.19873
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 21
+Status: FAIL [!!] (21 samples out of tolerance)
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+
+C:\HLS-multirate-DSP\HLS_Multirate\Multirate_v10\Multirate_v10\hls\sim\verilog>set PATH= 
+
+C:\HLS-multirate-DSP\HLS_Multirate\Multirate_v10\Multirate_v10\hls\sim\verilog>call C:/AMD/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_FIR_HLS_top glbl -Oenable_linking_all_libraries  -prj FIR_HLS.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s FIR_HLS  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMD/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_FIR_HLS_top glbl -Oenable_linking_all_libraries -prj FIR_HLS.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s FIR_HLS 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/AESL_axi_s_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/AESL_axi_s_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/AESL_deadlock_idx1_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx1_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_FIR_HLS_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc_H_accu_FIR_kernel_RAM_AUTO_cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc_H_accu_FIR_kernel_RAM_AUTO_cud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc_Pipeline_VITIS_LOOP_41_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc_Pipeline_VITIS_LOOP_41_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc_Pipeline_VITIS_LOOP_41_1_b_bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_Block_entry_b_FIR_dec_int_43_rd_mod_value_fb_proc_Pipeline_VITIS_LOOP_41_1_b_bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_b_FIR_dec_int_41_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_b_FIR_dec_int_41_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_b_FIR_dec_int_42_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_b_FIR_dec_int_42_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_b_FIR_dec_int_43_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_b_FIR_dec_int_43_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_H_accu_FIR_dec_40_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_H_accu_FIR_dec_40_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_H_accu_FIR_dec_43_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_H_accu_FIR_dec_43_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_Pipeline_VITIS_LOOP_41_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_Pipeline_VITIS_LOOP_41_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_DECIMATOR_Pipeline_VITIS_LOOP_41_1_b_FIR_dec_int_40_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_DECIMATOR_Pipeline_VITIS_LOOP_41_1_b_FIR_dec_int_40_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_FIR_filter_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_FIR_filter_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_FIR_filter_2_Pipeline_VITIS_LOOP_41_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_FIR_filter_2_Pipeline_VITIS_LOOP_41_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_INTERPOLATOR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_INTERPOLATOR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_INTERPOLATOR_b_FIR_dec_int_418_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_INTERPOLATOR_b_FIR_dec_int_418_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_INTERPOLATOR_b_FIR_dec_int_429_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_INTERPOLATOR_b_FIR_dec_int_429_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_INTERPOLATOR_b_FIR_dec_int_4310_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_INTERPOLATOR_b_FIR_dec_int_4310_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_INTERPOLATOR_H_accu_FIR_int_41_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_INTERPOLATOR_H_accu_FIR_int_41_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_INTERPOLATOR_Pipeline_VITIS_LOOP_41_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_INTERPOLATOR_Pipeline_VITIS_LOOP_41_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_mac_muladd_16s_9ns_30s_30_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mac_muladd_16s_9ns_30s_30_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mac_muladd_16s_9ns_30s_30_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_mac_muladd_16s_9ns_32s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mac_muladd_16s_9ns_32s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mac_muladd_16s_9ns_32s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_mul_16s_14s_30_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mul_16s_14s_30_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_mul_16s_15s_31_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mul_16s_15s_31_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_mul_16s_16s_31_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_mul_16s_16s_31_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_HLS_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.FIR_HLS_Block_entry_b_FIR_dec_in...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_H_accu_FIR_dec...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_H_accu_FIR_dec...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_b_FIR_dec_int_...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_b_FIR_dec_int_...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_b_FIR_dec_int_...
+Compiling module xil_defaultlib.FIR_HLS_mul_16s_15s_31_1_1(NUM_S...
+Compiling module xil_defaultlib.FIR_HLS_flow_control_loop_pipe_s...
+Compiling module xil_defaultlib.FIR_HLS_FIR_filter_2_Pipeline_VI...
+Compiling module xil_defaultlib.FIR_HLS_FIR_filter_2
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_Pipeline_VITIS...
+Compiling module xil_defaultlib.FIR_HLS_mul_16s_14s_30_1_1(NUM_S...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR_Pipeline_VITIS...
+Compiling module xil_defaultlib.FIR_HLS_mac_muladd_16s_9ns_32s_3...
+Compiling module xil_defaultlib.FIR_HLS_mac_muladd_16s_9ns_32s_3...
+Compiling module xil_defaultlib.FIR_HLS_DECIMATOR
+Compiling module xil_defaultlib.FIR_HLS_Block_entry_b_FIR_dec_in...
+Compiling module xil_defaultlib.FIR_HLS_mul_16s_16s_31_1_1(NUM_S...
+Compiling module xil_defaultlib.FIR_HLS_Block_entry_b_FIR_dec_in...
+Compiling module xil_defaultlib.FIR_HLS_INTERPOLATOR_H_accu_FIR_...
+Compiling module xil_defaultlib.FIR_HLS_INTERPOLATOR_b_FIR_dec_i...
+Compiling module xil_defaultlib.FIR_HLS_INTERPOLATOR_b_FIR_dec_i...
+Compiling module xil_defaultlib.FIR_HLS_INTERPOLATOR_b_FIR_dec_i...
+Compiling module xil_defaultlib.FIR_HLS_INTERPOLATOR_Pipeline_VI...
+Compiling module xil_defaultlib.FIR_HLS_mac_muladd_16s_9ns_30s_3...
+Compiling module xil_defaultlib.FIR_HLS_mac_muladd_16s_9ns_30s_3...
+Compiling module xil_defaultlib.FIR_HLS_INTERPOLATOR
+Compiling module xil_defaultlib.FIR_HLS_regslice_both(DataWidth=...
+Compiling module xil_defaultlib.FIR_HLS_Block_entry_b_FIR_dec_in...
+Compiling module xil_defaultlib.FIR_HLS
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_input_r
+Compiling module xil_defaultlib.AESL_axi_s_output_r
+Compiling module xil_defaultlib.AESL_deadlock_idx1_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_FIR_HLS_top
+Compiling module work.glbl
+Built simulation snapshot FIR_HLS
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Nov 12 23:23:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/FIR_HLS/xsim_script.tcl
+# xsim {FIR_HLS} -autoloadwcfg -tclbatch {FIR_HLS.tcl}
+Time resolution is 1 ps
+source FIR_HLS.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 460 [0.00%] @ "125000"
+// RTL Simulation : 1 / 460 [93.20%] @ "1525000"
+// RTL Simulation : 2 / 460 [108.84%] @ "1765000"
+// RTL Simulation : 3 / 460 [124.49%] @ "2005000"
+// RTL Simulation : 4 / 460 [44.90%] @ "2245000"
+// RTL Simulation : 5 / 460 [124.49%] @ "3655000"
+// RTL Simulation : 6 / 460 [124.49%] @ "3895000"
+// RTL Simulation : 7 / 460 [124.49%] @ "4135000"
+// RTL Simulation : 8 / 460 [44.90%] @ "4375000"
+// RTL Simulation : 9 / 460 [124.49%] @ "5785000"
+// RTL Simulation : 10 / 460 [124.49%] @ "6025000"
+// RTL Simulation : 11 / 460 [124.49%] @ "6265000"
+// RTL Simulation : 12 / 460 [44.90%] @ "6505000"
+// RTL Simulation : 13 / 460 [124.49%] @ "7915000"
+// RTL Simulation : 14 / 460 [124.49%] @ "8155000"
+// RTL Simulation : 15 / 460 [124.49%] @ "8395000"
+// RTL Simulation : 16 / 460 [44.90%] @ "8635000"
+// RTL Simulation : 17 / 460 [124.49%] @ "10045000"
+// RTL Simulation : 18 / 460 [124.49%] @ "10285000"
+// RTL Simulation : 19 / 460 [124.49%] @ "10525000"
+// RTL Simulation : 20 / 460 [44.90%] @ "10765000"
+// RTL Simulation : 21 / 460 [124.49%] @ "12175000"
+// RTL Simulation : 22 / 460 [124.49%] @ "12415000"
+// RTL Simulation : 23 / 460 [124.49%] @ "12655000"
+// RTL Simulation : 24 / 460 [44.90%] @ "12895000"
+// RTL Simulation : 25 / 460 [124.49%] @ "14305000"
+// RTL Simulation : 26 / 460 [124.49%] @ "14545000"
+// RTL Simulation : 27 / 460 [124.49%] @ "14785000"
+// RTL Simulation : 28 / 460 [44.90%] @ "15025000"
+// RTL Simulation : 29 / 460 [124.49%] @ "16435000"
+// RTL Simulation : 30 / 460 [124.49%] @ "16675000"
+// RTL Simulation : 31 / 460 [124.49%] @ "16915000"
+// RTL Simulation : 32 / 460 [44.90%] @ "17155000"
+// RTL Simulation : 33 / 460 [124.49%] @ "18565000"
+// RTL Simulation : 34 / 460 [124.49%] @ "18805000"
+// RTL Simulation : 35 / 460 [124.49%] @ "19045000"
+// RTL Simulation : 36 / 460 [44.90%] @ "19285000"
+// RTL Simulation : 37 / 460 [124.49%] @ "20695000"
+// RTL Simulation : 38 / 460 [124.49%] @ "20935000"
+// RTL Simulation : 39 / 460 [124.49%] @ "21175000"
+// RTL Simulation : 40 / 460 [44.90%] @ "21415000"
+// RTL Simulation : 41 / 460 [124.49%] @ "22825000"
+// RTL Simulation : 42 / 460 [124.49%] @ "23065000"
+// RTL Simulation : 43 / 460 [124.49%] @ "23305000"
+// RTL Simulation : 44 / 460 [44.90%] @ "23545000"
+// RTL Simulation : 45 / 460 [124.49%] @ "24955000"
+// RTL Simulation : 46 / 460 [124.49%] @ "25195000"
+// RTL Simulation : 47 / 460 [124.49%] @ "25435000"
+// RTL Simulation : 48 / 460 [44.90%] @ "25675000"
+// RTL Simulation : 49 / 460 [124.49%] @ "27085000"
+// RTL Simulation : 50 / 460 [124.49%] @ "27325000"
+// RTL Simulation : 51 / 460 [124.49%] @ "27565000"
+// RTL Simulation : 52 / 460 [44.90%] @ "27805000"
+// RTL Simulation : 53 / 460 [124.49%] @ "29215000"
+// RTL Simulation : 54 / 460 [124.49%] @ "29455000"
+// RTL Simulation : 55 / 460 [124.49%] @ "29695000"
+// RTL Simulation : 56 / 460 [44.90%] @ "29935000"
+// RTL Simulation : 57 / 460 [124.49%] @ "31345000"
+// RTL Simulation : 58 / 460 [124.49%] @ "31585000"
+// RTL Simulation : 59 / 460 [124.49%] @ "31825000"
+// RTL Simulation : 60 / 460 [44.90%] @ "32065000"
+// RTL Simulation : 61 / 460 [124.49%] @ "33475000"
+// RTL Simulation : 62 / 460 [124.49%] @ "33715000"
+// RTL Simulation : 63 / 460 [124.49%] @ "33955000"
+// RTL Simulation : 64 / 460 [44.90%] @ "34195000"
+// RTL Simulation : 65 / 460 [124.49%] @ "35605000"
+// RTL Simulation : 66 / 460 [124.49%] @ "35845000"
+// RTL Simulation : 67 / 460 [124.49%] @ "36085000"
+// RTL Simulation : 68 / 460 [44.90%] @ "36325000"
+// RTL Simulation : 69 / 460 [124.49%] @ "37735000"
+// RTL Simulation : 70 / 460 [124.49%] @ "37975000"
+// RTL Simulation : 71 / 460 [124.49%] @ "38215000"
+// RTL Simulation : 72 / 460 [44.90%] @ "38455000"
+// RTL Simulation : 73 / 460 [124.49%] @ "39865000"
+// RTL Simulation : 74 / 460 [124.49%] @ "40105000"
+// RTL Simulation : 75 / 460 [124.49%] @ "40345000"
+// RTL Simulation : 76 / 460 [44.90%] @ "40585000"
+// RTL Simulation : 77 / 460 [124.49%] @ "41995000"
+// RTL Simulation : 78 / 460 [124.49%] @ "42235000"
+// RTL Simulation : 79 / 460 [124.49%] @ "42475000"
+// RTL Simulation : 80 / 460 [44.90%] @ "42715000"
+// RTL Simulation : 81 / 460 [124.49%] @ "44125000"
+// RTL Simulation : 82 / 460 [124.49%] @ "44365000"
+// RTL Simulation : 83 / 460 [124.49%] @ "44605000"
+// RTL Simulation : 84 / 460 [44.90%] @ "44845000"
+// RTL Simulation : 85 / 460 [124.49%] @ "46255000"
+// RTL Simulation : 86 / 460 [124.49%] @ "46495000"
+// RTL Simulation : 87 / 460 [124.49%] @ "46735000"
+// RTL Simulation : 88 / 460 [44.90%] @ "46975000"
+// RTL Simulation : 89 / 460 [124.49%] @ "48385000"
+// RTL Simulation : 90 / 460 [124.49%] @ "48625000"
+// RTL Simulation : 91 / 460 [124.49%] @ "48865000"
+// RTL Simulation : 92 / 460 [44.90%] @ "49105000"
+// RTL Simulation : 93 / 460 [124.49%] @ "50515000"
+// RTL Simulation : 94 / 460 [124.49%] @ "50755000"
+// RTL Simulation : 95 / 460 [124.49%] @ "50995000"
+// RTL Simulation : 96 / 460 [44.90%] @ "51235000"
+// RTL Simulation : 97 / 460 [124.49%] @ "52645000"
+// RTL Simulation : 98 / 460 [124.49%] @ "52885000"
+// RTL Simulation : 99 / 460 [124.49%] @ "53125000"
+// RTL Simulation : 100 / 460 [44.90%] @ "53365000"
+// RTL Simulation : 101 / 460 [124.49%] @ "54775000"
+// RTL Simulation : 102 / 460 [124.49%] @ "55015000"
+// RTL Simulation : 103 / 460 [124.49%] @ "55255000"
+// RTL Simulation : 104 / 460 [44.90%] @ "55495000"
+// RTL Simulation : 105 / 460 [124.49%] @ "56905000"
+// RTL Simulation : 106 / 460 [124.49%] @ "57145000"
+// RTL Simulation : 107 / 460 [124.49%] @ "57385000"
+// RTL Simulation : 108 / 460 [44.90%] @ "57625000"
+// RTL Simulation : 109 / 460 [124.49%] @ "59035000"
+// RTL Simulation : 110 / 460 [124.49%] @ "59275000"
+// RTL Simulation : 111 / 460 [124.49%] @ "59515000"
+// RTL Simulation : 112 / 460 [44.90%] @ "59755000"
+// RTL Simulation : 113 / 460 [124.49%] @ "61165000"
+// RTL Simulation : 114 / 460 [124.49%] @ "61405000"
+// RTL Simulation : 115 / 460 [124.49%] @ "61645000"
+// RTL Simulation : 116 / 460 [44.90%] @ "61885000"
+// RTL Simulation : 117 / 460 [124.49%] @ "63295000"
+// RTL Simulation : 118 / 460 [124.49%] @ "63535000"
+// RTL Simulation : 119 / 460 [124.49%] @ "63775000"
+// RTL Simulation : 120 / 460 [44.90%] @ "64015000"
+// RTL Simulation : 121 / 460 [124.49%] @ "65425000"
+// RTL Simulation : 122 / 460 [124.49%] @ "65665000"
+// RTL Simulation : 123 / 460 [124.49%] @ "65905000"
+// RTL Simulation : 124 / 460 [44.90%] @ "66145000"
+// RTL Simulation : 125 / 460 [124.49%] @ "67555000"
+// RTL Simulation : 126 / 460 [124.49%] @ "67795000"
+// RTL Simulation : 127 / 460 [124.49%] @ "68035000"
+// RTL Simulation : 128 / 460 [44.90%] @ "68275000"
+// RTL Simulation : 129 / 460 [124.49%] @ "69685000"
+// RTL Simulation : 130 / 460 [124.49%] @ "69925000"
+// RTL Simulation : 131 / 460 [124.49%] @ "70165000"
+// RTL Simulation : 132 / 460 [44.90%] @ "70405000"
+// RTL Simulation : 133 / 460 [124.49%] @ "71815000"
+// RTL Simulation : 134 / 460 [124.49%] @ "72055000"
+// RTL Simulation : 135 / 460 [124.49%] @ "72295000"
+// RTL Simulation : 136 / 460 [44.90%] @ "72535000"
+// RTL Simulation : 137 / 460 [124.49%] @ "73945000"
+// RTL Simulation : 138 / 460 [124.49%] @ "74185000"
+// RTL Simulation : 139 / 460 [124.49%] @ "74425000"
+// RTL Simulation : 140 / 460 [44.90%] @ "74665000"
+// RTL Simulation : 141 / 460 [124.49%] @ "76075000"
+// RTL Simulation : 142 / 460 [124.49%] @ "76315000"
+// RTL Simulation : 143 / 460 [124.49%] @ "76555000"
+// RTL Simulation : 144 / 460 [44.90%] @ "76795000"
+// RTL Simulation : 145 / 460 [124.49%] @ "78205000"
+// RTL Simulation : 146 / 460 [124.49%] @ "78445000"
+// RTL Simulation : 147 / 460 [124.49%] @ "78685000"
+// RTL Simulation : 148 / 460 [44.90%] @ "78925000"
+// RTL Simulation : 149 / 460 [124.49%] @ "80335000"
+// RTL Simulation : 150 / 460 [124.49%] @ "80575000"
+// RTL Simulation : 151 / 460 [124.49%] @ "80815000"
+// RTL Simulation : 152 / 460 [44.90%] @ "81055000"
+// RTL Simulation : 153 / 460 [124.49%] @ "82465000"
+// RTL Simulation : 154 / 460 [124.49%] @ "82705000"
+// RTL Simulation : 155 / 460 [124.49%] @ "82945000"
+// RTL Simulation : 156 / 460 [44.90%] @ "83185000"
+// RTL Simulation : 157 / 460 [124.49%] @ "84595000"
+// RTL Simulation : 158 / 460 [124.49%] @ "84835000"
+// RTL Simulation : 159 / 460 [124.49%] @ "85075000"
+// RTL Simulation : 160 / 460 [44.90%] @ "85315000"
+// RTL Simulation : 161 / 460 [124.49%] @ "86725000"
+// RTL Simulation : 162 / 460 [124.49%] @ "86965000"
+// RTL Simulation : 163 / 460 [124.49%] @ "87205000"
+// RTL Simulation : 164 / 460 [44.90%] @ "87445000"
+// RTL Simulation : 165 / 460 [124.49%] @ "88855000"
+// RTL Simulation : 166 / 460 [124.49%] @ "89095000"
+// RTL Simulation : 167 / 460 [124.49%] @ "89335000"
+// RTL Simulation : 168 / 460 [44.90%] @ "89575000"
+// RTL Simulation : 169 / 460 [124.49%] @ "90985000"
+// RTL Simulation : 170 / 460 [124.49%] @ "91225000"
+// RTL Simulation : 171 / 460 [124.49%] @ "91465000"
+// RTL Simulation : 172 / 460 [44.90%] @ "91705000"
+// RTL Simulation : 173 / 460 [124.49%] @ "93115000"
+// RTL Simulation : 174 / 460 [124.49%] @ "93355000"
+// RTL Simulation : 175 / 460 [124.49%] @ "93595000"
+// RTL Simulation : 176 / 460 [44.90%] @ "93835000"
+// RTL Simulation : 177 / 460 [124.49%] @ "95245000"
+// RTL Simulation : 178 / 460 [124.49%] @ "95485000"
+// RTL Simulation : 179 / 460 [124.49%] @ "95725000"
+// RTL Simulation : 180 / 460 [44.90%] @ "95965000"
+// RTL Simulation : 181 / 460 [124.49%] @ "97375000"
+// RTL Simulation : 182 / 460 [124.49%] @ "97615000"
+// RTL Simulation : 183 / 460 [124.49%] @ "97855000"
+// RTL Simulation : 184 / 460 [44.90%] @ "98095000"
+// RTL Simulation : 185 / 460 [124.49%] @ "99505000"
+// RTL Simulation : 186 / 460 [124.49%] @ "99745000"
+// RTL Simulation : 187 / 460 [124.49%] @ "99985000"
+// RTL Simulation : 188 / 460 [44.90%] @ "100225000"
+// RTL Simulation : 189 / 460 [124.49%] @ "101635000"
+// RTL Simulation : 190 / 460 [124.49%] @ "101875000"
+// RTL Simulation : 191 / 460 [124.49%] @ "102115000"
+// RTL Simulation : 192 / 460 [44.90%] @ "102355000"
+// RTL Simulation : 193 / 460 [124.49%] @ "103765000"
+// RTL Simulation : 194 / 460 [124.49%] @ "104005000"
+// RTL Simulation : 195 / 460 [124.49%] @ "104245000"
+// RTL Simulation : 196 / 460 [44.90%] @ "104485000"
+// RTL Simulation : 197 / 460 [124.49%] @ "105895000"
+// RTL Simulation : 198 / 460 [124.49%] @ "106135000"
+// RTL Simulation : 199 / 460 [124.49%] @ "106375000"
+// RTL Simulation : 200 / 460 [44.90%] @ "106615000"
+// RTL Simulation : 201 / 460 [124.49%] @ "108025000"
+// RTL Simulation : 202 / 460 [124.49%] @ "108265000"
+// RTL Simulation : 203 / 460 [124.49%] @ "108505000"
+// RTL Simulation : 204 / 460 [44.90%] @ "108745000"
+// RTL Simulation : 205 / 460 [124.49%] @ "110155000"
+// RTL Simulation : 206 / 460 [124.49%] @ "110395000"
+// RTL Simulation : 207 / 460 [124.49%] @ "110635000"
+// RTL Simulation : 208 / 460 [44.90%] @ "110875000"
+// RTL Simulation : 209 / 460 [124.49%] @ "112285000"
+// RTL Simulation : 210 / 460 [124.49%] @ "112525000"
+// RTL Simulation : 211 / 460 [124.49%] @ "112765000"
+// RTL Simulation : 212 / 460 [44.90%] @ "113005000"
+// RTL Simulation : 213 / 460 [124.49%] @ "114415000"
+// RTL Simulation : 214 / 460 [124.49%] @ "114655000"
+// RTL Simulation : 215 / 460 [124.49%] @ "114895000"
+// RTL Simulation : 216 / 460 [44.90%] @ "115135000"
+// RTL Simulation : 217 / 460 [124.49%] @ "116545000"
+// RTL Simulation : 218 / 460 [124.49%] @ "116785000"
+// RTL Simulation : 219 / 460 [124.49%] @ "117025000"
+// RTL Simulation : 220 / 460 [44.90%] @ "117265000"
+// RTL Simulation : 221 / 460 [124.49%] @ "118675000"
+// RTL Simulation : 222 / 460 [124.49%] @ "118915000"
+// RTL Simulation : 223 / 460 [124.49%] @ "119155000"
+// RTL Simulation : 224 / 460 [44.90%] @ "119395000"
+// RTL Simulation : 225 / 460 [124.49%] @ "120805000"
+// RTL Simulation : 226 / 460 [124.49%] @ "121045000"
+// RTL Simulation : 227 / 460 [124.49%] @ "121285000"
+// RTL Simulation : 228 / 460 [44.90%] @ "121525000"
+// RTL Simulation : 229 / 460 [124.49%] @ "122935000"
+// RTL Simulation : 230 / 460 [124.49%] @ "123175000"
+// RTL Simulation : 231 / 460 [124.49%] @ "123415000"
+// RTL Simulation : 232 / 460 [44.90%] @ "123655000"
+// RTL Simulation : 233 / 460 [124.49%] @ "125065000"
+// RTL Simulation : 234 / 460 [124.49%] @ "125305000"
+// RTL Simulation : 235 / 460 [124.49%] @ "125545000"
+// RTL Simulation : 236 / 460 [44.90%] @ "125785000"
+// RTL Simulation : 237 / 460 [124.49%] @ "127195000"
+// RTL Simulation : 238 / 460 [124.49%] @ "127435000"
+// RTL Simulation : 239 / 460 [124.49%] @ "127675000"
+// RTL Simulation : 240 / 460 [44.90%] @ "127915000"
+// RTL Simulation : 241 / 460 [124.49%] @ "129325000"
+// RTL Simulation : 242 / 460 [124.49%] @ "129565000"
+// RTL Simulation : 243 / 460 [124.49%] @ "129805000"
+// RTL Simulation : 244 / 460 [44.90%] @ "130045000"
+// RTL Simulation : 245 / 460 [124.49%] @ "131455000"
+// RTL Simulation : 246 / 460 [124.49%] @ "131695000"
+// RTL Simulation : 247 / 460 [124.49%] @ "131935000"
+// RTL Simulation : 248 / 460 [44.90%] @ "132175000"
+// RTL Simulation : 249 / 460 [124.49%] @ "133585000"
+// RTL Simulation : 250 / 460 [124.49%] @ "133825000"
+// RTL Simulation : 251 / 460 [124.49%] @ "134065000"
+// RTL Simulation : 252 / 460 [44.90%] @ "134305000"
+// RTL Simulation : 253 / 460 [124.49%] @ "135715000"
+// RTL Simulation : 254 / 460 [124.49%] @ "135955000"
+// RTL Simulation : 255 / 460 [124.49%] @ "136195000"
+// RTL Simulation : 256 / 460 [44.90%] @ "136435000"
+// RTL Simulation : 257 / 460 [124.49%] @ "137845000"
+// RTL Simulation : 258 / 460 [124.49%] @ "138085000"
+// RTL Simulation : 259 / 460 [124.49%] @ "138325000"
+// RTL Simulation : 260 / 460 [44.90%] @ "138565000"
+// RTL Simulation : 261 / 460 [124.49%] @ "139975000"
+// RTL Simulation : 262 / 460 [124.49%] @ "140215000"
+// RTL Simulation : 263 / 460 [124.49%] @ "140455000"
+// RTL Simulation : 264 / 460 [44.90%] @ "140695000"
+// RTL Simulation : 265 / 460 [124.49%] @ "142105000"
+// RTL Simulation : 266 / 460 [124.49%] @ "142345000"
+// RTL Simulation : 267 / 460 [124.49%] @ "142585000"
+// RTL Simulation : 268 / 460 [44.90%] @ "142825000"
+// RTL Simulation : 269 / 460 [124.49%] @ "144235000"
+// RTL Simulation : 270 / 460 [124.49%] @ "144475000"
+// RTL Simulation : 271 / 460 [124.49%] @ "144715000"
+// RTL Simulation : 272 / 460 [44.90%] @ "144955000"
+// RTL Simulation : 273 / 460 [124.49%] @ "146365000"
+// RTL Simulation : 274 / 460 [124.49%] @ "146605000"
+// RTL Simulation : 275 / 460 [124.49%] @ "146845000"
+// RTL Simulation : 276 / 460 [44.90%] @ "147085000"
+// RTL Simulation : 277 / 460 [124.49%] @ "148495000"
+// RTL Simulation : 278 / 460 [124.49%] @ "148735000"
+// RTL Simulation : 279 / 460 [124.49%] @ "148975000"
+// RTL Simulation : 280 / 460 [44.90%] @ "149215000"
+// RTL Simulation : 281 / 460 [124.49%] @ "150625000"
+// RTL Simulation : 282 / 460 [124.49%] @ "150865000"
+// RTL Simulation : 283 / 460 [124.49%] @ "151105000"
+// RTL Simulation : 284 / 460 [44.90%] @ "151345000"
+// RTL Simulation : 285 / 460 [124.49%] @ "152755000"
+// RTL Simulation : 286 / 460 [124.49%] @ "152995000"
+// RTL Simulation : 287 / 460 [124.49%] @ "153235000"
+// RTL Simulation : 288 / 460 [44.90%] @ "153475000"
+// RTL Simulation : 289 / 460 [124.49%] @ "154885000"
+// RTL Simulation : 290 / 460 [124.49%] @ "155125000"
+// RTL Simulation : 291 / 460 [124.49%] @ "155365000"
+// RTL Simulation : 292 / 460 [44.90%] @ "155605000"
+// RTL Simulation : 293 / 460 [124.49%] @ "157015000"
+// RTL Simulation : 294 / 460 [124.49%] @ "157255000"
+// RTL Simulation : 295 / 460 [124.49%] @ "157495000"
+// RTL Simulation : 296 / 460 [44.90%] @ "157735000"
+// RTL Simulation : 297 / 460 [124.49%] @ "159145000"
+// RTL Simulation : 298 / 460 [124.49%] @ "159385000"
+// RTL Simulation : 299 / 460 [124.49%] @ "159625000"
+// RTL Simulation : 300 / 460 [44.90%] @ "159865000"
+// RTL Simulation : 301 / 460 [124.49%] @ "161275000"
+// RTL Simulation : 302 / 460 [124.49%] @ "161515000"
+// RTL Simulation : 303 / 460 [124.49%] @ "161755000"
+// RTL Simulation : 304 / 460 [44.90%] @ "161995000"
+// RTL Simulation : 305 / 460 [124.49%] @ "163405000"
+// RTL Simulation : 306 / 460 [124.49%] @ "163645000"
+// RTL Simulation : 307 / 460 [124.49%] @ "163885000"
+// RTL Simulation : 308 / 460 [44.90%] @ "164125000"
+// RTL Simulation : 309 / 460 [124.49%] @ "165535000"
+// RTL Simulation : 310 / 460 [124.49%] @ "165775000"
+// RTL Simulation : 311 / 460 [124.49%] @ "166015000"
+// RTL Simulation : 312 / 460 [44.90%] @ "166255000"
+// RTL Simulation : 313 / 460 [124.49%] @ "167665000"
+// RTL Simulation : 314 / 460 [124.49%] @ "167905000"
+// RTL Simulation : 315 / 460 [124.49%] @ "168145000"
+// RTL Simulation : 316 / 460 [44.90%] @ "168385000"
+// RTL Simulation : 317 / 460 [124.49%] @ "169795000"
+// RTL Simulation : 318 / 460 [124.49%] @ "170035000"
+// RTL Simulation : 319 / 460 [124.49%] @ "170275000"
+// RTL Simulation : 320 / 460 [44.90%] @ "170515000"
+// RTL Simulation : 321 / 460 [124.49%] @ "171925000"
+// RTL Simulation : 322 / 460 [124.49%] @ "172165000"
+// RTL Simulation : 323 / 460 [124.49%] @ "172405000"
+// RTL Simulation : 324 / 460 [44.90%] @ "172645000"
+// RTL Simulation : 325 / 460 [124.49%] @ "174055000"
+// RTL Simulation : 326 / 460 [124.49%] @ "174295000"
+// RTL Simulation : 327 / 460 [124.49%] @ "174535000"
+// RTL Simulation : 328 / 460 [44.90%] @ "174775000"
+// RTL Simulation : 329 / 460 [124.49%] @ "176185000"
+// RTL Simulation : 330 / 460 [124.49%] @ "176425000"
+// RTL Simulation : 331 / 460 [124.49%] @ "176665000"
+// RTL Simulation : 332 / 460 [44.90%] @ "176905000"
+// RTL Simulation : 333 / 460 [124.49%] @ "178315000"
+// RTL Simulation : 334 / 460 [124.49%] @ "178555000"
+// RTL Simulation : 335 / 460 [124.49%] @ "178795000"
+// RTL Simulation : 336 / 460 [44.90%] @ "179035000"
+// RTL Simulation : 337 / 460 [124.49%] @ "180445000"
+// RTL Simulation : 338 / 460 [124.49%] @ "180685000"
+// RTL Simulation : 339 / 460 [124.49%] @ "180925000"
+// RTL Simulation : 340 / 460 [44.90%] @ "181165000"
+// RTL Simulation : 341 / 460 [124.49%] @ "182575000"
+// RTL Simulation : 342 / 460 [124.49%] @ "182815000"
+// RTL Simulation : 343 / 460 [124.49%] @ "183055000"
+// RTL Simulation : 344 / 460 [44.90%] @ "183295000"
+// RTL Simulation : 345 / 460 [124.49%] @ "184705000"
+// RTL Simulation : 346 / 460 [124.49%] @ "184945000"
+// RTL Simulation : 347 / 460 [124.49%] @ "185185000"
+// RTL Simulation : 348 / 460 [44.90%] @ "185425000"
+// RTL Simulation : 349 / 460 [124.49%] @ "186835000"
+// RTL Simulation : 350 / 460 [124.49%] @ "187075000"
+// RTL Simulation : 351 / 460 [124.49%] @ "187315000"
+// RTL Simulation : 352 / 460 [44.90%] @ "187555000"
+// RTL Simulation : 353 / 460 [124.49%] @ "188965000"
+// RTL Simulation : 354 / 460 [124.49%] @ "189205000"
+// RTL Simulation : 355 / 460 [124.49%] @ "189445000"
+// RTL Simulation : 356 / 460 [44.90%] @ "189685000"
+// RTL Simulation : 357 / 460 [124.49%] @ "191095000"
+// RTL Simulation : 358 / 460 [124.49%] @ "191335000"
+// RTL Simulation : 359 / 460 [124.49%] @ "191575000"
+// RTL Simulation : 360 / 460 [44.90%] @ "191815000"
+// RTL Simulation : 361 / 460 [124.49%] @ "193225000"
+// RTL Simulation : 362 / 460 [124.49%] @ "193465000"
+// RTL Simulation : 363 / 460 [124.49%] @ "193705000"
+// RTL Simulation : 364 / 460 [44.90%] @ "193945000"
+// RTL Simulation : 365 / 460 [124.49%] @ "195355000"
+// RTL Simulation : 366 / 460 [124.49%] @ "195595000"
+// RTL Simulation : 367 / 460 [124.49%] @ "195835000"
+// RTL Simulation : 368 / 460 [44.90%] @ "196075000"
+// RTL Simulation : 369 / 460 [124.49%] @ "197485000"
+// RTL Simulation : 370 / 460 [124.49%] @ "197725000"
+// RTL Simulation : 371 / 460 [124.49%] @ "197965000"
+// RTL Simulation : 372 / 460 [44.90%] @ "198205000"
+// RTL Simulation : 373 / 460 [124.49%] @ "199615000"
+// RTL Simulation : 374 / 460 [124.49%] @ "199855000"
+// RTL Simulation : 375 / 460 [124.49%] @ "200095000"
+// RTL Simulation : 376 / 460 [44.90%] @ "200335000"
+// RTL Simulation : 377 / 460 [124.49%] @ "201745000"
+// RTL Simulation : 378 / 460 [124.49%] @ "201985000"
+// RTL Simulation : 379 / 460 [124.49%] @ "202225000"
+// RTL Simulation : 380 / 460 [44.90%] @ "202465000"
+// RTL Simulation : 381 / 460 [124.49%] @ "203875000"
+// RTL Simulation : 382 / 460 [124.49%] @ "204115000"
+// RTL Simulation : 383 / 460 [124.49%] @ "204355000"
+// RTL Simulation : 384 / 460 [44.90%] @ "204595000"
+// RTL Simulation : 385 / 460 [124.49%] @ "206005000"
+// RTL Simulation : 386 / 460 [124.49%] @ "206245000"
+// RTL Simulation : 387 / 460 [124.49%] @ "206485000"
+// RTL Simulation : 388 / 460 [44.90%] @ "206725000"
+// RTL Simulation : 389 / 460 [124.49%] @ "208135000"
+// RTL Simulation : 390 / 460 [124.49%] @ "208375000"
+// RTL Simulation : 391 / 460 [124.49%] @ "208615000"
+// RTL Simulation : 392 / 460 [44.90%] @ "208855000"
+// RTL Simulation : 393 / 460 [124.49%] @ "210265000"
+// RTL Simulation : 394 / 460 [124.49%] @ "210505000"
+// RTL Simulation : 395 / 460 [124.49%] @ "210745000"
+// RTL Simulation : 396 / 460 [44.90%] @ "210985000"
+// RTL Simulation : 397 / 460 [124.49%] @ "212395000"
+// RTL Simulation : 398 / 460 [124.49%] @ "212635000"
+// RTL Simulation : 399 / 460 [124.49%] @ "212875000"
+// RTL Simulation : 400 / 460 [44.90%] @ "213115000"
+// RTL Simulation : 401 / 460 [124.49%] @ "214525000"
+// RTL Simulation : 402 / 460 [124.49%] @ "214765000"
+// RTL Simulation : 403 / 460 [124.49%] @ "215005000"
+// RTL Simulation : 404 / 460 [44.90%] @ "215245000"
+// RTL Simulation : 405 / 460 [124.49%] @ "216655000"
+// RTL Simulation : 406 / 460 [124.49%] @ "216895000"
+// RTL Simulation : 407 / 460 [124.49%] @ "217135000"
+// RTL Simulation : 408 / 460 [44.90%] @ "217375000"
+// RTL Simulation : 409 / 460 [124.49%] @ "218785000"
+// RTL Simulation : 410 / 460 [124.49%] @ "219025000"
+// RTL Simulation : 411 / 460 [124.49%] @ "219265000"
+// RTL Simulation : 412 / 460 [44.90%] @ "219505000"
+// RTL Simulation : 413 / 460 [124.49%] @ "220915000"
+// RTL Simulation : 414 / 460 [124.49%] @ "221155000"
+// RTL Simulation : 415 / 460 [124.49%] @ "221395000"
+// RTL Simulation : 416 / 460 [44.90%] @ "221635000"
+// RTL Simulation : 417 / 460 [124.49%] @ "223045000"
+// RTL Simulation : 418 / 460 [124.49%] @ "223285000"
+// RTL Simulation : 419 / 460 [124.49%] @ "223525000"
+// RTL Simulation : 420 / 460 [44.90%] @ "223765000"
+// RTL Simulation : 421 / 460 [124.49%] @ "225175000"
+// RTL Simulation : 422 / 460 [124.49%] @ "225415000"
+// RTL Simulation : 423 / 460 [124.49%] @ "225655000"
+// RTL Simulation : 424 / 460 [44.90%] @ "225895000"
+// RTL Simulation : 425 / 460 [124.49%] @ "227305000"
+// RTL Simulation : 426 / 460 [124.49%] @ "227545000"
+// RTL Simulation : 427 / 460 [124.49%] @ "227785000"
+// RTL Simulation : 428 / 460 [44.90%] @ "228025000"
+// RTL Simulation : 429 / 460 [124.49%] @ "229435000"
+// RTL Simulation : 430 / 460 [124.49%] @ "229675000"
+// RTL Simulation : 431 / 460 [124.49%] @ "229915000"
+// RTL Simulation : 432 / 460 [44.90%] @ "230155000"
+// RTL Simulation : 433 / 460 [124.49%] @ "231565000"
+// RTL Simulation : 434 / 460 [124.49%] @ "231805000"
+// RTL Simulation : 435 / 460 [124.49%] @ "232045000"
+// RTL Simulation : 436 / 460 [44.90%] @ "232285000"
+// RTL Simulation : 437 / 460 [124.49%] @ "233695000"
+// RTL Simulation : 438 / 460 [124.49%] @ "233935000"
+// RTL Simulation : 439 / 460 [124.49%] @ "234175000"
+// RTL Simulation : 440 / 460 [44.90%] @ "234415000"
+// RTL Simulation : 441 / 460 [124.49%] @ "235825000"
+// RTL Simulation : 442 / 460 [124.49%] @ "236065000"
+// RTL Simulation : 443 / 460 [124.49%] @ "236305000"
+// RTL Simulation : 444 / 460 [44.90%] @ "236545000"
+// RTL Simulation : 445 / 460 [124.49%] @ "237955000"
+// RTL Simulation : 446 / 460 [124.49%] @ "238195000"
+// RTL Simulation : 447 / 460 [124.49%] @ "238435000"
+// RTL Simulation : 448 / 460 [44.90%] @ "238675000"
+// RTL Simulation : 449 / 460 [124.49%] @ "240085000"
+// RTL Simulation : 450 / 460 [124.49%] @ "240325000"
+// RTL Simulation : 451 / 460 [124.49%] @ "240565000"
+// RTL Simulation : 452 / 460 [44.90%] @ "240805000"
+// RTL Simulation : 453 / 460 [124.49%] @ "242215000"
+// RTL Simulation : 454 / 460 [124.49%] @ "242455000"
+// RTL Simulation : 455 / 460 [124.49%] @ "242695000"
+// RTL Simulation : 456 / 460 [44.90%] @ "242935000"
+// RTL Simulation : 457 / 460 [124.49%] @ "244345000"
+// RTL Simulation : 458 / 460 [124.49%] @ "244585000"
+// RTL Simulation : 459 / 460 [124.49%] @ "244825000"
+// RTL Simulation : 460 / 460 [100.00%] @ "245065000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 245125 ns : File "C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/sim/verilog/FIR_HLS.autotb.v" Line 196
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Nov 12 23:23:08 2025...
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Input and reference data lengths match.
+Mismatch at sample   92: ref=-0.00213623, dut=          0
+Mismatch at sample   93: ref=-0.00228882, dut=          0
+Mismatch at sample   94: ref=-0.00228882, dut=          0
+Mismatch at sample   95: ref=-0.00213623, dut=          0
+Mismatch at sample  115: ref=0.00219727, dut=          0
+Mismatch at sample  116: ref=0.00250244, dut=          0
+Mismatch at sample  117: ref=0.00259399, dut=          0
+Mismatch at sample  118: ref=0.00247192, dut=          0
+Mismatch at sample  119: ref=0.00210571, dut=          0
+Mismatch at sample  138: ref=-0.00234985, dut=          0
+Mismatch at sample  139: ref=-0.00280762, dut=          0
+Mismatch at sample  140: ref=-0.00299072, dut=          0
+Mismatch at sample  141: ref=-0.00289917, dut=          0
+Mismatch at sample  142: ref=-0.00250244, dut=          0
+Mismatch at sample  154: ref=-0.00234985, dut=          0
+Mismatch at sample  155: ref=-0.00244141, dut=          0
+Mismatch at sample  156: ref=-0.00213623, dut=          0
+Mismatch at sample  161: ref=0.00250244, dut=          0
+Mismatch at sample  162: ref=0.00317383, dut=          0
+Mismatch at sample  163: ref=0.003479, dut=          0
+Mismatch at sample  164: ref=0.00338745, dut=          0
+Mismatch at sample  165: ref=0.00296021, dut=          0
+Mismatch at sample  166: ref=0.00213623, dut=          0
+Mismatch at sample  176: ref=0.00265503, dut=          0
+Mismatch at sample  177: ref=0.00338745, dut=          0
+Mismatch at sample  178: ref=0.00369263, dut=          0
+Mismatch at sample  179: ref=0.003479, dut=          0
+Mismatch at sample  180: ref=0.00274658, dut=          0
+Mismatch at sample  184: ref=-0.00280762, dut=          0
+Mismatch at sample  185: ref=-0.00390625, dut=          0
+Mismatch at sample  186: ref=-0.00445557, dut=          0
+Mismatch at sample  187: ref=-0.0043335, dut=          0
+Mismatch at sample  188: ref=-0.00369263, dut=          0
+Mismatch at sample  189: ref=-0.00259399, dut=          0
+Mismatch at sample  193: ref=0.00250244, dut=          0
+Mismatch at sample  194: ref=0.00274658, dut=          0
+Mismatch at sample  195: ref=0.0022583, dut=          0
+Mismatch at sample  198: ref=-0.00201416, dut=          0
+Mismatch at sample  199: ref=-0.00372314, dut=          0
+Mismatch at sample  200: ref=-0.00500488, dut=          0
+Mismatch at sample  201: ref=-0.0057373, dut=          0
+Mismatch at sample  202: ref=-0.00567627, dut=          0
+Mismatch at sample  203: ref=-0.00469971, dut=          0
+Mismatch at sample  204: ref=-0.00305176, dut=          0
+Mismatch at sample  207: ref=0.00369263, dut=          0
+Mismatch at sample  208: ref=0.00537109, dut=          0
+Mismatch at sample  209: ref=0.00637817, dut=          0
+Mismatch at sample  210: ref=0.00631714, dut=          0
+Mismatch at sample  211: ref=0.00518799, dut=          0
+Mismatch at sample  212: ref=0.00335693, dut=          0
+Mismatch at sample  215: ref=-0.00384521, dut=          0
+Mismatch at sample  216: ref=-0.00534058, dut=          0
+Mismatch at sample  217: ref=-0.00595093, dut=          0
+Mismatch at sample  218: ref=-0.00524902, dut=          0
+Mismatch at sample  219: ref=-0.0032959, dut=          0
+Mismatch at sample  221: ref=0.00259399, dut=          0
+Mismatch at sample  222: ref=0.00582886, dut=          0
+Mismatch at sample  223: ref=0.00857544, dut=          0
+Mismatch at sample  224: ref=0.0101318, dut=          0
+Mismatch at sample  225: ref=0.0104065, dut=          0
+Mismatch at sample  226: ref=0.0088501, dut=          0
+Mismatch at sample  227: ref=0.00564575, dut=          0
+Mismatch at sample  229: ref=-0.00296021, dut=          0
+Mismatch at sample  230: ref=-0.00735474, dut=          0
+Mismatch at sample  231: ref=-0.0109558, dut=          0
+Mismatch at sample  232: ref=-0.0128174, dut=          0
+Mismatch at sample  233: ref=-0.0128479, dut=          0
+Mismatch at sample  234: ref=-0.0101318, dut=          0
+Mismatch at sample  235: ref=-0.0050354, dut=          0
+Mismatch at sample  237: ref=0.0071106, dut=          0
+Mismatch at sample  238: ref=0.0128479, dut=          0
+Mismatch at sample  239: ref=0.0171509, dut=          0
+Mismatch at sample  240: ref=0.0191345, dut=          0
+Mismatch at sample  241: ref=0.017395, dut=          0
+Mismatch at sample  242: ref=0.0104065, dut=          0
+Mismatch at sample  244: ref=-0.00924683, dut=          0
+Mismatch at sample  245: ref=-0.0203247, dut=          0
+Mismatch at sample  246: ref=-0.0316467, dut=          0
+Mismatch at sample  247: ref=-0.0435791, dut=          0
+Mismatch at sample  248: ref=-0.0327148, dut=          0
+Mismatch at sample  249: ref=-0.0194092, dut=          0
+Mismatch at sample  250: ref=0.00549316, dut=          0
+Mismatch at sample  251: ref=0.0359192, dut=          0
+Mismatch at sample  252: ref=0.102448, dut=          0
+Mismatch at sample  253: ref=0.171631, dut=          0
+Mismatch at sample  254: ref=0.254211, dut=          0
+Mismatch at sample  255: ref=0.337799, dut=          0
+Mismatch at sample  256: ref=0.449188, dut=          0
+Mismatch at sample  257: ref=0.551514, dut=          0
+Mismatch at sample  258: ref=0.653046, dut=          0
+Mismatch at sample  259: ref=0.741486, dut=          0
+Mismatch at sample  260: ref=0.835297, dut=          0
+Mismatch at sample  261: ref=0.90567, dut=          0
+Mismatch at sample  262: ref=0.961639, dut=          0
+Mismatch at sample  263: ref=0.995331, dut=          0
+Mismatch at sample  264: ref=-0.982544, dut=          0
+Mismatch at sample  265: ref=-0.987885, dut=          0
+Mismatch at sample  266: ref=0.995361, dut=          0
+Mismatch at sample  267: ref=0.959229, dut=          0
+Mismatch at sample  268: ref=0.905823, dut=          0
+Mismatch at sample  269: ref=0.831512, dut=          0
+Mismatch at sample  270: ref=0.760529, dut=          0
+Mismatch at sample  271: ref=0.677917, dut=          0
+Mismatch at sample  272: ref=0.575134, dut=          0
+Mismatch at sample  273: ref=0.460236, dut=          0
+Mismatch at sample  274: ref=0.36084, dut=          0
+Mismatch at sample  275: ref=0.255554, dut=          0
+Mismatch at sample  276: ref=0.126953, dut=          0
+Mismatch at sample  277: ref=-0.00512695, dut=          0
+Mismatch at sample  278: ref=-0.116486, dut=          0
+Mismatch at sample  279: ref=-0.227264, dut=          0
+Mismatch at sample  280: ref=-0.358093, dut=          0
+Mismatch at sample  281: ref=-0.481445, dut=          0
+Mismatch at sample  282: ref=-0.582062, dut=          0
+Mismatch at sample  283: ref=-0.672455, dut=          0
+Mismatch at sample  284: ref=-0.771301, dut=          0
+Mismatch at sample  285: ref=-0.851379, dut=          0
+Mismatch at sample  286: ref=-0.910278, dut=          0
+Mismatch at sample  287: ref=-0.951416, dut=          0
+Mismatch at sample  288: ref=-0.987885, dut=          0
+Mismatch at sample  289: ref=0.999847, dut=          0
+Mismatch at sample  290: ref=-0.999756, dut=          0
+Mismatch at sample  291: ref=-0.980927, dut=          0
+Mismatch at sample  292: ref=-0.947968, dut=          0
+Mismatch at sample  293: ref=-0.892883, dut=          0
+Mismatch at sample  294: ref=-0.838196, dut=          0
+Mismatch at sample  295: ref=-0.769135, dut=          0
+Mismatch at sample  296: ref=-0.679352, dut=          0
+Mismatch at sample  297: ref=-0.573975, dut=          0
+Mismatch at sample  298: ref=-0.480408, dut=          0
+Mismatch at sample  299: ref=-0.378174, dut=          0
+Mismatch at sample  300: ref=-0.251801, dut=          0
+Mismatch at sample  301: ref=-0.119049, dut=          0
+Mismatch at sample  302: ref=-0.00567627, dut=          0
+Mismatch at sample  303: ref=0.108612, dut=          0
+Mismatch at sample  304: ref=0.243744, dut=          0
+Mismatch at sample  305: ref=0.373505, dut=          0
+Mismatch at sample  306: ref=0.479858, dut=          0
+Mismatch at sample  307: ref=0.577423, dut=          0
+Mismatch at sample  308: ref=0.685944, dut=          0
+Mismatch at sample  309: ref=0.777802, dut=          0
+Mismatch at sample  310: ref=0.847229, dut=          0
+Mismatch at sample  311: ref=0.900574, dut=          0
+Mismatch at sample  312: ref=0.952942, dut=          0
+Mismatch at sample  313: ref=0.98233, dut=          0
+Mismatch at sample  314: ref=0.99707, dut=          0
+Mismatch at sample  315: ref=0.993713, dut=          0
+Mismatch at sample  316: ref=0.978882, dut=          0
+Mismatch at sample  317: ref=0.941132, dut=          0
+Mismatch at sample  318: ref=0.900574, dut=          0
+Mismatch at sample  319: ref=0.844177, dut=          0
+Mismatch at sample  320: ref=0.767914, dut=          0
+Mismatch at sample  321: ref=0.673645, dut=          0
+Mismatch at sample  322: ref=0.588043, dut=          0
+Mismatch at sample  323: ref=0.491638, dut=          0
+Mismatch at sample  324: ref=0.370972, dut=          0
+Mismatch at sample  325: ref=0.24115, dut=          0
+Mismatch at sample  326: ref=0.129059, dut=          0
+Mismatch at sample  327: ref=0.0141602, dut=          0
+Mismatch at sample  328: ref=-0.122711, dut=          0
+Mismatch at sample  329: ref=-0.256836, dut=          0
+Mismatch at sample  330: ref=-0.367615, dut=          0
+Mismatch at sample  331: ref=-0.471558, dut=          0
+Mismatch at sample  332: ref=-0.588989, dut=          0
+Mismatch at sample  333: ref=-0.692108, dut=          0
+Mismatch at sample  334: ref=-0.771912, dut=          0
+Mismatch at sample  335: ref=-0.83725, dut=          0
+Mismatch at sample  336: ref=-0.904938, dut=          0
+Mismatch at sample  337: ref=-0.950989, dut=          0
+Mismatch at sample  338: ref=-0.980347, dut=          0
+Mismatch at sample  339: ref=-0.992035, dut=          0
+Mismatch at sample  340: ref=-0.994904, dut=          0
+Mismatch at sample  341: ref=-0.974426, dut=          0
+Mismatch at sample  342: ref=-0.948059, dut=          0
+Mismatch at sample  343: ref=-0.904755, dut=          0
+Mismatch at sample  344: ref=-0.843048, dut=          0
+Mismatch at sample  345: ref=-0.761383, dut=          0
+Mismatch at sample  346: ref=-0.685333, dut=          0
+Mismatch at sample  347: ref=-0.596619, dut=          0
+Mismatch at sample  348: ref=-0.484009, dut=          0
+Mismatch at sample  349: ref=-0.35968, dut=          0
+Mismatch at sample  350: ref=-0.251068, dut=          0
+Mismatch at sample  351: ref=-0.137634, dut=          0
+Mismatch at sample  353: ref=0.13501, dut=          0
+Mismatch at sample  354: ref=0.248688, dut=          0
+Mismatch at sample  355: ref=0.357666, dut=          0
+Mismatch at sample  356: ref=0.482483, dut=          0
+Mismatch at sample  357: ref=0.595581, dut=          0
+Mismatch at sample  358: ref=0.684814, dut=          0
+Mismatch at sample  359: ref=0.761353, dut=          0
+Mismatch at sample  360: ref=0.843384, dut=          0
+Mismatch at sample  361: ref=0.905365, dut=          0
+Mismatch at sample  362: ref=0.94873, dut=          0
+Mismatch at sample  363: ref=0.975006, dut=          0
+Mismatch at sample  364: ref=0.995331, dut=          0
+Mismatch at sample  365: ref=0.992157, dut=          0
+Mismatch at sample  366: ref=0.980133, dut=          0
+Mismatch at sample  367: ref=0.950409, dut=          0
+Mismatch at sample  368: ref=0.904175, dut=          0
+Mismatch at sample  369: ref=0.836456, dut=          0
+Mismatch at sample  370: ref=0.771271, dut=          0
+Mismatch at sample  371: ref=0.691864, dut=          0
+Mismatch at sample  372: ref=0.589325, dut=          0
+Mismatch at sample  373: ref=0.472626, dut=          0
+Mismatch at sample  374: ref=0.369446, dut=          0
+Mismatch at sample  375: ref=0.25943, dut=          0
+Mismatch at sample  376: ref=0.125885, dut=          0
+Mismatch at sample  377: ref=-0.0106201, dut=          0
+Mismatch at sample  378: ref=-0.125519, dut=          0
+Mismatch at sample  379: ref=-0.237976, dut=          0
+Mismatch at sample  380: ref=-0.368408, dut=          0
+Mismatch at sample  381: ref=-0.489929, dut=          0
+Mismatch at sample  382: ref=-0.587341, dut=          0
+Mismatch at sample  383: ref=-0.673981, dut=          0
+Mismatch at sample  384: ref=-0.769104, dut=          0
+Mismatch at sample  385: ref=-0.845978, dut=          0
+Mismatch at sample  386: ref=-0.902557, dut=          0
+Mismatch at sample  387: ref=-0.942871, dut=          0
+Mismatch at sample  388: ref=-0.980072, dut=          0
+Mismatch at sample  389: ref=-0.99411, dut=          0
+Mismatch at sample  390: ref=-0.99646, dut=          0
+Mismatch at sample  391: ref=-0.980743, dut=          0
+Mismatch at sample  392: ref=-0.950684, dut=          0
+Mismatch at sample  393: ref=-0.89801, dut=          0
+Mismatch at sample  394: ref=-0.844849, dut=          0
+Mismatch at sample  395: ref=-0.776154, dut=          0
+Mismatch at sample  396: ref=-0.685455, dut=          0
+Mismatch at sample  397: ref=-0.578369, dut=          0
+Mismatch at sample  398: ref=-0.482361, dut=          0
+Mismatch at sample  399: ref=-0.377533, dut=          0
+Mismatch at sample  400: ref=-0.24884, dut=          0
+Mismatch at sample  401: ref=-0.114288, dut=          0
+Mismatch at sample  403: ref=0.11438, dut=          0
+Mismatch at sample  404: ref=0.248535, dut=          0
+Mismatch at sample  405: ref=0.376678, dut=          0
+Mismatch at sample  406: ref=0.480835, dut=          0
+Mismatch at sample  407: ref=0.576233, dut=          0
+Mismatch at sample  408: ref=0.682892, dut=          0
+Mismatch at sample  409: ref=0.773407, dut=          0
+Mismatch at sample  410: ref=0.842194, dut=          0
+Mismatch at sample  411: ref=0.895782, dut=          0
+Mismatch at sample  412: ref=0.949188, dut=          0
+Mismatch at sample  413: ref=0.980133, dut=          0
+Mismatch at sample  414: ref=0.996765, dut=          0
+Mismatch at sample  415: ref=0.99527, dut=          0
+Mismatch at sample  416: ref=0.981903, dut=          0
+Mismatch at sample  417: ref=0.94516, dut=          0
+Mismatch at sample  418: ref=0.904938, dut=          0
+Mismatch at sample  419: ref=0.848114, dut=          0
+Mismatch at sample  420: ref=0.770813, dut=          0
+Mismatch at sample  421: ref=0.67511, dut=          0
+Mismatch at sample  422: ref=0.58783, dut=          0
+Mismatch at sample  423: ref=0.489868, dut=          0
+Mismatch at sample  424: ref=0.368011, dut=          0
+Mismatch at sample  425: ref=0.237488, dut=          0
+Mismatch at sample  426: ref=0.125305, dut=          0
+Mismatch at sample  427: ref=0.0108948, dut=          0
+Mismatch at sample  428: ref=-0.124908, dut=          0
+Mismatch at sample  429: ref=-0.257721, dut=          0
+Mismatch at sample  430: ref=-0.367035, dut=          0
+Mismatch at sample  431: ref=-0.469666, dut=          0
+Mismatch at sample  432: ref=-0.586182, dut=          0
+Mismatch at sample  433: ref=-0.688812, dut=          0
+Mismatch at sample  434: ref=-0.768677, dut=          0
+Mismatch at sample  435: ref=-0.834625, dut=          0
+Mismatch at sample  436: ref=-0.90332, dut=          0
+Mismatch at sample  437: ref=-0.950592, dut=          0
+Mismatch at sample  438: ref=-0.981232, dut=          0
+Mismatch at sample  439: ref=-0.993958, dut=          0
+Mismatch at sample  440: ref=-0.997559, dut=          0
+Mismatch at sample  441: ref=-0.977386, dut=          0
+Mismatch at sample  442: ref=-0.950806, dut=          0
+Mismatch at sample  443: ref=-0.90686, dut=          0
+Mismatch at sample  444: ref=-0.844208, dut=          0
+Mismatch at sample  445: ref=-0.761475, dut=          0
+Mismatch at sample  446: ref=-0.684296, dut=          0
+Mismatch at sample  447: ref=-0.594727, dut=          0
+Mismatch at sample  448: ref=-0.481598, dut=          0
+Mismatch at sample  449: ref=-0.357117, dut=          0
+Mismatch at sample  450: ref=-0.24881, dut=          0
+Mismatch at sample  451: ref=-0.136017, dut=          0
+Mismatch at sample  453: ref=0.134766, dut=          0
+Mismatch at sample  454: ref=0.247498, dut=          0
+Mismatch at sample  455: ref=0.355743, dut=          0
+Mismatch at sample  456: ref=0.480194, dut=          0
+Mismatch at sample  457: ref=0.593292, dut=          0
+Mismatch at sample  458: ref=0.682861, dut=          0
+Mismatch at sample  459: ref=0.76004, dut=          0
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 288
+Status: FAIL [!!] (288 samples out of tolerance)
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

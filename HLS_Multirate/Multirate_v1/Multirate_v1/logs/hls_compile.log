@@ -1,0 +1,423 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/FIR_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/FIR_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=../../Matlab/FIR_multirate_HLS.h' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_multirate_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/FIR_HLS_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_multirate.res' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.res' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_multirate.dat' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 8 seconds. CPU system time: 3 seconds. Elapsed time: 13.003 seconds; current allocated memory: 272.836 MB.
+INFO: [HLS 200-10] Analyzing design file 'FIR_HLS.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (FIR_HLS.cpp:15:15)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (FIR_HLS.cpp:12:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file FIR_HLS.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 13.48 seconds; current allocated memory: 275.805 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 7,443 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,208 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 582 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 558 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 558 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,101 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,831 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,831 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,759 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,759 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,763 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,775 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_47_2' is marked as complete unroll implied by the pipeline pragma (FIR_HLS.cpp:47:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_44_1' is marked as complete unroll implied by the pipeline pragma (FIR_HLS.cpp:44:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_2' (FIR_HLS.cpp:47:19) in function 'FIR_filter' completely with a factor of 116 (FIR_HLS.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_44_1' (FIR_HLS.cpp:44:19) in function 'FIR_filter' completely with a factor of 117 (FIR_HLS.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_2' (FIR_HLS.cpp:47:19) in function 'FIR_filter' completely with a factor of 4 (FIR_HLS.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_44_1' (FIR_HLS.cpp:44:19) in function 'FIR_filter' completely with a factor of 5 (FIR_HLS.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_2' (FIR_HLS.cpp:47:19) in function 'FIR_filter' completely with a factor of 5 (FIR_HLS.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_44_1' (FIR_HLS.cpp:44:19) in function 'FIR_filter' completely with a factor of 6 (FIR_HLS.cpp:37:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL16b_FIR_dec_int_43' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:66:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL16b_FIR_dec_int_42' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:63:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL16b_FIR_dec_int_41' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:60:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_int_40' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:30:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_int_41' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:31:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_int_42' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:32:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_int_43' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:33:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_dec_40' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:26:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_dec_43' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:29:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_dec_42' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:28:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL19H_filter_FIR_dec_41' dimension 1 completely based on constant index. (./../../Matlab/FIR_multirate_HLS.h:27:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'b_FIR_dec_int_41' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:60:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'b_FIR_dec_int_42' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:63:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'b_FIR_dec_int_43' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:66:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_dec_40' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:26:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_dec_41' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:27:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_dec_42' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:28:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_dec_43' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:29:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_int_40' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:30:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_int_41' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:31:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_int_42' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:32:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_int_43' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:33:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'H_filter_FIR_kernel' due to pipeline pragma (./../../Matlab/FIR_multirate_HLS.h:25:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_kernel': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:25:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_int_43': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:33:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_int_42': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:32:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_int_41': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:31:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_int_40': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:30:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_dec_43': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:29:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_dec_42': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:28:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_dec_41': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:27:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL19H_filter_FIR_dec_40': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL16b_FIR_dec_int_43': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL16b_FIR_dec_int_42': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:63:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL16b_FIR_dec_int_41': Complete partitioning on dimension 1. (./../../Matlab/FIR_multirate_HLS.h:60:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 15.072 seconds; current allocated memory: 278.609 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 278.609 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.333 seconds; current allocated memory: 283.812 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.299 seconds; current allocated memory: 286.273 MB.
+WARNING: [HLS 200-805] An internal stream 'kernel_out' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'dec_out' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'FIR_HLS' (FIR_HLS.cpp:8:1), detected/extracted 1 process function(s): 
+	 'Block_entry__ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc'.
+INFO: [XFORM 203-11] Balancing expressions in function 'DECIMATOR' (FIR_HLS.cpp:64:5)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.164 seconds; current allocated memory: 309.168 MB.
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process Block_entry__ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.838 seconds; current allocated memory: 358.949 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FIR_HLS' ...
+WARNING: [SYN 201-103] Legalizing function name 'FIR_filter.1' to 'FIR_filter_1'.
+WARNING: [SYN 201-103] Legalizing function name 'FIR_filter.2' to 'FIR_filter_2'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc' to 'Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FIR_filter_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'FIR_filter.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'FIR_filter.1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.988 seconds; current allocated memory: 363.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 364.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FIR_filter_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'FIR_filter.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'FIR_filter.2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.443 seconds; current allocated memory: 364.867 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 365.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DECIMATOR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 365.594 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.272 seconds; current allocated memory: 366.066 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FIR_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'FIR_filter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 20, function 'FIR_filter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.488 seconds; current allocated memory: 380.785 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.439 seconds; current allocated memory: 380.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'INTERPOLATOR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.113 seconds; current allocated memory: 380.855 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 380.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.221 seconds; current allocated memory: 380.863 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 380.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FIR_HLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.295 seconds; current allocated memory: 380.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.219 seconds; current allocated memory: 380.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FIR_filter_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FIR_filter_1' pipeline 'FIR_filter.1' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_10s_42_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_13s_44_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_13s_45_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_14ns_46_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_filter_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.501 seconds; current allocated memory: 382.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FIR_filter_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FIR_filter_2' pipeline 'FIR_filter.2' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_12s_43_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_12s_44_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_filter_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.628 seconds; current allocated memory: 383.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DECIMATOR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'mod_value_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_40_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_40_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_40_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_40_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_40_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'y1_phase1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'y1_phase2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'y1_phase3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_43_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_43_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_43_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_43_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_42_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_42_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_42_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_42_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_41_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_41_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_41_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_dec_41_3' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DECIMATOR'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.747 seconds; current allocated memory: 384.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FIR_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_115' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_114' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_113' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_112' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_111' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_110' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_109' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_108' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_107' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_106' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_105' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_104' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_103' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_102' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_101' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_100' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_99' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_98' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_97' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_96' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_95' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_94' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_93' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_92' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_91' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_90' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_89' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_88' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_87' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_86' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_85' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_84' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_83' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_82' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_81' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_80' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_79' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_78' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_77' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_76' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_75' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_74' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_73' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_72' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_71' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_70' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_69' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_68' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_67' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_66' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_65' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_64' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_63' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_55' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_54' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_53' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_52' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_51' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_50' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_49' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_48' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_39' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_38' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_37' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_36' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_35' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_34' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_33' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_32' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_31' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_kernel_0' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FIR_filter' pipeline 'FIR_filter' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_10s_42_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_11s_43_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_12s_44_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_13s_45_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_6s_38_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_7s_39_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_8s_40_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_9s_41_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 13.546 seconds; current allocated memory: 395.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'INTERPOLATOR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'mod_value' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'y2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_40_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_40_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_40_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_40_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_40_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_41_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_41_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_41_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_41_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_42_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_42_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_42_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_42_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_43_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_43_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_43_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL19H_filter_FIR_int_43_3' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'INTERPOLATOR'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 3 seconds. Elapsed time: 6.226 seconds; current allocated memory: 415.148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'mod_value_1' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry_ZL16b_FIR_dec_int_43_0_rd_mod_value_fb_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.793 seconds; current allocated memory: 415.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FIR_HLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FIR_HLS/input_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FIR_HLS/output_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FIR_HLS' to 'ap_ctrl_none'.
+INFO: [HLS 200-633] Setting ap_ctrl_none interface for FIR_HLS
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FIR_HLS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.89 seconds; current allocated memory: 416.648 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.614 seconds; current allocated memory: 419.039 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.386 seconds; current allocated memory: 424.535 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for FIR_HLS.
+INFO: [VLOG 209-307] Generating Verilog RTL for FIR_HLS.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.83 MHz
+INFO: [HLS 200-112] Total CPU user time: 35 seconds. Total CPU system time: 9 seconds. Total elapsed time: 84.428 seconds; peak allocated memory: 425.445 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 33s

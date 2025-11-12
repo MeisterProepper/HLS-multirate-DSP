@@ -1,0 +1,12 @@
+---
+MainSourceFile:  'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v10/Multirate_v10/hls/.autopilot/db/FIR_HLS.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
+    FileOffset:      '14:15'
+    FilePath:        FIR_HLS.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '12:9'
+    FilePath:        FIR_HLS.cpp
+...

@@ -1,0 +1,207 @@
+
+
+================================================================
+== Vitis HLS Report for 'INTERPOLATOR'
+================================================================
+* Date:           Wed Nov 12 23:44:29 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        Multirate_v1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.189 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    3|    3|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+--------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                         |              |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |         Instance        |    Module    |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-------------------------+--------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_FIR_filter_1_fu_124  |FIR_filter_1  |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+        |grp_FIR_filter_2_fu_152  |FIR_filter_2  |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+        +-------------------------+--------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       4|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|     264|    -|
+|Register         |        -|     -|     572|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     572|     268|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state2  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   4|           2|           2|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                    | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                   |  26|          5|    1|          5|
+    |grp_FIR_filter_1_fu_124_FIR_coe_read        |  20|          4|   10|         40|
+    |grp_FIR_filter_1_fu_124_FIR_coe_read_14     |  20|          4|   13|         52|
+    |grp_FIR_filter_1_fu_124_FIR_coe_read_15     |  14|          3|   14|         42|
+    |grp_FIR_filter_1_fu_124_FIR_coe_read_16     |  20|          4|   13|         52|
+    |grp_FIR_filter_1_fu_124_FIR_coe_read_17     |  20|          4|   10|         40|
+    |grp_FIR_filter_1_fu_124_FIR_delays_read     |  20|          4|   32|        128|
+    |grp_FIR_filter_1_fu_124_FIR_delays_read_25  |  20|          4|   32|        128|
+    |grp_FIR_filter_1_fu_124_FIR_delays_read_26  |  20|          4|   32|        128|
+    |grp_FIR_filter_1_fu_124_FIR_delays_read_27  |  20|          4|   32|        128|
+    |kernel_out_blk_n                            |   9|          2|    1|          2|
+    |output_r_TDATA                              |  26|          5|   16|         80|
+    |output_r_TDATA_blk_n                        |   9|          2|    1|          2|
+    |storemerge2_i_reg_103                       |  20|          4|    2|          8|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |Total                                       | 264|         53|  209|        835|
+    +--------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------+----+----+-----+-----------+
+    |                 Name                 | FF | LUT| Bits| Const Bits|
+    +--------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                             |   4|   0|    4|          0|
+    |grp_FIR_filter_1_fu_124_ap_start_reg  |   1|   0|    1|          0|
+    |grp_FIR_filter_2_fu_152_ap_start_reg  |   1|   0|    1|          0|
+    |mod_value                             |   2|   0|    2|          0|
+    |mod_value_load_reg_443                |   2|   0|    2|          0|
+    |p_ZL19H_filter_FIR_int_40_0           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_40_1           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_40_2           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_40_3           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_40_4           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_41_0           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_41_1           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_41_2           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_41_3           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_42_0           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_42_1           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_42_2           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_42_3           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_43_0           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_43_1           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_43_2           |  32|   0|   32|          0|
+    |p_ZL19H_filter_FIR_int_43_3           |  32|   0|   32|          0|
+    |storemerge2_i_reg_103                 |   2|   0|    2|          0|
+    |y2                                    |  16|   0|   16|          0|
+    +--------------------------------------+----+----+-----+-----------+
+    |Total                                 | 572|   0|  572|          0|
+    +--------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+--------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------------------+-----+-----+------------+--------------+--------------+
+|ap_clk                             |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din1     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din2     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din3     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din4     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din5     |  out|   10|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din6     |  out|   13|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din7     |  out|   14|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din8     |  out|   13|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din9     |  out|   10|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_din10    |  out|   16|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_dout0_0  |   in|   16|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_dout0_1  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_dout0_2  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_dout0_3  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_dout0_4  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_ce       |  out|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_start    |  out|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_ready    |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_done     |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_1_fu_747_p_idle     |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_din1     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_din2     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_din3     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_din4     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_din5     |  out|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_din6     |  out|   16|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_dout0_0  |   in|   16|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_dout0_1  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_dout0_2  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_dout0_3  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_dout0_4  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_dout0_5  |   in|   32|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_start    |  out|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_ready    |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_done     |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|grp_FIR_filter_2_fu_760_p_idle     |   in|    1|  ap_ctrl_hs|  INTERPOLATOR|  return value|
+|output_r_TDATA                     |  out|   16|        axis|      output_r|       pointer|
+|output_r_TVALID                    |  out|    1|        axis|      output_r|       pointer|
+|output_r_TREADY                    |   in|    1|        axis|      output_r|       pointer|
+|kernel_out_dout                    |   in|   16|     ap_fifo|    kernel_out|       pointer|
+|kernel_out_empty_n                 |   in|    1|     ap_fifo|    kernel_out|       pointer|
+|kernel_out_read                    |  out|    1|     ap_fifo|    kernel_out|       pointer|
++-----------------------------------+-----+-----+------------+--------------+--------------+
+

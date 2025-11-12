@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\HLS-multirate-DSP\\HLS_Multirate\\Multirate_v1",
+    "arguments": [
+      "C:\\AMD\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMD\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=FIR_HLS",
+      "-c",
+      "C:\\HLS-multirate-DSP\\HLS_Multirate\\Multirate_v1\\FIR_HLS.cpp"
+    ],
+    "file": "C:\\HLS-multirate-DSP\\HLS_Multirate\\Multirate_v1\\FIR_HLS.cpp"
+  },
+  {
+    "directory": "C:\\HLS-multirate-DSP\\HLS_Multirate\\Multirate_v1",
+    "arguments": [
+      "C:\\AMD\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMD\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMD\\Vitis\\2024.2\\include",
+      "-c",
+      "C:\\HLS-multirate-DSP\\HLS_Multirate\\Multirate_v1\\FIR_HLS_TB.cpp"
+    ],
+    "file": "C:\\HLS-multirate-DSP\\HLS_Multirate\\Multirate_v1\\FIR_HLS_TB.cpp"
+  }
+]

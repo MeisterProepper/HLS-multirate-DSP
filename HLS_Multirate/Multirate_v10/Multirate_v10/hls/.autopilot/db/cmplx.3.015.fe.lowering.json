@@ -1,0 +1,97 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "1 5 2",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 8,
+    "instructions": 28,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "FIR_HLS",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 390
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "4 3 3 3",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 50,
+    "instructions": 47,
+    "loads": {
+      "G": 4,
+      "L": 4
+    },
+    "name": "DECIMATOR",
+    "stores": {
+      "G": 4
+    },
+    "total_instructions": 168
+  },
+  "2": {
+    "basicblocks": 6,
+    "calls": "4 3 3 3",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 83,
+    "instructions": 46,
+    "loads": {
+      "G": 4,
+      "L": 4
+    },
+    "name": "INTERPOLATOR",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 167
+  },
+  "3": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 35,
+    "instructions": 31,
+    "loads": {
+      "L": 4
+    },
+    "name": "FIR_filter",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 31
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 35,
+    "instructions": 28,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "name": "FIR_filter",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 28
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 35,
+    "instructions": 27,
+    "loads": {
+      "G": 3
+    },
+    "name": "FIR_filter",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 27
+  }
+}

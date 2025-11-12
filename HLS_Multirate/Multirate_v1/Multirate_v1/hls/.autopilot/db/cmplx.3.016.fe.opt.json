@@ -1,0 +1,108 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 8,
+    "instructions": 14,
+    "name": "FIR_HLS",
+    "total_instructions": 1775
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 37,
+    "instructions": 60,
+    "loads": {
+      "L": 5
+    },
+    "name": "FIR_filter",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 60
+  },
+  "2": {
+    "basicblocks": 6,
+    "calls": "1 4 4 4",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 56,
+    "instructions": 45,
+    "loads": {
+      "G": 4,
+      "L": 8
+    },
+    "name": "DECIMATOR",
+    "stores": {
+      "G": 4,
+      "L": 1
+    },
+    "total_instructions": 285
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 37,
+    "instructions": 1171,
+    "loads": {
+      "G": 117
+    },
+    "name": "FIR_filter",
+    "stores": {
+      "G": 117,
+      "L": 1
+    },
+    "total_instructions": 1171
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 37,
+    "instructions": 60,
+    "loads": {
+      "L": 9
+    },
+    "name": "FIR_filter",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 60
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "2 3 6",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 0,
+    "instructions": 21,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "name": "_Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6__",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 1761
+  },
+  "6": {
+    "basicblocks": 6,
+    "calls": "1 4 4 4",
+    "file": "FIR_HLS.cpp",
+    "fileloc": 89,
+    "instructions": 44,
+    "loads": {
+      "G": 4,
+      "L": 5
+    },
+    "name": "INTERPOLATOR",
+    "stores": {
+      "G": 2,
+      "L": 4
+    },
+    "total_instructions": 284
+  }
+}

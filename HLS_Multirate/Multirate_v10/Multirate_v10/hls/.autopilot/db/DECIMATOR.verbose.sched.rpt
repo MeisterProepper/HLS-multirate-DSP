@@ -1,0 +1,198 @@
+
+
+================================================================
+== Vitis HLS Report for 'DECIMATOR'
+================================================================
+* Date:           Wed Nov 12 23:19:52 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        Multirate_v10
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.750 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       10|       11|  0.100 us|  0.110 us|   10|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 3 6 
+2 --> 5 
+3 --> 4 
+4 --> 5 
+5 --> 
+6 --> 5 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.02>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %dec_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %dec_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %dec_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %dec_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%mod_value_2_load = load i2 %mod_value_2" [FIR_HLS.cpp:58]   --->   Operation 12 'load' 'mod_value_2_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.54ns)   --->   "%switch_ln58 = switch i2 %mod_value_2_load, void %if.else24.i, i2 0, void %if.then.i, i2 1, void %if.then15.i, i2 2, void %if.then21.i" [FIR_HLS.cpp:58]   --->   Operation 13 'switch' 'switch_ln58' <Predicate = true> <Delay = 0.54>
+ST_1 : Operation 14 [1/1] (0.07ns)   --->   "%input_r_read_3 = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [FIR_HLS.cpp:68]   --->   Operation 14 'read' 'input_r_read_3' <Predicate = (mod_value_2_load == 2)> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 15 [2/2] (3.39ns)   --->   "%ref_tmp22_i = call i16 @FIR_filter.2, i32 %H_accu_FIR_dec_42, i15 %b_FIR_dec_int_42, i16 %input_r_read_3" [FIR_HLS.cpp:68]   --->   Operation 15 'call' 'ref_tmp22_i' <Predicate = (mod_value_2_load == 2)> <Delay = 3.39> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 16 [1/1] (0.07ns)   --->   "%input_r_read_2 = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [FIR_HLS.cpp:64]   --->   Operation 16 'read' 'input_r_read_2' <Predicate = (mod_value_2_load == 1)> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 17 [2/2] (3.39ns)   --->   "%ref_tmp16_i = call i16 @FIR_filter.2, i32 %H_accu_FIR_dec_43, i15 %b_FIR_dec_int_43, i16 %input_r_read_2" [FIR_HLS.cpp:64]   --->   Operation 17 'call' 'ref_tmp16_i' <Predicate = (mod_value_2_load == 1)> <Delay = 3.39> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 18 [1/1] (0.07ns)   --->   "%x_n = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [FIR_HLS.cpp:59]   --->   Operation 18 'read' 'x_n' <Predicate = (mod_value_2_load == 0)> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%sext_ln39 = sext i16 %x_n" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 19 'sext' 'sext_ln39' <Predicate = (mod_value_2_load == 0)> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (0.67ns)   --->   "%H_accu_FIR_dec_40_load = load i32 0" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 20 'load' 'H_accu_FIR_dec_40_load' <Predicate = (mod_value_2_load == 0)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
+ST_1 : Operation 21 [3/3] (0.99ns) (grouped into DSP with root node add_ln39)   --->   "%mul_ln39 = mul i25 %sext_ln39, i25 436" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 21 'mul' 'mul_ln39' <Predicate = (mod_value_2_load == 0)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 22 [1/1] (0.07ns)   --->   "%input_r_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %input_r" [FIR_HLS.cpp:73]   --->   Operation 22 'read' 'input_r_read' <Predicate = (mod_value_2_load == 3)> <Delay = 0.07> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.59> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 23 [2/2] (3.39ns)   --->   "%ref_tmp25_i = call i16 @FIR_filter.2, i32 %H_accu_FIR_dec_41, i15 %b_FIR_dec_int_41, i16 %input_r_read" [FIR_HLS.cpp:73]   --->   Operation 23 'call' 'ref_tmp25_i' <Predicate = (mod_value_2_load == 3)> <Delay = 3.39> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.52>
+ST_2 : Operation 24 [1/2] (0.00ns)   --->   "%ref_tmp22_i = call i16 @FIR_filter.2, i32 %H_accu_FIR_dec_42, i15 %b_FIR_dec_int_42, i16 %input_r_read_3" [FIR_HLS.cpp:68]   --->   Operation 24 'call' 'ref_tmp22_i' <Predicate = (mod_value_2_load == 2)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%store_ln68 = store i16 %ref_tmp22_i, i16 %y1_phase2" [FIR_HLS.cpp:68]   --->   Operation 25 'store' 'store_ln68' <Predicate = (mod_value_2_load == 2)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.52ns)   --->   "%br_ln71 = br void %DECIMATOR.exit" [FIR_HLS.cpp:71]   --->   Operation 26 'br' 'br_ln71' <Predicate = (mod_value_2_load == 2)> <Delay = 0.52>
+ST_2 : Operation 27 [1/2] (0.00ns)   --->   "%ref_tmp16_i = call i16 @FIR_filter.2, i32 %H_accu_FIR_dec_43, i15 %b_FIR_dec_int_43, i16 %input_r_read_2" [FIR_HLS.cpp:64]   --->   Operation 27 'call' 'ref_tmp16_i' <Predicate = (mod_value_2_load == 1)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%store_ln64 = store i16 %ref_tmp16_i, i16 %y1_phase1" [FIR_HLS.cpp:64]   --->   Operation 28 'store' 'store_ln64' <Predicate = (mod_value_2_load == 1)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.52ns)   --->   "%br_ln66 = br void %DECIMATOR.exit" [FIR_HLS.cpp:66]   --->   Operation 29 'br' 'br_ln66' <Predicate = (mod_value_2_load == 1)> <Delay = 0.52>
+
+State 3 <SV = 1> <Delay = 0.99>
+ST_3 : Operation 30 [1/2] ( I:0.67ns O:0.67ns )   --->   "%H_accu_FIR_dec_40_load = load i32 0" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 30 'load' 'H_accu_FIR_dec_40_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
+ST_3 : Operation 31 [2/3] (0.99ns) (grouped into DSP with root node add_ln39)   --->   "%mul_ln39 = mul i25 %sext_ln39, i25 436" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 31 'mul' 'mul_ln39' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%fence_ln41 = fence void @_ssdm_op_Fence, i16 %input_r, i32 4294967295, i16 %dec_out" [FIR_HLS.cpp:41->FIR_HLS.cpp:59]   --->   Operation 32 'fence' 'fence_ln41' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.64>
+ST_4 : Operation 33 [1/3] (0.00ns) (grouped into DSP with root node add_ln39)   --->   "%mul_ln39 = mul i25 %sext_ln39, i25 436" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 33 'mul' 'mul_ln39' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 34 [1/1] (0.00ns) (grouped into DSP with root node add_ln39)   --->   "%sext_ln39_3 = sext i25 %mul_ln39" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 34 'sext' 'sext_ln39_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln39 = add i32 %H_accu_FIR_dec_40_load, i32 %sext_ln39_3" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 35 'add' 'add_ln39' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln59 = call void @DECIMATOR_Pipeline_VITIS_LOOP_41_1, i16 %x_n, i14 %b_FIR_dec_int_40, i32 %H_accu_FIR_dec_40" [FIR_HLS.cpp:59]   --->   Operation 36 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 3> <Delay = 4.02>
+ST_5 : Operation 37 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln39 = add i32 %H_accu_FIR_dec_40_load, i32 %sext_ln39_3" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 37 'add' 'add_ln39' <Predicate = (mod_value_2_load == 0)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%y = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %add_ln39, i32 16, i32 31" [FIR_HLS.cpp:39->FIR_HLS.cpp:59]   --->   Operation 38 'partselect' 'y' <Predicate = (mod_value_2_load == 0)> <Delay = 0.00>
+ST_5 : Operation 39 [1/2] (1.52ns)   --->   "%call_ln59 = call void @DECIMATOR_Pipeline_VITIS_LOOP_41_1, i16 %x_n, i14 %b_FIR_dec_int_40, i32 %H_accu_FIR_dec_40" [FIR_HLS.cpp:59]   --->   Operation 39 'call' 'call_ln59' <Predicate = (mod_value_2_load == 0)> <Delay = 1.52> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%y1_phase1_load = load i16 %y1_phase1" [FIR_HLS.cpp:60]   --->   Operation 40 'load' 'y1_phase1_load' <Predicate = (mod_value_2_load == 0)> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%y1_phase2_load = load i16 %y1_phase2" [FIR_HLS.cpp:60]   --->   Operation 41 'load' 'y1_phase2_load' <Predicate = (mod_value_2_load == 0)> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%y1_phase3_load = load i16 %y1_phase3" [FIR_HLS.cpp:60]   --->   Operation 42 'load' 'y1_phase3_load' <Predicate = (mod_value_2_load == 0)> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln60 = add i16 %y1_phase1_load, i16 %y1_phase2_load" [FIR_HLS.cpp:60]   --->   Operation 43 'add' 'add_ln60' <Predicate = (mod_value_2_load == 0)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.34> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 44 [1/1] (0.85ns)   --->   "%add_ln60_1 = add i16 %y1_phase3_load, i16 %y" [FIR_HLS.cpp:60]   --->   Operation 44 'add' 'add_ln60_1' <Predicate = (mod_value_2_load == 0)> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [1/1] (0.68ns) (root node of TernaryAdder)   --->   "%add_ln60_2 = add i16 %add_ln60_1, i16 %add_ln60" [FIR_HLS.cpp:60]   --->   Operation 45 'add' 'add_ln60_2' <Predicate = (mod_value_2_load == 0)> <Delay = 0.68> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.34> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 46 [1/1] ( I:1.83ns O:1.83ns )   --->   "%write_ln60 = write void @_ssdm_op_Write.ap_fifo.volatile.i16P0A, i16 %dec_out, i16 %add_ln60_2" [FIR_HLS.cpp:60]   --->   Operation 46 'write' 'write_ln60' <Predicate = (mod_value_2_load == 0)> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_5 : Operation 47 [1/1] (0.52ns)   --->   "%br_ln62 = br void %DECIMATOR.exit" [FIR_HLS.cpp:62]   --->   Operation 47 'br' 'br_ln62' <Predicate = (mod_value_2_load == 0)> <Delay = 0.52>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%storemerge2_i = phi i2 1, void %if.then.i, i2 2, void %if.then15.i, i2 0, void %if.else24.i, i2 3, void %if.then21.i"   --->   Operation 48 'phi' 'storemerge2_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%store_ln0 = store i2 %storemerge2_i, i2 %mod_value_2"   --->   Operation 49 'store' 'store_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 50 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 1> <Delay = 0.52>
+ST_6 : Operation 51 [1/2] (0.00ns)   --->   "%ref_tmp25_i = call i16 @FIR_filter.2, i32 %H_accu_FIR_dec_41, i15 %b_FIR_dec_int_41, i16 %input_r_read" [FIR_HLS.cpp:73]   --->   Operation 51 'call' 'ref_tmp25_i' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%store_ln73 = store i16 %ref_tmp25_i, i16 %y1_phase3" [FIR_HLS.cpp:73]   --->   Operation 52 'store' 'store_ln73' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.52ns)   --->   "%br_ln0 = br void %DECIMATOR.exit"   --->   Operation 53 'br' 'br_ln0' <Predicate = true> <Delay = 0.52>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.023ns
+The critical path consists of the following:
+	'load' operation 2 bit ('mod_value_2_load', FIR_HLS.cpp:58) on static variable 'mod_value_2' [20]  (0.000 ns)
+	axis read operation ('input_r_read', FIR_HLS.cpp:73) on port 'input_r' (FIR_HLS.cpp:73) [51]  (0.079 ns)
+	'call' operation 16 bit ('ref_tmp25_i', FIR_HLS.cpp:73) to 'FIR_filter.2' [52]  (3.396 ns)
+	blocking operation 0.548 ns on control path)
+
+ <State 2>: 0.525ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 2 bit ('storemerge2_i') [56]  (0.525 ns)
+
+ <State 3>: 0.996ns
+The critical path consists of the following:
+	'mul' operation 25 bit of DSP[38] ('mul_ln39', FIR_HLS.cpp:39->FIR_HLS.cpp:59) [36]  (0.996 ns)
+
+ <State 4>: 0.645ns
+The critical path consists of the following:
+	'mul' operation 25 bit of DSP[38] ('mul_ln39', FIR_HLS.cpp:39->FIR_HLS.cpp:59) [36]  (0.000 ns)
+	'add' operation 32 bit of DSP[38] ('add_ln39', FIR_HLS.cpp:39->FIR_HLS.cpp:59) [38]  (0.645 ns)
+
+ <State 5>: 4.023ns
+The critical path consists of the following:
+	'add' operation 32 bit of DSP[38] ('add_ln39', FIR_HLS.cpp:39->FIR_HLS.cpp:59) [38]  (0.645 ns)
+	'add' operation 16 bit ('add_ln60_1', FIR_HLS.cpp:60) [46]  (0.853 ns)
+	'add' operation 16 bit ('add_ln60_2', FIR_HLS.cpp:60) [47]  (0.687 ns)
+	fifo write operation ('write_ln60', FIR_HLS.cpp:60) on port 'dec_out' (FIR_HLS.cpp:60) [48]  (1.838 ns)
+
+ <State 6>: 0.525ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 2 bit ('storemerge2_i') [56]  (0.525 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

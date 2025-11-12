@@ -1,0 +1,11 @@
+{
+  "name": "Multirate_v10",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Multirate_v10"
+  }
+}

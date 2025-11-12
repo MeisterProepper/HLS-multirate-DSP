@@ -1,0 +1,81 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/Multirate_v1 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.cpp' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/FIR_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=FIR_HLS.h' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/FIR_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=../../Matlab/FIR_multirate_HLS.h' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/HLS-multirate-DSP/Matlab/FIR_multirate_HLS.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=FIR_HLS_TB.cpp' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/FIR_HLS_TB.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_multirate.res' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.res' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=../../Matlab/TS_HLS_multirate.dat' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/HLS-multirate-DSP/Matlab/TS_HLS_multirate.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=FIR_HLS' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../FIR_HLS.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../FIR_HLS.cpp:1:
+In file included from ../../../../FIR_HLS.h:2:
+In file included from C:/AMD/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from C:/AMD/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/AMD/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/AMD/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/AMD/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/AMD/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/AMD/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/AMD/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/AMD/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.dat
+INFO: Reading ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Read 460 samples from ../../../../../../Matlab/TS_HLS_multirate.res
+INFO: Input and reference data lengths match.
+Mismatch at sample  280: ref=-0.358093, dut=-0.304932
+Mismatch at sample  281: ref=-0.481445, dut=-0.420898
+Mismatch at sample  282: ref=-0.582062, dut=-0.569702
+Mismatch at sample  283: ref=-0.672455, dut=-0.785156
+Mismatch at sample  284: ref=-0.771301, dut=0.978027
+Mismatch at sample  285: ref=-0.851379, dut=0.883667
+Mismatch at sample  286: ref=-0.910278, dut=-0.931274
+Mismatch at sample  287: ref=-0.951416, dut=-0.438354
+Mismatch at sample  288: ref=-0.987885, dut=0.21582
+Mismatch at sample  289: ref=0.999847, dut=0.791748
+Mismatch at sample  290: ref=-0.999756, dut=-0.976807
+Mismatch at sample  291: ref=-0.980927, dut=0.810913
+Mismatch at sample  292: ref=-0.947968, dut=0.255737
+Mismatch at sample  293: ref=-0.892883, dut=-0.379883
+Mismatch at sample  294: ref=-0.838196, dut=-0.859253
+Mismatch at sample  295: ref=-0.769135, dut=0.96582
+Mismatch at sample  296: ref=-0.679352, dut=-0.930054
+Mismatch at sample  297: ref=-0.573975, dut=-0.686768
+Mismatch at sample  298: ref=-0.480408, dut=-0.46814
+Mismatch at sample  299: ref=-0.378174, dut=-0.317749
+Mismatch at sample  300: ref=-0.251801, dut=-0.19873
+---------------------------------------
+Testbench Results
+Samples processed : 460
+Mismatches        : 21
+Status: FAIL [!!] (21 samples out of tolerance)
+---------------------------------------
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 460
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 3 seconds. Total elapsed time: 17.919 seconds; peak allocated memory: 273.891 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 24s

@@ -1,0 +1,89 @@
+{
+    "1": {
+        "name": "FIR_filter.1",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "37",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "FIR_filter",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "37",
+        "instructions": "1320",
+        "total_instructions": "1320",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "116"
+        },
+        "stores": {
+            "G": "116"
+        }
+    },
+    "3": {
+        "name": "DECIMATOR",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "56",
+        "instructions": "87",
+        "total_instructions": "331",
+        "calls": "6 1 1 1",
+        "basicblocks": "6",
+        "loads": {
+            "G": "21"
+        },
+        "stores": {
+            "G": "21"
+        }
+    },
+    "4": {
+        "name": "INTERPOLATOR",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "89",
+        "instructions": "84",
+        "total_instructions": "328",
+        "calls": "6 1 1 1",
+        "basicblocks": "6",
+        "loads": {
+            "G": "19"
+        },
+        "stores": {
+            "G": "19"
+        }
+    },
+    "5": {
+        "name": "_Z7FIR_HLSRN3hls6streamI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6__",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "0",
+        "instructions": "18",
+        "total_instructions": "1997",
+        "calls": "3 2 4",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "6": {
+        "name": "FIR_filter.2",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "37",
+        "instructions": "91",
+        "total_instructions": "91",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "FIR_HLS",
+        "file": "FIR_HLS.cpp",
+        "fileloc": "8",
+        "instructions": "13",
+        "total_instructions": "2010",
+        "calls": "5",
+        "basicblocks": "1"
+    }
+}

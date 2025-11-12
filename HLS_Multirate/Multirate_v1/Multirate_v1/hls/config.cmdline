@@ -1,0 +1,3 @@
+relativeroot=C:/HLS-multirate-DSP/HLS_Multirate/Multirate_v1
+original_argv=-c --mode hls --config C:\HLS-multirate-DSP\HLS_Multirate\Multirate_v1\hls_config.cfg --work_dir Multirate_v1 
+
