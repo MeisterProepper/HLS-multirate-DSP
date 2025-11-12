@@ -1,0 +1,11 @@
+{
+  "name": "Direct_FIR_DSP_HLS",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Direct_FIR_DSP_HLS"
+  }
+}

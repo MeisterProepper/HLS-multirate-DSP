@@ -107,3 +107,5 @@ comp.run(operation="C_SIMULATION")
 
 comp.run(operation="C_SIMULATION")
 
+comp = client.clone_component(name="Direct_FIR_DSP",new_name="Direct_FIR_DSP_HLS")
+
