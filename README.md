@@ -223,7 +223,41 @@ Instead of computing all taps in parallel, a smaller number of multipliers is ti
 
 
 ```
-folded code
+fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n){
+
+	fir_data_t  y;
+	ap_fixed<32,1> FIR_accu32=0;
+
+    FIR_delays[N_delays-1] = x_n;
+
+
+    for(int i= 0; i < ((N_delays/2) ); i++){
+		FIR_accu32 +=  FIR_coe[i] * (FIR_delays[i] + FIR_delays[N_delays -i-1]);
+		}
+
+    for(int i=1; i < N_delays; i++)					
+        FIR_delays[i-1] = FIR_delays[i];
+
+	y = FIR_accu32;
+	return y;
+}
+```
+
+| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|
+|  normal HLS code 			|  5980  | 148  |  154 |  2 |  1 |
+|  HLS code with #pragmas   |  60 |  8527  |  5220  |  0  |  81  |
+
+
+### Transposed Folded form FIR filter
+![Filter](Transposed_Folded_FIR.png)
+
+The transposed folded FIR filter reduces hardware resources by reusing functional units (e.g., multipliers and adders) over multiple clock cycles.
+Instead of computing all taps in parallel, a smaller number of multipliers is time-multiplexed across the filter taps.
+
+
+```
+transposed folded code
 ```
 
 | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
@@ -233,7 +267,22 @@ folded code
 
 
 
+
 ### Summary of FIR Variants
+
+
+| version | variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
+|---|---|---|---|---|---|---|
+|  Direct FIR DSP |  normal DSP code 			|  7940  |  167  |  134  |  2  |  1  |
+|  Direct FIR DSP |  DSP code with #pragmas   	|  80  |  9259 |  4937 | 0  |  81 |
+|  Direct FIR HLS |  normal HLS code 			|  3980  |  150  |  239  |  1  |  2  |
+|  Direct FIR HLS |  HLS code with #pragmas     |  3260 | 5663  |  9408  |  1 |  81  |
+|  Direct FIR SLR |  normal HLS-SRL code 			|  3970  |  150  |  469 |  0  |  1  |
+|  Direct FIR SLR |  HLS-SRL code with #pragmas   |  3910  |  5574  |  5660 |  0 |  81 |
+|  Transposed FIR HLS |  normal HLS code 			|  3960 |  85  |  229 |  2  |  2  |
+|  Transposed FIR HLS |  HLS code with #pragmas   |  10 |   3675  |  6760  |  0 |  208  |
+|  Folded FIR HLS |  normal HLS code 			|  5980  | 148  |  154 |  2 |  1 |
+|  Folded FIR HLS |  HLS code with #pragmas   |  60 |  8527  |  5220  |  0  |  81  |
 
 
 
@@ -338,34 +387,6 @@ During synthesis, this testbench is used for both C-simulation and C/RTL co-simu
 It allows functional validation before synthesis and direct comparison between the C++ model and the generated HDL implementation.
 
 
-
-
-## Results
-
-| variant  |  latency [ns] | FF  |  LUT |  BRAM |  DSP |
-|---|---|---|---|---|---|
-|  1 | 7940  |  167 | 134  | 2  | 1  |
-|  2 |  80 |  9259 |  4937 | 0  |  81 |
-|  3 |   |   |   |   |   |
-|  4 |  2680 | 698  | 937  | 0  | 3  |
-|  5 |  990 | 2630  |  2552 | 1  |  81 |
-|  6 |   |   |   |   |   |
-
-
-
-## 🧩 Open Points and Known Issues
-
-### ✅ To-Do
-**Integration of the Xilinx FIR IP Core:**
-- The current implementation uses the function stubs and coefficient setup, but the actual instantiation of the `hls::FIR object` and correct parameterization (`hls::ip_fir::params_t`) are still pending.
-
-
-### ⚠️ Known Issues
-**DSP Testbench Overflow:**
-- The testbench for the DSP baseline version (non-multirate) occasionally triggers a buffer overflow during simulation.
-
-**Multirate Testbench Mismatch (Samples 280–300):**
-- Both multirate versions (DSP and HLS) show output mismatches between sample index 280 and 300. The issue appears consistently.
 
 
 
