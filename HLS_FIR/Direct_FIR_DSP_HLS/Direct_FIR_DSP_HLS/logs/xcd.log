@@ -1,0 +1,187 @@
+11/12/25 15:33:48: Running xcd server. This server was built by gradle.
+11/12/25 15:33:48: Server was asked to start on port: '61189'
+11/12/25 15:33:48: Server is using token UUID: 'eedf097c-86f5-434f-be6e-995896ef00b7'
+11/12/25 15:33:48: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 15:33:48: Attempting to start server on port '61189'
+11/12/25 15:33:48: Running Dispatch Server
+11/12/25 15:33:48: Version 2.2.0
+11/12/25 15:33:49: Dispatch Server: Accepted socket connection from client
+11/12/25 15:33:49: Starting Socket connection
+11/12/25 15:33:49: EXCHANGE_TOKEN received, server token: eedf097c-86f5-434f-be6e-995896ef00b7, passed token: eedf097c-86f5-434f-be6e-995896ef00b7
+11/12/25 15:33:50: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 15:33:50: SESSION_MGR: creating session with session uuid: '8b1d290d-947b-49fe-ae83-fc6ae1537f46' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:33:50: KERNEL_SVC: creating session with uuid: '8b1d290d-947b-49fe-ae83-fc6ae1537f46' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:33:50: GUIDANCE_SMGR: creating guidance session with uuid: '8b1d290d-947b-49fe-ae83-fc6ae1537f46' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:33:50: SYSTEM_DIAGRAM: creating session with uuid: '8b1d290d-947b-49fe-ae83-fc6ae1537f46' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:34:00: Dispatch Server: Accepted socket connection from client
+11/12/25 15:34:00: Starting Socket connection
+11/12/25 15:34:06: SESSION_MGR: closing session for UUID '8b1d290d-947b-49fe-ae83-fc6ae1537f46' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:34:06: KERNEL_SVC: closing session for UUID '8b1d290d-947b-49fe-ae83-fc6ae1537f46' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:34:06: GUIDANCE_SMGR: closing session for UUID '8b1d290d-947b-49fe-ae83-fc6ae1537f46' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:34:06: SYSTEM_DIAGRAM: closing session for UUID '8b1d290d-947b-49fe-ae83-fc6ae1537f46' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 15:34:06: STOP_SERVER received, server token: eedf097c-86f5-434f-be6e-995896ef00b7, passed token: eedf097c-86f5-434f-be6e-995896ef00b7
+11/12/25 15:34:06: Socket received request to stop server.
+11/12/25 15:34:06: Dispatch Server: do_await_stop
+11/12/25 15:34:06: SERVER: destructor for server bound to port 61189
+11/12/25 16:47:18: Running xcd server. This server was built by gradle.
+11/12/25 16:47:18: Server was asked to start on port: '52833'
+11/12/25 16:47:18: Server is using token UUID: '0d19f057-cafd-49c0-9369-e8f341fc6e8b'
+11/12/25 16:47:18: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 16:47:18: Attempting to start server on port '52833'
+11/12/25 16:47:18: Running Dispatch Server
+11/12/25 16:47:18: Version 2.2.0
+11/12/25 16:47:19: Dispatch Server: Accepted socket connection from client
+11/12/25 16:47:19: Starting Socket connection
+11/12/25 16:47:19: EXCHANGE_TOKEN received, server token: 0d19f057-cafd-49c0-9369-e8f341fc6e8b, passed token: 0d19f057-cafd-49c0-9369-e8f341fc6e8b
+11/12/25 16:47:20: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 16:47:20: SESSION_MGR: creating session with session uuid: 'bc8291c2-20ce-457c-b0a3-21f32295dde3' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:20: KERNEL_SVC: creating session with uuid: 'bc8291c2-20ce-457c-b0a3-21f32295dde3' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:20: GUIDANCE_SMGR: creating guidance session with uuid: 'bc8291c2-20ce-457c-b0a3-21f32295dde3' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:20: SYSTEM_DIAGRAM: creating session with uuid: 'bc8291c2-20ce-457c-b0a3-21f32295dde3' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:30: Dispatch Server: Accepted socket connection from client
+11/12/25 16:47:30: Starting Socket connection
+11/12/25 16:47:43: SESSION_MGR: closing session for UUID 'bc8291c2-20ce-457c-b0a3-21f32295dde3' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:43: KERNEL_SVC: closing session for UUID 'bc8291c2-20ce-457c-b0a3-21f32295dde3' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:43: GUIDANCE_SMGR: closing session for UUID 'bc8291c2-20ce-457c-b0a3-21f32295dde3' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:43: SYSTEM_DIAGRAM: closing session for UUID 'bc8291c2-20ce-457c-b0a3-21f32295dde3' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 16:47:43: STOP_SERVER received, server token: 0d19f057-cafd-49c0-9369-e8f341fc6e8b, passed token: 0d19f057-cafd-49c0-9369-e8f341fc6e8b
+11/12/25 16:47:43: Socket received request to stop server.
+11/12/25 16:47:43: Dispatch Server: do_await_stop
+11/12/25 16:47:43: SERVER: destructor for server bound to port 52833
+11/12/25 17:33:13: Running xcd server. This server was built by gradle.
+11/12/25 17:33:13: Server was asked to start on port: '52953'
+11/12/25 17:33:13: Server is using token UUID: 'c3e656ad-47c9-43b4-8a95-222023ba1135'
+11/12/25 17:33:13: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 17:33:13: Attempting to start server on port '52953'
+11/12/25 17:33:13: Running Dispatch Server
+11/12/25 17:33:13: Version 2.2.0
+11/12/25 17:33:15: Dispatch Server: Accepted socket connection from client
+11/12/25 17:33:15: Starting Socket connection
+11/12/25 17:33:15: EXCHANGE_TOKEN received, server token: c3e656ad-47c9-43b4-8a95-222023ba1135, passed token: c3e656ad-47c9-43b4-8a95-222023ba1135
+11/12/25 17:33:15: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 17:33:15: SESSION_MGR: creating session with session uuid: '642c6754-033b-46aa-a8e4-173ceeec715d' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:15: KERNEL_SVC: creating session with uuid: '642c6754-033b-46aa-a8e4-173ceeec715d' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:15: GUIDANCE_SMGR: creating guidance session with uuid: '642c6754-033b-46aa-a8e4-173ceeec715d' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:15: SYSTEM_DIAGRAM: creating session with uuid: '642c6754-033b-46aa-a8e4-173ceeec715d' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:25: Dispatch Server: Accepted socket connection from client
+11/12/25 17:33:25: Starting Socket connection
+11/12/25 17:33:32: SESSION_MGR: closing session for UUID '642c6754-033b-46aa-a8e4-173ceeec715d' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:32: KERNEL_SVC: closing session for UUID '642c6754-033b-46aa-a8e4-173ceeec715d' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:32: GUIDANCE_SMGR: closing session for UUID '642c6754-033b-46aa-a8e4-173ceeec715d' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:32: SYSTEM_DIAGRAM: closing session for UUID '642c6754-033b-46aa-a8e4-173ceeec715d' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:33:32: STOP_SERVER received, server token: c3e656ad-47c9-43b4-8a95-222023ba1135, passed token: c3e656ad-47c9-43b4-8a95-222023ba1135
+11/12/25 17:33:32: Socket received request to stop server.
+11/12/25 17:33:32: Dispatch Server: do_await_stop
+11/12/25 17:33:32: SERVER: destructor for server bound to port 52953
+11/12/25 17:34:47: Running xcd server. This server was built by gradle.
+11/12/25 17:34:47: Server was asked to start on port: '52959'
+11/12/25 17:34:47: Server is using token UUID: '6c5b70b4-4c32-4978-8082-6d1386ec71c3'
+11/12/25 17:34:47: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 17:34:47: Attempting to start server on port '52959'
+11/12/25 17:34:47: Running Dispatch Server
+11/12/25 17:34:47: Version 2.2.0
+11/12/25 17:34:48: Dispatch Server: Accepted socket connection from client
+11/12/25 17:34:48: Starting Socket connection
+11/12/25 17:34:48: EXCHANGE_TOKEN received, server token: 6c5b70b4-4c32-4978-8082-6d1386ec71c3, passed token: 6c5b70b4-4c32-4978-8082-6d1386ec71c3
+11/12/25 17:34:48: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 17:34:48: SESSION_MGR: creating session with session uuid: '804362a9-0d5e-481d-b8b6-bca712f9be76' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:34:48: KERNEL_SVC: creating session with uuid: '804362a9-0d5e-481d-b8b6-bca712f9be76' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:34:48: GUIDANCE_SMGR: creating guidance session with uuid: '804362a9-0d5e-481d-b8b6-bca712f9be76' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:34:48: SYSTEM_DIAGRAM: creating session with uuid: '804362a9-0d5e-481d-b8b6-bca712f9be76' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:34:58: Dispatch Server: Accepted socket connection from client
+11/12/25 17:34:58: Starting Socket connection
+11/12/25 17:36:02: SESSION_MGR: closing session for UUID '804362a9-0d5e-481d-b8b6-bca712f9be76' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:36:02: KERNEL_SVC: closing session for UUID '804362a9-0d5e-481d-b8b6-bca712f9be76' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:36:02: GUIDANCE_SMGR: closing session for UUID '804362a9-0d5e-481d-b8b6-bca712f9be76' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:36:02: SYSTEM_DIAGRAM: closing session for UUID '804362a9-0d5e-481d-b8b6-bca712f9be76' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:36:02: STOP_SERVER received, server token: 6c5b70b4-4c32-4978-8082-6d1386ec71c3, passed token: 6c5b70b4-4c32-4978-8082-6d1386ec71c3
+11/12/25 17:36:02: Socket received request to stop server.
+11/12/25 17:36:02: Dispatch Server: do_await_stop
+11/12/25 17:36:02: SERVER: destructor for server bound to port 52959
+11/12/25 17:37:19: Running xcd server. This server was built by gradle.
+11/12/25 17:37:19: Server was asked to start on port: '52969'
+11/12/25 17:37:19: Server is using token UUID: '9c567951-c6ad-44bc-88a7-e2407cc61fac'
+11/12/25 17:37:19: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 17:37:19: Attempting to start server on port '52969'
+11/12/25 17:37:19: Running Dispatch Server
+11/12/25 17:37:19: Version 2.2.0
+11/12/25 17:37:20: Dispatch Server: Accepted socket connection from client
+11/12/25 17:37:20: Starting Socket connection
+11/12/25 17:37:20: EXCHANGE_TOKEN received, server token: 9c567951-c6ad-44bc-88a7-e2407cc61fac, passed token: 9c567951-c6ad-44bc-88a7-e2407cc61fac
+11/12/25 17:37:20: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 17:37:20: SESSION_MGR: creating session with session uuid: 'a706f72c-7eaa-4ee2-a408-bb442218658b' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:37:20: KERNEL_SVC: creating session with uuid: 'a706f72c-7eaa-4ee2-a408-bb442218658b' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:37:20: GUIDANCE_SMGR: creating guidance session with uuid: 'a706f72c-7eaa-4ee2-a408-bb442218658b' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:37:20: SYSTEM_DIAGRAM: creating session with uuid: 'a706f72c-7eaa-4ee2-a408-bb442218658b' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:37:31: Dispatch Server: Accepted socket connection from client
+11/12/25 17:37:31: Starting Socket connection
+11/12/25 17:38:52: Dispatch Server: Accepted socket connection from client
+11/12/25 17:38:52: Starting Socket connection
+11/12/25 17:42:22: Dispatch Server: Accepted socket connection from client
+11/12/25 17:42:22: Starting Socket connection
+11/12/25 17:47:07: Dispatch Server: Accepted socket connection from client
+11/12/25 17:47:07: Starting Socket connection
+11/12/25 17:58:55: SESSION_MGR: closing session for UUID 'a706f72c-7eaa-4ee2-a408-bb442218658b' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:58:55: KERNEL_SVC: closing session for UUID 'a706f72c-7eaa-4ee2-a408-bb442218658b' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:58:55: GUIDANCE_SMGR: closing session for UUID 'a706f72c-7eaa-4ee2-a408-bb442218658b' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:58:55: SYSTEM_DIAGRAM: closing session for UUID 'a706f72c-7eaa-4ee2-a408-bb442218658b' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 17:58:55: STOP_SERVER received, server token: 9c567951-c6ad-44bc-88a7-e2407cc61fac, passed token: 9c567951-c6ad-44bc-88a7-e2407cc61fac
+11/12/25 17:58:55: Socket received request to stop server.
+11/12/25 17:58:55: Dispatch Server: do_await_stop
+11/12/25 17:58:55: SERVER: destructor for server bound to port 52969
+11/12/25 18:04:05: Running xcd server. This server was built by gradle.
+11/12/25 18:04:05: Server was asked to start on port: '53057'
+11/12/25 18:04:05: Server is using token UUID: 'b903bb3e-2695-4070-815c-8a5f81ecb008'
+11/12/25 18:04:05: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 18:04:05: Attempting to start server on port '53057'
+11/12/25 18:04:05: Running Dispatch Server
+11/12/25 18:04:05: Version 2.2.0
+11/12/25 18:04:06: Dispatch Server: Accepted socket connection from client
+11/12/25 18:04:06: Starting Socket connection
+11/12/25 18:04:06: EXCHANGE_TOKEN received, server token: b903bb3e-2695-4070-815c-8a5f81ecb008, passed token: b903bb3e-2695-4070-815c-8a5f81ecb008
+11/12/25 18:04:07: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 18:04:07: SESSION_MGR: creating session with session uuid: '9f649199-92d9-4560-a646-54d9d6bab9c0' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:07: KERNEL_SVC: creating session with uuid: '9f649199-92d9-4560-a646-54d9d6bab9c0' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:07: GUIDANCE_SMGR: creating guidance session with uuid: '9f649199-92d9-4560-a646-54d9d6bab9c0' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:07: SYSTEM_DIAGRAM: creating session with uuid: '9f649199-92d9-4560-a646-54d9d6bab9c0' and name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:17: Dispatch Server: Accepted socket connection from client
+11/12/25 18:04:17: Starting Socket connection
+11/12/25 18:04:41: SESSION_MGR: closing session for UUID '9f649199-92d9-4560-a646-54d9d6bab9c0' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:41: KERNEL_SVC: closing session for UUID '9f649199-92d9-4560-a646-54d9d6bab9c0' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:41: GUIDANCE_SMGR: closing session for UUID '9f649199-92d9-4560-a646-54d9d6bab9c0' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:41: SYSTEM_DIAGRAM: closing session for UUID '9f649199-92d9-4560-a646-54d9d6bab9c0' with name 'v++_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:04:41: STOP_SERVER received, server token: b903bb3e-2695-4070-815c-8a5f81ecb008, passed token: b903bb3e-2695-4070-815c-8a5f81ecb008
+11/12/25 18:04:41: Socket received request to stop server.
+11/12/25 18:04:41: Dispatch Server: do_await_stop
+11/12/25 18:04:41: SERVER: destructor for server bound to port 53057
+11/12/25 18:06:22: Running xcd server. This server was built by gradle.
+11/12/25 18:06:22: Server was asked to start on port: '53065'
+11/12/25 18:06:22: Server is using token UUID: '0e59a059-8e7f-42f5-9949-a9c4f04b03ce'
+11/12/25 18:06:22: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 18:06:22: Attempting to start server on port '53065'
+11/12/25 18:06:22: Running Dispatch Server
+11/12/25 18:06:22: Version 2.2.0
+11/12/25 18:06:23: Dispatch Server: Accepted socket connection from client
+11/12/25 18:06:23: Starting Socket connection
+11/12/25 18:06:23: EXCHANGE_TOKEN received, server token: 0e59a059-8e7f-42f5-9949-a9c4f04b03ce, passed token: 0e59a059-8e7f-42f5-9949-a9c4f04b03ce
+11/12/25 18:06:23: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 18:06:23: SESSION_MGR: creating session with session uuid: 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:06:23: KERNEL_SVC: creating session with uuid: 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:06:23: GUIDANCE_SMGR: creating guidance session with uuid: 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:06:23: SYSTEM_DIAGRAM: creating session with uuid: 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' and name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:06:32: Dispatch Server: Accepted socket connection from client
+11/12/25 18:06:32: Starting Socket connection
+11/12/25 18:07:39: Dispatch Server: Accepted socket connection from client
+11/12/25 18:07:39: Starting Socket connection
+11/12/25 18:09:36: Dispatch Server: Accepted socket connection from client
+11/12/25 18:09:36: Starting Socket connection
+11/12/25 18:13:10: Dispatch Server: Accepted socket connection from client
+11/12/25 18:13:10: Starting Socket connection
+11/12/25 18:18:54: SESSION_MGR: closing session for UUID 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:18:54: KERNEL_SVC: closing session for UUID 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:18:54: GUIDANCE_SMGR: closing session for UUID 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:18:54: SYSTEM_DIAGRAM: closing session for UUID 'f97af597-c7e2-45c6-b37a-0267b4a4cd99' with name 'vitis-run_compile_Direct_FIR_DSP_HLS'
+11/12/25 18:18:54: STOP_SERVER received, server token: 0e59a059-8e7f-42f5-9949-a9c4f04b03ce, passed token: 0e59a059-8e7f-42f5-9949-a9c4f04b03ce
+11/12/25 18:18:54: Socket received request to stop server.
+11/12/25 18:18:54: Dispatch Server: do_await_stop
+11/12/25 18:18:54: SERVER: destructor for server bound to port 53065

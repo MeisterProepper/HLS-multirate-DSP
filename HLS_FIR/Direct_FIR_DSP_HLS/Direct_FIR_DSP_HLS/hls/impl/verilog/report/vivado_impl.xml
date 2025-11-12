@@ -1,0 +1,154 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>5.075</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>5.075</CP_FINAL>
+  <CP_ROUTE>5.075</CP_ROUTE>
+  <CP_SYNTH>4.686</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>4.925</SLACK_FINAL>
+  <SLACK_ROUTE>4.925</SLACK_ROUTE>
+  <SLACK_SYNTH>5.314</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>4.925</WNS_FINAL>
+  <WNS_ROUTE>4.925</WNS_ROUTE>
+  <WNS_SYNTH>5.314</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>1</BRAM>
+    <CLB>42</CLB>
+    <DSP>1</DSP>
+    <FF>145</FF>
+    <LATCH>0</LATCH>
+    <LUT>228</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>288</BRAM>
+    <CLB>14640</CLB>
+    <DSP>1248</DSP>
+    <FF>234240</FF>
+    <LUT>117120</LUT>
+    <URAM>64</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="FIR_HLS" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="5">H_filter_FIR_U grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72 grp_FIR_HLS_Pipeline_VITIS_LOOP_28_2_fu_81 regslice_both_input_r_U regslice_both_output_r_U</SubModules>
+    <Resources BRAM="1" DSP="1" FF="145" LUT="228" LogicLUT="228" RAMB18="1"/>
+    <LocalResources FF="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/H_filter_FIR_U" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_H_filter_FIR_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_16s_14s_30_1_1_U1</SubModules>
+    <Resources DSP="1" FF="43" LUT="146" LogicLUT="146"/>
+    <LocalResources FF="41" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" ORIG_REF_NAME="FIR_HLS_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="111" LogicLUT="111"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1" DEPTH="2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" ORIG_REF_NAME="FIR_HLS_mul_16s_14s_30_1_1">
+    <Resources DSP="1" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_28_2_fu_81" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_28_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="21" LUT="27" LogicLUT="27"/>
+    <LocalResources FF="19" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_28_2_fu_81/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_28_2.v" ORIG_REF_NAME="FIR_HLS_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_input_r_U" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_regslice_both">
+    <Resources FF="37" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_output_r_U" DEPTH="1" FILE_NAME="FIR_HLS.v" ORIG_REF_NAME="FIR_HLS_regslice_both">
+    <Resources FF="37" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.007" DATAPATH_LOGIC_DELAY="3.841" DATAPATH_NET_DELAY="1.166" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[31]/D" LOGIC_LEVELS="8" MAX_FANOUT="15" SLACK="4.925" STARTPOINT_PIN="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_H_filter_FIR_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40[24]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40_reg[24]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="141"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[31]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.005" DATAPATH_LOGIC_DELAY="3.840" DATAPATH_NET_DELAY="1.165" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[29]/D" LOGIC_LEVELS="8" MAX_FANOUT="15" SLACK="4.926" STARTPOINT_PIN="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_H_filter_FIR_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40[24]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40_reg[24]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="141"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[29]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.985" DATAPATH_LOGIC_DELAY="3.819" DATAPATH_NET_DELAY="1.166" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[30]/D" LOGIC_LEVELS="8" MAX_FANOUT="15" SLACK="4.946" STARTPOINT_PIN="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_H_filter_FIR_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40[24]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40_reg[24]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="141"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[30]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.957" DATAPATH_LOGIC_DELAY="3.793" DATAPATH_NET_DELAY="1.164" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[28]/D" LOGIC_LEVELS="8" MAX_FANOUT="15" SLACK="4.975" STARTPOINT_PIN="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_H_filter_FIR_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40[24]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40_reg[24]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="141"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[28]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.925" DATAPATH_LOGIC_DELAY="3.758" DATAPATH_NET_DELAY="1.167" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[27]/D" LOGIC_LEVELS="9" MAX_FANOUT="15" SLACK="5.005" STARTPOINT_PIN="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/H_filter_FIR_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" FILE_NAME="FIR_HLS_H_filter_FIR_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40[16]_i_4" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40_reg[16]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="141"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/mul_16s_14s_30_1_1_U1/FIR_accu32_fu_40_reg[24]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="141"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_FIR_HLS_Pipeline_VITIS_LOOP_25_1_fu_72/FIR_accu32_fu_40_reg[27]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="FIR_HLS_FIR_HLS_Pipeline_VITIS_LOOP_25_1.v" LINE_NUMBER="162"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/FIR_HLS_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/FIR_HLS_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/FIR_HLS_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/FIR_HLS_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/FIR_HLS_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/FIR_HLS_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/FIR_HLS_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/FIR_HLS_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

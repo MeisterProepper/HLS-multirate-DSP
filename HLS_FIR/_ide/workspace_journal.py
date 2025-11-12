@@ -109,3 +109,24 @@ comp.run(operation="C_SIMULATION")
 
 comp = client.clone_component(name="Direct_FIR_DSP",new_name="Direct_FIR_DSP_HLS")
 
+comp = client.get_component(name="Direct_FIR_DSP_HLS")
+comp.run(operation="C_SIMULATION")
+
+comp = client.get_component(name="Direct_FIR_HLS")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp = client.get_component(name="Direct_FIR_DSP_HLS")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="IMPLEMENTATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="IMPLEMENTATION")
+

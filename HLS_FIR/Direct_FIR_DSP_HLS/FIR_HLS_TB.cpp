@@ -7,12 +7,12 @@
 #include <cstdlib>
 
 #define MAX_SAMPLES 4096
-#define TOLERANCE   5
+#define TOLERANCE   0.002
 
 // Stream definitions
-static hls::stream<short> input_stream;
-static hls::stream<short> reference_stream;
-static hls::stream<short> output_stream;
+static hls::stream<fir_data_t> input_stream;
+static hls::stream<fir_data_t> reference_stream;
+static hls::stream<fir_data_t> output_stream;
 
 // Global counters
 int num_mismatches = 0;
@@ -20,13 +20,13 @@ int num_input_samples = 0;
 int num_reference_samples = 0;
 
 // File names
-const char INPUT_FILENAME[]     = "../../../../../../Matlab/TS_DSP_normal.dat";
-const char REFERENCE_FILENAME[] = "../../../../../../Matlab/TS_DSP_normal.res";
+const char INPUT_FILENAME[]     = "../../../../../../Matlab/TS_HLS_normal.dat";
+const char REFERENCE_FILENAME[] = "../../../../../../Matlab/TS_HLS_normal.res";
 
 // ------------------------------------------------------------
 // Helper function: read stimulus file into HLS stream
 // ------------------------------------------------------------
-void read_test_file(const char* filename, hls::stream<short>& stream, int& sample_count) {
+void read_test_file(const char* filename, hls::stream<fir_data_t>& stream, int& sample_count) {
     FILE* file = fopen(filename, "r");
     if (file == nullptr) {
         std::cerr << "ERROR: Cannot open file: " << filename << std::endl;
@@ -37,7 +37,7 @@ void read_test_file(const char* filename, hls::stream<short>& stream, int& sampl
     std::cout << "INFO: Reading " << filename << std::endl;
 
     while (fscanf(file, "%lf", &value) == 1) {
-        stream.write(static_cast<short>(value));
+        stream.write(value);
         sample_count++;
         if (sample_count >= MAX_SAMPLES) {
             std::cerr << "WARNING: Maximum sample limit (" << MAX_SAMPLES << ") reached." << std::endl;
@@ -72,10 +72,10 @@ int main() {
 
     // Compare DUT output against reference data
     for (int i = 0; i < num_input_samples; i++) {
-        int ref_value = reference_stream.read();
-        int dut_value = output_stream.read();
+        fir_data_t ref_value = reference_stream.read();
+        fir_data_t dut_value = output_stream.read();
 
-        if (std::abs(ref_value - dut_value) > TOLERANCE) {
+        if (fabs(ref_value.to_double() - dut_value.to_double()) > TOLERANCE) {
             std::cout << "Mismatch at sample " << std::setw(4) << i
                       << ": ref=" << std::setw(6) << ref_value
                       << ", dut=" << std::setw(6) << dut_value << std::endl;

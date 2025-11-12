@@ -1,8 +1,11 @@
 #include <hls_stream.h>
-#include "../../Matlab/FIR_normal_DSP.h"
+#include <ap_fixed.h>
+#include <ap_shift_reg.h>
+#include "../../Matlab/FIR_normal_HLS.h"
 
 
+typedef ap_fixed<16,1> fir_data_t; 
 
-void FIR_HLS(hls::stream<short> &input, hls::stream<short> &output);
+void FIR_HLS(hls::stream<fir_data_t> &input, hls::stream<fir_data_t> &output);
 
-short FIR_filter(short FIR_delays[], const short FIR_coe[], short int N_delays, short x_n, int shift);
+fir_data_t FIR_filter(delay_data_t FIR_delays[], const coef_data_t FIR_coe[], int N_delays, fir_data_t x_n);

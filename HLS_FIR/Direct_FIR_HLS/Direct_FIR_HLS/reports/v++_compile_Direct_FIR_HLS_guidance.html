@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2024.2 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Tue Nov 11 00:32:49 2025</td></tr>
+<tr><td><b>Date</b></td><td>Wed Nov 12 16:43:12 2025</td></tr>
 <tr><td><b>Host</b></td><td>DESKTOP-92OKADH running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/AMD/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\HLS-multirate-DSP\HLS_FIR\Direct_FIR_HLS\hls_config.cfg --work_dir Direct_FIR_HLS </td></tr>
 </table></center><br>
@@ -3434,13 +3434,134 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">7</td>
+<td align="left">23</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_168', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_164', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_119', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">19</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.FIR_HLS.Kernel</td>
 <td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_76', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_172', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('267_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_124', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_168', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_389', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_151', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_164', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3456,7 +3577,18 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">16</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
@@ -3478,101 +3610,13 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">3</td>
+<td align="left">12</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_58', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_106', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">25</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">**** Estimated Fmax: 139.79 MHz
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_168', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_151', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_119', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_164', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_172', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3588,101 +3632,13 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">12</td>
+<td align="left">9</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_172', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_76', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">22</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('227_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_164', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 253). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_389', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">18</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_17', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">24</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('219_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_172', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 256). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('267_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_124', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">23</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('223_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_168', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 255). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_151', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3698,13 +3654,57 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">21</td>
+<td align="left">4</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.FIR_HLS.Kernel</td>
-<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('240_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_151', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_106', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_52', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">**** Estimated Fmax: 139.79 MHz
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'store' operation 0 bit ('315_write_ln22', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) of variable 'H_filter_FIR_load_76', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a> on array 'H_filter_FIR' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.FIR_HLS.Kernel</td>
+<td align="left">The II Violation in module 'FIR_filter' (function 'FIR_filter'): Unable to schedule 'load' operation 16 bit ('H_filter_FIR_load_58', <a href="file:///C:/HLS-multirate-DSP/HLS_FIR/Direct_FIR_HLS\FIR_HLS.cpp#line=22">FIR_HLS.cpp</a>) on array 'H_filter_FIR' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'H_filter_FIR'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'FIR_filter'
 ================================================================
-* Date:           Tue Nov 11 00:32:32 2025
+* Date:           Wed Nov 12 16:42:45 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        Direct_FIR_HLS
@@ -4431,7 +4431,6 @@ The critical path consists of the following:
 	'add' operation 17 bit ('tmp80', FIR_HLS.cpp:22) [1295]  (0.853 ns)
 	'add' operation 18 bit ('tmp79', FIR_HLS.cpp:22) [1297]  (0.863 ns)
 	'add' operation 19 bit ('tmp95', FIR_HLS.cpp:22) [1303]  (0.873 ns)
-	'sub' operation 27 bit ('p_neg1380', FIR_HLS.cpp:22) [1305]  (0.000 ns)
 	'sub' operation 27 bit ('tmp96', FIR_HLS.cpp:22) [1308]  (0.717 ns)
 	'add' operation 28 bit of DSP[2002] ('add_ln26_43', FIR_HLS.cpp:26) [2002]  (0.645 ns)
 
