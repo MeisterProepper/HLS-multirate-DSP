@@ -357,14 +357,11 @@ The overall structure is illustrated below:
 | 2         | Direct        | Direct        | Transposed      |              |     |      |      |     |
 | 3         | Direct        | Transposed    | Direct          |              |     |      |      |     |
 | 4         | Direct        | Transposed    | Transposed      |              |     |      |      |     |
-| 5         | Direct        | Folded        | Direct          |              |     |      |      |     |
-| 6         | Direct        | Folded        | Transposed      |              |     |      |      |     |
-| 7         | Transposed    | Direct        | Direct          |              |     |      |      |     |
-| 8         | Transposed    | Direct        | Transposed      |              |     |      |      |     |
-| 9         | Transposed    | Transposed    | Direct          |              |     |      |      |     |
-| 10        | Transposed    | Transposed    | Transposed      |   310 - 70   |  1353  |  657  |  0  |  11  |
-| 11        | Transposed    | Folded        | Direct          |              |     |      |      |     |
-| 12        | Transposed    | Folded        | Transposed      |              |     |      |      |     |
+| 5         | Transposed    | Direct        | Direct          |              |     |      |      |     |
+| 6         | Transposed    | Direct        | Transposed      |              |     |      |      |     |
+| 7         | Transposed    | Transposed    | Direct          |              |     |      |      |     |
+| 8         | Transposed    | Transposed    | Transposed      |   310 - 70   |  1353  |  657  |  0  |  11  |
+
 
 
 
