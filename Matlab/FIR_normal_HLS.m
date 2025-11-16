@@ -24,7 +24,6 @@ delta_pass = 0.01;
 fpass = 3100; 
 fstop = 3350;
 
-
 % determine N_FIR and the coefficients using REMEZ ("normal" FIR filter)
 [N_FIR,fo,mo,w] = firpmord( [fpass fstop], [1 0], [delta_pass delta_stop], Fs );
 % for safety reasons, add 2 to N_FIR to achieve the stop-band attenuation for sure

@@ -1,6 +1,5 @@
 %*  Fs = 50000;
-%*  pass-band edge frequency 3100 Hz,  
-%*  stop-band edge frequency 3350 Hz,
+%*  pass-band edge frequency 3100 Hz,  %*  stop-band edge frequency 3350 Hz,
 %*  pass-band ripple 0.01
 %*  minimum stop-band attenuation 40 dB
 

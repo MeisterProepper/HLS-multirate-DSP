@@ -1,6 +1,6 @@
 //------------------------------------------- 
 // designed with -- FIR_multirate_HLS.m -- 
-// 18-Oct-2025
+// 15-Nov-2025
 // Fs = 50000.00
 // fstop = 3350.00
 // fpass = 3100.00
@@ -14,7 +14,7 @@
 #include <ap_fixed.h> 
  
 typedef ap_fixed<16,1> coef_data_t; 
-typedef ap_fixed<32,1> delay_data_t; 
+typedef ap_fixed<16,1> delay_data_t; 
  
 #define N_DELAYS_FIR_kernel_MM 117
 #define N_DELAYS_FIR_dec_int_40 6
